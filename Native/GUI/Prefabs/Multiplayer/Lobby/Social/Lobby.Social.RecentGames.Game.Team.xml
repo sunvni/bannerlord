@@ -1,0 +1,40 @@
+<Prefab>
+  <Constants>
+    <Constant Name="FriendButton.Width" BrushName="MPLobby.FriendsPanel.FriendButton" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="FriendButton.Height" BrushName="MPLobby.FriendsPanel.FriendButton" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="FriendButton.ProfileCanvas.Width" Value="60"/>
+    <Constant Name="FriendButton.ProfileCanvas.Height" Value="60"/>
+  </Constants>
+  <Window>
+    <ListPanel Id="InnerPanel" LayoutImp.LayoutMethod="VerticalBottomToTop" WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="400" MarginBottom="5" MarginTop="5">
+      <ItemTemplate>
+        <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginBottom="5" MarginTop="5">
+          <Children>
+            <ButtonWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" UpdateChildrenStates="true" DoNotPassEventsToChildren="true" Command.Click="ExecuteActivatePlayerActions">
+              <Children>
+                <Widget UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!FriendButton.ProfileCanvas.Width" SuggestedHeight="!FriendButton.ProfileCanvas.Height" Brush="MPLobby.FriendsPanel.FriendButton.ProfileCanvas.Online">
+                  <Children>
+                    <ImageIdentifierWidget DataSource="{Avatar}" ImageId="@Id" AdditionalArgs="@AdditionalArgs" IsVisible="@IsValid" ImageTypeCode="@ImageTypeCode" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Right" VerticalAlignment="Center" MaterialAlphaFactor="0.75"/>
+                  </Children>
+                </Widget>
+                <ButtonWidget UpdateChildrenStates="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="50" VerticalAlignment="Center" MarginTop="5" MarginBottom="5" MarginLeft="!FriendButton.ProfileCanvas.Width" Brush="MPLobby.FriendsPanel.FriendButton">
+                  <Children>
+                    <TextWidget Text="@Name" WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="10" MarginLeft="5" VerticalAlignment="Center" Brush="MPLobby.Social.RecentGames.PlayerName"/>
+                  </Children>
+                </ButtonWidget>
+
+                <!--<ButtonWidget IsVisible="@CanInvite" Command.Click="ExecuteRequestFriendship" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="30" SuggestedHeight="50" HorizontalAlignment="Right" VerticalAlignment="Center" MarginLeft="4" Brush="MPLobby.FriendsPanel.FriendButton.Invite" >
+                  <Children>
+                    <HintWidget DataSource="{RequestFriendshipHint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                  </Children>
+                </ButtonWidget>-->
+              </Children>
+            </ButtonWidget>
+
+          </Children>
+        </ListPanel>
+      </ItemTemplate>
+    </ListPanel>
+  </Window>
+</Prefab>

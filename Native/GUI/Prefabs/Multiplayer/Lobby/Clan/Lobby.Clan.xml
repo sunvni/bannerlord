@@ -1,0 +1,83 @@
+<Prefab>
+  <Constants>
+    <Constant Name="TopHeader.Height" BrushLayer="Default" BrushName="MPLobby.TopHeader.Background" BrushValueType="Height" />
+
+    <Constant Name="PlayButton.Width" BrushName="MPLobby.PlayButton" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="PlayButton.Height" BrushName="MPLobby.PlayButton" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="ContextButton.Width" BrushName="ButtonBrush2" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="ContextButton.Height" BrushName="ButtonBrush2" BrushLayer="Default" BrushValueType="Height"/>
+  </Constants>
+  <Window>
+    <MultiplayerLobbyClanScreenWidget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginTop="!TopHeader.Height" SelectionInfo="@SelectionInfo">
+      <Children>
+        <!--Left Panel-->
+        <ListPanel WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="295" HorizontalAlignment="Left" LayoutMethod.LayoutMethod="VerticalBottomToTop" MarginTop="40">
+          <Children>
+            <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" LayoutImp.LayoutMethod="HorizontalLeftToRight" >
+              <Children>
+                <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginLeft="50" LayoutImp.LayoutMethod="VerticalBottomToTop" MarginTop="45" IntValue="@SelectedSubPageIndex">
+                  <Children>
+
+                    <!--Home Button-->
+                    <ButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true" HorizontalAlignment="Center" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Command.Click="ExecuteChangeEnabledSubPage" CommandParameter.Click="0">
+                      <Children>
+                        <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" UpdateChildrenStates="true" LayoutImp.LayoutMethod="VerticalBottomToTop" HorizontalAlignment="Center">
+                          <Children>
+                            <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="98" SuggestedHeight="80" HorizontalAlignment="Center" PositionYOffset="15" Brush="MPLobby.Clan.ManagementButton" />
+                            <TextWidget  WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="50" HorizontalAlignment="Center" Brush="MPLobby.Matchmaking.LeftMenuText" Text="@HomeText" />
+                          </Children>
+                        </ListPanel>
+                      </Children>
+                    </ButtonWidget>
+
+                    <!--Roster Button-->
+                    <ButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true" HorizontalAlignment="Center" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Command.Click="ExecuteChangeEnabledSubPage" CommandParameter.Click="1" IsVisible="@IsPlayerInClan">
+                      <Children>
+                        <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" UpdateChildrenStates="true" LayoutImp.LayoutMethod="VerticalBottomToTop" HorizontalAlignment="Center">
+                          <Children>
+                            <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="98" SuggestedHeight="80" HorizontalAlignment="Center" PositionYOffset="15" Brush="MPLobby.Clan.RosterButton" />
+                            <TextWidget  WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="50" HorizontalAlignment="Center" Brush="MPLobby.Matchmaking.LeftMenuText" Text="@RosterText" />
+                          </Children>
+                        </ListPanel>
+                      </Children>
+                    </ButtonWidget>
+
+                    <!--Leaderboard Button-->
+                    <ButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true" HorizontalAlignment="Center" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Command.Click="ExecuteChangeEnabledSubPage" CommandParameter.Click="2" IsVisible="@IsPlayerInClan">
+                      <Children>
+                        <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" UpdateChildrenStates="true" LayoutImp.LayoutMethod="VerticalBottomToTop" HorizontalAlignment="Center">
+                          <Children>
+                            <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="98" SuggestedHeight="80" HorizontalAlignment="Center" PositionYOffset="15" Brush="MPLobby.Clan.LeaderboardButton" />
+                            <TextWidget  WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="50" HorizontalAlignment="Center" Brush="MPLobby.Matchmaking.LeftMenuText" Text="@LeaderboardText" />
+                          </Children>
+                        </ListPanel>
+                      </Children>
+                    </ButtonWidget>
+
+                  </Children>
+                </ListPanel>
+
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="49" Sprite="MPLobby\Matchmaking\left_menu_indicator" Brush.Color="#FEC157FF" MarginTop="85" MarginLeft="25" DoNotAcceptEvents="true" IsVisible="false"/>
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="5" SuggestedHeight="701" Sprite="MPLobby\Matchmaking\left_menu_divider" Brush.Color="#D5A272FF" MarginLeft="25" DoNotAcceptEvents="true"/>
+              </Children>
+            </ListPanel>
+
+          </Children>
+        </ListPanel>
+        
+        <!--Right Panel-->
+        <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" MarginLeft="350" MarginRight="250" MarginTop="50" >
+          <Children>
+            
+            <Lobby.Clan.Home DataSource="{ClanHome}" />
+            <Lobby.Clan.Roster DataSource="{ClanRoster}" />
+            <Lobby.Clan.Leaderboard DataSource="{ClanLeaderboard}" />
+
+          </Children>
+        </Widget>
+
+      </Children>
+    </MultiplayerLobbyClanScreenWidget>
+  </Window>
+</Prefab>

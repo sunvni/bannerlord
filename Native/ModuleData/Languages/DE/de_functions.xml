@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Deutsch" />
+  </tags>
+   <functions>
+	<function functionName="der" functionBody="{?$0!.M}der{:?$0!.F}die{:}das{\?}"/>
+	<function functionName="Den" functionBody="{?$0!.M}Den{:?$0!.F}Die{:}Das{\?}"/>
+	<function functionName="den" functionBody="{?$0!.M}den{:?$0!.F}die{:}das{\?}"/>
+	<function functionName="Dem" functionBody="{?$0!.M}Dem{:?$0!.F}Der{:}Dem{\?}"/>
+	<function functionName="dem" functionBody="{?$0!.M}dem{:?$0!.F}der{:}dem{\?}"/>
+	<function functionName="Des" functionBody="{?$0!.M}Des{:?$0!.F}Der{:}Des{\?}"/>
+	<function functionName="des" functionBody="{?$0!.M}des{:?$0!.F}der{:}des{\?}"/>
+	<function functionName="Ein" functionBody="{?$0!.M}Ein{:?$0!.F}Eine{:}Ein{\?}"/>
+	<function functionName="ein" functionBody="{?$0!.M}ein{:?$0!.F}eine{:}ein{\?}"/>
+	<function functionName="Einen" functionBody="{?$0!.M}Einen{:?$0!.F}Eine{:}Ein{\?}"/>
+	<function functionName="einen" functionBody="{?$0!.M}einen{:?$0!.F}eine{:}ein{\?}"/>
+	<function functionName="Einem" functionBody="{?$0!.M}Einem{:?$0!.F}Einer{:}Einem{\?}"/>
+	<function functionName="einem" functionBody="{?$0!.M}einem{:?$0!.F}einer{:}einem{\?}"/>
+	<function functionName="Eines" functionBody="{?$0!.M}Eines{:?$0!.F}Einer{:}Eines{\?}"/>
+	<function functionName="eines" functionBody="{?$0!.M}eines{:?$0!.F}einer{:}eines{\?}"/>
+	<function functionName="Er" functionBody="{?$0!.M}Er{:?$0!.F}Sie{:}Es{\?}"/>
+	<function functionName="er" functionBody="{?$0!.M}er{:?$0!.F}sie{:}es{\?}"/>
+	<function functionName="Ihn" functionBody="{?$0!.M}Ihn{:?$0!.F}Sie{:}Es{\?}"/>
+	<function functionName="ihn" functionBody="{?$0!.M}ihn{:?$0!.F}sie{:}es{\?}"/>
+	<function functionName="Ihm" functionBody="{?$0!.M}Ihm{:?$0!.F}Ihr{:}Ihm{\?}"/>
+	<function functionName="ihm" functionBody="{?$0!.M}ihm{:?$0!.F}ihr{:}ihm{\?}"/>
+	<function functionName="Seiner" functionBody="{?$0!.M}Seiner{:?$0!.F}Ihrer{:}Seiner{\?}"/>
+	<function functionName="seiner" functionBody="{?$0!.M}seiner{:?$0!.F}ihrer{:}seiner{\?}"/>
+	<function functionName="Sein" functionBody="{?$0!.M}Sein{:?$0!.F}Seine{:}Sein{\?}"/>
+	<function functionName="sein" functionBody="{?$0!.M}sein{:?$0!.F}seine{:}sein{\?}"/>
+	<function functionName="Seinen" functionBody="{?$0!.M}Seinen{:?$0!.F}Seine{:}Sein{\?}"/>
+	<function functionName="seinen" functionBody="{?$0!.M}seinen{:?$0!.F}seine{:}Sein{\?}"/>
+	<function functionName="Seinem" functionBody="{?$0!.M}Seinem{:?$0!.F}Seiner{:}Seinem{\?}"/>
+	<function functionName="seinem" functionBody="{?$0!.M}seinem{:?$0!.F}seiner{:}seinem{\?}"/>
+	<function functionName="Seines" functionBody="{?$0!.M}Seines{:?$0!.F}Seiner{:}Seines{\?}"/>
+	<function functionName="seines" functionBody="{?$0!.M}seines{:?$0!.F}seiner{:}seines{\?}"/>
+  </functions>
+</base>
+

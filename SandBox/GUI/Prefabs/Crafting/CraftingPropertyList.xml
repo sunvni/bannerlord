@@ -1,0 +1,40 @@
+<Prefab>
+  <Constants>
+  </Constants>
+  <Variables>
+  </Variables>
+  <VisualDefinitions>
+  </VisualDefinitions>
+  <Window>
+    <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" LayoutImp.LayoutMethod="VerticalBottomToTop">
+      <ItemTemplate>
+        <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="25" MarginTop="10" LayoutImp.LayoutMethod="HorizontalLeftToRight" MarginRight="14">
+          <Children>
+            <!--Name-->
+            <RichTextWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="170" Text="@PropertyLbl" Brush="Crafting.Property.Name.Text"/>
+
+            <!--Value-->
+            <RichTextWidget WidthSizePolicy="Fixed" SuggestedWidth="74" HeightSizePolicy="StretchToParent" Text="@PropertyValueText" Brush="Crafting.Property.Value.Text"/>
+
+            <!--Slider-->
+            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="291" SuggestedHeight="17" HorizontalAlignment="Right" VerticalAlignment="Center"  Sprite="crafting_little_progressbar_frame_9" Brush.AlphaFactor="0.5" >
+              <Children>
+                <SliderWidget Id="ScrollBar" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="5" MarginRight="5" Filler="Filler" Handle="Handle" IsEnabled="false" MaxValueFloat="@PropertyMaxValue" MinValueFloat="0" ValueFloat="@PropertyValue">
+                  <Children>
+                    <Widget Id="Filler" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="11" SuggestedHeight="9" HorizontalAlignment="Left" VerticalAlignment="Center" Sprite="crafting_little_progressbar_fill_9" Brush.AlphaFactor="0.7" ClipContents="true">
+                      <Children>
+                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="78" HorizontalAlignment="Right" VerticalAlignment="Center" MarginLeft="5" MarginRight="1" MarginTop="1" MarginBottom="1"  />
+                      </Children>
+                    </Widget>
+                    <Widget Id="Handle" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="5" SuggestedHeight="10" HorizontalAlignment="Left" VerticalAlignment="Center" Sprite="Crafting\crafting_little_progressbar_glow" IsEnabled="false" IsVisible="false" />
+                  </Children>
+                </SliderWidget>
+              </Children>
+            </Widget>
+
+          </Children>
+        </ListPanel>
+      </ItemTemplate>
+    </ListPanel>
+  </Window>
+</Prefab>

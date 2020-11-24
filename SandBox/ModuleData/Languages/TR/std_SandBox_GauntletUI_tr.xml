@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Türkçe" />
+  </tags>
+  <strings>
+    <string id="1VOXUsST" text="Sancağının sembolünü belirle" />
+    <string id="3CpNUnVl" text="İptal" />
+    <string id="Eg3m6vUS" text="Klanının sembolünü seçerek kişisel sancağını belirle" />
+    <string id="ObTXSp9L" text="Doğru şablonu seçmeden yapıştırılamaz." />
+    <string id="WiNRdfsm" text="Bitti" />
+  </strings>
+</base>

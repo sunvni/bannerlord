@@ -1,0 +1,38 @@
+<Prefab>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren">
+      <Children>
+        <Widget Id="StatWidgetParent" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren">
+          <Children>
+
+            <!--Every element is a left to right ListPanel-->
+            <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren">
+              <Children>
+                <!--Icon-->
+                <ClanFiefStatTypeVisualWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="40" SuggestedHeight="40" VerticalAlignment="Center" Brush="Clan.Fief.Stat.Type.Image" Type="@Type" />
+
+                <!--Name-->
+                <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="40" VerticalAlignment="Center" Brush="Clan.Stat.Name.Text" Text="@Name"/>
+
+                <!--Separator Character-->
+                <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="40" VerticalAlignment="Center" MarginLeft="5" MarginRight="5" Brush="Clan.Stat.Seperator.Text" Text="@ColonText"/>
+
+                <!--Value-->
+                <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="40" VerticalAlignment="Center" Brush="Clan.Stat.Value.Text" Text="@Value" />
+
+                <!--Change Amount-->
+                <ChangeAmountTextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="40" VerticalAlignment="Center" Brush="Settlement.Property.PositiveChange.Text" Amount="@ChangeAmount" NegativeBrushName="Clan.Stat.NegativeChange.Text" PositiveBrushName="Clan.Stat.PositiveChange.Text" UseParentheses="true" IsVisible="false"/>
+              </Children>
+            </ListPanel>
+
+            <DimensionSyncWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" DimensionToSync="Vertical" WidgetToCopyHeightFrom="..\..\StatWidgetParent">
+              <Children>
+                <HintWidget DataSource="{Hint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="false" />
+              </Children>
+            </DimensionSyncWidget>
+          </Children>
+        </Widget>
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

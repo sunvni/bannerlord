@@ -1,0 +1,288 @@
+<Prefab>
+  <Constants>
+    <Constant Name="SidePanel.MarginTop" Value="25" />
+    <Constant Name="SidePanel.MarginBottom" Value="70" />
+    <Constant Name="SidePanel.List.MarginTop" Value="!TopBackground.Height" />
+
+    <Constant Name="SidePanel.Width" Additive="24" Value="!Toggle.Width" />
+    <Constant Name="SidePanel.NegativeWidth" MultiplyResult="-1" Value="!SidePanel.Width" />
+
+    <Constant Name="Toggle.Width" BrushLayer="Default" BrushName="Inventory.Tuple.Right" BrushValueType="Width" />
+
+    <Constant Name="TopBackground.Width" BrushLayer="Default" BrushName="Inventory.TopLeft.Background" BrushValueType="Width" />
+    <Constant Name="TopBackground.Height" BrushLayer="Default" BrushName="Inventory.TopLeft.Background" BrushValueType="Height" />
+
+    <Constant Name="TransferAllButton.Width" BrushLayer="Default" BrushName="InventoryBuyAllButton" BrushValueType="Width" />
+    <Constant Name="TransferAllButton.Height" BrushLayer="Default" BrushName="InventoryBuyAllButton" BrushValueType="Height" />
+  </Constants>
+
+  <VisualDefinitions>
+    <VisualDefinition Name="LeftMenu" TransitionDuration="0.2">
+      <VisualState PositionXOffset="0" State="Default" />
+    </VisualDefinition>
+    <VisualDefinition Name="RightMenu" TransitionDuration="0.2">
+      <VisualState PositionXOffset="0" State="Default" />
+    </VisualDefinition>
+    <VisualDefinition Name="TopMenu" TransitionDuration="0.2">
+      <VisualState PositionYOffset="0" State="Default" />
+    </VisualDefinition>
+    <VisualDefinition Name="BottomMenu" DelayOnBegin="0.2" TransitionDuration="0.4">
+      <VisualState PositionYOffset="0" State="Default" />
+    </VisualDefinition>
+  </VisualDefinitions>
+
+  <Window>
+    <InventoryScreenWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="InventoryBackground" Command.ItemHoverBegin="ProcessItemTooltip" Command.ItemHoverEnd="ResetSelectedItem" EquipmentCountWarned="@EquipmentCountWarned" NoSaddleWarned="@NoSaddleWarned" EquippedItemControls="MainLayout\CenterPanel\EquippedItemControls" InventoryTooltip="InventoryTooltip" IsInWarSet="@IsInWarSet" ItemPreviewWidget="ItemPreview" OtherInventoryGoldImage="MainLayout\LeftPanel\GoldContainer\Image" OtherInventoryGoldText="MainLayout\LeftPanel\GoldContainer\Text" PartyWeightText="MainLayout\RightPanel\PartyStats\Weight" TargetEquipmentIndex="@TargetEquipmentIndex" TradeLabel="MainLayout\CenterPanel\TradeLabelContainer\TradeLabel" TransactionCount="@TransactionCount" EncumberedWarningBoxWidget="MainLayout\CenterPanel\EncumberedWarningBoxWidget" NoSaddleWarningBoxWidget="MainLayout\CenterPanel\CenterMiddlePanel\LeftMenu\NoSaddleWarningBoxWidget" PlayerInventoryListWidget="MainLayout\RightPanel\PlayerInventoryListWidget\InventoryListScrollablePanel" OtherInventoryListWidget="MainLayout\LeftPanel\OtherInventoryListWidget\InventoryListScrollablePanel" Command.OnFocusLose="ExecuteRemoveZeroCounts" >
+      <Children>
+
+        <!--Center Tableau-->
+        <CharacterTableauWidget DataSource="{MainCharacter}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="1080" SuggestedHeight="1080" HorizontalAlignment="Center" VerticalAlignment="Center" BannerCodeText="@BannerCodeText" CharStringId="@CharStringId" EquipmentCode="@EquipmentCode" BodyProperties="@BodyProperties" IsFemale="@IsFemale" MountCreationKey="@MountCreationKey" StanceIndex="@StanceIndex" ArmorColor1="@ArmorColor1" ArmorColor2="@ArmorColor2" IsEquipmentAnimActive="true"/>
+        <ListPanel Id="MainLayout" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+          <Children>
+
+            <!--Left Panel-->
+            <Widget Id="LeftPanel" VisualDefinition="LeftMenu" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!SidePanel.Width" PositionXOffset="!SidePanel.NegativeWidth" MarginTop="!SidePanel.MarginTop" MarginBottom="!SidePanel.MarginBottom" Brush="Frame1.Broken.Left" RenderLate="true">
+              <Children>
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!TopBackground.Width" SuggestedHeight="!TopBackground.Height" HorizontalAlignment="Left" VerticalAlignment="Top" PositionXOffset="-3" Brush="Inventory.TopLeft.Background" />
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="50" MarginRight="10" MarginTop="18">
+                  <Children>
+                    <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!TransferAllButton.Width" SuggestedHeight="!TransferAllButton.Height" HorizontalAlignment="Right" VerticalAlignment="Center" Brush="InventoryBuyAllButton" Command.Click="ExecuteBuyAllItems">
+                      <Children>
+                        <HintWidget DataSource="{BuyAllHint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                      </Children>
+                    </ButtonWidget>
+                    <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="30" HorizontalAlignment="Right" VerticalAlignment="Center" PositionYOffset="2" MarginRight="50" Brush="InventoryHeaderFontBrush" Brush.FontSize="30" Brush.TextHorizontalAlignment="Right" Text="@LeftInventoryOwnerName" ClipContents="false"/>
+                  </Children>
+                </Widget>
+
+                <!--Production Hint Widget-->
+                <Widget Id="ProductionHintWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="44" SuggestedHeight="53" HorizontalAlignment="Center" VerticalAlignment="Top" MarginTop="15" Sprite="Inventory\production_icon" DoNotPassEventsToChildren="true" IsVisible="@IsTradingWithSettlement">
+                  <Children>
+                    <HintWidget DataSource="{ProductionTooltip}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                  </Children>
+                </Widget>
+
+                <Widget Id="GoldContainer" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="110" SuggestedHeight="40" HorizontalAlignment="Left" MarginLeft="10" MarginRight="20" MarginTop="25">
+                  <Children>
+                    <Widget Id="Image" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="32" SuggestedHeight="31" HorizontalAlignment="Right" VerticalAlignment="Center" PositionYOffset="-2" Sprite="Inventory\icon_gold" />
+                    <TextWidget Id="Text" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Right" VerticalAlignment="Center" MarginRight="35" Brush="InventoryGoldFontBrush" Brush.FontSize="20" Brush.TextHorizontalAlignment="Right" IntText="@LeftInventoryOwnerGold" />
+                  </Children>
+                </Widget>
+                <InventoryList Id="OtherInventoryListWidget" MarginTop="!SidePanel.List.MarginTop" Parameter.IsPlayerItem="false" Parameter.ListDataSource="{LeftItemListVM}" Parameter.ListTag="OtherInventory" Parameter.SortDataSource="{OtherInventorySortDataVM}" />
+              </Children>
+            </Widget>
+
+            <!--Center Panel-->
+            <InventoryCenterPanelWidget Id="CenterPanel" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" AcceptDrop="true" Command.Drop="ExecuteTransferWithParameters" CommandParameter.Drop="OverCharacter">
+              <Children>
+
+                <Widget VisualDefinition="TopMenu" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="210" PositionYOffset="-400">
+                  <Children>
+                    <InventoryBooleanRadioContainer DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Top" MarginTop="80" IsFirstSelected="@IsInWarSet" LayoutImp.LayoutMethod="HorizontalRightToLeft">
+                      <Children>
+                        <ButtonWidget Id="CivilianFilter" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="126" SuggestedHeight="67" HorizontalAlignment="Center" Brush="InventoryCivillianModeButton" ButtonType="Radio">
+                          <Children>
+                            <HintWidget DataSource="{CivilianOutfitHint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                            <TutorialHighlightItemWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="TutorialHighlightBrush" IsEnabled="false" IsHighlightEnabled="@IsCivilianFilterHighlightEnabled" IsVisible="false" />
+                          </Children>
+                        </ButtonWidget>
+                        <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="126" SuggestedHeight="67" HorizontalAlignment="Center" Brush="InventoryWarModeButton" ButtonType="Radio">
+                          <Children>
+                            <HintWidget DataSource="{BattleOutfitHint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                          </Children>
+                        </ButtonWidget>
+                      </Children>
+                    </InventoryBooleanRadioContainer>
+
+                    <ListPanel DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Top" MarginTop="80" IntValue="@ActiveFilterIndex">
+                      <Children>
+                        <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="67" SuggestedHeight="67" MarginLeft="-2" MarginRight="-2" Brush="InventoryFilterAllButton" ButtonType="Radio" Command.Click="ExecuteFilterNone">
+                          <Children>
+                            <HintWidget DataSource="{FilterAllHint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                          </Children>
+                        </ButtonWidget>
+                        <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="67" SuggestedHeight="67" PositionXOffset="-5" PositionYOffset="40" MarginLeft="-2" MarginRight="-2" Brush="InventoryFilterWeaponsButton" ButtonType="Radio" Command.Click="ExecuteFilterWeapons">
+                          <Children>
+                            <HintWidget DataSource="{FilterWeaponHint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                          </Children>
+                        </ButtonWidget>
+                        <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="67" SuggestedHeight="67" PositionYOffset="60" MarginLeft="-2" MarginRight="-2" Brush="InventoryFilterShieldsButton" ButtonType="Radio" Command.Click="ExecuteFilterShieldsAndRanged">
+                          <Children>
+                            <HintWidget DataSource="{FilterShieldAndRangedHint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                          </Children>
+                        </ButtonWidget>
+                        <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="67" SuggestedHeight="67" PositionYOffset="60" MarginLeft="-2" MarginRight="-2" Brush="InventoryFilterArmorsButton" ButtonType="Radio" Command.Click="ExecuteFilterArmors">
+                          <Children>
+                            <HintWidget DataSource="{FilterArmorHint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                          </Children>
+                        </ButtonWidget>
+                        <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="67" SuggestedHeight="67" PositionXOffset="5" PositionYOffset="40" MarginLeft="-2" MarginRight="-2" Brush="InventoryFilterMountsButton" ButtonType="Radio" Command.Click="ExecuteFilterMounts">
+                          <Children>
+                            <HintWidget DataSource="{FilterMountAndHarnessHint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                          </Children>
+                        </ButtonWidget>
+                        <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="67" SuggestedHeight="67" MarginLeft="-2" MarginRight="-2" Brush="InventoryFilterFoodButton" ButtonType="Radio" Command.Click="ExecuteFilterMisc">
+                          <Children>
+                            <HintWidget DataSource="{FilterMiscHint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                            <TutorialHighlightItemWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="TutorialHighlightBrush" IsEnabled="false" IsHighlightEnabled="@IsMicsFilterHighlightEnabled" IsVisible="false" />
+                          </Children>
+                        </ButtonWidget>
+                      </Children>
+                    </ListPanel>
+
+                    <Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="887" SuggestedHeight="150" HorizontalAlignment="Center" Sprite="StdAssets\tabbar_long">
+                      <Children>
+                        <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="37" SuggestedHeight="42" HorizontalAlignment="Left" VerticalAlignment="Top" MarginLeft="187" MarginTop="12" Brush="Inventory.Tabbard.PreviousCharacter" Command.Click="ExecutePreviousCharacter" IsEnabled="@CompanionExists">
+                          <Children>
+                            <HintWidget DataSource="{PreviousCharacterHint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                          </Children>
+                        </ButtonWidget>
+                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="434" SuggestedHeight="47" HorizontalAlignment="Center" MarginTop="10" Sprite="StdAssets\tabbar_long_namebox">
+                          <Children>
+                            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" PositionYOffset="3" Brush="InventoryButtonTextBrush" Brush.FontColor="#C6AC8DFF" Brush.FontSize="32" Brush.TextHorizontalAlignment="Center" Text="@CurrentCharacterName" />
+                          </Children>
+                        </Widget>
+                        <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="37" SuggestedHeight="42" HorizontalAlignment="Right" VerticalAlignment="Top" MarginRight="187" MarginTop="12" Brush="Inventory.Tabbard.NextCharacter" Command.Click="ExecuteNextCharacter" IsEnabled="@CompanionExists">
+                          <Children>
+                            <HintWidget DataSource="{NextCharacterHint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                          </Children>
+                        </ButtonWidget>
+                      </Children>
+                    </Widget>
+
+                  </Children>
+                </Widget>
+
+                <Widget Id="CenterMiddlePanel" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginTop="200" MarginBottom="70"  >
+                  <Children>
+                    <Widget Id="LeftMenu" VisualDefinition="LeftMenu" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" PositionXOffset="!SidePanel.NegativeWidth">
+                      <Children>
+                        <InventoryEquippedItemSlot HorizontalAlignment="Left" MarginLeft="5" MarginTop="40" Parameter.BackgroundBrush="InventoryHelmetSlot" Parameter.DropTag="Equipment_5" Parameter.EquipmentIndex="5" Parameter.HintDataSource="{EquipmentHelmSlotHint}" Parameter.IsRightSide="false" Parameter.ItemDataSource="{CharacterHelmSlot}" />
+                        <InventoryEquippedItemSlot HorizontalAlignment="Left" MarginLeft="5" MarginTop="125" Parameter.BackgroundBrush="InventoryCloakSlot" Parameter.DropTag="Equipment_9" Parameter.EquipmentIndex="9" Parameter.HintDataSource="{EquipmentCloakSlotHint}" Parameter.IsRightSide="false" Parameter.ItemDataSource="{CharacterCloakSlot}" />
+                        <InventoryEquippedItemSlot HorizontalAlignment="Left" MarginLeft="5" MarginTop="210" Parameter.BackgroundBrush="InventoryArmorSlot" Parameter.DropTag="Equipment_6" Parameter.EquipmentIndex="6" Parameter.HintDataSource="{EquipmentArmorSlotHint}" Parameter.IsRightSide="false" Parameter.ItemDataSource="{CharacterTorsoSlot}" />
+                        <InventoryEquippedItemSlot HorizontalAlignment="Left" MarginLeft="5" MarginTop="295" Parameter.BackgroundBrush="InventoryGloveSlot" Parameter.DropTag="Equipment_8" Parameter.EquipmentIndex="8" Parameter.HintDataSource="{EquipmentGloveSlotHint}" Parameter.IsRightSide="false" Parameter.ItemDataSource="{CharacterGloveSlot}" />
+                        <InventoryEquippedItemSlot HorizontalAlignment="Left" MarginLeft="5" MarginTop="380" Parameter.BackgroundBrush="InventoryBootSlot" Parameter.DropTag="Equipment_7" Parameter.EquipmentIndex="7" Parameter.HintDataSource="{EquipmentBootSlotHint}" Parameter.IsRightSide="false" Parameter.ItemDataSource="{CharacterBootSlot}" />
+                        <InventoryEquippedItemSlot HorizontalAlignment="Left" MarginLeft="5" MarginTop="500" Parameter.BackgroundBrush="InventoryMountSlot" Parameter.DropTag="Equipment_10" Parameter.EquipmentIndex="10" Parameter.HintDataSource="{EquipmentMountSlotHint}" Parameter.IsRightSide="false" Parameter.ItemDataSource="{CharacterMountSlot}" />
+                        <InventoryEquippedItemSlot MarginLeft="5" MarginTop="585" Parameter.BackgroundBrush="InventoryMountArmorSlot" Parameter.DropTag="Equipment_11" Parameter.EquipmentIndex="11" Parameter.HintDataSource="{EquipmentHarnessSlotHint}" Parameter.IsRightSide="false" Parameter.ItemDataSource="{CharacterMountArmorSlot}" />
+
+                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="60" SuggestedHeight="60" HorizontalAlignment="Left" MarginLeft="100" MarginTop="85" Sprite="Inventory\ShieldIcon">
+                          <Children>
+                            <TextWidget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="InventoryDefaultFontBrush" Brush.FontSize="20" Brush.TextHorizontalAlignment="Center" FloatText="@CurrentCharacterHeadArmor" />
+                            <HintWidget DataSource="{HeadArmorHint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                          </Children>
+                        </Widget>
+                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="60" SuggestedHeight="60" HorizontalAlignment="Left" MarginLeft="100" MarginTop="170" Sprite="Inventory\ShieldIcon">
+                          <Children>
+                            <TextWidget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="InventoryDefaultFontBrush" Brush.FontSize="20" Brush.TextHorizontalAlignment="Center" FloatText="@CurrentCharacterBodyArmor" />
+                            <HintWidget DataSource="{BodyArmorHint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                          </Children>
+                        </Widget>
+                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="60" SuggestedHeight="60" HorizontalAlignment="Left" MarginLeft="100" MarginTop="255" Sprite="Inventory\ShieldIcon">
+                          <Children>
+                            <TextWidget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="InventoryDefaultFontBrush" Brush.FontSize="20" Brush.TextHorizontalAlignment="Center" FloatText="@CurrentCharacterArmArmor" />
+                            <HintWidget DataSource="{ArmArmorHint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                          </Children>
+                        </Widget>
+                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="60" SuggestedHeight="60" HorizontalAlignment="Left" MarginLeft="100" MarginTop="340" Sprite="Inventory\ShieldIcon">
+                          <Children>
+                            <TextWidget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="InventoryDefaultFontBrush" Brush.FontSize="20" Brush.TextHorizontalAlignment="Center" FloatText="@CurrentCharacterLegArmor" />
+                            <HintWidget DataSource="{LegArmorHint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                          </Children>
+                        </Widget>
+
+                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="60" SuggestedHeight="60" HorizontalAlignment="Left" MarginLeft="100" MarginTop="545" Sprite="Inventory\ShieldIcon">
+                          <Children>
+                            <TextWidget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="InventoryDefaultFontBrush" Brush.FontSize="20" Brush.TextHorizontalAlignment="Center" FloatText="@CurrentCharacterHorseArmor" />
+                            <HintWidget DataSource="{HorseArmorHint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                          </Children>
+                        </Widget>
+
+                        <!--No Saddle Warning-->
+                        <Widget DataSource="{NoSaddleHint}" Id="NoSaddleWarningBoxWidget" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Brush="Inventory.Weight.Box" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" HorizontalAlignment="Left" MarginLeft="15" MarginTop="655" UpdateChildrenStates="true" IsEnabled="false">
+                          <Children>
+                            <TextWidget DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" MarginLeft="5" MarginRight="5" MarginTop="5" MarginBottom="5" Brush="Inventory.Encumbered.Font" Text="@NoSaddleText" DoNotAcceptEvents="true"/>
+                          </Children>
+                        </Widget>
+                      </Children>
+                    </Widget>
+
+                    <Widget VisualDefinition="RightMenu" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Right" PositionXOffset="!SidePanel.Width" >
+                      <Children>
+                        <InventoryEquippedItemSlot MarginLeft="5" MarginTop="125" Parameter.BackgroundBrush="InventoryWeaponSlot" Parameter.DropTag="Equipment_0" Parameter.EquipmentIndex="0" Parameter.HintDataSource="{EquipmentWeaponSlotHint}" Parameter.IsRightSide="true" Parameter.ItemDataSource="{CharacterWeapon1Slot}" />
+                        <InventoryEquippedItemSlot MarginLeft="5" MarginTop="210" Parameter.BackgroundBrush="InventoryWeaponSlot" Parameter.DropTag="Equipment_1" Parameter.EquipmentIndex="0" Parameter.HintDataSource="{EquipmentWeaponSlotHint}" Parameter.IsRightSide="true" Parameter.ItemDataSource="{CharacterWeapon2Slot}" />
+                        <InventoryEquippedItemSlot MarginLeft="5" MarginTop="295" Parameter.BackgroundBrush="InventoryWeaponSlot" Parameter.DropTag="Equipment_2" Parameter.EquipmentIndex="0" Parameter.HintDataSource="{EquipmentWeaponSlotHint}" Parameter.IsRightSide="true" Parameter.ItemDataSource="{CharacterWeapon3Slot}" />
+                        <InventoryEquippedItemSlot MarginLeft="5" MarginTop="385" Parameter.BackgroundBrush="InventoryWeaponSlot" Parameter.DropTag="Equipment_3" Parameter.EquipmentIndex="0" Parameter.HintDataSource="{EquipmentWeaponSlotHint}" Parameter.IsRightSide="true" Parameter.ItemDataSource="{CharacterWeapon4Slot}" />
+
+                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="100" SuggestedHeight="100" HorizontalAlignment="Right" MarginLeft="-5" MarginTop="585" Sprite="Inventory\WeightIcon">
+                          <Children>
+                            <TextWidget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" VerticalAlignment="Center" PositionYOffset="8" Brush="InventoryDefaultFontBrush" Brush.FontSize="20" Brush.TextHorizontalAlignment="Center" Text="@CurrentCharacterTotalEncumbrance" />
+                            <HintWidget DataSource="{WeightHint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                          </Children>
+                        </Widget>
+                      </Children>
+                    </Widget>
+
+                  </Children>
+                </Widget>
+
+                <Widget DataSource="{CapacityExceededHint}" Id="EncumberedWarningBoxWidget" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Brush="Inventory.Weight.Box" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" VerticalAlignment="Bottom" MarginBottom="155" HorizontalAlignment="Center" UpdateChildrenStates="true" IsEnabled="false">
+                  <Children>
+                    <TextWidget DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" MarginLeft="5" MarginRight="5" MarginTop="5" MarginBottom="5" Brush="Inventory.Encumbered.Font" Text="@CapacityExceededText" DoNotAcceptEvents="true"/>
+                  </Children>
+                </Widget>
+
+                <Widget Id="TradeLabelContainer" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginBottom="100" IsDisabled="true" Sprite="BlankWhiteSquare_9" Brush.Color="#00000066">
+                  <Children>
+                    <AutoHideRichTextWidget Id="TradeLabel" WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="50" HorizontalAlignment="Center" MarginLeft="10" MarginRight="5" VerticalAlignment="Center" Text="@TradeLbl" WidgetToHideIfEmpty="..\..\TradeLabelContainer"/>
+                  </Children>
+                </Widget>
+
+                <Standard.TripleDialogCloseButtons VisualDefinition="BottomMenu" PositionYOffset="100" Parameter.CancelButtonAction="ExecuteResetAndCompleteTranstactions" Parameter.CancelButtonText="@CancelLbl" Parameter.DoneButtonAction="ExecuteCompleteTranstactions" Parameter.DoneButtonHoverBegin="ExecuteShowRecap" Parameter.DoneButtonHoverEnd="ExecuteCancelRecap" Parameter.DoneButtonText="@DoneLbl" Parameter.ResetButtonAction="ExecuteResetTranstactions" Parameter.ResetButtonHintDataSource="{ResetHint}" Parameter.DoneButtonDisabled="@IsDoneDisabled"/>
+
+                <InventoryEquippedItemControls Id="EquippedItemControls" IsVisible="false" />
+              </Children>
+            </InventoryCenterPanelWidget>
+
+            <!--Right Panel-->
+            <Widget Id="RightPanel" VisualDefinition="RightMenu" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!SidePanel.Width" PositionXOffset="!SidePanel.Width" MarginTop="!SidePanel.MarginTop" MarginBottom="!SidePanel.MarginBottom" Brush="Frame1.Broken.Right" RenderLate="true">
+              <Children>
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!TopBackground.Width" SuggestedHeight="!TopBackground.Height" HorizontalAlignment="Left" VerticalAlignment="Top" Brush="Inventory.TopRight.Background" />
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="50" MarginLeft="10" MarginTop="18">
+                  <Children>
+                    <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!TransferAllButton.Width" SuggestedHeight="!TransferAllButton.Height" HorizontalAlignment="Left" VerticalAlignment="Center" Brush="InventorySellAllButton" Command.Click="ExecuteSellAllItems">
+                      <Children>
+                        <HintWidget DataSource="{SellAllHint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                      </Children>
+                    </ButtonWidget>
+                    <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="30" HorizontalAlignment="Left" VerticalAlignment="Center" PositionYOffset="2" MarginLeft="50" Brush="InventoryHeaderFontBrush" Brush.FontSize="30" Text="@RightInventoryOwnerName" ClipContents="false" />
+                  </Children>
+                </Widget>
+                <Widget Id="GoldContainer" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="110" SuggestedHeight="40" HorizontalAlignment="Right" MarginLeft="20" MarginRight="20" MarginTop="25">
+                  <Children>
+                    <Widget Id="Image" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="32" SuggestedHeight="31" HorizontalAlignment="Right" VerticalAlignment="Center" PositionYOffset="-2" Sprite="Inventory\icon_gold" />
+                    <TextWidget Id="Text" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Right" VerticalAlignment="Center" MarginRight="35" Brush="InventoryGoldFontBrush" Brush.FontSize="20" Brush.TextHorizontalAlignment="Right" IntText="@RightInventoryOwnerGold" />
+                  </Children>
+                </Widget>
+
+                <Widget Id="PartyStats" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="120" SuggestedHeight="40" HorizontalAlignment="Right" MarginLeft="20" MarginRight="150" MarginTop="25">
+                  <Children>
+
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="33" SuggestedHeight="41" HorizontalAlignment="Right" VerticalAlignment="Center" Sprite="Inventory\icon_inventory_weight" />
+                    <TextWidget Id="Weight" DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="30" HorizontalAlignment="Right" VerticalAlignment="Center" PositionYOffset="-1" MarginRight="40" Brush="InventoryWeightFont" Brush.FontSize="20" Brush.TextHorizontalAlignment="Right" Text="@EquipmentCountText" />
+                    <HintWidget DataSource="{EquipmentMaxCountHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+
+                  </Children>
+                </Widget>
+                <InventoryList Id="PlayerInventoryListWidget" MarginTop="!SidePanel.List.MarginTop" Parameter.IsPlayerItem="true" Parameter.ListDataSource="{RightItemListVM}" Parameter.ListTag="PlayerInventory" Parameter.SortDataSource="{PlayerInventorySortDataVM}" />
+              </Children>
+            </Widget>
+
+          </Children>
+        </ListPanel>
+
+        <InventoryTooltip Id="InventoryTooltip" DoNotAcceptEvents="true" />
+        <InventoryItemPreview DataSource="{ItemPreview}" Id="ItemPreview" />
+      </Children>
+    </InventoryScreenWidget>
+  </Window>
+</Prefab>

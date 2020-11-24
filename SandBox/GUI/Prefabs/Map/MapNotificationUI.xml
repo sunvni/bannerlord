@@ -1,0 +1,23 @@
+<Prefab>
+  <Constants>
+    
+  </Constants>
+  <Window>
+    <ListPanel Id="MapNotificationWidget" WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="300" HorizontalAlignment="Right" VerticalAlignment="Bottom" MarginBottom="310" DoNotAcceptEvents="true" LayoutImp.LayoutMethod="VerticalBottomToTop">
+      <Children>
+
+        <Widget Id="MoreTextWidgetContainer" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="60" SuggestedHeight="50" MarginRight="15" HorizontalAlignment="Right" VerticalAlignment="Center" Brush="Map.Notification.More.Panel" IsVisible="false">
+          <Children>
+            <TextWidget Id="MoreTextWidget" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Map.Notification.More.Text"/>
+          </Children>
+        </Widget>
+
+        <MapNotificationContainerWidget DataSource="{NotificationItems}" WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="560" VerticalAlignment="Bottom" LayoutImp.LayoutMethod="VerticalTopToBottom" DoNotAcceptEvents="true" MaxAmountOfNotificationsToShow="5" MoreTextWidgetContainer="..\MoreTextWidgetContainer" MoreTextWidget="..\MoreTextWidgetContainer\MoreTextWidget">
+          <ItemTemplate>
+            <MapNotificationItem/>
+          </ItemTemplate>
+        </MapNotificationContainerWidget>
+      </Children>
+    </ListPanel>
+  </Window>
+</Prefab> 

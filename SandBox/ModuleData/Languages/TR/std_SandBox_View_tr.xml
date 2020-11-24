@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Türkçe" />
+  </tags>
+  <strings>
+    <string id="171fTtIN" text="SandBox" />
+    <string id="6mN03uTP" text="Kayıtlı Oyunlar" />
+    <string id="9NuttOBC" text="Yükle" />
+    <string id="A7349NHy" text="Kritik Krallık Kararı" />
+    <string id="AbEh2y8o" text="Kaydet ve Çık" />
+    <string id="bFzZwwjT" text="İncele" />
+    <string id="bV75iwKa" text="Kaydet" />
+    <string id="e0KdfaNe" text="Farklı Kaydet" />
+    <string id="NqarFr4P" text="Ayarlar" />
+    <string id="PXT6aA4J" text="Sefer Ayarları" />
+    <string id="RamV6yLM" text="Ana Menüye Çıkış" />
+    <string id="VHjIJGja" text="Bir krallıkta olmalısın" />
+    <string id="XzZFhRwr" text="Oyuna Geri Dön" />
+  </strings>
+</base>

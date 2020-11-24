@@ -1,0 +1,16 @@
+<Prefab>
+  <Constants>
+
+  </Constants>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+      <Children>
+        <MultiplayerAdminMessageWidget DataSource="{MessageQueue}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="200">
+          <ItemTemplate>
+            <MultiplayerAdminMessageItemTextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginLeft="50" MarginRight="50" Brush="MPAdminMessage.Text" IsVisible="false" Text="@ActionText" Command.Remove="ExecuteAction" />
+          </ItemTemplate>
+        </MultiplayerAdminMessageWidget>
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

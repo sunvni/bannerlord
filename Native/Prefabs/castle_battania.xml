@@ -1,0 +1,330 @@
+<prefabs>
+
+	<game_entity name="battania_castle_stairs_a_l2" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_battania_castle_stairs_a_l2" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="battania_castle_stairs_a_l2"/>
+		</components>
+		<children>
+			<game_entity name="stairs_bo" old_prefab_name="">
+				
+		<physics mass="1.000" shape="bo_2_battania_castle_stairs_a_l2">
+			<body_flags>
+				<body_flag name="has_steps"/>
+			</body_flags>
+		</physics>	
+				<additional_features>
+					<feature name="apply_factor_color_to_all_components" value="false"/>
+				</additional_features>
+			</game_entity>
+		</children>
+		<additional_features>
+			<feature name="apply_factor_color_to_all_components" value="false"/>
+		</additional_features>
+	</game_entity>	
+
+	<game_entity name="battania_castle_stairs_b_l2" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_battania_castle_stairs_b_l2" mass="1.000">
+			<body_flags>
+				<body_flag name="has_steps"/>
+			</body_flags>
+		</physics>
+		<components>
+			<meta_mesh_component name="battania_castle_stairs_b_l2"/>
+		</components>
+	</game_entity>
+	<game_entity name="battania_castle_stairs_c_l2" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_battania_castle_stairs_c_l2" mass="1.000">
+			<body_flags>
+				<body_flag name="has_steps"/>
+			</body_flags>
+		</physics>
+		<components>
+			<meta_mesh_component name="battania_castle_stairs_c_l2"/>
+		</components>
+	</game_entity>
+	<game_entity name="battania_castle_stairs_a_l3" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_battania_castle_stairs_a_l3" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="battania_castle_stairs_a_l3"/>
+		</components>
+		<children>
+			<game_entity name="stairs_bo" old_prefab_name="">
+				
+		<physics mass="1.000" shape="bo_2_battania_castle_stairs_a_l3">
+			<body_flags>
+				<body_flag name="has_steps"/>
+			</body_flags>
+		</physics>	
+				<additional_features>
+					<feature name="apply_factor_color_to_all_components" value="false"/>
+				</additional_features>
+			</game_entity>
+		</children>
+		<additional_features>
+			<feature name="apply_factor_color_to_all_components" value="false"/>
+		</additional_features>
+	</game_entity>	
+
+	<game_entity name="battania_castle_keep_a_l1" old_prefab_name="" occlusion_body_name="bo_occ_battania_castle_keep_a_l1">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_battania_castle_keep_a_l1" mass="1.000"/>
+		<occlusion_body_flags>
+			<occlusion_body_flag name="two_sided"/>
+		</occlusion_body_flags>
+		<components>
+			<meta_mesh_component name="battania_castle_keep_a_l1"/>
+		</components>
+	</game_entity>
+	<game_entity name="battania_castle_keep_a_l2" old_prefab_name="" occlusion_body_name="bo_occ_battania_castle_keep_a_l2">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_battania_castle_keep_a_l2" mass="1.000"/>
+		<occlusion_body_flags>
+			<occlusion_body_flag name="two_sided"/>
+		</occlusion_body_flags>
+		<components>
+			<meta_mesh_component name="battania_castle_keep_a_l2"/>
+		</components>
+	</game_entity>
+	<game_entity name="battania_castle_keep_a_l3" old_prefab_name="" occlusion_body_name="bo_occ_battania_castle_keep_a_l3">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_battania_castle_keep_a_l3" mass="1.000"/>
+		<occlusion_body_flags>
+			<occlusion_body_flag name="two_sided"/>
+		</occlusion_body_flags>
+		<components>
+			<meta_mesh_component name="battania_castle_keep_a_l3"/>
+		</components>
+	</game_entity>
+	<game_entity name="battania_castle_keep_a_l3_door_a" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_battania_castle_keep_a_l3_door_a" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="battania_castle_keep_a_l3_door_a"/>
+		</components>
+	</game_entity>
+	<game_entity name="battania_castle_keep_a_l3_door_b" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_battania_castle_keep_a_l3_door_b" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="battania_castle_keep_a_l3_door_b"/>
+		</components>
+	</game_entity>
+	<game_entity name="battania_castle_baracks_a_l3" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_battania_castle_baracks_a_l3" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="battania_castle_baracks_a_l3"/>
+		</components>
+	</game_entity>
+	<game_entity name="battania_castle_barn_b_l3" old_prefab_name="" occlusion_body_name="bo_occ_battania_castle_barn_b_l3">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_battania_castle_barn_b_l3" mass="1.000"/>
+		<occlusion_body_flags>
+			<occlusion_body_flag name="two_sided"/>
+		</occlusion_body_flags>
+		<components>
+			<meta_mesh_component name="battania_castle_barn_b_l3"/>
+		</components>
+	</game_entity>
+	<game_entity name="battania_castle_barn_a_l3" old_prefab_name="" occlusion_body_name="bo_occ_battania_castle_barn_a_l3">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_battania_castle_barn_a_l3" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="battania_castle_barn_a_l3"/>
+		</components>
+	</game_entity>
+	<game_entity name="battania_castle_keep_a_l1_interior" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_battania_castle_keep_a_l1_interior" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="battania_castle_keep_a_l1_interior"/>
+		</components>
+	</game_entity>
+	<game_entity name="battania_castle_baracks_a_l1" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_baracks_a_l1">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_european_castle_baracks_a_l1" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="european_castle_baracks_a_l1"/>
+		</components>
+	</game_entity>
+	<game_entity name="battania_castle_barn_a_l1" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_barn_a_l1">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_european_castle_barn_a_l1" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="european_castle_barn_a_l1"/>
+		</components>
+	</game_entity>
+	<game_entity name="battania_castle_barn_b_l1" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_barn_b_l1">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_european_castle_barn_b_l1" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="european_castle_barn_b_l1"/>
+		</components>
+	</game_entity>
+	<game_entity name="battania_castle_stairs_a_l1" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_european_castle_stairs_a_l1" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="european_castle_stairs_a_l1"/>
+		</components>
+		<children>
+			<game_entity name="battania_castle_stairs_a_l1_stairs" old_prefab_name="">
+				
+		<physics mass="1.000" shape="bo_2_european_castle_stairs_a_l1">
+			<body_flags>
+				<body_flag name="has_steps"/>
+			</body_flags>
+		</physics>	
+				<additional_features>
+					<feature name="apply_factor_color_to_all_components" value="false"/>
+				</additional_features>
+			</game_entity>
+		</children>
+		<additional_features>
+			<feature name="apply_factor_color_to_all_components" value="false"/>
+		</additional_features>
+	</game_entity>
+	<game_entity name="battania_castle_stairs_b_l1" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_european_castle_stairs_b_l1" mass="1.000">
+			<body_flags>
+				<body_flag name="has_steps"/>
+			</body_flags>
+		</physics>
+		<components>
+			<meta_mesh_component name="european_castle_stairs_b_l1"/>
+		</components>
+	</game_entity>
+	<game_entity name="battania_castle_stairs_c_l1" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_european_castle_stairs_c_l1" mass="1.000">
+			<body_flags>
+				<body_flag name="has_steps"/>
+			</body_flags>
+		</physics>
+		<components>
+			<meta_mesh_component name="european_castle_stairs_c_l1"/>
+		</components>
+	</game_entity>
+	<game_entity old_prefab_name="" name="battania_castle_corner_roof">
+		<children>
+			<game_entity old_prefab_name="" name="battania_castle_corner_roof_1" occlusion_body_name="bo_occ_battania_castle_corner_roof_1">
+				<components>
+					<meta_mesh_component name="battania_castle_corner_roof_1"/>
+				</components>
+				<physics shape="bo_battania_castle_corner_roof_1" mass="1.000"/>
+				<edit_mode_data selection_group_mask="0"/>
+			</game_entity>
+			<game_entity old_prefab_name="" name="battania_castle_corner_roof_2" occlusion_body_name="bo_occ_battania_castle_corner_roof_2">
+				<components>
+					<meta_mesh_component name="battania_castle_corner_roof_2"/>
+				</components>
+				<physics shape="bo_battania_castle_corner_roof_2" mass="1.000"/>
+				<edit_mode_data selection_group_mask="0"/>
+			</game_entity>
+			<game_entity old_prefab_name="" name="battania_castle_corner_roof_3" occlusion_body_name="bo_occ_battania_castle_corner_roof_3">
+				<components>
+					<meta_mesh_component name="battania_castle_corner_roof_3"/>
+				</components>
+				<physics shape="bo_battania_castle_corner_roof_3" mass="1.000"/>
+				<edit_mode_data selection_group_mask="0"/>
+			</game_entity>
+			<game_entity old_prefab_name="" name="battania_castle_corner_roof_4" occlusion_body_name="bo_occ_battania_castle_corner_roof_4">
+				<components>
+					<meta_mesh_component name="battania_castle_corner_roof_4"/>
+				</components>
+				<physics shape="bo_battania_castle_corner_roof_4" mass="1.000"/>
+				<edit_mode_data selection_group_mask="0"/>
+			</game_entity>
+			<game_entity old_prefab_name="" name="battania_castle_corner_roof_5" occlusion_body_name="bo_occ_battania_castle_corner_roof_5">
+				<components>
+					<meta_mesh_component name="battania_castle_corner_roof_5"/>
+				</components>
+				<physics shape="bo_battania_castle_corner_roof_5" mass="1.000"/>
+				<edit_mode_data selection_group_mask="0"/>
+			</game_entity>
+			<game_entity old_prefab_name="" name="battania_castle_corner_roof_6">
+				<components>
+					<meta_mesh_component name="battania_castle_corner_roof_6"/>
+				</components>
+				<physics shape="bo_battania_castle_corner_roof_6" mass="1.000"/>
+				<edit_mode_data selection_group_mask="0"/>
+			</game_entity>
+		</children>
+		<edit_mode_data selection_group_mask="0"/>
+	</game_entity>
+	<game_entity name="battania_castle_tower_roof">
+		<children>
+			<game_entity name="battania_castle_tower_roof_1" occlusion_body_name="bo_occ_battania_castle_tower_roof_1">
+				<components>
+					<meta_mesh_component name="battania_castle_tower_roof_1"/>
+				</components>
+				<physics shape="bo_battania_castle_tower_roof_1" mass="1.000"/>
+				<edit_mode_data selection_group_mask="0"/>
+			</game_entity>
+			<game_entity name="battania_castle_tower_roof_2" occlusion_body_name="bo_occ_battania_castle_tower_roof_2">
+				<components>
+					<meta_mesh_component name="battania_castle_tower_roof_2"/>
+				</components>
+				<physics shape="bo_battania_castle_tower_roof_2" mass="1.000"/>
+				<edit_mode_data selection_group_mask="0"/>
+			</game_entity>
+			<game_entity name="battania_castle_tower_roof_3" occlusion_body_name="bo_occ_battania_castle_tower_roof_3">
+				<components>
+					<meta_mesh_component name="battania_castle_tower_roof_3"/>
+				</components>
+				<physics shape="bo_battania_castle_tower_roof_3" mass="1.000"/>
+				<edit_mode_data selection_group_mask="0"/>
+			</game_entity>
+			<game_entity name="battania_castle_tower_roof_4" occlusion_body_name="bo_occ_battania_castle_tower_roof_4">
+				<components>
+					<meta_mesh_component name="battania_castle_tower_roof_4"/>
+				</components>
+				<physics shape="bo_battania_castle_tower_roof_4" mass="1.000"/>
+				<edit_mode_data selection_group_mask="0"/>
+			</game_entity>
+			<game_entity name="battania_castle_tower_roof_5" occlusion_body_name="bo_occ_battania_castle_tower_roof_5">
+				<components>
+					<meta_mesh_component name="battania_castle_tower_roof_5"/>
+				</components>
+				<physics shape="bo_battania_castle_tower_roof_5" mass="1.000"/>
+				<edit_mode_data selection_group_mask="0"/>
+			</game_entity>
+			<game_entity name="battania_castle_tower_roof_6" occlusion_body_name="bo_occ_battania_castle_tower_roof_6">
+				<components>
+					<meta_mesh_component name="battania_castle_tower_roof_6"/>
+				</components>
+				<physics shape="bo_battania_castle_tower_roof_6" mass="1.000"/>
+				<edit_mode_data selection_group_mask="0"/>
+			</game_entity>
+			<game_entity name="battania_castle_tower_roof_7" occlusion_body_name="bo_occ_battania_castle_tower_roof_7">
+				<components>
+					<meta_mesh_component name="battania_castle_tower_roof_7"/>
+				</components>
+				<physics shape="bo_battania_castle_tower_roof_7" mass="1.000"/>
+				<edit_mode_data selection_group_mask="0"/>
+			</game_entity>
+			<game_entity name="battania_castle_tower_roof_8" occlusion_body_name="bo_occ_battania_castle_tower_roof_8">
+				<components>
+					<meta_mesh_component name="battania_castle_tower_roof_8"/>
+				</components>
+				<physics shape="bo_battania_castle_tower_roof_8" mass="1.000"/>
+				<edit_mode_data selection_group_mask="0"/>
+			</game_entity>
+			<game_entity name="battania_castle_tower_roof_9">
+				<components>
+					<meta_mesh_component name="battania_castle_tower_roof_9"/>
+				</components>
+				<physics shape="bo_battania_castle_tower_roof_9" mass="1.000"/>
+				<edit_mode_data selection_group_mask="0"/>
+			</game_entity>
+		</children>
+		<edit_mode_data selection_group_mask="0"/>
+	</game_entity>
+</prefabs>
+

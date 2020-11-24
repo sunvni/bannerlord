@@ -1,0 +1,49 @@
+<Prefab>
+  <Constants>
+    <Constant Name="MainHeroVisual.Padding" Value="5" />
+
+    <Constant Name="Party.Banner.Width" BrushLayer="Default" BrushName="Nameplate.FlatBanner.Party" BrushValueType="Width" />
+    <Constant Name="Party.Banner.Height" BrushLayer="Default" BrushName="Nameplate.FlatBanner.Party" BrushValueType="Height" />
+
+    <Constant Name="Party.Banner.Width.Scaled" MultiplyResult="0.20" Value="!Party.Banner.Width" />
+    <Constant Name="Party.Banner.Height.Scaled" MultiplyResult="0.20" Value="!Party.Banner.Height" />
+
+  </Constants>
+  <Window>
+    <PartyNameplateWidget DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Brush="TutorialHighlightBrush" DisorganizedWidget="NameplateLayoutListPanel\DisorganizedWidget" HeadPosition="@HeadPosition" IsArmy="@IsArmy" IsBehind="@IsBehind" IsHigh="@IsHigh" IsInArmy="@IsInArmy" IsInSettlement="@IsInSettlement" IsMainParty="@IsMainParty" IsTargetedByTutorial="@IsTargetedByTutorial" IsVisibleOnMap="@IsVisibleOnMap" MainPartyArrowWidget="MainPartyArrowWidget" NameplateExtraInfoTextWidget="NameplateLayoutListPanel\LabelsList\NameplateExtraInfoTextWidget" NameplateFullNameTextWidget="NameplateFullNameTextWidget" NameplateLayoutListPanel="NameplateLayoutListPanel" NameplateTextWidget="NameplateLayoutListPanel\LabelsList\NameplateTextWidget" PartyBannerWidget="NameplateLayoutListPanel\PartyBannerWidget" Position="@Position" ShouldShowFullName="@ShouldShowFullName" TrackerFrame="TrackerFrame" IsPrisoner="@IsPrisoner">
+      <Children>
+
+        <ListPanel Id="NameplateLayoutListPanel" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren">
+          <Children>
+            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="25" SuggestedHeight="41" HorizontalAlignment="Right" Sprite="Icons\icon_issue_active" IsEnabled="false" IsVisible="@IsRelatedToAQuest" />
+
+            <MaskedTextureWidget Id="PartyBannerWidget" DataSource="{PartyBanner}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Party.Banner.Width.Scaled" SuggestedHeight="!Party.Banner.Height.Scaled" VerticalAlignment="Center" Brush="Nameplate.FlatBanner.Party" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode" OverlayTextureScale="2.2">
+              <Children>
+                <!--Army visual-->
+                <Widget DataSource="{..}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="-5" MarginRight="-5" MarginTop="-5" MarginBottom="-5" Sprite="leader_frame_9" IsVisible="@IsArmy" />
+              </Children>
+            </MaskedTextureWidget>
+
+            <ListPanel Id="LabelsList" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren">
+              <Children>
+                <TextWidget Id="NameplateTextWidget" DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" MarginLeft="10" Brush.FontColor="@FactionColor" Brush.FontSize="35" ClipContents="false" Text="@Count" />
+                <TextWidget Id="NameplateExtraInfoTextWidget" DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Bottom" Brush.FontColor="@FactionColor" Brush.FontSize="28" ClipContents="false" Text="@ExtraInfoText" />
+              </Children>
+            </ListPanel>
+
+          </Children>
+        </ListPanel>
+        <TextWidget Id="NameplateFullNameTextWidget" DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginRight="10" Brush="PartyNameplate.FullName.Text" Brush.FontColor="@FactionColor" ClipContents="false" Text="@FullName" />
+
+        <ButtonWidget Id="MainPartyArrowWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="120" SuggestedHeight="88" Brush="Map.MainHeroParty.Tracker" CircularClipEnabled="true" CircularClipRadius="40" HorizontalAlignment="Right" Command.Click="ExecuteSetCameraPosition">
+          <Children>
+            <ImageIdentifierWidget DataSource="{MainHeroVisual}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="!MainHeroVisual.Padding" MarginRight="!MainHeroVisual.Padding" MarginTop="!MainHeroVisual.Padding" MarginBottom="!MainHeroVisual.Padding" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode" IsDisabled="true" MaterialAlphaFactor="0.5" />
+          </Children>
+        </ButtonWidget>
+        <Widget Id="TrackerFrame" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="115" SuggestedHeight="115" HorizontalAlignment="Center" VerticalAlignment="Center" PositionYOffset="-10" Sprite="Nameplates\DayFrame@2x" Brush.AlphaFactor="0.6" IsEnabled="false" />
+
+
+      </Children>
+    </PartyNameplateWidget>
+  </Window>
+</Prefab>

@@ -1,0 +1,64 @@
+<Prefab>
+  <Constants>
+    <Constant Name="ButtonBig.Width" Value="620" />
+    <Constant Name="ButtonBig.Height" Value="312" />
+
+    <Constant Name="ButtonSmall.Width" Value="232" />
+    <Constant Name="ButtonSmall.Height" Value="117" />
+  </Constants>
+  <VisualDefinitions>
+    <VisualDefinition Name="NewsItem.Bar" TransitionDuration="0.050">
+      <VisualState SuggestedHeight="2" State="Default" />
+      <VisualState SuggestedHeight="2" State="Pressed" />
+      <VisualState SuggestedHeight="2" State="Selected" />
+      <VisualState SuggestedHeight="10" State="Hovered" />
+      <VisualState SuggestedHeight="2" State="Disabled" />
+    </VisualDefinition>
+  </VisualDefinitions>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+      <Children>
+        <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" HorizontalAlignment="Center" MarginRight="20">
+          <Children>
+            <ButtonWidget DataSource="{MainNews}" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!ButtonBig.Width" SuggestedHeight="!ButtonBig.Height" Command.Click="ExecuteOpenLink" UpdateChildrenStates="true">
+              <Children>
+                <!--News Image Container-->
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ClipContents="true">
+                  <Children>
+                    <LauncherOnlineImageTextureWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" HorizontalAlignment="Center" VerticalAlignment="Center" Brush.MaterialAlphaFactor="0.6" ImageSizePolicy="ScaleToBiggerDimension" LoadingIconWidget="LoadingIconWidget" OnlineImageSourceUrl="@NewsImageUrl">
+                      <Children>
+                        <Standard.CircleLoadingWidget Id="LoadingIconWidget" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                      </Children>
+                    </LauncherOnlineImageTextureWidget>
+                  </Children>
+                </Widget>
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="launcher_news_grid_shadow" Brush.AlphaFactor="0.5" />
+                <Widget VisualDefinition="NewsItem.Bar" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" VerticalAlignment="Bottom" SuggestedHeight="2" Brush="Launcher.News.Bar" />
+                <!--<TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="40" VerticalAlignment="Bottom" MarginLeft="15" MarginRight="15" MarginBottom="6" Brush="Launcher.News.TitleText" Text="@Title" />-->
+              </Children>
+            </ButtonWidget>
+            <ListPanel DataSource="{ImportantNews}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" LayoutImp.LayoutMethod="VerticalBottomToTop" MarginLeft="15" IsVisible="false">
+              <ItemTemplate>
+                <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!ButtonSmall.Width" SuggestedHeight="!ButtonSmall.Height" Command.Click="ExecuteOpenLink" UpdateChildrenStates="true" MarginBottom="10">
+                  <Children>
+                    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ClipContents="true">
+                      <Children>
+                        <LauncherOnlineImageTextureWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" HorizontalAlignment="Center" VerticalAlignment="Center" Brush.MaterialAlphaFactor="0.8" ImageSizePolicy="ScaleToBiggerDimension" LoadingIconWidget="LoadingIconWidget" OnlineImageSourceUrl="@NewsImageUrl">
+                          <Children>
+                            <Standard.CircleLoadingWidget Id="LoadingIconWidget" />
+                          </Children>
+                        </LauncherOnlineImageTextureWidget>
+                      </Children>
+                    </Widget>
+                    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="launcher_news_grid_shadow" Brush.AlphaFactor="0.5" />
+                    <Widget VisualDefinition="NewsItem.Bar" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" VerticalAlignment="Bottom" SuggestedHeight="2" Brush="Launcher.News.Bar" />
+                  </Children>
+                </ButtonWidget>
+              </ItemTemplate>
+            </ListPanel>
+          </Children>
+        </ListPanel>
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

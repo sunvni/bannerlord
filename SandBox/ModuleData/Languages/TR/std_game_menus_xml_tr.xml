@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Türkçe" />
+  </tags>
+  <strings>
+    <string id="2YYRyrOO" text="Çık..." />
+    <string id="3nT5wWzb" text="Teslim ol." />
+    <string id="49qjBLr4" text="Bu köyü yağmalamaya devam etmek istiyor musun?" />
+    <string id="8k6AXNW8" text="Başarıyla kaçtın." />
+    <string id="9OaaK18j" text="Küçük Ülke Üssü" />
+    <string id="AFJ3BvTH" text="Muhafızlar hızla etrafını sarıp silahlarına el koydu. Sövgü ve hakaretlerle seni esaretinin çilesini çekeceğin zindana attılar." />
+    <string id="bLNocKd1" text="Devam et.." />
+    <string id="F3Bi3R6J" text="Köylüler cesaretle ve azimle savaşarak bir arada kalmayı ve senin güçlerini püskürtmeyi başardılar." />
+    <string id="G8ybKBKr" text="{SETTLEMENT_TAKEN_TEXT}" />
+    <string id="hm4FQCE1" text="Liderle konuş." />
+    <string id="kB65SzbF" text="Evet." />
+    <string id="LGHFBwQU" text="Muhafızları püskürttün ve kaçmadan önce izlerini örterek labirent gibi sokaklarda peşindekileri kolayca atlattın." />
+    <string id="Mg1PotzO" text="Kısa bir bekleyişten sonra, muhafızlar senin için kapıyı açtı ve birliğini içeri aldı." />
+    <string id="pSSDfAjR" text="Yoksul bir seyyah kılığına bürünerek muhafızları kandırdın ve kente girdin." />
+    <string id="QpQQJjD6" text="Bu kalenin lordu bu surların içine girmeni yasakladı ve muhafızların çavuşu yaklaşmaya kalkışırsan, adamlarının saldıracağını bildirdi." />
+    <string id="R8rzU9sm" text="Cheat : Çık." />
+    <string id="RrM7800A" text="Gizlice içeri girmeye çalıştığın sırada muhafızlardan biri seni tanıdı ve alarm verdi! Kentteki bütün muhafızlar etrafını sarmadan kapıdan kaçmalısın!" />
+    <string id="veWOovVv" text="Devam Et..." />
+    <string id="znDzVxVJ" text="Hayır." />
+  </strings>
+</base>

@@ -1,0 +1,13 @@
+<Window>
+  <InventoryItemPreviewWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ItemTableau="Panel\ItemTableau" Sprite="BlankWhiteSquare_9" Brush.Color="#000000AA" IsVisible="false" IsPreviewOpen="@IsSelected" >
+    <Children>
+      <Widget Id="Panel" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="840" SuggestedHeight="780" HorizontalAlignment="Center" VerticalAlignment="Top" MarginTop="100" Brush="Frame1Brush">
+        <Children>
+          <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="27" HorizontalAlignment="Center" Brush="InventoryButtonTextBrush" Brush.FontSize="36" Brush.TextHorizontalAlignment="Center" Text="@ItemName" />
+          <ItemTableauWidget DataSource="{ItemTableau}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="750" SuggestedHeight="750" MarginTop="15" HorizontalAlignment="Center" ItemModifierId="@ItemModifierId" StringId="@StringId" />
+          <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="84" SuggestedHeight="84" HorizontalAlignment="Center" VerticalAlignment="Center" MarginLeft="830" MarginBottom="775" Command.Click="ExecuteClose" Brush="Popup.CloseButton" />
+        </Children>
+      </Widget>
+    </Children>
+  </InventoryItemPreviewWidget>
+</Window>

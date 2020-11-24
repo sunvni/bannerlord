@@ -1,0 +1,48 @@
+<Prefab>
+  <Window>
+
+    <ValueBasedVisibilityWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+      <Children>
+
+        <!--Background Image-->
+        <KingdomDecisionFactionTypeVisualWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Kingdom.Decision.Faction.Type.Image" FactionName="@FactionName" />
+
+        <!--Background Image Tint-->
+        <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="BlankWhiteSquare_9" Brush.Color="#00000090" />
+
+        <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginLeft="30" MarginRight="30" LayoutImp.LayoutMethod="VerticalBottomToTop">
+          <Children>
+
+            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="20" Brush="Kingdom.DecisionTitleBig.Text" Text="@NameText" ClipContents="false"/>
+
+            <!--Kingdom Banner-->          
+            <MaskedTextureWidget DataSource="{FactionBanner}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="105" SuggestedHeight="126" HorizontalAlignment="Center" MarginTop="15" Brush="Kingdom.TornBanner" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode" OverlayTextureScale="1.8" />
+
+            <!--Settlements Title-->
+            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="35" Brush="Kingdom.DecisionTitleMedium.Text" Text="@SettlementsText" ClipContents="false"/>
+            <!--Settlement Names-->
+            <RichTextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="10" Brush="Kingdom.DecisionParagraph.Link.Text" Command.LinkClick="ExecuteLocationLink" Text="@SettlementsListText" ClipContents="false" HoveredCursorState="RightClickLink"/>
+          
+            <!--Castles Title-->
+            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="35" Brush="Kingdom.DecisionTitleMedium.Text" Text="@CastlesText" ClipContents="false"/>
+            <!--Castles Names-->
+            <RichTextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="10" Brush="Kingdom.DecisionParagraph.Link.Text" Command.LinkClick="ExecuteLocationLink" Text="@CastlesListText" ClipContents="false" HoveredCursorState="RightClickLink"/>
+
+            <!--Strength Title-->
+            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="35" Brush="Kingdom.DecisionTitleMedium.Text" Text="@TotalStrengthText" ClipContents="false"/>
+            <!--Total Strength-->
+            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="10" Brush="Kingdom.DecisionParagraph.Text" IntText="@TotalStrength" ClipContents="false"/>
+
+            <!--Active Policies Title-->
+            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="35" Brush="Kingdom.DecisionTitleMedium.Text" Text="@ActivePoliciesText" ClipContents="false"/>
+            <!--Active Policies-->
+            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="10" Brush="Kingdom.DecisionParagraph.Text" Text="@ActivePoliciesListText" ClipContents="false"/>
+
+          </Children>
+        </ListPanel>
+
+      </Children>
+    </ValueBasedVisibilityWidget>
+
+  </Window>
+</Prefab>

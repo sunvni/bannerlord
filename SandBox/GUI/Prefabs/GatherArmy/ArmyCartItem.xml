@@ -1,0 +1,49 @@
+<Prefab>
+  <Constants>
+
+    <Constant Name="ArmyManagement.Army.Cart.Width" BrushLayer="Default" BrushName="ArmyManagement.Army.Cart" BrushValueType="Width" />
+    <Constant Name="ArmyManagement.Army.Cart.Height" BrushLayer="Default" BrushName="ArmyManagement.Army.Cart" BrushValueType="Height" />
+
+  </Constants>
+  <Window>
+    <ButtonWidget DoNotAcceptEvents="@IsMainHero" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!ArmyManagement.Army.Cart.Width" SuggestedHeight="!ArmyManagement.Army.Cart.Height" Brush="ArmyManagement.Army.Cart">
+      <Children>
+
+        <!--Party Leader Face-->
+        <ImageIdentifierWidget DataSource="{LordFace}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="111" SuggestedHeight="79" HorizontalAlignment="Center" MarginTop="7" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode" IsEnabled="false">
+          <Children>
+
+            <!--Party Strength-->
+            <TextWidget DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Right" VerticalAlignment="Top" MarginRight="15" MarginTop="3" Brush="ArmyManagement.Army.Cart.Value" IntText="@Strength" />
+
+          </Children>
+        </ImageIdentifierWidget>
+
+        <!--Party Leader Name-->
+        <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="20" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginBottom="20" Brush="ArmyManagement.Army.Cart.Name" IsEnabled="false" Text="@LeaderNameText" />
+
+        <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginRight="15" MarginLeft="15" PositionYOffset="27" IsEnabled="false">
+          <Children>
+
+            <!--Party Distance-->
+            <RichTextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" MarginRight="0" Brush="ArmyManagement.Army.Cart.Value" Text="@DistanceText" />
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" />
+            <!--Party Draft Cost Widget-->
+            <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" IsHidden="@IsMainHero">
+              <Children>
+                <RichTextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Brush="ArmyManagement.Army.Cart.Value" Brush.FontSize="18" IsVisible="@IsAlreadyWithPlayer" Text="@InArmyText" />
+                <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" Brush="ArmyManagement.Army.Cart.Value" Brush.FontSize="24" MarginTop="5" IntText="@Cost" IsHidden="@IsAlreadyWithPlayer" />
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="17" SuggestedHeight="27" Sprite="SPKingdom\influence_icon_small" MarginLeft="3" IsHidden="@IsAlreadyWithPlayer" />
+              </Children>
+            </ListPanel>
+
+          </Children>
+        </ListPanel>
+
+        <!--Remove Button-->
+        <ButtonWidget Id="RemoveCrossButton" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="40" SuggestedHeight="40" HorizontalAlignment="Right" Brush="ArmyManagement.Army.Cart.Remove" Command.Click="ExecuteAction" IsHidden="@IsMainHero"/>
+
+      </Children>
+    </ButtonWidget>
+  </Window>
+</Prefab>

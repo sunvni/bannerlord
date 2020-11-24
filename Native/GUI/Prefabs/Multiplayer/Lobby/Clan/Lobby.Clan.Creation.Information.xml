@@ -1,0 +1,71 @@
+<Prefab>
+  <Constants>
+    <Constant Name="FriendsPanel.SlotButton.Width" BrushName="MPLobby.FriendsPanel.SlotButton" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="FriendsPanel.SlotButton.Height" BrushName="MPLobby.FriendsPanel.SlotButton" BrushLayer="Default" BrushValueType="Height"/>
+  </Constants>
+	<Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsVisible="@IsSelected">
+      <Children>
+
+        <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="225" MarginRight="225" LayoutImp.LayoutMethod="VerticalBottomToTop">
+          <Children>
+            <!--Title-->
+            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginBottom="25" Brush="MPLobby.Clan.Title.Text" Text="@CreateClanText" />
+            
+            <!--How To Create A Clan Information-->
+            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginBottom="25" Brush="MPLobby.Clan.SubTitle.Text" Text="@CreateClanDescriptionText" />
+            
+            <!--If there are not enough members in the party, show this-->
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginLeft="150" MarginRight="150" Sprite="BlankWhiteSquare_9" Brush.Color="#000000FF" Brush.AlphaFactor="0.5" IsHidden="@DoesHaveEnoughPlayersToCreateClan">
+              <Children>
+                <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginLeft="25" MarginRight="25" MarginTop="35" MarginBottom="35" LayoutImp.LayoutMethod="VerticalBottomToTop">
+                  <Children>
+                    <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" Brush="MPLobby.Clan.SubTitle.Text" MarginBottom="35" Text="@DontHaveEnoughPlayersInPartyText" />
+                    <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" Brush="MPLobby.Clan.SubTitle.Text" Brush.FontColor="#FF0000FF" Brush.FontSize="42" Text="@PartyMemberCountText" />
+                  </Children>
+                </ListPanel>
+              </Children>
+            </Widget>
+
+            <!--Party Members -->
+            <ListPanel DataSource="{PartyMembers}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="50" MarginBottom="75" LayoutImp.LayoutMethod="HorizontalSpaced">
+              <ItemTemplate>
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="110" SuggestedHeight="120">
+                  <Children>
+                    <ButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.FriendsPanel.SlotButton">
+                      <Children>
+                        <ImageIdentifierWidget DataSource="{Avatar}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="125" SuggestedHeight="125" HorizontalAlignment="Center" VerticalAlignment="Center" ImageId="@Id" AdditionalArgs="@AdditionalArgs" IsVisible="@IsValid" ImageTypeCode="@ImageTypeCode" />
+                        <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" PositionYOffset="140">
+                          <Children>
+                            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" Brush="MPLobby.Clan.Name.Text" Brush.FontSize="20" Text="@Name" />
+                            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="25" Brush="MPLobby.Clan.Name.Text" Brush.FontColor="#FF0000FF" Brush.FontSize="20" Text="@NotEligibleInfo" />
+                          </Children>
+                        </Widget>
+                      </Children>
+                    </ButtonWidget>
+                  </Children>
+                </Widget>
+                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" PositionYOffset="90" IsEnabled="false" Brush="MPLobby.Clan.Name.Text" Brush.FontSize="20" Text="@Name" />
+              </ItemTemplate>
+            </ListPanel>
+
+            <!--Create Clan Button-->
+            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="100" SuggestedHeight="100" HorizontalAlignment="Center">
+              <Children>
+                <HintWidget DataSource="{CantCreateHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="true" IsHidden="@CanCreateClan"/>
+                <ButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="100" SuggestedHeight="100" Brush="CreateGameButton.Flat" Command.Click="ExecuteOpenClanCreationPopup" IsEnabled="@CanCreateClan">
+                  <Children>
+                    <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="24" HorizontalAlignment="Center" VerticalAlignment="Bottom" PositionYOffset="26" Brush="MPLobby.Matchmaking.CircleButtonText" Text="@CreateYourClanText" />
+                    <HintWidget DataSource="{CantCreateHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false" />
+                  </Children>
+                </ButtonWidget>
+              </Children>
+            </Widget>
+
+          </Children>
+        </ListPanel>
+
+      </Children>
+    </Widget>
+	</Window>
+</Prefab>

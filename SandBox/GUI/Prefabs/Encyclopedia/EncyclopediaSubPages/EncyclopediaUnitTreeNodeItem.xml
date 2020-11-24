@@ -1,0 +1,56 @@
+<Prefab>
+  <Constants>
+
+    <Constant Name="Encyclopedia.SubPage.Element.Width" BrushName="Encyclopedia.SubPage.Element" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="Encyclopedia.SubPage.Element.Height" BrushName="Encyclopedia.SubPage.Element" BrushLayer="Default" BrushValueType="Height"/>
+	
+	<Constant Name="Encyclopedia.CharacterTree.Line.Height" BrushName="Encyclopedia.CharacterTree.Line" BrushLayer="Default" BrushValueType="Height"/>
+
+	<Constant Name="IconAlpha" Value="0.7"/>
+  </Constants>
+  <Window>
+    <EncyclopediaUnitTreeNodeItemWidget HeightSizePolicy ="CoverChildren" WidthSizePolicy="CoverChildren" MarginLeft="10" MarginRight="10" ChildContainer="ChildContainer" LineContainer="LineContainer" LineBrush="Encyclopedia.CharacterTree.Line">
+      <Children>
+
+        <ButtonWidget DataSource="{Unit}" Command.Click="ExecuteLink" WidthSizePolicy = "Fixed" HeightSizePolicy = "Fixed" SuggestedHeight="89" SuggestedWidth="123" HorizontalAlignment="Center" Brush="Encyclopedia.SubPage.Element">
+          <Children>
+
+            <!--Element Image-->
+            <ImageIdentifierWidget Id="ElementImage" DataSource="{ImageIdentifier}" DoNotAcceptEvents="true" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent" ImageId="@Id" AdditionalArgs="@AdditionalArgs" ImageTypeCode="@ImageTypeCode" HorizontalAlignment="Center" MarginRight="3" MarginLeft="3" MarginBottom="3" MarginTop="3"/>
+			<RichTextWidget DataSource="{TierIconData}" Text="@Text" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="24" SuggestedHeight="24" HorizontalAlignment="Right" VerticalAlignment="Top" PositionXOffset="-1" PositionYOffset="6" Brush.GlobalAlphaFactor="!IconAlpha">
+				<Children>
+					<HintWidget DataSource="{Hint}" DoNotAcceptEvents="true" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent"/>
+				</Children>
+			</RichTextWidget>
+			<RichTextWidget DataSource="{TypeIconData}" Text="@Text" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="24" SuggestedHeight="24" HorizontalAlignment="Left" VerticalAlignment="Top" PositionXOffset="3" PositionYOffset="5" Brush.GlobalAlphaFactor="!IconAlpha">
+				<Children>
+					<HintWidget DataSource="{Hint}" DoNotAcceptEvents="true" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent"/>
+				</Children>
+			</RichTextWidget>
+			
+            <!--Element Name-->
+            <TextWidget DoNotAcceptEvents="true" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "Fixed" SuggestedHeight="30" VerticalAlignment="Bottom" PositionYOffset="34" Text="@NameText" Brush="Encyclopedia.SubPage.Element.Name.Text"/>
+
+            <HintWidget DoNotAcceptEvents="true" HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint"/>
+
+            <Widget DoNotAcceptEvents="true" HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" Sprite="SelectionBorder@2x_9" IsVisible="@IsActiveUnit"/>
+
+          </Children>
+        </ButtonWidget>
+		
+		<Widget Id="LineContainer" DoNotAcceptEvents="true" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" SuggestedWidth="0" HeightSizePolicy="Fixed" SuggestedHeight="!Encyclopedia.CharacterTree.Line.Height" HorizontalAlignment="Center" MarginTop="118" Sprite="BlankWhiteSquare_9" Brush.AlphaFactor="0.5">
+			<Children>
+
+			</Children>
+		</Widget>
+
+        <ListPanel Id="ChildContainer" DataSource="{Branch}" HeightSizePolicy ="CoverChildren" WidthSizePolicy="CoverChildren" SuggestedWidth="800" MarginTop="155" DoNotAcceptEvents="true"  LayoutImp.LayoutMethod = "HorizontalLeftToRight">
+          <ItemTemplate>
+            <EncyclopediaUnitTreeNodeItem/>
+          </ItemTemplate>
+        </ListPanel>
+
+      </Children>
+    </EncyclopediaUnitTreeNodeItemWidget>
+  </Window>
+</Prefab>

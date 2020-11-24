@@ -1,0 +1,72 @@
+<Prefab>
+  <Parameters>
+    <Parameter Name="IsLeftSide" DefaultValue="false" />
+  </Parameters>
+  <Constants>
+    <Constant Name="NameColumn.WidthRatio" Value="3" />
+    <Constant Name="TitleRow.Height" Value="30" />
+    <Constant Name="Row.Height" Value="62" />
+
+    <Constant Name="SteamProfileFrame.Width" Additive="-18" BrushLayer="Default" BrushName="MPScoreboard.SteamProfileFrame" BrushValueType="Width" />
+    <Constant Name="SteamProfileFrame.Height" Additive="-18" BrushLayer="Default" BrushName="MPScoreboard.SteamProfileFrame" BrushValueType="Height" />
+
+    <Constant Name="PlayerIndicator.Width" BrushLayer="Default" BrushName="MPScoreboard.PlayerIndicator" BrushValueType="Width" />
+    <Constant Name="PlayerIndicator.Height" BrushLayer="Default" BrushName="MPScoreboard.PlayerIndicator" BrushValueType="Height" />
+
+    <Constant Name="ScoreText.HorizontalAlignment" BooleanCheck="*IsLeftSide" OnFalse="Left" OnTrue="Right" />
+    <Constant Name="ScoreText.PositionXOffset" BooleanCheck="*IsLeftSide" OnFalse="30" OnTrue="-30" />
+
+    <Constant Name="FactionText.HorizontalAlignment" BooleanCheck="*IsLeftSide" OnFalse="Right" OnTrue="Left" />
+    <Constant Name="FactionText.PositionXOffset" BooleanCheck="*IsLeftSide" OnFalse="-30" OnTrue="30" />
+
+    <Constant Name="Divider.Width" BrushName="MPScoreboard.Divider" BrushLayer="Default" BrushValueType="Width" Additive="250"/>
+    <Constant Name="Divider.Height" BrushName="MPScoreboard.Divider" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="DividerNotched.Width" BrushName="MPScoreboard.DividerNotched" BrushLayer="Default" BrushValueType="Width" Additive="20"/>
+    <Constant Name="DividerNotched.Height" BrushName="MPScoreboard.DividerNotched" BrushLayer="Default" BrushValueType="Height"/>
+  </Constants>
+  <Window>
+    <MultiplayerScoreboardSideWidget Id="SideParentWidget" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" Brush.AlphaFactor="0.2" CultureId="@CultureId" MinHeight="1080" UseSecondary="@UseSecondary">
+      <Children>
+
+        <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="!FactionText.HorizontalAlignment" PositionXOffset="!FactionText.PositionXOffset" VerticalAlignment="Top" PositionYOffset="-20" LayoutImp.LayoutMethod="VerticalBottomToTop">
+          <Children>
+            <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="65"  MarginTop="20" Brush="MPScoreboard.FactionText" Text="@Name" ClipContents="false" />
+            <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Brush="MPScoreboard.TitleText" Text="@PlayersText"/>
+          </Children>
+        </ListPanel>
+
+        <MultiplayerFactionBannerWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="150" SuggestedHeight="82" HorizontalAlignment="Center" VerticalAlignment="Top" MarginTop="10" BannerWidget="Banner" FactionCode="@CultureId" UseSecondary="@UseSecondary" IconWidget="Icon">
+          <Children>
+            <Widget Id="Banner" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="200" SuggestedHeight="135" MarginTop="10" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="MPClassLoadout\faction_banner_background" />
+            <Widget Id="Icon" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="65" SuggestedHeight="65" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="FactionBanner.Small.Icon" Sprite="MPTeamSelection\banner_icon_vlandia" />
+          </Children>
+        </MultiplayerFactionBannerWidget>
+
+        <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="50" HorizontalAlignment="!ScoreText.HorizontalAlignment" PositionXOffset="!ScoreText.PositionXOffset" MarginTop="30" Brush="MPScoreboard.ScoreText" IntText="@RoundsWon" IsHidden="@IsSingleSide" />
+
+        <Widget IsHidden="@IsSingleSide" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="103" >
+          <Children>
+            <Widget Id="TitleDividerTop" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="5" HorizontalAlignment="Center" PositionXOffset="-1" Sprite="MPScoreboard\top_stroke" />
+            <!-- Titles -->
+            <Widget Id="TitlesContainer" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" VerticalAlignment="Center" SuggestedHeight="!TitleRow.Height">
+              <Children>
+                <MultiplayerScoreboardStatsListWidget Id="Titles" DataSource="{EntryProperties}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" LayoutImp.LayoutMethod="HorizontalLeftToRight" NameColumnWidthRatio="!NameColumn.WidthRatio">
+                  <ItemTemplate>
+                    <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="MPScoreboard.TitleText" Text="@Item" />
+                  </ItemTemplate>
+                  <ItemTemplate Type="First">
+                    <TextWidget Id="First" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="MPScoreboard.TitleText" Text="" />
+                  </ItemTemplate>
+                </MultiplayerScoreboardStatsListWidget>
+              </Children>
+            </Widget>
+            <Widget Id="TitleDividerBottom" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="5" HorizontalAlignment="Center" MarginTop="50" PositionXOffset="-1" Sprite="MPScoreboard\top_stroke" Brush.VerticalFlip="true"/>
+          </Children>
+        </Widget>
+        <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="5" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginBottom="50" Sprite="MPScoreboard\top_stroke" />
+
+      </Children>
+    </MultiplayerScoreboardSideWidget>
+  </Window>
+</Prefab>

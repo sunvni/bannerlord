@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Polskie" />
+  </tags>
+   <functions>
+	<function functionName="personalPronounNominative" functionBody="{?$0!.F}ona{:?$0!.N}ono{:}on{\?}"/>
+	<function functionName="personalPronounGenitive" functionBody="{?$0!.MP}jego{:?$0!.MA}jego{:?$0!.MI}jego{:?$0!.F}jej{:}jego{\?}"/>	
+	<function functionName="personalShortPronounGenitive" functionBody="{?$0!.MP}go{:?$0!.MA}go{:?$0!.MI}go{:?$0!.F}jej{:}go{\?}"/>
+	<function functionName="prepositionalPersonalPronounGenitive" functionBody="{?$0!.MP}niego{:?$0!.MA}niego{:?$0!.MI}niego{:?$0!.F}niej{:}niego{\?}"/>
+	<function functionName="personalPronounAccusative" functionBody="{?$0!.MP}jego{:?$0!.MA}jego{:?$0!.MI}jego{:?$0!.F}ją{:}je{\?}"/>	
+	<function functionName="personalShortPronounAccusative" functionBody="{?$0!.MP}go{:?$0!.MA}go{:?$0!.MI}go{:?$0!.F}ją{:}je{\?}"/>
+	<function functionName="prepositionalPersonalPronounAccusative" functionBody="{?$0!.MP}niego{:?$0!.MA}niego{:?$0!.MI}niego{:?$0!.F}nią{:}je{\?}"/>
+	<function functionName="personalPronounLocative" functionBody="{?$0!.MP}nim{:?$0!.MA}nim{:?$0!.MI}nim{:?$0!.F}niej{:}nim{\?}"/>
+	<function functionName="personalPronounInstrumental" functionBody="{?$0!.MP}nim{:?$0!.MA}nim{:?$0!.MI}nim{:?$0!.F}nią{:}nim{\?}"/>
+	<function functionName="personalPronounDative" functionBody="{?$0!.F}jej{:}jemu{\?}"/>
+	<function functionName="personalShortPronounDative" functionBody="{?$0!.F}jej{:}mu{\?}"/>
+	<function functionName="prepositionalPersonalPronounDative" functionBody="{?$0!.F}niej{:}niemu{\?}"/>
+	<function functionName="personalPronounNominativePlural" functionBody="{?$0!.F}one{:?$0!.N}one{:}oni{\?}"/>
+	<function functionName="personalPronounGenitivePlural" functionBody="ich"/>
+	<function functionName="personalPronounAccusativePlural" functionBody="{?$0!.F}je{:?$0!.N}je{:}ich{\?}"/>
+	<function functionName="prepositionalPersonalPronounGenitivePlural" functionBody="nich"/>
+	<function functionName="prepositionalPersonalPronounAccusativePlural" functionBody="{?$0!.F}nie{:?$0!.N}nie{:}nich{\?}"/>	
+	<function functionName="tenNominative" functionBody="{?$0!.F}ta{:?$0!.N}to{:}ten{\?}"/>
+	<function functionName="tamtenNominative" functionBody="{?$0!.F}tamta{:?$0!.N}tamto{:}tamten{\?}"/>
+	<function functionName="tenAccusative" functionBody="{?$0!.F}tę{:?$0!.N}to{:?$0!.MI}ten{:}tego{\?}"/>
+	<function functionName="tamtenAccusative" functionBody="{?$0!.F}tamtą{:?$0!.N}tamto{:?$0!.MI}tamten{:}tamtego{\?}"/>
+	<function functionName="tenInstrumental" functionBody="{?$0!.F}tą{:}tym{\?}"/>
+	<function functionName="tamtenInstrumental" functionBody="{?$0!.F}tamtą{:}tamtym{\?}"/>
+	<function functionName="tenLocative" functionBody="{?$0!.F}tej{:}tym{\?}"/>
+	<function functionName="tenGenitive" functionBody="{?$0!.F}tej{:}tego{\?}"/>
+	<function functionName="tenDative" functionBody="{?$0!.F}tej{:}temu{\?}"/>
+	<function functionName="tamtenLocative" functionBody="{?$0!.F}tamtej{:}tamtym{\?}"/>
+	<function functionName="tamtenGenitive" functionBody="{?$0!.F}tamtej{:}tamtego{\?}"/>
+	<function functionName="tamtenDative" functionBody="{?$0!.F}tamtej{:}tamtemu{\?}"/>
+	<function functionName="tenNominativePlural" functionBody="{?$0!.MP}ci{:}te{\?}"/>
+	<function functionName="tenAccusativePlural" functionBody="{?$0!.MP}tych{:}te{\?}"/>
+	<function functionName="tamtenNominativePlural" functionBody="{?$0!.MP}tamci{:}tamte{\?}"/>
+	<function functionName="tamtenAccusativePlural" functionBody="{?$0!.MP}tamtych{:}tamte{\?}"/>
+	<function functionName="adjectiveGenderCreator" functionBody="{?$0!.MP}{:?$0!.MA}{:?$0!.MI}{:?$0!.F}{:}{\?}"/>	
+  </functions>
+</base>

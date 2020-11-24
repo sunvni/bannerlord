@@ -1,0 +1,694 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Türkçe" />
+  </tags>
+  <strings>
+    <string id="09z8Q08f" text="Ailen, sadece kendini doyurmaya ve biraz da gelir elde etmeye yetecek kadar toprağı olan mütevazı çiftçilerden meydana geliyordu. Böyle aileler imparatorluğun kırsal ekonomisinin temel taşını oluşturduğu gibi, askeri kuvvetlerin de belkemiğiydi." />
+    <string id="0I9siaQY" text="Alçaklar... Sen tutsaklarımın akrabasısın, değil mi? Seni {RADAGOS.LINK} ile birlikte gördüm. Ona güvenilemeyeceğinin farkında mısın?[if:idle_angry][ib:warrior]" />
+    <string id="0IeByuam" text="Bir zaferdi ama neredeyse yenilgi kadar kötü bir zafer." />
+    <string id="0LIb10KB" text="{EDUCATION_INTRO}" />
+    <string id="0P4HqZiB" text="Bu doğru mu?[sp:/Sounds/VO/mainquest/mntemp_q01_02.ogg]" />
+    <string id="0pilmavQ" text="Kendi krallığımı nasıl kurarım?" />
+    <string id="0sK2A7ox" text="İnsanlar hâlâ etrafta olduklarını söylüyorlar. Ormanda kalacağız ve onlar gidene kadar dönmeyeceğiz. Hepsini bul ve öldür, duydun mu! Gökler sizi korusun! Gökler kılıçlarınıza yol göstersin!" />
+    <string id="0Suu1Q9q" text="Baban bölgenin ileri gelenlerinden birinin yardımcısıydı. Efendisinin mülkleriyle ilgilenir, köydeki anlaşmazlıkları giderir ve köyün askeri kuvvetlerinin eğitilmesine yardımcı olurdu. Lordun süvarileriyle birlikte at sürer, zırhlı bir şövalye olarak savaşırdı." />
+    <string id="0wQlpbtL" text="İmparatorluğun çöküşe geçmesi için, {NUMBER}'{.den} daha az yerleşkeye sahip olması gerekir. Eğer bu olursa, Kalradya'da başka bir krallık baskın güç haline gelebilir." />
+    <string id="0yxEvgGf" text="Onun için bir felaketti - ölümüyle sonuçlandı - ama galip gelenlerin durumu da daha iyi olmadı." />
+    <string id="1CLNFbzR" text="İyi. O zaman sana bildiklerimi anlatayım. Bir parça daha olduğunu duydum." />
+    <string id="1EkEElZd" text="Kent birlikleri zamanının büyük bir bölümünü kent surlarını korumakla geçirir. Eğitimleri daha çok menzilli silahları kapsar." />
+    <string id="1IEroJKs" text="Asker toplayan herkes savaşa gitmediği gibi, sefere çıkan herkes de çarpışma görmez. Sen her ikisini de yaptın ve ayrıca bir düşman askerini yoldaşlarının gözü önünde teke tek dövüşte alt ettin." />
+    <string id="1LrHV647" text="Komplo Gücü" />
+    <string id="1r0tDsrR" text="Saldır!" />
+    <string id="1RaUauBS" text="Eğitimi başarıyla tamamladın." />
+    <string id="1SUTcF0J" text="Kalradya kentlerinin kenar mahallelerini gözetim altında tutan çete liderlerinin haber getirip götürecek ve bölge savaşlarında kendilerine arka çıkacak fakir gençlere daima ihtiyacı vardı ve bazen macera peşindeki tüccar çocukları da onlara katılırdı." />
+    <string id="1T7p0O7B" text="Akıllı davranmalıyız. {HIDEOUT_BOSS.LINK} adi ve alçak olsa da, kurnaz bir adam." />
+    <string id="1v6aYpDx" text="Karar vermelisin ama dikkatli karar ver. Benim bir tercihim yok. Hiç kimse Palaic halkını geri getiremez ama aralarından herhangi birinin zaferi, yerinde bir intikam olacaktır." />
+    <string id="1xqmoDvS" text="Hazırlıklarımızı tamamladık. Köy büyüğüyle tekrar konuşalım. Bize bir görev verebileceğini söylemişti. Onun dostluğunu kazanmak bizim için faydalı olabilir." />
+    <string id="1yi00v5w" text="{PLAYER.NAME}! Seni görmek ne güzel. İster inan ister inanma, ciddiyim. Ben de seni arıyordum...[if:happy][ib:demure]" />
+    <string id="1zXrlaav" text="Ailen bir vaha kentinin saygıdeğer tüccarlarıydı. Çölde kervan ticaretiyle uğraşırlardı ve çöl kavimlerinin bölgelerinden geçmek için yapılan pazarlıkların incelikleri konusunda uzmanlardı." />
+    <string id="2DZOCsy5" text="Öncü kolları dolambaçlı yoldan gelirken, ormanda saklanan kurtlar gibi onları bekledik. Yanlarında onları koruyacak okçuları yoktu. Caladog borusunu öttürdü ve okçularımız dört bir yandan ok atmaya başladı. Kalkanlarını hangi tarafa çevirirlerse, diğer taraftan ok yediler. Muhteşem bir manzaraydı..." />
+    <string id="2GeiKTlS" text="Sana benimle düello yapma şerefini bahşedeceğim ve eğer kazanırsan, adamlarım geri çekilecek." />
+    <string id="2h7IlBmv" text="Daha değil, üzerinde çalışıyorum..." />
+    <string id="2NHnVb9b" text="Nimr gidip savaştı ve zafer kazandı ama birçok adamın da ölümüne yol açtı, özellikle de Bani Qild'in adamlarının. Ayrıca, kibirli ve ukala bir insana dönüştü. Sonra... Her neyse, Sarranlılar ile Qildliler arasındaki büyük ihtilaf işte böyle başladı ama hikayenin geri kalanını bir başkasına bırakmalıyım belki de." />
+    <string id="2SDWhGmQ" text="Ailen nehir şehirlerinin surlarının dışında yer alan kenar mahallelerde yaşayan fakir göçmenlerdendi ve para kazanmak için ufak tefek işler yaparlardı. Bazen bölgenin suç çetelerinden biri için de çalışırlardı." />
+    <string id="2TptWc4m" text="Bir barona hizmet ederdi" />
+    <string id="2XhW49TX" text="akıncıları oklarla savuşturdun." />
+    <string id="2YYRyrOO" text="Çık..." />
+    <string id="3BjIb3CG" text="Belki de sadece Raganvad'dı. Batanya Kralı Caladog geldiğinde, öfkeden köpürüyordu. Batanyalılar imparatorluğun öncü kollarının cesetlerini soymakta acele etmemişlerdi ve Sturgiyalılar onlara kızgındı, dolayısıyla Raganvad onu korkak olarak adlandırdı. Caladog dudağını büktü ve çekip gitti." />
+    <string id="3deb2lMd" text="İmparatorluğu eski haline getirmek için, imparatorluk medeniyetinin yerleşkelerinin 2/3'ünü ele geçirmelisin." />
+    <string id="3dhvmJDp" text="Pekala... Görünüşe bakılırsa seni akrabana kavuşturduk, yani ben anlaşmamızın üzerime düşen kısmını yerine getirdim. Artık gidiyorum." />
+    <string id="3G64Ej64" text="Alıcı mı? Bundan çok daha fazlasını yapmana yardımcı olabilirim." />
+    <string id="3Io5vmOk" text="{FACTION} ile Savaş Durumu" />
+    <string id="3nCxVXvo" text="Pekala. Elindeki Ejderha Sancağı seni İmparatorluğun suçlarının intikamcısı ve halefi ilan eder." />
+    <string id="3sRdGQou" text="Çık" />
+    <string id="40oa2Nav" text="Kalradyos'un sancağı efsanelere konu olmuştur. Yüce Kalradyos'un sürgün edilen kişilerden oluşan küçük birliğini yeni bir yurt kurmak için bu topraklara getirirken bu sancağı taşıdığını söylerler. Dediklerine bakılırsa, Kalradyos'un gerçek bir oğlu bu sancağı taşıdığı sürece, savaşta asla yenilmezmiş. Ya da kızı sanırım ama bu konu hiç açılmadı.[sp:/Sounds/VO/mainquest/mntemp_q01_04.ogg]" />
+    <string id="4Baa38ra" text="İmparatorluğun yardımıyla zar zor kazandık ama Kergitler büyük bir yara aldı. Kergitler o zamandan beri zayıflar ve zayıflara ne olduğunu bilirsin. Ancak, sonuçta hiç kimse onlara varlarını yoklarını tehlikeye atmalarını söylemedi." />
+    <string id="4cw169Kb" text="üçüncü ve sonuncusu" />
+    <string id="4d5SP6B6" text="{MENTOR.LINK} Ejderha Sancağı'nı sunarak imparatorluk karşıtı krallıklardan birini desteklemeni önerdi." />
+    <string id="4f5xwzX0" text="Bölge halkının at hırsızlarının peşine düşecek bir ekip oluşturması gerektiğinde, akla gelen ilk kişi sendin. Yağmacıları bulup kuşatarak teslim olmaya zorladın ve çalınan malları geri aldın." />
+    <string id="4IS4Lou7" text="Ben de kaçtım. O koşullarda kaçmayacağını söyleyen biri varsa, bil ki yalan söylüyordur. O gecenin ilerleyen saatlerinde soğuk ormanda diğer kaçaklarla birlikte saklanırken ve insanların kafalarını keserken naralar atan barbarları dinlerken, onlara bir daha hiçbir Kalradya askerinin savaştan anlamayan bir imparator tarafından savaşa sürüklenmeyeceğine söz verdim." />
+    <string id="4Oc6MEvR" text="Ah... Batanya'nın hiçbir evladının hayatında daha gururlu bir gün olamaz. En azından, Batanya'nın hiçbir gerçek evladının." />
+    <string id="4olAbDTq" text="Bizim elimizde güçlü bir araç olacak. İnsanlar, Göklerin Kalradya'nın egemenliğini İmparatorluktan bize aktardığına inanacaklar." />
+    <string id="4OUnPjZc" text="Doğru. Bunu yapmanın bir yolunu bulmalısın. Belki bu bronz parçası faydalı olabilir." />
+    <string id="4SnDe0rA" text="Liderleri İmparatorluğu eski haline getirme ümidini yitirince, {FACTION} klanları etraftaki krallıklara sığındılar." />
+    <string id="4vsPD3ec" text="{?PLAYER.GENDER}Kardeşim{?}Kardeşim{\?}... Üç gündür o alçakların izini sürüyoruz. Sanırım yaklaşıyoruz. Onları yakaladığımızda ne olacağını düşünmemiz gerekiyor. {PLAYER_LITTLE_BROTHER.LINK}'{.i} ve {PLAYER_LITTLE_SISTER.LINK}'{.i} nasıl kurtaracağız? Dövüşmeye hazır mıyız?" />
+    <string id="4vsvniPd" text="Sanırım artık doğru yoldayız. Sen daha iyi bir binici olduğuna göre önden gitmelisin." />
+    <string id="4WYY0X59" text="Maceralarla dolu bir hayata atılmadan önce en büyük başarın..." />
+    <string id="4WZ9zJbF" text="Diğer parçaların nerede olduğunu bilmiyorum, aramaya devam etmen gerekebilir." />
+    <string id="5D5lOHSL" text="Bütün parçaları ele geçirdiğinde bana dön, ben bu parçalardan faydalanmana yardım edeceğim.[sp:/Sounds/VO/mainquest/mntemp_q01_11.ogg]" />
+    <string id="5g9ZFGrN" text="Bir eğitim alanındasın. Burada temel dövüş tekniklerini öğrenebilirsin." />
+    <string id="5HXS8HEY" text="fiziksel gücündü" />
+    <string id="5j6qvGAF" text="Mükemmel! Bu sancağı açtığında, insanlar kaybettiklerini zannettikleri bir şeyi karşılarında görecekler ve bu güçlü bir izlenim yaratacak." />
+    <string id="5JTEvvaO" text="{EXP_VALUE} Beceri Düzeyi ve {FOCUS_VALUE} Odak Puanı {SKILL_ONE}{.e} ve {SKILL_TWO}{newline}{ATTR_VALUE} Nitelik Puanı {ATTR_NAME}{TRAIT_DESC}{RENOWN_DESC}{GOLD_DESC}{.e}" />
+    <string id="5K4wvz3w" text="Neretzes'in Sancağı konusunda daha fazla bilgi edinmek için {HERO.LINK} ile konuş. Kendisi şu anda {SETTLEMENT}'{.de}." />
+    <string id="5kbeAC7k" text="Savaşın paramparça ettiği Kalradya'da, özellikle de sınır ve kabile bölgelerinde, kadınlar da erkekler gibi küçük yaşta savaşmayı öğrenmeye başlarlardı. Sen..." />
+    <string id="5LJTeOBT" text="Bir kervanla birlikteydim ve birdenbire çalılıklardan çıktılar. Etrafımızı kuşatmışlardı ve sayıları bizden fazlaydı, dolayısıyla teslim olduk. Sadece fidye için bile olsa bizi hayatta tutacaklarını düşündüm. Ancak, bizi var güçleriyle kırbaçlamaya başladılar ve susuz bıraktılar; neredeyse yıkılıp kalacaktım." />
+    <string id="5Mw4trfs" text="Hazırlıklarını tamamladığında, tekrar benimle konuşmaya gel. Akıncıların peşine düşeceksen, sana göre bir görevim olabilir." />
+    <string id="5P0KqBAw" text="Ailen Nahasa vahalarının birinde toprağı sürer ve çölün meşhur hurmalarının yetiştiği hurma bahçeleriyle ilgilenirdi. Baban, kabilesinin ana piyade kuvvetlerinde görev yapar ve soydaşlarıyla birlikte Emir'in sancağı altında savaşırdı." />
+    <string id="5qhaDtef" text="Hayır. Tekrar düşüneceğim." />
+    <string id="5QiuMoe6" text="Sanırım elimde Kalradya'nın Ejderha Sancağı'nın bir parçası var." />
+    <string id="5QSGoRFj" text="Ailen nesillerdir bozkırın tarıma elverişli küçük toprak parçalarından birini sürerdi. Kuzaitler geldiğinde, imparatora vergi vermeyi ve orduya asker göndermeyi bırakıp, onun yerine kağana hizmet etmeye başladılar." />
+    <string id="5soUEFEJ" text="{TACTEOS.NAME} onun doğru kişi için bir servet değerinde olabileceğini söylemişti, eğer hayatta kalmayı başarırsan tabi. Doğru söylüyorsa, dikkatli olmalısın. Elinde olduğunu belli etme ama insanlarla konuşup ne kadar değerli olduğunu ve nasıl satılabileceğini anlamaya çalış." />
+    <string id="5UHbg6D0" text="Pekala. Seni bana getiren nedir?[sp:/Sounds/VO/mainquest/mntemp_q01_01.ogg]" />
+    <string id="63TAYbkx" text="Kent birlikleri zamanının büyük bir bölümünü kent surlarını korumakla geçirir. Eğitimleri daha çok, özellikle kuşatmalar sırasında faydalı olan menzilli silahları kapsar." />
+    <string id="64rWqBLN" text="Krallığının ordularının ana kuvvetlerinden birine katılmaktan kaçındın ve bunun yerine kafileye katıldın - birliktekilerin eşlerinden, sevgililerinden, uşaklarından ve geçimini askerleri eğlendirerek ya da kazıklayarak sağlayan kişilerden oluşan kafileye." />
+    <string id="651FhzdR" text="Kentli tüccarlardı" />
+    <string id="6aDiS9eP" text="Ben {CONVERSATION_HERO.FIRSTNAME}. Gerçi sen bunu muhtemelen biliyorsundur zaten. Bir zamanlar çok güçlüydüm ama şimdi... Her neyse, benden ne istediğini gerçekten çok merak ediyorum.[rb:trivial]" />
+    <string id="6bUSbsKC" text="Baban bir Fitiwi için, yani vaha kentlerinin fakir kesimlerinde düzeni sağlayan güçlü liderlerden biri için çalışırdı. Toprak, zar oyunları ve hakaretler yüzünden çıkan anlaşmazlıkları giderir, Fitiwi'nin geleneksel asasıyla otoritesini korurdu." />
+    <string id="6Dd3Pa07" text="Komployu engellemeyi başardın." />
+    <string id="6iytd81P" text="Sığınaktaki akıncılar tarafından yenilgiye uğratıldın ama kaçmayı başardın. Tekrar saldırmadan önce bir süre beklemelisin." />
+    <string id="6LFj919J" text="Kuyu kazmaya, evlerin çatılarını onarmaya ve kırılan sabanları tamir etmeye yardımcı olurdun. İnşaat konusunda temel bilgiler edindiğin gibi, bir tarım topluluğunun refahını sağlamak için neler gerektiğini de öğrendin." />
+    <string id="6LQUuQhV" text="Değerli yardımların için teşekkür ederim." />
+    <string id="6qgXAcZB" text="Neretzes tereddüt ettiğimizi öğrenince, bizi korkaklıkla ve hainlikle suçladığı bir mesaj gönderdi. Bir Vlandiya soylusuna bunları söylemek tehlikelidir. Neretzes ne yaptığının farkında olmalıydı. Sturgiyalılara katıldık." />
+    <string id="6UIa4784" text="Bana Pendraic Savaşı konusunda bilgi verebilir misin?" />
+    <string id="6vCHovVH" text="bir akıncıyı etkisiz hale getirdin." />
+    <string id="77TavbOY" text="Bütün eğitimleri tamamladın. Skorunu yükseltmek için her zaman geri gelebilirsin." />
+    <string id="7AYJ3SjK" text="Ailen, halkının liderlerinden birine eşlik etmeni sağladı. Büyük sorumluluklar üstlenmedin - daha çok mesaj getirip götürdün ve onun atıyla ilgilendin - ama bu sana seferlerin nasıl planlandığını ve askerlerin savaşta nasıl konuşlandırıldığını öğrenme fırsatı sağladı." />
+    <string id="7cHsIMLP" text="Gerekli ekipmanı kendi başına asla alamazdın ama iyi bir binici olduğun için, bölgenin lordu sana bir at ve ekipman ödünç verdi. Zırhlı süvarilere katıldın ve kargı eğitimi aldın." />
+    <string id="7eWmU2mF" text="Ormancıydı" />
+    <string id="7FWF01bW" text="Mülteciydi" />
+    <string id="7Hv984Sf" text="limanlarda ve inşaat alanlarındaydın." />
+    <string id="7jBroUUQ" text="Ailenin kendine ait fazla toprağı yoktu, dolayısıyla geçimlerini ormanda avcılık yaparak sağlıyorlardı. Doymakla açlıktan kıvranmak arasındaki farkın av hayvanlarının izini sürme ve bir hayvanı tek vuruşta öldürme gibi becerilere bağlı olduğunu sana küçük yaşta öğrettiler." />
+    <string id="7O8IwMgU" text="Eğer onları geri getirmek istiyorsan, yardımıma ihtiyaç duyacaksın kuşkusuz - canlı olarak geri getirmek istiyorsan yani. Benim çocuklar bir kurtarma girişimi durumunda ne yapacakları konusunda çok açık talimatlar aldılar..." />
+    <string id="7ULaG8aT" text="Kararını verince geri gelebilirsin." />
+    <string id="7VFLb3Qj" text="Köye geldin." />
+    <string id="7wmkPNbI" text="Sağdan savun." />
+    <string id="80NOk1Ee" text="İmparatorluğu birleştiremedin." />
+    <string id="888lmJqs" text="Kalradya krallıklarının hepsi hafif süvarilerin ve atlı okçuların değerinin farkındadır; bu görevleri yerine getirebilecek becerilere sahip göçebeleri ve sınır bölgesi sakinlerini askere alacakları kesindir. İyi bir binici olduğun için, komşuların bir araya gelip sana küçük bir midilli ve iyi bir yay aldılar, böylece onların askeri yükümlülüklerini yerine getirebilecektin." />
+    <string id="8a6dnLd2" text="sokak çeteleriyleydin" />
+    <string id="8b4Ndfep" text="Ah, tabii. O konuda hiç şüphem yok." />
+    <string id="8bwpVpgy" text="Savaşta bir düşmanı alt etmekti" />
+    <string id="8GCW5IRO" text="Daha fazla bilgi edinmeye çalışıyordum ama dediğim gibi, içimde hiç seyahat etme isteği kalmamıştı. Yaşadığım sürece bir kuyudan 20 adımdan fazla uzaklaşacağımı sanmıyorum." />
+    <string id="8OIwHZF1" text="Sığınak" />
+    <string id="8QX1QHAJ" text="Soldan saldır." />
+    <string id="8Yiwt1z6" text="Erken Çocukluk" />
+    <string id="9aoQYpZs" text="Ailenin klanı hiçbir zaman kağana bağlılık yemini etmedi ve yerleşik hayata geçmedi; bozkırın derinliklerinde, onun otoritesinden uzakta yaşamayı tercih ettiler. Sürülerini komşularının hırsızlık girişimlerinden koruyan tek şey düşmanın geldiğini görme ve hızlı hareket etme becerileri olduğu için, ailen hâlâ çayırların en iyi iz sürücülerinden ve gözcülerindendir." />
+    <string id="9aYCfBVz" text="Dedikodular duyulunca şehirde panik baş gösterdi. Arenicos şehrin kaosa sürüklenmesini önledi. Senato'nun sıradaki İmparator'u seçme vakti geldiğinde, İmparator'un o olması gerektiğine dair hiçbir kuşku yoktu. Eskiden onu bir insan olarak severdim ama o gün onu başka türlü sevmeyi öğrendim: Kalradya halkı için büyük bir armağandı!" />
+    <string id="9E6faNBg" text="Hakkında iyi bir efsane yaratmam gerekecek. Doğumunda görülen ilahi alametler gibi şeyler. Seni şimdilik Göklerin gazabını küstah barbarların üzerine salan 'Sancakbeyi' olarak adlandırabiliriz." />
+    <string id="9kGnzjrU" text="Süre başladı." />
+    <string id="9ks4u5cH" text="Köyün şifacısı faydalı ve sağaltıcı bitkiler bulman için seni tepelere gönderirdi. Hangi otların yaraları iyileştirdiğini ve ateşi düşürdüğünü öğrendiğin gibi, onları nasıl bulacağını da öğrendin." />
+    <string id="9sAGLK6R" text="Evet. Derthert arbaletçilerin komutasını bana verdi." />
+    <string id="9tpTkKdY" text="İlerleme kaydettiğinde bana hangi yolu seçtiğini bildir." />
+    <string id="9VxUSDQ7" text="Adım Tacteos. Doktorum. Bir macera peşindeydim ama artık böyle şeylerin bana uygun olmadığını düşünüyorum." />
+    <string id="9xaEPyNV" text="{RADAGOS.NAME}'{.nin} Sığınağı" />
+    <string id="9XnFlRR0" text="Eğitim aşamasında bu kişiyle etkileşim kapalıdır." />
+    <string id="9ZyXl25X" text="ikinci" />
+    <string id="a0JxUMgo" text="Ne oldu? Sancak parçasını buldun mu?" />
+    <string id="a0ZKBj6P" text="Bağımsız bir klan ol" />
+    <string id="a29lmPLd" text="Seni daha önce yendim. Çetenin nasıl iş gördüğünü biliyorum. Daha az konuşma, daha fazla baskın. Hadi bakalım..." />
+    <string id="a4W7Gzka" text="Evet. Kaybedecek zaman yok. (Eğitimi geç)" />
+    <string id="a8arFSra" text="piyade eğitimi aldın" />
+    <string id="A9fChKmz" text="İmparatorluk yaşlı bir ayı gibiydi. Besiliydi ve ağır hareket ediyordu. Elindekileri korumak istiyordu. Sturgiyalılar aç kurtlar gibiydi ve hâlâ da öyleler. Tıpkı bizim gibi. Kurtlar bazen sürüler halinde avlanır, bazen de öyle avlanmaz. Bazen bir kurt rakibini aslanın öldürmesini ister." />
+    <string id="abCqEn6B" text="Şanlı tarihimize gelince, bu önemsiz krallardan, kağanlardan ve sultanlardan herhangi biri şans eseri Kalradya'yı fethedebilir ve bizim kadar iyi yönetebilirdi. Ancak mesele şu ki - biz bunu zaten yaptık. En büyük suçlarımız geçmişte kaldı. Yapılmış olan şeyleri geri almayalım." />
+    <string id="aClquusd" text="Asker Sayısı" />
+    <string id="ACyYhA2s" text="Yolcuyu Bul ve Kurtar" />
+    <string id="AeBzTj6w" text="Şifacıydı" />
+    <string id="aEke8dSb" text="Şehrin aylak takımındandı" />
+    <string id="afH90aNs" text="Küçük çiftlik sahipleri arasından seçilip askere alınan mızraklı ve kalkanlı askerler her zaman Kalradya ordularının belkemiği olmuştur." />
+    <string id="AGIPUYvy" text="Kalkanlarımız vardı ama sonuçta kalkanını sadece tek bir yöne çevirebilirsin. Teker teker devrilmeye başladık ta ki Batanya orakçıları naralar atarak ağaçların arasından çıkana dek. Aslında onlar okçulara karşı zayıftır ama yaşlı Neretzes yanımıza okçu vermeyi akıl edememişti. Oraklarını savurarak üzerimize çullandılar ve yıkılana kadar savaştık." />
+    <string id="aGX3L8mV" text="İmparatorluğun Sturgiyalılara savaş açtığını duyduk veya belki de tam tersiydi. Bu çekişmede yer almayacağımızı düşünüyordum ama zafer kazanmaya can atan Nimr adında Bani Sarranlı genç ve şevkli bir kahraman, yanına genç askerler almak için benden izin istedi." />
+    <string id="AHDQffXv" text="Sancağı topladın mı?" />
+    <string id="AhWyBEhd" text="İmparator'un güvenilir komutanlarından biriydi. Neretzes'in bozguna uğramasını önleyemedi ama felaketten bir şeyler kurtarmayı başardı. Sturgiyalılar barikatlarımızı aştığında, Neretzes'in muhafızlarının bir kısmını arkadan kaçırmayı başardı." />
+    <string id="ajBBFq1D" text="Ah... O şeytanlar. Köyümüze baskın düzenlediler. Yakalayabildikleri herkesi alıp götürdüler. Bahse girerim ki köle tacirleridir." />
+    <string id="AmBEgOyq" text="Anlıyorum..." />
+    <string id="aMBoh7gL" text="Oklarımız üzerlerine yağarken, ağa yakalanan balıklar gibi çırpındılar. Onları büyük bir şaşkınlığa uğrattıktan sonra da oraklarımızı ve kılıçlarımızı alıp ekinleri biçtik. Sonradan Sturgiyalılar ile ganimetler konusunda bir tatsızlık yaşadık ama ne muhteşem bir gündü!" />
+    <string id="aTncHUfL" text="garnizonda nöbet tuttun" />
+    <string id="atUTLABh" text="{MENTOR.LINK}'{.nin} tavsiyesini dinleyip, Ejderha Sancağı'nı sunarak {KINGDOM}'{.i} desteklemeyi seçtin." />
+    <string id="aVzcyhhy" text="Baban bir ozandı; bir klan şefinin salonundan diğerine gider, Batanyalı bir aristokratı göklere çıkarıp düşmanlarıyla alay ederek ve sonra da o aristokratın düşmanının salonuna gidip tam tersini yaparak hayatını kazanırdı. Ondan, eğer dikkatli olursan, akıllı konuşmaların seni tarlalarda çalışmakla geçen bir hayattan kurtarabileceğini öğrendin." />
+    <string id="awgBkdXx" text="Köy menüsüne dönüp akıncıların peşine düşmek için hazırlıklarını yapmalı, sonra da köy büyüğünün sana ayırdığı görev konusunda bilgi edinmelisin." />
+    <string id="AxKDQJ4G" text="{MENTOR.LINK}'{.e} İmparatorluğu yenmek için kendi krallığını kuracağını söyledin. Kendisi, başarıya ulaştığında seninle konuşmayı bekliyor." />
+    <string id="Ay0G3f7I" text="Ailen, bir imparatorluk komutanının heyetine girmeni sağladı. Büyük sorumluluklar üstlenmedin - daha çok mesaj getirip götürdün ve onun atıyla ilgilendin - ama bu sana seferlerin nasıl planlandığını ve askerlerin savaşta nasıl konuşlandırıldığını öğrenme fırsatı sağladı." />
+    <string id="ay1gPPsP" text="Arzagos için sancağın bir diğer parçasını bul" />
+    <string id="aYozMy3Z" text="Vlandiyalılar yeminlerini bozdukları ve bizimle savaşacakları yerde bize karşı savaştıkları için yenildik. Katafraktların komutası bendeydi ve arbaletçilerini ezip geçmekte zorlanmadık. Şövalyeleri bize daha çok sıkıntı yarattı. Bu sırada Sturgiya piyadeleri gelip ana kuvvetimize saldırdı. Babam orada hayatını kaybetti. " />
+    <string id="aZxHIra4" text="Nam" />
+    <string id="b4lDDcli" text="Aile" />
+    <string id="b6hQWKHe" text="Ekibini {PARTY_SIZE} adama çıkar." />
+    <string id="b7Z1OBas" text="Sence yakında akıncılara yetişir miyiz?" />
+    <string id="BCU6RezA" text="Demirciydi" />
+    <string id="bdbZLJf3" text="Neretzes, Batanyalıların topraklarımıza düzenlediği saldırıların öcünü almakla yükümlüydü. Toplayabildiği bütün kuvvetlerle birlikte harekete geçti. Vlandiyalılar bize ihanet etti ama onursuz barbarlardan da ancak bu beklenir zaten. Şans düşmandan yanaydı. Önemli olan, onurumuzun gerektirdiği gibi davranmış olmamız." />
+    <string id="BdYaRvhm" text="Kim olduğunu bilmiyorum ama sana borçluyum. Bu eşkıyalar ölümümüze neden olacaktı." />
+    <string id="bESRdcRo" text="Klanını Kur" />
+    <string id="bhdkegZ4" text="Bütün kentlerde sürekli hem nitelikli hem de niteliksiz işgücü gerektiren projeler vardı. Kaldıraç ve iskele inşa etmek, tahta ve taş yontup döşemek gibi beceriler edindin." />
+    <string id="bhE2i6OU" text="bir baronun seyisiydin" />
+    <string id="bhQ6Jbom" text="İçinde eski bir bronz parçası olan bir sandığa rastladın. O kadar aşınmış ve paslanmıştı ki bir çanak olabileceği gibi, bir taç da olabilirdi. Bu, Tacteos'un sana bahsettiği, 'Neretzes'in Budalalığı' ile ilgisi olan sandık olmalı." />
+    <string id="bJjAqCxk" text="Kaçtım - diğerlerinden biraz daha suçlu olan adamlarından biri herkes uyurken beni serbest bıraktı - ama bir hainin yaşamasına izin veremem. Bu yüzden seni bulmaya ve sana bir anlaşma teklif etmeye karar verdim.[if:idle_angry][ib:warrior]" />
+    <string id="bjVMtW3W" text="Ailen, Sturgiya'nın büyük nehir limanlarından birinde yaşayan, kuzeyin kürk ve bal gibi ürünlerinin uzak diyarlara sevkiyatını sağlayan tüccarlardan meydana geliyordu." />
+    <string id="bKfi6ta6" text="Çok sayıda adam toplamalısın." />
+    <string id="bkZFbCRx" text="Akıncıların ele geçirdiği iki çocuğu arıyoruz. Bize verebileceğin bir bilgi var mı?" />
+    <string id="BleybhsD" text="Hem kendileri hem de atları tepeden tırnağa zırhlı olan imparatorluk katafraktları oklarımızı görmezden geldiler ve saflarımızı yarıp geçtiler. Geri çekilmeye başladık ve savaşın geri kalanını görmedim. Kral Derthert'in iyi bir planı vardı ama Ingalther ve Aldric gibi baronlar her zamanki gibi onu görmezden geldiler." />
+    <string id="BLZ4mdhb" text="Ailen, sadece kendini doyurmaya ve biraz da gelir elde etmeye yetecek kadar toprağı olan mütevazı çiftçilerden meydana geliyordu. Böyle aileler krallığın ekonomisinin temel taşını oluşturduğu gibi, askeri kuvvetlerin de belkemiğiydi." />
+    <string id="bmitHhDt" text="Çok iyi bir insan olmakla birlikte, yüreği belki de biraz fazla hassas olan sevgili ve yaşlı kralımız Aeril, savaşa girmemizi istemedi. Ama sonra ortadan kayboldu ve damadı olarak tahta ben çıktım. Klanlar savaşmak için yanıp tutuşuyorlardı! Yüz yıldır kendilerine karşı işlenen suçların öcünü almak istiyorlardı. Ben halkımın lideri olarak onlara istediklerini verdim." />
+    <string id="bNcGO33Q" text="Kuzeye gittiklerini düşünüyoruz. Bana sorarsan burada malzemelerinin parasını ödediğin takdirde seninle birlikte onların peşine düşecek birkaç kişi vardır." />
+    <string id="bNqLQKQS" text="Erzakın tükendi. Buranın kuzeyinde erzak alabileceğin ve yardım bulabileceğin {VILLAGE_NAME} adında bir köy var." />
+    <string id="Bo66bfTh" text="{?IS_IMPERIAL}Bir İmparatorluk Yerleşkesine{?}Bir Yerleşkeye{\?} sahip ol. " />
+    <string id="bSDt8FN5" text="Ben hazırım, hadi gidelim!" />
+    <string id="BstbQV5Z" text="Kalradya'nın bütün büyük ailelerinin içini kemiren bir trajediydi, savaştan çok uzakta olan bizim ailemizin bile." />
+    <string id="bsWSecYa" text="{PLAYER_BROTHER.NAME}, {PLAYER.LINK}'{.nin} ağabeyidir. Kendisi, ailenin en küçük iki çocuğu {PLAYER_LITTLE_BROTHER} ve {PLAYER_LITTLE_SISTER}'{.i} aramaya gitti." />
+    <string id="btAV7mmq" text="Sığınaktaki akıncılar tarafından yenilgiye uğratıldın ama kaçmayı başardın. Tekrar saldırmadan önce bir süre beklemelisin." />
+    <string id="bTKiN0hr" text="köyün demircisinde çalışırdın" />
+    <string id="btsMpRcA" text="Ailen şehirde bir demirci dükkanı işletiyordu. Baban kent konseyinde küçük de olsa aktif bir rol üstlendiği gibi, milis kuvvetlerinde de görev yapardı." />
+    <string id="BTY2aZCt" text="Bir eğitim alanına gir." />
+    <string id="bWlmGDf3" text="Beklenmedik bir fırtına bölgedeki derenin sularının aniden yükselmesine neden olunca, komşularına hızlı düşünen bir lider gerekti. Sen liderliği üstlendin ve onları evlerini kurtarmak için su setleri oluşturmaya sevk ettin." />
+    <string id="bXAg5w19" text="Daha genç ve ince yapılı askerler ya da zırh ve kalkan alamayacak kadar yoksul olanlar genellikle cidacılara katılırlar. Yay ve cirit ile savaşan bu askerler ana düşman kuvvetlerinden uzak durmaya çalışırlar." />
+    <string id="bXKPO8lX" text="Komployu Durdur" />
+    <string id="bXYFXLgg" text="Dinarlarını 1000 arttır" />
+    <string id="c1Q2irLi" text="Adamların ailemi öldürdü. Gerçekten cezalandırılmayacağını mı düşündün?" />
+    <string id="c6pDNXbb" text="Kendi krallığını kurabilir ya da mevcut krallıklardan birini destekleyebilirsin..." />
+    <string id="C79Xxm1b" text="Bu arada, beni bıraktığın için vicdan azabı çekme. Köle işine geri dönmeyeceğim. Eski meslektaşlarımla köprüleri yaktığım söylenebilir. Geçimimi sağlamanın başka bir yolunu bulacağım - belki paralı askerlik yaparım. Her neyse, belki bir gün tekrar karşılaşırız." />
+    <string id="cbF9jdQo" text="Ailen sana fazla para vermedi ama köyün ucundaki kullanılmayan bir araziyi satın almana yetecek kadar para bıraktı. Taşları temizledikten, sulama arkı açtıktan ve bir süre ekin yetiştirdikten sonra, araziyi iyi bir fiyata sattın." />
+    <string id="ccf67J3J" text="Bir yay kaptın ve akıncılara doğru birkaç ok fırlattın. Onların siper almaları, sana kardeşinle birlikte kaçma fırsatı sağladı." />
+    <string id="cDWbwBwI" text="askerlere katıldın" />
+    <string id="cepWNzEA" text="Kardeşinle birlikte hanın alevler içindeki ahırında kalan son iki ata atlayarak etrafınızı kuşatan akıncılardan kurtuldunuz ve oradan uzaklaştınız." />
+    <string id="CEqKkY3m" text="Yukarıdan savun." />
+    <string id="cfTiiEEM" text="İmparatorluk, gelenekleri, dinleri ve dilleri yıkmakta çok başarılı. Kalelerimizi alır, adamlarımızı katleder ve çocuklarımızı kendi çocuklarına dönüştürür." />
+    <string id="character_creation_content_16" text="Çocukluğunda öne çıkan özelliğin..." />
+    <string id="CITG915d" text="bir komutanın heyetine girdin" />
+    <string id="cNwejsNl" text="İyi bir efsane, değil mi? Elbette Kalradyalılar birçok kez yenildiler, ama sanırım onlar 'gerçek oğullar' değillerdi. Yine de, bunun imparatorluğun gücünü ve dayanıklılığını temsil ettiği söylenebilir." />
+    <string id="cOgmdp9e" text="Reddet" />
+    <string id="CRmUZvaW" text="Belki Neretzes piyadelerimizi Batanyalıların müstahkem mevkiine hücum etmek için tepelere göndermekte acele etti. Ancak, düşman destek kuvvetler göndermeye fırsat bulamadan geçidi çabucak ele geçirebileceğini düşündü. Eğer diğer türlü karar verseydi ve o karar yanlış çıksaydı, insanlar tereddüt ettiğini söylerlerdi." />
+    <string id="cRvSuYC8" text="Başka bir silah seç ya da başka bir eğitim alanına git." />
+    <string id="csUq1RCC" text="Kentin ahırında çalışıyordun. Gözetmenler atlar konusunda yetenekli olduğunu fark edince, atları eğitmene ve hatta zaman zaman yeni gelen atları ehlileştirmene izin verdiler." />
+    <string id="CvBoRaFv" text="Saldırının karmaşasında bir bıçak kapmayı başardın. Önünü kesen bir akıncıyı bıçakladın." />
+    <string id="cYibaPhn" text="Barbarlar hiç durmadan gelmeye devam ediyorlardı. Sadık adamlarımla birlikte oradan kurtuldum ve başkente döndüm. Ancak, Arenicos'un oraya benden önce vardığını ve kendini İmparator ilan ettirdiğini öğrendim. Zaten her zaman kurnaz bir adamdı." />
+    <string id="d3cL1Tav" text="{MENTOR.LINK}'{.nin} tavsiyesine kulak vererek, imparatorluğa bağlı bir ülke kurdun." />
+    <string id="D4MuSwRB" text="Bani Qild için kederli bir gündü. Ama intikamımızı aldık." />
+    <string id="D9RoNGJg" text="2 {GRAIN} Satın Al Ürün satın almak için köy menüsünden &quot;Ürün Satın Al&quot; seçeneğine tıkla." />
+    <string id="Db98U6fF" text="Soldan savun." />
+    <string id="dDmcqTzb" text="Yerel efsanelere konu olacak türde değil, ama etrafındakilerin saygısını kazanmanı sağlayacak türde bir itibar edindin. İş anlaşmalarında her zaman adil ve dürüst olduğun gibi, zor durumdakilere de yardım ettin. Bu sayede insanları tanıdın." />
+    <string id="dE2ufxte" text="Başka bir şey yapmadan önce... Erzakımız azaldı. Buranın kuzeyinde erzak alabileceğimiz ve yardım bulabileceğimiz bir köy var. Sen benden daha iyi bir binici olduğuna göre, önden gitsen daha iyi olur..." />
+    <string id="DFidSjIf" text="Etrafındaki çocukların çoğunun eğitimi temel seviyedeydi ama sen dersten sonra kalıp edebiyat ve matematik çalışırdın. Pazar alanları, tartılarıyla, ölçüleriyle, çeteleleriyle, hesaplarıyla, kazanç ve zarar sohbetleriyle seni büyülerdi." />
+    <string id="Dfmg8stq" text="{FACTION}'{.i} Ortadan Kaldır" />
+    <string id="DIgsfYfz" text="Ailenin ürünlerini satmak ve erzak almak için en yakın kente giderdin. Bu ağır bir işti ama pazar alanının hareketliliği hoşuna giderdi." />
+    <string id="dIko48bN" text="Hâlâ ne yapacağıma karar vermeye çalışıyorum..." />
+    <string id="DIKPGwj1" text="Seni sağ salim gördüğüme çok sevindim. Herkes iyi mi?" />
+    <string id="DjeAJtix" text="Belki bir kaçamak yaşadın, belki zar oyunlarında hile yaptın veya belki de tehlikeli bir grupla içerken kelimelerini yanlış seçtin. Her durumda, kente gerçekleştirdiğin ziyaretlerden birinde, sadece dilinin veya ayaklarının hızı sayesinde canlı kurtulabileceğin bir belaya bulaştın." />
+    <string id="DjQuB0TU" text="Kardeşlerini kurtardın ve {RADAGOS.LINK}'{.i} bırakmaya karar verdin..." />
+    <string id="dlBFVkDj" text="Bana verdiğin görev hakkında..." />
+    <string id="DM6luo3c" text="Devam Et" />
+    <string id="DO4PE3Oo" text="Mevcut Birliğin Büyüklüğü" />
+    <string id="DQzEgUzu" text="{HERO.LINK} ile konuştun ve parçayı anlamana yardımcı olabilecek değerli bilgiler edindin." />
+    <string id="DsCkf6Pb" text="Büyürken, zamanının büyük bir bölümünde..." />
+    <string id="duD8SJDb" text="Şövalyelerimiz, Aseray hafif piyadelerinden oluşan bir birliğin vadiye yayıldığını fark etti ve saldırıya geçti. Böyle bir saldırıyı beklemiyorlardı ve bozguna uğradılar. Ama sonra Kuzaitler çıkageldiler ve mesafelerini koruyup şövalyelerimizin atlarını vurarak onlara zor anlar yaşattılar. Biz o sırada geldik." />
+    <string id="DuQvj7zd" text="{TRAIT_NAME}'{.e} {newline}+{VALUE}" />
+    <string id="dWVsS3D8" text="Klanımızın en cesur ve kuvvetli evladı Nimr, Aseray savaşçılarından oluşan büyük bir birliği İmparatorluk adına şan ve şeref için savaşmaya götürdü. Ben de onlarla gittim. Batanya okçularının tepelerden indiğini gördüğümüzde, Nimr hazırdı. Komutunu verdi; tepemize oklar yağarken kalkanlarımızı kaldırdık ve sonra da ciritlerimizi atarak saldırıya geçtik. Onları ezip geçtik." />
+    <string id="DyE3luNM" text="Akıncı çetesiyle başa çıkmak için birliğinde en az {NUMBER} tane asker olmalı. Daha çok asker toplamak için köye dön." />
+    <string id="Dz9T60U2" text="Artık işler değişti elbette. Birlikte en iyi çalışabileceğini düşündüğün tarafı seçiyorsun." />
+    <string id="E31IJyqs" text="Asker topla" />
+    <string id="E87miqTI" text="Savaştan yorgun düşen {FACTION} klanları, {PLAYER_SUPPORTED_FACTION} ile barış yapmayı teklif ediyor." />
+    <string id="e8Tjf8Ph" text="1 Yoldaş Edin" />
+    <string id="eaxOH9mb" text="Destek yemini ettiğinde, bilgi kaynaklarım sana söyleyecekler..." />
+    <string id="EdUppdLZ" text="akıncıları oyuna getirdin." />
+    <string id="EEedqolz" text="Bedeviydi" />
+    <string id="eH8z6Fws" text="{PLAYER_SUPPORTED_KINGDOM} Ejderha Sancağı'na rağmen yok edildi!" />
+    <string id="ehnbi5yD" text="Ne yazık ki hiç çocuk görmedim. Kervanımız saldırıya uğradıktan sonra akıncıların başındaki Radagos dedikleri adam değerli mallarımızı ve benim sandığımı alıp atıyla uzaklaştı." />
+    <string id="EitTbGvB" text="Emin değilim. Bu konuda kararımı vermedim." />
+    <string id="eJX7rhch" text="Klanını başarıyla yeniden kurdun." />
+    <string id="elJCacQO" text="Üzerinde çalışıyorum." />
+    <string id="elQnygal" text="Ailen, temel eğitim almanı sağlayacak parayı güçlükle bir araya getirdi ve sen tarih, matematik, felsefe kitaplarını büyük bir istekle okuyup, öğretmeninle ve sınıf arkadaşlarınla tartışarak bu eğitimden sonuna kadar faydalandın." />
+    <string id="ElTUaqOX" text="İmparator Neretzes'in sırdaşıydım. Kadın olduğum için, onun resmi casusbaşı değildim ama sonuçta üstlendiğim rol buydu. Neretzes'i severdim ve güveninden ötürü ona minnettardım ama iyi bir imparator değildi. Fazla inatçı ve ilkeliydi. Muhtemelen onu zehirlemeliydim." />
+    <string id="eNJBjYG8" text="Kalradya'nın Ejderha Sancağı'nı başarıyla topladın." />
+    <string id="EOSyvdFG" text="Ardından Vlandiya şövalyeleri geldi. İki taraftan saldırı altındaydık ve bizi kurtarmak için adam gönderebilecek olan İmparator ağır davrandı. Belki de sonradan çok güçlenmeyelim diye en iyi Aseray savaşçılarının ölmesini istedi. Ancak bu ihanet, Bani Qild'deki Aseraylı kardeşlerimizden gördüğümüz ihanetin yanında bir hiçti." />
+    <string id="etG87fB7" text="öğretmeninleydin" />
+    <string id="eV8R0SKp" text="Ejderha Sancağı'nın bütün parçalarını topladın. Artık bu parçalarla ne yapacağına karar verebilirsin. Yolunu seçmek için {IMPERIAL_MENTOR.LINK}'{.e} veya {ANTI_IMPERIAL_MENTOR.LINK}'{.e} dön." />
+    <string id="eVgAY7ts" text="Bundan daha iyi bir tarife ihtiyacım olacak. Adamlarım bu bölgede onlarca küçük velet ele geçirdi. Çok iyi bir avlanma alanıydı! Ancak, çoğunu güneydeki bir köle pazarına gönderdim bile.[ib:confident]" />
+    <string id="EWD4Op6d" text="Bildirim" />
+    <string id="EZ19JOGj" text="{MENTOR.NAME}'{.nin} Evi" />
+    <string id="ez4rbGmx" text="Önce en güçlü vasalına, sonra da en değerli müttefikine hakaret etti. Büyük bir başarı, değil mi? O zamandan beri akıllandı ama yine de onunla vakit geçirmenin hoş olduğunu söyleyemem." />
+    <string id="F0ldgio8" text="Eğitime dön." />
+    <string id="F1syZDs4" text="{TRAIT_NAME_ONE} ve {TRAIT_NAME_TWO){.e} {newline}+{VALUE}" />
+    <string id="F26iH45g" text="Ne oldu? Sancak parçasını buldun mu?" />
+    <string id="F2bgujPo" text="bir klan şefine hizmet ederdin." />
+    <string id="F7OO5SAa" text="Kalradya'da büyüyen bir genç için savaş hiçbir zaman uzak değildi. Sen..." />
+    <string id="F7VxtCSd" text="Eğitim aşamasında bu seçenek kapalıdır." />
+    <string id="FaQDaRri" text="Parkuru deneyeceğim. Eğer gerekirse savaşabileceğimi bilmem gerekiyor. (Eğitime devam et)" />
+    <string id="fBJRdxh2" text="Tekrar dene." />
+    <string id="FBp2ranI" text="Bir alıcı bulmama yardım edebilir misin?" />
+    <string id="fC60rYwy" text="Sağdan saldır." />
+    <string id="FfNwXtii" text="Çocukluğunun yavru kurt sürüsünün bir alfası varsa, o alfa kesinlikle sendin. Nerede ne oynanacağına sen karar verirdin ve diğer çocukların hepsi seni takip ederdi; hem oyunlarda hem de haylazlıkta başı çekerdin." />
+    <string id="Fgta5mF6" text="Cevap vermeden önce, birbirimizi daha iyi tanımalıyız. Hakkımda neler duyduğunu bilmiyorum.  İmparatorluk vatandaşıydım. İmparatorluk ordularında komutandım. Ancak, imparatorluğa bağlı değilim." />
+    <string id="FHM5GcHW" text="İyi. O zaman sana bildiklerimi anlatayım. Bir parça daha olduğunu duydum.[sp:/Sounds/VO/mainquest/mntemp_q01_09.ogg]" />
+    <string id="FhZPjhli" text="Memleketin kısa bir süre kuşatma altında kaldı ve surları savunmaya çağrıldın. Düşman saldırısını geri püskürtmek için herkes kendi üzerine düşeni yaptı ve herkes haklı olarak yaptıklarıyla gurur duyuyor." />
+    <string id="FKpLEamz" text="atlarla ilgilenirdin" />
+    <string id="flGyoqa6" text="Neretzes'in muhafızlarıyla karşı karşıya gelenler Sturgiyalılardı. Babam bana arkada kalmamı buyurdu ama kendisi çarpışmaya gidenlerin başındaydı. Babam onları geri püskürttü ve dağılıp kamplarına sığındılar. Gidip istihkamlarına saldırdık ve onları dağıttık ama babam zafer anında bir gürz darbesiyle can verdi." />
+    <string id="flkmzKDz" text="Qildli birçok genç onunla birlikte gitti. Yüzlercesi öldü. Üstelik, hiç kimse bir kazanç elde etmedi - insanların her nedense kahraman olarak gördüğü Nimr dışında. İnsanların ona dalkavukluk etmesi rezillikti." />
+    <string id="fM4eSVps" text="Konuşmanın zaman kaybı olduğunu söylemiştin. Artık {RADAGOS.NAME}'{.nin} malısın." />
+    <string id="fp6QBO7l" text="Bu adamları yanımıza almam gerekecek. {RADAGOS.NAME} hilekar bir tiptir. Kaçmasını istemiyorum." />
+    <string id="FPhWhjq7" text="Yenilgi" />
+    <string id="FQntPChs" text="Ailen, İmparatorluğun ana şehirlerinden birinde tüccarlıkla uğraşırdı. Yakınlardaki kentlere kervanlar gönderirler ve kent konseyinde önemli meseleleri görüşürlerdi." />
+    <string id="ft6zzDrJ" text="Bunu kabul edebilirim. Gidelim." />
+    <string id="FUwIgcZO" text="Emin misin? (Bu seçenek, hikaye unsurları barındıran eğitimi sonlandırır ve tek kişilik oyunu başlatır. Bu seçeneği, eğer eğitimi en az bir kere tamamladıysan tercih etmen önerilir.)" />
+    <string id="FVaRDe2a" text="Bir noyanın soyundandı" />
+    <string id="fVKuuzCC" text="Ben {FACTION}'{.nin} hükümdarıyım. Ejderha Sancağı'nı ben taşımalıyım." />
+    <string id="FWSwngVX" text="Yola çıkalım mı? Unutma - eğer yorgunluktan düşüp ölürsem veya bir nehirde boğulursam, sevdiklerinin sonu gelir. Konforlu bir tahtırevan beklemiyorum ama bu yolculuğu benim için pek de zor kılmasan iyi olur." />
+    <string id="FyzsAZx8" text="{RADAGOS.LINK} kardeşlerinin yerini bildiğini söyledi. Birlikte saldırmayı teklif etti. Bahsetmiş olduğu {SETTLEMENT_LINK} yakınlarındaki sığınakta seni bekleyecek. Sığınağı haritada işaretli olarak görebilirsin." />
+    <string id="g31pXuqi" text="Vahada çiftçiydi" />
+    <string id="G9iXmhGK" text="Bak, hâlâ konuşabiliriz. Sana bir kese gümüş vereceğim." />
+    <string id="Ga8mDgab" text="{HIDEOUT_BOSS.LINK}'{.nin} sığınağında yenilgiye uğradın. Hazır olduğunda tekrar saldırabilirsin." />
+    <string id="GabaznVa" text="Kendi ülkemi kurmak konusunda..." />
+    <string id="gBbm9beO" text="Bütün hedefleri vur. {REMAINING_TARGET} {?REMAINING_TARGET&gt;1}hedef{?}hedef{\?} kaldı." />
+    <string id="GCbqpeDs" text="Eğitim sona erdi. Artık Kalradya'yı keşfetmekte özgürsün." />
+    <string id="gdgbaMOP" text="Görüşlerini paylaştığımdan emin değilim." />
+    <string id="GeNKQlHR" text="Klan şefinin ocak muhafızlarındandı" />
+    <string id="GEYzLuwb" text="insan ilişkilerindi" />
+    <string id="GFUggps8" text="kamp kafilesine katıldın" />
+    <string id="GGfM1HKn" text="MBII Bannerlord'a Hoş Geldin" />
+    <string id="Ghz90npw" text="Ailenin kentin ahırında birkaç atı vardı ve onların bakımından sorumluydun. Akşamları genellikle atları alıp surların dışına çıkararak kırlarda dörtnala koşturur ve diğer gençlerle yarışırdın." />
+    <string id="GicEcLx2" text="Orada görüşürüz öyleyse. Ama unutma, eğer bu bir tuzaksa, hayatına mal olur." />
+    <string id="gJBNUAJd" text="Kulvarı bitir ve elinden geldiğince çok hedefi vur." />
+    <string id="gL241Hoz" text="Çok güzel. Batıl saçmalıklar elbette, ama insanlar sana inanacak." />
+    <string id="gL3WCqM5" text="Yerleşke Sayısı" />
+    <string id="GM3tAYMr" text="Saldırgan bir eylemde bulun" />
+    <string id="GmTaM0gR" text="Klanın oldukça nam kazanmış olmalı." />
+    <string id="gOI8lKcl" text="hızlı bir atla oradan uzaklaştın." />
+    <string id="gQ2tAvCz" text="Çiftçiydi" />
+    <string id="gSBGpUBm" text="{RADAGOS.LINK}'{.nin} sığınağını bul." />
+    <string id="GsPC2MgU" text="Baban, Aseray emirlerinin idaresindeki köle-muhafızlardandı. Zırhlı süvarilerle birlikte efendisinin yanında savaştı ve azat edildi - belki büyük bir cesaret sergilediği için, belki de savaş ganimetlerinin kendi payına düşen kısmıyla özgürlüğünü satın aldığı için. Daha sonra annenle evlendi." />
+    <string id="GVMGXfxS" text="Bizim soyadımızı kullanabilirsin veya başka bir soyadı seçebilirsin. Soyluların huzuruna kabul edilme şansın daha yüksek olur ve seni daha kolay bulurum." />
+    <string id="GxlPj4GC" text="Istiana'nın sana bahsettiği sığınağı bul ve sıradaki sancak parçasını ele geçir." />
+    <string id="gYYGGflb" text="Kaybedecek zamanımız yok. Ayrılırsak daha çok iş halledebiliriz. (Eğitimi geç)" />
+    <string id="GZaYmg95" text="Kılıç eğitimini başarıyla tamamladın." />
+    <string id="h2KnarLL" text="süvari eğitimi aldın" />
+    <string id="h31YaM4b" text="Ata bin." />
+    <string id="h9VP4ypW" text="Neretzes'in Sancağı konusunda daha fazla bilgi edinmek için {HERO.LINK} ile konuş. Kendisi şu anda {SETTLEMENT}'{.de}." />
+    <string id="hadftxlO" text="Yolumuzdan çok saptık. Bir süre önden ben gideceğim. Beni takip et." />
+    <string id="HDBkwjgf" text="{NOBLE_ANSWER}" />
+    <string id="HddJT1Ve" text="Ben orada değildim. {HERO.LINK}'{.nin} bu konuda bazı fikirleri olduğunu biliyorum." />
+    <string id="heoCaRIr" text="Hayır... Artık konuşmak yok. Ya sen beni öldüreceksin ya da ben seni, bu iş böyle bitecek.[ib:confident]" />
+    <string id="hFYG3lXw" text="Bazı insanlar bunu 1077 yılında gerçekleşen büyük Pendraic Savaşı olarak adlandırır." />
+    <string id="hGPdLssq" text="{PLAYER_SUPPORTED_FACTION}'{.nin} hükümdarı, savaştan yıpranan {FACTION}'{.nin} barış teklifini kabul etti." />
+    <string id="HhFHRs7N" text="{?IS_IMPERIAL}Bir imparatorluk ülkesi{?}İmparatorluk karşıtı bir krallık{\?} kur" />
+    <string id="HhuBPfJn" text="Eğitmene git." />
+    <string id="HL9lzfjY" text="Elbette yapabilirim. Kim olduğumu ve kimin oğlu olduğumu biliyorsun." />
+    <string id="hnFkhPhp" text="Eğitim aşamasında bu seçenek kapalıdır." />
+    <string id="HOb07MJF" text="Ben bu konuda pek bir şey bilmiyorum. Ancak, bilebilecek olan iki kişi tanıyorum. Bir zamanlar Neretzes'in casusbaşı olan {IMPERIAL_MENTOR.LINK}. Ayrıca bir de {ANTI_IMPERIAL_MENTOR.LINK}. Kendisi Neretzes'in muhafızlarındandı ama insanlar çok değiştiğini söylüyorlar." />
+    <string id="hob3WVkU" text="Baban bir boyarın maiyetinde yer alırdı. Büyük salonda lordunun masasında oturur, boyarın mülkleriyle ilgilenir ve savaşta onunla birlikte kalkan duvarının merkezinde yer alırdı." />
+    <string id="HPNuqbSf" text="Aileni Kurtar" />
+    <string id="HqlXdzcv" text="{HEADMAN.NAME} ile konuş" />
+    <string id="HqzVBfpl" text="Kentli tüccarlardı" />
+    <string id="HrdVRMgR" text="Belki de kardeşlerimi kurtararak yaşamayı hak ettin. Pekala, git bakalım." />
+    <string id="hrhvEWP8" text="{PLAYER_MOTHER.NAME}, {PLAYER.LINK}'{.nin} annesiydi. Akıncılar ailesinin kaldığı hana saldırdığında öldürüldü." />
+    <string id="HskL8pEa" text="{KINGDOM_NAME} yenildi. Başarısız oldun!" />
+    <string id="HT9hW29s" text="Harika! Ama yapacağım birkaç şey var. Bu şehrin yakınlarında bir sığınak var. {HIDEOUT_BOSS.LINK} kardeşlerini orada tutuyor. Yolun yukarı doğru yükseldiği yerde, izcilerinin görüş alanının hemen dışında sana katılacağım." />
+    <string id="hUjmasXC" text="Ayrıca, imparatorluğa ait bir yerleşkeye sahip olmalısın." />
+    <string id="HvGW2DvS" text="Parkur başladı." />
+    <string id="hXl25avg" text="Ailen özel öğretmen tuttu ve sen tarih, matematik, felsefe kitaplarını büyük bir istekle okuyup, öğretmeninle ve sınıf arkadaşlarınla tartışarak bundan sonuna kadar faydalandın." />
+    <string id="hYgmzZJX" text="Dinar" />
+    <string id="i20baAus" text="{TRAIT_NAME_ONE}, {TRAIT_NAME_TWO} ve {TRAIT_NAME_THREE}{.e} {newline}+{VALUE}" />
+    <string id="I3PcdaaL" text="Ayılar ve kurtlar Kalradya'nın kuzeyindeki sürüler için devamlı tehdit oluştururken, sırtlanlar ve leoparlar da güneydeki sürüler için devamlı tehdit oluşturuyordu. Köydekilerle birlikte ava gittin ve canavarı yere seren atışı gerçekleştirdin." />
+    <string id="i3SSc0I4" text="{IMPERIAL_MENTOR.NAME}'{.nin} Planı" />
+    <string id="i5OOargr" text="Savaş böyledir işte. Ama sonrasında olanlar... Erkeklerimizin başına gelenler duyulunca, diğer klanlar - özellikle de Arkitler - zayıf olduğumuzu anladılar. Sürülerimizi yağmaladılar. Karşı çıkan herkesi öldürdüler. Monchug bu olanları durdurmak için pek bir şey yapmadı. Bu bize cesaretin ölümle sonuçlandığını, ihanetin ise insanı zengin ettiğini öğretti." />
+    <string id="IavuL9KI" text="Elbette. Sancağı İmparatorluğu kurtarmak için kullanmayı planlıyorum." />
+    <string id="ib2TKPUa" text="{FACTION}'{.nin} hükümdarı, sana karşı kurulan ittifaka önderlik ediyor. Onların ordularını mağlup et ya da yerleşkelerini ele geçirerek ve birliklerini yok edip zafer kazanarak onları barış yapmaya zorla." />
+    <string id="ibm9EEPa" text="Hayır, karar vermek için daha fazla zamana ihtiyacım var." />
+    <string id="IC9Vg5MA" text="Bana her şeyi anlatmaya hazır olduğunda orada buluşalım.[if:idle_normal][ib:normal]" />
+    <string id="IITkXnnU" text="Kalradya tehlikelerle ama aynı zamanda da fırsatlarla doludur. Seni bekleyen zorluklarla yüzleşmek için klanını kurmalısın.{newline}Kardeşin sana bunun birçok yolu olduğunu ama hiçbirinin paradan önce gelmediğini söyledi. Ticaretle para kazanabileceğin gibi, dövüşüp ele geçirdiğin haydutları kentlerde satarak da para kazanabilirsin. Hangi yolu seçersen seç, yalnız seyahat etmek seni karşına çıkan herkes için kolay hedef haline getirir.{newline}Köylerin ve kentlerin seçkinleri arasından seni takip edecek kişiler toplayabileceğini biliyorsun, ancak daha değerli savaşçılarını yanına almana izin vermeden önce senden birkaç iyilik isteyebilirler.{newline}Elbette, Kalradya'nın hanlarında daha ilginç kişiler de bulabilirsin. Ancak, onlar genellikle daha yerleşik klanları destekleme eğiliminde olurlar." />
+    <string id="IL4FcHXv" text="{KINGDOM_NAME}'{.e} bağlılık yemini ettin!" />
+    <string id="ImLQNYWC" text="Pekala, seninle düello yapacağım." />
+    <string id="InN5ZZt3" text="Bir toprak sahibine hizmet ederdi" />
+    <string id="ipQP6aVi" text="Paralı askerdi" />
+    <string id="iQeMllr8" text="Atlı okçularla kendi başımıza savaşırken kazanıyorduk. Eğer koşullar eşitse, yaya okçular da at sırtındakiler kadar iyi, hatta belki de daha iyi ok atabilirler ve bizim sayımız onlardan fazlaydı. Yenilmeye başladılar ve dörtnala uzaklaştılar. Şövalyeler de peşlerinden gitti ve işte sorunlar da o zaman başladı." />
+    <string id="iQrwsvb1" text="Savaşa girmekten başka seçeneğimiz yoktu. Aksini söyleyen varsa, ya yalancıdır ya da korkaktır. Sturgiyalılar bize saldırdılar ve onlara bir ders vermemiz gerekiyordu. Ordumuzu ve sancağımızı kaybettik. Ancak, onurumuzu kaybetmedik ve onurumuz olmasaydı, İmparatorluğun sonu gelirdi." />
+    <string id="iR4QCTxv" text="İmparatorluğu Zayıflat" />
+    <string id="itRoeaJf" text="Küçük kardeşlerimizi kaçırdığını duyduk. Neredeler?" />
+    <string id="ivKl4mV2" text="Baban, bölgedeki toprak sahibi bir aristokratın güvenilir teğmeniydi. Lordun süvarileriyle birlikte at sürer, zırhlı bir kargıcı olarak savaşırdı." />
+    <string id="IYnFgEgy" text="Devam edelim öyleyse. (Dövüş eğitimini oyna)" />
+    <string id="iZKtGI6Y" text="Ailen, Vlandiya krallığının küçük baronlarından birine eşlik etmeni sağladı. Büyük sorumluluklar üstlenmedin - daha çok mesaj getirip götürdün ve onun atıyla ilgilendin - ama bu sana seferlerin nasıl planlandığını ve askerlerin savaşta nasıl konuşlandırıldığını öğrenme fırsatı sağladı." />
+    <string id="j2dW9fZt" text="Yukarıdan saldır." />
+    <string id="J4qetbZb" text="Bu garip görünümlü metal parçasını buldum. Pek değerli görünmüyor ama Tacteos'un bahsettiği parça olabilir. Yüklü bir fiyat karşılığında soylu klanlardan birine satabiliriz belki." />
+    <string id="j6py5Rv5" text="Ailen, ot toplayan ve hastaları tedavi eden şifacılardan meydana geliyordu. Batanya geleneklerinin canlı birer simgesi oldukları için, klanlar arasında çıkan anlaşmazlıkları karara bağlamaları da bekleniyordu." />
+    <string id="j9f9Ts7i" text="Benim daha iyi bir fikrim var. Şimdi ayrılırsak şansımız artar. {RADAGOS.NAME}'{.i} alıp köle pazarına gideceğim ve çocukları serbest bırakmanın bir yolunu bulmaya çalışacağım. Ancak hayatlarını tehlikeye atmamaya dikkat etmeliyiz, dolayısıyla onları satın almak daha iyi olabilir. Bunun için de keselerimizin dolu olması gerek." />
+    <string id="jAs3kDXh" text="Ailen, bir Kuzait noyanının güvenilir soydaşlarından meydana geliyordu ve yemeklerini klan şefinin yurdunda onunla birlikte yerlerdi. Baban klan meseleleri konusunda şefine yardımcı olur ve Kuzait savaş hattının merkezinde yer alan zırhlı kargıcıların göbeğinde çarpışırdı." />
+    <string id="jeWV2uV3" text="{EXP_VALUE} Beceri Düzeyi ve {FOCUS_VALUE} Odak Puanı {SKILL_ONE}, {SKILL_TWO} ve {SKILL_THREE}{newline}{ATTR_VALUE} Nitelik Puanı {ATTR_NAME}{TRAIT_DESC}{RENOWN_DESC}{GOLD_DESC}{.e}" />
+    <string id="jg3T5AyE" text="Kalradya'daki ailelerin birçoğu gibi, senin ailenin hayatı da savaş yüzünden altüst oldu. Ardı arkası kesilmeyen ordular evinizi talan etti. Sonunda evinizi sattınız ve baban, annen, erkek kardeşin ve iki küçük kardeşinle beraber, daha güvenli olduğunu duyduğunuz yeni bir kente doğru yola çıktınız. Ne var ki, oraya ulaşamadınız. Yolda, kaldığınız han akıncıların saldırısına uğradı. Ebeveynleriniz öldürüldü ve küçük kardeşleriniz ele geçirildi ama sen erkek kardeşinle birlikte hayatta kalmayı başardın çünkü..." />
+    <string id="jGhWOnjx" text="Evet. Tam bir delilikti. İmparatorluğa indirilen en büyük darbeydi ve biz bir bayrak yüzünden kendi aramızda ağız kavgasına tutuşarak bunu çarçur ettik." />
+    <string id="JhEzD45J" text="Satın Al {GRAIN}" />
+    <string id="JJiKk4ow" text="Soyadını seç: " />
+    <string id="JJo0i8an" text="Köy büyüğünün sana bahsettiği yolcuyu kaçıran ekibi bulmak için köyü araştır." />
+    <string id="jmPeb7kD" text="Komployu durdurmaya çalış." />
+    <string id="Jn4r0GjD" text="Bir alıcı bulmama yardım edebilir misin?" />
+    <string id="jnOa3cbK" text="Bu bilgiyi sana vermeden önce. Niyetini bilmem gerekiyor. Sancak imparatorluğu eski konumuna getirmek için kullanılabileceği gibi, yok etmek için de kullanılabilir.[sp:/Sounds/VO/mainquest/mntemp_q01_06.ogg]" />
+    <string id="JOJ09cLW" text="Gidelim." />
+    <string id="joRHKCkm" text="Ailenin, bir kervanı yakınlardaki kentlerden birine götürecek güvenilir birine ihtiyacı vardı. Erzakları hazırladın, haydutları uzak tutmak için devamlı nöbet tuttun ve kervanı sağ salim varış noktasına ulaştırdın." />
+    <string id="jPKIN2r4" text="Bir şey daha var. Soylularla ve diğer önemli insanlarla konuşurken, kendini uzak ama seçkin bir aileden gelen biri olarak takdim ettiğinden emin ol." />
+    <string id="jq5TnHEN" text="Eğer kayıp parçaları bulabilirsen, ondan faydalanmanı sağlayabileceğimden eminim.[sp:/Sounds/VO/mainquest/mntemp_q01_05.ogg]" />
+    <string id="JTPmw3cb" text="Görevi {YEAR} yılda tamamlayamadın." />
+    <string id="JUSHAPnu" text="Çeviktin ve etrafında olup bitenlere dikkat ederdin. Genellikle beladan kaçmayı başarırdın ama köşeye sıkışıp da diğer çocuklarla kavga etmek zorunda kalırsan da kendini gösterirdin." />
+    <string id="Jvf6K7TZ" text="Ailen imparatorluk şehirlerinin surlarının dışında yer alan kenar mahallelerde yaşayan fakir göçmenlerdendi ve para kazanmak için ufak tefek işler yaparlardı. Bazen İmparatorluğun suç çetelerinden biri için de çalışırlardı ve bu nedenle hayatın karanlık yüzünü küçük yaşta gördün." />
+    <string id="JVkPkbdg" text="İmparatorluğu zayıflatamadın." />
+    <string id="JWLBKIkR" text="Köy büyüğü {FIRST_NAME}" />
+    <string id="JZ5jjSLV" text="Ejderha Sancağı benim elimde, dolayısıyla Kalradya İmparatorluğunun meşru hükümdarı benim." />
+    <string id="k07wzat8" text="Henüz hazır değilim." />
+    <string id="K75sH3vW" text="Yardımının karşılığında verebileceğim değerli hiçbir şeyim kalmadığı için, ancak şunu söyleyebilirim. Eğer o zalimi bulup alt edersen, sandığımı geri alabilirsin. İçinde, eğer nerede satacağını bilirsen çok para edebileceğini söyledikleri değerli bir ziynet eşyası var." />
+    <string id="k7ebznzr" text="Evet?" />
+    <string id="kATpK8v8" text="Ejderha Sancağı'nı mevcut bir krallığa vermek konusunda..." />
+    <string id="kaZ1XtDX" text="Saldırmak için yeterince güçlü değilsin. Köyden daha çok asker topla." />
+    <string id="kbcwb5TH" text="pazar alanlarında ve kervansaraylardaydın" />
+    <string id="kbyqtszZ" text="Dinliyorum." />
+    <string id="kdR3CeL8" text="Kocamın küçük birliği bir arada kalmayı başarmış, ayrıca birliğini kaybeden askerler ve kaçaklar da onlara katılmış. Geri dönüş yolculuğunu bana anlattı - yemekleri ve suları yokmuş, düşman atlılarını atlatmak için gece gündüz yürümüşler. Ancak sonuçta hayatta kalmayı başardılar ve bunu başaran tertipli tek imparatorluk kuvveti de onlardı." />
+    <string id="Ke7f4XSC" text="Sana Kalradyos'un Ejderha Sancağı'nı takdim ediyorum." />
+    <string id="KfaqPpbK" text="Diğer çevik gençlerle birlikte köyün koyunlarını, keçilerini ve sığırlarını köyün yakınlarındaki çayırlarda otlatmaya götürürdün. Başıboş hayvanları kovalamak senin görevindi ve gerekirse etrafta dolaşan yırtıcı hayvanlara fırlatmak için elinde daima büyük bir taş bulundururdun." />
+    <string id="kg9YtrOg" text="Ailen demircilikle uğraşırdı ve bu Batanya'da saygı duyulan bir meslekti. Telkari işlemeli mücevherlerden, Batanya aristokrasisinin gözdesi olan dengeli uzun kılıçlara kadar her şey ellerinden gelirdi." />
+    <string id="KhL2ctsi" text="Artık gitmeye hazırsın. Köy büyüğüyle tekrar konuş. Sana bir görev verebileceğini söylemişti." />
+    <string id="kIklPYto" text="Buradan ayrılmaya hazır mısın?" />
+    <string id="kJwV17Jx" text="Evet. O günü asla unutmayacağız... O gün, bizi yönetme hakkına sahip olduğunu iddia eden ihtiyarların bunak beceriksizler olduğunu öğrendiğimiz gündü." />
+    <string id="kJxPtbHo" text="Sonuçta ne kazandık? Sturgiyalılar bizden her zamankinden daha fazla nefret ediyor. Vlandiyalılar da. İmparatorluk paramparça oldu. Ne diyebilirim ki... Ben savaşların bir amacı olması gerektiğine inanırım. Ama sanırım halkın içinde benim gibi düşünenler azınlıkta." />
+    <string id="kmM68Qx4" text="liderlik becerilerindi" />
+    <string id="kNXet6Um" text="Şehirde meşhur bir macera yaşamaktı" />
+    <string id="kTaYz2mo" text="{HERO.NAME} ile konuştun." />
+    <string id="kvTEeUWO" text="Burası yanlış yol!" />
+    <string id="kw9sltab" text="Batanyalılar imparatorluğun öncü kollarını ağaçlıklı bir geçitte pusuya düşürmeyi planlamışlardı, Vlandiyalılar ve Sturgiyalılar da sonradan kanatlardan saldıracaklardı. İzcilerimiz Batanya pususunu ortaya çıkardı ama Neretzes onları dinlemedi ve yine de pusuya düştü." />
+    <string id="kwW6v202" text="Atış konumuna git." />
+    <string id="KXj8bsao" text="Şimdi... Eğer sancağı imparatorluğu kurtarmak için kullanmayı planlıyorsan, sana bildiklerimi anlatacağım. Ama eğer ileri değil de geri gitmek istiyorsan, sana yardım etmeyeceğim." />
+    <string id="KXtaJNo4" text="{newline}+{VALUE} Nam" />
+    <string id="kYtRsxSL" text="Vlandiyalılar ile savaştık. Galip geldik ama büyük bir katliam oldu. Kocamın atını katlettiler ama kocam attan düşmüş olmasına rağmen, Vlandiyalıların cesetlerinden oluşan bir yığının ortasında can verdi. Bu sırada bir Sturgiya baltası İmparator'un kafasını yardığı için, İmparator bize ödeme yapabilecek durumda değildi." />
+    <string id="KYW1UiKm" text="Kergitler hiçbir zaman zengin bir klan olmamıştır ama bunu her zaman cesaretimizle telafi etmişizdir. İmparator'un Sturgiyalılara, Batanyalılara ve diğerlerine karşı yanında savaşacak adamlara gümüş vadettiği duyulunca, cesur gençlerimiz bu fırsata balıklama atladılar elbette. En cesurları ve en iyileri olan kocam başlarına geçti." />
+    <string id="kz5PJbV1" text="Evet. Suçlarının bedelini canınla ödeyeceksin {RADAGOS.NAME}." />
+    <string id="kzgbBrYo" text="Sığınaktan çıktığın sırada {RADAGOS.LINK} yanına gelip seninle konuşmak istedi." />
+    <string id="L1V8L2N1" text="Evet. İmparator Neretzes savaşçılarımızı paralı asker olarak tutmayı teklif etmişti. Ben bunda bir sakınca görmedim." />
+    <string id="L3Qb6lbp" text="{FACTION}'{.den} Barış Teklifi" />
+    <string id="LbSvq3be" text="Bir şey daha var. İnsanların bizi ciddiye almasını istiyoruz. Yakında insanları savaşa sokabiliriz. Ailemize soylular gibi bir isim ve sancak seçelim." />
+    <string id="lD5Ob3R4" text="Belki bir kaçamak yaşadın, belki zar oyunlarında hile yaptın veya belki de tehlikeli bir grupla içerken kelimelerini yanlış seçtin. Her durumda, sadece dilinin veya ayaklarının hızı sayesinde canlı kurtulabileceğin bir belaya bulaştın." />
+    <string id="Lep5YKdt" text="Neretzes'in öncü kolları katledilirken, biz de Vlandiyalılar ile karşı karşıya geldik. Ne var ki, Vlandiyalılar çok sayıda arbaletçi getirmişlerdi ve atlı okçularımız ağır kayıplar verdi. Derken zırhlı imparatorluk katafraktları göründü ve arbaletçileri ezip geçtiler. Ancak, biz Vlandiya şövalyeleriyle yakın dövüşe girdik ve işte o zaman kan gövdeyi götürdü." />
+    <string id="lIArdHty" text="Evet. Batanyalıların ihaneti yüzünden babamın hayatını kaybettiği gün." />
+    <string id="lJiEsNiQ" text="Eğitim alanından ayrıldıktan birkaç saat sonra, bir ağacın altında yatan yaralı bir adama rastladın. Suyunu onunla paylaştın ve yaralarını elinden geldiğince sarmaya çalıştın. Sana seyahat eden bir doktor olduğunu söyledi. Yardımlarının karşılığında sana küçük bir bronz parçası verdi ve bu parçayı kendisine ödeme mahiyetinde veren savaşçının, bu parçanın 'Neretzes'in Budalalığı' ile bir ilgisi olduğunu iddia ettiğini söyledi. Parçanın çok değerli olabileceğini düşünüyordu. Bu konuda daha fazla bilgi edinmeye karar verdin." />
+    <string id="lLJh7WAT" text="Pazar alanında çalışır, alışverişe gelenlere hediyelik eşya ve içecek satardın." />
+    <string id="Lmfi0cYk" text="Handaki birkaç yolcuyu koordineli olarak kaçmaya teşvik ettin. Akıncılar çoğunu öldürdü ya da ele geçirdi ama sen kardeşinle birlikte kaçmayı başardın." />
+    <string id="lmG7uRK2" text="Tamam" />
+    <string id="lnAhXvbo" text="Buraya zaman zaman gelen gezgin bir doktor var. İsmi Tacteos. İnsanları bedavaya tedavi eder... Onu severiz." />
+    <string id="LpH8SYFL" text="Ailen Batanyalı bir klan şefinin güvenilir soydaşlarından meydana geliyordu ve büyük salonda onun masasında otururlardı. Baban klan meseleleri konusunda şefine yardımcı olurdu ve Batanya elitlerinin geleneksel silahları olan çift elli kılıç ile orak ve yay eğitimi almıştı." />
+    <string id="LrItHItu" text="Tamam kardeşim, dikkatli ol. Kendine iyi bak." />
+    <string id="Lwdkj0hG" text="Evet, sancağı imparatorluğu kurtarmak için kullanmayı planlıyorum." />
+    <string id="MafIe9yI" text="Genç Erişkinlik" />
+    <string id="mc78FEbA" text="Bir boyarın yoldaşlarıydı." />
+    <string id="Mcd3ZyKq" text="Ailenin sadece kendini doyurmaya ve biraz da gelir elde etmeye yetecek kadar toprağı vardı. Böyle aileler krallığın ekonomisinin temel taşını oluşturduğu gibi, askeri kuvvetlerin de belkemiğiydi." />
+    <string id="MDtTC5j5" text="Bize zarar verme!" />
+    <string id="MEgLE2kj" text="atlar konusundaki becerilerindi" />
+    <string id="MfczTFxp" text="Burası birliklerin kullandığı eski bir eğitim alanına benziyor. Belki biraz zaman ayırıp becerilerimizi tazeleyebiliriz. Akıncılara yetiştiğimizde, alıştırma yapmış olmak işimize yarayabilir." />
+    <string id="mfRbx5KE" text="kitap okur ve ders çalışırdın" />
+    <string id="MFrIHJZM" text="Ailen bir emirin kabilesinin küçük kollarındandı. Babanın toprakları ona bir at almaya yetecek kadar gelir sağladı ama baban zırhlı süvarilere katılmak için gereken zırhı alabilecek kadar zengin değildi. Çölün meşhur hafif atlılarından biri olarak savaştı." />
+    <string id="MK3MUZ4O" text="Klanın mevcut krallıklardan bağımsız olmalı." />
+    <string id="mmQRCHUM" text="Ama karşılığında o alçağı öldürmenin zevkini tadacağım. Ne dersin?[if:idle_pleased][ib:confident]" />
+    <string id="MMv3hsmI" text="Ben köle tacirleriyle düello yapmam. Saldırın!" />
+    <string id="MnmblprY" text="Diğer parçaları nerede bulabilirim?" />
+    <string id="MOVWOyeh" text="Belli ki Gökler seni yüce bir amaç için seçti. Yeni bir efsanenin doğduğunu görüyorum... Sana 'Sancakbeyi' dememe izin ver." />
+    <string id="mP3uFbcq" text="Başarılı bir insan avına önderlik etmekti" />
+    <string id="MREvo37b" text="Tacteos'a karşı gözünü açık tutarsan, sana minnettar oluruz. Eğer hayattaysa ve sağlığı yerindeyse, sana 'macerası' konusunda daha çok bilgi verebilir belki." />
+    <string id="mtiaY2Pa" text="Mevcut bir krallığı nasıl desteklerim?" />
+    <string id="mU1bC1mp" text="Akıncılarla karşılaştın." />
+    <string id="muTb15Io" text="Diğer parçaların nerede olduğunu bilmiyorum, aramaya devam etmen gerekebilir.[sp:/Sounds/VO/mainquest/mntemp_q01_10.ogg]" />
+    <string id="mWMkslbn" text="Bizi buraya getirdi. Kardeşlerim nerede?" />
+    <string id="mxKhvbn7" text="İmparatorluğu birleştirmeye karar verdin." />
+    <string id="N5Qg5ick" text="{MENTOR.LINK}'{.e} imparatorluğa bağlı kendi ülkeni kuracağını söyledin. Kendisi, başarıya ulaştığında seninle konuşmayı bekliyor." />
+    <string id="N66QkYv8" text="Çaylak eğitmeni başarıyla yendin. Kıdemli eğitmene git." />
+    <string id="NdkqUnXb" text="Kendi krallığını kurmak için, bazı koşulları yerine getirmelisin." />
+    <string id="Nf3Hso4i" text="Bu iç savaş başladığında, biraz kararsızdım... Rhagaea en zeki hükümdardı, Garios muhtemelen en iyi dövüşçüydü, Lucon ise yasalarımızı ve geleneklerimizi en iyi bilen kişiydi. Ancak, sen kendi kararını verebilirsin." />
+    <string id="ngazFofr" text="Hayvanlara hep düşkündün ve köyün ahırında olabildiğince çok zaman geçirirdin. Atları sakinleştirme yeteneğine sahiptin ve bazen tayları eğitmeye çağrılırdın. Veterinerliğin temellerini öğrendin, ki öğrendiklerinin çoğu insanlara da uygulanabiliyordu." />
+    <string id="NGbgfPoP" text="Ben oradaydım. Kuzaitlerin çoğu gitti. Büyük bir bölümü şan ve şerefe aç olan Kergit klanındandı ama ben de genç olduğum için şan ve şerefe açtım, dolayısıyla ben de gittim." />
+    <string id="ngFVgwDD" text="Savaşçı-kölelerdi" />
+    <string id="NItH4oL6" text="Eğer yağmalamaya devam ediyorlarsa, daha küçük gruplara ayrılmış olabilirler. Umarım hepsiyle tek seferde karşı karşıya gelmemiz gerekmez. Ancak, birilerini tutmamız veya bize katılmaya ikna etmemiz faydalı olabilir." />
+    <string id="nOfSqRnI" text="kent nöbetçilerinin eğitim alanındaydın" />
+    <string id="NvkWtb8f" text="{RADAGOS.NAME}'{.nin} çetesinin sığınağını bul ve onları mağlup et" />
+    <string id="NzQq2qp1" text="{PARTY_SIZE} Asker Topla" />
+    <string id="oA4iTPyV" text="Yeterince bilgi topladın." />
+    <string id="oa4XFhve" text="{VILLAGE_NAME} Köyüne Git" />
+    <string id="oAoTaAWg" text="birinci" />
+    <string id="oaSTbNwz" text="Kararını verdin mi?" />
+    <string id="OffNcRby" text="Tamam öyleyse. Yola koyulalım." />
+    <string id="Og8nep1w" text="İmparatorluk okçularını kovalayarak onlar da fazla ileri gitmişlerdi. Şövalyelerimizin karşısında hiç şansları yoktu. Sana bir şey söyleyeyim - zaferin yüzde doksanı düşmanının ne zaman hata yaptığını anlamaktır. Gözü kara kişiler de zayıf kişiler kadar çabuk ölürler ve bunu en az onlar kadar hak ederler." />
+    <string id="ok8lSW6M" text="Gençlik" />
+    <string id="OKgsM4nr" text="O ismi lanetliyorum. Kocamı, iki kardeşimi ve sayamayacağım kadar çok kuzenimi benden aldı." />
+    <string id="oMbOIPc9" text="cidacılara katıldın" />
+    <string id="OMrnTIe0" text="Akıncıların beraberinde sürüklediği tutsaklardan birkaçını kurtardın. Susuz ve bitkin görünüyorlardı. Onlara biraz su ve ekmek verdin; bir süre sonra içlerinden biri sendeleyerek ayağa kalktı ve yanına geldi." />
+    <string id="ORnjaMlM" text="Akıncılara yenik düştün ama kardeşin seni kurtardı. Ancak, görünüşe bakılırsa akıncıların hiçbir yere gittiği yok, dolayısıyla hazır olduğunda tekrar saldırmalısın.{newline}Birliğinde en az {NUMBER} kişi olmalı. Eğer yoksa köye dön ve daha çok asker topla." />
+    <string id="Os79KwFa" text="Ben öncü kollarla birlikteydim. Anlaşılan Neretzes, Batanyalıların pusu kurduğunu biliyormuş - Kuzait izcileri ona söylemiş. Ne var ki Neretzes bizi bilgilendirmeye gerek görmedi. Dolayısıyla, etrafı ağaçlarla kaplı güzel bir dereden yukarı tırmanmaya koyulduk, ta ki dört bir yandan Batanya okları yağmaya başlayana dek." />
+    <string id="OS8YjyE5" text="Yolunu seçmeden önce Ejderha Sancağı'nın bütün parçalarını toplamalısın." />
+    <string id="OwcgxRXB" text="Savaşın zayıf düşürdüğü {FACTION} çöktü ve klanları etraftaki krallıklara sığındı." />
+    <string id="oX2aoilb" text="{MENTOR.NAME}, {KINGDOM_NAME}'{.nin} yükselişinin farkında. Söylentilere göre {MENTOR.NAME}, ilerlemeni durdurmayı planlıyor. Hazır ol!" />
+    <string id="p0fmZY5r" text="Köy büyüğü bize yardımcı olabilir. Onu bulmaya çalışalım..." />
+    <string id="p2KIhGbE" text="Kentli demircilerdi" />
+    <string id="p3Kia1OO" text="{LITTLE_SISTER.LINK}'{.i} ve {LITTLE_BROTHER.LINK}'{.i} derhal {SETTLEMENT_LINK}'{.e} götüreceğim. Orada güvende olurlar." />
+    <string id="p4qJ4KSm" text="Eğer daha fazla bilgi istiyorsan, konuşabileceğin iki kişi var. {IMPERIAL_MENTOR.NAME} resmi olarak değilse de, Neretzes'in casusbaşı olarak görev yapardı. Kendisi {IMPERIAL_MENTOR_SETTLEMENT}'{.nin} yakınlarında yaşıyor." />
+    <string id="pa9LrHln" text="Geldik sanırım. Şimdi... Erzak almalı ve belki de bizimle gelecek birkaç kişi bulmalıyız." />
+    <string id="pCNSEPEP" text="Kaçtın mı? Kardeşim nerede? Ne oldu?" />
+    <string id="peNBA0WW" text="Hikaye Geçmişi" />
+    <string id="peSuujki" text="Son olarak, imparatorluğa bağlı olmayan bir yerleşkeye hükmetmelisin." />
+    <string id="PiKISvfu" text="{PLAYER.NAME}! Geleceğini biliyordum. Vay canına. Seni durdurabilecek hiçbir şey yok! Seni seviyorum kardeşim.[if:happy][ib:demure]" />
+    <string id="PJ5C3Dim" text="{ANTIIMPERIAL_MENTOR.NAME}'{.nin} Komplosu" />
+    <string id="PKhcPbBX" text="Ailen göçebe bir klandandı; keçi ve deve sürülerini Nahasa'nın dağınık çalılıklarında otlatmak için vadi yataklarıyla pınarların arasında mekik dokurlardı." />
+    <string id="PlpNTQqf" text="{HIDEOUT_BOSS.LINK}'{.nin} şu anda nerede olduğunu biliyorum. İstersen birlikte saldırıp akrabalarını kurtarabiliriz." />
+    <string id="pOuGX9j0" text="Sancağın bir parçasına sahip olabilirsin ama kendi başına pek bir işe yaramaz. Diğer parçaları da bulmalısın. Parçaları bir araya getirdiğinde, çok değerli bir şeye sahip olacaksın." />
+    <string id="PQgzfHLk" text="Pekala. Bu müthiş parçayı ele geçirdiğine dair söylentiler duymuştum." />
+    <string id="Pus87ZW2" text="{BANNER_PIECE_COUNT} sancak parçasını buldun!" />
+    <string id="pVKkclVk" text="Eğitim aşamasında etkileşimler sınırlıdır. Bu etkileşim kapalıdır." />
+    <string id="pX5cx3b4" text="Size zarar vermek gibi bir niyetim yok. Kardeşlerimizi kaçıran bir grup akıncının peşindeyiz." />
+    <string id="PyVqDLBu" text="Ailen sana fazla para vermedi ama küçük bir atölye inşa etmek için yüksek miktarda borç almana yetecek kadar para bıraktı. Borcunu ödedin ve atölyeni iyi bir fiyat karşılığında sattın." />
+    <string id="q0PMinbA" text="İmparatorluğu hayatta tutan yalanları ve gaddarlığı herkesten daha iyi bildiğimi söylemem yeterli olur sanırım. Ancak, Neretzes'e hizmet ettiğim 10 yıl içinde işlediğim bütün cinayetler, bir ordu herhangi bir kente girdiğinde bir saat içinde gerçekleşen ölümlerle kıyaslanamaz bile." />
+    <string id="q80FFaBj" text="Bir de eskiden onun muhafızı olan {ANTI_IMPERIAL_MENTOR.NAME} var. Kendisi {ANTI_IMPERIAL_MENTOR_SETTLEMENT}'{.nin} yakınlarında olmalı ama o günden bu yana çok değiştiğini duydum." />
+    <string id="qa0o7xaj" text="Klan Bağımsızlığı" />
+    <string id="qAbMagWq" text="pazarda mal satardın" />
+    <string id="Qb0wsarP" text="Nimr adında Bani Sarranlı bir savaşçı vardı. Cesurdu ama kibirliydi. Gençler onu severdi elbette. İmparatorluk ile savaşmaya götüreceği adamlar arıyordu ve bizim bundan hiçbir kazancımız olmamasına rağmen, Unqid ona engel olmadı. Unqid bazen zayıflık gösterebiliyor." />
+    <string id="QbsDYITB" text="Evet, evet. Yolu göster öyleyse.[ib:closed][rb:negative]" />
+    <string id="qcGbTfbH" text="Hazır olduğunda beni bul!" />
+    <string id="Qdz5Hely" text="Aşağıdan savun." />
+    <string id="QF8B6XFS" text="Tamam öyleyse. Dağılalım ve ufaklıkları ayrı ayrı arayalım. Eğer onları senden önce bulursam, haber gönderirim..." />
+    <string id="qhAhPWdp" text="yolcuların kaçmasını sağladın." />
+    <string id="qIltCuBe" text="Artık yola çık. Ufaklıkların yerini öğrendiğimde, gelip seni bulurum." />
+    <string id="QLgkR3qN" text="Parkuru ({TIME_SCORE}) saniyede başarıyla tamamladın. Iskaladığın ({MISSED_TARGETS}) hedeften ({PENALTY_SECONDS}) saniye ceza aldın." />
+    <string id="qlOuiKXj" text="Meşhur bir macera yaşamaktı" />
+    <string id="qMUfOtyk" text="{HERO.LINK} ile konuştun." />
+    <string id="qnqdEJOv" text="Kent nöbetçilerinin atış talimleri yapmalarını ve bir kuşatma durumunda surları savunmak için hazırladıkları planları izlerdin." />
+    <string id="qNR8WKcX" text="Bir krallığı Ejderha Sancağı ile desteklemeden önce o krallığa katılmalısın." />
+    <string id="qNZFkxJb" text="Ailen, krallığın ana şehirlerinden birinde tüccarlıkla uğraşırdı. Yakınlardaki kentlere kervanlar gönderirler ve tüccar loncasında aktif bir rol üstlenirlerdi." />
+    <string id="qoA4UPly" text="Hiçbir şey Palaic halkını geri getiremez. Artık imparatorluğa bağlılar. Ne var ki, mabetlerimizi ve kalelerimizi yıkan bir devletin varlığını sürdürmesi ve gelişmesi hem ismimize, hem tanrılarımıza, hem de hafızamıza karşı bir hakarettir." />
+    <string id="qp2zYfua" text="Burada daha çok hazine bulmayı umuyordum ama sanırım {RADAGOS.NAME} ile çetesinin işleri pek de iyi gitmiyormuş." />
+    <string id="qPg3IDiq" text="Ailen, Kuzait fethinden önce Kalradya'nın doğusundaki şehirlere hükmeden tüccar klanlarından birine mensuptu. Yeni hükümdarlarına hemen uyum sağlayarak kervan ticaretinin devam etmesini ve bir zamanlar imparatorluğun kasasına giren tarife gelirlerinin kağanlığa akmaya başlamasını sağladılar." />
+    <string id="QrYjPUEf" text="detaylara gösterdiğin özendi" />
+    <string id="qV1e0x8i" text="'Neretzes'in Budalalığı' nedir?" />
+    <string id="QxeKZ3nE" text="{CLAN_TIER} Klan Rütbesine Ulaş" />
+    <string id="r2XC8nbZ" text="{YOUTH_INTRO}" />
+    <string id="R3CnF55p" text="Pekala... İşyerime gelip çalışanlarımı öldüren kim?[if:idle_angry][ib:warrior]" />
+    <string id="R4Gqskgq" text="Zafer" />
+    <string id="R5kLv5kg" text="Ben Palaic dediklerindenim. Palaic lisanı artık birkaç yaşlının dışında hiç kimse tarafından kullanılmıyor. 'Palaic' kelimesi bile imparatorluktan gelir. Biz kim olduğunu unutmuş bir halkız." />
+    <string id="r8ZLabb0" text="Ejderha Sancağı'nın bütün parçalarını topladım. Şimdi ne olacak?" />
+    <string id="rbjjDYXj" text="Sığınaktaki akıncılar tarafından yenilgiye uğratıldın ama kaçmayı başardın. Tekrar saldırabilmek için beklemelisin." />
+    <string id="RbXiEdXk" text="1. Klan Rütbesine Ulaş." />
+    <string id="rcoueCmk" text="Ergenlik" />
+    <string id="rCX81DDR" text="İmparatorluk yok edildi!" />
+    <string id="RDfXuVxT" text="Çiftçiydi" />
+    <string id="rDuegB1L" text="Nihayet geldin! Saldırıya geçmeden önce söyleyeceğim bazı şeyler var.[if:idle_pleased][ib:confident]" />
+    <string id="RefpTQpr" text="Belki. Hoşça kal {RADAGOS.NAME}..." />
+    <string id="RF3NoR3d" text="Bu bölgeye akınlar düzenleyen çetelerin birkaçını idare ediyormuş gibi görünüyordu. Eğer soydaşların onların elindeyse, o mutlaka biliyordur." />
+    <string id="rfkKxdxp" text="{ANTI_IMPERIAL_MENTOR.LINK} ile de konuştun. Artık bir karar vermelisin." />
+    <string id="Ri6NmpEE" text="Bir ulağın koşarak gelip bana babamın öldüğünü haber verdiği günü asla unutmayacağım. Kederimi içime atmam gerektiğini biliyordum, çünkü artık kral bendim. Sancaklarını ganimet olarak almak için atımı imparatorluk kampının kalıntılarına sürdüm; bu babamın kazandığı ve bana bıraktığı mirastı. Boyarlardan bazıları baş kaldırdı. Ancak, o günden bu yana onlara hükümdarlarının kim olduğunu gösterdim." />
+    <string id="rinefpgo" text="Köye geldin. Erzak alabilir ve akıncıların peşine düşmene yardım edecek adamlar tutabilirsin. Önce köye git ve köy büyüğüyle konuş." />
+    <string id="RJ9NbuYr" text="Ufaklıkların fidyesini ödemek için para toplamamı mı istiyorsun?" />
+    <string id="RKVNvimC" text="koyunları güderdin" />
+    <string id="RmbWW6Bm" text="Yapılı ve heybetli bir genç olduğun için, klan şefinin muhafızları bir gün onlara katılmak üzere onlarla birlikte talim yapmana izin verdi." />
+    <string id="rMem50oz" text="Benim bu konuda yapabileceğim bir şey olduğu sürece, İmparatorluğun bu iç savaşı atlatamayacağına yemin ettim. İnan bana, eğer sancak bende olsaydı, yapabileceğim bir şey olurdu." />
+    <string id="rmMcwSn8" text="Ailenin ticari işlerine yardımcı olur, alım yapmak ve kervanları denetlemek için pazar alanına giderdin." />
+    <string id="RtryETdA" text="Savaşta bizi desteklemeye yemin ettiklerinde, adam gibi bizimle birlikte kalkan duvarında yer alacaklarını sandık. Ancak, Batanyalılar öyle yapmadılar elbette. Tepelerdeki ormanlık bölgede bir dolap çevirerek Neretzes'in öncü kollarını öldürdüler ve hiç kuşkusuz savaşın geri kalanını naralar atarak, böbürlenerek ve zaten ölmüş olan adamların kafalarını keserek geçirdiler." />
+    <string id="RuvSk3QT" text="Bölgedeki bir avcıya eşlik eder, onun tuzak kurmasına ve küçük hayvanlar yakalamasına yardım ederdin." />
+    <string id="RwlDeE9t" text="{IMPERIAL_MENTOR.LINK} ile de konuştun. Artık bir karar vermelisin." />
+    <string id="RX55kcB5" text="Erkek kardeş:" />
+    <string id="rY0fdQSb" text="Hayır, hâlâ üzerinde çalışıyorum..." />
+    <string id="S1yCTPrL" text="Bu, şimdiye kadar benim için gerçekleştirilen en değerli hizmetlerden biri. Müteşekkirim." />
+    <string id="S5Dn2K3m" text="Komployu durduramadın. Tekrar dene." />
+    <string id="s8PNllPN" text="Yaşadığın mahalleyi yangından kurtarmaktı" />
+    <string id="sb4gg8Ak" text="Mülk sahibiydi" />
+    <string id="scjogyUD" text="Yaşlı Kral Vadinslav cesurdu. Çarpışmada bize önderlik etti. Kalkanlarımızın tepesinden imparatorluk askerleriyle göz göze gelirken, babamın yanında durdum. Kalkan duvarlarının karşı karşıya geldiği, hücum ettiğin ve ayakta kalmaya çalıştığın diğer çarpışmalardan bir farkı yoktu ama anlatması zor. Sturgiyalıların genellikle kazandığı türden çarpışmalardandı diyelim." />
+    <string id="sejEf69A" text="Aseray güruhunun üzerine ilerlerken, atlarımızın toynaklarının çıkardığı sesten daha tatlı bir müzik duymadım. Bir şahinin tavşana çullandığı gibi, üzerlerine çullandık." />
+    <string id="SF7dqoEe" text="Elbette Nimr'in kibri ikiye katlandı. Derken, bize büyük bir hakarette bulundu. Bu hakaretin ne olduğunu söylemeyeceğim, çünkü artık yok. Biz onu yok ettik. Geleneksel yoldan. Bunu bir başkasına sorabilirsin." />
+    <string id="SFJFIaAD" text="Kral Caladog'un büyük zaferi... Kim buna gölge düşürecek bir şey söylemeye cesaret edebilir ki?" />
+    <string id="ShG19Xhi" text="Teşekkürler..." />
+    <string id="sivYeb1B" text="Krallığını kurmak için bütün koşulları yerine getirdin. {MENTOR.LINK}'{.e}, bir krallık kurduktan sonra kendi krallığını destekleyeceğini söyle." />
+    <string id="sJeYHMGG" text="İmparatorluğu birleştirdin." />
+    <string id="sJoO1JzN" text="İmparatorluk askerleri bizimle daha fazla başa çıkamayınca dağıldı ve surlara koştu. Oradan oklar ve taşlar atmaya, lanetli ateşlerini salmaya başladılar. Merdivenlerden teker teker çıkmak zorunda kaldık. Vadinslav bir gürz darbesiyle can verdi; onun ardından babam çıktı, ortalığı yararak bizi bir araya topladı ve zafere taşıdı." />
+    <string id="SmVwMrUM" text="Kalradyos'un sancağı efsanelere konu olmuştur. Sancağın, halkını fethetmek ve yağmalamak amacıyla bu topraklara getiren Yüce Kalradyos tarafından taşındığı söylenir. Efsanelere göre, Kalradyos'un gerçek bir oğlu tarafından önderlik edilen hiçbir ordu savaşta mağlup olmaz." />
+    <string id="sn3Eabme" text="Elbette. Ben savaşa şahit olmadım ama kocam Arenicos savaştan sık sık bahsederdi." />
+    <string id="SpJqhEEh" text="Ozandı" />
+    <string id="sSaZVD2e" text="Babam imparatorluğun ejderha sancağını Neretzes'in cesedinin elinden aldı - bu meşhur bir hikayedir - ama sonra küçük prens Raganvad sancak üzerinde hak iddia etti. Babam sancağı dizinin üzerinde kırıp ona fırlattı ve kendi oyuncaklarını kendisinin bulmasını söyledi. Hah! Ne güzel bir gündü." />
+    <string id="StLYbEQZ" text="Yardıma ihtiyacımız var. Akıncılar iki küçük kardeşimizi kaçırdılar. Bu taraftan geçmiş olabileceklerini düşünüyoruz." />
+    <string id="str_continue" text="Devam Et..." />
+    <string id="SvYCz6z6" text="Kaybettin. Silah rafıyla etkileşimde bulunarak eğitimi yeniden başlatabilirsin." />
+    <string id="Sw8OxnNr" text="Bir emirin soyundandı." />
+    <string id="sYuN6hPD" text="Kalradya krallıklarının hepsi hafif süvarilerin değerinin farkındadır ve bu görevi yerine getirebilecek becerilere sahip göçebeleri ve sınır bölgesi sakinlerini askere alacakları kesindir. İyi bir binici olduğun için, komşuların bir araya gelip sana küçük bir midilli ve bir deste cirit aldılar, böylece onların askeri yükümlülüklerini yerine getirebilecektin." />
+    <string id="t71lPdyb" text="Nasıl?" />
+    <string id="T7m7ReTq" text="küçük hayvanlar avlardın" />
+    <string id="T7ye4wUT" text="Kral Aeril bir av sırasında ortadan kayboldu ve Caladog kral oldu. Kabileleri savaşa soktu. Kral Aeril, İmparator ile yeminlerle mühürlenmiş bir barış antlaşması yapmış olsa da, hepimiz savaşmaya istekliydik. Gözümüzü intikam bürümüşken, kutsal yeminleri ve onuru kim önemserdi?" />
+    <string id="T8naYoGH" text="Konuşulacak Soylular" />
+    <string id="taOCFKtZ" text="Akıncı çetesiyle başa çıkmak için daha çok asker toplamalısın. Daha çok asker toplamak için köye dön." />
+    <string id="TB20aFsf" text="Benim {CONVERSATION_HERO.FIRSTNAME} olduğumu biliyorsundur muhtemelen. Beni neden arayıp bulduğundan emin değilim, ama imparatorluğun kuklası olduğum günlerin geçmişte kaldığını bilmelisin. [rb:trivial]" />
+    <string id="tBGtavMG" text="Gidenlerin çoğu Kergit klanındandı. Kergit klanı yenidir. Bizimki gibi bir geçmişleri yoktur. Hep kendilerini kanıtlamaya çalışırlar. Her neyse, noyanları Gotug savaş sırasında hanesinin erkeklerinin büyük bir bölümüyle birlikte can verdi. Ne diyebilirim ki? Zafer açlığı tehlikelidir; hem bu açlığı çeken için hem de etrafındakiler için." />
+    <string id="TbNRtUjb" text="Tehlikeli bir hayvanı avlamaktı" />
+    <string id="TcRH7abK" text="Bütün parçaları ele geçirdiğinde bana dön; ben bu parçalardan faydalanmana yardım edeceğim. " />
+    <string id="TeMExjrH" text="Aktif olan mevcut görev sırasında bu seçenek kapalıdır." />
+    <string id="tGEStbxb" text="Kabile halkındandı" />
+    <string id="TH6L7OXu" text="Öyleyse, kararını verdiğinde geri gelebilirsin.[sp:/Sounds/VO/mainquest/mntemp_q01_12.ogg]" />
+    <string id="tI5L0wRB" text="{MENTOR.LINK}'{.nin} tavsiyesine kulak vererek, İmparatorluğa karşı koyacak bir krallık kurdun." />
+    <string id="tI8ZLtoA" text="tamirat yapardın" />
+    <string id="TIaVyqMx" text="Aradığını bulmana sevindim. Şimdi, daha önce bahsettiğim meseleye gelecek olursak... " />
+    <string id="TkgLEDRM" text="Tüccardı" />
+    <string id="TKpFB4qN" text="İmparator Neretzes, Sturgiyalılar, Batanyalılar ve Vlandiyalılardan oluşan bir ittifakla savaşmak üzere Kuzaitlerin ve Aseraylıların eşlik ettiği bir orduya önderlik etti." />
+    <string id="tkXKef0Z" text="Ben de imparatorluğun yıkıldığını görmek isterim." />
+    <string id="TLRyyRaW" text="Satın Alınan {GRAIN} Miktarı" />
+    <string id="TNxWBS07" text="Savaş {REMAINING_TIME} {?REMAINING_TIME&gt;1}saniye{?}saniye{\?} içinde başlayacak..." />
+    <string id="TPoK3GSj" text="Aylak takımındandı" />
+    <string id="tRIrbTvv" text="Şehrin arka sokak haydutlarındandı" />
+    <string id="TRwgSLD2" text="kırlarda ot toplardın" />
+    <string id="tsjQtWsO" text="Beni kurtardığın için teşekkür ederim. Umarım tekrar karşılaşırız!" />
+    <string id="tTb28jyU" text="Batanyalıların çoğu piyade olarak savaşır; ciritleriyle düşman hatlarını taciz edebildikleri gibi, düşman hatları zayıflatıldıktan sonra son saldırıya da katılabilirler." />
+    <string id="tTLvo8sM" text="Klan Seviyesi" />
+    <string id="tVlZTOst" text="Sen farklı bir yol seçtin." />
+    <string id="tWwXEWh6" text="Konuşmak için portreyi kullan ve göreve başla." />
+    <string id="tzkclhXs" text="Savaşa nasıl hazırlanmalıyız?" />
+    <string id="tzsZTcWd" text="Hangi krallığı desteklemeliyim?" />
+    <string id="TZZX9kWf" text="{MENTOR.LINK} Ejderha Sancağı'nı sunarak imparatorluğa bağlı ülkelerden birini desteklemeni önerdi." />
+    <string id="u1Pkt4HC" text="Akıncılar" />
+    <string id="UCoOMWaj" text="Bak, hepsini savunmak mümkün. Bu savaş başladığında, insanlara hükmetmekten en iyi anlayan kişinin Rhagaea, en güçlü savaşçının Garios ve geleneklerimizi en iyi bilen kişinin de Lucon olduğunu düşündüm. Açıkçası, kararsız kaldım." />
+    <string id="UDL0v1bR" text="Sanırım elimde Kalradyos'un Ejderha Sancağı'nın bir parçası var." />
+    <string id="ueCm5y1C" text="Ailenin şehirde kendine ait bir atölyesi vardı ve kırsal bölgelerden getirilen ham maddelerden çeşitli ürünler yaparlardı. Baban kent konseyinde küçük de olsa aktif bir rol üstlendiği gibi, milis kuvvetlerinde de görev yapardı." />
+    <string id="uhYXopnJ" text="Hazırlıklarını tamamladın mı?" />
+    <string id="UjyZ7GFk" text="Etkileyici, çok etkileyici. İşler ilginçleşecek." />
+    <string id="UkNUuyr1" text="Mağlup Edilen Birlikler" />
+    <string id="ULn7iWlz" text="Bizim elimizde güçlü bir araç olacak. İnsanlar Göklerin Kalradya İmparatorluğu'nu eski konumuna getirmemizi istediğini düşünecekler." />
+    <string id="uNgu02FH" text="Seninkileri de mi ele geçirdiler? Bunu duyduğuma üzüldüm. O alçaklar buralarda da birkaç kişiyi öldürdüler ve etrafı yağmaladılar." />
+    <string id="unOLk4PY" text="Pekala. Sen kimsin ve neden bana geldin?" />
+    <string id="UpUqL368" text="Ne alçaklık, değil mi? Bu meslekte bile yoldaşlarına ihanet etmek hoş karşılanmaz." />
+    <string id="upyNhwZ9" text="Evet, sancağı imparatorluğu yok etmek için kullanmayı planlıyorum." />
+    <string id="URgZ4ai4" text="Ailen, Kuzait klanlarından birinin orta düzey mensuplarındandı. Babanın kendine ait sürüleri vardı ama zengin değildi. Kuzaitler savaşa çağrıldığında, baban atlı okçularla birlikte savaşır ve kargıcılar son darbeyi indirmeden önce düşmanı oka tutarak zayıflatırdı." />
+    <string id="uvbCyLiR" text="Bu doğru mu? Çok ilginç." />
+    <string id="UVuwofhS" text="Klanlar kurulur ve dağılır. Benim görevim bütün Kuzaitlere hizmet etmektir. Bir de şöyle düşün. Eğer kocası ölmeseydi, Leydi Mesui Kergitlerin liderliğini asla üstlenmeyecekti. Ölüm fırsatlar yaratır. Büyük bir savaştan sağ kurtulanlar yas tutuyormuş gibi görünürler ama içten içe bayram ederler." />
+    <string id="uw2kKrQk" text="{EXP_VALUE} Beceri Düzeyi ve {FOCUS_VALUE} Odak Puanı {SKILL_ONE}{newline}{ATTR_VALUE} Nitelik Puanı {ATTR_NAME}{TRAIT_DESC}{RENOWN_DESC}{GOLD_DESC}{.e}" />
+    <string id="uYjEknNX" text="{VICTIM}'{.nin} {EXECUTER} tarafından infazı" />
+    <string id="v48N6h1t" text="Şehirde zanaatçıydı" />
+    <string id="vaLehwRl" text="İmparatorluğa, saldırıya uğradıkları takdirde yanlarında yer alacağımıza yemin etmiştik. Bana kalırsa yeminimizi tutmamız gerekirdi, çünkü saldıran taraf Batanyalılar ve Sturgiyalılardı ama detaylar her zaman tartışmaya açıktır. Sonuçta baronlarımız İmparatorlukla birlikte savaşmak istemedi ve yardım göndermeye direndi." />
+    <string id="VbJvL8yB" text="Bana güvenemezsin. Ama bana ihtiyacın var ve seni tuzağa düşürmeye kalkışacak olursam, gırtlağımı bir çırpıda kesebilecek kadar adamın var sanırım. Benim sana güvenmeme ise gerek yok - sen benim ortağım değil, intikam aracımsın." />
+    <string id="vCBuF6dq" text="4 asker topla. Asker toplamak için köy menüsünden &quot;Asker Topla&quot; seçeneğine tıkla." />
+    <string id="vDRRsed8" text="Kardeşlerimizi geri almamıza yardım etsen iyi olur, yoksa seni ağaçta sallandırırız." />
+    <string id="veHe94Ec" text="Kulvarı ({TIME_SCORE}) saniyede hiçbir hedefi ıskalamadan tamamladın!" />
+    <string id="VeY3PQFL" text="İmparatorluğu mağlup etmeyi seçtin." />
+    <string id="vfhVveLW" text="Şamandı" />
+    <string id="vH7GtuuK" text="ahırda çalışırdın" />
+    <string id="vjOHmHOH" text="Pusu... Çok iyi planlandığını ve uygulandığını hiç kimse yadsıyamaz. Ancak, Sturgiyalıların imparatorluğun ana kuvvetleriyle, Vlandiyalıların ise meşhur süvarileriyle çarpıştığını da yadsıyamam, dolayısıyla şan ve şerefin büyük kısmının Batanya evlatlarına ait olduğunu düşünmüyorum." />
+    <string id="vJyTsFdU" text="Pek bir şeye benzemiyor ve bu grubun onu az bir para karşılığında elden çıkaracağını düşünüyorum ama ben onu zamanında tedavi ettiğim bir paralı askerden almıştım ve kendisi onun 'Neretzes'in Budalalığı' ile bağlantılı olduğuna yemin etmişti. Bunun ne anlama geldiğini bilmiyorum ama Neretzes birkaç yıl önce savaşta hayatını kaybeden imparatordu elbette. Belki sen onun gerçek değerini öğrenebilirsin." />
+    <string id="VLD5416o" text="Yoldaş Alındı" />
+    <string id="VlXOgIX6" text="izcilerle birlikte at sürdün" />
+    <string id="VN4ctHIU" text="Ürün satın al" />
+    <string id="vxDVCK3n" text="Sığınaktaki akıncılar tarafından yenilgiye uğratıldın ama kaçmayı başardın. Tekrar saldırabilmek için beklemelisin." />
+    <string id="w0CUaEU7" text="Henüz gırtlağımı kesmedin ve bu akıllıca bir hamleydi. Diriyken sana daha faydalı olmanın bir yolunu bulabileceğimden eminim." />
+    <string id="w2TEQq26" text="İnsanlara karşı daima dikkatliydin ve amaçlarını tahmin etmekte başarılıydın. İnsanların nasıl yönlendirildiğini inceledin ve yetişkinlerden öğrendiklerini arkadaşlarının üzerinde denedin." />
+    <string id="W49eUmpT" text="({CROUCH_KEY}) ile, ya da atına bakarken ({ACTION_KEY})'{.e} basarak atından inebilirsin." />
+    <string id="W7hi7jS4" text="Eh, ümide kapıldım sanırım. Pekala, ayaklarına kapanmayacağım, dolayısıyla yap gitsin." />
+    <string id="wajioDaK" text="Sturgiya piyadeleri bizi kampımıza sürene dek Neretzes ile birlikteydim ve sonrasında siperlerde savaştım. Nihayetinde onları daha fazla tutamadık. Neretzes'e ya da sancağımıza ne olduğunu görmedim. Arenicos bizi oradan kurtardı ve evimize ulaştırdı. Eskiden Arenicos'a saygı duymazdım ama o gün İmparator olmaya layık olduğunu gördüm." />
+    <string id="WbHfGCbd" text="Bir kuşatmadan sağ kurtulmaktı" />
+    <string id="WchH8bS2" text="Ailen, Batanya klanlarından birinin orta düzey mensuplarındandı ve kendi topraklarını sürerdi. Baban halkının ana kuvvetleriyle birlikte savaşır ve Batanyalıların meşhur taarruzlarına katılırdı." />
+    <string id="WDylM3dx" text="Akıncılar buradan geçmeden sadece birkaç saat önce yola çıktı. Pek görmüş geçirmiş bir tip değil, aslına bakarsan, tam da tuzağa düşürülüp ele geçirilecek tiplerden. Onun için endişeleniyoruz." />
+    <string id="wErSpkjy" text="Hâlâ üzerinde çalışıyorum." />
+    <string id="weS3DJKA" text="Savaşın zayıf düşürdüğü {FACTION}'{.nin} hükümdarı, {PLAYER_FACTION} ile barış yapmayı teklif ediyor." />
+    <string id="wfbtS71d" text="Bir kervana önderlik etmekti" />
+    <string id="WIUbM9Hc" text="Eğitime başlamak için bir silah seç." />
+    <string id="WN1tHPnB" text="Devam edip imparatorluğun batısını tümden ele geçirmeliydik. Eğer Derthert biraz adam olsaydı, öyle yapardık. Gelgelelim, Derthert'in yüreği hiçbir zaman savaştan yana değildi. Sturgiyalılara yardım ederek İmparatorluğa ettiği yemini bozduğuna inanıyordu ve bu düşünce içini kemiriyordu. Ondan iyi bir uşak olurdu. Gel gör ki, kendisi bizim kralımız oluyor." />
+    <string id="wO19nK2y" text="İmparatorluğu zayıflattın." />
+    <string id="WOKNhaG2" text="Ailen Kuzaitlerin kutsal geleneklerini korur, doğanın ve ataların ruhlarına aracılık ederdi. Hastaları tedavi eder, insanlara yol gösterir, anlaşmazlıkları giderir ve kullanışlı tavsiyeler verirlerdi." />
+    <string id="WTjAYUoD" text="Istiana için sancağın bir diğer parçasını bul" />
+    <string id="WUa1gnkS" text="Bak, savaştan hemen önce yüce kralımız Aeril ortadan kayboldu. Böylece Caladog tahta çıktı. Böyle şeyler dedikodulara neden olur, değil mi? Ama ben sana söyleyeyim, yaşlı Aeril asla Caladog'un o gün elde ettiği gibi bir zafer elde edemezdi." />
+    <string id="wvHvnEog" text="Arzagos'un sana bahsettiği sığınağı bul ve sıradaki sancak parçasını ele geçir." />
+    <string id="wWLnZ6G4" text="Kardeşleriniz için başlattığınız av sonuç vermediğine göre, çekip gitmeye ve kendi canınızı kurtarmaya ne dersiniz? Ya çekip gidersiniz ya da size döktüğünüz kanı yalatırım. Veya... Sen ve ben bunu teke tek hallederiz.[ib:confident]" />
+    <string id="WysXGbM6" text="Savunmak için sağ tıkla" />
+    <string id="WYvnWcXQ" text="Köydeki bütün çocuklar gibi, sen de tarlalardaki işlere yardım ederdin. Ayrıca..." />
+    <string id="WyZ2UtFF" text="Ailen boyarların otoritesinden hoşlanmazdı. Geçimlerini ormanın derinliklerinde sağlar, yeni bir yere geçmeden önce, bir veya iki yıl boyunca ektikleri tarlaları yakıp temizlerlerdi. Tilki, tavşan ve kakım gibi kürklü hayvanları avlar ve kapanla yakalarlardı." />
+    <string id="x1HTX5hq" text="Köyünü bir su baskınından kurtarmaktı" />
+    <string id="X1TJNkBV" text="Kardeşlerini bulduk. Ama eski ortağım {HIDEOUT_BOSS.LINK} bana ihanet etti. Çocukların serbest bırakılmasını görüşmek üzere kampına gittik ve bizi oracıkta ele geçirdi." />
+    <string id="X2tfHsXV" text="Liderleriyle konuşarak desteklemek istediğin krallığa katılmalısın." />
+    <string id="x3KpQouT" text="Korkmuş koyunlar gibi şaşkın şaşkın bir o yana, bir bu yana koşmaya başladıklarında, oraklarımızla ve kılıçlarımızla üzerlerine çullandık. Ortalığı yararak ilerledim. 12 kelle aldım ama benimki diğerlerininkinin yanında pek de büyük bir rakam sayılmazdı. Ah, torunlarım bu hikayeyi dinlemekten bıktılar..." />
+    <string id="X3pDRmjK" text="Babamın kazandığı ama Raganvad'ın sahiplendiği bir zafer." />
+    <string id="X9Vmjipn" text="Aşağıdan saldır." />
+    <string id="xachJ1hb" text="Evet, hepimiz iyiyiz. {LITTLE_SISTER.LINK} ile {LITTLE_BROTHER.LINK} korktular ama iyiler... Çabuk olmalı ve buradan hemen kurtulmalıyız.[if:idle_insulted][ib:closed]" />
+    <string id="XdDQdSsW" text="Sıcak çarpmasının belirtilerini hissedebiliyordum ve onlara söyledim ama beni daha da çok kırbaçladılar... Eğer siz gelmemiş olsaydınız... Belki de size doğru düzgün teşekkür etmemin bir yolu vardır." />
+    <string id="XEuhxpCX" text="İmparatorluk savaşta hilelere ve tuzaklara başvurur. Hiçbir Batanyalı, imparatorluk askerleriyle yüz yüze çarpışmaktan korkmaz ama hilelerini onlara karşı kullanmanın eğlenceli olacağını düşündük. Dolayısıyla, ağaçlıklı bir geçidin her iki yanına da pusu kurduk ve bil bakalım ne oldu? Doğruca pusuya yürüdüler." />
+    <string id="Xg6jhfPt" text="Nimr hak ederek kazandığı bir zaferle geri döndü. Bani Qild'in kızlarından biri ona ilgi duymaya başladı ve bir kaçamak yaşadılar; gençler bazen böyle şeyler yaparlar. Kahramanlar da. Ne var ki Nimr'in hareketleri Qildlilerin gururunu incitti. Onu kaçırıp öldürdüler ve pazar alanlarındaki bir kafeste sallandırdılar. İmparatorluğu ve Vlandiyalıları affederiz. Qildlileri... bunu benden isteme." />
+    <string id="xGdoz9Pn" text="Onu en son birkaç gün önce gördük. Yanında bir sandık vardı ve bu konuda çok gizemli davranıyordu. Bir 'macera' peşinde olduğunu söyledi ama başka bir şey söylemedi." />
+    <string id="XgFU1pCx" text="Ailen..." />
+    <string id="XIIISsIg" text="Bani Sarranlılar için daha gururlu bir an yoktur." />
+    <string id="xjduipCO" text="Şanlı ordularımız defalarca yenilgiye uğradılar elbette ama o komutanlar ve imparatorlar 'gerçek oğullardan' değillerdi herhalde. Akıllıca bir efsane. Bir çocuk bile arkasında yatanları görebilir ama insanlar bizi birbirimize bağlayan asil yalanların arkasında yatanları asla görmeye çalışmazlar elbette. Neyse ki." />
+    <string id="xjk4hNXD" text="Ben çarpışmanın içinde yer almadım. Bir tepede durup komutanlarıma nereye gideceklerini ve kime saldıracaklarını söyledim. Gayet iyi idare ettik, sen de duymuşsundur sanırım. Yine de ağır kayıplar verdik ve pek bir şey kazanmadık. Baronlar bunun için beni suçladılar, oysa savaşmak onların fikriydi. O gün bir kralın daima önderlik etmesi gerektiğini ve asla başkalarının peşinden gitmemesi gerektiğini öğrendim. Acı bir ders oldu." />
+    <string id="xknCpvcb" text="Sakin ol. Sana her şeyi anlatacağım." />
+    <string id="xKXcqRJI" text="Toprağa yatırım yapmaktı" />
+    <string id="xL3WGYsw" text="Toplanan Parçalar" />
+    <string id="XlSHcfsP" text="Bu seçenek eğitimi sonlandırır!" />
+    <string id="XmvaRfLM" text="{PLAYER_FATHER.NAME}, {PLAYER.LINK}'{.nin} babasıydı. Akıncılar ailesinin kaldığı hana saldırdığında öldürüldü." />
+    <string id="xnT03Yv0" text="Dinliyorum." />
+    <string id="xORjDTal" text="Bir atölyeye yatırım yapmaktı" />
+    <string id="Xqba1Obq" text="Göçebeydi" />
+    <string id="Xrz05hYE" text="Etrafı dolaş" />
+    <string id="XtC0hXhr" text="{?IS_IMPERIAL}Bir imparatorluk ülkesini{?}İmparatorluk karşıtı bir krallığı{\?} destekle" />
+    <string id="xVFupnFu" text="({TIME_SCORE}) saniyede bütün hedefleri başarıyla vurdun." />
+    <string id="XWL3XcIq" text="{FACTION} Mağlup Edildi" />
+    <string id="y3fn2vWY" text="Asker Topla" />
+    <string id="Y3UcaX74" text="rakamlar konusundaki yeteneğindi" />
+    <string id="y6j1bJTH" text="Bölgenin demircisinin yanına çırak olarak verildin. Demir ısıtmayı ve dövmeyi öğrendin; kasların ağrıyana kadar saatlerce hiç durmadan çekiç vurdun." />
+    <string id="Y6OJHdMH" text="Ben meşgul bir insanım ama kutsal Pendraic Savaşı'nı konuşmaya daima vakit vardır." />
+    <string id="Y6SqyQwn" text="{HERO.NAME} ile Görüş." />
+    <string id="y84UnOQX" text="Ejderha Sancağı'nı Topla" />
+    <string id="Y94H6XnK" text="Kabul Et" />
+    <string id="ya8eMCpj" text="İmparatorluğu Birleştir" />
+    <string id="YAWCkOYa" text="İzler taze ve ufukta duman gördüm. Yağmalamaya ve baskın yapmaya devam ediyorlarsa, çok hızlı hareket edemezler. Evet, ufaklıkları kurtarabileceğimizden eminim... ya da bu uğurda öleceğiz." />
+    <string id="YBqmnNGv" text="{newline}+{VALUE} altın" />
+    <string id="YcnK0Thk" text="Avcıydı" />
+    <string id="YEeb0B1V" text="Ben {HEADMAN.FIRSTNAME}, bu köyün büyüğüyüm. Seni buraya getiren nedir?" />
+    <string id="yflx4LNc" text="Eğitmeni yen!" />
+    <string id="yjOanW6x" text="İmparatorluğa bağlı ülkelerden hangisini desteklemeliyim?" />
+    <string id="YKzuGc54" text="Yapılı bir çocuktun ve diğer çocuklar komşu köyün çocuklarıyla çıkan kavgalarda yanlarında olmanı isterlerdi. Bir yetişkin gibi saban sürer ve balta fırlatırdın." />
+    <string id="yNcBDr9j" text="{IMPERIAL_MENTOR.LINK} ile konuştun. Şimdi de {ANTI_IMPERIAL_MENTOR.LINK} ile konuşmak ve onun fikirlerini almak isteyebilirsin. Kendisi şu anda {SETTLEMENT_LINK}'{.de}." />
+    <string id="ypDmy5Rn" text="Birbirimize nasıl güvenebiliriz?" />
+    <string id="Yqm0Dics" text="İnsanlarla iyi geçinmekti." />
+    <string id="yQtzabbe" text="Kapat" />
+    <string id="yRAl8YRL" text="Evet. Neretzes'in subaylarındandım. İnsanlar hem savaş hakkında hem de Neretzes ve karşı karşıya kaldığı koşullar hakkında bilgisizliklerini ortaya koyan şeyler söylüyorlar." />
+    <string id="yRFSzSDZ" text="Ailen köyde yaşardı ama kendilerine ait toprakları yoktu. Baban ormanda uzun yolculuklar gerektiren işler üstlenir ve avlanırken lordun av bekçilerine karşı daima tetikte olurdu." />
+    <string id="yS7PvrTD" text="TAMAM" />
+    <string id="ysRVZiA6" text="Kalradya'yı keşfederken, İmparatorluğun yakın geçmişini lordlardan ve leydilerden öğrenerek, elindeki parça ve taşıdığı önem konusunda daha fazla bilgi edinebilirsin." />
+    <string id="yub8ZSFP" text="{ANTI_IMPERIAL_MENTOR.LINK} ile konuştun. Şimdi de {IMPERIAL_MENTOR.LINK} ile konuşmak ve onun fikirlerini almak isteyebilirsin. Kendisi şu anda {SETTLEMENT_LINK}'{.de}." />
+    <string id="yYhX6JQC" text="Baban, lordlarına hizmet ederken savaşmaya fazlasıyla alıştıkları için barışa uyum sağlayamayan adamlardan oluşan Vlandiya paralı asker birliklerinden birine katıldı. Arbaletçileri Kalradya'nın her yerinde değer görürdü. Annen, ordunun gerisinden gelen kafilede yer alır ve kanlı seferlere seni de beraberinde götürürdü." />
+    <string id="z3VamNrX" text="Birliklerini gönder." />
+    <string id="z8LQn2Uh" text="Sığınağa geldin." />
+    <string id="ZAGR6PYc" text="Arka sokaklardan birinde aniden yangın çıkınca, komşularına hızlı düşünen bir lider gerekti ve liderliği sen üstlendin. En yakın kuyuya uzanan bir kova zinciri oluşturdun ve yangın hiçbir ev zarar görmeden söndürüldü." />
+    <string id="Zb1uFhsY" text="Eğitmene git." />
+    <string id="ZDEcFXIm" text="Sancağın bir parçasına sahip olabilirsin ama kendi başına pek bir işe yaramaz. Diğer parçaları da bulmalısın. Ancak, parçaları bir araya getirdiğinde, çok değerli bir şeye sahip olacaksın.[sp:/Sounds/VO/mainquest/mntemp_q01_03.ogg]" />
+    <string id="zEoHYEUS" text="Bir süre burada bekle" />
+    <string id="ZhZ7MCeh" text="Pekala. Yenilgiyi gördüğümde kabullenirim. Eğer senin tutsağın olacaksam, kendimi tanıtayım. Ben Radagos." />
+    <string id="ZiwIZZ1y" text="Tamam öyleyse, İmparatorluğu nasıl yıkacağına gelelim. Bana kalırsa, iki seçeneğin var..." />
+    <string id="ZkSthA9d" text="İhtiyar Olek'in ejderha sancağını İmparator'un cesedinin elinden söküp aldığını söylüyorlar. Ancak, sonrasında, savaşta kılıcını bile çekmemiş olan Prens Raganvad sancağın üzerinde hak iddia etti. Üstü başı düşman kanıyla kaplı olan Olek, Raganvad'a güldü ve ona kendi oyuncağını kendisinin bulmasını söyledi. Raganvad ona vurunca, Olek sancağın gönderini dizinin üzerinde kırdı ve prensine fırlattı." />
+    <string id="ZKynvffv" text="Ailenin şehirde kendine ait bir atölyesi vardı ve kırsal bölgelerden getirilen ham maddelerden çeşitli ürünler yaparlardı. Baban kent konseyinde küçük de olsa aktif bir rol üstlendiği gibi, milis kuvvetlerinde de görev yapardı." />
+    <string id="zLRlmitp" text="'Neretzes'in Budalalığı'nı Araştır" />
+    <string id="ZpcV9MZE" text="Kardeşlerini kurtardın ve ebeveynlerinin ölümüne yol açtığı için {RADAGOS.LINK}'{.i} öldürmeye karar verdin." />
+    <string id="Zq9qXcCk" text="{RADAGOS.NAME}'{.nin} çetesi seni yenilgiye uğrattı ama kardeşin seni kurtardı. Ancak, görünüşe bakılırsa hiçbir yere gittikleri yok, dolayısıyla hazır olduğunda tekrar saldırmalısın. Birliğinde en az {NUMBER} kişi olmalı. Eğer yoksa {QUEST_VILLAGE}'{.e} dön ve daha çok asker topla." />
+    <string id="ZqOvtLBM" text="Saldırının karmaşasında bağırarak birinin arka odada hazine bulduğunu söyledin. Ardından, savunmasız bırakılan girişten kardeşinle birlikte çıktın." />
+    <string id="zrpqSWSh" text="Çiftçiydi" />
+    <string id="zRZd90cZ" text="Ben oradaydım. O zamanlar genç bir yaverdim." />
+    <string id="zsC2t5Hb" text="ocak muhafızlarının yanında eğitim aldın." />
+    <string id="zTYd6Qai" text="İmparatorluk {FACTION} altında birleşti!" />
+    <string id="zxMOqlhs" text="Saldır" />
+    <string id="Zyn5FrTR" text="Bunu aklımızda tutarız." />
+    <string id="Zz6IvIH9" text="İmparatorluk bir süredir bizi rahat bırakıyordu ve Neretzes adamlara gümüş teklif ediyordu, dolayısıyla 'Neden olmasın?' diye düşündüm. 'Bırak İmparatorluğa yardım etsinler.' Ah, böyle olacağını tahmin etmem gerekirdi. Savaş konusunda izlenilecek en iyi yol, ondan elinden geldiğince uzak durmaktır." />
+  </strings>
+</base>

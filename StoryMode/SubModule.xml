@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module>
+	<Name value = "StoryMode"/>
+	<Id value = "StoryMode"/>
+	<Version value = "e1.5.2"/>
+	<DefaultModule value="true"/>
+	<SingleplayerModule value="true"/>
+  <Official value="true" />
+  <DependedModules>
+		<DependedModule Id="Native"/>
+		<DependedModule Id="SandBoxCore"/>
+		<DependedModule Id="Sandbox"/>
+	</DependedModules>
+	<SubModules>
+		<SubModule>
+			<Name value = "StoryMode"/>
+			<DLLName value = "StoryMode.dll"/>
+			<SubModuleClassType value = "StoryMode.StoryModeSubModule"/>			
+			<Tags>
+				<Tag key="DedicatedServerType" value ="none" />
+				<Tag key="IsNoRenderModeElement" value ="false" />
+			</Tags>
+		</SubModule>
+		<SubModule>
+			<Name value = "StoryMode.View"/>
+			<DLLName value = "StoryMode.View.dll"/>
+			<Assemblies>
+				<Assembly value="StoryMode.ViewModelCollection.dll"/>
+			</Assemblies>
+			<SubModuleClassType value = "StoryMode.View.StoryModeViewSubModule"/>
+			<Tags>
+				<Tag key="DedicatedServerType" value ="none" />
+				<Tag key="IsNoRenderModeElement" value ="false" />
+			</Tags>
+		</SubModule>		
+		<SubModule>
+			<Name value = "StoryMode.GauntletUI"/>
+			<DLLName value = "StoryMode.GauntletUI.dll"/>
+			<SubModuleClassType value = "StoryMode.GauntletUI.StoryModeGauntletUISubModule"/>
+			<Tags>
+				<Tag key="DedicatedServerType" value ="none" />
+				<Tag key="IsNoRenderModeElement" value ="false" />
+			</Tags>
+		</SubModule>
+	</SubModules>
+	
+	<Xmls>
+		<XmlNode>                
+			<XmlName id="LocationComplexTemplates" path="location_complex_templates"/>
+			<IncludedGameTypes>
+				<GameType value = "CampaignStoryMode"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>               
+			<XmlName id="NPCCharacters" path="storymode_characters"/>
+			<IncludedGameTypes>
+				<GameType value = "CampaignStoryMode"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>                
+			<XmlName id="Heroes" path="storymode_heroes"/>
+			<IncludedGameTypes>
+				<GameType value = "CampaignStoryMode"/>
+			</IncludedGameTypes>
+		</XmlNode>     
+	</Xmls>
+	
+</Module>

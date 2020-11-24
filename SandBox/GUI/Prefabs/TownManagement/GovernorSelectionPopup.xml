@@ -1,0 +1,41 @@
+<Prefab>
+  <Constants>
+    <Contstant Name="Governor.Selection.Margin" Value="12" />
+  </Constants>
+  <Window>
+    <AutoClosePopupWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsVisible="@Show">
+      <Children>
+
+        <Widget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" SuggestedHeight="145" HorizontalAlignment="Left" VerticalAlignment="Top" MarginLeft="310" MarginTop="475" Brush="TownManagement.GovernorPopup">
+          <Children>
+
+            <!--Governor Selection Popup-->
+            <GridWidget DataSource="{AvailableGovernors}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" MarginLeft="!Governor.Selection.Margin" MarginRight="!Governor.Selection.Margin" MarginTop="!Governor.Selection.Margin" MarginBottom="!Governor.Selection.Margin" DefaultCellWidth="120" DefaultCellHeight="120" ColumnCount="7">
+              <ItemTemplate>
+
+                <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" MarginLeft="5" MarginRight="5" LayoutImp.LayoutMethod="VerticalBottomToTop" HorizontalAlignment="Center" VerticalAlignment="Top">
+                  <Children>
+
+                    <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="117" SuggestedHeight="83" MarginTop="5" MarginBottom="5" Brush="TownManagement.GovernorPopup.Governor.Background" Command.Click="OnSelection" UpdateChildrenStates="true">
+                      <Children>
+                        <ImageIdentifierWidget DataSource="{Visual}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode" IsDisabled="true" marginLeft="5" marginRight="5" />
+                        <HintWidget DataSource="{GovernorHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true" />
+                        <Widget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="TownManagement.GovernorPopup.GoldFrame" />
+                      </Children>
+                    </ButtonWidget>
+
+                    <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="117" SuggestedHeight="30" HorizontalAlignment="Center" Brush="TownManagement.GovernorPopup.Name.Text" Text="@Name" />
+
+                  </Children>
+                </ListPanel>
+
+              </ItemTemplate>
+            </GridWidget>
+
+          </Children>
+        </Widget>
+
+      </Children>
+    </AutoClosePopupWidget>
+  </Window>
+</Prefab>

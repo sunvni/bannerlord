@@ -1,0 +1,50 @@
+<Prefab>
+	<Window>
+		<Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" MarginLeft="200" MarginRight="250" MarginTop="150" MarginBottom="300" Brush="Report.Popup.Frame" IsVisible="@IsSelected">
+      <Children>
+        
+        <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginTop="15" MarginBottom="15" MarginLeft="25" MarginRight="25" LayoutImp.LayoutMethod="VerticalBottomToTop">
+          <Children>
+
+            <!--Title and Close Button-->
+            <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginBottom="140" LayoutImp.LayoutMethod="HorizontalLeftToRight" >
+              <Children>
+                <!--Title-->
+                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" Text="@TitleText" />
+                
+                <!--Close Button-->
+                <ButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="22" HorizontalAlignment="Right" Command.Click="ExecuteClosePopup">
+                  <Children>
+                    <!--Icon-->
+                    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="MPLobby.CustomServer.CloseButton" />
+                  </Children>
+                </ButtonWidget>
+
+              </Children>
+            </ListPanel>
+
+            <!--Faction Selection-->
+            <ListPanel DataSource="{FactionsList}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginBottom="10">
+              <ItemTemplate>
+                <MultiplayerLobbyClassFilterFactionItemWidget ButtonType="Radio" IsSelected="@IsSelected" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="75" SuggestedHeight="75" MarginLeft="25" MarginRight="25" Command.Click="ExecuteSelectFaction" Culture="@CultureCode" Brush="MPLobby.ClassFilter.FactionButton.Empire">
+                  <Children>
+                    <HintWidget DataSource="{Hint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                  </Children>
+                </MultiplayerLobbyClassFilterFactionItemWidget>
+              </ItemTemplate>
+            </ListPanel>
+
+          </Children>
+        </ListPanel>
+
+        <!--Apply Button-->
+        <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="342" SuggestedHeight="69" MarginBottom="25" HorizontalAlignment="Center" VerticalAlignment="Bottom" Brush="WideButton.Flat" Command.Click="ExecuteChangeFaction" IsEnabled="@CanChangeFaction">
+          <Children>
+            <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.Clan.CreateButton.Text" Text="@ApplyText" />
+          </Children>
+        </ButtonWidget>
+
+      </Children>
+    </Widget>
+	</Window>
+</Prefab>

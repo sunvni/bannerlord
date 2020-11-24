@@ -1,0 +1,222 @@
+<Prefab>
+  <Constants>
+
+    <Constant Name="Kingdom.Fiefs.Sort.1.Width" BrushLayer="Default" BrushName="Kingdom.Fiefs.Sort.1" BrushValueType="Width" />
+    <Constant Name="Kingdom.Fiefs.Sort.1.Height" BrushLayer="Default" BrushName="Kingdom.Fiefs.Sort.1" BrushValueType="Height" />
+
+    <Constant Name="Kingdom.Fiefs.Sort.2.Width" BrushLayer="Default" BrushName="Kingdom.Fiefs.Sort.2" BrushValueType="Width" />
+    <Constant Name="Kingdom.Fiefs.Sort.2.Height" BrushLayer="Default" BrushName="Kingdom.Fiefs.Sort.2" BrushValueType="Height" />
+
+    <Constant Name="Kingdom.Fiefs.Sort.3.Width" BrushLayer="Default" BrushName="Kingdom.Fiefs.Sort.3" BrushValueType="Width" />
+    <Constant Name="Kingdom.Fiefs.Sort.3.Height" BrushLayer="Default" BrushName="Kingdom.Fiefs.Sort.3" BrushValueType="Height" />
+
+    <Constant Name="Kingdom.Fiefs.Sort.4.Width" BrushLayer="Default" BrushName="Kingdom.Fiefs.Sort.4" BrushValueType="Width" />
+    <Constant Name="Kingdom.Fiefs.Sort.4.Height" BrushLayer="Default" BrushName="Kingdom.Fiefs.Sort.4" BrushValueType="Height" />
+
+    <Constant Name="Kingdom.Fiefs.Sort.5.Width" BrushLayer="Default" BrushName="Kingdom.Fiefs.Sort.5" BrushValueType="Width" />
+    <Constant Name="Kingdom.Fiefs.Sort.5.Height" BrushLayer="Default" BrushName="Kingdom.Fiefs.Sort.5" BrushValueType="Height" />
+
+    <Constant Name="Kingdom.Scroll.Header.Width" BrushLayer="Default" BrushName="Scroll.Header" BrushValueType="Width" />
+    <Constant Name="Kingdom.Scroll.Header.Height" BrushLayer="Default" BrushName="Scroll.Header" BrushValueType="Height" />
+
+  </Constants>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsVisible="@Show">
+      <Children>
+
+        <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+          <Children>
+
+            <!--Left Panel-->
+            <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" VerticalAlignment="Bottom" MarginLeft="27" MarginTop="6" MarginBottom="9" Brush="Frame1Brush" LayoutImp.LayoutMethod="VerticalBottomToTop">
+              <Children>
+                
+                <ListPanel DataSource="{SettlementSortController}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" RenderLate="true">
+                  <Children>
+
+                    <SortButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Kingdom.Fiefs.Sort.1.Width" SuggestedHeight="!Kingdom.Fiefs.Sort.1.Height" Brush="Kingdom.Fiefs.Sort.1" Command.Click="ExecuteSortByType" IsSelected="@IsTypeSelected" SortState="@TypeState" SortVisualWidget="TextWidget\TypeSortVisualWidget" UpdateChildrenStates="true">
+                      <Children>
+                        <TextWidget Id="TextWidget" DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Kingdom.SortButtons.Text" ClipContents="false" Text="@TypeText">
+                          <Children>
+                            <Widget Id="TypeSortVisualWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Center" PositionXOffset="20" Brush="ArmyManagement.Sort.ArrowBrush" />
+                          </Children>
+                        </TextWidget>
+                      </Children>
+                    </SortButtonWidget>
+
+                    <SortButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Kingdom.Fiefs.Sort.2.Width" SuggestedHeight="!Kingdom.Fiefs.Sort.2.Height" Brush="Kingdom.Fiefs.Sort.2" Command.Click="ExecuteSortByName" IsSelected="@IsNameSelected" SortState="@NameState" SortVisualWidget="TextWidget\NameSortVisualWidget" UpdateChildrenStates="true">
+                      <Children>
+                        <TextWidget Id="TextWidget" DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Kingdom.SortButtons.Text" ClipContents="false" Text="@NameText">
+                          <Children>
+                            <Widget Id="NameSortVisualWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Center" PositionXOffset="20" Brush="ArmyManagement.Sort.ArrowBrush" />
+                          </Children>
+                        </TextWidget>
+                      </Children>
+                    </SortButtonWidget>
+
+                    <SortButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Kingdom.Fiefs.Sort.3.Width" SuggestedHeight="!Kingdom.Fiefs.Sort.3.Height" Brush="Kingdom.Fiefs.Sort.3" Command.Click="ExecuteSortByOwner" IsSelected="@IsOwnerSelected" SortState="@OwnerState" SortVisualWidget="TextWidget\OwnerSortVisualWidget" UpdateChildrenStates="true">
+                      <Children>
+                        <TextWidget Id="TextWidget" DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Kingdom.SortButtons.Text" ClipContents="false" Text="@OwnerText">
+                          <Children>
+                            <Widget Id="OwnerSortVisualWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Center" PositionXOffset="20" Brush="ArmyManagement.Sort.ArrowBrush" />
+                          </Children>
+                        </TextWidget>
+                      </Children>
+                    </SortButtonWidget>
+
+                    <SortButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Kingdom.Fiefs.Sort.4.Width" SuggestedHeight="!Kingdom.Fiefs.Sort.4.Height" Brush="Kingdom.Fiefs.Sort.4" Command.Click="ExecuteSortByProsperity" IsSelected="@IsProsperitySelected" SortState="@ProsperityState" SortVisualWidget="TextWidget\ProsperitySortVisualWidget" UpdateChildrenStates="true">
+                      <Children>
+                        <TextWidget Id="TextWidget" DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Kingdom.SortButtons.Text" ClipContents="false" Text="@ProsperityText">
+                          <Children>
+                            <Widget Id="ProsperitySortVisualWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Center" PositionXOffset="15" Brush="ArmyManagement.Sort.ArrowBrush" />
+                          </Children>
+                        </TextWidget>
+                      </Children>
+                    </SortButtonWidget>
+
+                    <SortButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Kingdom.Fiefs.Sort.5.Width" SuggestedHeight="!Kingdom.Fiefs.Sort.5.Height" Brush="Kingdom.Fiefs.Sort.5" Command.Click="ExecuteSortByDefenders" IsSelected="@IsDefendersSelected" SortState="@DefendersState" SortVisualWidget="TextWidget\MilitiaSortVisualWidget" UpdateChildrenStates="true">
+                      <Children>
+                        <TextWidget Id="TextWidget" DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Kingdom.SortButtons.Text" ClipContents="false" Text="@DefendersText">
+                          <Children>
+                            <Widget Id="MilitiaSortVisualWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Center" PositionXOffset="15" Brush="ArmyManagement.Sort.ArrowBrush" />
+                          </Children>
+                        </TextWidget>
+                      </Children>
+                    </SortButtonWidget>
+
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Kingdom.Scroll.Header.Width" SuggestedHeight="!Kingdom.Scroll.Header.Height" HorizontalAlignment="Right" Brush="Scroll.Header" />
+
+                  </Children>
+                </ListPanel>
+
+                <!--List and Scrollbar Horizontal Group-->
+                <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent">
+                  <Children>
+
+                    <!--Settlement List Scrollable Panel-->
+                    <ScrollablePanel WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" MarginLeft="3" MarginBottom="3" AutoHideScrollBars="true" ClipRect="SettlementListClipRect" InnerPanel="SettlementListClipRect\SettlementList" VerticalScrollbar="..\SettlementsListScrollbar\Scrollbar">
+                      <Children>
+
+                        <Widget Id="SettlementListClipRect" WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" ClipContents="true">
+                          <Children>
+
+                            <ListPanel Id="SettlementList" DataSource="{Settlements}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" LayoutImp.LayoutMethod="VerticalBottomToTop">
+                              <ItemTemplate>
+                                <FiefTuple IsSelected="@IsSelected" />
+                              </ItemTemplate>
+                            </ListPanel>
+
+                          </Children>
+                        </Widget>
+
+                      </Children>
+                    </ScrollablePanel>
+
+                    <Standard.VerticalScrollbar Id="SettlementsListScrollbar" HeightSizePolicy="StretchToParent" HorizontalAlignment="Right" MarginLeft="2" MarginRight="2" MarginBottom="3" />
+                  </Children>
+                </ListPanel>
+
+              </Children>
+            </ListPanel>
+
+            <!--Right Side-->
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+              <Children>
+
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="540" SuggestedHeight="923" HorizontalAlignment="Right" VerticalAlignment="Bottom" PositionYOffset="80" Sprite="background_illustration_fiefs" Brush.AlphaFactor="0.7" />
+
+                <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginLeft="0" MarginTop="25" IsVisible="@IsAcceptableItemSelected" LayoutImp.LayoutMethod="VerticalBottomToTop">
+                  <Children>
+
+                    <!--Fief Name-->
+                    <TextWidget DataSource="{CurrentSelectedSettlement}" DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Top" Brush="Kingdom.TitleMedium.Text" Text="@Name" ClipContents="false"/>
+
+                    <!--Banner-->
+                    <ButtonWidget DataSource="{CurrentSelectedSettlement}" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Kingdom.Fiefs.Sort.5.Width" HorizontalAlignment="Center" PositionYOffset="20" Command.Click="ExecuteLink" IsEnabled="false">
+                      <Children>
+
+                        <Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="114" SuggestedHeight="114" Sprite="@SettlementImagePath" HorizontalAlignmeny="Center" />
+                        <Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="124" SuggestedHeight="124" PositionXOffset="-5" PositionYOffset="-7" Sprite="SPKingdom\portrait_slot_square" />
+                        <HintWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false" />
+                      </Children>
+                    </ButtonWidget>
+
+                    <!--Divider-->
+                    <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" PositionYOffset="250" LayoutImp.LayoutMethod="VerticalBottomToTop">
+                      <Children>
+
+                        <ListPanel DoNotPassEventsToChildren="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginLeft="70" MarginRight="100" UpdateChildrenStates="true">
+                          <Children>
+                            <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" MarginLeft="5" Brush="Kingdom.TitleMedium.Text" Text="@VillagesText"  ClipContents="false"/>
+                            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="2" VerticalAlignment="Bottom" MarginLeft="10" MarginBottom="10" Brush="Kingdom.Divider.White" />
+                          </Children>
+                        </ListPanel>
+
+                        <GridWidget Id="VillagesGridWidget" DataSource="{CurrentSelectedSettlement\Villages}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" SuggestedWidth="350" SuggestedHeight="350" HorizontalAlignment="Center" MarginLeft="25" DefaultCellWidth="120" DefaultCellHeight="120" ColumnCount="5" HorizontalAlignmen="Center" LayoutImp.LayoutMethod="TopToBottom">
+                          <ItemTemplate>
+                            <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="120" SuggestedHeight="120" VerticalAlignment="Center" Sprite="StdAssets\square_card" ClipContents="false" Command.Click="ExecuteLink">
+                              <Children>
+                                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="100" SuggestedHeight="100" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="@VisualPath" IsEnabled="false" />
+                                <HintWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false" />
+                                <RichTextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Bottom" PositionYOffset="20" Brush="Kingdom.ParagraphSmall.Text" ClipContents="false" Text="@Name" />
+                              </Children>
+                            </ButtonWidget>
+                          </ItemTemplate>
+                        </GridWidget>
+
+                      </Children>
+                    </ListPanel>
+
+                  </Children>
+                </ListPanel>
+
+                <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Bottom" PositionYOffset="0">
+                  <Children>
+
+                    <!--Annex-->
+                    <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" LayoutImp.LayoutMethod="VerticalBottomToTop">
+                      <Children>
+
+                        <TextWidget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="300" Brush="Kingdom.ParagraphSmall.Text" IsEnabled="@CanAnnexCurrentSettlement" Text="@AnnexActionExplanationText" ClipContents="false" />
+
+                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="227" SuggestedHeight="40" HorizontalAlignment="Center" MarginTop="3">
+                          <Children>
+
+                            <!--Annex Button-->
+                            <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="227" SuggestedHeight="40" HorizontalAlignment="Center" MarginTop="10" Brush="ButtonBrush2" Command.Click="ExecuteAnnex" IsEnabled="@CanAnnexCurrentSettlement" UpdateChildrenStates="true">
+                              <Children>
+                                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Kingdom.GeneralButtons.Text" IsEnabled="@CanAnnexCurrentSettlement" Text="@AnnexText" />
+                              </Children>
+                            </ButtonWidget>
+
+                            <HintWidget DataSource="{AnnexHint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false" />
+                          </Children>
+                        </Widget>
+
+                        <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center">
+                          <Children>
+                            <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="10" Brush="Kingdom.GeneralButtons.Text" IntText="@AnnexCost" IsEnabled="@CanAnnexCurrentSettlement" />
+                            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="17" SuggestedHeight="27" HorizontalAlignment="Right" VerticalAlignment="Center" MarginTop="10" Sprite="SPKingdom\influence_icon_small" />
+                          </Children>
+                        </ListPanel>
+
+                      </Children>
+                    </ListPanel>
+
+
+                  </Children>
+                </ListPanel>
+
+                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" MarginLeft="25" MarginRight="25" Brush.FontSize="40" IsHidden="@IsAcceptableItemSelected" Text="@NoItemSelectedText" />
+
+              </Children>
+            </Widget>
+
+          </Children>
+        </ListPanel>
+
+
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

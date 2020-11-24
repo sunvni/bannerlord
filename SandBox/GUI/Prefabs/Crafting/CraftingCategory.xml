@@ -1,0 +1,119 @@
+<Prefab>
+  <Constants>
+    <Constant Name="Tier.Button.Width" Value="40"/>
+    <Constant Name="Tier.Label.Width" Value="50"/>
+    <Constant Name="Tier.Margins" Value="20"/>
+  </Constants>
+  <Variables>
+  </Variables>
+  <VisualDefinitions>
+  </VisualDefinitions>
+  <Window>
+    <Widget Id="CraftingCategoryParent" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+      <Children>
+        <!--Type & Tier Selection-->
+        <ListPanel DataSource="{WeaponDesign}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginLeft="20" LayoutImp.LayoutMethod="VerticalTopToBottom">
+          <Children>
+
+            <CraftingTierFilterContainerWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="45" LayoutImp.LayoutMethod="HorizontalLeftToRight" HorizontalAlignment="Center" MarginLeft="25" MarginTop="27" GridControlWidget="..\..\InnerPanel\PartListParent\PartList" TierAllButtonWidget="TierAllFilterButton" TierOneButtonWidget="TierOneFilterButton" TierTwoButtonWidget="TierTwoFilterButton" TierThreeButtonWidget="TierThreeFilterButton" TierFourButtonWidget="TierFourFilterButton" TierFiveButtonWidget="TierFiveButtonWidget" CategorySelectorWidget="..\CategorySelection\DropdownParent">
+              <Children>
+
+                <ButtonWidget Id="TierAllFilterButton" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Tier.Button.Width" SuggestedHeight="40" MarginLeft="0" Brush="Crafting.Checkbox.Empty.Button" ButtonType="Toggle" ToggleIndicator="ToggleIndicator" UpdateChildrenStates="true">
+                  <Children>
+                    <ImageWidget Id="ToggleIndicator" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Crafting.Checkbox.Full.Button" />
+                  </Children>
+                </ButtonWidget>
+                <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!Tier.Label.Width" HorizontalAlignment="Left" VerticalAlignment="Top" Brush="Crafting.Tier.Text" Text="@AllLbl" DoNotAcceptEvents="true"/>
+
+                <ButtonWidget Id="TierOneFilterButton" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Tier.Button.Width" SuggestedHeight="40" MarginLeft="!Tier.Margins" Brush="Crafting.Checkbox.Empty.Button" ButtonType="Toggle" ToggleIndicator="ToggleIndicator" UpdateChildrenStates="true">
+                  <Children>
+                    <ImageWidget Id="ToggleIndicator" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Crafting.Checkbox.Full.Button" />
+                  </Children>
+                </ButtonWidget>
+                <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!Tier.Label.Width" HorizontalAlignment="Left" VerticalAlignment="Top" Brush="Crafting.Tier.Text" Text="@Tier1Lbl" DoNotAcceptEvents="true"/>
+
+                <ButtonWidget Id="TierTwoFilterButton" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Tier.Button.Width" SuggestedHeight="40" MarginLeft="!Tier.Margins" Brush="Crafting.Checkbox.Empty.Button" ButtonType="Toggle" ToggleIndicator="ToggleIndicator" UpdateChildrenStates="true">
+                  <Children>
+                    <ImageWidget Id="ToggleIndicator" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Crafting.Checkbox.Full.Button" />
+                  </Children>
+                </ButtonWidget>
+                <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!Tier.Label.Width" HorizontalAlignment="Left" VerticalAlignment="Top" Brush="Crafting.Tier.Text" Text="@Tier2Lbl" DoNotAcceptEvents="true"/>
+
+                <ButtonWidget Id="TierThreeFilterButton" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Tier.Button.Width" SuggestedHeight="40" MarginLeft="!Tier.Margins" Brush="Crafting.Checkbox.Empty.Button" ButtonType="Toggle" ToggleIndicator="ToggleIndicator" UpdateChildrenStates="true">
+                  <Children>
+                    <ImageWidget Id="ToggleIndicator" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Crafting.Checkbox.Full.Button" />
+                  </Children>
+                </ButtonWidget>
+                <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!Tier.Label.Width" HorizontalAlignment="Left" VerticalAlignment="Top" Brush="Crafting.Tier.Text" Text="@Tier3Lbl" DoNotAcceptEvents="true"/>
+
+                <ButtonWidget Id="TierFourFilterButton" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Tier.Button.Width" SuggestedHeight="40" MarginLeft="!Tier.Margins" Brush="Crafting.Checkbox.Empty.Button" ButtonType="Toggle" ToggleIndicator="ToggleIndicator" UpdateChildrenStates="true">
+                  <Children>
+                    <ImageWidget Id="ToggleIndicator" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Crafting.Checkbox.Full.Button" />
+                  </Children>
+                </ButtonWidget>
+                <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!Tier.Label.Width" HorizontalAlignment="Left" VerticalAlignment="Top" Brush="Crafting.Tier.Text" Text="@Tier4Lbl" DoNotAcceptEvents="true"/>
+
+                <ButtonWidget Id="TierFiveButtonWidget" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Tier.Button.Width" SuggestedHeight="40" MarginLeft="!Tier.Margins" Brush="Crafting.Checkbox.Empty.Button" ButtonType="Toggle" ToggleIndicator="ToggleIndicator" UpdateChildrenStates="true">
+                  <Children>
+                    <ImageWidget Id="ToggleIndicator" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Crafting.Checkbox.Full.Button" />
+                  </Children>
+                </ButtonWidget>
+                <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!Tier.Label.Width" HorizontalAlignment="Left" VerticalAlignment="Top" Brush="Crafting.Tier.Text" Text="@Tier5Lbl" DoNotAcceptEvents="true"/>
+
+              </Children>
+            </CraftingTierFilterContainerWidget>
+
+            <Standard.DropdownWithHorizontalControl Id="CategorySelection" VerticalAlignment="Center" HorizontalAlignment="Center" MarginTop="8" IsVisible="true" Parameter.SelectorDataSource="{PrimaryUsageSelector}" Parameter.ShowNextAndPrevious="false"/>
+
+          </Children>
+        </ListPanel>
+
+        <!--Inner Panel-->
+        <Widget DataSource="{WeaponDesign}" Id="InnerPanel" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="573" SuggestedHeight="820" HorizontalAlignment="Center" VerticalAlignment="Center" PositionXOffset="23">
+          <Children>
+
+            <!--Top Gradient Shadow-->
+            <Widget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="38" Sprite="Crafting\drop_shadow_top" />
+
+            <ListPanel Id="PartListParent" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginTop="5" LayoutImp.LayoutMethod="VerticalBottomToTop">
+              <Children>
+                <!--Parts Box-->
+                <TabControl Id="PartList" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="485">
+                  <Children>
+                    <CraftingPartGrid Id="BladePartList" Parameter.GridDataSource="{BladePartList}" Parameter.SizeBinding="@BladeSize" Parameter.SizeLabelBinding="@ComponentSizeLbl" />
+                    <CraftingPartGrid Id="GuardPartList" Parameter.GridDataSource="{GuardPartList}" Parameter.SizeBinding="@GuardSize" Parameter.SizeLabelBinding="@ComponentSizeLbl" />
+                    <CraftingPartGrid Id="HandlePartList" Parameter.GridDataSource="{HandlePartList}" Parameter.SizeBinding="@HandleSize" Parameter.SizeLabelBinding="@ComponentSizeLbl" />
+                    <CraftingPartGrid Id="PommelPartList" Parameter.GridDataSource="{PommelPartList}" Parameter.SizeBinding="@PommelSize" Parameter.SizeLabelBinding="@ComponentSizeLbl" />
+                  </Children>
+                </TabControl>
+
+                <!--Properties Container Box-->
+                <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" LayoutImp.LayoutMethod="VerticalBottomToTop">
+                  <Children>
+
+                    <GridWidget Id="UsageSelectorGrid" DataSource="{SecondaryUsageSelector\ItemList}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Top" ColumnCount="3" DefaultCellHeight="35" DefaultCellWidth="152">
+                      <ItemTemplate>
+
+                        <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="35" SuggestedWidth="150" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Crafting.Tooltip.WeaponAlternativeUsageButton" ButtonType="Radio" Command.Click="ExecuteSelect">
+                          <Children>
+                            <TextWidget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="3" MarginRight="3" MarginLeft="3" MarginBottom="3" Brush="InventoryDefaultFontBrush" Brush.FontSize="16" Brush.TextHorizontalAlignment="Center" Text="@StringItem" />
+                          </Children>
+                        </ButtonWidget>
+
+                      </ItemTemplate>
+                    </GridWidget>
+
+                    <CraftingPropertyList Id="PrimaryPropertyList" DataSource="{PrimaryPropertyList}" />
+                  </Children>
+                </ListPanel>
+
+              </Children>
+            </ListPanel>
+
+          </Children>
+        </Widget>
+
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

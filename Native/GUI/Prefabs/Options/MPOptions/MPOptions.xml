@@ -1,0 +1,98 @@
+<Prefab>
+  <Constants>
+    <Constant Name="SpectateButton.Width" BrushName="WideButton.Flat" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="SpectateButton.Height" BrushName="WideButton.Flat" BrushLayer="Default" BrushValueType="Height"/>
+  </Constants>
+  <Window>
+    <OptionsScreenWidget Id="Options" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="1800" SuggestedHeight="900" HorizontalAlignment="Center" PositionYOffset="20" Brush="MPLobby.CustomServer.ServersListBackground" CurrentOptionDescriptionWidget="MainSectionListPanel\DescriptionsRightPanel\DescriptionsListPanel\CurrentOptionDescriptionWidget" CurrentOptionNameWidget="MainSectionListPanel\DescriptionsRightPanel\DescriptionsListPanel\CurrentOptionNameWidget" CurrentOptionImageWidget="MainSectionListPanel\DescriptionsRightPanel\DescriptionsListPanel\CurrentOptionImageWidget">
+      <Children>
+
+        <ListPanel Id="MainSectionListPanel" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginTop="110" MarginBottom="110">
+          <Children>
+
+            <Widget Id="CenterPanel" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+              <Children>
+
+                <ScrollablePanel Id="ScrollablePanel" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" AutoHideScrollBars="false" AutoHideScrollBarHandle="true" ClipRect="MyClipRect" InnerPanel="MyClipRect\TabControl" VerticalScrollbar="..\..\VerticalScrollbar">
+                  <Children>
+                    <Widget Id="MyClipRect" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" Brush.GlobalAlphaFactor="0.75" ClipContents="true">
+                      <Children>
+                        <TabControl Id="TabControl" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren">
+                          <Children>
+                            <OptionsGenericPage Id="AudioOptionsPage" DataSource="{AudioOptions}" />
+                            <OptionsGenericPage Id="VideoOptionsPage" DataSource="{VideoOptions}" />
+                            <OptionsGraphicsPage Id="GraphicsOptionsPage" DataSource="{GraphicsOptions}" />
+                            <OptionsGenericPage Id="GameplayOptionsPage" DataSource="{GameplayOptions}" />
+                            <OptionsGameKeyPage Id="GameKeyOptionGroupsPage" DataSource="{GameKeyOptionGroups}" />
+                          </Children>
+                        </TabControl>
+                      </Children>
+                    </Widget>
+                  </Children>
+                </ScrollablePanel>
+
+              </Children>
+            </Widget>
+
+            <ScrollbarWidget Id="VerticalScrollbar" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="8" HorizontalAlignment="Right" VerticalAlignment="Center" MarginTop="26" AlignmentAxis="Vertical" Handle="VerticalScrollbarHandle" MaxValue="100" MinValue="0">
+              <Children>
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="4" HorizontalAlignment="Center" Sprite="MPLobby\CustomServer\lobby_slider_bed" Brush.AlphaFactor="0.4" />
+                <ImageWidget Id="VerticalScrollbarHandle" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="8" SuggestedHeight="10" HorizontalAlignment="Center" Brush="FaceGen.Scrollbar.Handle" />
+              </Children>
+            </ScrollbarWidget>
+
+            <!--Descriptions Right Panel-->
+            <Widget Id="DescriptionsRightPanel" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="650">
+              <Children>
+
+                <ListPanel Id="DescriptionsListPanel" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" LayoutImp.LayoutMethod="VerticalBottomToTop" MarginTop="65" MarginLeft="40">
+                  <Children>
+                    <RichTextWidget Id="CurrentOptionNameWidget" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" Brush="SPOptions.Description.Title.Text" Text=" " />
+                    <RichTextWidget Id="CurrentOptionDescriptionWidget" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" Brush="SPOptions.Description.Text" Text=" " MarginTop="25"/>
+                    <Widget Id="CurrentOptionImageWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="576" SuggestedHeight="324" MarginTop="35"/>
+                  </Children>
+                </ListPanel>
+
+              </Children>
+            </Widget>
+
+          </Children>
+        </ListPanel>
+
+        <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="128" HorizontalAlignment="Center" VerticalAlignment="Top" LayoutImp.LayoutMethod="HorizontalLeftToRight">
+          <Children>
+            <MPOptionsTabToggle DataSource="{VideoOptions}" Parameter.ButtonBrush="Header.Tab.Left" Parameter.TabName="VideoOptionsPage" Parameter.IsFirstToggle="true" />
+            <MPOptionsTabToggle DataSource="{GraphicsOptions}" Parameter.ButtonBrush="Header.Tab.Center" Parameter.TabName="GraphicsOptionsPage" />
+            <MPOptionsTabToggle DataSource="{AudioOptions}" Parameter.ButtonBrush="Header.Tab.Center" Parameter.TabName="AudioOptionsPage" />
+            <MPOptionsTabToggle DataSource="{GameplayOptions}" Parameter.ButtonBrush="Header.Tab.Center" Parameter.TabName="GameplayOptionsPage" />
+            <MPOptionsTabToggle DataSource="{GameKeyOptionGroups}" Parameter.ButtonBrush="Header.Tab.Right" Parameter.TabName="GameKeyOptionGroupsPage" />
+          </Children>
+        </ListPanel>
+
+        <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="94" VerticalAlignment="Bottom" >
+          <Children>
+            <ButtonWidget Command.Click="ExecuteReset" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!SpectateButton.Width" SuggestedHeight="!SpectateButton.Height" MarginLeft="50" Brush="WideButton.Flat" IsVisible="false">
+              <Children>
+                <TextWidget Text="@ResetLbl" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="200" SuggestedHeight="50" VerticalAlignment="Center" HorizontalAlignment="Center" Brush="MPTeamSelection.SpectateButton.Text"/>
+              </Children>
+            </ButtonWidget>
+            <ButtonWidget Command.Click="ExecuteDone" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!SpectateButton.Width" SuggestedHeight="!SpectateButton.Height" HorizontalAlignment="Right" MarginRight="50" Brush="WideButton.Flat">
+              <Children>
+                <TextWidget Text="@ApplyLbl" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="200" SuggestedHeight="50" VerticalAlignment="Center" HorizontalAlignment="Center" Brush="MPTeamSelection.SpectateButton.Text"/>
+              </Children>
+            </ButtonWidget>
+          </Children>
+        </Widget>
+
+        <!--<ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="280" SuggestedHeight="62" HorizontalAlignment="Left" VerticalAlignment="Top" MarginTop="15" MarginLeft="15" Command.Click="OnBrightnessClick" UpdateChildrenStates="true">
+          <Children>
+            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="4" SuggestedHeight="60" Sprite="MPLobby\Matchmaking\game_mode_divider" Brush.Color="#FEC15733" />
+            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Text="Brightness" Brush="MPLobby.Options.TabText" />
+            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="4" SuggestedHeight="60" Sprite="MPLobby\Matchmaking\game_mode_divider" HorizontalAlignment="Right" Brush.Color="#FEC15733" />
+          </Children>
+        </ButtonWidget>-->
+
+      </Children>
+    </OptionsScreenWidget>
+  </Window>
+</Prefab> 

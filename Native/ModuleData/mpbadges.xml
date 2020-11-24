@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Badges>
+  <Badge id="badge_taleworlds_primary_dev" type="Custom" name="{=aubhe8Hk}TaleWorlds Developer" description="{=GTmPMoYe}Employee of TaleWorlds" is_visible_only_when_earned="true" />
+  <Badge id="badge_taleworlds_dev" type="Custom" name="{=aubhe8Hk}TaleWorlds Developer" description="{=GTmPMoYe}Employee of TaleWorlds" is_visible_only_when_earned="true" />
+  <Badge id="badge_alpha_tester" type="Custom" name="{=5IANKz8a}Alpha Tester" description="{=qLpxrsFX}This badge has been awarded to the players who participated in the Multiplayer Alpha Test." is_visible_only_when_earned="true" />
+  <Badge id="badge_beta_tester" type="Custom" name="{=16hLiz40}Beta Tester" description="{=BCWVcO6k}This badge has been awarded to the players who participated in the Multiplayer Beta Test." is_visible_only_when_earned="true" />
+  <Badge id="badge_vip_tester" type="Custom" name="{=9C9Nbgbt}VIP" description="{=dSWtiVLz}This badge has been awarded to the community members who contributed to the game and the community." is_visible_only_when_earned="true" />
+  <Badge id="badge_beta_250_wins" type="Custom" name="{=H4Zlsiu1}Beta 250 Wins" description="{=sli6QNV6}This badge has been awarded to the players who won 250 matches in the Beta Test." is_visible_only_when_earned="true" />
+  <Badge id="badge_beta_100_wins" type="Custom" name="{=DWb2zRsZ}Beta 100 Wins" description="{=bKmVrmzG}This badge has been awarded to the players who won 100 matches in the Beta Test" is_visible_only_when_earned="true" />
+  <Badge id="badge_beta_50_wins" type="Custom" name="{=FDvwGjni}Beta 50 Wins" description="{=1CxYPryo}This badge has been awarded to the players who won 50 matches in the Beta Test" is_visible_only_when_earned="true" />
+  <Badge id="badge_beta_20_wins" type="Custom" name="{=KcPkbnu2}Beta 20 Wins" description="{=tI5cj3Qz}This badge has been awarded to the players who won 20 matches in the Beta Test" is_visible_only_when_earned="true" />
+  <Badge id="badge_bug_hunter" type="Custom" name="{=21oH4CWa}Bug Hunter" description="{=gNiQcEa9}This badge has been awarded to the community members who helped us significantly in finding the bugs and issues we faced over the multiplayer alpha and beta period." is_visible_only_when_earned="true" />
+  <Badge id="badge_ea_participant" type="OnLogin" name="{=aNsV4LOg}EA Participant" description="{=OGsa2aC1}This badge has been awarded to the players who participated in the Early Access." />
+  <Badge id="badge_ea_750_wins" type="OnMatchEnd" name="{=ZodCgSL5}EA 750 Wins" description="{=ESOkYFiD}This badge has been awarded to the players who won 750 matches in the Early Access.">
+    <Condition type="ValueRange" value_name="WinCount" value_min="750" description="{=DJY6qD0b}Current Wins" />
+  </Badge>
+  <Badge id="badge_ea_500_wins" type="OnMatchEnd" name="{=Xws44eDL}EA 500 Wins" description="{=5ZwXUBV5}This badge has been awarded to the players who won 500 matches in the Early Access.">
+    <Condition type="ValueRange" value_name="WinCount" value_min="500" description="{=DJY6qD0b}Current Wins" />
+  </Badge>
+  <Badge id="badge_ea_250_wins" type="OnMatchEnd" name="{=iGTJ4aQq}EA 250 Wins" description="{=medMGVme}This badge has been awarded to the players who won 250 matches in the Early Access.">
+    <Condition type="ValueRange" value_name="WinCount" value_min="250" description="{=DJY6qD0b}Current Wins" />
+  </Badge>
+  <Badge id="badge_ea_100_wins" type="OnMatchEnd" name="{=qvYJuD83}EA 100 Wins" description="{=IcPNgbtl}This badge has been awarded to the players who won 100 matches in the Early Access.">
+    <Condition type="ValueRange" value_name="WinCount" value_min="100" description="{=DJY6qD0b}Current Wins" />
+  </Badge>
+  <Badge id="badge_ea_50_wins" type="OnMatchEnd" name="{=fAaorpa8}EA 50 Wins" description="{=Cbf52UqN}This badge has been awarded to the players who won 50 matches in the Early Access.">
+    <Condition type="ValueRange" value_name="WinCount" value_min="50" description="{=DJY6qD0b}Current Wins" />
+  </Badge>
+  <Badge id="badge_ea_20_wins" type="OnMatchEnd" name="{=DKAH6hMC}EA 20 Wins" description="{=OasvPXuW}This badge has been awarded to the players who won 20 matches in the Early Access.">
+    <Condition type="ValueRange" value_name="WinCount" value_min="20" description="{=DJY6qD0b}Current Wins" />
+  </Badge>
+
+  <Badge id="gamescom_2020_call_to_arms" type="OnMatchEnd" name="{=*}Call to Arms Gamescom 2020" period_start="08/26/2020 23:00:00" period_end="08/30/2020 23:00:00" description="{=*}This badge has been awarded to the players who won 5 matches during Gamescom 2020 events.">
+    <Condition type="TimedValueRange" value_name="WinCount" value_min="5" description="{=*}Total wins" />
+  </Badge>
+  <Badge id="gamescom_2020_manhunter" type="OnBadgeOwnerKill" name="{=*}Manhunter Gamescom 2020" period_start="08/26/2020 23:00:00" period_end="08/30/2020 23:00:00" description="{=*}This badge has been awarded to the players who killed other manhunters.">
+    <Condition type="Custom" value="gamescom_2020_manhunter" description="{=*}Manhunter badge owner" />
+    <Condition type="Custom" value="badge_taleworlds_primary_dev" description="{=*}Taleworlds Developer" />
+    <Condition type="Custom" value="badge_taleworlds_dev" description="{=*}Taleworlds Developer" />
+  </Badge>
+  <Badge id="gamescom_2020_captain_champion_party" type="OnMatchEnd" name="{=*}Captain Champion Gamescom 2020" period_start="08/26/2020 23:00:00" period_end="08/27/2020 23:00:00" description="{=*}This badge has been awarded to the player with most Captain kills during Gamescom 2020." is_visible_only_when_earned="true">
+    <Condition type="TimedBest" value_name="Stats.Captain.KillCount" description="{=*}Solo kills" solo_only="true" />
+    <Condition type="TimedBest" value_name="Stats.Captain.KillCount" description="{=*}Party kills" party_only="true" />
+  </Badge>
+  <Badge id="gamescom_2020_skirmish_champion_party" type="OnMatchEnd" name="{=*}Skirmish Champion Gamescom 2020" period_start="08/27/2020 23:00:00" period_end="08/28/2020 23:00:00" description="{=*}This badge has been awarded to the player with most Skirmish kills during Gamescom 2020." is_visible_only_when_earned="true">
+    <Condition type="TimedBest" value_name="Stats.Skirmish.KillCount" description="{=*}Solo kills" solo_only="true" />
+    <Condition type="TimedBest" value_name="Stats.Skirmish.KillCount" description="{=*}Party kills" party_only="true" />
+  </Badge>
+  <Badge id="gamescom_2020_captain_champion_solo" type="OnMatchEnd" name="{=*}Captain Champion Gamescom 2020" period_start="08/28/2020 23:00:00" period_end="08/29/2020 23:00:00" description="{=*}This badge has been awarded to the player with most Captain kills during Gamescom 2020." is_visible_only_when_earned="true">
+    <Condition type="TimedBest" value_name="Stats.Captain.KillCount" description="{=*}Solo kills" solo_only="true" />
+    <Condition type="TimedBest" value_name="Stats.Captain.KillCount" description="{=*}Party kills" party_only="true" />
+  </Badge>
+  <Badge id="gamescom_2020_skirmish_champion_solo" type="OnMatchEnd" name="{=*}Skirmish Champion Gamescom 2020" period_start="08/29/2020 23:00:00" period_end="08/30/2020 23:00:00" description="{=*}This badge has been awarded to the player with most Skirmish kills during Gamescom 2020." is_visible_only_when_earned="true">
+    <Condition type="TimedBest" value_name="Stats.Skirmish.KillCount" description="{=*}Solo kills" solo_only="true" />
+    <Condition type="TimedBest" value_name="Stats.Skirmish.KillCount" description="{=*}Party kills" party_only="true" />
+  </Badge>
+</Badges>

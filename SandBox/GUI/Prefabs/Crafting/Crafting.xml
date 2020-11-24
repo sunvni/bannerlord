@@ -1,0 +1,546 @@
+<Prefab>
+  <Constants>
+    <Constant Name="TabControlPath" Value="..\..\..\CraftingCategoryParent\InnerPanel\PartListPanel\PartList" />
+
+    <Constant Name="NextButton.Width" BrushLayer="Default" BrushName="ButtonBrush1" BrushValueType="Width" />
+    <Constant Name="NextButton.Height" BrushLayer="Default" BrushName="ButtonBrush1" BrushValueType="Height" />
+
+    <Constant Name="PreviousButton.Width" BrushLayer="Default" BrushName="ButtonBrush2" BrushValueType="Width" />
+    <Constant Name="PreviousButton.Height" BrushLayer="Default" BrushName="ButtonBrush2" BrushValueType="Height" />
+
+    <Constant Name="Crafting.Part.Card.Height" Value="60" />
+    <Constant Name="Crafting.Part.Card.Width" Value="85" />
+
+    <Constant Name="Reference.Alpha.Factor" Value="0" />
+    <Constant Name="VerticalMargin.BetweenPartCards" Value="5" />
+
+    <Constant Name="Crafting.MainAction.Button.Width" BrushLayer="Default" BrushName="Crafting.MainAction.Button" BrushValueType="Width" />
+    <Constant Name="Crafting.MainAction.Button.Height" BrushLayer="Default" BrushName="Crafting.MainAction.Button" BrushValueType="Height" />
+    <Constant Name="TabControlWidget.Path" Value="..\..\..\..\..\RightPanel\CraftingCategoryParent\InnerPanel\PartListParent\PartList" />
+  </Constants>
+  <Variables>
+  </Variables>
+  <VisualDefinitions>
+  </VisualDefinitions>
+  <Window>
+    <CraftingScreenWidget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" FinalCraftButtonWidget="NewCraftedWeaponPopupWidget\PopupParent\PlacementList\FinalActionButtonWidget" IsInCraftingMode="@IsInCraftingMode" IsInSmeltingMode="@IsInSmeltingMode" IsInRefinementMode="@IsInRefinementMode" MainActionButtonWidget="RightPanel\MainActionListPanel\MainActionParent\MainActionButtonWidget" NewCraftedWeaponPopupWidget="NewCraftedWeaponPopupWidget">
+      <Children>
+
+        <!--Dirt-->
+        <!--<Widget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginRight="650" Brush="Crafting.Dirt" />-->
+
+        <!--Total Yield/Cost Bottom Panel-->
+        <ListPanel DataSource="{PlayerCurrentMaterials}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginRight="675" MarginBottom="0">
+          <ItemTemplate>
+
+            <!--Resource Item-->
+            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="95" SuggestedHeight="96" VerticalAlignment="Bottom" DoNotPassEventsToChildren="true">
+              <Children>
+
+                <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" LayoutImp.LayoutMethod="VerticalBottomToTop">
+                  <Children>
+                    <CraftingMaterialVisualWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="90" SuggestedHeight="55" HorizontalAlignment="Center" Brush="Crafting.Material.Brush" MaterialType="@ResourceMaterialTypeAsStr" IsBig="true"/>
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="90" SuggestedHeight="24" VerticalAlignment="Bottom" Brush="Crafting.Number.Background" >
+                      <Children>
+                        <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Brush="Refinement.Amount.Text" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="5" IntText="@ResourceAmount" />
+                      </Children>
+                    </Widget>
+                  </Children>
+                </ListPanel>
+
+                <!--Material Count Change Widget-->
+                <ChangeAmountTextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Top" PositionYOffset="-20" Brush="Crafting.Material.Text" Amount="@ResourceChangeAmount" NegativeBrushName="Crafting.Material.NegativeChange.Text" PositiveBrushName="Crafting.Material.PositiveChange.Text" />
+                <HintWidget DataSource="{ResourceHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true" />
+
+              </Children>
+            </Widget>
+
+          </ItemTemplate>
+        </ListPanel>
+
+        <!--Crafting Left Side-->
+        <!--Difficulty Bar-->
+        <ListPanel DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Left" VerticalAlignment="Center" MarginLeft="100" MarginBottom="230" IsVisible="@IsInCraftingMode" LayoutImp.LayoutMethod="VerticalTopToBottom">
+          <Children>
+
+            <TextWidget DataSource="{WeaponDesign}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="100" SuggestedHeight="30" HorizontalAlignment="Left" VerticalAlignment="Bottom" MarginLeft="10" Brush="Crafting.Difficulty.Text" Brush.FontSize="24" Text="@DifficultyText" />
+
+            <Widget DataSource="{WeaponDesign}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="108" SuggestedHeight="507" HorizontalAlignment="Left" VerticalAlignment="Center">
+              <Children>
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="Crafting\progress_bar_bed" />
+
+                <!--Dimension Sync Widget for the Top part of the difficulty-->
+                <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" LayoutImp.LayoutMethod="VerticalBottomToTop" MarginLeft="40" MarginRight="40" MarginBottom="40" MarginTop="40">
+                  <Children>
+                    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="crafting_difficulty_top_9"/>
+                    <DimensionSyncWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" DimensionToSync="Vertical" IsEnabled="false" WidgetToCopyHeightFrom="..\..\CraftingHeroDifficultyBar\FillWidget"/>
+                  </Children>
+                </ListPanel>
+
+
+                <!--Vertical Fill Bar that we use to place the skill value ring-->
+                <FillBarVerticalWidget Id="CraftingHeroDifficultyBar" DoNotPassEventsToChildren="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="40" MarginRight="40" MarginBottom="40" MarginTop="40" FillWidget="FillWidget" InitialAmount="@CurrentHeroCraftingSkill" IsDirectionUpward="true" MaxAmount="@MaxDifficulty" >
+                  <Children>
+                    <Widget Id="FillWidget" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="2" HorizontalAlignment="Center" >
+                      <Children>
+                        <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="BlankWhiteSquare_9" Brush.Color="#00B900FF"/>
+                        <!--<Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="92" SuggestedHeight="8" HorizontalAlignment="Center" VerticalAlignment="Top" Sprite="Crafting\progress_bar_indicator" />-->
+                        <!--<TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center"  VerticalAlignment="Center" PositionXOffset="200" Brush="Crafting.Difficulty.Text" Brush.FontSize="24" Text="@CurrentDifficultyText" />-->
+                      </Children>
+                    </Widget>
+
+                    <HintWidget DataSource="{DifficultyHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false" />
+                  </Children>
+                </FillBarVerticalWidget>
+
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="40" MarginRight="40" MarginBottom="40" MarginTop="40" Brush="Crafting.Difficulty.Overlay" />
+
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="Crafting\progress_bar_frame" />
+
+                <!--Vertical Fill Bar that we use to color the difficulty bar-->
+                <FillBarVerticalWidget Id="DifficultyBar" DoNotPassEventsToChildren="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="40" MarginRight="40" MarginBottom="40" MarginTop="40" FillWidget="FillWidget" InitialAmount="@CurrentDifficulty" IsDirectionUpward="true" MaxAmount="@MaxDifficulty" >
+                  <Children>
+                    <Widget Id="FillWidget" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="1" HorizontalAlignment="Center" >
+                      <Children>
+                        <!--<Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="BlankWhiteSquare_9" Brush.Color="#00B900FF"/>-->
+                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="92" SuggestedHeight="8" HorizontalAlignment="Center" VerticalAlignment="Top" Sprite="Crafting\progress_bar_indicator" />
+                        <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="100" HorizontalAlignment="Right" VerticalAlignment="Top" PositionXOffset="-65" PositionYOffset="-10" Brush="Crafting.Difficulty.Text" Brush.TextHorizontalAlignment="Right" Brush.TextVerticalAlignment="Top" Text="@CurrentDifficultyText" />
+                      </Children>
+                    </Widget>
+
+                    <HintWidget DataSource="{DifficultyHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false" />
+                  </Children>
+                </FillBarVerticalWidget>
+
+                <!--Dimension Sync Widget for the crafting skill value ring-->
+                <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" LayoutImp.LayoutMethod="VerticalBottomToTop" MarginLeft="40" MarginRight="40" MarginBottom="40" MarginTop="40">
+                  <Children>
+                    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+                      <Children>
+                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="64" SuggestedHeight="23" VerticalAlignment="Bottom" HorizontalAlignment="Center" PositionYOffset="0" Sprite="Crafting\crafting_skill_ring">
+                          <Children>
+                            <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Left"  VerticalAlignment="Center" PositionXOffset="75" Brush="Crafting.Difficulty.Text" Text="@CurrentCraftingSkillValueText" />
+                          </Children>
+                        </Widget>
+                      </Children>
+                    </Widget>
+                    <DimensionSyncWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" DimensionToSync="Vertical" IsEnabled="false" WidgetToCopyHeightFrom="..\..\CraftingHeroDifficultyBar\FillWidget"/>
+                  </Children>
+                </ListPanel>
+
+
+              </Children>
+            </Widget>
+          </Children>
+        </ListPanel>
+
+        <!--Character Switch-->
+        <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" LayoutImp.LayoutMethod="VerticalBottomToTop" MarginBottom="120" MarginLeft="40" VerticalAlignment="Bottom">
+          <Children>
+            <AutoClosePopupWidget Id="AvailableHeroesPopup" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" PopupParentWidget="..\CurrentCraftingHeroToggleWidget" CloseOnChildFocus="true" MarginBottom="10">
+              <Children>
+                <ListPanel DataSource="{AvailableCharactersForSmithing}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Brush="TownManagement.GovernorPopup">
+                  <ItemTemplate>
+                    <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="117" SuggestedHeight="83" Brush="TownManagement.GovernorPopup.Governor.Background" Command.Click="ExecuteSelection" UpdateChildrenStates="true" MarginLeft="5" MarginRight="5" MarginTop="5" MarginBottom="5">
+                      <Children>
+                        <ImageIdentifierWidget DataSource="{HeroData\ImageIdentifier}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode" IsDisabled="true" OverrideDefaultStateSwitchingEnabled="false"/>
+                        <HintWidget DataSource="{Hint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true" />
+                        <Widget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="TownManagement.GovernorPopup.GoldFrame" />
+                        <TextWidget DataSource="{HeroData}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" VerticalAlignment="Bottom" SuggestedHeight="30" Brush="TownManagement.GovernorPopup.Name.Text" Text="@NameText" />
+                      </Children>
+                    </ButtonWidget>
+                  </ItemTemplate>
+                </ListPanel>
+              </Children>
+            </AutoClosePopupWidget>
+
+            <ToggleWidget Id="CurrentCraftingHeroToggleWidget" DataSource="{CurrentCraftingHero}" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="130" SuggestedHeight="96" WidgetToClose="..\AvailableHeroesPopup" UpdateChildrenStates="true" >
+              <Children>
+                <ImageIdentifierWidget DataSource="{HeroData\ImageIdentifier}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode" IsDisabled="true" OverrideDefaultStateSwitchingEnabled="false"/>
+                <Widget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="TownManagement.GovernorPopup.GoldFrame" />
+                <TextWidget DataSource="{HeroData}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" VerticalAlignment="Bottom" Brush="TownManagement.GovernorPopup.Name.Text" Text="@NameText" />
+                <HintWidget DataSource="{Hint}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+              </Children>
+            </ToggleWidget>
+
+          </Children>
+        </ListPanel>
+
+        <!--Right Bottom Buttons-->
+        <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginLeft="350" MarginBottom="120" IsVisible="@IsInCraftingMode" LayoutImp.LayoutMethod="HorizontalLeftToRight">
+          <Children>
+
+            <!--Reset Angle Button-->
+            <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="58" SuggestedHeight="69" HorizontalAlignment="Right" VerticalAlignment="Bottom" MarginRight="35" Brush="Crafting.Reset.Angle.Button" UpdateChildrenStates="true" Command.Click="ExecuteResetCamera">
+              <Children>
+                <HintWidget DataSource="{ResetCameraHint}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="58" SuggestedHeight="69" HorizontalAlignment="Center" VerticalAlignment="Bottom" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+              </Children>
+            </ButtonWidget>
+
+            <!--Scabbard Toggle-->
+            <ButtonWidget DataSource="{WeaponDesign}" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="58" SuggestedHeight="69" HorizontalAlignment="Right" VerticalAlignment="Bottom" Brush="Crafting.Show.Scabbard.Button" Command.Click="ExecuteChangeScabbardVisibility" IsEnabled="@CurrentWeaponHasScabbard" IsSelected="@IsScabbardVisible" UpdateChildrenStates="true">
+              <Children>
+                <HintWidget DataSource="{ScabbardHint}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="58" SuggestedHeight="69" HorizontalAlignment="Center" VerticalAlignment="Bottom" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+              </Children>
+            </ButtonWidget>
+          </Children>
+        </ListPanel>
+
+        <!--Left Side Part Tab Selection Box-->
+        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="140" SuggestedHeight="470" HorizontalAlignment="Right" VerticalAlignment="Top" MarginRight="650" MarginTop="158" Sprite="Crafting\left_panel_crafting" IsVisible="@IsInCraftingMode">
+          <Children>
+            <!--Inner Panel-->
+            <Widget DataSource="{WeaponDesign}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="96" SuggestedHeight="286" MarginLeft="32" MarginTop="45">
+              <Children>
+
+                <ListPanel DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="10" LayoutImp.LayoutMethod="VerticalBottomToTop">
+                  <Children>
+
+                    <!--Blade Part-->
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="84" SuggestedHeight="59" MarginBottom="!VerticalMargin.BetweenPartCards" IsVisible="@IsBladePartListEnabled">
+                      <Children>
+                        <TabToggleWidget DataSource="{SelectedBladePart}" DoNotPassEventsToChildren="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteOpenTooltip" Command.HoverEnd="ExecuteCloseTooltip" TabControlWidget="!TabControlWidget.Path" TabName="BladePartList" UpdateChildrenStates="true">
+                          <Children>
+                            <CraftingPartItemButtonWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" PlayerHasPiece="@PlayerHasPiece" DontHavePieceBrush="Crafting.Part.Left.Card.DontHavePiece" HasPieceBrush="Crafting.Part.Left.Card.HasPiece" UpdateChildrenStates="true" IsSelected="@Selected" ImageIdentifier="ImageIdentifier" DontHavePieceMaterialBrush="Crafting.Piece.MaterialBrush.DontHavePiece" HasPieceMaterialBrush="Crafting.Piece.MaterialBrush.HavePiece">
+                              <Children>
+                                <ImageIdentifierWidget Id="ImageIdentifier" DataSource="{ImageIdentifier}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="75" SuggestedHeight="55" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="2" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode" OverrideDefaultStateSwitchingEnabled="false" />
+                                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Bottom" MarginRight="5" MarginBottom="5" Sprite="StdAssets\lock_closed" IsHidden="@PlayerHasPiece"/>
+                              </Children>
+                            </CraftingPartItemButtonWidget>
+                          </Children>
+                        </TabToggleWidget>
+                      </Children>
+                    </Widget>
+
+                    <!--Guard Part-->
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="84" SuggestedHeight="59" MarginTop="!VerticalMargin.BetweenPartCards" MarginBottom="!VerticalMargin.BetweenPartCards" IsVisible="@IsGuardPartListEnabled">
+                      <Children>
+                        <TabToggleWidget DataSource="{SelectedGuardPart}" DoNotPassEventsToChildren="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Crafting.Part.Left.Card" Command.HoverBegin="ExecuteOpenTooltip" Command.HoverEnd="ExecuteCloseTooltip" TabControlWidget="!TabControlWidget.Path" TabName="GuardPartList"  IsEnabled="@PlayerHasPiece" UpdateChildrenStates="true">
+                          <Children>
+                            <CraftingPartItemButtonWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" PlayerHasPiece="@PlayerHasPiece" DontHavePieceBrush="Crafting.Part.Left.Card.DontHavePiece" HasPieceBrush="Crafting.Part.Left.Card.HasPiece" UpdateChildrenStates="true" IsSelected="@Selected" ImageIdentifier="ImageIdentifier" DontHavePieceMaterialBrush="Crafting.Piece.MaterialBrush.DontHavePiece" HasPieceMaterialBrush="Crafting.Piece.MaterialBrush.HavePiece">
+                              <Children>
+                                <ImageIdentifierWidget Id="ImageIdentifier" DataSource="{ImageIdentifier}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="75" SuggestedHeight="55" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="2" AdditionalArgs="@AdditisonalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode"  OverrideDefaultStateSwitchingEnabled="false"/>
+                                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Bottom" MarginRight="5" MarginBottom="5" Sprite="StdAssets\lock_closed" IsHidden="@PlayerHasPiece"/>
+                              </Children>
+                            </CraftingPartItemButtonWidget>
+                          </Children>
+                        </TabToggleWidget>
+                      </Children>
+                    </Widget>
+
+                    <!--Handle Part-->
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="84" SuggestedHeight="59" MarginTop="!VerticalMargin.BetweenPartCards" MarginBottom="!VerticalMargin.BetweenPartCards" IsVisible="@IsHandlePartListEnabled">
+                      <Children>
+                        <TabToggleWidget DataSource="{SelectedHandlePart}" DoNotPassEventsToChildren="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Crafting.Part.Left.Card" Command.HoverBegin="ExecuteOpenTooltip" Command.HoverEnd="ExecuteCloseTooltip" TabControlWidget="!TabControlWidget.Path" TabName="HandlePartList" IsEnabled="@PlayerHasPiece" UpdateChildrenStates="true">
+                          <Children>
+                            <CraftingPartItemButtonWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" PlayerHasPiece="@PlayerHasPiece" DontHavePieceBrush="Crafting.Part.Left.Card.DontHavePiece" HasPieceBrush="Crafting.Part.Left.Card.HasPiece" UpdateChildrenStates="true" IsSelected="@Selected" ImageIdentifier="ImageIdentifier" DontHavePieceMaterialBrush="Crafting.Piece.MaterialBrush.DontHavePiece" HasPieceMaterialBrush="Crafting.Piece.MaterialBrush.HavePiece">
+                              <Children>
+                                <ImageIdentifierWidget Id="ImageIdentifier" DataSource="{ImageIdentifier}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="75" SuggestedHeight="55" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="2" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode" OverrideDefaultStateSwitchingEnabled="false"/>
+                                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Bottom" MarginRight="5" MarginBottom="5" Sprite="StdAssets\lock_closed" IsHidden="@PlayerHasPiece"/>
+                              </Children>
+                            </CraftingPartItemButtonWidget>
+                          </Children>
+                        </TabToggleWidget>
+                      </Children>
+                    </Widget>
+
+                    <!--Pommel Part-->
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="84" SuggestedHeight="59" MarginTop="!VerticalMargin.BetweenPartCards" IsVisible="@IsPommelPartListEnabled">
+                      <Children>
+                        <TabToggleWidget DataSource="{SelectedPommelPart}" DoNotPassEventsToChildren="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Crafting.Part.Left.Card" Command.HoverBegin="ExecuteOpenTooltip" Command.HoverEnd="ExecuteCloseTooltip" TabControlWidget="!TabControlWidget.Path" TabName="PommelPartList"  IsEnabled="@PlayerHasPiece" UpdateChildrenStates="true">
+                          <Children>
+                            <CraftingPartItemButtonWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" PlayerHasPiece="@PlayerHasPiece" DontHavePieceBrush="Crafting.Part.Left.Card.DontHavePiece" HasPieceBrush="Crafting.Part.Left.Card.HasPiece" UpdateChildrenStates="true" IsSelected="@Selected" ImageIdentifier="ImageIdentifier" DontHavePieceMaterialBrush="Crafting.Piece.MaterialBrush.DontHavePiece" HasPieceMaterialBrush="Crafting.Piece.MaterialBrush.HavePiece">
+                              <Children>
+                                <ImageIdentifierWidget Id="ImageIdentifier" DataSource="{ImageIdentifier}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="75" SuggestedHeight="55" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="2" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode"  OverrideDefaultStateSwitchingEnabled="false" />
+                                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Bottom" MarginRight="5" MarginBottom="5" Sprite="StdAssets\lock_closed" IsHidden="@PlayerHasPiece"/>
+                              </Children>
+                            </CraftingPartItemButtonWidget>
+                          </Children>
+                        </TabToggleWidget>
+                      </Children>
+                    </Widget>
+
+                  </Children>
+                </ListPanel>
+
+              </Children>
+            </Widget>
+
+            <!--Randomize-->
+            <ButtonWidget DataSource="{WeaponDesign}" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="54" SuggestedHeight="40" HorizontalAlignment="Right" VerticalAlignment="Bottom" MarginRight="33" MarginBottom="85" Brush="Crafting.Randomize.Button" Command.Click="ExecuteRandomize">
+              <Children>
+                <HintWidget DataSource="{RandomizeHint}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="30" SuggestedHeight="30" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="CharacterCreation\button_random" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+              </Children>
+            </ButtonWidget>
+
+            <!--Undo-->
+            <ButtonWidget DataSource="{WeaponDesign}" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="54" SuggestedHeight="40" HorizontalAlignment="Right" VerticalAlignment="Bottom" MarginRight="61" MarginBottom="35" Brush="FaceGen.Extension.Button" Command.Click="ExecuteUndo">
+              <Children>
+                <HintWidget DataSource="{UndoHint}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="30" SuggestedHeight="30" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="CharacterCreation\button_undo" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+              </Children>
+            </ButtonWidget>
+
+            <!--Redo-->
+            <ButtonWidget DataSource="{WeaponDesign}" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="54" SuggestedHeight="40" HorizontalAlignment="Right" VerticalAlignment="Bottom" MarginRight="2" MarginBottom="35" Brush="FaceGen.Extension.Button" Command.Click="ExecuteRedo">
+              <Children>
+                <HintWidget DataSource="{RedoHint}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="30" SuggestedHeight="30" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="CharacterCreation\button_undo" Brush.HorizontalFlip="true" Brush.VerticalFlip="true" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+              </Children>
+            </ButtonWidget>
+
+          </Children>
+        </Widget>
+
+        <!--Smelting Left Panel-->
+        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="918" HorizontalAlignment="Left" VerticalAlignment="Center" MarginLeft="179" MarginTop="20" MarginBottom="150" IsVisible="@IsInSmeltingMode" MinHeight="287">
+          <Children>
+            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="1053" SuggestedHeight="4" HorizontalAlignment="Center" VerticalAlignment="Top" Sprite="Crafting\left_field_frame" />
+
+            <Widget DataSource="{Smelting}" WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="1053" HorizontalAlignment="Center" MarginTop="4" Sprite="Crafting\left_field_canvas" Brush.Color="#000000FF" MinHeight="287">
+              <Children>
+
+                <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" IsVisible="@IsAnyItemSelected" LayoutImp.LayoutMethod="VerticalBottomToTop">
+                  <Children>
+
+                    <ListPanel DataSource="{CurrentSelectedItem}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" MarginBottom="60" MarginTop="60" LayoutImp.LayoutMethod="HorizontalLeftToRight">
+                      <Children>
+
+                        <ImageIdentifierWidget DataSource="{Visual}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="224" SuggestedHeight="102" HorizontalAlignment="Center" VerticalAlignment="Center" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode" LoadingIconWidget="LoadingIconWidget" >
+                          <Children>
+                            <Standard.CircleLoadingWidget HorizontalAlignment="Center" VerticalAlignment="Center" Id="LoadingIconWidget"/>
+                          </Children>
+                        </ImageIdentifierWidget>
+
+                        <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Text="+" Brush.FontColor="#F4E1C4FF" Brush.FontSize="48" MarginRight="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                        <ListPanel DataSource="{InputMaterials}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" LayoutImp.LayoutMethod="VerticalBottomToTop" VerticalAlignment="Center">
+                          <ItemTemplate>
+
+                            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="95" SuggestedHeight="96" VerticalAlignment="Bottom" DoNotPassEventsToChildren="true">
+                              <Children>
+
+                                <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" LayoutImp.LayoutMethod="VerticalBottomToTop">
+                                  <Children>
+                                    <CraftingMaterialVisualWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="90" SuggestedHeight="55" HorizontalAlignment="Center" Brush="Crafting.Material.Brush" MaterialType="@ResourceMaterialTypeAsStr" IsBig="true"/>
+                                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="90" SuggestedHeight="24" VerticalAlignment="Bottom" Brush="Crafting.Number.Background" >
+                                      <Children>
+                                        <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Brush="Refinement.Amount.Text" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="5" IntText="@ResourceAmount" />
+                                      </Children>
+                                    </Widget>
+                                  </Children>
+                                </ListPanel>
+
+                                <!--Material Count Change Widget-->
+                                <HintWidget DataSource="{ResourceHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true" />
+
+                              </Children>
+                            </Widget>
+                          </ItemTemplate>
+                        </ListPanel>
+
+                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="96" SuggestedHeight="29" VerticalAlignment="Center" HorizontalAligment="Center" MarginLeft="15" MarginRight="15" Sprite="Crafting\arrow" />
+
+                        <!--Item Yield Values-->
+                        <ListPanel DataSource="{Yield}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" LayoutImp.LayoutMethod="VerticalBottomToTop">
+                          <ItemTemplate>
+
+                            <!--Resource Item-->
+                            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="95" SuggestedHeight="96" VerticalAlignment="Bottom" DoNotPassEventsToChildren="true">
+                              <Children>
+
+                                <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" LayoutImp.LayoutMethod="VerticalBottomToTop">
+                                  <Children>
+                                    <CraftingMaterialVisualWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="90" SuggestedHeight="55" HorizontalAlignment="Center" Brush="Crafting.Material.Brush" MaterialType="@ResourceMaterialTypeAsStr" IsBig="true"/>
+                                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="90" SuggestedHeight="24" VerticalAlignment="Bottom" Brush="Crafting.Number.Background" >
+                                      <Children>
+                                        <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Brush="Refinement.Amount.Text" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="5" IntText="@ResourceAmount" />
+                                      </Children>
+                                    </Widget>
+                                  </Children>
+                                </ListPanel>
+
+                                <!--Material Count Change Widget-->
+                                <HintWidget DataSource="{ResourceHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true" />
+
+                              </Children>
+                            </Widget>
+
+                          </ItemTemplate>
+                        </ListPanel>
+                      </Children>
+                    </ListPanel>
+
+                  </Children>
+                </ListPanel>
+
+              </Children>
+            </Widget>
+
+            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="1053" SuggestedHeight="4" HorizontalAlignment="Center" VerticalAlignment="Bottom" Sprite="Crafting\left_field_frame" Brush.VerticalFlip="true" />
+
+          </Children>
+        </Widget>
+
+        <!--Refinement Left Panel-->
+        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="918" HorizontalAlignment="Left" VerticalAlignment="Top" MarginLeft="179" MarginTop="226" MarginBottom="20" IsVisible="@IsInRefinementMode" MinHeight="287">
+          <Children>
+            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="1053" SuggestedHeight="4" HorizontalAlignment="Center" VerticalAlignment="Top" Sprite="Crafting\left_field_frame" IsEnabled="false" />
+
+            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="1053" SuggestedHeight="370" HorizontalAlignment="Center" MarginTop="4" Sprite="Crafting\left_field_canvas" Brush.Color="#000000FF">
+              <Children>
+
+                <Widget DataSource="{Refinement}" WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" IsVisible="@IsValidRefinementActionSelected" HorizontalAlignment="Center">
+                  <Children>
+
+                    <ListPanel DataSource="{CurrentSelectedAction}" WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center">
+                      <Children>
+
+                        <ListPanel DataSource="{InputMaterials}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Center">
+                          <ItemTemplate>
+                            <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" LayoutImp.LayoutMethod="VerticalBottomToTop">
+                              <Children>
+                                <CraftingMaterialVisualWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="181" SuggestedHeight="110" HorizontalAlignment="Center" Brush="Crafting.Material.Brush" IsBig="true" MaterialType="@ResourceMaterialTypeAsStr" />
+                                <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Brush="Refinement.Amount.Text" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="5" IntText="@ResourceAmount" />
+                                <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="100" HorizontalAlignment="Center" VerticalAlignment="Bottom" Brush="Refinement.Tuple.Text" Text="@ResourceName"/>
+                              </Children>
+                            </ListPanel>
+                          </ItemTemplate>
+                        </ListPanel>
+
+                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="96" SuggestedHeight="29" VerticalAlignment="Center" MarginLeft="15" MarginRight="15" Sprite="Crafting\arrow" />
+
+                        <ListPanel DataSource="{OutputMaterials}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Center">
+                          <ItemTemplate>
+                            <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" LayoutImp.LayoutMethod="VerticalBottomToTop">
+                              <Children>
+                                <CraftingMaterialVisualWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="181" SuggestedHeight="110" HorizontalAlignment="Center" Brush="Crafting.Material.Brush" IsBig="true" MaterialType="@ResourceMaterialTypeAsStr"/>
+                                <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Brush="Refinement.Amount.Text" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="5" IntText="@ResourceAmount" />
+                                <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="100" HorizontalAlignment="Center" VerticalAlignment="Bottom" Brush="Refinement.Tuple.Text" Text="@ResourceName"/>
+                              </Children>
+                            </ListPanel>
+                          </ItemTemplate>
+                        </ListPanel>
+
+                      </Children>
+                    </ListPanel>
+                  </Children>
+                </Widget>
+
+              </Children>
+            </Widget>
+
+            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="1053" SuggestedHeight="4" HorizontalAlignment="Center" VerticalAlignment="Bottom" Sprite="Crafting\left_field_frame" Brush.VerticalFlip="true" IsEnabled="false" />
+
+          </Children>
+        </Widget>
+
+        <!--Category Selection-->
+        <ListPanel Id="CategoryParent" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="1100" SuggestedHeight="140" HorizontalAlignment="Center" VerticalAlignment="Top" MarginRight="650" MarginTop="0" LayoutImp.LayoutMethod="HorizontalCentered">
+          <Children>
+
+            <ButtonWidget Id="SmeltingCategoryButton" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="380" SuggestedHeight="136"  Brush="Crafting.SmeltingTab.Button" Command.Click="ExecuteSwitchToSmelting" IsSelected="@IsInSmeltingMode" UpdateChildrenStates="true">
+              <Children>
+
+                <ListPanel DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" LayoutImp.LayoutMethod="VerticalBottomToTop" VerticalAlignment="Center" MarginTop="7" UpdateChildrenStates="true">
+                  <Children>
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="33" SuggestedHeight="29" HorizontalAlignment="Center" VerticalAlignment="Top" Brush="Crafting.Smelt.Icon" />
+                    <TextWidget  WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Top" Brush="Crafting.Tabs.Text" Text="@SmeltingText" />
+                  </Children>
+                </ListPanel>
+
+                <HintWidget DataSource="{SmeltingHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false" />
+              </Children>
+            </ButtonWidget>
+
+            <ButtonWidget Id="CraftingCategoryButton" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="380" SuggestedHeight="136" Brush="Crafting.CraftingTab.Button" Command.Click="ExecuteSwitchToCrafting" IsSelected="@IsInCraftingMode" UpdateChildrenStates="true">
+              <Children>
+                <ListPanel DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="7" LayoutImp.LayoutMethod="VerticalBottomToTop" UpdateChildrenStates="true">
+                  <Children>
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="33" SuggestedHeight="29" HorizontalAlignment="Center" VerticalAlignment="Top" Brush="Crafting.Craft.Icon" />
+                    <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Top" Brush="Crafting.Tabs.Text" Text="@CraftingText" />
+                  </Children>
+                </ListPanel>
+
+                <HintWidget DataSource="{CraftingHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false" />
+              </Children>
+            </ButtonWidget>
+
+            <ButtonWidget Id="RefinementCategoryButton" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="380" SuggestedHeight="136"  Brush="Crafting.RefinementTab.Button" Command.Click="ExecuteSwitchToRefinement" IsSelected="@IsInRefinementMode" UpdateChildrenStates="true" ClipContents="false" >
+              <Children>
+                <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" LayoutImp.LayoutMethod="VerticalBottomToTop" MarginTop="7" UpdateChildrenStates="true">
+                  <Children>
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="33" SuggestedHeight="29" HorizontalAlignment="Center" VerticalAlignment="Top" Brush="Crafting.Refine.Icon" />
+                    <TextWidget  WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Top" Brush="Crafting.Tabs.Text" Text="@RefinementText" />
+                  </Children>
+                </ListPanel>
+                <HintWidget DataSource="{RefiningHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false" />
+              </Children>
+            </ButtonWidget>
+
+          </Children>
+        </ListPanel>
+
+        <!--Right Panel-->
+        <Widget Id="RightPanel" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="694" SuggestedHeight="1080" HorizontalAlignment="Right" Sprite="Crafting\right_panel_crafting" VerticalAlinment="Center">
+          <Children>
+
+            <!--Crafted Item Name Box-->
+            <!--TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="670" HorizontalAlignment="Right" Brush="Stage.Title.Text" Text="@CurrentCategoryText" ClipContents="false" MarginTop="5"/-->
+
+            <!--Inner Panel Categories-->
+            <!--Crafting Category-->
+            <CraftingCategory Id="CraftingCategoryParent" IsVisible="@IsInCraftingMode" />
+
+            <!--Smelting Category-->
+            <Widget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsVisible="@IsInSmeltingMode">
+              <Children>
+                <SmeltingCategory Id="SmeltingCategoryParent" DataSource="{Smelting}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" />
+              </Children>
+            </Widget>
+
+            <!--Refinement Category-->
+            <Widget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsVisible="@IsInRefinementMode">
+              <Children>
+                <RefinementCategory Id="RefinementCategoryParent" DataSource="{Refinement}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" />
+              </Children>
+            </Widget>
+
+            <ListPanel Id="MainActionListPanel" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Right" VerticalAlignment="Bottom" LayoutImp.LayoutMethod="HorizontalLeftToRight">
+              <Children>
+
+                <!--Main Action Button-->
+                <Widget Id="MainActionParent" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="355" SuggestedHeight="50" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                  <Children>
+
+                    <ButtonWidget Id="MainActionButtonWidget" DoNotPassEventsToChildren="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Crafting.MainAction.Button" Command.Click="ExecuteMainAction" IsEnabled="@IsMainActionEnabled" UpdateChildrenStates="true">
+                      <Children>
+                        <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="20" Brush="Crafting.MainAction.Text" Text="@MainActionText" />
+                      </Children>
+                    </ButtonWidget>
+
+                    <HintWidget DataSource="{MainActionHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true" />
+
+                    <Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="365" SuggestedHeight="60" HorizontalAlignment="Right" VerticalAlignment="Bottom" PositionXOffset="8" Sprite="Crafting\bottom_crafting" />
+                  </Children>
+                </Widget>
+
+                <!--Cancel Button-->
+                <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="136" SuggestedHeight="69" HorizontalAlignment="Right" VerticalAlignment="Bottom" MarginLeft="10" Brush="Crafting.Leave.Button" Command.Click="ExecuteCancel">
+                  <Children>
+                    <!--<TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="35" MarginLeft="60" Brush="CharacterDeveloper.PerkPopup.ButtonText" Text="@CancelLbl" />-->
+                  </Children>
+                </ButtonWidget>
+
+              </Children>
+            </ListPanel>
+
+          </Children>
+        </Widget>
+
+
+        <!--New Crafted Weapon Popup-->
+        <NewCraftedWeaponPopup Id="NewCraftedWeaponPopupWidget" DataSource="{WeaponDesign}" IsVisible="@IsInFinalCraftingStage" />
+
+      </Children>
+    </CraftingScreenWidget>
+  </Window>
+</Prefab>

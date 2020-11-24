@@ -1,0 +1,775 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Türkçe" />
+  </tags>
+  <strings>
+    <string id="66Mzk0NZ" text="Çalılık" />
+    <string id="a0MVffcN" text="Arka Sokak" />
+    <string id="fOUsLdZR" text="Otlak" />
+    <string id="iXA5SttU" text="Bataklık" />
+    <string id="LWHIVshb" text="Açıklık" />
+    <string id="Rr1cy5Sk" text="Liman Bölgesi" />
+    <string id="Settlements.Settlement.name.castle_A1" text="Tubilis Kalesi" />
+    <string id="Settlements.Settlement.name.castle_A2" text="Sahel Kalesi" />
+    <string id="Settlements.Settlement.name.castle_A3" text="Ain Baliq Kalesi" />
+    <string id="Settlements.Settlement.name.castle_A4" text="Medeni Kalesi" />
+    <string id="Settlements.Settlement.name.castle_A5" text="Jamayeh Kalesi" />
+    <string id="Settlements.Settlement.name.castle_A6" text="Shibal Zumr Kalesi" />
+    <string id="Settlements.Settlement.name.castle_A7" text="Uqba Kalesi" />
+    <string id="Settlements.Settlement.name.castle_A8" text="Tamnuh Kalesi" />
+    <string id="Settlements.Settlement.name.castle_A9" text="Berihal Kalesi" />
+    <string id="Settlements.Settlement.name.castle_B1" text="Ab Comer Kalesi" />
+    <string id="Settlements.Settlement.name.castle_B2" text="Llanoc Hen Kalesi" />
+    <string id="Settlements.Settlement.name.castle_B3" text="Druimmor Kalesi" />
+    <string id="Settlements.Settlement.name.castle_B4" text="Pendraic Kalesi" />
+    <string id="Settlements.Settlement.name.castle_B5" text="Rhemtoil Kalesi" />
+    <string id="Settlements.Settlement.name.castle_B6" text="Flintolg Kalesi" />
+    <string id="Settlements.Settlement.name.castle_B7" text="Aster Kalesi" />
+    <string id="Settlements.Settlement.name.castle_B8" text="Uthelaim Kalesi" />
+    <string id="Settlements.Settlement.name.castle_EN1" text="Varagos Kalesi" />
+    <string id="Settlements.Settlement.name.castle_EN2" text="Lochana Kalesi" />
+    <string id="Settlements.Settlement.name.castle_EN3" text="Rhesos Kalesi" />
+    <string id="Settlements.Settlement.name.castle_EN4" text="Gaos Kalesi" />
+    <string id="Settlements.Settlement.name.castle_EN5" text="Atrion Kalesi" />
+    <string id="Settlements.Settlement.name.castle_EN6" text="Ataconia Kalesi" />
+    <string id="Settlements.Settlement.name.castle_EN7" text="Epinosa Kalesi" />
+    <string id="Settlements.Settlement.name.castle_EN8" text="Syratos Kalesi" />
+    <string id="Settlements.Settlement.name.castle_EN9" text="Mecalovea Kalesi" />
+    <string id="Settlements.Settlement.name.castle_ES1" text="Odrysa Kalesi" />
+    <string id="Settlements.Settlement.name.castle_ES2" text="Corenia Kalesi" />
+    <string id="Settlements.Settlement.name.castle_ES3" text="Melion Kalesi" />
+    <string id="Settlements.Settlement.name.castle_ES4" text="Lavenia Kalesi" />
+    <string id="Settlements.Settlement.name.castle_ES5" text="Morenia Kalesi" />
+    <string id="Settlements.Settlement.name.castle_ES6" text="Sestadeim Kalesi" />
+    <string id="Settlements.Settlement.name.castle_ES7" text="Jogurys Kalesi" />
+    <string id="Settlements.Settlement.name.castle_ES8" text="Chanopsis Kalesi" />
+    <string id="Settlements.Settlement.name.castle_EW1" text="Garontor Kalesi" />
+    <string id="Settlements.Settlement.name.castle_EW2" text="Thorios Kalesi" />
+    <string id="Settlements.Settlement.name.castle_EW3" text="Onica Kalesi" />
+    <string id="Settlements.Settlement.name.castle_EW4" text="Thractorae Kalesi" />
+    <string id="Settlements.Settlement.name.castle_EW5" text="Veron Kalesi" />
+    <string id="Settlements.Settlement.name.castle_EW6" text="Hertogea Kalesi" />
+    <string id="Settlements.Settlement.name.castle_EW7" text="Oristocorys Kalesi" />
+    <string id="Settlements.Settlement.name.castle_EW8" text="Gersegos Kalesi" />
+    <string id="Settlements.Settlement.name.castle_K1" text="Usek Kalesi" />
+    <string id="Settlements.Settlement.name.castle_K2" text="Akiser Kalesi" />
+    <string id="Settlements.Settlement.name.castle_K3" text="Hakkun Kalesi" />
+    <string id="Settlements.Settlement.name.castle_K4" text="Tepes Kalesi" />
+    <string id="Settlements.Settlement.name.castle_K5" text="Khimli Kalesi" />
+    <string id="Settlements.Settlement.name.castle_K6" text="Dinar Kalesi" />
+    <string id="Settlements.Settlement.name.castle_K7" text="Simira Kalesi" />
+    <string id="Settlements.Settlement.name.castle_K8" text="Erzenur Kalesi" />
+    <string id="Settlements.Settlement.name.castle_K9" text="Kaysar Kalesi" />
+    <string id="Settlements.Settlement.name.castle_S1" text="Ustokol Kalesi" />
+    <string id="Settlements.Settlement.name.castle_S2" text="Mazhadan Kalesi" />
+    <string id="Settlements.Settlement.name.castle_S3" text="Nevyansk Kalesi" />
+    <string id="Settlements.Settlement.name.castle_S4" text="Kranirog Kalesi" />
+    <string id="Settlements.Settlement.name.castle_S5" text="Ov Kalesi" />
+    <string id="Settlements.Settlement.name.castle_S6" text="Takor Kalesi" />
+    <string id="Settlements.Settlement.name.castle_S7" text="Urikskala Kalesi" />
+    <string id="Settlements.Settlement.name.castle_S8" text="Vladiv Kalesi" />
+    <string id="Settlements.Settlement.name.castle_V1" text="Usanc Kalesi" />
+    <string id="Settlements.Settlement.name.castle_V2" text="Hongard Kalesi" />
+    <string id="Settlements.Settlement.name.castle_V3" text="Drapand Kalesi" />
+    <string id="Settlements.Settlement.name.castle_V4" text="Ormanfard Kalesi" />
+    <string id="Settlements.Settlement.name.castle_V5" text="Tirby Kalesi" />
+    <string id="Settlements.Settlement.name.castle_V6" text="Caleus Kalesi" />
+    <string id="Settlements.Settlement.name.castle_V7" text="Talivel Kalesi" />
+    <string id="Settlements.Settlement.name.castle_V8" text="Verecsand Kalesi" />
+    <string id="Settlements.Settlement.name.castle_village_A1_1" text="Tubilis" />
+    <string id="Settlements.Settlement.name.castle_village_A1_2" text="Fanab" />
+    <string id="Settlements.Settlement.name.castle_village_A2_1" text="Sahel" />
+    <string id="Settlements.Settlement.name.castle_village_A2_2" text="Asmait" />
+    <string id="Settlements.Settlement.name.castle_village_A3_1" text="Ain Baliq" />
+    <string id="Settlements.Settlement.name.castle_village_A3_2" text="Aiwalitas" />
+    <string id="Settlements.Settlement.name.castle_village_A4_1" text="Medeni" />
+    <string id="Settlements.Settlement.name.castle_village_A4_2" text="Qednar" />
+    <string id="Settlements.Settlement.name.castle_village_A5_1" text="Jamayeh" />
+    <string id="Settlements.Settlement.name.castle_village_A5_2" text="Hunab" />
+    <string id="Settlements.Settlement.name.castle_village_A6_1" text="Shibal Zumr" />
+    <string id="Settlements.Settlement.name.castle_village_A6_2" text="Lamesa" />
+    <string id="Settlements.Settlement.name.castle_village_A7_1" text="Uqba" />
+    <string id="Settlements.Settlement.name.castle_village_A7_2" text="Bunqaz" />
+    <string id="Settlements.Settlement.name.castle_village_A8_1" text="Tamnuh" />
+    <string id="Settlements.Settlement.name.castle_village_A8_2" text="Kuqa" />
+    <string id="Settlements.Settlement.name.castle_village_A9_1" text="Berihal" />
+    <string id="Settlements.Settlement.name.castle_village_A9_2" text="Wadar" />
+    <string id="Settlements.Settlement.name.castle_village_B1_1" text="Ab Comer" />
+    <string id="Settlements.Settlement.name.castle_village_B1_2" text="Inveth" />
+    <string id="Settlements.Settlement.name.castle_village_B2_1" text="Llanoc Hen" />
+    <string id="Settlements.Settlement.name.castle_village_B2_2" text="Cantrec" />
+    <string id="Settlements.Settlement.name.castle_village_B3_1" text="Druimmor" />
+    <string id="Settlements.Settlement.name.castle_village_B3_2" text="Tor Melina" />
+    <string id="Settlements.Settlement.name.castle_village_B4_1" text="Pendraic" />
+    <string id="Settlements.Settlement.name.castle_village_B4_2" text="Lindorn" />
+    <string id="Settlements.Settlement.name.castle_village_B5_1" text="Rhemtoil" />
+    <string id="Settlements.Settlement.name.castle_village_B5_2" text="Claig Ban" />
+    <string id="Settlements.Settlement.name.castle_village_B6_1" text="Flintolg" />
+    <string id="Settlements.Settlement.name.castle_village_B6_2" text="Glintor" />
+    <string id="Settlements.Settlement.name.castle_village_B7_1" text="Aster" />
+    <string id="Settlements.Settlement.name.castle_village_B7_2" text="Imlagh" />
+    <string id="Settlements.Settlement.name.castle_village_B8_1" text="Uthelaim" />
+    <string id="Settlements.Settlement.name.castle_village_B8_2" text="Seordas" />
+    <string id="Settlements.Settlement.name.castle_village_EN1_1" text="Varagos" />
+    <string id="Settlements.Settlement.name.castle_village_EN1_2" text="Aeoria" />
+    <string id="Settlements.Settlement.name.castle_village_EN2_1" text="Lochana" />
+    <string id="Settlements.Settlement.name.castle_village_EN2_2" text="Nortanisa" />
+    <string id="Settlements.Settlement.name.castle_village_EN3_1" text="Rhesos" />
+    <string id="Settlements.Settlement.name.castle_village_EN3_2" text="Dyopalis" />
+    <string id="Settlements.Settlement.name.castle_village_EN4_1" text="Gaos" />
+    <string id="Settlements.Settlement.name.castle_village_EN4_2" text="Themys" />
+    <string id="Settlements.Settlement.name.castle_village_EN5_1" text="Atrion" />
+    <string id="Settlements.Settlement.name.castle_village_EN5_2" text="Masangara" />
+    <string id="Settlements.Settlement.name.castle_village_EN6_1" text="Ataconia" />
+    <string id="Settlements.Settlement.name.castle_village_EN6_2" text="Potamis" />
+    <string id="Settlements.Settlement.name.castle_village_EN7_1" text="Epinosa" />
+    <string id="Settlements.Settlement.name.castle_village_EN7_2" text="Pons" />
+    <string id="Settlements.Settlement.name.castle_village_EN8_1" text="Syratos" />
+    <string id="Settlements.Settlement.name.castle_village_EN8_2" text="Temhem" />
+    <string id="Settlements.Settlement.name.castle_village_EN9_1" text="Mecalovea" />
+    <string id="Settlements.Settlement.name.castle_village_EN9_2" text="Agalmon" />
+    <string id="Settlements.Settlement.name.castle_village_ES1_1" text="Odrysa" />
+    <string id="Settlements.Settlement.name.castle_village_ES1_2" text="Caira" />
+    <string id="Settlements.Settlement.name.castle_village_ES2_1" text="Corenia" />
+    <string id="Settlements.Settlement.name.castle_village_ES2_2" text="Metachia" />
+    <string id="Settlements.Settlement.name.castle_village_ES3_1" text="Melion" />
+    <string id="Settlements.Settlement.name.castle_village_ES3_2" text="Sagolina" />
+    <string id="Settlements.Settlement.name.castle_village_ES4_1" text="Lavenia" />
+    <string id="Settlements.Settlement.name.castle_village_ES4_2" text="Ethemisa" />
+    <string id="Settlements.Settlement.name.castle_village_ES5_1" text="Morenia" />
+    <string id="Settlements.Settlement.name.castle_village_ES5_2" text="Atphynia" />
+    <string id="Settlements.Settlement.name.castle_village_ES6_1" text="Sestadeim" />
+    <string id="Settlements.Settlement.name.castle_village_ES6_2" text="Amycon" />
+    <string id="Settlements.Settlement.name.castle_village_ES7_1" text="Jogurys" />
+    <string id="Settlements.Settlement.name.castle_village_ES7_2" text="Eunalica" />
+    <string id="Settlements.Settlement.name.castle_village_ES8_1" text="Chanopsis" />
+    <string id="Settlements.Settlement.name.castle_village_ES8_2" text="Popsia" />
+    <string id="Settlements.Settlement.name.castle_village_EW1_1" text="Garontor" />
+    <string id="Settlements.Settlement.name.castle_village_EW1_2" text="Lysia" />
+    <string id="Settlements.Settlement.name.castle_village_EW2_1" text="Thorios" />
+    <string id="Settlements.Settlement.name.castle_village_EW2_2" text="Bergum" />
+    <string id="Settlements.Settlement.name.castle_village_EW3_1" text="Onica" />
+    <string id="Settlements.Settlement.name.castle_village_EW3_2" text="Tarcutis" />
+    <string id="Settlements.Settlement.name.castle_village_EW4_1" text="Thractorae" />
+    <string id="Settlements.Settlement.name.castle_village_EW4_2" text="Gamardan" />
+    <string id="Settlements.Settlement.name.castle_village_EW5_1" text="Veron" />
+    <string id="Settlements.Settlement.name.castle_village_EW5_2" text="Goleryn" />
+    <string id="Settlements.Settlement.name.castle_village_EW6_1" text="Hertogea" />
+    <string id="Settlements.Settlement.name.castle_village_EW6_2" text="Nideon" />
+    <string id="Settlements.Settlement.name.castle_village_EW7_1" text="Oristocorys" />
+    <string id="Settlements.Settlement.name.castle_village_EW7_2" text="Elvania" />
+    <string id="Settlements.Settlement.name.castle_village_EW8_1" text="Gersegos" />
+    <string id="Settlements.Settlement.name.castle_village_EW8_2" text="Vathea" />
+    <string id="Settlements.Settlement.name.castle_village_K1_1" text="Usek" />
+    <string id="Settlements.Settlement.name.castle_village_K1_2" text="Esme" />
+    <string id="Settlements.Settlement.name.castle_village_K2_1" text="Akiser" />
+    <string id="Settlements.Settlement.name.castle_village_K2_2" text="Kamshar" />
+    <string id="Settlements.Settlement.name.castle_village_K3_1" text="Hakkun" />
+    <string id="Settlements.Settlement.name.castle_village_K3_2" text="Kiraz" />
+    <string id="Settlements.Settlement.name.castle_village_K4_1" text="Tepes" />
+    <string id="Settlements.Settlement.name.castle_village_K4_2" text="Kuruluk" />
+    <string id="Settlements.Settlement.name.castle_village_K5_1" text="Khimli" />
+    <string id="Settlements.Settlement.name.castle_village_K5_2" text="Omrotok" />
+    <string id="Settlements.Settlement.name.castle_village_K6_1" text="Dinar" />
+    <string id="Settlements.Settlement.name.castle_village_K6_2" text="Karahalli" />
+    <string id="Settlements.Settlement.name.castle_village_K7_1" text="Simira" />
+    <string id="Settlements.Settlement.name.castle_village_K7_2" text="Kohi Ajik" />
+    <string id="Settlements.Settlement.name.castle_village_K8_1" text="Erzenur" />
+    <string id="Settlements.Settlement.name.castle_village_K8_2" text="Gereden" />
+    <string id="Settlements.Settlement.name.castle_village_K9_1" text="Kaysar" />
+    <string id="Settlements.Settlement.name.castle_village_K9_2" text="Payam" />
+    <string id="Settlements.Settlement.name.castle_village_S1_1" text="Ustokol" />
+    <string id="Settlements.Settlement.name.castle_village_S1_2" text="Zhemyan" />
+    <string id="Settlements.Settlement.name.castle_village_S2_1" text="Mazhadan" />
+    <string id="Settlements.Settlement.name.castle_village_S2_2" text="Forin" />
+    <string id="Settlements.Settlement.name.castle_village_S3_1" text="Nevyansk" />
+    <string id="Settlements.Settlement.name.castle_village_S3_2" text="Dnin" />
+    <string id="Settlements.Settlement.name.castle_village_S4_1" text="Kranirog" />
+    <string id="Settlements.Settlement.name.castle_village_S4_2" text="Ismilkorg" />
+    <string id="Settlements.Settlement.name.castle_village_S5_1" text="Ov" />
+    <string id="Settlements.Settlement.name.castle_village_S5_2" text="Ferth" />
+    <string id="Settlements.Settlement.name.castle_village_S6_1" text="Takor" />
+    <string id="Settlements.Settlement.name.castle_village_S6_2" text="Dvorusta" />
+    <string id="Settlements.Settlement.name.castle_village_S7_1" text="Urikskala" />
+    <string id="Settlements.Settlement.name.castle_village_S7_2" text="Alov" />
+    <string id="Settlements.Settlement.name.castle_village_S8_1" text="Vladiv" />
+    <string id="Settlements.Settlement.name.castle_village_S8_2" text="Glavstrom" />
+    <string id="Settlements.Settlement.name.castle_village_V1_1" text="Usanc" />
+    <string id="Settlements.Settlement.name.castle_village_V2_1" text="Hongard" />
+    <string id="Settlements.Settlement.name.castle_village_V2_2" text="Ferton" />
+    <string id="Settlements.Settlement.name.castle_village_V3_1" text="Drapand" />
+    <string id="Settlements.Settlement.name.castle_village_V3_2" text="Valanby" />
+    <string id="Settlements.Settlement.name.castle_village_V4_1" text="Ormanfard" />
+    <string id="Settlements.Settlement.name.castle_village_V5_1" text="Tirby" />
+    <string id="Settlements.Settlement.name.castle_village_V5_2" text="Sirindac" />
+    <string id="Settlements.Settlement.name.castle_village_V6_1" text="Caleus" />
+    <string id="Settlements.Settlement.name.castle_village_V6_2" text="Deriat" />
+    <string id="Settlements.Settlement.name.castle_village_V7_1" text="Talivel" />
+    <string id="Settlements.Settlement.name.castle_village_V7_2" text="Rodetan" />
+    <string id="Settlements.Settlement.name.castle_village_V8_1" text="Verecsand" />
+    <string id="Settlements.Settlement.name.castle_village_V8_2" text="Marin" />
+    <string id="Settlements.Settlement.name.hideout_desert_1" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_desert_10" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_desert_11" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_desert_12" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_desert_13" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_desert_14" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_desert_15" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_desert_16" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_desert_17" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_desert_18" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_desert_19" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_desert_2" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_desert_20" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_desert_3" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_desert_4" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_desert_5" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_desert_6" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_desert_7" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_desert_8" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_desert_9" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_forest_1" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_forest_10" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_forest_11" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_forest_12" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_forest_13" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_forest_14" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_forest_15" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_forest_16" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_forest_17" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_forest_18" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_forest_19" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_forest_2" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_forest_3" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_forest_4" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_forest_5" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_forest_6" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_forest_7" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_forest_8" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_forest_9" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_mountain_1" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_mountain_10" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_mountain_11" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_mountain_12" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_mountain_13" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_mountain_14" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_mountain_15" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_mountain_16" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_mountain_17" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_mountain_18" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_mountain_19" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_mountain_2" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_mountain_20" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_mountain_3" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_mountain_4" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_mountain_5" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_mountain_6" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_mountain_7" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_mountain_8" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_mountain_9" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_seaside_1" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_seaside_10" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_seaside_11" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_seaside_12" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_seaside_13" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_seaside_14" text="Sahil Sığınağı" />
+    <string id="Settlements.Settlement.name.hideout_seaside_15" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_seaside_16" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_seaside_17" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_seaside_18" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_seaside_19" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_seaside_2" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_seaside_20" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_seaside_3" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_seaside_4" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_seaside_5" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_seaside_6" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_seaside_7" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_seaside_8" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_seaside_9" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_steppe_1" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_steppe_10" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_steppe_11" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_steppe_12" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_steppe_13" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_steppe_14" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_steppe_15" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_steppe_16" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_steppe_17" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_steppe_18" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_steppe_19" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_steppe_2" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_steppe_20" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_steppe_3" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_steppe_4" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_steppe_5" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_steppe_6" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_steppe_7" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_steppe_8" text="Sığınak" />
+    <string id="Settlements.Settlement.name.hideout_steppe_9" text="Sığınak" />
+    <string id="Settlements.Settlement.name.town_A1" text="Quyaz" />
+    <string id="Settlements.Settlement.name.town_A2" text="Husn Fulq" />
+    <string id="Settlements.Settlement.name.town_A3" text="Iyakis" />
+    <string id="Settlements.Settlement.name.town_A4" text="Razih" />
+    <string id="Settlements.Settlement.name.town_A5" text="Hubyar" />
+    <string id="Settlements.Settlement.name.town_A6" text="Sanala" />
+    <string id="Settlements.Settlement.name.town_A7" text="Askar" />
+    <string id="Settlements.Settlement.name.town_A8" text="Qasira" />
+    <string id="Settlements.Settlement.name.town_B1" text="Marunath" />
+    <string id="Settlements.Settlement.name.town_B2" text="Dunglanys" />
+    <string id="Settlements.Settlement.name.town_B3" text="Car Banseth" />
+    <string id="Settlements.Settlement.name.town_B4" text="Seonon" />
+    <string id="Settlements.Settlement.name.town_B5" text="Pen Cannoc" />
+    <string id="Settlements.Settlement.name.town_EN1" text="Epicrotea" />
+    <string id="Settlements.Settlement.name.town_EN2" text="Diathma" />
+    <string id="Settlements.Settlement.name.town_EN3" text="Saneopa" />
+    <string id="Settlements.Settlement.name.town_EN4" text="Argoron" />
+    <string id="Settlements.Settlement.name.town_EN5" text="Myzea" />
+    <string id="Settlements.Settlement.name.town_EN6" text="Amprela" />
+    <string id="Settlements.Settlement.name.town_ES1" text="Danustica" />
+    <string id="Settlements.Settlement.name.town_ES2" text="Vostrum" />
+    <string id="Settlements.Settlement.name.town_ES3" text="Poros" />
+    <string id="Settlements.Settlement.name.town_ES4" text="Lycaron" />
+    <string id="Settlements.Settlement.name.town_ES5" text="Onira" />
+    <string id="Settlements.Settlement.name.town_ES6" text="Phycaon" />
+    <string id="Settlements.Settlement.name.town_ES7" text="Syronea" />
+    <string id="Settlements.Settlement.name.town_EW1" text="Lageta" />
+    <string id="Settlements.Settlement.name.town_EW2" text="Zeonica" />
+    <string id="Settlements.Settlement.name.town_EW3" text="Jalmarys" />
+    <string id="Settlements.Settlement.name.town_EW4" text="Ortysia" />
+    <string id="Settlements.Settlement.name.town_EW5" text="Amitatys" />
+    <string id="Settlements.Settlement.name.town_EW6" text="Rhotae" />
+    <string id="Settlements.Settlement.name.town_K1" text="Baltakhand" />
+    <string id="Settlements.Settlement.name.town_K2" text="Akkalat" />
+    <string id="Settlements.Settlement.name.town_K3" text="Makeb" />
+    <string id="Settlements.Settlement.name.town_K4" text="Ortongard" />
+    <string id="Settlements.Settlement.name.town_K5" text="Chaikand" />
+    <string id="Settlements.Settlement.name.town_K6" text="Odokh" />
+    <string id="Settlements.Settlement.name.town_S1" text="Varcheg" />
+    <string id="Settlements.Settlement.name.town_S2" text="Balgard" />
+    <string id="Settlements.Settlement.name.town_S3" text="Omor" />
+    <string id="Settlements.Settlement.name.town_S4" text="Varnovapol" />
+    <string id="Settlements.Settlement.name.town_S5" text="Tyal" />
+    <string id="Settlements.Settlement.name.town_S6" text="Sibir" />
+    <string id="Settlements.Settlement.name.town_S7" text="Revyl" />
+    <string id="Settlements.Settlement.name.town_V1" text="Sargot" />
+    <string id="Settlements.Settlement.name.town_V2" text="Ocs Hall" />
+    <string id="Settlements.Settlement.name.town_V3" text="Pravend" />
+    <string id="Settlements.Settlement.name.town_V5" text="Galend" />
+    <string id="Settlements.Settlement.name.town_V6" text="Jaculan" />
+    <string id="Settlements.Settlement.name.town_V7" text="Charas" />
+    <string id="Settlements.Settlement.name.town_V8" text="Ostican" />
+    <string id="Settlements.Settlement.name.town_V9" text="Rovalt" />
+    <string id="Settlements.Settlement.name.village_A1_1" text="Tasheba" />
+    <string id="Settlements.Settlement.name.village_A1_2" text="Baq" />
+    <string id="Settlements.Settlement.name.village_A1_4" text="Hiblet" />
+    <string id="Settlements.Settlement.name.village_A2_2" text="Abou Khih" />
+    <string id="Settlements.Settlement.name.village_A2_3" text="Hoqqa" />
+    <string id="Settlements.Settlement.name.village_A3_1" text="Abba" />
+    <string id="Settlements.Settlement.name.village_A3_3" text="Bir Seif" />
+    <string id="Settlements.Settlement.name.village_A4_1" text="Qablab" />
+    <string id="Settlements.Settlement.name.village_A4_2" text="Mossom" />
+    <string id="Settlements.Settlement.name.village_A4_4" text="Doqa" />
+    <string id="Settlements.Settlement.name.village_A5_1" text="Mahloul" />
+    <string id="Settlements.Settlement.name.village_A5_2" text="Aiwalitas" />
+    <string id="Settlements.Settlement.name.village_A5_3" text="Deir Hawa" />
+    <string id="Settlements.Settlement.name.village_A6_1" text="Mijayit" />
+    <string id="Settlements.Settlement.name.village_A6_2" text="Hamoshawat" />
+    <string id="Settlements.Settlement.name.village_A6_3" text="Jahasim" />
+    <string id="Settlements.Settlement.name.village_A6_4" text="Nahlan" />
+    <string id="Settlements.Settlement.name.village_A7_2" text="Kafr Hatif" />
+    <string id="Settlements.Settlement.name.village_A7_3" text="Mabwaz" />
+    <string id="Settlements.Settlement.name.village_A7_4" text="Zalm" />
+    <string id="Settlements.Settlement.name.village_A8_1" text="Ezbet Nahul" />
+    <string id="Settlements.Settlement.name.village_A8_2" text="Abghan" />
+    <string id="Settlements.Settlement.name.village_B1_1" text="Dalmengus" />
+    <string id="Settlements.Settlement.name.village_B1_2" text="Ebereth" />
+    <string id="Settlements.Settlement.name.village_B1_3" text="Beglomuar" />
+    <string id="Settlements.Settlement.name.village_B1_4" text="Ath Cafal" />
+    <string id="Settlements.Settlement.name.village_B2_1" text="Diantogmail" />
+    <string id="Settlements.Settlement.name.village_B2_2" text="Glenlithrig" />
+    <string id="Settlements.Settlement.name.village_B2_3" text="Morihig" />
+    <string id="Settlements.Settlement.name.village_B3_1" text="Bog Beth" />
+    <string id="Settlements.Settlement.name.village_B3_2" text="Geunat Nal" />
+    <string id="Settlements.Settlement.name.village_B3_3" text="Tor Leiad" />
+    <string id="Settlements.Settlement.name.village_B4_1" text="Bryn Glas" />
+    <string id="Settlements.Settlement.name.village_B4_2" text="Andurn" />
+    <string id="Settlements.Settlement.name.village_B4_3" text="Fenon Tryn" />
+    <string id="Settlements.Settlement.name.village_B4_4" text="Swenryn" />
+    <string id="Settlements.Settlement.name.village_B5_1" text="Durn" />
+    <string id="Settlements.Settlement.name.village_B5_2" text="Gainseth" />
+    <string id="Settlements.Settlement.name.village_B5_3" text="Mag Arba" />
+    <string id="Settlements.Settlement.name.village_EN1_1" text="Marathea" />
+    <string id="Settlements.Settlement.name.village_EN1_2" text="Stathymos" />
+    <string id="Settlements.Settlement.name.village_EN1_3" text="Gymos" />
+    <string id="Settlements.Settlement.name.village_EN2_1" text="Alosea" />
+    <string id="Settlements.Settlement.name.village_EN2_2" text="Jeracos" />
+    <string id="Settlements.Settlement.name.village_EN3_1" text="Enoisa" />
+    <string id="Settlements.Settlement.name.village_EN3_3" text="Crios" />
+    <string id="Settlements.Settlement.name.village_EN4_2" text="Alatys" />
+    <string id="Settlements.Settlement.name.village_EN4_4" text="Hetania" />
+    <string id="Settlements.Settlement.name.village_EN5_1" text="Vealos" />
+    <string id="Settlements.Settlement.name.village_EN5_2" text="Orthra" />
+    <string id="Settlements.Settlement.name.village_EN5_4" text="Samatha" />
+    <string id="Settlements.Settlement.name.village_EN6_1" text="Avasinton" />
+    <string id="Settlements.Settlement.name.village_EN6_2" text="Acragora" />
+    <string id="Settlements.Settlement.name.village_ES1_2" text="Polisia" />
+    <string id="Settlements.Settlement.name.village_ES1_3" text="Tegresos" />
+    <string id="Settlements.Settlement.name.village_ES1_4" text="Erebulos" />
+    <string id="Settlements.Settlement.name.village_ES2_2" text="Gorcorys" />
+    <string id="Settlements.Settlement.name.village_ES2_3" text="Avalyps" />
+    <string id="Settlements.Settlement.name.village_ES2_4" text="Alision" />
+    <string id="Settlements.Settlement.name.village_ES3_1" text="Canoros" />
+    <string id="Settlements.Settlement.name.village_ES3_2" text="Tevea" />
+    <string id="Settlements.Settlement.name.village_ES3_3" text="Zestea" />
+    <string id="Settlements.Settlement.name.village_ES4_1" text="Sagora" />
+    <string id="Settlements.Settlement.name.village_ES4_3" text="Canterion" />
+    <string id="Settlements.Settlement.name.village_ES5_1" text="Lanthas" />
+    <string id="Settlements.Settlement.name.village_ES5_2" text="Lartusys" />
+    <string id="Settlements.Settlement.name.village_ES5_3" text="Parasemnos" />
+    <string id="Settlements.Settlement.name.village_ES6_1" text="Saldannis" />
+    <string id="Settlements.Settlement.name.village_ES6_2" text="Spotia" />
+    <string id="Settlements.Settlement.name.village_ES7_1" text="Psotai" />
+    <string id="Settlements.Settlement.name.village_ES7_2" text="Vargornis" />
+    <string id="Settlements.Settlement.name.village_EW1_1" text="Primessos" />
+    <string id="Settlements.Settlement.name.village_EW1_2" text="Montos" />
+    <string id="Settlements.Settlement.name.village_EW2_2" text="Neocorys" />
+    <string id="Settlements.Settlement.name.village_EW2_3" text="Alsasos" />
+    <string id="Settlements.Settlement.name.village_EW2_4" text="Zeocorys" />
+    <string id="Settlements.Settlement.name.village_EW3_2" text="Aegosca" />
+    <string id="Settlements.Settlement.name.village_EW3_3" text="Dradios" />
+    <string id="Settlements.Settlement.name.village_EW4_1" text="Arpotis" />
+    <string id="Settlements.Settlement.name.village_EW4_3" text="Vinela" />
+    <string id="Settlements.Settlement.name.village_EW4_4" text="Garengolia" />
+    <string id="Settlements.Settlement.name.village_EW5_1" text="Elipa" />
+    <string id="Settlements.Settlement.name.village_EW5_2" text="Phasos" />
+    <string id="Settlements.Settlement.name.village_EW6_1" text="Carphenion" />
+    <string id="Settlements.Settlement.name.village_EW6_3" text="Thersenion" />
+    <string id="Settlements.Settlement.name.village_EW6_4" text="Leblenion" />
+    <string id="Settlements.Settlement.name.village_K1_1" text="Fisnar" />
+    <string id="Settlements.Settlement.name.village_K1_2" text="Ulaan" />
+    <string id="Settlements.Settlement.name.village_K1_4" text="Asalig" />
+    <string id="Settlements.Settlement.name.village_K2_1" text="Karakalat" />
+    <string id="Settlements.Settlement.name.village_K2_2" text="Tismil" />
+    <string id="Settlements.Settlement.name.village_K3_1" text="Shapeshte" />
+    <string id="Settlements.Settlement.name.village_K3_2" text="Hanekhy" />
+    <string id="Settlements.Settlement.name.village_K3_3" text="Mazen" />
+    <string id="Settlements.Settlement.name.village_K4_2" text="Ransam" />
+    <string id="Settlements.Settlement.name.village_K4_3" text="Mivanjan" />
+    <string id="Settlements.Settlement.name.village_K4_4" text="Urunjan" />
+    <string id="Settlements.Settlement.name.village_K5_2" text="Okhutan" />
+    <string id="Settlements.Settlement.name.village_K5_3" text="Ispantar" />
+    <string id="Settlements.Settlement.name.village_K5_4" text="Pabastan" />
+    <string id="Settlements.Settlement.name.village_K6_1" text="Karahan" />
+    <string id="Settlements.Settlement.name.village_K6_2" text="Nutyuk" />
+    <string id="Settlements.Settlement.name.village_K6_3" text="Danara" />
+    <string id="Settlements.Settlement.name.village_S1_1" text="Rodobas" />
+    <string id="Settlements.Settlement.name.village_S1_3" text="Kargrev" />
+    <string id="Settlements.Settlement.name.village_S2_1" text="Safna" />
+    <string id="Settlements.Settlement.name.village_S2_2" text="Marabrot" />
+    <string id="Settlements.Settlement.name.village_S3_1" text="Chornobas" />
+    <string id="Settlements.Settlement.name.village_S3_2" text="Skorin" />
+    <string id="Settlements.Settlement.name.village_S4_1" text="Borchovagorka" />
+    <string id="Settlements.Settlement.name.village_S4_3" text="Omkany" />
+    <string id="Settlements.Settlement.name.village_S4_4" text="Yangutum" />
+    <string id="Settlements.Settlement.name.village_S5_1" text="Visibrot" />
+    <string id="Settlements.Settlement.name.village_S5_2" text="Bukits" />
+    <string id="Settlements.Settlement.name.village_S6_1" text="Kvol" />
+    <string id="Settlements.Settlement.name.village_S6_2" text="Radakmed" />
+    <string id="Settlements.Settlement.name.village_S6_3" text="Alebat" />
+    <string id="Settlements.Settlement.name.village_S7_1" text="Korsyas" />
+    <string id="Settlements.Settlement.name.village_S7_2" text="Karbur" />
+    <string id="Settlements.Settlement.name.village_V1_1" text="Calioc" />
+    <string id="Settlements.Settlement.name.village_V1_2" text="Etirburg" />
+    <string id="Settlements.Settlement.name.village_V2_1" text="Mareiven" />
+    <string id="Settlements.Settlement.name.village_V2_2" text="Oritan" />
+    <string id="Settlements.Settlement.name.village_V2_3" text="Fregian" />
+    <string id="Settlements.Settlement.name.village_V3_2" text="Rulund" />
+    <string id="Settlements.Settlement.name.village_V3_3" text="Larnac" />
+    <string id="Settlements.Settlement.name.village_V3_4" text="Palisona" />
+    <string id="Settlements.Settlement.name.village_V5_1" text="Furbec" />
+    <string id="Settlements.Settlement.name.village_V5_2" text="Meroc" />
+    <string id="Settlements.Settlement.name.village_V5_3" text="Nogrent" />
+    <string id="Settlements.Settlement.name.village_V6_1" text="Arromanc" />
+    <string id="Settlements.Settlement.name.village_V6_2" text="Mot" />
+    <string id="Settlements.Settlement.name.village_V6_3" text="Alorstan" />
+    <string id="Settlements.Settlement.name.village_V6_4" text="Chornad" />
+    <string id="Settlements.Settlement.name.village_V7_1" text="Savinth" />
+    <string id="Settlements.Settlement.name.village_V7_2" text="Vesin" />
+    <string id="Settlements.Settlement.name.village_V8_1" text="Horsger" />
+    <string id="Settlements.Settlement.name.village_V8_2" text="Cananc" />
+    <string id="Settlements.Settlement.name.village_V8_3" text="Remental" />
+    <string id="Settlements.Settlement.name.village_V9_1" text="Alantas" />
+    <string id="Settlements.Settlement.name.village_V9_2" text="Halisvust" />
+    <string id="Settlements.Settlement.text.castle_village_A1_1" text="Tubilis, Aseray halkının Gabsa adını verdiği nehrin denize kavuştuğu bir balıkçı köyüdür. Köylüler tonbalığı, sardalya ve köpekbalığı avlamak için körfezin sakin sularına yelken açarlar." />
+    <string id="Settlements.Settlement.text.castle_village_A2_1" text="Sahel iç kesimlerde, Retana'nın kıyı şeridi ile Nahasa Çölü arasındaki kurak bölgede yer alır. Buradaki köylüler aromatik meyveleri ve reçineleri kurutulup öğütülerek baharat haline getirilen çeşitli çalılar yetiştirirler." />
+    <string id="Settlements.Settlement.text.castle_village_A2_2" text="Asmait, Jebal Tamar tepelerinin güneye döndüğü ve kıyı boyunca devam ettiği bölgede yer alır. Burada toprak, artık çöl olmasa da, hurma ağaçlarının büyümesine olanak sağlayacak kadar kuru ve sıcaktır." />
+    <string id="Settlements.Settlement.text.castle_village_A3_1" text="Ain Baliq, Jebal Tamar tepelerinin kayalık kesitinde yer alır. Civardaki topraklar kuru olsa da, ilkbahar aylarında, at yetiştirilmesine olanak sağlayacak kadar ot verir." />
+    <string id="Settlements.Settlement.text.castle_village_A3_2" text="Aiwalitas, Jebal Tamar tepelerinin kayalık kesitinde yer alır. Civardaki topraklar kuru olsa da, ilkbahar aylarında, at yetiştirilmesine olanak sağlayacak kadar ot verir." />
+    <string id="Settlements.Settlement.text.castle_village_A4_1" text="Medeni, kadim nehirlerin meydana getirdiği yüksek ovalardan oluşan Jebal Tarba'nın sınırında yer alır. Hareketli fayların arasında sıkışan yeraltı suları, hurma ağacı korularına su sağlar." />
+    <string id="Settlements.Settlement.text.castle_village_A4_2" text="Qednar, kadim nehirlerin meydana getirdiği yüksek ovalardan ve derin vadilerden oluşan Jebal Tarba'nın ortasında yer alır. Yeraltı sularının bulunduğu bir alanı çevreleyen köyde, bu sulardan faydalanılarak hurma ağaçları yetiştirilir." />
+    <string id="Settlements.Settlement.text.castle_village_A5_1" text="Jamayeh, Aseray halkının Bahr al Yeshm, yani Yeşim Denizi adını verdiği tuz gölünün kurak doğu kıyısında yer alır. Toprak çok verimli olmasa da, otlaklar koyunlar için yeterlidir." />
+    <string id="Settlements.Settlement.text.castle_village_A6_1" text="Shibal Zumr, yeraltı sularının yüzeye çıkabildiği, kurak doğu topraklarındaki bir çukurlukta yer alan yemyeşil bir vahadır. Tarım arazileri sınırlı olmakla birlikte, bölge sakinlerine yetecek ve artanını da ihraç edecek kadar buğday üretilmektedir." />
+    <string id="Settlements.Settlement.text.castle_village_A7_1" text="Uqba, Kavruk Kapılar'ın ağzında, Damar Nehri'nin Nahasa Çölü ile Bahr al Yeshm Gölü'nün arasındaki kalker tepeleri delip geçtiği geçitte yer alır. Bu bölge güzel hurma ağaçlarıyla tanınır." />
+    <string id="Settlements.Settlement.text.castle_village_A7_2" text="Bunqaz, kurak güneye su sağlayan Damar Nehri'nin sağ kıyısında yer alan bir köydür. Gölün yakınında genişleyen ve yavaşlayan nehir, buğday sulamak için kullanılabilmektedir." />
+    <string id="Settlements.Settlement.text.castle_village_A8_1" text="Tamnuh, Bahr al Yeshm Gölü'nün yakınlarındaki dar ovanın yükselerek Jejara Kayalıkları'nın sırtlarına kavuştuğu küçük bir çukurlukta yer alır. Bölgedeki vadilerden kil toplanabilmektir." />
+    <string id="Settlements.Settlement.text.castle_village_A9_1" text="Berihal Vahası, Bahr el Yeshm'in doğusundaki platoda bulunan bir çukurlukta yer alır. Tarım arazileri verimli ama sınırlı olan bu bölge en çok çölün kısa ömürlü ama gür çayırlarında otlatılan atlarıyla tanınır." />
+    <string id="Settlements.Settlement.text.castle_village_B1_1" text="Ab Comer, Garontor Geçidi'nin Batanya tarafındaki ormanlık bölgede yer alır. Buradaki kabileler savaşmaktan ziyade İmparatorluk topraklarındaki komşularıyla ticaret yapmaya meyillidir ve ihraç etmek üzere üzüm yetiştirir." />
+    <string id="Settlements.Settlement.text.castle_village_B2_1" text="Llanoc Hen, Galfin'de, yani Batanya Krallığı'nın en güney sınırındaki vadide yer alır. Bu bölgenin köylüleri dut yetiştirmeyi öğrenmişlerdir, çünkü savaşmadıkları zamanlarda ticaret yaptıkları Vlandiya ve İmparatorluk topraklarındaki komşuları ipeğe çok değer vermektedir." />
+    <string id="Settlements.Settlement.text.castle_village_B2_2" text="Cantrec, Kalradya'nın en güneyinde yer alan bölgelerden biridir ve burada hâlâ eski Batanya dili konuşulmaktadır. Batanyalıların Galfin adını verdiği ormanlık sınır bölgesinde yer alan Cantrec, teraslı yamaçlarında zeytin yetiştirilmesiyle tanınır." />
+    <string id="Settlements.Settlement.text.castle_village_B3_1" text="Druimmor, Batanya topraklarının güneyindeki korunaklı ve sıcak bir vadi olan Morcomb'da yer alır. Buradaki köylüler yakınlardaki Cursian Tepeleri'nden demir çıkarırlar." />
+    <string id="Settlements.Settlement.text.castle_village_B4_1" text="Pendraic, Batanya topraklarının güneyindeki tenha bir vadi olan ve yaz aylarının hâlâ iyi şarap üzümleri verecek kadar sıcak geçtiği Morcomb'da yer alır." />
+    <string id="Settlements.Settlement.text.castle_village_B5_1" text="Rhemtoil, Cafalcombe'nin üst bölümlerinde, ormanlardaki derelerin bir araya gelerek Cafal Nehri'ni oluşturduğu bölgede yer alır. Bu puslu ormanlar, Kalradya'nın büyük bir bölümüne kereste sağlar." />
+    <string id="Settlements.Settlement.text.castle_village_B5_2" text="Claig Ban, Banseth Kayası'nın koyu renkli bazalt taşının altından Cafalcombe Vadisi'ne bakar. Buradaki köylüler, tarım gelirlerini desteklemek için dağ derelerinden kil toplarlar." />
+    <string id="Settlements.Settlement.text.castle_village_B6_1" text="Flintolg, Seavorn'un ortasındaki düz ve sulak alanda yer alır. Yamaçlarında, köylülerin üzüm gibi meyvelerin hasadını aldığı asmalar ve meyve bahçeleri bulunur." />
+    <string id="Settlements.Settlement.text.castle_village_B6_2" text="Glintor, Seavorn ile Cafal arasındaki alçak tepelerde bulunan çam ve meşe ormanlarının içinde yer alır. Buradan elde edilen keresteler kıyıdaki gemi yapımcılarına satılır." />
+    <string id="Settlements.Settlement.text.castle_village_B7_1" text="Aster, Cafalcombe'nin kuzey ucunda, nehrin diğer derelerle birleşerek denize kavuştuğu yerin hemen öncesinde yer alır. Buradaki hafif meyilli tepeler, kumlu topraklar ve soğuk okyanus esintileri şarap yapımına elverişlidir." />
+    <string id="Settlements.Settlement.text.castle_village_B8_1" text="Uthelaim, Seavorn Vadisi'ni çevreleyen tepelerdeki ormanlık bir arazide yer alır. Köylüler bu tepelerden meşe ve köknar elde ederler." />
+    <string id="Settlements.Settlement.text.castle_village_EN1_1" text="Varagos, yakınlardaki tepelerden akan derelerin bir araya gelerek, Tanaesis Gölü'ne dökülen küçük bir nehir olan Aris'i meydana getirdiği bölgede yer alır. Buradaki topraklar çok verimli değildir ama koyun yetiştirmek için yeterlidir." />
+    <string id="Settlements.Settlement.text.castle_village_EN2_1" text="Lochana, Dryatic Dağları'nın üzerindeki bir geçitte yer alır. İmparatorluğun en çok ipek yetiştiren bölgesi olan Myzeiad'a açılan bir kapı olarak bilinir." />
+    <string id="Settlements.Settlement.text.castle_village_EN3_1" text="Rhesos, İmparatorluğun en yüksek dağları olan Carassic Dağları'nın güney yamaçlarında yer alır. Dağlık arazinin çayırları sığır yetiştirmeye çok elverişlidir." />
+    <string id="Settlements.Settlement.text.castle_village_EN4_1" text="Gaos, Aris Nehri'nin Tanaesis Gölü'ne döküldüğü bölgenin yakınlarında yer alır. Doğudan gelen göçebeler bir zamanlar bu toprakları işgal etmişlerdir ve köyün ismi de onların göl kenarındaki çayırlarda yetiştirdikleri sığırlar için kullandıkları kelimeden gelir." />
+    <string id="Settlements.Settlement.text.castle_village_EN5_1" text="Atrion, Tanaesis Gölü'nün kuzeybatısındaki ovada, Aris'in küçük bir kolu üzerinde yer alır. Buradaki düz ve sulak topraklar keten yetiştirmeye uygundur." />
+    <string id="Settlements.Settlement.text.castle_village_EN6_1" text="Ataconia, Dryatic Dağları'nın eteklerindeki bir plato üzerinde yer alır. Dağlık arazinin toprağı ipekböceği yetiştirilen dut ağaçları için elverişlidir." />
+    <string id="Settlements.Settlement.text.castle_village_EN7_1" text="Pons, Laconys Gölü'nün doğusundaki inişli çıkışlı tepelerde yer alır. Bölgenin nüfusu nispeten düşüktür ama yeşil tepelerde büyük sığır sürüleri otlatılmaktadır." />
+    <string id="Settlements.Settlement.text.castle_village_EN8_1" text="Temhem, İmparatorluğun en yüksek dağları olan Carassic Dağları'ndaki önemli bir geçidin altında yer alır. Kenarlarında iyi demir cevheri kaynakları bulunan dar bir koyağın tepesinde bulunur." />
+    <string id="Settlements.Settlement.text.castle_village_EN9_1" text="Agalmon, Laconys Gölü'ne dökülen küçük ama hızlı bir nehir olan Galchas'ın üzerinde yer alır ve sınır bölgesindeki akıncılardan korunmak için bir uçurumun yamacına kurulmuştur. Suyun açtığı kanyonlar, bölge ekonomisinin temelini oluşturan çok sayıda demir damarını açığa çıkarmıştır." />
+    <string id="Settlements.Settlement.text.castle_village_ES1_1" text="Odrysa, İmparatorluğun güneydoğusunun uzak bölgelerindeki ıssız bir vadinin yakınlarında yer alır. Savaşlar ve akınlar nedeniyle nüfusu uzun süredir düşük olan bu sınır bölgesi, güçlü bir ormancılık endüstrisini desteklemek için yeterli meşeye sahiptir." />
+    <string id="Settlements.Settlement.text.castle_village_ES2_1" text="Corenia, Kalradya dilini konuşan en uzak İmparatorluk köylerinden biridir. Koh Ruhini'nin, yani şafak dağlarının eteklerindeki meşe ve çam ormanlarının içinde yer alan Corenia'nın ötesinde sadece Darshi ve bozkır dilleri konuşulur. " />
+    <string id="Settlements.Settlement.text.castle_village_ES2_2" text="Metachia, Tanaesis Gölü'nün güney kıyılarındaki kırsal bölgenin merkezidir ve meşe çalıları ile ipek üretiminde kullanılan dut ağaçlarının yetiştirilmesine uygun ormanlık bir alanın ortasında yer alır." />
+    <string id="Settlements.Settlement.text.castle_village_ES3_1" text="Melion, İmparatorluğun merkezinde bulunan dağlık arazilerin içindeki bir ovada yer alır. Eski bir lav akıntısının eseri olan koyu renkli toprakları, civardaki tarlalardan bol miktarda buğday ihraç edilmesine olanak sağlar." />
+    <string id="Settlements.Settlement.text.castle_village_ES3_2" text="Sagolina, Ophthys Vadisi'nin sınırlarına kurulmuştur. Çevresindeki topraklar geçmişte İmparatorluk donanmasına bol miktarda kereste tedarik etmiştir ve ormanlar biraz kesilmiş olsa da, tepelerin kıvrımlarında hâlâ büyük ağaçlar bulunmaktadır." />
+    <string id="Settlements.Settlement.text.castle_village_ES4_1" text="Lavenia, Tripotamia ovalarının Perasos Gölü ile buluştuğu bir balıkçı köyüdür. Buradaki sığ sular yayınbalığı ve tatlı su dilbalığı ile bilinir." />
+    <string id="Settlements.Settlement.text.castle_village_ES4_2" text="Ethemisa, Tripotamia ovalarında, Themys ve Rheon nehirlerinin birleştiği noktada yer alır. Kolaylıkla sulanan toprak ve ılık hava bu bölgede bol miktarda buğday üretilmesini sağlar." />
+    <string id="Settlements.Settlement.text.castle_village_ES5_1" text="Morenia, Chisaurian Dağları'nın eteklerindeki inişli çıkışlı tepelerde yer alır. Yağmurlarla birlikte akan kil çanak çömlek yapımına elverişliyken, kumlu yamaçlarda da iyi üzüm yetişir." />
+    <string id="Settlements.Settlement.text.castle_village_ES6_1" text="Choronia, Perasos Gölü'ne bakan sönmüş bir yanardağ olan Tanon Dağı'nın ormanlık doğu yamaçlarında yer alır. Koyu renkli toprağı buğday yetiştirmeye çok elverişlidir." />
+    <string id="Settlements.Settlement.text.castle_village_ES7_1" text="Jogurys, Perasos Gölü'ne bakan sönmüş bir yanardağ olan Tanon Dağı'nın güney yamaçlarında yer alır. Koyu renkli toprağı buğday yetiştirmeye çok elverişlidir." />
+    <string id="Settlements.Settlement.text.castle_village_ES8_1" text="Chanopsis, İmparatorluğun dağlık arazilerindeki küçük ama derin bir göl olan Ophthys'in başında yer alır. İpekböceklerine ev sahipliği yapan dut ağaçları vadide iyi yetişir." />
+    <string id="Settlements.Settlement.text.castle_village_EW1_1" text="Garontor, Zeos Vadisi'nin kuzey ucunda yer alır. Batanya sınırında bulunan bu bölgede köyler, vadiden gelen akıncıları tespit etmek için uçurum yamaçlarına kurulmuştur. Tarlalar, izlenebilecekleri ve korunabilecekleri, köye yakın yerlerde toplanmıştır, ormancılar ise bölgenin ağaçlarından ürün elde etmek için daha uzaklara giderler." />
+    <string id="Settlements.Settlement.text.castle_village_EW2_1" text="Thorios, Zeos Vadisi'nde, İmparatorluğun en değerli üzümlerinin yetiştiği düz tepelerde yer alır." />
+    <string id="Settlements.Settlement.text.castle_village_EW2_2" text="Bergum, denize kıyısı bulunan Epiric Tepeleri'nin karaya dönük tarafında, Zeos Vadisi ile denizin arasında yer alır. Nispeten yakın zamanda yerleşilmiş olan ormanlık bölge iyi tahıl vermeye başlamıştır." />
+    <string id="Settlements.Settlement.text.castle_village_EW3_1" text="Onica, Aminys'in Charas Körfezi'ne açılmadan hemen önceki alçak kısımlarının üzerinde bulunan bir geçidin yakınlarında yer alır. Buradaki sıcak hava, zeytin ağaçları yetiştirmeye çok elverişlidir." />
+    <string id="Settlements.Settlement.text.castle_village_EW4_1" text="Thractorae, Perasos Gölü'nün denize çıkışı olan Gavys Nehri'ni boydan boya kesen bir şelalenin üzerinde yer alır. İmparatorluğun bu güney bölgelerinde hurma ağaçları iyi yetişir." />
+    <string id="Settlements.Settlement.text.castle_village_EW5_1" text="Veron, Porea Platosu'ndan Aminys Nehri'ne uzanan küçük bir vadide yer alır. Köylüler yakınlardaki dağlarda koyun yetiştirirler." />
+    <string id="Settlements.Settlement.text.castle_village_EW5_2" text="Goleryn, Porea Platosu'ndan Amynis Vadisi'ne uzanan sarp bayırda yer alır ve güneydoğusunda bulunan Tanon Dağı'nın gölgesinde kalır. Köylüler sarp yamaçlarda koyun yetiştirirler." />
+    <string id="Settlements.Settlement.text.castle_village_EW6_1" text="Hertogea, Carassic Dağları'nın eteklerindeki meşe ormanlarının içinde yer alır. Köylüler, dağların zengin cevher damarlarından maden çıkarmak için düzenli olarak yüksek yamaçlara tırmanırlar." />
+    <string id="Settlements.Settlement.text.castle_village_EW7_1" text="Oristocorys, Carassic Dağları'nın altındaki düz bir alanda yer alır. İmparatorluğun toprak sahipleri bu bölgeye dut ağaçları getirterek ipekböceği yetiştirilmesine imkan sağlamışlardır." />
+    <string id="Settlements.Settlement.text.castle_village_EW8_1" text="Gersegos, Batanya sınırında bulunan Carsian Tepeleri'ndeki bir vadide yer alır. Bu ormanlık ve düşük nüfuslu alan, İmparatorluğun ana kereste kaynaklarından biridir." />
+    <string id="Settlements.Settlement.text.castle_village_K1_1" text="Usek köyü, Akkan Tepeleri'ndeki bir geçidin üzerinde yer alır. Köy ahalisinin büyük bir bölümü geçimini yakınlardaki dere yataklarından elde edilen kilden sağlar." />
+    <string id="Settlements.Settlement.text.castle_village_K1_2" text="Esme köyü ile etrafındaki küçük köyler, Kuzaitler ile müttefiklerinin sürülerinin ana otlak alanı olan Devseg Platosu'nun merkezinde yer alır." />
+    <string id="Settlements.Settlement.text.castle_village_K2_1" text="Akiser, Vithys Nehri'nin kaynağının yakınlarındaki kayalık tepelerde yer alır. Derelerin böldüğü kalker koyaklarda demir cevheri bulunur." />
+    <string id="Settlements.Settlement.text.castle_village_K3_1" text="Hakkun köyü, Devseg Platosu'nun doğusunda, koyakların bulunduğu engebeli bir bölgede yer alır. Çok az yağmur almasına rağmen, tepelerden akan su buğday gibi ürünleri yetiştirmek için yeterlidir." />
+    <string id="Settlements.Settlement.text.castle_village_K4_1" text="Tepes köyü, Tanaesis Gölü'nün güneydoğusundaki tepelerde, Kalradya mimarlarının ve gemi yapımcılarının büyük bir değer verdiği meşe ağaçlarının korunaklı vadilerde yetiştiği bölgede yer alır." />
+    <string id="Settlements.Settlement.text.castle_village_K5_1" text="Khimli ile etrafındaki küçük köyler, Devseg Platosu'nun sınırındaki tepelerde yer alır ve dere yataklarından toplanan kaliteli kiliyle tanınır." />
+    <string id="Settlements.Settlement.text.castle_village_K6_1" text="Dinar, Perasos Gölü'nün doğusundaki kurak dağlık bölgede yer alır. Bu bölgenin dikenli çalılıklarından birkaçı, İmparatorluk mutfaklarında çok rağbet gören reçineler ve kurutulmuş meyveler vermektedir." />
+    <string id="Settlements.Settlement.text.castle_village_K6_2" text="Karahalli, Perasos'un doğusundaki bozkırlardan Devseg Platosu'na doğru yükselen kayalık dağ eteklerinde yer alır. Bu bölgenin kalkerli toprakları yılın büyük bir bölümünde kuru olmasına rağmen, bahar yağmurlarından sonra atlar için iyi otlak alanları sağlar." />
+    <string id="Settlements.Settlement.text.castle_village_K7_1" text="Simira, Sturgiya ve Kuzait toprakları arasındaki sınırı belirleyen volkanik bir dağ kitlesi olan Iltan Dağı'nın doğu tarafında yer alır. Dağlık bölgenin otlakları hayvan otlatmaya elverişlidir ama burada kışlar çok sert geçer." />
+    <string id="Settlements.Settlement.text.castle_village_K8_1" text="Erzenur ile etrafındaki küçük köyler, Devseg Platosu'nun batısındaki kayalık bir dağ sırtının altında, bozkır halkının en değer verdiği otlak alanlarından birinde bulunur." />
+    <string id="Settlements.Settlement.text.castle_village_K9_1" text="Kaysar, Akkan Tepeleri'nin güney yamaçlarındaki kırsal bölgenin merkezidir ve bu bölgenin bahar yağmurları iyi sığır ve koyun sürüleri yetiştirilmesine olanak sağlayan yemyeşil çimenler meydana getirir." />
+    <string id="Settlements.Settlement.text.castle_village_K9_2" text="Payam, Tanaesis Gölü'nün doğusundaki kıyı ovasında yer alır. Buradaki topraklar nispeten kuru olmasına rağmen, iyi buğday yetiştirilmesine olanak sağlayacak kadar yağmur alır." />
+    <string id="Settlements.Settlement.text.castle_village_S1_1" text="Ustokol, Seavorn Nehri'nin Varcheg Koyu'na ulaştığı yerde bulunur. Buradaki köylüler serin ve puslu ovalarda keten yetiştirirler." />
+    <string id="Settlements.Settlement.text.castle_village_S2_1" text="Mazhadan, Byalic Körfezi'ni Seavorn Vadisi'nden ayıran keskin bir dağ sırtı olan Ledogora'nın kıvrımlarından birinde yer alır. Bu bölgenin sakinleri yağmurlu dağlık arazilerde keten yetiştirmeyi öğrenmişlerdir." />
+    <string id="Settlements.Settlement.text.castle_village_S3_1" text="Nevyansk, Seavorn Vadisi'nin üst kısımlarına doğru ilerlemekte olan Sturgiyalı maceraperestlerin yakın zamanda yerleştiği ormanlık bir arazide yer alır. Yerleşimcilerin bu bölgenin en iyi ağaçlarından bazılarından faydalanmaları, yakınlardaki Batanya köyleriyle aralarında gerginlik doğurmuştur." />
+    <string id="Settlements.Settlement.text.castle_village_S3_2" text="Dnin yakın bir zamanda, geleneksel Batanya topraklarına doğru ilerleyen Sturgiyalıların yerleşim alanı olmuştur. Sınırdaki köylerin birçoğu gibi, korunma amacıyla kısmen bir vadinin içine saklanmış durumdadır. Buradaki halk ormancılıkla uğraşır ve geçimini kereste satarak sağlar." />
+    <string id="Settlements.Settlement.text.castle_village_S4_1" text="Kranirog, Laconys Gölü'nün doğusundaki alçak tepelerde, bozkırların yer yer ormanlarla bölündüğü bölgede yer alır. Sturgiyalı yerleşimciler asırlardır göçebelerin otlakları olan bu çayırlara buğday ekmişlerdir." />
+    <string id="Settlements.Settlement.text.castle_village_S4_2" text="Ismilkorg, Sturgiya'nın doğusunun orman-bozkır kuşağında yer alır. Buradaki köylüler otlaklarda sığır yetiştirirler ve doğudan gelen göçebe akıncılara karşı gözlerini daima açık tutarlar." />
+    <string id="Settlements.Settlement.text.castle_village_S5_1" text="Ov, kuzey ormanlarından çıkıp Byalic Körfezi'ne dökülen küçük bir nehir olan Skorniva'nın ağzında yer alır. Köylüler, nehirde bir yukarı bir aşağı göç eden somonları yakalamak için ağlar kurarlar." />
+    <string id="Settlements.Settlement.text.castle_village_S5_2" text="Ferth, kuzey ormanlarından çıkıp Byalic Körfezi'ne dökülen küçük bir nehir olan Skorniva'nın ağzında yer alır. Köylüler, nehirde bir yukarı bir aşağı göç eden somonları yakalamak için ağlar kurarlar." />
+    <string id="Settlements.Settlement.text.castle_village_S6_1" text="Takor, Batanyalıların Mynad Rhyfel, yani savaş dağı, İmparatorluk ve Sturgiya topraklarındaki komşularının ise Minador adını verdiği geçitte yer alan, sığır yetiştirilen bir köydür. Vahşi kuzey ile daha yerleşik İmparatorluk toprakları arasındaki ana ticaret ve akın yollarından biridir." />
+    <string id="Settlements.Settlement.text.castle_village_S7_1" text="Urikskala, Laconys Gölü'nün kayalık doğu kıyılarında yer almaktadır. Tepelerden göle dökülen akarsuların ağızlarının yakınlarında iyi balık avlanabilmektedir." />
+    <string id="Settlements.Settlement.text.castle_village_S8_1" text="Vladiv, Sturgiya toprakları ile İmparatorluk toprakları arasında sınır oluşturan rüzgarlı Chernyg kırlarının dibinde yer alır. Köylüler kırlarda sığır otlatırlar ve ara sıra uzaklardaki İmparatorluk sürülerine baskın düzenlemek için sislerin arasına dalarlar." />
+    <string id="Settlements.Settlement.text.castle_village_V1_1" text="Usanc, Amynis Nehri'nin sulak ağzının yakınlarında yer alır. Bu sıcak güney toprakları zeytin ağaçları yetiştirmeye elverişlidir." />
+    <string id="Settlements.Settlement.text.castle_village_V2_1" text="Hongard, Epiric Tepeleri'nden Charas Körfezi'ne akan birçok küçük dereden birinin yanında yer alır. Okyanus yağmurları sayesinde iyi su alan bölgede buğday ve arpa üretilir." />
+    <string id="Settlements.Settlement.text.castle_village_V2_2" text="Ferton, Charas Körfezi'nin kuzey kıyısındaki dağlık bir bölgede yer alır. Kalkerli topraklar, bereketli kış yağmurları ve sıcak yazlar bu bölgenin ekonomik temelini oluşturan zeytinlikler için çok elverişli bir ortam sağlar." />
+    <string id="Settlements.Settlement.text.castle_village_V3_1" text="Drapand, Kalradya kıtasının en batı noktasında bulunan Fal Burnu'nun ucunda yer alır. Burnun dalgalı suları balıkçılık yapmayı zorlaştırsa da, değişken iklim ile güneyin sıcak ve kuru rüzgarları zeytin yetiştirmeye olanak sağlar." />
+    <string id="Settlements.Settlement.text.castle_village_V4_1" text="Ormanfard, Seavorn üzerindeki bir geçidin çamlık bölgesinde yer alır. Nehrin puslu alt kolları keten yetiştirmeye çok elverişlidir." />
+    <string id="Settlements.Settlement.text.castle_village_V5_1" text="Tirby, Ebor Dağı'nın doğu yamaçlarında yer alır. Batıdaki okyanustan ve Byalic Körfezi'nin kuzeyinden gelen çapraz rüzgarlar tarafından beslenen hızla değişen hava koşulları, üzümlerin ve diğer güney mahsullerinin yetişmesine olanak sağlar." />
+    <string id="Settlements.Settlement.text.castle_village_V5_2" text="Sirindac, Varcheg Koyu'nda yer alır. Koyun bu ucunda iyi balıkçılık alanları yoktur ama köylüler dar kıyı ovasında keten yetiştirirler." />
+    <string id="Settlements.Settlement.text.castle_village_V6_1" text="Caleus, Trand'ın küçük bir kolu olan Gosin Nehri'nin kaynağının yakınlarında yer alır. Yakın bir zamanda yerleşilmiş olan bu bölgenin çok meyilli olmayan ağaçlıklı tepeleri, köknar ve meşe bakımından zengindir." />
+    <string id="Settlements.Settlement.text.castle_village_V6_2" text="Deriat, Gosin Nehri ile Ostican Koyu arasındaki alçak alanda yer alır. Ilıman deniz iklimi üzüm yetiştirmeye elverişlidir." />
+    <string id="Settlements.Settlement.text.castle_village_V7_1" text="Talivel, Trand Vadisi'ne bakan alçak tepelerde yer alır. Etraftaki ormanların geniş bir bölümü buğday yetiştirmek için kesilmiştir." />
+    <string id="Settlements.Settlement.text.castle_village_V8_1" text="Verecsand, Epiric Tepeleri'nin iç kesimlerindeki yoğun ormanların içinde, Batanyalılar ile ihtilaflı olan sınır bölgesinde yer alır. Bölgedeki dere yataklarından kil toplanmaktadır." />
+    <string id="Settlements.Settlement.text.village_A1_1" text="Tasheba, Charas Körfezi'nin yanında, Aseray halkının Retana adını verdiği kıyı bölgelerinde yer alır. Balıkçılar tonbalığı ve sardalya avlamak için, yılın büyük bir bölümünde durgun ve sakin olan Körfez'e açılırlar." />
+    <string id="Settlements.Settlement.text.village_A1_2" text="Baq, Charas Körfezi'nin hemen iç kısımlarında yer alır. Çölden esen doğu rüzgarları toprağın çabuk kuruması anlamına gelse de, öğütülerek baharat haline getirilen aromatik baharatların yetiştirilmesine olanak sağlar." />
+    <string id="Settlements.Settlement.text.village_A1_3" text="Fanab, Charas Körfezi'nde, Aseray halkının Retana adını verdiği kıyı şeridinde yer alır. Çölden esen doğu rüzgarları toprağı kuru ve sıcak tuttuğu için, hurma ağaçlarının yetiştirilmesine olanak sağlar." />
+    <string id="Settlements.Settlement.text.village_A1_4" text="Hiblet, Charas Körfezi'nin biraz iç kısımlarında, Aseray halkının Retana adını verdiği kıyı şeridinde yer alır. Denize yakın olmasına rağmen, çölden esen doğu rüzgarları toprağı kuru ve sıcak tuttuğu için, hurma ağaçlarının yetiştirilmesine olanak sağlar." />
+    <string id="Settlements.Settlement.text.village_A2_1" text="Lamesa ve komşusu Hoqqa, Jebal Tamar tepelerinin iç kısımlarında, Nahasa'nın çorak toprakları başlamadan önceki son vaha alanlarından birinde yer alır. Köylüler, bahar yağmurlarından sonra kısa bir süreliğine yeşeren çayırlarda atlarını otlatırlar ve yılın geri kalanında da tahıl ile hurma yetiştirirler." />
+    <string id="Settlements.Settlement.text.village_A2_2" text="Abu Khih, Jebal Tamar'ın batı kolunda, Nahasa'nın kuru rüzgarlarının batıdan esen ılık deniz meltemleriyle buluştuğu noktada yer alır. Köylüler, tepelerdeki yağmur suyunu barajlarla biriktirerek vahalardaki hurma ağaçları bahçelerini sularlar." />
+    <string id="Settlements.Settlement.text.village_A2_3" text="Hoqqa ve komşusu Lamesa, Jebal Tamar tepelerinin iç kısımlarında, Nahasa'nın çorak toprakları başlamadan önceki son vaha alanlarından birinde yer alır. Köylüler, bahar yağmurlarından sonra kısa bir süreliğine yeşeren çayırlarda atlarını otlatırlar ve yılın geri kalanında da tahıl ile hurma yetiştirirler." />
+    <string id="Settlements.Settlement.text.village_A3_1" text="Abba, Jejara Kayalıkları'nın çölün nadir görülen ama genellikle şiddetli geçen yağmur fırtınalarının akışını alan korunaklı bir köşesinde yer alır. Abba halkı geçimini kayalıkların arasındaki küçük bahçelerden ve hoş kokulu reçineleriyle aromatik meyveleri kurutulup öğütülerek baharat haline getirilen ağaçlardan sağlar." />
+    <string id="Settlements.Settlement.text.village_A3_2" text="Hunab, Jejara Kayalıkları'nın çölün nadir görülen ama genellikle şiddetli geçen yağmur fırtınalarının akışını alan kuytu bir köşesinde yer alır. Hunab halkı geçimini vadilerin arasındaki küçük bahçelerden sağlarken, tepelerdeki çayırlarda da at yetiştirir." />
+    <string id="Settlements.Settlement.text.village_A3_3" text="Bir Seif, Jejara Kayalıkları'ndan Perasos Gölü'ne uzanan ovalarda yer alır. Buralardaki birçok köy gibi, yeraltı suyunu hapseden bir kaya oluşumunun etrafına kurulmuştur. Bu alandan çıkarılan kaliteli kil, çanak çömlek yapımı için bölgenin kentlerine götürülür." />
+    <string id="Settlements.Settlement.text.village_A4_1" text="Qablab, Perasos Gölü'nün batı kıyılarında yer alır. Göl artık tatlı su gölü olmasına rağmen, eskiden içdeniz olduğu için, kıyı şeridinin yakınlarındaki tuz tortuları kolaylıkla bulunup çıkarılabilmektedir." />
+    <string id="Settlements.Settlement.text.village_A4_2" text="Mossom, Perasos Gölü'nün kıyılarında yer alır. Göl artık tatlı su gölü olmasına rağmen, eskiden içdeniz olduğu için, eski tuz tortuları hâlâ bulunup çıkarılabilmektedir." />
+    <string id="Settlements.Settlement.text.village_A4_3" text="Kuqa, Perasos Gölü'nün güneyindeki kıyı ovasında yer alır. Buradaki kaya çıkıntıları kuzeydeki Jejara Kayalıkları'ndan akan suyu tuttuğu için, hurma ağaçlarının ve diğer ürünlerin yetiştirildiği vaha bahçelerine olanak sağlar." />
+    <string id="Settlements.Settlement.text.village_A4_4" text="Doqa, Perasos Gölü'ndeki bir balıkçı köyüdür. Köylüler, bazen insan boyuna erişen levrekleri avlamak için sığ kanolarla göle açılırlar ve av için kendileriyle rekabet eden timsahlara karşı gözlerini açık tutarlar." />
+    <string id="Settlements.Settlement.text.village_A5_1" text="Mahloul, Bahr al Yeshm'in güneydoğusunda bulunan çöl bozkırındaki bir koyakta yer alır. Yeraltı suları sadece köyün kendisine yetecek kadar ürün yetiştirmeye su sağlarken, köy halkı geçimini bahar yağmurlarından sonra yeşeren verimli ama kısa ömürlü çayırlarda at yetiştirmekten sağlar." />
+    <string id="Settlements.Settlement.text.village_A5_2" text="Aiwalitas, Bahr al Yeshm'in doğusundaki rüzgarlı tepelerin bir köşesinde, bölgenin granit kayalarının yağmur sularını bir vaha havuzunda biriktirdiği bölgede yer alır. Tarım arazileri verimli ama sınırlı olan bu bölge en çok çölün kısa ömürlü ama gür çayırlarında otlatılan atlarıyla tanınır." />
+    <string id="Settlements.Settlement.text.village_A5_3" text="Deir Hawa ya da başka bir deyişle adını uzun süre önce burada yaşamış olan münzevi topluluğundan alan 'Rüzgarlar Manastırı' Bahr al Yeshm Gölü'nün güneydoğusundaki rüzgarlı tepelerde yer alır. Köylüler kayalık tepelerin yağmur suyunu hapsettiği yerlere kuyular açarlar ve kurutulup ezilerek baharat olarak satılan aromatik meyveler yetiştirirler." />
+    <string id="Settlements.Settlement.text.village_A6_1" text="Mijayit, Perasos Gölü'nün kıyılarında yer alır. Gölün ve Jejara Kayalıkları'nın yeraltı akıntılarının beslediği kuyu suyu verimli buğday tarlalarını sulamak için kullanılır." />
+    <string id="Settlements.Settlement.text.village_A6_2" text="Hamoshawat, Damar Nehri'nin Bahr al Yeshm'e döküldüğü bölgede yer alır. Kanallar aracılığıyla kuru ama verimli olabilecek topraklara yönlendirilen nehir suyu, buğday tarlalarını sulamak için kullanılır." />
+    <string id="Settlements.Settlement.text.village_A6_3" text="Jahasim, Bahr al Yeshm'in, yani Yeşim Denizi'nin kuru doğu kıyılarında, bozkırların yerini güneyin çöllerine bıraktığı bölgede yer alır. Bölge halkı acı gölden tuz çıkarır." />
+    <string id="Settlements.Settlement.text.village_A6_4" text="Nahlan, Kavruk Kapılar'ın altında, Damar Nehri'nin Jejara Kayalıkları'nı kestiği yarıkta yer alır. Köylüler hurma korularını sulamak için nehir suyundan ve tepelerden gelen akıntılardan faydalanırlar." />
+    <string id="Settlements.Settlement.text.village_A7_1" text="Wadar, Jejara Kayalıkları'nın sınırındaki kayalık vadilerde, Bahr al Yeshm ile Nahasa çölünün arasında yer alır. Köylüler kayaların arasında sıkışan sulardan faydalanarak çeşitli ürünler yetiştirirken, yakınlardaki yamaçlarda da atlarını otlatırlar." />
+    <string id="Settlements.Settlement.text.village_A7_2" text="Kafr Hatif, Damar Nehri'ne inen tepelerdeki bir vaha vadisinde yer alır. Köylüler kendilerini doyurmak için vahanın suyuyla buğday yetiştirdikleri gibi, köyün yukarısındaki yamaçlarda da at yetiştirirler." />
+    <string id="Settlements.Settlement.text.village_A7_3" text="Mabwaz, Damar Nehri'nin Nahasa Çölü'nü kestiği bölgeye bakar. Su, sıcak çöl havasında çok iyi yetişen hurma ağaçlarına hayat verir." />
+    <string id="Settlements.Settlement.text.village_A7_4" text="Zalm, Damar Nehri'nin yukarı kısmında, nehrin Tair Dağları'ndaki kaynağının yakınlarında yer alır. Çölde seyahat eden bir yolcunun karşılaşacağı ilk su kaynağı olarak, doğudaki topraklardan getirilen baharatların ana kaynağıdır." />
+    <string id="Settlements.Settlement.text.village_A8_1" text="Ezbet Nahul, Aseray topraklarının batısında bulunan kıyı şeridi Retana'da yer alan küçük bir koya bakar. Köylüler tonbalığı, sardalya ve ara sıra köpekbalığı avına çıkarlar." />
+    <string id="Settlements.Settlement.text.village_A8_2" text="Abghan, Charas Körfezi'nde, Aseray halkının Retana adını verdiği kıyı şeridinde yer alan bir balıkçı köyüdür. Buradaki köylüler tonbalığı ve sardalya gibi tuzlu su balıkları avlarlar." />
+    <string id="Settlements.Settlement.text.village_B1_1" text="Dalmengus, Cafal Vadisi'nin üst taraflarındaki sık ormanların içinde yer alır. Bu bölgenin toprağı çoğu ürünü yetiştirmeye elverişli değildir ama yörenin ormancıları köknarlardan ve çamlardan faydalanmakta ustadır." />
+    <string id="Settlements.Settlement.text.village_B1_2" text="Ebereth, Cafalcombe Vadisi'ne bakan ormanlık dağ eteklerinde yer alır. Nispeten yeni yerleşilmeye başlamış olan bu bölgede hâlâ sert ve güçlü keresteler veren çok sayıda sık orman vardır." />
+    <string id="Settlements.Settlement.text.village_B1_3" text="Beglomuar, Cafalcombe'nin puslu aşağı kesimlerindeki ağaçlıklı bir vadide yer alır. Yakınlardaki tepelerde bol miktarda demir cevheri bulunur." />
+    <string id="Settlements.Settlement.text.village_B1_4" text="Ath Cafal, Cafal Nehri'nin karşısındaki düşük rakımlı bir ormanın içinde yer alır. Batanya topraklarındaki çömlekçiler taşkın yatağın killerine büyük bir değer verirler." />
+    <string id="Settlements.Settlement.text.village_B2_1" text="Diantogmail, Seavorn yakınlarındaki Glanys Vadisi'nde yer alır. Bölgenin 'Kakımın Uçuşu' anlamına gelen ismini nereden aldığını açıklayan bir sürü yerel efsane vardır ama hiçbiri birbiriyle uyuşmamaktadır." />
+    <string id="Settlements.Settlement.text.village_B2_2" text="Glenlithrig, yani kaygan derenin vadisi, büyük Dunglanys Kalesi'nin yakınlarında yer alır. Buradaki kabileler, büyük ağaçların gövdelerini bütün kıtaya sevk edilmek üzere Seavorn Vadisi'ne getiren ormancılarıyla meşhurdur." />
+    <string id="Settlements.Settlement.text.village_B2_3" text="Morihig, İmparatorluk sınırlarında bulunan Cursian Tepeleri'ndeki bir vadide yer alır. Köylüler çevredeki dere yataklarından demir çıkarırlar." />
+    <string id="Settlements.Settlement.text.village_B2_4" text="Imlagh, Seavorn'un ortasında toplanmış olan ormanlık tepelerin arasında yer alır. Köyün ormancıları kayınlardan ve meşelerden elde ettikleri hasadı genellikle kıyıdaki Sturgiyalı gemi üreticilerine satarlar." />
+    <string id="Settlements.Settlement.text.village_B2_5" text="Lindorn, Cursian Tepeleri ile Seavorn Vadisi arasındaki küçük bir vadide yer alır. Buradaki köylüler, Dunglanys gibi yakın kentlerdeki çömlekçiler için kil toplarlar." />
+    <string id="Settlements.Settlement.text.village_B3_1" text="Bog Beth, Seavorn'un aşağı kısımlarındaki kumlu ovalarda yer alır. Köylüler yamaçlarda üzüm bağları ve meyve bahçeleri yetiştirirler." />
+    <string id="Settlements.Settlement.text.village_B3_2" text="Geunat Nal, Seavorn'un Nal geçitlerini kestiği bölgeye bakar. Buradaki köylüler yakınlardaki yamaçlara üzüm dikmişlerdir." />
+    <string id="Settlements.Settlement.text.village_B3_3" text="Tor Leiad, Seavorn Vadisi'nin üst bölümlerinde, sık meşe, kayın ve porsukağacı ormanlarının arasında yer alır. Batanyalılar asırlar boyunca bu ormanlara özenle bakmış ve daima ürün ve kereste alınacak yeterli miktarda ağaç olmasına dikkat etmişlerdir." />
+    <string id="Settlements.Settlement.text.village_B3_4" text="Tor Melina, Seavorn Vadisi'nin üst bölümlerinde, nehirden uzakta, sık meşe, kayın ve porsukağacı ormanlarının arasında yer alır. Batanyalıların özenli bakımı sayesinde ormanlarda daima yeterli miktarda büyük ağaç bulunmakta ve kesilenlerin yerini alacak yeni fidanlar büyütülmektedir." />
+    <string id="Settlements.Settlement.text.village_B4_1" text="Bryn Glas, İmparatorluk sınırındaki sıra sıra tepelerden oluşan Rhennod'un güney tarafına bakar. Bu dağlık bölge tarıma pek elverişli olmasa da, demir bakımından zengindir." />
+    <string id="Settlements.Settlement.text.village_B4_2" text="Andurn, Rhennod'un güneyinde, Garontor geçidinin yakınlarında yer alır. Bu tepelerin ormancıları sık ormanlardan kereste elde eder." />
+    <string id="Settlements.Settlement.text.village_B4_3" text="Fenon Tryn, Batanyalıların Tryn adını verdiği nehrin kaynağının yakınlarında yer alır. Batının okyanus esintileriyle yağış alan kalker tepeler, sığırlar için iyi otlaklar sağlar." />
+    <string id="Settlements.Settlement.text.village_B4_4" text="Swenryn, hızlı akan Tryn Nehri yakınlarındaki ormanlık tepelerde yer alır. Bu bölgenin ormancıları Vlandiya topraklarına ve başka yerlere kereste ihraç ederler." />
+    <string id="Settlements.Settlement.text.village_B4_5" text="Seordas, Batanya topraklarının güney kesimlerinde, Trand Nehri'nin kaynağının yakınlarında yer alır. Sıcak günler ve nehirden gelen okyanus sislerinin serinlettiği sabahlar, şarap üzümlerinin yetiştirilmesine olanak sağlar." />
+    <string id="Settlements.Settlement.text.village_B5_1" text="Durn, Menaig çağlayanlarının Seavorn'u sıkıştırmasıyla oluşan düşük rakımlı bataklıklarda yer alır. Buradaki köylüler, Pen Cannoc gibi yakın kentlerdeki çömlekçiler için kil toplarlar." />
+    <string id="Settlements.Settlement.text.village_B5_2" text="Gainseth, Seavorn Nehri'nin ormanlık kıyılarında yer alır. Bu ovalık bölgenin killeri Batanya'nın meşhur çömlekleri için hammadde sağlar." />
+    <string id="Settlements.Settlement.text.village_B5_3" text="Mag Arba, Seavorn'un taşkın yatağının ortasında, Batanya topraklarının daha düz bölgelerinden birinde yer alır. Yerel ekonomi büyük ölçüde bölgenin çömlekçileri için kil toplanmasına dayanır." />
+    <string id="Settlements.Settlement.text.village_B5_4" text="Inveth, Seavorn Ovası'na bakan yüksek bir alanda yer alır. Çevredeki yamaçlar buğday yetiştirmeye elverişlidir." />
+    <string id="Settlements.Settlement.text.village_EN1_1" text="Marathea, Sevora'nın kaynağının yakınlarında yer alır. Toprak yerel rüzgarlar nedeniyle nispeten kurudur, ancak madenciler zengin demir cevheri damarları için güneydeki Carassic Dağları'nın eteklerine giderler." />
+    <string id="Settlements.Settlement.text.village_EN1_2" text="Stathymos, Laconys Gölü'ne dökülen küçük bir derenin yakınında yer alır. Gölün batı tarafındaki seyrek ağaçlı alanlar ve çayırlar İmparatorluk atlarını yetiştirmeye elverişlidir." />
+    <string id="Settlements.Settlement.text.village_EN1_3" text="Gymos, Laconys Gölü'nün batısında yer alan bir balıkçı köyüdür. Köylüler gölden turnabalığı ve göle dökülen derelerden de alabalık elde ederler." />
+    <string id="Settlements.Settlement.text.village_EN1_4" text="Seavorn Vadisi'nin üst bölümlerinde yer alan Dyopalis, Kalradya dilinde Sevora olarak bilinir. Bölge yerel dağların dağılımı nedeniyle düşük yağış alır, ancak zengin demir yatakları onu Batanyalılar ile İmparatorluk arasında ihtilaflı bir konuma getirmiştir." />
+    <string id="Settlements.Settlement.text.village_EN2_1" text="Alosea, Laconys Gölü'nün güney kıyısındaki dar kıyı ovasında yer alır. Gölden elde edilen turnabalığı ve mersinbalığı bölge halkına iyi bir geçim kaynağı sağlar." />
+    <string id="Settlements.Settlement.text.village_EN2_2" text="Jeracos, Laconys Gölü'ne doğru uzanan küçük bir yarımada üzerinde yer alır. Göl esintilerinin ılımanlaştırdığı iklim at yetiştiriciliği için elverişlidir." />
+    <string id="Settlements.Settlement.text.village_EN2_3" text="Masangara, Odarys Nehri'nin Laconys Gölü ile buluştuğu yerde bulunan nispeten yeni bir yerleşim alanıdır. Artık kuruyarak çayırlara dönüşmüş olan bu eski bataklıklarda sığır yetiştirilmektedir." />
+    <string id="Settlements.Settlement.text.village_EN3_1" text="Enoisa, Aris Vadisi ile Vithys arasındaki alçak bir dağ sırtında yer alır. Kuzeyin bol yağışlarıyla beslenen bu bölgede buğday yetiştirilir." />
+    <string id="Settlements.Settlement.text.village_EN3_2" text="Aeoria ile çevresindeki küçük köyler, Vithys Nehri yakınlarında, temizlendiğinde buğday yetiştirmeye elverişli seyrek ağaçlı tepelerde yer alır." />
+    <string id="Settlements.Settlement.text.village_EN3_3" text="Crios, Vithys Nehri ile Soğuk Tepeler arasındaki kıraç topraklarda yer alır. Ancak ismine rağmen, güneydeki göller bölgesinin sisleri ve kalkerli topraklar, atlar için iyi otlak alanları sağlar." />
+    <string id="Settlements.Settlement.text.village_EN4_1" text="Potamis, Laconys Gölü'nün güney kıyılarındaki küçük bir koyda yer alır. Buradaki sularda pek balık yoktur ama köylüler yakınlardaki yamaçlarda sığır otlatırlar." />
+    <string id="Settlements.Settlement.text.village_EN4_2" text="Alatys, Laconys Gölü'nün güneydoğu ucundaki düzlük alanda yer alır. Gölün burada sığ olan suları dilbalığı ile doludur ve yakınlardaki derelerden alabalık avlanabilmektedir." />
+    <string id="Settlements.Settlement.text.village_EN4_3" text="Nortanisa, Laconys Gölü'nün doğu kıyılarında yer alan bir balıkçı köyüdür ve buradaki köylüler sazan, çipura, levrek ve kerevit gibi balıkları yakalamak için gölün sığ kıyılarına ağlar ve kafesler yerleştirirler." />
+    <string id="Settlements.Settlement.text.village_EN4_4" text="Hetania, İmparatorluğun doğusundaki dağlık bir bölge olan Visilia'daki derin bir vadide yer alır. Buradaki birçok köyde olduğu gibi, bu bölgenin ormancıları da hâlâ İmparatorluk kurulmadan önce burada yaşayan kabilelerin kullandığı Palaic dillerini konuşurlar." />
+    <string id="Settlements.Settlement.text.village_EN5_1" text="Vealos, İmparatorluğun merkezindeki Hametic Dağları'nın yavaş yavaş yükselen doğu yamaçlarında yer alır. Dağ yamaçları çoğunlukla meşe ve kayın ormanlarıyla kaplı olsa da, atlar için iyi otlak alanları barındırır ve her zaman İmparatorluk süvarileri için kurulan haraların yuvası olmuştur." />
+    <string id="Settlements.Settlement.text.village_EN5_2" text="Orthra, ezelden beri İmparatorluk topraklarının bir parçası olan sıradağların eteklerindeki ormanlık bir vadi olan Myzeiad'ın bir parçasıdır. Ormanlarda budama yapılarak atlar için iyi otlak alanları açılabilmektedir." />
+    <string id="Settlements.Settlement.text.village_EN5_3" text="Themys, İmparatorluğun merkezindeki tepelerde bulunan küçük bir göl olan Ophthys'e dökülen bir derenin yakınlarında yer alır. Dağlık bölgenin çayırlarında koyun otlatılır." />
+    <string id="Settlements.Settlement.text.village_EN5_4" text="Samatha, Dryatic Dağları'nın eteklerinde yer alır ve sarp bir kanyona bakar. Dağın yamaçlarında, ekin ekmek ve ipekböceği yetiştirmek üzere dut ağaçları dikmek için taraçalar oluşturulmuştur." />
+    <string id="Settlements.Settlement.text.village_EN6_1" text="Avasinton, Laconys ve Tanaesys gölleri arasındaki dağlık bir bölge olan Ircara'nın sık ormanları içinde yer alır. Buradaki toprak ipekböceklerine ev sahipliği yapan dut ağaçlarının yetiştirilmesine uygundur." />
+    <string id="Settlements.Settlement.text.village_EN6_2" text="Acragora, Ircara'nın ağaçlarla kaplı dağlık bölgesine bakan alçak bir vadide yer alır. Burada seyrelen ormanlar kesilerek otlaklara ve çayırlara dönüştürülebilmektedir." />
+    <string id="Settlements.Settlement.text.village_ES1_1" text="Caira, Perasos Gölü'nün doğu kıyılarının yakınlarında yer alır. Hem bozkıra hem de güney çöllerine yakın olan bölge, zeytin yetiştirilebilecek kadar sıcaktır." />
+    <string id="Settlements.Settlement.text.village_ES1_2" text="Polisia, Perasos Gölü'nün yakınlarında, büyük yayınbalıklarıyla bilinen sığ ve çamurlu sularda yer alır." />
+    <string id="Settlements.Settlement.text.village_ES1_3" text="Tegresos, Perasos Gölü'ne dökülen kısa ama hızlı akan bir dağ nehri olan Chlosonys Nehri'nin kenarında yer alır. Yerleşik İmparatorluk topraklarının yerini yavaş yavaş bozkıra bıraktığı bu bölge, iyi koyunlarıyla tanınır." />
+    <string id="Settlements.Settlement.text.village_ES1_4" text="Erebulos, Chlosonys Nehri'nin kaynağında, kalın ve koyu renkli topraklarında çeşitli ürünler yetişen kayın ormanlarının arasındaki sıra sıra tepelerde yer alır." />
+    <string id="Settlements.Settlement.text.village_ES2_1" text="Atphynia köyü, Tripotamos Ovası'nın Perasos Gölü ile buluştuğu noktada yer alır. Göl artık tatlı su gölü olmasına rağmen, eskiden içdeniz olduğu için, kıyılarından tuz çıkarılabilmektedir." />
+    <string id="Settlements.Settlement.text.village_ES2_2" text="Gorcorys, Perasos Gölü'nün kuzeyinde, Tripotamos Ovası'nın yükselerek çorak dağlık arazilere açılmadan hemen önceki batı ucunda yer alır. Buradaki koyu renkli ve iyi yağış alan topraklar, bu bölgeyi İmparatorluğun tahıl ambarı kılar." />
+    <string id="Settlements.Settlement.text.village_ES2_3" text="Avalyps, Sethys Nehri yakınlarındaki Tripotamos Ovası'nda yer alır. Buradaki koyu renkli ve iyi yağış alan topraklar, bu bölgeyi İmparatorluğun tahıl ambarı kılar." />
+    <string id="Settlements.Settlement.text.village_ES2_4" text="Alision, Tripotamos Ovası'ndaki kalker kaya çıkıntısının altında yer alır. Bu bölgede, gölün tuzlu bir içdeniz olduğu zamanlardan kalan zengin tuz yatakları bulunmaktadır." />
+    <string id="Settlements.Settlement.text.village_ES3_1" text="Canoros, Porea Platosu'nun düzlüklerinde bulunan, nispeten yeni yerleşilmiş bir köydür. Köylülerin birçoğu, bölgenin at yetiştirme potansiyelini gören bir İmparatorluk hükümdarı tarafından bu bölgeye getirilen yerleşimcilerin torunlarıdır." />
+    <string id="Settlements.Settlement.text.village_ES3_2" text="Tevea, adını eski bir Palaic kabile şefinden alan Porea Platosu'nun sınırındaki bir çoban köyüdür. Köylüler, köylerinin adının onun oğlundan, yani klanlarını kuran Tevez'den geldiğine inanırlar." />
+    <string id="Settlements.Settlement.text.village_ES3_3" text="Zestea, adını eski bir Palaic kabile şefinden alan Porea Platosu'nun doğu sınırında yer alır. Torunları artık İmparatorluk dilini konuşuyor olsalar da, dağlık bölgelerde hâlâ ataları gibi koyun yetiştirmektedirler." />
+    <string id="Settlements.Settlement.text.village_ES4_1" text="Sagora, Ophthys Gölü'nün batısındaki İmparatorluk merkezinde, koyun yetiştirmeye elverişli çimenlerle kaplı alçak tepelerde yer alır." />
+    <string id="Settlements.Settlement.text.village_ES4_2" text="Popsia, dağlık Tripotamian bölgesine bakan ağaçlarla kaplı dağ sırtlarında yer alır. Buradaki ormancıların çoğu hâlâ İmparatorluk kurulmadan önce bu topraklarda yaşayan Palaic halkının dillerini konuşurlar." />
+    <string id="Settlements.Settlement.text.village_ES4_3" text="Canterion, Sethys'in dağlık Tripotamian bölgesinin ortasındaki taş bir çıkıntıdan fışkıran kaynağının yakınlarında yer alır. Bu bölgedeki kireçli toprak, atlar için iyi otlak alanları sağlar." />
+    <string id="Settlements.Settlement.text.village_ES5_1" text="Lanthas, Carassic Dağları'nı Visilia'nın dağlık bölgesinden ayıran bir nehir olan Miron'un kaynağının yakınlarında yer alır. İmparatorluk yerleşimcilerinin ormanları açtığı alanlarda koyun otlatılmaktadır." />
+    <string id="Settlements.Settlement.text.village_ES5_2" text="Lartusys, Carassic Dağları'nın doğusundaki seyrek nüfuslu bir plato bölgesi olan Visilia'da yer alır. Buranın taze dağ havasında ipekböceği dutları yetişir. Buradaki lehçe, İmparatorluğun fethinden önce bu bölgede yaşayan kabilelerin dili olan Palaic'ten oldukça etkilenmiştir." />
+    <string id="Settlements.Settlement.text.village_ES5_3" text="Parasemnos, İmparatorluğun dağlık bölgelerindeki platolardan Ophthys havzasına uzanan bir geçidin başında yer alır. Bölgenin sarp koyakları tarımı sınırlasa da, koyu renkli topraklarında iyi buğday yetişir." />
+    <string id="Settlements.Settlement.text.village_ES6_1" text="Saldannis, Tanaesis ve Perasos gölleri arasındaki alçak ve çalılarla kaplı Chisaurian Dağları'nda yer alır. Dere yataklarında kil bulunduğu gibi, tepeler de üzüm yetiştirmeye elverişlidir." />
+    <string id="Settlements.Settlement.text.village_ES6_2" text="Spotia, Chisaurian Dağları'nın güney eteklerinde, dağların yerini güneydoğudaki ovalara bırakmaya başladığı bölgede yer alır. Yamaçlarda safran yetiştiği gibi, yakınlardaki meşe ormanlarında da çok çeşitli baharatlar elde edilen meyveler bulunur." />
+    <string id="Settlements.Settlement.text.village_ES6_3" text="Amycon, İmparatorluk sınırlarındaki kırsal bir bölgenin merkezinde, artık Kuzaitlerin elinde bulunan ormanlık tepelerin hemen karşısında yer alır. Yamaçlar koyun otlatmaya elverişlidir." />
+    <string id="Settlements.Settlement.text.village_ES7_1" text="Psotai, Tanaesis Gölü'nün batısındaki bir platonun sınırında yer alır. İmparatorluk yerleşimcileri, bir zamanlar göçebelerin otlak alanları olan bu dağlık bölgeyi başlıca buğday yetiştirilen bir bölgeye dönüştürmüşlerdir." />
+    <string id="Settlements.Settlement.text.village_ES7_2" text="Vargonis, Tanaesis Gölü'nün kıyısında yer alır. İç kesimlerde bulunan bu göl deniz kadar tuzlu olmasa da, lagünlerinden ve bataklıklarından tuz çıkarılabilecek kadar tuzludur." />
+    <string id="Settlements.Settlement.text.village_ES7_3" text="Eunalica, Tanaesis Gölü'nün güney kıyılarındaki kırsal bölgenin merkezidir ve meşe çalıları ile ipek üretiminde kullanılan dut ağaçlarının yetiştirilmesine elverişli ormanlık bir alanın ortasında yer alır." />
+    <string id="Settlements.Settlement.text.village_EW1_1" text="Primessos, Zeos Vadisi'nin ormanlık üst kısımlarında yer alır. Sıcak yazlar ve serin kışlar bu bölgede kaliteli şarap üzümleri üretilmesini sağlar." />
+    <string id="Settlements.Settlement.text.village_EW1_2" text="Montos, Zeos Vadisi'ne bakan yüksek bir alanda yer alır. Bir zamanlar sedirleriyle tanınan bu bölgede, büyük ağaçların çoğu İmparatorluk filoları için kesilmiştir ama bölgenin sakinleri dağlık alandan hâlâ meşe ve çam elde edebilmektedir." />
+    <string id="Settlements.Settlement.text.village_EW1_3" text="Nideon, Zeos Vadisi'nin yüksek tepelerindeki sarp bir geçitte yer alır. Taraçalı yamaçlarda zeytin ağaçları yetişir." />
+    <string id="Settlements.Settlement.text.village_EW2_1" text="Tarcutis, Amynis Nehri'nin Zeos ile birleştiği noktanın hemen yukarısında yer alır. Bu bölgenin alüvyonlu ovaları uzun zamandır İmparatorluğun tahıl ambarıdır." />
+    <string id="Settlements.Settlement.text.village_EW2_2" text="Neocorys, yani yeni köy, volkanik Erythos Dağı'nın eteklerinde yer alır. Yakınlardaki bir patlamanın külleri üzerine tekrar kurulan bu köyün toprakları iyi otlak alanları sağlamaktadır." />
+    <string id="Settlements.Settlement.text.village_EW2_3" text="Alsasos, İmparatorluğun güneyinde, geniş Amynis Nehri'ne dökülen bir derenin yakınlarında yer alır. Alüvyonlu ovadaki buğday tarlaları verimliliğiyle meşhurdur ama son zamanlarda sınır savaşlarının tarımı aksatmasıyla fazla büyümüştür ve ormanlar zamanında kendilerine ait olan yerlerin büyük bir kısmını geri almıştır." />
+    <string id="Settlements.Settlement.text.village_EW2_4" text="Zeocorys, Aminys'in bir kolu olan Zeos Nehri'nin yakınlarında yer alır. Burası eskinden İmparatorluğun merkezindeki güvenli bir bölgeydi ve toprak sahipleri İmparatorluk ordusunun iyi para verdiği atları yetiştirmek için büyük mülklere yatırım yapmışlardı. Şimdiyse atlar batıdaki tepelerden gelen Vlandiya akıncılarına karşı tedirginlikle nöbet tutan yerel kuvvetler tarafından kullanılıyor." />
+    <string id="Settlements.Settlement.text.village_EW3_1" text="Gamardan, Amynis Nehri'nin kaynağının yakınlarında, civardaki ormanlardan gelen derelerin nehirle birleştiği bölgede yer alır. Ormanların açılmasıyla oluşturulmuş olan tarlalarda bol miktarda buğday yetişir." />
+    <string id="Settlements.Settlement.text.village_EW3_2" text="Aegosca, Aminys Nehri'ne bakan küçük bir vadide yer alır. Adını eskiden bu bölgede dolaşan keçilerden almış olsa da, toprak sahipleri buradaki çayırları keçilerden çok daha kârlı olan atları yetiştirmeye ayırmışlardır." />
+    <string id="Settlements.Settlement.text.village_EW3_3" text="Dradios, Amynis Nehri'ne bakan alçak tepelerde yer alır. Bu bölgenin alüvyonlu ovaları uzun zamandır İmparatorluğun tahıl ambarıdır." />
+    <string id="Settlements.Settlement.text.village_EW4_1" text="Arpotis, Perasos Gölü'nü denize bağlayan Gavys Vadisi'nde yer alır. İmparatorluğun bu güney sınırında hurma ağaçları yetiştirilir." />
+    <string id="Settlements.Settlement.text.village_EW4_2" text="Lysia, Perasos Gölü'nün sularının Gavys Nehri'ne akarak denize kavuştuğu noktada yer alır. Köylüler yakınlardaki tepelerden tuz çıkarırlar." />
+    <string id="Settlements.Settlement.text.village_EW4_3" text="Vinela, Perasos Gölü'nün kuzey kıyılarında yer alır. Göl artık tatlı su gölüdür ama kıyılarında bol miktarda tuz yatağı bulunmaktadır." />
+    <string id="Settlements.Settlement.text.village_EW4_4" text="Garengolia, Perasos Gölü ile Gavys Nehri'ne bakan yüksek bir bölgede yer alır. Sıcak olmakla birlikte iyi yağış alan bu bölge, İmparatorluğun güneyinin ana buğday kaynaklarından biridir." />
+    <string id="Settlements.Settlement.text.village_EW5_1" text="Elipa, Porea Platosu'nun alçalarak Amynis Nehri'yle buluşmadan hemen önceki batı ucunda yer alır. Bu bölgenin kentlerini besleyen tahılın çoğu çevredeki ovalarda yetişir." />
+    <string id="Settlements.Settlement.text.village_EW5_2" text="Phasos, Carassic Dağları'nın güney yamaçlarında yer alır. At yetiştiricileri, verimli dağ otlaklarından faydalanmak için buraya mülkler kurmuşlardır." />
+    <string id="Settlements.Settlement.text.village_EW6_1" text="Carphenion, Erythris Dağı'nın kuzeydoğusundaki verimli havzada, yanardağın ara sıra gerçekleşen patlamaları nedeniyle sık sık yerleşilen, terk edilen ve yeniden yerleşilen topraklarda yer alır. Toprak sahipleri, kuzeydeki Batanya akıncılarını sürekli cezbeden sığır çiftliklerini kurmak için buradaki meşe ve kayın ormanlarını kesmişlerdir." />
+    <string id="Settlements.Settlement.text.village_EW6_2" text="Vathea, Carassic Dağları'nın ortalarındaki bir platoda yer alır. Köylüler çiftçilik yaparak ve metal bakımından zengin olan dağlardan yerel dere yataklarına akan demir cevherlerini toplayarak geçinirler." />
+    <string id="Settlements.Settlement.text.village_EW6_3" text="Thersenion, Carassic Dağları'nın gölgesindeki sığ bir vadide yer alır. Bölgenin çevresindeki dağ sırtlarının dağılımı bölgeyi alışılmadık derecede kuru kılar ama yağmurlar yine de buğday yetiştirmek için yeterlidir." />
+    <string id="Settlements.Settlement.text.village_EW6_4" text="Leblenion, Erythris Dağı'nın aşağı yamaçlarında yer alır. Köylüler bazalt kayalarla dağ sırtlarında taraçalar oluşturmuşlardır ve volkanik topraklarda yetiştirilen üzümler muazzam şaraplar verdiği için çok değerlidir." />
+    <string id="Settlements.Settlement.text.village_K1_1" text="Fisnar, Devseg Platosu'nun doğusundaki kuru bir vadide yer alır. Bölgenin toprağı birçok ürünü yetiştirmeye elverişli olmasa da, bodur ağaçları, kurutulduğunda doğunun yahnilerine tat katan bir meyve verir." />
+    <string id="Settlements.Settlement.text.village_K1_2" text="Ulaan, Devseg Platosu'ndaki bir yamaçta yer alır. Buradaki topraklar kuru olsa da, köylüler kış yağmurlarını küçük vadilerde biriktirmek ve keten yetiştirmek konusunda uzmandır ki aslında çok su isteyen bir ürün olan keten bu bölgede nadiren yetişmektedir." />
+    <string id="Settlements.Settlement.text.village_K1_3" text="Kuruluk, Devseg Platosu'nun girintili çıkıntılı Khar Ul Dağları'na doğru yükselmeye başlayan kuzey ucunun eteklerinde yer alır. Bu bölge kuru görünse de, bozkırın dayanıklı atlarının başlıca otlama alanıdır." />
+    <string id="Settlements.Settlement.text.village_K1_4" text="Asalig, Devseg Platosu'nun girintili çıkıntılı Khar Ul Dağları'na doğru yükselmeye başlayan kuzey ucunun eteklerinde yer alır. Bu bölge kuru görünse de, bozkırın dayanıklı atlarının başlıca otlama alanıdır." />
+    <string id="Settlements.Settlement.text.village_K2_1" text="Karakalat, Devseg Platosu'nun doğu yamacındaki bir havzanın sınırında, yaz aylarında kuru olmasına rağmen, ilkbaharda otlatma için iyi çayırlar sağlayan topraklarda yer alır." />
+    <string id="Settlements.Settlement.text.village_K2_2" text="Tismil, Devseg Platosu'nun doğu sınırındaki kırsal bölgenin merkezidir; bu bölgede yağmur suları sığ vadilerde biriktirilebilmekte ve buğday yetiştirilebilmektedir." />
+    <string id="Settlements.Settlement.text.village_K2_3" text="Gereden ile etrafındaki küçük köyler, Devseg Platosu'nun güney ucunda yer alır. Bölge genel olarak engebeli olsa da, koyaklarından toplanabilen kaliteli kiliyle tanınır." />
+    <string id="Settlements.Settlement.text.village_K2_4" text="Kiraz, Devseg Platosu'nun yerini doğudaki bozkırlara bırakmadan hemen önceki sınırında yer alır. Bu bölge, bazıları burada yetiştirilen, bazıları da doğudaki göçebe kabileler tarafından getirilen dayanıklı atlar için iyi bir bölgedir." />
+    <string id="Settlements.Settlement.text.village_K3_1" text="Shapeshte ile etrafındaki küçük köyler, Asacys Nehri'nin Tanaesis Gölü'ne döküldüğü taşkın yatağında yer alır. Çevredeki gelgitli düzlüklerden tuz çıkarılır." />
+    <string id="Settlements.Settlement.text.village_K3_2" text="Hanekhy, Akkan Tepeleri'nin Tanaesis Gölü'ne bakan kuzey çıkıntısının kuytu bir köşesinde yer alır. Bölgenin toprağı kurudur ama insanlar yine de koyaklarda bulunan demir cevheri damarları için buraya yerleşirler." />
+    <string id="Settlements.Settlement.text.village_K3_3" text="Mazen, Tanaesis Gölü'nün kuzey ucunda yer alır. Burada arazi nispeten düz olduğu için, bölge sakinlerinin gölün tuzlu suyundan tuz elde etmek amacıyla yapay lagünler oluşturmasına olanak sağlar." />
+    <string id="Settlements.Settlement.text.village_K4_1" text="Omrotok, Asacys Nehri'nin kuzeyinde bulunan girintili çıkıntılı tepelerin arasındaki bir vadide yer alır. Bölgenin ormancıları kuzey ormanlarından kereste gibi ürünler elde ederler." />
+    <string id="Settlements.Settlement.text.village_K4_2" text="Ransam, Kalradya'nın tahıl yetiştirmeye hâlâ elverişli olan kuzey bölgesinin yakınlarında yer alır. Bölgenin arpasından güney mahsullerine kıyasla daha sert ve kuru ekmekler çıksa da, bu arpa özellikle dayanıklı bozkır atları için iyidir." />
+    <string id="Settlements.Settlement.text.village_K4_3" text="Mivanjan, Vithys Nehri'nin vadisine bakan kuru tepelerde yer alır. Akarsuların şist ve kalkerden meydana gelen ana kayayı kestiği yerlerde zengin demir cevheri damarları bulunur." />
+    <string id="Settlements.Settlement.text.village_K4_4" text="Urunjan, Tanaesis Gölü'nün kuzeyindeki çam ormanlarında yer alır. Baharda yeşeren çimenler, bu kadar kuzeyde yetiştirilebilen birkaç sığır türünden biri olan dayanıklı bir sığır türünü yetiştirmeye elverişlidir." />
+    <string id="Settlements.Settlement.text.village_K5_1" text="Kamshar, Tanaesis Gölü'nün kuru doğu kıyısında yer alan bir köydür. Sığ ve tuzlu bataklıklar, Kamshar ile çevresindeki küçük köyler için iyi bir tuz kaynağıdır." />
+    <string id="Settlements.Settlement.text.village_K5_2" text="Gurkand, Tanaesis Gölü ile Akkan Tepeleri arasındaki dar ve kuru ovada buğday yetiştirilen bir bölgenin merkezinde yer alan bir köydür." />
+    <string id="Settlements.Settlement.text.village_K5_3" text="Ispantar, Tanaesis Gölü'ne bakan Akkan Tepeleri'nin, yağışların buğday yetiştirmeye ucu ucuna yettiği kayalık bir çıkıntısında yer alan bir köydür. " />
+    <string id="Settlements.Settlement.text.village_K5_4" text="Pabastan, Tanaesis Gölü'nün kuru doğu kıyısında yer alan bir köydür. Sığ ve tuzlu bataklıklar, Pabastan ile çevresindeki küçük köyler için iyi bir tuz kaynağıdır." />
+    <string id="Settlements.Settlement.text.village_K6_1" text="Karahan, yerleşik hayata geçmiş olan Kuzaitleri göçebe komşularından ayıran Koh Rohini Dağları'nın eteklerinde yer alır. Buradaki köylüler gezgin kabilelerden at satın aldıkları gibi, kendileri de bir miktar at yetiştirirler, dolayısıyla Kuzait ordularının bindiği savaş atlarının çoğu bu bölgeden gelir." />
+    <string id="Settlements.Settlement.text.village_K6_2" text="Nutyuk, doğunun çalılarla ve otlarla kaplı uçsuz bucaksız ovalarına ulaşmadan önceki son çam ve ardıç ormanlarının yakınlarında bulunan korunaklı bir vadide yer alır. Ağaçların arasında, kurutulup baharat olarak kullanılan nadir meyveler yetişir." />
+    <string id="Settlements.Settlement.text.village_K6_3" text="Danara, Devseg Platosu'nun yerini doğunun uçsuz bucaksız bozkırlarına bıraktığı kuru ve taşlık topraklarda yer alır. Bu bölgenin tarımı üretim fazlası vermemektedir ama kili çömlekçiler ile zanaatçılar arasında büyük bir rağbet görmektedir." />
+    <string id="Settlements.Settlement.text.village_K6_4" text="Kohi Ajik, adını aldığı Aşıklar Dağı'nın eteklerindeki dar ve kuru bir vadide bulunur." />
+    <string id="Settlements.Settlement.text.village_S1_1" text="Rodobas, Varcheg Koyu'nun kuzeyindeki Kachyar Yarımadası'nda yer alır. Yakınlardaki kurumuş bataklıklar keten yetiştirmeye elverişlidir." />
+    <string id="Settlements.Settlement.text.village_S1_2" text="Forin, Varcheg Koyu'nun doğusundaki alçak ormanlık alanlarda yer alır. Buradaki serin ve yağışlı iklim ile koyu renkli topraklar keten yetiştirmeye elverişlidir." />
+    <string id="Settlements.Settlement.text.village_S1_3" text="Kargrev, Varcheg Koyu'ndaki kayalık bir burunda yer alır. Bu köyün balıkçıları, birçok farklı türde balığın görüldüğü koyun nispeten korunaklı sularından faydalanırlar." />
+    <string id="Settlements.Settlement.text.village_S2_1" text="Safna, Dvora Nehri'nin orta kısımlarında yer alır. Köylüler burada, güneydeki alçak tepelerden gelen Batanya akıncılarına dikkat ederek sığır yetiştirirler." />
+    <string id="Settlements.Settlement.text.village_S2_2" text="Marabrot, Dvora Nehri'nin üzerindeki bir geçitte yer alır. Bu soğuk ve yağışlı ovaların alçak tepeleri keten yetiştirmeye elverişlidir." />
+    <string id="Settlements.Settlement.text.village_S2_3" text="Dvorusta, Dvora Nehri'nin ağzında yer alan bir balıkçı köyüdür. Kayalık uçurumlar onu Byalic Körfezi'nin fırtınalarından korur. Kıyıdan uzaklaşıldığında deniz tabanı hızla alçalır ve su soğuk olsa da, ringa ve morina balığı bakımından zengindir." />
+    <string id="Settlements.Settlement.text.village_S3_1" text="Chornobas, kasvetli Minodor Dağları'nın eteklerinde yer alır. Köylüler buradaki ovalarda, kuzeydeki geçitlerden gelen istilacılara karşı gözlerini açık tutarak keten yetiştirirler." />
+    <string id="Settlements.Settlement.text.village_S3_2" text="Skorin, kuzey ormanlarından çıkan bir akarsu olan Skorniva'nın yakınlarında yer alır. Nehrin yakınlarında bulunan diğer köylerdeki gibi, buradaki insanlar da mevsimlere göre bir yukarı bir aşağı göç eden somon balıklarının ticaretiyle uğraşırlar." />
+    <string id="Settlements.Settlement.text.village_S4_1" text="Borchovagorka, Laconys Gölü'ne dökülen bir dağ deresi olan Shava'nın kaynağı yakınlarında bulunan nispeten yeni bir Sturgiya yerleşimidir. Gölden yukarı doğru yüzen alabalık gibi balıklar bölgenin balıkçıları için iyi bir geçim kaynağıdır." />
+    <string id="Settlements.Settlement.text.village_S4_2" text="Glavstrom, Laconys Gölü'nün kayalık bir koyunda yer alır. Köylüler geçimlerini gölün hafif tuzlu derin sularında bulunan turna, mersinbalığı ve alabalık gibi balıklardan sağlarlar." />
+    <string id="Settlements.Settlement.text.village_S4_3" text="Omkany, Laconys Gölü'nün doğu kıyısının yakınlarındaki tepelerin kuytu bir köşesinde yer alır. Buranın kayalık sahili, küçük akarsular tarafından açığa çıkarılan demir damarları bakımından zengindir." />
+    <string id="Settlements.Settlement.text.village_S4_4" text="Yangutum, Laconys Gölü'nün kuzeyindeki küçük bir platoda yer alır. Buranın kalın toprakları suyun süzülmesi bakımından iyi olmasa da, keten yetiştirmeye elverişlidir." />
+    <string id="Settlements.Settlement.text.village_S5_1" text="Visibrot, Sturgiya'nın doğusundaki ormanlık bozkırların volkanik Iltan Dağı'na doğru yükselmeye başladığı bölgede yer alır. Dondurucu kışlara dayanacak şekilde yetiştirilen güçlü sığırlar sıra sıra tepelerde otlatılır." />
+    <string id="Settlements.Settlement.text.village_S5_2" text="Bukits, Iltan Dağı'nın güney yamaçlarında yer alır. Köylüler burada dağı kırıp geçiren buz fırtınalarına dayanıklı dağ sığırları yetiştirirler." />
+    <string id="Settlements.Settlement.text.village_S5_3" text="Alov, Sturgiya'nın kuzeyindeki ormanların arasında yer alır. Bu ıssız bölgenin, aralarında Vanni halkının yanı sıra Sturgiyalı ve Kuzeyli göçmenlerin de bulunduğu sakinleri, uzun sessizlikleriyle ve dış otoriteye genel olarak güvenmemeleriyle tanınırlar." />
+    <string id="Settlements.Settlement.text.village_S6_1" text="Kvol köylüleri, Iltan Dağı'nın eteklerinde küçük ve dayanıklı sığırlar yetiştirirler. Aralarında, Kalradya'nın dört bir yanından gelen ve soğuk kuzey ormanlarında huzur arayan göçmen torunları da bulunmaktadır." />
+    <string id="Settlements.Settlement.text.village_S6_2" text="Radakmed, Iltan Dağı'nın puslu doğu yamaçlarında yer alır. Buradaki insanlar sığır çobanlarıdır ve kışın bile karı kazarak ot bulmayı başaran soğuğa dayanıklı küçük sığırlar yetiştirirler." />
+    <string id="Settlements.Settlement.text.village_S6_3" text="Alebat, Sturgiya'nın kuzeydoğu ormanlarının derinliklerinde yer alır. Uzun zamandır kuzey bölgelerindeki baskıdan, borçlarından ya da kan davalarından kaçan insanlar için bir sığınak olan bu bölgenin lehçesi Kuzaitlerin ve Vanni halkının dilinden güçlü bir şekilde etkilenmiştir." />
+    <string id="Settlements.Settlement.text.village_S7_1" text="Korsyas, Kachyar Yarımadası'nın kuzey kıyısında yer alan bir balıkçı köyüdür. Buradaki balıkçılar tehlikeli hayatlar yaşarlar ve alabalık, morina balığı ve hatta küçük balinalar avlamak için Byalic Körfezi'nin fırtınalı sularına açılırlar." />
+    <string id="Settlements.Settlement.text.village_S7_2" text="Karbur, Kachyar Yarımadası'nın kuzey kıyısında, Byalic Körfezi'nin sınırında yer alır. Buradaki soğuk ormanlarda, toplanıp kurutularak baharat olarak satılan bol miktarda meyve bulunur." />
+    <string id="Settlements.Settlement.text.village_S7_3" text="Zhemyan, Kachyar Yarımadası'nın burnunda yer alan bir balıkçı köyüdür. Köylüler bol miktarda morina balığı ve alabalık yakalamak için Byalic Denizi'nin fırtınalı sularına göğüs gererler." />
+    <string id="Settlements.Settlement.text.village_V1_1" text="Calioc, Seavorn Nehri'nin ağzında yer alır. Soğuk kuzey iklimi ve yakınlardaki bol yağışlı kıyı ovaları keten yetiştirmeye elverişlidir." />
+    <string id="Settlements.Settlement.text.village_V1_2" text="Etirburg, Cafal ile Seavorn nehirlerinin ağızları arasındaki kısa ve kayalık sahil şeridinde yer alır. Köylüler, çevredeki taşkın yataklarında bulunan keten tarlalarıyla ilgilenirler." />
+    <string id="Settlements.Settlement.text.village_V1_3" text="Rodetan, adını bol miktardaki demir yatağının oluşturduğu kızılımsı damarlardan alan Rot Nehri'nin yakınlarındaki ormanlık bir vadide yer alır. Köylüler nehir yatağının kenarlarından maden çıkarırlar." />
+    <string id="Settlements.Settlement.text.village_V2_1" text="Mareiven, Trand Vadisi'nin hafif eğimli ormanlık tepelerinde yer alır. Bu bölgenin halkı genellikle ormancılıkla uğraşır." />
+    <string id="Settlements.Settlement.text.village_V2_2" text="Oritan, Trand Nehri'nin bitişiğindeki hafif ormanlık alanda yer alır. Buradaki köylüler çömlek yapımı için bölgenin göletlerinden ve bataklıklarından kil toplarlar." />
+    <string id="Settlements.Settlement.text.village_V2_3" text="Fregian, Batanyalıların Tryn adını verdiği hızlı akan nehrin ovalara gelip yavaşladığı ve Trand ile birleştiği bölgede yer alır. Bu bölgenin halkı, bataklıkların yanında büyüyen çamlardan ve diğer ağaçlardan ürün elde eder." />
+    <string id="Settlements.Settlement.text.village_V2_4" text="Marin, Trand'ın küçük bir kolu olan Gosin Nehri'nin yakınlarında yer alır. Denizden vadiye doğru esen hafif rüzgarlar, soğuk sabah sisleriyle birleşince, üzüm yetiştirilmesine olanak sağlar." />
+    <string id="Settlements.Settlement.text.village_V3_1" text="Valanby, batı okyanusuna bakan bir burunda yer alır. Güneyden esen ılık ve kuru rüzgarlar burada zeytin yetiştirilen küçük bir bölge meydana getirmiştir ve zeytinlerden elde edilen yağ Vlandiya topraklarının dört bir yanına ihraç edilmektedir." />
+    <string id="Settlements.Settlement.text.village_V3_2" text="Rulund, Trand Nehri'nin ağzının yakınlarında yer alır. Okyanus, kışların, bu kadar kuzeyde bile zeytin yetişmesine olanak sağlayacak kadar ılıman geçmesini sağlar." />
+    <string id="Settlements.Settlement.text.village_V3_3" text="Larnac, Trand Vadisi'nin aşağı kısımlarındaki hafif eğimli tepelerde yer alır. Sabah görülen soğuk okyanus sisleri ve kumlu toprak, üzüm yetiştirmeye olanak sağlar." />
+    <string id="Settlements.Settlement.text.village_V3_4" text="Palisona, Ostican Koyu'nun güney kıyısında yer alır. Bahar boyunca batıdan esen sıcak okyanus rüzgarları, bu bölgeyi zeytin yetiştirmeye şaşırtıcı derecede elverişli kılar." />
+    <string id="Settlements.Settlement.text.village_V5_1" text="Furbec, Vlandiya'nın merkezindeki kayalık Biscan sahilinde bulunan bir koya bakar. Köylüler bir miktar balık avlasalar da, kıyının çayırlarında otlatılan koyunlar her zaman bu bölgenin ekonomisinin temelini oluşturmuştur." />
+    <string id="Settlements.Settlement.text.village_V5_2" text="Meroc, Neur'un ağzının yakınlarında yer alan bir balıkçı köyüdür. Köylüler, halicin tuzlu sularından bol miktarda tekir ve levrek, yakınlardaki çamurlu bölgelerden de dilbalığı ve deniztarağı elde ederler." />
+    <string id="Settlements.Settlement.text.village_V5_3" text="Nogrent, Vlandia'nın merkezindeki Biscan Tepeleri'nin kuytu bir köşesinde yer alır. Bu bölge ılıman kışları nedeniyle zeytin yetiştirmeye çok elverişlidir." />
+    <string id="Settlements.Settlement.text.village_V6_1" text="Arromanc, kendisiyle aynı adı taşıyan bir koyda yer alır. Deniz rüzgarlarına açık olduğu ve doğal bir limanı bulunmadığı için, bu bölgenin sakinleri komşuları kadar balık tutmazlar. Ancak, tuz serpintileri kıyıda koyun yetiştirmeye elverişli çayırlar meydana getirmiştir." />
+    <string id="Settlements.Settlement.text.village_V6_2" text="Mot, Neur Nehri'nin kıyısında, artık Vlandiya'nın merkezi olan bölgede yer alır. İmparatorluğun bir parçası olduğu günlerde başlıca koyun yetiştirilen bu bölgede hâlâ da koyun yetiştirilmektedir." />
+    <string id="Settlements.Settlement.text.village_V6_3" text="Alorstan, Neur Nehri'nin kıyısında, Vlandiya Krallığı'nın merkezindeki sıcak ve yeşil ovalarda yer alır. Bu bölgenin ılıman iklimi zeytin ağaçları için çok elverişlidir." />
+    <string id="Settlements.Settlement.text.village_V6_4" text="Chornad, korunaklı bir koyda yer alan bir balıkçı köyüdür. Deniz meltemleri yılın büyük bir bölümünde ılıman bir iklim sağlar ve güneyden, burnun hemen ötesinden gelen ılık okyanus akıntılarında sardalya ile tonbalığı yakalamak mümkündür." />
+    <string id="Settlements.Settlement.text.village_V7_1" text="Savinth, Charas Körfezi'nin hemen iç kesimlerindeki ormanlarda yer alan kırsal bir bölgenin merkezindedir. Çamların arasındaki otlaklar bu bölgeyi at yetiştirmeye elverişli kılar." />
+    <string id="Settlements.Settlement.text.village_V7_2" text="Vesin köyü, Charas Körfezi'ne bakan kayalıklardan oluşan bir yarıkta gizlidir. Toprağı kayalıktır ama bölgenin ana ürünü olan zeytin bakımından elverişlidir." />
+    <string id="Settlements.Settlement.text.village_V8_1" text="Horsger, efsaneye göre, savaşçı Horsa'nın kıyıya çıktığı ve mızrağını sahile sapladığı yerde bulunur. Günümüzde, yakınlardaki Ostican kentine ürün temin eden bir balıkçı köyüdür." />
+    <string id="Settlements.Settlement.text.village_V8_2" text="Cananc, deniz sislerinin içinde sedir ağaçlarının yükseldiği kuzey Rhennod'un yağışlı ve ormanlık tepelerinde yer alır. Buradaki köylüler ormancılıkla uğraşırlar ve kıyıdaki mühendislerle gemi yapımcılarına kereste satarlar." />
+    <string id="Settlements.Settlement.text.village_V8_3" text="Remental, Ebor Dağı'nın gölgesindeki Ostican Körfezi'ne bakar. Dağın sisli eteklerinde yetişen köknarlar ve ladinler bölgede güçlü bir kereste endüstrisi olmasını sağlar." />
+    <string id="Settlements.Settlement.text.village_V9_1" text="Alantas, dağlık Ebor Yarımadası'nın merkezinde yer alır. Burada toprak incedir ve hava soğuktur ama zengin demir yatakları bölge ekonomisinin ayakta kalmasını sağlar." />
+    <string id="Settlements.Settlement.text.village_V9_2" text="Halisvust, Ebor Yarımadası'ndaki küçük bir koya bakar. Köylüler, bölgenin kıyılarındaki bataklıkları kurutarak bu eski sulak alanlara keten gibi ovada yetişen mahsuller ekmişlerdir." />
+  </strings>
+</base>

@@ -1,0 +1,75 @@
+<Prefab>
+  <Constants>
+
+    <Constant Name="ArmyManagement.Army.Tuple.Width" BrushLayer="Default" BrushName="ArmyManagement.Army.Tuple" BrushValueType="Width" />
+    <Constant Name="ArmyManagement.Army.Tuple.Height" BrushLayer="Default" BrushName="ArmyManagement.Army.Tuple" BrushValueType="Height" />
+
+    <Constant Name="Banner.Width" BrushLayer="Default" BrushName="Flat.Tuple.Banner.Small" BrushValueType="Width" />
+    <Constant Name="Banner.Height" BrushLayer="Default" BrushName="Flat.Tuple.Banner.Small" BrushValueType="Height" />
+
+    <Constant Name="Banner.Width.Scaled" MultiplyResult="0.43" Value="!Banner.Width" />
+    <Constant Name="Banner.Height.Scaled" MultiplyResult="0.43" Value="!Banner.Height"/>
+
+  </Constants>
+  <Window>
+    <GatherArmyTupleButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!ArmyManagement.Army.Tuple.Width" SuggestedHeight="!ArmyManagement.Army.Tuple.Height" Brush="ArmyManagement.Army.Tuple" Command.Click="ExecuteAction" IsEligible="@IsEligible" IsInCart="@IsInCart" OverrideDefaultStateSwitchingEnabled="true" UpdateChildrenStates="true">
+      <Children>
+
+        <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" UpdateChildrenStates="true">
+          <Children>
+
+            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="112" SuggestedHeight="81" VerticalAlignment="Center" MarginLeft="13" UpdateChildrenStates="true">
+              <Children>
+                <ImageIdentifierWidget DataSource="{LordFace}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="6" MarginRight="6" MarginTop="4" MarginBottom="3" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode" />
+                <!--<Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="5" Brush="ArmyManagement.VerticalStatus.Box"/>-->
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="26" SuggestedHeight="26" Brush="ArmyManagement.CheckmarkStatus" VerticalAlignment="Center" PositionXOffset="6"/>
+              </Children>
+            </Widget>
+
+            <!--Party Name-->
+            <RichTextWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="155" MarginLeft="10" Brush="ArmyManagement.Army.Tuple.Name" Text="@NameText" />
+
+            <!--Party Clan Banner-->
+            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="75" VerticalAlignment="Center">
+              <Children>
+
+                <!--<ImageIdentifierWidget DataSource="{ClanBanner}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="52" SuggestedHeight="52" HorizontalAlignment="Center" VerticalAlignment="Center" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode" MaterialAlphaFactor="0.8">
+                  <Children>
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="65" SuggestedHeight="65" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="clan_frame_small_9" />
+                  </Children>
+                </ImageIdentifierWidget>-->
+
+                <MaskedTextureWidget DataSource="{ClanBanner}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Banner.Width.Scaled" SuggestedHeight="!Banner.Height.Scaled" HorizontalAlignment="Left" VerticalAlignment="Top" MarginLeft="9" PositionYOffset="1" Brush="Flat.Tuple.Banner.Small" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode" IsDisabled="true" OverlayTextureScale="2.5" />
+
+              </Children>
+            </Widget>
+
+            <!--Party Strength-->
+            <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="80" MarginLeft="5" Brush="ArmyManagement.Army.Tuple.Value" IntText="@Strength" />
+
+            <!--Party Draft Cost Widget-->
+            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="70" ClipContents="true">
+              <Children>
+
+                <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center">
+                  <Children>
+                    <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Brush="ArmyManagement.Army.Tuple.Value" MarginTop="5" IntText="@Cost" />
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="17" SuggestedHeight="27" VerticalAlignment="Center" Sprite="SPKingdom\influence_icon_small" />
+                  </Children>
+                </ListPanel>
+
+              </Children>
+            </Widget>
+
+            <!--Party Distance-->
+            <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="70" MarginLeft="5" Brush="ArmyManagement.Army.Tuple.Value" Text="@DistanceText" />
+
+          </Children>
+        </ListPanel>
+
+        <HintWidget DataSource="{PartyHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false" />
+
+      </Children>
+    </GatherArmyTupleButtonWidget>
+  </Window>
+</Prefab>

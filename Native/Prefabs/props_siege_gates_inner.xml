@@ -1,0 +1,3379 @@
+<prefabs>
+	<game_entity name="aserai_castle_gate_inner_l1" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<tags>
+			<tag name="inner_gate"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<scripts>
+			<script name="DestructableComponent">
+				<variables>
+					<variable name="DestructionStates" value="state1, state2, state3, state4"/>
+					<variable name="DestroyedByStoneOnly" value="false"/>
+					<variable name="CanBeDestroyedInitially" value="false"/>
+					<variable name="MaxHitPoint" value="1000.000"/>
+					<variable name="DestroyOnAnyHit" value="false"/>
+					<variable name="PassHitOnToParent" value="false"/>
+					<variable name="ReferenceEntityTag" value="reference"/>
+					<variable name="HeavyHitParticlesTag" value="light_hit"/>
+					<variable name="HeavyHitParticlesThreshold" value="20.000"/>
+					<variable name="ParticleEffectOnDestroy" value=""/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/door/break"/>
+					<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+					<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+					<variable name="BattleSide" value="None"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+			<script name="CastleGate">
+				<variables>
+					<variable name="OwningTeam" value="Defenders"/>
+					<variable name="OpeningAnimationName" value="aserai_castle_gate_inner_l1_opening"/>
+					<variable name="ClosingAnimationName" value="aserai_castle_gate_inner_l1_closing"/>
+					<variable name="HitAnimationName" value="aserai_castle_gate_inner_l1_hit"/>
+					<variable name="PlankHitAnimationName" value="aserai_castle_gate_inner_l1_plank_hit"/>
+					<variable name="HitMeleeAnimationName" value="aserai_castle_gate_inner_l1_hit_melee"/>
+					<variable name="DestroyAnimationName" value="aserai_castle_gate_inner_l1_break"/>
+					<variable name="NavigationMeshId" value="1000"/>
+					<variable name="NavigationMeshIdToDisableOnOpen" value="-1"/>
+					<variable name="LeftDoorBoneName" value="bn_middle_l"/>
+					<variable name="RightDoorBoneName" value="bn_middle_r"/>
+					<variable name="ExtraCollisionObjectTagRight" value="extra_collider_r"/>
+					<variable name="ExtraCollisionObjectTagLeft" value="extra_collider_l"/>
+					<variable name="ActivateExtraColliders" value="true"/>
+					<variable name="SideTag" value="middle"/>
+					<variable name="AutoOpen" value="false"/>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="open_inside" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="open"/>
+				</tags>
+				<transform position="0.000, -1.500, 0.000"/>
+				<physics mass="1.000"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="WaypointTag" value="aiwaypoint"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="collider_agent_r" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="collider_agent_r"/>
+				</tags>
+				<physics shape="bo_aserai_castle_gate_inner_l1_ab_r" mass="1.000">
+					<body_flags>
+						<body_flag name="agent_only"/>
+					</body_flags>
+				</physics>
+			</game_entity>
+			<game_entity name="clean" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="operational"/>
+					<tag name="state_0"/>
+					<tag name="gate"/>
+					<tag name="reference"/>
+				</tags>
+				<physics shape="bo_aserai_castle_gate_inner_l1" override_material="wood" mass="1.000"/>
+				<skeleton skeleton_model="aserai_castle_gate_inner_l1_skeleton">
+					<components>
+						<meta_mesh_component name="aserai_castle_gate_inner_l1_state1"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_l"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_l" mass="1.000"/>
+					</game_entity>
+					<game_entity name="collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_r"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_r" mass="1.000"/>
+					</game_entity>
+					<game_entity name="extra_collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_l"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_l" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="extra_collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_r"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_r" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="collider_agent_l" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="collider_agent_l"/>
+				</tags>
+				<physics shape="bo_aserai_castle_gate_inner_l1_ab_l" mass="1.000">
+					<body_flags>
+						<body_flag name="agent_only"/>
+					</body_flags>
+				</physics>
+			</game_entity>
+			<game_entity name="close_outside" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="close"/>
+					<tag name="outside"/>
+				</tags>
+				<transform position="0.000, 1.000, 0.000"/>
+				<physics mass="1.000"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="WaypointTag" value="aiwaypoint"/>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="middle_position" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="middle_pos"/>
+					<tag name="wait_pos"/>
+				</tags>
+				<transform position="0.000, -1.400, 0.000"/>
+				<physics mass="1.000"/>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh">
+						<mesh name="debug_lod_mesh" argument="1.000, 1.000, 1.000, 1.000"/>
+						<mesh name="debug_lod_mesh.lod1" argument="1.000, 1.000, 1.000, 1.000"/>
+						<mesh name="debug_lod_mesh.lod2" argument="1.000, 1.000, 1.000, 1.000"/>
+						<mesh name="debug_lod_mesh.lod3" argument="1.000, 1.000, 1.000, 1.000"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="TacticalPosition">
+						<variables>
+							<variable name="_width" value="1.000"/>
+							<variable name="_slope" value="0.000"/>
+							<variable name="_isInsurmountable" value="false"/>
+							<variable name="_isOuterEdge" value="false"/>
+							<variable name="_tacticalPositionType" value="Regional"/>
+							<variable name="_tacticalRegionMembership" value="Forest"/>
+							<variable name="_tacticalPositionSide" value="BehaviorSideNotSet"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="gate_plank" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="plank"/>
+				</tags>
+				<physics mass="1.000"/>
+				<skeleton skeleton_model="aserai_castle_gate_inner_l1_plank_skeleton">
+					<components>
+						<meta_mesh_component name="aserai_castle_gate_inner_l1_plank"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="battering_ram_rest_point" old_prefab_name="" mobility="1">
+				<transform position="0.000, 6.250, 0.000"/>
+				<physics mass="1.000"/>
+			</game_entity>
+			<game_entity name="state1" old_prefab_name="" visible="false" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="state_1"/>
+					<tag name="gate"/>
+					<tag name="reference"/>
+				</tags>
+				<physics shape="bo_aserai_castle_gate_inner_l1" override_material="wood" mass="1.000"/>
+				<skeleton skeleton_model="aserai_castle_gate_inner_l1_skeleton">
+					<components>
+						<meta_mesh_component name="aserai_castle_gate_inner_l1_state2"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_l"/>
+							<tag name="1"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state2_l" mass="1.000"/>
+					</game_entity>
+					<game_entity name="collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_r"/>
+							<tag name="1"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state2_r" mass="1.000"/>
+					</game_entity>
+					<game_entity name="extra_collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_l"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_l" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="extra_collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_r"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_r" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="state2" old_prefab_name="" visible="false" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="state_2"/>
+					<tag name="gate"/>
+					<tag name="reference"/>
+				</tags>
+				<physics shape="bo_aserai_castle_gate_inner_l1" override_material="wood" mass="1.000"/>
+				<skeleton skeleton_model="aserai_castle_gate_inner_l1_skeleton">
+					<components>
+						<meta_mesh_component name="aserai_castle_gate_inner_l1_state3"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_l"/>
+							<tag name="2"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state3_l" mass="1.000"/>
+					</game_entity>
+					<game_entity name="collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_r"/>
+							<tag name="2"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state3_r" mass="1.000"/>
+					</game_entity>
+					<game_entity name="extra_collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_l"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_l" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="extra_collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_r"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_r" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="state3" old_prefab_name="" visible="false" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="state_3"/>
+					<tag name="gate"/>
+					<tag name="reference"/>
+				</tags>
+				<physics shape="bo_aserai_castle_gate_inner_l1" override_material="wood" mass="1.000"/>
+				<skeleton skeleton_model="aserai_castle_gate_inner_l1_skeleton">
+					<components>
+						<meta_mesh_component name="aserai_castle_gate_inner_l1_state4"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_l"/>
+							<tag name="3"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state4_l" mass="1.000"/>
+					</game_entity>
+					<game_entity name="collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_r"/>
+							<tag name="3"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state4_r" mass="1.000"/>
+					</game_entity>
+					<game_entity name="extra_collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_r"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_r" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="extra_collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_l"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_l" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="state4" old_prefab_name="" visible="false" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="gate"/>
+					<tag name="state_4"/>
+					<tag name="reference"/>
+				</tags>
+				<physics shape="bo_aserai_castle_gate_inner_l1_state5" mass="1.000"/>
+				<components>
+					<meta_mesh_component name="aserai_castle_gate_inner_l1_state5"/>
+				</components>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="particles" old_prefab_name="" mobility="1">
+						<physics mass="1.000"/>
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{1C14B41A-97FA-41A8-B928-91C3EF356254}"/>
+							</particle_system_instanced_component>
+						</components>
+					</game_entity>
+					<game_entity name="debris_01" old_prefab_name="" mobility="1">
+						<transform position="0.138, 0.261, 3.387" rotation_euler="-0.062, -2.878, -2.629"/>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state5_part1" mass="4.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_castle_gate_inner_l1_state5_part1"/>
+						</components>
+					</game_entity>
+					<game_entity name="debris_02" old_prefab_name="" mobility="1">
+						<transform position="1.078, 0.034, 1.690" rotation_euler="0.285, 0.193, 0.001"/>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state5_part2" mass="4.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_castle_gate_inner_l1_state5_part2"/>
+						</components>
+					</game_entity>
+					<game_entity name="debris_03" old_prefab_name="" mobility="1">
+						<transform position="-1.096, 0.144, 1.391" rotation_euler="0.311, -3.009, 2.520"/>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state5_part3" mass="4.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_castle_gate_inner_l1_state5_part3"/>
+						</components>
+					</game_entity>
+					<game_entity name="debris_04" old_prefab_name="" mobility="1">
+						<transform position="-0.111, 0.076, 2.341" rotation_euler="0.418, 0.486, -2.319"/>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state5_part2" mass="4.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_castle_gate_inner_l1_state5_part2"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="close_inside" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="close"/>
+				</tags>
+				<transform position="0.000, -1.500, 0.000"/>
+				<physics mass="1.000"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="WaypointTag" value="aiwaypoint"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="empire_castle_gate_inner_l3" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<tags>
+			<tag name="inner_gate"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<scripts>
+			<script name="DestructableComponent">
+				<variables>
+					<variable name="DestructionStates" value="state1, state2, state3, state4"/>
+					<variable name="DestroyedByStoneOnly" value="false"/>
+					<variable name="CanBeDestroyedInitially" value="false"/>
+					<variable name="MaxHitPoint" value="1000.000"/>
+					<variable name="DestroyOnAnyHit" value="false"/>
+					<variable name="PassHitOnToParent" value="false"/>
+					<variable name="ReferenceEntityTag" value="reference"/>
+					<variable name="HeavyHitParticlesTag" value="light_hit"/>
+					<variable name="HeavyHitParticlesThreshold" value="20.000"/>
+					<variable name="ParticleEffectOnDestroy" value=""/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/door/break"/>
+					<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+					<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+					<variable name="BattleSide" value="None"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+			<script name="CastleGate">
+				<variables>
+					<variable name="OwningTeam" value="Defenders"/>
+					<variable name="OpeningAnimationName" value="empire_castle_gate_inner_l3_opening"/>
+					<variable name="ClosingAnimationName" value="empire_castle_gate_inner_l3_closing"/>
+					<variable name="HitAnimationName" value="empire_castle_gate_inner_l3_hit"/>
+					<variable name="PlankHitAnimationName" value="empire_castle_gate_inner_l3_plank_hit"/>
+					<variable name="HitMeleeAnimationName" value="empire_castle_gate_inner_l3_hit_melee"/>
+					<variable name="DestroyAnimationName" value="empire_castle_gate_inner_l3_break"/>
+					<variable name="NavigationMeshId" value="462"/>
+					<variable name="NavigationMeshIdToDisableOnOpen" value="467"/>
+					<variable name="LeftDoorBoneName" value="bn_middle_l"/>
+					<variable name="RightDoorBoneName" value="bn_middle_r"/>
+					<variable name="ExtraCollisionObjectTagRight" value="extra_collider_r"/>
+					<variable name="ExtraCollisionObjectTagLeft" value="extra_collider_l"/>
+					<variable name="ActivateExtraColliders" value="true"/>
+					<variable name="SideTag" value="middle"/>
+					<variable name="AutoOpen" value="false"/>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="open_inside" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="open"/>
+				</tags>
+				<transform position="0.000, -1.500, 0.000"/>
+				<physics mass="1.000"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="WaypointTag" value="aiwaypoint"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="close_inside" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="close"/>
+				</tags>
+				<transform position="0.000, -1.500, 0.000"/>
+				<physics mass="1.000"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="WaypointTag" value="aiwaypoint"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="clean" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="reference"/>
+					<tag name="state_0"/>
+					<tag name="gate"/>
+					<tag name="operational"/>
+				</tags>
+				<physics shape="bo_empire_castle_gate_inner_l3_state1" override_material="wood" mass="1.000"/>
+				<skeleton skeleton_model="empire_castle_gate_inner_l3_skeleton">
+					<components>
+						<meta_mesh_component name="empire_castle_gate_inner_l3_state1"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_l"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_empire_castle_gate_inner_l3_state1_l" mass="1.000"/>
+					</game_entity>
+					<game_entity name="collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_r"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_empire_castle_gate_inner_l3_state1_r" mass="1.000"/>
+					</game_entity>
+					<game_entity name="extra_collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_l"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_l" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="extra_collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_r"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_r" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="collider_agent_r" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="collider_agent_r"/>
+				</tags>
+				<physics shape="bo_empire_castle_gate_inner_l3_ab_r" mass="1.000">
+					<body_flags>
+						<body_flag name="agent_only"/>
+					</body_flags>
+				</physics>
+			</game_entity>
+			<game_entity name="close_outside" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="close"/>
+					<tag name="outside"/>
+				</tags>
+				<transform position="0.000, 1.000, 0.000"/>
+				<physics mass="1.000"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="WaypointTag" value="aiwaypoint"/>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="middle_position" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="middle_pos"/>
+					<tag name="wait_pos"/>
+				</tags>
+				<transform position="0.000, -1.400, 0.000"/>
+				<physics mass="1.000"/>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh">
+						<mesh name="debug_lod_mesh" argument="1.000, 1.000, 1.000, 1.000"/>
+						<mesh name="debug_lod_mesh.lod1" argument="1.000, 1.000, 1.000, 1.000"/>
+						<mesh name="debug_lod_mesh.lod2" argument="1.000, 1.000, 1.000, 1.000"/>
+						<mesh name="debug_lod_mesh.lod3" argument="1.000, 1.000, 1.000, 1.000"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="TacticalPosition">
+						<variables>
+							<variable name="_width" value="9.000"/>
+							<variable name="_slope" value="0.000"/>
+							<variable name="_isInsurmountable" value="false"/>
+							<variable name="_isOuterEdge" value="false"/>
+							<variable name="_tacticalPositionType" value="Regional"/>
+							<variable name="_tacticalRegionMembership" value="Forest"/>
+							<variable name="_tacticalPositionSide" value="BehaviorSideNotSet"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="gate_plank" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="plank"/>
+				</tags>
+				<physics mass="1.000"/>
+				<skeleton skeleton_model="empire_castle_gate_inner_l3_plank_skeleton">
+					<components>
+						<meta_mesh_component name="empire_castle_gate_inner_l3_plank"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="battering_ram_rest_point" old_prefab_name="" mobility="1">
+				<transform position="0.000, 6.250, 0.000"/>
+				<physics mass="1.000"/>
+			</game_entity>
+			<game_entity name="state1" old_prefab_name="" visible="false" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="state_1"/>
+					<tag name="gate"/>
+					<tag name="reference"/>
+				</tags>
+				<physics shape="bo_empire_castle_gate_inner_l3_state1" override_material="wood" mass="1.000"/>
+				<skeleton skeleton_model="empire_castle_gate_inner_l3_skeleton">
+					<components>
+						<meta_mesh_component name="empire_castle_gate_inner_l3_state2"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_l"/>
+							<tag name="1"/>
+						</tags>
+						<physics shape="bo_empire_castle_gate_inner_l3_state2_l" mass="1.000"/>
+					</game_entity>
+					<game_entity name="collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_r"/>
+							<tag name="1"/>
+						</tags>
+						<physics shape="bo_empire_castle_gate_inner_l3_state2_r" mass="1.000"/>
+					</game_entity>
+					<game_entity name="extra_collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_l"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_l" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="extra_collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_r"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_r" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="particles" old_prefab_name="" mobility="1">
+						<transform position="0.000, 0.000, 1.808"/>
+						<physics mass="1.000"/>
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{1C14B41A-97FA-41A8-B928-91C3EF356254}"/>
+							</particle_system_instanced_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="state2" old_prefab_name="" visible="false" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="state_2"/>
+					<tag name="gate"/>
+					<tag name="reference"/>
+				</tags>
+				<physics shape="bo_empire_castle_gate_inner_l3_state1" override_material="wood" mass="1.000"/>
+				<skeleton skeleton_model="empire_castle_gate_inner_l3_skeleton">
+					<components>
+						<meta_mesh_component name="empire_castle_gate_inner_l3_state3"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_l"/>
+							<tag name="2"/>
+						</tags>
+						<physics shape="bo_empire_castle_gate_inner_l3_state3_l" mass="1.000"/>
+					</game_entity>
+					<game_entity name="collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_r"/>
+							<tag name="2"/>
+						</tags>
+						<physics shape="bo_empire_castle_gate_inner_l3_state3_r" mass="1.000"/>
+					</game_entity>
+					<game_entity name="extra_collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_l"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_l" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="extra_collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_r"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_r" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="particles" old_prefab_name="" mobility="1">
+						<transform position="0.000, 0.000, 1.808"/>
+						<physics mass="1.000"/>
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{1C14B41A-97FA-41A8-B928-91C3EF356254}"/>
+							</particle_system_instanced_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="state3" old_prefab_name="" visible="false" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="state_3"/>
+					<tag name="gate"/>
+					<tag name="reference"/>
+				</tags>
+				<physics shape="bo_empire_castle_gate_inner_l3_state1" override_material="wood" mass="1.000"/>
+				<skeleton skeleton_model="empire_castle_gate_inner_l3_skeleton">
+					<components>
+						<meta_mesh_component name="empire_castle_gate_inner_l3_state4"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_l"/>
+							<tag name="3"/>
+						</tags>
+						<physics shape="bo_empire_castle_gate_inner_l3_state4_l" mass="1.000"/>
+					</game_entity>
+					<game_entity name="collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_r"/>
+							<tag name="3"/>
+						</tags>
+						<physics shape="bo_empire_castle_gate_inner_l3_state4_r" mass="1.000"/>
+					</game_entity>
+					<game_entity name="extra_collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_r"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_r" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="extra_collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_l"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_l" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="particles" old_prefab_name="" mobility="1">
+						<transform position="0.000, 0.000, 1.808"/>
+						<physics mass="1.000"/>
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{1C14B41A-97FA-41A8-B928-91C3EF356254}"/>
+							</particle_system_instanced_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="state4" old_prefab_name="" visible="false" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="gate"/>
+					<tag name="state_4"/>
+					<tag name="reference"/>
+				</tags>
+				<physics shape="bo_empire_castle_gate_inner_l3_state5" mass="1.000"/>
+				<components>
+					<meta_mesh_component name="empire_castle_gate_inner_l3_state5"/>
+				</components>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="particles" old_prefab_name="" mobility="1">
+						<transform position="0.000, 0.000, 1.808"/>
+						<physics mass="1.000"/>
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{1C14B41A-97FA-41A8-B928-91C3EF356254}"/>
+							</particle_system_instanced_component>
+						</components>
+					</game_entity>
+					<game_entity name="debris_01" old_prefab_name="" mobility="1">
+						<transform position="-0.829, 0.017, 1.489" rotation_euler="-0.507, -0.071, 0.402"/>
+						<physics shape="bo_empire_castle_gate_inner_l3_debris1" mass="4.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="empire_castle_gate_inner_l3_debris1"/>
+						</components>
+					</game_entity>
+					<game_entity name="debris_02" old_prefab_name="" mobility="1">
+						<transform position="-0.555, 0.033, 3.067" rotation_euler="0.367, -0.417, 0.383"/>
+						<physics shape="bo_empire_castle_gate_inner_l3_debris2" mass="4.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="empire_castle_gate_inner_l3_debris2"/>
+						</components>
+					</game_entity>
+					<game_entity name="debris_03" old_prefab_name="" mobility="1">
+						<transform position="1.075, 0.128, 1.794" rotation_euler="0.156, -0.019, 0.508"/>
+						<physics shape="bo_empire_castle_gate_inner_l3_debris3" mass="4.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="empire_castle_gate_inner_l3_debris3"/>
+						</components>
+					</game_entity>
+					<game_entity name="debris_04" old_prefab_name="" mobility="1">
+						<transform position="0.425, 0.090, 3.575" rotation_euler="-0.327, -0.077, 0.012"/>
+						<physics shape="bo_empire_castle_gate_inner_l3_debris4" mass="4.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="empire_castle_gate_inner_l3_debris4"/>
+						</components>
+					</game_entity>
+					<game_entity name="debris_05" old_prefab_name="" mobility="1">
+						<transform position="-0.907, 0.012, 3.567" rotation_euler="0.156, -0.019, 0.508"/>
+						<physics shape="bo_empire_castle_gate_inner_l3_debris5" mass="4.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="empire_castle_gate_inner_l3_debris5"/>
+						</components>
+					</game_entity>
+					<game_entity name="debris_06" old_prefab_name="" mobility="1">
+						<transform position="0.013, 0.285, 1.660" rotation_euler="-0.011, 2.831, -0.414"/>
+						<physics shape="bo_empire_castle_gate_inner_l3_debris6" mass="4.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="empire_castle_gate_inner_l3_debris6"/>
+						</components>
+					</game_entity>
+					<game_entity name="debris_07" old_prefab_name="" mobility="1">
+						<transform position="0.891, 0.462, 4.404" rotation_euler="0.156, -0.019, 0.508"/>
+						<physics shape="bo_empire_castle_gate_inner_l3_debris7" mass="4.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="empire_castle_gate_inner_l3_debris7"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="collider_agent_l" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="collider_agent_l"/>
+				</tags>
+				<physics shape="bo_empire_castle_gate_inner_l3_ab_l" mass="1.000">
+					<body_flags>
+						<body_flag name="agent_only"/>
+					</body_flags>
+				</physics>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="battania_castle_gate_inner_l3" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<tags>
+			<tag name="inner_gate"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<scripts>
+			<script name="DestructableComponent">
+				<variables>
+					<variable name="DestructionStates" value="state1, state2, state3, state4"/>
+					<variable name="DestroyedByStoneOnly" value="false"/>
+					<variable name="CanBeDestroyedInitially" value="false"/>
+					<variable name="MaxHitPoint" value="1000.000"/>
+					<variable name="DestroyOnAnyHit" value="false"/>
+					<variable name="PassHitOnToParent" value="false"/>
+					<variable name="ReferenceEntityTag" value="reference"/>
+					<variable name="HeavyHitParticlesTag" value="light_hit"/>
+					<variable name="HeavyHitParticlesThreshold" value="20.000"/>
+					<variable name="ParticleEffectOnDestroy" value=""/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/door/break"/>
+					<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+					<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+					<variable name="BattleSide" value="None"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+			<script name="CastleGate">
+				<variables>
+					<variable name="OwningTeam" value="Defenders"/>
+					<variable name="OpeningAnimationName" value="battania_castle_gate_inner_l3_opening"/>
+					<variable name="ClosingAnimationName" value="battania_castle_gate_inner_l3_closing"/>
+					<variable name="HitAnimationName" value="battania_castle_gate_inner_l3_hit"/>
+					<variable name="PlankHitAnimationName" value="battania_castle_gate_inner_l3_plank_hit"/>
+					<variable name="HitMeleeAnimationName" value="battania_castle_gate_inner_l3_hit_melee"/>
+					<variable name="DestroyAnimationName" value="battania_castle_gate_inner_l3_break"/>
+					<variable name="NavigationMeshId" value="1000"/>
+					<variable name="NavigationMeshIdToDisableOnOpen" value="-1"/>
+					<variable name="LeftDoorBoneName" value="bn_middle_l"/>
+					<variable name="RightDoorBoneName" value="bn_middle_r"/>
+					<variable name="ExtraCollisionObjectTagRight" value="extra_collider_r"/>
+					<variable name="ExtraCollisionObjectTagLeft" value="extra_collider_l"/>
+					<variable name="ActivateExtraColliders" value="true"/>
+					<variable name="SideTag" value="middle"/>
+					<variable name="AutoOpen" value="false"/>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="open_inside" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="open"/>
+				</tags>
+				<transform position="0.000, -1.500, 0.000"/>
+				<physics mass="1.000"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="WaypointTag" value="aiwaypoint"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="close_inside" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="close"/>
+				</tags>
+				<transform position="0.000, -1.500, 0.000"/>
+				<physics mass="1.000"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="WaypointTag" value="aiwaypoint"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="clean" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="operational"/>
+					<tag name="state_0"/>
+					<tag name="gate"/>
+					<tag name="reference"/>
+				</tags>
+				<physics override_material="wood" mass="1.000"/>
+				<skeleton skeleton_model="battania_castle_gate_inner_l3_skeleton">
+					<components>
+						<meta_mesh_component name="battania_castle_gate_inner_l3_state1"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_l"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_battania_castle_gate_inner_l3_state1_l" mass="1.000"/>
+					</game_entity>
+					<game_entity name="collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_r"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_battania_castle_gate_inner_l3_state1_r" mass="1.000"/>
+					</game_entity>
+					<game_entity name="extra_collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_l"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_l" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="extra_collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_r"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_r" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="collider_agent_r" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="collider_agent_r"/>
+				</tags>
+				<physics shape="bo_battania_castle_gate_inner_l3_ab_r" mass="1.000">
+					<body_flags>
+						<body_flag name="agent_only"/>
+					</body_flags>
+				</physics>
+			</game_entity>
+			<game_entity name="close_outside" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="close"/>
+					<tag name="outside"/>
+				</tags>
+				<transform position="0.000, 1.000, 0.000"/>
+				<physics mass="1.000"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="WaypointTag" value="aiwaypoint"/>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="middle_position" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="middle_pos"/>
+					<tag name="wait_pos"/>
+				</tags>
+				<transform position="0.000, -1.400, 0.000"/>
+				<physics mass="1.000"/>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh">
+						<mesh name="debug_lod_mesh" argument="1.000, 1.000, 1.000, 1.000"/>
+						<mesh name="debug_lod_mesh.lod1" argument="1.000, 1.000, 1.000, 1.000"/>
+						<mesh name="debug_lod_mesh.lod2" argument="1.000, 1.000, 1.000, 1.000"/>
+						<mesh name="debug_lod_mesh.lod3" argument="1.000, 1.000, 1.000, 1.000"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="TacticalPosition">
+						<variables>
+							<variable name="_width" value="1.000"/>
+							<variable name="_slope" value="0.000"/>
+							<variable name="_isInsurmountable" value="false"/>
+							<variable name="_isOuterEdge" value="false"/>
+							<variable name="_tacticalPositionType" value="Regional"/>
+							<variable name="_tacticalRegionMembership" value="Forest"/>
+							<variable name="_tacticalPositionSide" value="BehaviorSideNotSet"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="gate_plank" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="plank"/>
+				</tags>
+				<physics mass="1.000"/>
+				<skeleton skeleton_model="battania_castle_gate_inner_l3_plank_skeleton">
+					<components>
+						<meta_mesh_component name="battania_castle_gate_inner_l3_plank"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="battering_ram_rest_point" old_prefab_name="" mobility="1">
+				<transform position="0.000, 6.250, 0.000"/>
+				<physics mass="1.000"/>
+			</game_entity>
+			<game_entity name="state1" old_prefab_name="" visible="false" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="state_1"/>
+					<tag name="gate"/>
+					<tag name="reference"/>
+				</tags>
+				<physics shape="bo_aserai_castle_gate_inner_l1" override_material="wood" mass="1.000"/>
+				<skeleton skeleton_model="battania_castle_gate_inner_l3_skeleton">
+					<components>
+						<meta_mesh_component name="battania_castle_gate_inner_l3_state2"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_l"/>
+							<tag name="1"/>
+						</tags>
+						<physics shape="bo_battania_castle_gate_inner_l3_state2_l" mass="1.000"/>
+					</game_entity>
+					<game_entity name="collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_r"/>
+							<tag name="1"/>
+						</tags>
+						<physics shape="bo_battania_castle_gate_inner_l3_state2_r" mass="1.000"/>
+					</game_entity>
+					<game_entity name="extra_collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_l"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_l" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="extra_collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_r"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_r" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="state2" old_prefab_name="" visible="false" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="state_2"/>
+					<tag name="gate"/>
+					<tag name="reference"/>
+				</tags>
+				<physics shape="bo_aserai_castle_gate_inner_l1" override_material="wood" mass="1.000"/>
+				<skeleton skeleton_model="battania_castle_gate_inner_l3_skeleton">
+					<components>
+						<meta_mesh_component name="battania_castle_gate_inner_l3_state3"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_l"/>
+							<tag name="2"/>
+						</tags>
+						<physics shape="bo_battania_castle_gate_inner_l3_state3_l" mass="1.000"/>
+					</game_entity>
+					<game_entity name="collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_r"/>
+							<tag name="2"/>
+						</tags>
+						<physics shape="bo_battania_castle_gate_inner_l3_state3_r" mass="1.000"/>
+					</game_entity>
+					<game_entity name="extra_collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_l"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_l" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="extra_collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_r"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_r" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="state3" old_prefab_name="" visible="false" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="state_3"/>
+					<tag name="gate"/>
+					<tag name="reference"/>
+				</tags>
+				<physics shape="bo_aserai_castle_gate_inner_l1" override_material="wood" mass="1.000"/>
+				<skeleton skeleton_model="battania_castle_gate_inner_l3_skeleton">
+					<components>
+						<meta_mesh_component name="battania_castle_gate_inner_l3_state4"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_l"/>
+							<tag name="3"/>
+						</tags>
+						<physics shape="bo_battania_castle_gate_inner_l3_state4_l" mass="1.000"/>
+					</game_entity>
+					<game_entity name="collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_r"/>
+							<tag name="3"/>
+						</tags>
+						<physics shape="bo_battania_castle_gate_inner_l3_state4_r" mass="1.000"/>
+					</game_entity>
+					<game_entity name="extra_collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_r"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_r" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="extra_collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_l"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_l" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="state4" old_prefab_name="" visible="false" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="gate"/>
+					<tag name="state_4"/>
+					<tag name="reference"/>
+				</tags>
+				<physics shape="bo_battania_castle_gate_inner_l3_state5" mass="1.000"/>
+				<components>
+					<meta_mesh_component name="battania_castle_gate_inner_l3_state5"/>
+				</components>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="particles" old_prefab_name="" mobility="1">
+						<physics mass="1.000"/>
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{1C14B41A-97FA-41A8-B928-91C3EF356254}"/>
+							</particle_system_instanced_component>
+						</components>
+					</game_entity>
+					<game_entity name="debris_01" old_prefab_name="" mobility="1">
+						<transform position="-0.896, 0.212, 1.215" rotation_euler="-0.281, -0.214, -0.198"/>
+						<physics shape="bo_battania_castle_gate_inner_l3_debris1" mass="4.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="battania_castle_gate_inner_l3_debris1"/>
+						</components>
+					</game_entity>
+					<game_entity name="debris_02" old_prefab_name="" mobility="1">
+						<transform position="0.607, 0.359, 2.787" rotation_euler="-0.404, -0.519, -0.379"/>
+						<physics shape="bo_battania_castle_gate_inner_l3_debris2" mass="4.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="battania_castle_gate_inner_l3_debris2"/>
+						</components>
+					</game_entity>
+					<game_entity name="debris_03" old_prefab_name="" mobility="1">
+						<transform position="0.994, 0.213, 3.386" rotation_euler="-0.400, -0.366, 0.060"/>
+						<physics shape="bo_battania_castle_gate_inner_l3_debris3" mass="4.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="battania_castle_gate_inner_l3_debris3"/>
+						</components>
+					</game_entity>
+					<game_entity name="debris_04" old_prefab_name="" mobility="1">
+						<transform position="1.003, 0.213, 1.394" rotation_euler="-0.328, 0.217, 0.394"/>
+						<physics shape="bo_battania_castle_gate_inner_l3_debris4" mass="4.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="battania_castle_gate_inner_l3_debris4"/>
+						</components>
+					</game_entity>
+					<game_entity name="debris_05" old_prefab_name="" mobility="1">
+						<transform position="-0.779, 0.212, 3.092" rotation_euler="-0.351, 0.127, 0.269"/>
+						<physics shape="bo_battania_castle_gate_inner_l3_debris5" mass="4.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="battania_castle_gate_inner_l3_debris5"/>
+						</components>
+					</game_entity>
+					<game_entity name="debris_06" old_prefab_name="" mobility="1">
+						<transform position="0.094, 0.212, 2.335" rotation_euler="0.248, -0.063, -0.536"/>
+						<physics shape="bo_battania_castle_gate_inner_l3_debris6" mass="4.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="battania_castle_gate_inner_l3_debris6"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="collider_agent_l" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="collider_agent_l"/>
+				</tags>
+				<physics shape="bo_battania_castle_gate_inner_l3_ab_l" mass="1.000">
+					<body_flags>
+						<body_flag name="agent_only"/>
+					</body_flags>
+				</physics>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="sturgia_castle_gate_inner_l3" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<tags>
+			<tag name="inner_gate"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<scripts>
+			<script name="DestructableComponent">
+				<variables>
+					<variable name="DestructionStates" value="state1, state2, state3, state4"/>
+					<variable name="DestroyedByStoneOnly" value="false"/>
+					<variable name="CanBeDestroyedInitially" value="false"/>
+					<variable name="MaxHitPoint" value="1000.000"/>
+					<variable name="DestroyOnAnyHit" value="false"/>
+					<variable name="PassHitOnToParent" value="false"/>
+					<variable name="ReferenceEntityTag" value="reference"/>
+					<variable name="HeavyHitParticlesTag" value="light_hit"/>
+					<variable name="HeavyHitParticlesThreshold" value="20.000"/>
+					<variable name="ParticleEffectOnDestroy" value=""/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/door/break"/>
+					<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+					<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+					<variable name="BattleSide" value="None"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+			<script name="CastleGate">
+				<variables>
+					<variable name="OwningTeam" value="Defenders"/>
+					<variable name="OpeningAnimationName" value="sturgia_castle_gate_inner_l3_opening"/>
+					<variable name="ClosingAnimationName" value="sturgia_castle_gate_inner_l3_closing"/>
+					<variable name="HitAnimationName" value="sturgia_castle_gate_inner_l3_hit"/>
+					<variable name="PlankHitAnimationName" value="sturgia_castle_gate_inner_l3_plank_hit"/>
+					<variable name="HitMeleeAnimationName" value="sturgia_castle_gate_inner_l3_hit_melee"/>
+					<variable name="DestroyAnimationName" value="sturgia_castle_gate_inner_l3_break"/>
+					<variable name="NavigationMeshId" value="1000"/>
+					<variable name="NavigationMeshIdToDisableOnOpen" value="-1"/>
+					<variable name="LeftDoorBoneName" value="bn_middle_l"/>
+					<variable name="RightDoorBoneName" value="bn_middle_r"/>
+					<variable name="ExtraCollisionObjectTagRight" value="extra_collider_r"/>
+					<variable name="ExtraCollisionObjectTagLeft" value="extra_collider_l"/>
+					<variable name="ActivateExtraColliders" value="true"/>
+					<variable name="SideTag" value="middle"/>
+					<variable name="AutoOpen" value="false"/>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="open_inside" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="open"/>
+				</tags>
+				<transform position="0.000, -1.500, 0.000"/>
+				<physics mass="1.000"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="WaypointTag" value="aiwaypoint"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="collider_agent_r" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="collider_agent_r"/>
+				</tags>
+				<physics shape="bo_sturgia_castle_gate_inner_l3_ab_r" mass="1.000">
+					<body_flags>
+						<body_flag name="agent_only"/>
+					</body_flags>
+				</physics>
+			</game_entity>
+			<game_entity name="clean" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="operational"/>
+					<tag name="state_0"/>
+					<tag name="gate"/>
+					<tag name="reference"/>
+				</tags>
+				<physics override_material="wood" mass="1.000"/>
+				<skeleton skeleton_model="sturgia_castle_gate_inner_l3_skeleton">
+					<components>
+						<meta_mesh_component name="sturgia_castle_gate_inner_l3_state1"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_l"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_sturgia_castle_gate_inner_l3_state1_l" mass="1.000"/>
+					</game_entity>
+					<game_entity name="collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_r"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_sturgia_castle_gate_inner_l3_state1_r" mass="1.000"/>
+					</game_entity>
+					<game_entity name="extra_collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_l"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_l" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="extra_collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_r"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_r" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="close_inside" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="close"/>
+					<tag name="outside"/>
+				</tags>
+				<transform position="0.000, -1.500, 0.000"/>
+				<physics mass="1.000"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="WaypointTag" value="aiwaypoint"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="close_outside" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="close"/>
+					<tag name="outside"/>
+				</tags>
+				<transform position="0.000, 1.000, 0.150"/>
+				<physics mass="1.000"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="WaypointTag" value="aiwaypoint"/>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="middle_position" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="middle_pos"/>
+					<tag name="wait_pos"/>
+				</tags>
+				<transform position="0.000, -1.400, 0.000"/>
+				<physics mass="1.000"/>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh">
+						<mesh name="debug_lod_mesh" argument="1.000, 1.000, 1.000, 1.000"/>
+						<mesh name="debug_lod_mesh.lod1" argument="1.000, 1.000, 1.000, 1.000"/>
+						<mesh name="debug_lod_mesh.lod2" argument="1.000, 1.000, 1.000, 1.000"/>
+						<mesh name="debug_lod_mesh.lod3" argument="1.000, 1.000, 1.000, 1.000"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="TacticalPosition">
+						<variables>
+							<variable name="_width" value="3.500"/>
+							<variable name="_slope" value="0.000"/>
+							<variable name="_isInsurmountable" value="false"/>
+							<variable name="_isOuterEdge" value="false"/>
+							<variable name="_tacticalPositionType" value="Regional"/>
+							<variable name="_tacticalRegionMembership" value="Forest"/>
+							<variable name="_tacticalPositionSide" value="BehaviorSideNotSet"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="gate_plank" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="plank"/>
+				</tags>
+				<physics mass="1.000"/>
+				<skeleton skeleton_model="sturgia_castle_gate_inner_l3_plank_skeleton">
+					<components>
+						<meta_mesh_component name="sturgia_castle_gate_inner_l3_plank"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="battering_ram_rest_point" old_prefab_name="" mobility="1">
+				<transform position="0.000, 6.250, 0.000"/>
+				<physics mass="1.000"/>
+			</game_entity>
+			<game_entity name="state1" old_prefab_name="" visible="false" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="state_1"/>
+					<tag name="gate"/>
+					<tag name="reference"/>
+				</tags>
+				<physics override_material="wood" mass="1.000"/>
+				<skeleton skeleton_model="sturgia_castle_gate_inner_l3_skeleton">
+					<components>
+						<meta_mesh_component name="sturgia_castle_gate_inner_l3_state2"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_l"/>
+							<tag name="1"/>
+						</tags>
+						<physics shape="bo_sturgia_castle_gate_inner_l3_state2_l" mass="1.000"/>
+					</game_entity>
+					<game_entity name="collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_r"/>
+							<tag name="1"/>
+						</tags>
+						<physics shape="bo_sturgia_castle_gate_inner_l3_state2_r" mass="1.000"/>
+					</game_entity>
+					<game_entity name="extra_collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_l"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_l" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="extra_collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_r"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_r" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="state2" old_prefab_name="" visible="false" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="state_2"/>
+					<tag name="gate"/>
+					<tag name="reference"/>
+				</tags>
+				<physics shape="bo_aserai_castle_gate_inner_l1" override_material="wood" mass="1.000"/>
+				<skeleton skeleton_model="sturgia_castle_gate_inner_l3_skeleton">
+					<components>
+						<meta_mesh_component name="sturgia_castle_gate_inner_l3_state3"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_l"/>
+							<tag name="2"/>
+						</tags>
+						<physics shape="bo_sturgia_castle_gate_inner_l3_state3_l" mass="1.000"/>
+					</game_entity>
+					<game_entity name="collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_r"/>
+							<tag name="2"/>
+						</tags>
+						<physics shape="bo_sturgia_castle_gate_inner_l3_state3_r" mass="1.000"/>
+					</game_entity>
+					<game_entity name="extra_collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_l"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_l" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="extra_collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_r"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_r" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="state3" old_prefab_name="" visible="false" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="state_3"/>
+					<tag name="gate"/>
+					<tag name="reference"/>
+				</tags>
+				<physics shape="bo_aserai_castle_gate_inner_l1" override_material="wood" mass="1.000"/>
+				<skeleton skeleton_model="sturgia_castle_gate_inner_l3_skeleton">
+					<components>
+						<meta_mesh_component name="sturgia_castle_gate_inner_l3_state4"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_l"/>
+							<tag name="3"/>
+						</tags>
+						<physics shape="bo_sturgia_castle_gate_inner_l3_state4_l" mass="1.000"/>
+					</game_entity>
+					<game_entity name="collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_r"/>
+							<tag name="3"/>
+						</tags>
+						<physics shape="bo_sturgia_castle_gate_inner_l3_state4_r" mass="1.000"/>
+					</game_entity>
+					<game_entity name="extra_collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_r"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_r" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="extra_collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_l"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_l" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="state4" old_prefab_name="" visible="false" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="gate"/>
+					<tag name="state_4"/>
+					<tag name="reference"/>
+				</tags>
+				<physics shape="bo_sturgia_castle_gate_inner_l3_state5" mass="1.000"/>
+				<components>
+					<meta_mesh_component name="sturgia_castle_gate_inner_l3_state5"/>
+				</components>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="particles" old_prefab_name="" mobility="1">
+						<physics mass="1.000"/>
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{1C14B41A-97FA-41A8-B928-91C3EF356254}"/>
+							</particle_system_instanced_component>
+						</components>
+					</game_entity>
+					<game_entity name="debris_01" old_prefab_name="" mobility="1">
+						<transform position="0.867, -0.282, 1.876" rotation_euler="-0.277, 1.503, 3.060"/>
+						<physics shape="bo_sturgia_castle_gate_inner_l3_debris1" mass="4.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="sturgia_castle_gate_inner_l3_debris1"/>
+						</components>
+					</game_entity>
+					<game_entity name="debris_02" old_prefab_name="" mobility="1">
+						<transform position="-0.676, -0.300, 2.483" rotation_euler="0.917, 3.112, 0.572"/>
+						<physics shape="bo_sturgia_castle_gate_inner_l3_debris2" mass="4.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="sturgia_castle_gate_inner_l3_debris2"/>
+						</components>
+					</game_entity>
+					<game_entity name="debris_03" old_prefab_name="" mobility="1">
+						<transform position="0.933, -0.656, 3.476" rotation_euler="-0.286, 3.068, 0.221"/>
+						<physics shape="bo_sturgia_castle_gate_inner_l3_debris3" mass="4.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="sturgia_castle_gate_inner_l3_debris3"/>
+						</components>
+					</game_entity>
+					<game_entity name="debris_04" old_prefab_name="" mobility="1">
+						<transform position="-0.493, -0.367, 3.988" rotation_euler="0.264, -3.073, -0.549"/>
+						<physics shape="bo_sturgia_castle_gate_inner_l3_debris4" mass="4.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="sturgia_castle_gate_inner_l3_debris4"/>
+						</components>
+					</game_entity>
+					<game_entity name="debris_05" old_prefab_name="" mobility="1">
+						<transform position="0.461, -0.216, 4.614" rotation_euler="-0.200, -2.372, -0.574"/>
+						<physics shape="bo_sturgia_castle_gate_inner_l3_debris5" mass="4.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="sturgia_castle_gate_inner_l3_debris5"/>
+						</components>
+					</game_entity>
+					<game_entity name="debris_06" old_prefab_name="" mobility="1">
+						<transform position="-0.661, -0.460, 1.013" rotation_euler="0.177, 0.401, -1.844"/>
+						<physics shape="bo_sturgia_castle_gate_inner_l3_debris6" mass="4.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="sturgia_castle_gate_inner_l3_debris6"/>
+						</components>
+					</game_entity>
+					<game_entity name="debris_07" old_prefab_name="" mobility="1">
+						<transform position="-0.090, -0.459, 1.790" rotation_euler="0.177, 0.401, -1.844"/>
+						<physics shape="bo_sturgia_castle_gate_inner_l3_debris7" mass="4.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="sturgia_castle_gate_inner_l3_debris7"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="collider_agent_l" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="collider_agent_l"/>
+				</tags>
+				<physics shape="bo_sturgia_castle_gate_inner_l3_ab_l" mass="1.000">
+					<body_flags>
+						<body_flag name="agent_only"/>
+					</body_flags>
+				</physics>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="empire_castle_gate_inner_l2" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<tags>
+			<tag name="inner_gate"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<scripts>
+			<script name="DestructableComponent">
+				<variables>
+					<variable name="DestructionStates" value="state1, state2, state3, state4"/>
+					<variable name="DestroyedByStoneOnly" value="false"/>
+					<variable name="CanBeDestroyedInitially" value="false"/>
+					<variable name="MaxHitPoint" value="1000.000"/>
+					<variable name="DestroyOnAnyHit" value="false"/>
+					<variable name="PassHitOnToParent" value="false"/>
+					<variable name="ReferenceEntityTag" value="reference"/>
+					<variable name="HeavyHitParticlesTag" value="light_hit"/>
+					<variable name="HeavyHitParticlesThreshold" value="20.000"/>
+					<variable name="ParticleEffectOnDestroy" value=""/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/door/break"/>
+					<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+					<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+					<variable name="BattleSide" value="None"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+			<script name="CastleGate">
+				<variables>
+					<variable name="OwningTeam" value="Defenders"/>
+					<variable name="OpeningAnimationName" value="empire_castle_gate_inner_l2_opening"/>
+					<variable name="ClosingAnimationName" value="empire_castle_gate_inner_l2_closing"/>
+					<variable name="HitAnimationName" value="empire_castle_gate_inner_l2_hit"/>
+					<variable name="PlankHitAnimationName" value="empire_castle_gate_inner_l2_plank_hit"/>
+					<variable name="HitMeleeAnimationName" value="empire_castle_gate_inner_l2_hit_melee"/>
+					<variable name="DestroyAnimationName" value="empire_castle_gate_inner_l2_break"/>
+					<variable name="NavigationMeshId" value="1000"/>
+					<variable name="NavigationMeshIdToDisableOnOpen" value="-1"/>
+					<variable name="LeftDoorBoneName" value="bn_middle_l"/>
+					<variable name="RightDoorBoneName" value="bn_middle_r"/>
+					<variable name="ExtraCollisionObjectTagRight" value="extra_collider_r"/>
+					<variable name="ExtraCollisionObjectTagLeft" value="extra_collider_l"/>
+					<variable name="ActivateExtraColliders" value="true"/>
+					<variable name="SideTag" value="middle"/>
+					<variable name="AutoOpen" value="false"/>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="open_inside" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="open"/>
+				</tags>
+				<transform position="0.000, -1.500, 0.000"/>
+				<physics mass="1.000"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="WaypointTag" value="aiwaypoint"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="close_inside" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="close"/>
+				</tags>
+				<transform position="0.000, -1.500, 0.000"/>
+				<physics mass="1.000"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="WaypointTag" value="aiwaypoint"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="clean" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="operational"/>
+					<tag name="state_0"/>
+					<tag name="gate"/>
+					<tag name="reference"/>
+				</tags>
+				<physics shape="bo_empire_castle_gate_inner_l2_state1_frame" override_material="wood" mass="1.000"/>
+				<skeleton skeleton_model="empire_castle_gate_inner_l2_skeleton">
+					<components>
+						<meta_mesh_component name="empire_castle_gate_inner_l2_state1"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_l"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_empire_castle_gate_inner_l2_state1_l" mass="1.000"/>
+					</game_entity>
+					<game_entity name="collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_r"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_empire_castle_gate_inner_l2_state1_r" mass="1.000"/>
+					</game_entity>
+					<game_entity name="extra_collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_l"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_l" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="extra_collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_r"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_r" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="collider_agent_r" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="collider_agent_r"/>
+				</tags>
+				<physics shape="bo_empire_castle_gate_inner_l2_ab_r" mass="1.000">
+					<body_flags>
+						<body_flag name="agent_only"/>
+					</body_flags>
+				</physics>
+			</game_entity>
+			<game_entity name="close_outside" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="close"/>
+					<tag name="outside"/>
+				</tags>
+				<transform position="0.000, 1.000, 0.000"/>
+				<physics mass="1.000"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="WaypointTag" value="aiwaypoint"/>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="middle_position" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="middle_pos"/>
+					<tag name="wait_pos"/>
+				</tags>
+				<transform position="0.000, -1.400, 0.000"/>
+				<physics mass="1.000"/>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh">
+						<mesh name="debug_lod_mesh" argument="1.000, 1.000, 1.000, 1.000"/>
+						<mesh name="debug_lod_mesh.lod1" argument="1.000, 1.000, 1.000, 1.000"/>
+						<mesh name="debug_lod_mesh.lod2" argument="1.000, 1.000, 1.000, 1.000"/>
+						<mesh name="debug_lod_mesh.lod3" argument="1.000, 1.000, 1.000, 1.000"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="TacticalPosition">
+						<variables>
+							<variable name="_width" value="1.000"/>
+							<variable name="_slope" value="0.000"/>
+							<variable name="_isInsurmountable" value="false"/>
+							<variable name="_isOuterEdge" value="false"/>
+							<variable name="_tacticalPositionType" value="Regional"/>
+							<variable name="_tacticalRegionMembership" value="Forest"/>
+							<variable name="_tacticalPositionSide" value="BehaviorSideNotSet"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="gate_plank" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="plank"/>
+				</tags>
+				<physics mass="1.000"/>
+				<skeleton skeleton_model="empire_castle_gate_inner_l2_plank_skeleton">
+					<components>
+						<meta_mesh_component name="empire_castle_gate_inner_l2_plank"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="battering_ram_rest_point" old_prefab_name="" mobility="1">
+				<transform position="0.000, 6.250, 0.000"/>
+				<physics mass="1.000"/>
+			</game_entity>
+			<game_entity name="state1" old_prefab_name="" visible="false" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="state_1"/>
+					<tag name="gate"/>
+					<tag name="reference"/>
+				</tags>
+				<physics shape="bo_empire_castle_gate_inner_l2_state1_frame" override_material="wood" mass="1.000"/>
+				<skeleton skeleton_model="empire_castle_gate_inner_l2_skeleton">
+					<components>
+						<meta_mesh_component name="empire_castle_gate_inner_l2_state2"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_l"/>
+							<tag name="1"/>
+						</tags>
+						<physics shape="bo_empire_castle_gate_inner_l2_state2_l" mass="1.000"/>
+					</game_entity>
+					<game_entity name="collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_r"/>
+							<tag name="1"/>
+						</tags>
+						<physics shape="bo_empire_castle_gate_inner_l2_state2_r" mass="1.000"/>
+					</game_entity>
+					<game_entity name="extra_collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_l"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_l" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="extra_collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_r"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_r" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="state2" old_prefab_name="" visible="false" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="state_2"/>
+					<tag name="gate"/>
+					<tag name="reference"/>
+				</tags>
+				<physics shape="bo_empire_castle_gate_inner_l2_state1_frame" override_material="wood" mass="1.000"/>
+				<skeleton skeleton_model="empire_castle_gate_inner_l2_skeleton">
+					<components>
+						<meta_mesh_component name="empire_castle_gate_inner_l2_state3"/>
+						<meta_mesh_component name="empire_castle_gate_inner_l2_state3" _index_="1"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_l"/>
+							<tag name="2"/>
+						</tags>
+						<physics shape="bo_empire_castle_gate_inner_l2_state3_l" mass="1.000"/>
+					</game_entity>
+					<game_entity name="collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_r"/>
+							<tag name="2"/>
+						</tags>
+						<physics shape="bo_empire_castle_gate_inner_l2_state3_r" mass="1.000"/>
+					</game_entity>
+					<game_entity name="extra_collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_l"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_l" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="extra_collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_r"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_r" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="state3" old_prefab_name="" visible="false" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="state_3"/>
+					<tag name="gate"/>
+					<tag name="reference"/>
+				</tags>
+				<physics shape="bo_empire_castle_gate_inner_l2_state1_frame" override_material="wood" mass="1.000"/>
+				<skeleton skeleton_model="empire_castle_gate_inner_l2_skeleton">
+					<components>
+						<meta_mesh_component name="empire_castle_gate_inner_l2_state4"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_l"/>
+							<tag name="3"/>
+						</tags>
+						<physics shape="bo_empire_castle_gate_inner_l2_state4_l" mass="1.000"/>
+					</game_entity>
+					<game_entity name="collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_r"/>
+							<tag name="3"/>
+						</tags>
+						<physics shape="bo_empire_castle_gate_inner_l2_state4_r" mass="1.000"/>
+					</game_entity>
+					<game_entity name="extra_collider_r" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_r"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_r" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="extra_collider_l" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_l"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_l" mass="1.000">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="state4" old_prefab_name="" visible="false" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="gate"/>
+					<tag name="state_4"/>
+					<tag name="reference"/>
+				</tags>
+				<physics shape="bo_empire_castle_gate_inner_l2_state5" mass="1.000"/>
+				<components>
+					<meta_mesh_component name="empire_castle_gate_inner_l2_state5"/>
+				</components>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="particles" old_prefab_name="" mobility="1">
+						<physics mass="1.000"/>
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{1C14B41A-97FA-41A8-B928-91C3EF356254}"/>
+							</particle_system_instanced_component>
+						</components>
+					</game_entity>
+					<game_entity name="debris_01" old_prefab_name="" mobility="1">
+						<transform position="0.795, -0.380, 1.838" rotation_euler="-0.222, 0.146, -2.817"/>
+						<physics shape="bo_empire_castle_gate_inner_l2_debris1" mass="4.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="empire_castle_gate_inner_l2_debris1"/>
+						</components>
+					</game_entity>
+					<game_entity name="debris_02" old_prefab_name="" mobility="1">
+						<transform position="-0.701, -0.381, 3.554" rotation_euler="0.136, 0.051, 2.824"/>
+						<physics shape="bo_empire_castle_gate_inner_l2_debris2" mass="4.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="empire_castle_gate_inner_l2_debris2"/>
+						</components>
+					</game_entity>
+					<game_entity name="debris_03" old_prefab_name="" mobility="1">
+						<transform position="0.452, -0.950, 3.413" rotation_euler="-0.507, -0.204, -2.874"/>
+						<physics shape="bo_empire_castle_gate_inner_l2_debris3" mass="4.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="empire_castle_gate_inner_l2_debris3"/>
+						</components>
+					</game_entity>
+					<game_entity name="debris_04" old_prefab_name="" mobility="1">
+						<transform position="-0.421, -0.381, 2.042" rotation_euler="0.069, -0.275, 2.018"/>
+						<physics shape="bo_empire_castle_gate_inner_l2_debris4" mass="4.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="empire_castle_gate_inner_l2_debris4"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="collider_agent_l" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="collider_agent_l"/>
+				</tags>
+				<physics shape="bo_empire_castle_gate_inner_l2_ab_l" mass="1.000">
+					<body_flags>
+						<body_flag name="agent_only"/>
+					</body_flags>
+				</physics>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="castle_door_sally" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<scripts>
+			<script name="CastleGate">
+				<variables>
+					<variable name="OwningTeam" value="Defenders"/>
+					<variable name="OpeningAnimationName" value="sally_door_a_opening"/>
+					<variable name="ClosingAnimationName" value="sally_door_a_closing"/>
+					<variable name="HitAnimationName" value=""/>
+					<variable name="PlankHitAnimationName" value=""/>
+					<variable name="HitMeleeAnimationName" value="sally_door_a_hit_melee"/>
+					<variable name="DestroyAnimationName" value=""/>
+					<variable name="NavigationMeshId" value="-1"/>
+					<variable name="NavigationMeshIdToDisableOnOpen" value="-1"/>
+					<variable name="LeftDoorBoneName" value=""/>
+					<variable name="RightDoorBoneName" value="bn_middle_r"/>
+					<variable name="ExtraCollisionObjectTagRight" value="extra_collider_r"/>
+					<variable name="ExtraCollisionObjectTagLeft" value=""/>
+					<variable name="ActivateExtraColliders" value="false"/>
+					<variable name="SideTag" value=""/>
+					<variable name="AutoOpen" value="true"/>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+			<script name="DestructableComponent">
+				<variables>
+					<variable name="DestructionStates" value="state1, state2, state3"/>
+					<variable name="DestroyedByStoneOnly" value="false"/>
+					<variable name="CanBeDestroyedInitially" value="false"/>
+					<variable name="MaxHitPoint" value="80.000"/>
+					<variable name="DestroyOnAnyHit" value="false"/>
+					<variable name="PassHitOnToParent" value="false"/>
+					<variable name="ReferenceEntityTag" value="reference"/>
+					<variable name="HeavyHitParticlesTag" value="light_hit"/>
+					<variable name="HeavyHitParticlesThreshold" value="20.000"/>
+					<variable name="ParticleEffectOnDestroy" value=""/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/door/break"/>
+					<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+					<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+					<variable name="BattleSide" value="Defender"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="middle_position" old_prefab_name="">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="middle_pos"/>
+					<tag name="wait_pos"/>
+				</tags>
+				<transform position="-0.791, -2.849, 0.003"/>
+				<physics mass="1.000"/>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh">
+						<mesh name="debug_lod_mesh" argument="1.000, 1.000, 1.000, 1.000"/>
+						<mesh name="debug_lod_mesh.lod1" argument="1.000, 1.000, 1.000, 1.000"/>
+						<mesh name="debug_lod_mesh.lod2" argument="1.000, 1.000, 1.000, 1.000"/>
+						<mesh name="debug_lod_mesh.lod3" argument="1.000, 1.000, 1.000, 1.000"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="side" old_prefab_name="">
+				<tags>
+					<tag name="right"/>
+				</tags>
+				<physics mass="1.000"/>
+				<children>
+					<game_entity name="icon_man" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="open"/>
+						</tags>
+						<transform position="-0.888, 1.066, 0.150"/>
+						<physics mass="1.000"/>
+						<components>
+							<meta_mesh_component name="icon_man"/>
+						</components>
+						<scripts>
+							<script name="StandingPointWithTeamLimit">
+								<variables>
+									<variable name="WaypointTag" value="aiwaypoint"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="icon_man" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="close"/>
+						</tags>
+						<transform position="-0.890, -1.049, 0.150"/>
+						<physics mass="1.000"/>
+						<components>
+							<meta_mesh_component name="icon_man"/>
+						</components>
+						<scripts>
+							<script name="StandingPoint">
+								<variables>
+									<variable name="WaypointTag" value="aiwaypoint"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="icon_man" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="close"/>
+						</tags>
+						<transform position="-0.890, 1.055, 0.150"/>
+						<physics mass="1.000"/>
+						<components>
+							<meta_mesh_component name="icon_man"/>
+						</components>
+						<scripts>
+							<script name="StandingPoint">
+								<variables>
+									<variable name="WaypointTag" value="aiwaypoint"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="icon_man" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="open"/>
+						</tags>
+						<transform position="-0.888, -1.063, 0.150"/>
+						<physics mass="1.000"/>
+						<components>
+							<meta_mesh_component name="icon_man"/>
+						</components>
+						<scripts>
+							<script name="StandingPoint">
+								<variables>
+									<variable name="WaypointTag" value="aiwaypoint"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="clean" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="gate"/>
+					<tag name="state_0"/>
+					<tag name="reference"/>
+					<tag name="operational"/>
+				</tags>
+				<physics mass="1.000"/>
+				<skeleton skeleton_model="european_sally_door_a_skeleton">
+					<components>
+						<meta_mesh_component name="european_sally_door_a_state1"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="collider" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="0"/>
+							<tag name="collider_r"/>
+						</tags>
+						<physics shape="bo_european_sally_door_a_state1" mass="1.000"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="state2" old_prefab_name="" visible="false" mobility="1">
+				<tags>
+					<tag name="reference"/>
+					<tag name="gate"/>
+					<tag name="state_2"/>
+				</tags>
+				<physics mass="1.000"/>
+				<skeleton skeleton_model="european_sally_door_a_skeleton">
+					<components>
+						<meta_mesh_component name="european_sally_door_a_state3"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="collider_r" old_prefab_name="">
+						<tags>
+							<tag name="collider_r"/>
+							<tag name="2"/>
+						</tags>
+						<physics shape="bo_european_sally_door_a_state3" mass="1.000"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="state1" old_prefab_name="" visible="false" mobility="1">
+				<tags>
+					<tag name="reference"/>
+					<tag name="gate"/>
+					<tag name="state_1"/>
+				</tags>
+				<physics mass="1.000"/>
+				<skeleton skeleton_model="european_sally_door_a_skeleton">
+					<components>
+						<meta_mesh_component name="european_sally_door_a_state2"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="collider_r" old_prefab_name="">
+						<tags>
+							<tag name="1"/>
+							<tag name="collider_r"/>
+						</tags>
+						<physics shape="bo_european_sally_door_a_state2" mass="1.000"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="state3" old_prefab_name="" visible="false" mobility="1">
+				<tags>
+					<tag name="reference"/>
+					<tag name="gate"/>
+					<tag name="state_3"/>
+				</tags>
+				<transform position="0.000, 1.190, 0.000"/>
+				<physics mass="1.000"/>
+				<components>
+					<meta_mesh_component name="european_sally_door_a_state4"/>
+				</components>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="gate_plank" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="plank"/>
+				</tags>
+				<physics mass="1.000"/>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="collider_agent_r" old_prefab_name="">
+				<tags>
+					<tag name="collider_agent_r"/>
+				</tags>
+				<physics shape="bo_european_sally_door_a_state1" mass="1.000"/>
+			</game_entity>
+			<game_entity name="collider_agent_l" old_prefab_name="">
+				<tags>
+					<tag name="collider_agent_l"/>
+				</tags>
+				<physics shape="bo_european_sally_door_a_state1" mass="1.000"/>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

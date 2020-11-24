@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NPCCharacters>
+  <NPCCharacter id="tutorial_npc_brother" default_group="Infantry" age="25" is_hero="true" is_female="false" culture="Culture.battania" name="{=!}(Brother name set by culture)" banner_symbol_mesh_name="test_symbol_a" occupation="Lord" banner_symbol_color="FF000000">
+    <face>
+      <BodyProperties version="4" key="0005440580BC200266EA9979568344848885462866B3674479986B98949492360003365303678747000000000000000000000000000000000000000000F40081" />
+    </face>
+    <skills></skills>
+    <Traits>
+      <Trait id="HopliteFightingSkills" value="5" />
+      <Trait id="Commander" value="7" />
+      <Trait id="Politician" value="5" />
+      <Trait id="Manager" value="8" />
+      <Trait id="Valor" value="1" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+    <equipmentSet>
+      <equipment slot="Item0" id="Item.narrow_sword_t3" />
+      <equipment slot="Item1" id="Item.heavy_round_shield" />
+      <equipment slot="Head" id="Item.nasal_helmet_with_mail" />
+      <equipment slot="Body" id="Item.heavy_nordic_tunic" />
+      <equipment slot="Leg" id="Item.strapped_shoes" />
+      <equipment slot="Cape" id="Item.padded_leather_shoulders" />
+      <equipment slot="Horse" id="Item.noble_horse" />
+      <equipment slot="HorseHarness" id="Item.chain_horse_harness" />
+    </equipmentSet>
+    <equipmentSet civilian="true">
+      <equipment slot="Item0" id="Item.narrow_sword_t3" />
+      <equipment slot="Head" id="Item.nordic_leather_cap" />
+      <equipment slot="Body" id="Item.tunic_with_rolled_cloth" />
+      <equipment slot="Leg" id="Item.strapped_shoes" />
+      <equipment slot="Gloves" id="Item.leather_gloves" />
+      <equipment slot="Horse" id="Item.noble_horse" />
+      <equipment slot="HorseHarness" id="Item.desert_cloth_harness" />
+    </equipmentSet>
+  </NPCCharacter>
+  <NPCCharacter id="storymode_little_brother" default_group="Infantry" age="11" is_hero="true" is_female="false" culture="Culture.battania" name="{=!}(Little brother name set by culture)" banner_symbol_mesh_name="test_symbol_a" occupation="Lord" banner_symbol_color="FF000000">
+    <face>
+      <BodyProperties version="4" key="0005440580BC200266EA9979568344848885462866B3674479986B98949492360003365303678747000000000000000000000000000000000000000000F40081" />
+    </face>
+    <equipmentSet>
+      <equipment slot="Item0" id="Item.narrow_sword_t3" />
+      <equipment slot="Item1" id="Item.heavy_round_shield" />
+      <equipment slot="Head" id="Item.nasal_helmet_with_mail" />
+      <equipment slot="Body" id="Item.heavy_nordic_tunic" />
+      <equipment slot="Leg" id="Item.strapped_shoes" />
+      <equipment slot="Cape" id="Item.padded_leather_shoulders" />
+      <equipment slot="Horse" id="Item.noble_horse" />
+      <equipment slot="HorseHarness" id="Item.chain_horse_harness" />
+    </equipmentSet>
+    <equipmentSet civilian="true">
+      <equipment slot="Item0" id="Item.narrow_sword_t3" />
+      <equipment slot="Head" id="Item.nordic_leather_cap" />
+      <equipment slot="Body" id="Item.tunic_with_rolled_cloth" />
+      <equipment slot="Leg" id="Item.strapped_shoes" />
+      <equipment slot="Gloves" id="Item.leather_gloves" />
+      <equipment slot="Horse" id="Item.noble_horse" />
+      <equipment slot="HorseHarness" id="Item.desert_cloth_harness" />
+    </equipmentSet>
+  </NPCCharacter>
+  <NPCCharacter id="storymode_little_sister" default_group="Infantry" age="14" is_hero="true" is_female="true" culture="Culture.battania" name="{=!}(Little sister name set by culture)" banner_symbol_mesh_name="test_symbol_a" occupation="Lord" banner_symbol_color="FF000000">
+    <face>
+      <BodyProperties version="4" key="0005440580BC200266EA9979568344848885462866B3674479986B98949492360003365303678747000000000000000000000000000000000000000000F40081" />
+    </face>
+    <equipmentSet>
+      <equipment slot="Item0" id="Item.narrow_sword_t3" />
+      <equipment slot="Item1" id="Item.heavy_round_shield" />
+      <equipment slot="Head" id="Item.nasal_helmet_with_mail" />
+      <equipment slot="Body" id="Item.heavy_nordic_tunic" />
+      <equipment slot="Leg" id="Item.strapped_shoes" />
+      <equipment slot="Cape" id="Item.padded_leather_shoulders" />
+      <equipment slot="Horse" id="Item.noble_horse" />
+      <equipment slot="HorseHarness" id="Item.chain_horse_harness" />
+    </equipmentSet>
+    <equipmentSet civilian="true">
+      <equipment slot="Item0" id="Item.narrow_sword_t3" />
+      <equipment slot="Head" id="Item.nordic_leather_cap" />
+      <equipment slot="Body" id="Item.tunic_with_rolled_cloth" />
+      <equipment slot="Leg" id="Item.strapped_shoes" />
+      <equipment slot="Gloves" id="Item.leather_gloves" />
+      <equipment slot="Horse" id="Item.noble_horse" />
+      <equipment slot="HorseHarness" id="Item.desert_cloth_harness" />
+    </equipmentSet>
+  </NPCCharacter>
+  <!-- a doctor, should be in his 40s. Dressed in rags -->
+  <NPCCharacter id="tutorial_npc_tacitus" default_group="Infantry" is_hero="true" is_female="false" age="42" culture="Culture.empire" name="{=O8QblvbQ}Tacteos" banner_symbol_mesh_name="test_symbol_a" occupation="Special" banner_symbol_color="FF000000">
+    <face>
+      <BodyProperties version="3" age="62.67" weight="0.9697" build="0.4981" key="00050802C0BC0386418CDCB6143C033A518C7B8342438BA23BA3BF44854596B70967F69A063A3AC60000000000000000000000000000000000000000002C2000" />
+    </face>
+    <skills></skills>
+    <Traits>
+      <Trait id="HopliteFightingSkills" value="2" />
+      <Trait id="Commander" value="2" />
+      <Trait id="Politician" value="5" />
+      <Trait id="Manager" value="8" />
+      <Trait id="Valor" value="-1" />
+      <Trait id="Mercy" value="1" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+    <equipmentSet>
+      <equipment slot="Item0" id="Item.short_sword_t3" />
+      <equipment slot="Item1" id="Item.heavy_round_shield" />
+      <equipment slot="Body" id="Item.fine_town_tunic" />
+      <equipment slot="Leg" id="Item.leather_cavalier_boots" />
+      <equipment slot="Cape" id="Item.scarf" />
+      <equipment slot="Horse" id="Item.noble_horse" />
+      <equipment slot="HorseHarness" id="Item.chain_horse_harness" />
+    </equipmentSet>
+    <equipmentSet civilian="true">
+      <equipment slot="Item0" id="Item.short_sword_t3" />
+      <equipment slot="Head" id="Item.nordic_leather_cap" />
+      <equipment slot="Body" id="Item.fine_town_tunic" />
+      <equipment slot="Leg" id="Item.leather_cavalier_boots" />
+      <equipment slot="Cape" id="Item.scarf" />
+      <equipment slot="Gloves" id="Item.leather_gloves" />
+      <equipment slot="Horse" id="Item.noble_horse" />
+    </equipmentSet>
+  </NPCCharacter>
+  <NPCCharacter id="tutorial_npc_radagos" default_group="Infantry" is_hero="true" is_female="false" culture="Culture.empire" name="{=No2HgX5E}Radagos" age="32" level="12" banner_symbol_mesh_name="test_symbol_a" occupation="Special" banner_symbol_color="FF000000">
+    <face>
+      <BodyProperties version="3" age="31.74" weight="0.822" build="0.6786" key="001C200A0E00118529F5523E705794B632FEEA7FF3001701B8B544449D9A3A0302DAC624028797130000000000000000000000000000000000000000005C3000" />
+    </face>
+    <skills></skills>
+    <Traits>
+      <Trait id="HopliteFightingSkills" value="4" />
+      <Trait id="Commander" value="6" />
+      <Trait id="Politician" value="3" />
+      <Trait id="Manager" value="6" />
+      <Trait id="Valor" value="1" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+    <equipmentSet>
+      <equipment slot="Item0" id="Item.aserai_mace_1_t2" />
+      <equipment slot="Head" id="Item.nasal_helmet_with_mail" />
+      <equipment slot="Body" id="Item.mail_shirt" />
+      <equipment slot="Gloves" id="Item.buttoned_leather_bracers" />
+      <equipment slot="Leg" id="Item.empire_horseman_boots" />
+      <equipment slot="Cape" id="Item.bearskin" />
+      <equipment slot="Horse" id="Item.noble_horse" />
+      <equipment slot="HorseHarness" id="Item.chain_horse_harness" />
+    </equipmentSet>
+    <equipmentSet civilian="true">
+      <equipment slot="Item0" id="Item.empire_noble_sword_1_t5" />
+      <equipment slot="Head" id="Item.nordic_leather_cap" />
+      <equipment slot="Body" id="Item.merchants_fur_coat" />
+      <equipment slot="Leg" id="Item.fine_town_boots" />
+      <equipment slot="Gloves" id="Item.leather_gloves" />
+      <equipment slot="Horse" id="Item.noble_horse" />
+    </equipmentSet>
+  </NPCCharacter>
+  <NPCCharacter id="storymode_quest_raider" default_group="Infantry" name="{=IMwAoSax}Radagos's Raider" level="6" occupation="Bandit" culture="Culture.looters">
+    <face>
+      <BodyProperties version="4" age="48.18" weight="0.5035" build="0.5657" key="00000000000000000000000000080000000000000000000000000000000000000008800808000000000000000000000000000000000000000000000000F00000" />
+      <BodyPropertiesMax version="4" age="69.27" weight="0.4547" build="0.5657" key="001CFC0FDA0038D1FFFFFFFFFFF7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000870060FFFFFFF000000000000000000000000000000000000000000C87182" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="30" />
+      <skill id="Bow" value="20" />
+      <skill id="OneHanded" value="40" />
+      <skill id="Polearm" value="30" />
+      <skill id="Riding" value="0" />
+      <skill id="Throwing" value="40" />
+      <skill id="TwoHanded" value="20" />
+    </skills>
+    <equipmentSet civilian="true">
+      <equipment slot="Item0" id="Item.battania_mace_2_t2" />
+      <equipment slot="Body" id="Item.bandit_gambeson" />
+      <equipment slot="Leg" id="Item.leather_cavalier_boots" />
+      <equipment slot="Gloves" id="Item.eastern_wrapped_armguards" />
+    </equipmentSet>
+    <equipmentSet>
+      <equipment slot="Item0" id="Item.battania_mace_1_t2" />
+      <equipment slot="Body" id="Item.bandit_fur_a" />
+      <equipment slot="Leg" id="Item.leather_cavalier_boots" />
+      <equipment slot="Gloves" id="Item.rough_tied_bracers" />
+    </equipmentSet>
+    <equipmentSet>
+      <equipment slot="Item0" id="Item.battania_sword_1_t2" />
+      <equipment slot="Body" id="Item.vlandia_bandit_a" />
+      <equipment slot="Leg" id="Item.leather_cavalier_boots" />
+      <equipment slot="Gloves" id="Item.rough_tied_bracers" />
+    </equipmentSet>
+    <equipmentSet>
+      <equipment slot="Item0" id="Item.battania_axe_1_t2" />
+      <equipment slot="Item1" id="Item.throwing_stone" />
+      <equipment slot="Body" id="Item.bandit_gambeson" />
+      <equipment slot="Leg" id="Item.leather_cavalier_boots" />
+      <equipment slot="Gloves" id="Item.eastern_wrapped_armguards" />
+    </equipmentSet>
+  </NPCCharacter>
+  <NPCCharacter id="storymode_quest_refugee_male" name="{=MrpOJn2h}Refugee" default_group="Infantry" is_hero="false" is_female="false" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Villager" culture="Culture.empire" skill_template="NPCCharacter.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="NPCCharacter.villager_empire" />
+    </face>
+    <skills></skills>
+    <equipmentSet>
+      <equipment slot="Head" id="Item.nordic_leather_cap" />
+      <equipment slot="Body" id="Item.cloth_tunic" />
+      <equipment slot="Leg" id="Item.strapped_shoes" />
+    </equipmentSet>
+    <equipmentSet>
+      <equipment slot="Body" id="Item.bandit_leather_water_flask" />
+      <equipment slot="Leg" id="Item.strapped_shoes" />
+    </equipmentSet>
+    <equipmentSet>
+      <equipment slot="Body" id="Item.torn_bandit_clothes" />
+      <equipment slot="Leg" id="Item.strapped_shoes" />
+    </equipmentSet>
+  </NPCCharacter>
+  <NPCCharacter id="storymode_quest_refugee_female" name="{=MrpOJn2h}Refugee" default_group="Infantry" is_female="true" is_hero="false" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Villager" culture="Culture.empire" skill_template="NPCCharacter.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="NPCCharacter.villager_empire" />
+    </face>
+    <skills></skills>
+    <equipmentSet>
+      <equipment slot="Head" id="Item.head_wrapped" />
+      <equipment slot="Body" id="Item.vlandian_dress" />
+      <equipment slot="Leg" id="Item.ladys_shoe" />
+    </equipmentSet>
+    <equipmentSet>
+      <equipment slot="Head" id="Item.headscarf_c" />
+      <equipment slot="Body" id="Item.bandit_leather_water_flask" />
+      <equipment slot="Leg" id="Item.ladys_shoe" />
+    </equipmentSet>
+    <equipmentSet>
+      <equipment slot="Head" id="Item.headscarf" />
+      <equipment slot="Body" id="Item.plain_dress" />
+      <equipment slot="Leg" id="Item.ladys_shoe" />
+    </equipmentSet>
+  </NPCCharacter>
+  <NPCCharacter id="tutorial_placeholder_volunteer" default_group="Ranged" level="21" civilianTemplate="NPCCharacter.empire_troop_civilian_template_t1" name="{=kfhY01a7}Headman's Troop" occupation="Soldier" culture="Culture.empire">
+    <face>
+      <BodyProperties version="4" age="90" weight="0.5035" build="0.5657" key="0016B80CC000300D7C7664876753888A7577866254C69643C4B647398C95A03701A776140AA7497300000000000000000000000000000000000000001F647002" />
+      <BodyPropertiesMax version="4" age="120" weight="0.4547" build="0.5657" key="001C5C044000290567BBB9B9D759989595C687286A45999568A992398C55A5760D8776DD08B5C9880000000000000000000000000000000000000000430C0082" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="100" />
+      <skill id="Riding" value="140" />
+      <skill id="OneHanded" value="140" />
+      <skill id="TwoHanded" value="40" />
+      <skill id="Polearm" value="170" />
+      <skill id="Bow" value="100" />
+      <skill id="Crossbow" value="15" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <equipmentSet>
+      <equipment slot="Item2" id="Item.empire_sword_2_t3" />
+      <equipment slot="Item1" id="Item.bound_horsemans_kite_shield" />
+      <equipment slot="Item0" id="Item.western_spear_3_t3" />
+      <equipment slot="Body" id="Item.footmans_tunic" />
+      <equipment slot="Cape" id="Item.scarf" />
+      <equipment slot="Gloves" id="Item.leather_gloves" />
+      <equipment slot="Head" id="Item.merchants_hat" />
+      <equipment slot="Leg" id="Item.leather_cavalier_boots" />
+      <equipment slot="Horse" id="Item.empire_horse" />
+      <equipment slot="HorseHarness" id="Item.stripped_leather_harness" />
+    </equipmentSet>
+    <equipmentSet>
+      <equipment slot="Item2" id="Item.empire_sword_2_t3" />
+      <equipment slot="Item1" id="Item.bound_horsemans_kite_shield" />
+      <equipment slot="Item0" id="Item.western_spear_3_t3" />
+      <equipment slot="Body" id="Item.footmans_tunic" />
+      <equipment slot="Head" id="Item.laced_coif" />
+      <equipment slot="Leg" id="Item.leather_cavalier_boots" />
+      <equipment slot="Horse" id="Item.empire_horse" />
+      <equipment slot="HorseHarness" id="Item.stripped_leather_harness" />
+    </equipmentSet>
+    <equipmentSet>
+      <equipment slot="Item2" id="Item.empire_sword_2_t3" />
+      <equipment slot="Item1" id="Item.bound_horsemans_kite_shield" />
+      <equipment slot="Item0" id="Item.western_spear_3_t3" />
+      <equipment slot="Head" id="Item.arming_coif" />
+      <equipment slot="Body" id="Item.tunic_with_shoulder_pads" />
+      <equipment slot="Leg" id="Item.leather_cavalier_boots" />
+      <equipment slot="Cape" id="Item.scarf" />
+      <equipment slot="Horse" id="Item.empire_horse" />
+      <equipment slot="HorseHarness" id="Item.stripped_leather_harness" />
+    </equipmentSet>
+    <equipmentSet>
+      <equipment slot="Item2" id="Item.empire_sword_2_t3" />
+      <equipment slot="Item1" id="Item.bound_horsemans_kite_shield" />
+      <equipment slot="Item0" id="Item.western_spear_3_t3" />
+      <equipment slot="Head" id="Item.arming_coif" />
+      <equipment slot="Body" id="Item.tunic_with_shoulder_pads" />
+      <equipment slot="Leg" id="Item.leather_cavalier_boots" />
+      <equipment slot="Horse" id="Item.empire_horse" />
+      <equipment slot="HorseHarness" id="Item.stripped_leather_harness" />
+    </equipmentSet>
+    <equipmentSet>
+      <equipment slot="Item2" id="Item.empire_sword_2_t3" />
+      <equipment slot="Item1" id="Item.bound_horsemans_kite_shield" />
+      <equipment slot="Item0" id="Item.western_spear_3_t3" />
+      <equipment slot="Body" id="Item.tunic_with_shoulder_pads" />
+      <equipment slot="Gloves" id="Item.leather_gloves" />
+      <equipment slot="Leg" id="Item.leather_cavalier_boots" />
+      <equipment slot="Horse" id="Item.empire_horse" />
+      <equipment slot="HorseHarness" id="Item.stripped_leather_harness" />
+    </equipmentSet>
+  </NPCCharacter>
+  <NPCCharacter id="storymode_imperial_mentor_istiana" name="{=uCmEaWOI}Istiana" age="50" is_female="true" battleTemplate="NPCCharacter.emp_bat_template_lady" civilianTemplate="NPCCharacter.emp_noncom_template_stoic" default_group="Infantry" is_hero="true" culture="Culture.empire" occupation="Special">
+    <face>
+      <BodyProperties version="3" age="102.37" weight="0.4422" build="0.5789" key="0005580FC03C200BDB84B49DACA43AB73D8087C8B504F703DAAC6C108CDCA6990BA976BC0AA8F58C0000000000000000000000000000000000000000003C1040" />
+    </face>
+    <Traits>
+      <Trait id="BalancedFightingSkills" value="0" />
+      <Trait id="Commander" value="8" />
+      <Trait id="Politician" value="6" />
+      <Trait id="Manager" value="7" />
+      <Trait id="Valor" value="1" />
+      <Trait id="Honor" value="1" />
+      <Trait id="Generosity" value="-1" />
+      <Trait id="Oligarchic" value="1" />
+    </Traits>
+    <!-- Should not have any armor -->
+    <equipmentSet>
+      <equipment slot="Item0" id="Item.empire_sword_3_t3" />
+      <equipment slot="Head" id="Item.ironlame_feathered_spangenhelm_over_mail" />
+      <equipment slot="Body" id="Item.empire_horseman_armor" />
+      <equipment slot="Gloves" id="Item.decorated_imperial_gauntlets" />
+      <equipment slot="Leg" id="Item.decorated_imperial_boots" />
+      <equipment slot="Horse" id="Item.noble_horse" />
+      <equipment slot="HorseHarness" id="Item.chain_horse_harness" />
+    </equipmentSet>
+    <equipmentSet civilian="true">
+      <equipment slot="Body" id="Item.vlandian_woman_dress" />
+      <equipment slot="Leg" id="Item.ladys_shoe" />
+      <equipment slot="Cape" id="Item.scarf" />
+      <equipment slot="Horse" id="Item.noble_horse" />
+    </equipmentSet>
+  </NPCCharacter>
+  <NPCCharacter id="storymode_imperial_mentor_arzagos" name="{=daOtjNZp}Arzagos" age="46" is_female="false" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_northfrontier" default_group="Infantry" is_hero="true" culture="Culture.empire" occupation="Special">
+    <!-- Empire culture because he's from a Thracian-ligroup that has been subsumed by the empire-->
+    <face>
+      <BodyProperties version="4" key="0011380440002305847779D6677788B99369769659B8C76239C55C6497EC56D9000C7D350C3272C50000037F0000000F00000037049140010000000001683000" />
+    </face>
+    <Traits>
+      <Trait id="BalancedFightingSkills" value="5" />
+      <Trait id="KnightFightingSkills" value="1" />
+      <Trait id="Commander" value="8" />
+      <Trait id="Politician" value="6" />
+      <Trait id="Manager" value="7" />
+      <Trait id="Valor" value="1" />
+      <Trait id="Honor" value="1" />
+      <Trait id="Generosity" value="-1" />
+      <Trait id="Oligarchic" value="1" />
+    </Traits>
+    <equipmentSet>
+      <equipment slot="Item0" id="Item.empire_noble_sword_2_t5" />
+      <equipment slot="Head" id="Item.ironlame_feathered_spangenhelm_over_mail" />
+      <equipment slot="Body" id="Item.decorated_nordic_hauberk" />
+      <equipment slot="Gloves" id="Item.buttoned_leather_bracers" />
+      <equipment slot="Leg" id="Item.leather_cavalier_boots" />
+      <equipment slot="Horse" id="Item.noble_horse" />
+      <equipment slot="Cape" id="Item.bearskin" />
+      <equipment slot="HorseHarness" id="Item.chain_horse_harness" />
+    </equipmentSet>
+    <equipmentSet civilian="true">
+      <equipment slot="Body" id="Item.northern_padded_cloth" />
+      <equipment slot="Leg" id="Item.leather_cavalier_boots" />
+      <equipment slot="Horse" id="Item.noble_horse" />
+    </equipmentSet>
+  </NPCCharacter>
+  <NPCCharacter id="tutorial_npc_ranged" default_group="Infantry" is_hero="false" is_female="false" level="10" culture="Culture.battania" name="{=8AHT9pt5}Training Master" banner_symbol_mesh_name="test_symbol_a" occupation="Lord" banner_symbol_color="FF000000">
+    <face>
+      <BodyProperties version="4" age="57.59" weight="0.2701" build="0.341" key="0016040700B409525B5512B747B8C347BBBB35325965F4C188BB967883B8924405C546570C932888000000000000000000000000000000000000000013943102" />
+    </face>
+    <skills></skills>
+    <Traits>
+      <Trait id="HopliteFightingSkills" value="5" />
+      <Trait id="Commander" value="7" />
+      <Trait id="Politician" value="5" />
+      <Trait id="Manager" value="8" />
+      <Trait id="Valor" value="1" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+    <equipmentSet>
+      <equipment slot="Item0" id="Item.lowland_longbow" />
+      <equipment slot="Item1" id="Item.bodkin_arrows_a" />
+      <equipment slot="Head" id="Item.nasal_helmet_with_mail" />
+      <equipment slot="Body" id="Item.heavy_nordic_tunic" />
+      <equipment slot="Leg" id="Item.strapped_shoes" />
+      <equipment slot="Cape" id="Item.padded_leather_shoulders" />
+      <equipment slot="Horse" id="Item.noble_horse" />
+      <equipment slot="HorseHarness" id="Item.chain_horse_harness" />
+    </equipmentSet>
+    <equipmentSet civilian="true">
+      <equipment slot="Item0" id="Item.wooden_sword_t1" />
+      <equipment slot="Head" id="Item.nordic_leather_cap" />
+      <equipment slot="Body" id="Item.tunic_with_rolled_cloth" />
+      <equipment slot="Leg" id="Item.strapped_shoes" />
+      <equipment slot="Gloves" id="Item.leather_gloves" />
+      <equipment slot="Horse" id="Item.noble_horse" />
+    </equipmentSet>
+  </NPCCharacter>
+  <NPCCharacter id="tutorial_npc_basic_melee" default_group="Infantry" is_hero="true" is_female="false" level="10" culture="Culture.battania" name="{=8AHT9pt5}Training Master" banner_symbol_mesh_name="test_symbol_a" occupation="Soldier" banner_symbol_color="FF000000">
+    <face>
+      <BodyProperties version="4" age="39.2" weight="0.9429" build="1" key="00009404407013C98293349C534CC4AB76CE8897E5529C6484A5CA2A6AA99424036FE635066A7389000000000000000000000000000000000000000062BC10C2" />
+    </face>
+    <skills></skills>
+    <Traits>
+      <Trait id="HopliteFightingSkills" value="5" />
+      <Trait id="Commander" value="7" />
+      <Trait id="Politician" value="5" />
+      <Trait id="Manager" value="8" />
+      <Trait id="Valor" value="1" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+    <equipmentSet>
+      <equipment slot="Item0" id="Item.wooden_sword_t1" />
+      <equipment slot="Item1" id="Item.bound_horsemans_kite_shield" />
+      <equipment slot="Body" id="Item.empire_warrior_padded_armor_b" />
+      <equipment slot="Leg" id="Item.strapped_shoes" />
+      <equipment slot="Horse" id="Item.noble_horse" />
+      <equipment slot="HorseHarness" id="Item.chain_horse_harness" />
+    </equipmentSet>
+    <equipmentSet civilian="true">
+      <equipment slot="Item0" id="Item.wooden_sword_t1" />
+      <equipment slot="Body" id="Item.empire_warrior_padded_armor_b" />
+      <equipment slot="Leg" id="Item.strapped_shoes" />
+      <equipment slot="Horse" id="Item.noble_horse" />
+      <equipment slot="HorseHarness" id="Item.desert_cloth_harness" />
+    </equipmentSet>
+  </NPCCharacter>
+  <NPCCharacter id="tutorial_npc_advanced_melee_easy" default_group="Infantry" is_hero="true" level="4" is_female="false" culture="Culture.battania" name="{=8AHT9pt5}Training Master" banner_symbol_mesh_name="test_symbol_a" occupation="Soldier" banner_symbol_color="FF000000">
+    <face>
+      <BodyProperties version="4" age="29.66" weight="0.1898" build="0.446" key="00055404405805D2874636458A386372BA6AB264C6B9CB7ABC2B9B4BB29A787201573613056457B4000000000000000000000000000000000000000058B44002" />
+    </face>
+    <skills></skills>
+    <Traits>
+      <Trait id="HopliteFightingSkills" value="5" />
+      <Trait id="Commander" value="7" />
+      <Trait id="Politician" value="5" />
+      <Trait id="Manager" value="8" />
+      <Trait id="Valor" value="1" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+    <equipmentSet>
+      <equipment slot="Item0" id="Item.wooden_sword_t1" />
+      <equipment slot="Item1" id="Item.bound_horsemans_kite_shield" />
+      <equipment slot="Body" id="Item.tunic_with_shoulder_pads" />
+      <equipment slot="Leg" id="Item.leather_cavalier_boots" />
+      <equipment slot="Cape" id="Item.scarf" />
+      <equipment slot="Horse" id="Item.noble_horse" />
+      <equipment slot="HorseHarness" id="Item.chain_horse_harness" />
+    </equipmentSet>
+    <equipmentSet civilian="true">
+      <equipment slot="Item0" id="Item.wooden_sword_t1" />
+      <equipment slot="Item1" id="Item.heavy_round_shield" />
+      <equipment slot="Body" id="Item.tunic_with_shoulder_pads" />
+      <equipment slot="Leg" id="Item.leather_cavalier_boots" />
+      <equipment slot="Cape" id="Item.scarf" />
+      <equipment slot="Horse" id="Item.noble_horse" />
+      <equipment slot="HorseHarness" id="Item.desert_cloth_harness" />
+    </equipmentSet>
+  </NPCCharacter>
+  <NPCCharacter id="tutorial_npc_advanced_melee_normal" default_group="Infantry" is_hero="true" level="15" is_female="false" culture="Culture.battania" name="{=8AHT9pt5}Training Master" banner_symbol_mesh_name="test_symbol_a" occupation="Soldier" banner_symbol_color="FF000000">
+    <face>
+      <BodyProperties version="4" age="109.85" weight="0.9769" build="0.8904" key="0011000017CC2153C87C765C76A348EA725B6A9A7988A21598B692967DA6B1540CDDF6CD0D689A44000000000000000000000000000000000000000067C42042" />
+    </face>
+    <skills></skills>
+    <Traits>
+      <Trait id="HopliteFightingSkills" value="5" />
+      <Trait id="Commander" value="7" />
+      <Trait id="Politician" value="5" />
+      <Trait id="Manager" value="8" />
+      <Trait id="Valor" value="1" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+    <equipmentSet>
+      <equipment slot="Item0" id="Item.wooden_2hsword_t1" />
+      <equipment slot="Body" id="Item.padded_cloth_with_strips" />
+      <equipment slot="Leg" id="Item.leather_cavalier_boots" />
+      <equipment slot="Horse" id="Item.noble_horse" />
+      <equipment slot="HorseHarness" id="Item.chain_horse_harness" />
+    </equipmentSet>
+    <equipmentSet civilian="true">
+      <equipment slot="Item0" id="Item.wooden_2hsword_t1" />
+      <equipment slot="Body" id="Item.padded_cloth_with_strips" />
+      <equipment slot="Leg" id="Item.leather_cavalier_boots" />
+      <equipment slot="Horse" id="Item.noble_horse" />
+      <equipment slot="HorseHarness" id="Item.desert_cloth_harness" />
+    </equipmentSet>
+  </NPCCharacter>
+  <NPCCharacter id="radagos_henchman" default_group="Infantry" age="30" is_hero="true" is_female="false" culture="Culture.empire" name="{=SLxnu4XO}Galter" banner_symbol_mesh_name="test_symbol_a" occupation="Special" banner_symbol_color="FF000000">
+    <face>
+      <BodyProperties version="4" weight="0.5" build="0.5" key="000BAC0FC0CC1140C779CBCA79357394767BB4A774679B95CB88903C8A4C3B9601977614097C9775000000000000000000000000000000000000000059241102" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="70" />
+      <skill id="Bow" value="20" />
+      <skill id="OneHanded" value="40" />
+      <skill id="Polearm" value="30" />
+      <skill id="Riding" value="0" />
+      <skill id="Throwing" value="40" />
+      <skill id="TwoHanded" value="30" />
+    </skills>
+    <Traits>
+      <Trait id="HopliteFightingSkills" value="5" />
+      <Trait id="Commander" value="1" />
+      <Trait id="Politician" value="2" />
+      <Trait id="Manager" value="2" />
+      <Trait id="Valor" value="1" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+    <equipmentSet>
+      <equipment slot="Item0" id="battania_2hsword_1_t2" />
+      <equipment slot="Body" id="Item.sleeveless_studded_fur_armor" />
+      <equipment slot="Gloves" id="Item.buttoned_leather_bracers" />
+      <equipment slot="Leg" id="Item.empire_horseman_boots" />
+    </equipmentSet>
+    <equipmentSet civilian="true">
+      <equipment slot="Item0" id="battania_2hsword_1_t2" />
+      <equipment slot="Body" id="Item.sleeveless_studded_fur_armor" />
+      <equipment slot="Gloves" id="Item.buttoned_leather_bracers" />
+      <equipment slot="Leg" id="Item.empire_horseman_boots" />
+    </equipmentSet>
+  </NPCCharacter>
+   <NPCCharacter id="tutorial_npc_mounted_ai" default_group="Infantry" is_hero="true" level="4" is_female="false" culture="Culture.battania" name="{=8AHT9pt5}Training Master" banner_symbol_mesh_name="test_symbol_a" occupation="Soldier" banner_symbol_color="FF000000">
+    <face>
+      <BodyProperties version="4" age="29.66" weight="0.1898" build="0.446" key="00055404405805D2874636458A386372BA6AB264C6B9CB7ABC2B9B4BB29A787201573613056457B4000000000000000000000000000000000000000058B44002" />
+    </face>
+    <skills></skills>
+    <Traits>
+      <Trait id="HopliteFightingSkills" value="5" />
+      <Trait id="Commander" value="7" />
+      <Trait id="Politician" value="5" />
+      <Trait id="Manager" value="8" />
+      <Trait id="Valor" value="1" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+    <equipmentSet>
+      <equipment slot="Item0" id="Item.wooden_sword_t1" />
+      <equipment slot="Item1" id="Item.bound_horsemans_kite_shield" />
+      <equipment slot="Body" id="Item.tunic_with_shoulder_pads" />
+      <equipment slot="Leg" id="Item.leather_cavalier_boots" />
+      <equipment slot="Cape" id="Item.scarf" />
+      <equipment slot="Horse" id="Item.noble_horse" />
+      <equipment slot="HorseHarness" id="Item.chain_horse_harness" />
+    </equipmentSet>
+    <equipmentSet civilian="true">
+      <equipment slot="Item0" id="Item.wooden_sword_t1" />
+      <equipment slot="Item1" id="Item.heavy_round_shield" />
+      <equipment slot="Body" id="Item.tunic_with_shoulder_pads" />
+      <equipment slot="Leg" id="Item.leather_cavalier_boots" />
+      <equipment slot="Cape" id="Item.scarf" />
+      <equipment slot="Horse" id="Item.noble_horse" />
+      <equipment slot="HorseHarness" id="Item.desert_cloth_harness" />
+    </equipmentSet>
+  </NPCCharacter>
+</NPCCharacters>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Türkçe" />
+  </tags>
+  <strings>
+    <string id="3CpNUnVl" text="İptal" />
+    <string id="5zeL8sa9" text="{A0} Nüfuz kazandın." />
+    <string id="6qYaQkDD" text="{COUNT} + {PRISONER_COUNT}p" />
+    <string id="7WdWK2Dt" text="Oyunu Kaydet" />
+    <string id="8OkPHu4f" text="Hayır" />
+    <string id="9NuttOBC" text="Yükle" />
+    <string id="aeouhelq" text="Evet" />
+    <string id="Ahy035gM" text="İnşaat Maliyeti" />
+    <string id="azJulvrp" text="{? IS_BETTING}Eğer çekilirsen{BET_AMOUNT}{GOLD_ICON} kaybedeceksin.{Newline}{?}{\?}Gerçekten çekilmek istiyor musun?" />
+    <string id="bV75iwKa" text="Kaydet" />
+    <string id="CiIWjF3f" text="+{PRISONERAMOUNT}p" />
+    <string id="eiWQoW9j" text="{A0} Nam kazandın." />
+    <string id="eL8nhkhQ" text="Yeni Kayıt Oluştur" />
+    <string id="eTw2aNV5" text="+" />
+    <string id="GAWxyVgq" text="Sil" />
+    <string id="GZWPHmAw" text="Gün: {DAY}" />
+    <string id="HH2mZq8J" text="Bu kayıtlı oyunu silmek istediğinden emin misin?" />
+    <string id="hiCxFj4E" text="Kayıtlı Seferler" />
+    <string id="hYL3CFHX" text="Bu kayıtlı oyunun üzerine kaydetmek istediğinden emin misin?" />
+    <string id="IwhpeT8C" text="Seviye: {PLAYER_LEVEL}" />
+    <string id="IXwOaa98" text="Birlik Büyüklüğü" />
+    <string id="JAFIo7cM" text=":" />
+    <string id="kJtNMYum" text="Modül uyuşmazlığı" />
+    <string id="L9GnQvsq" text="Bahis tutarı: {BETTED_DENARS}" />
+    <string id="LBNzsqyb" text="Tımarlar" />
+    <string id="lh0so0uX" text="Farklı modülleri olan kayıtlı oyunu yüklemek istediğine emin misin?" />
+    <string id="lPMYSSAa" text="Aletler Gerekmektedir" />
+    <string id="mDFhzEMC" text="Maksimum. Can Puanı" />
+    <string id="nvemmBZz" text="Ganimet ve tutsaklardan %{AMOUNT} kazandın" />
+    <string id="O9nwLrYp" text="+{WOUNDEDAMOUNT}w" />
+    <string id="oBbiVeKE" text="Can Puanı" />
+    <string id="Q1HIlJxe" text="Üzerine Yaz" />
+    <string id="QHV8aeEg" text="Kayıtlı Oyunu Sil" />
+    <string id="qIeDZoSx" text="Satın Alındı" />
+    <string id="qSi4DlT4" text="Erzak" />
+    <string id="R2AaCaPJ" text="Beklenen Değişiklik" />
+    <string id="raD9MK3O" text="Zorluk" />
+    <string id="RVPidk5a" text="Nüfuz" />
+    <string id="V4iU0wRv" text="Altın" />
+    <string id="WAKz9xX8" text="{A0} moral kazandın." />
+    <string id="WDlVhNuq" text="Kaydetme dosyana bir ad ver" />
+    <string id="WiNRdfsm" text="Bitti" />
+    <string id="xu5NA6AW" text="Ganimetten %{A0} kazandın." />
+    <string id="xzzSaN4b" text="Beklenen: {OVERALL_EXPECTED_DENARS}" />
+    <string id="yF5fpwNE" text="Toplam: {TOTAL}" />
+    <string id="YgyHVu8S" text="Satıldı" />
+  </strings>
+</base>

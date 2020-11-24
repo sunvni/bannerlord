@@ -1,0 +1,263 @@
+<Prefab>
+  <Constants>
+
+    <Constant Name="ArmyManagement.Frame.Width" BrushLayer="Default" BrushName="ArmyManagement.Frame" BrushValueType="Width" />
+    <Constant Name="ArmyManagement.Frame.Height" BrushLayer="Default" BrushName="ArmyManagement.Frame" BrushValueType="Height" />
+
+    <Constant Name="ArmyManagement.Panel.Left.Width" BrushLayer="Frame" BrushName="ArmyManagement.Panel.Left" BrushValueType="Width" />
+    <Constant Name="ArmyManagement.Panel.Left.Height" BrushLayer="Frame" BrushName="ArmyManagement.Panel.Left" BrushValueType="Height" />
+
+    <Constant Name="ArmyManagement.Panel.Right.Width" BrushLayer="Frame" BrushName="ArmyManagement.Panel.Right" BrushValueType="Width" />
+    <Constant Name="ArmyManagement.Panel.Right.Height" BrushLayer="Frame" BrushName="ArmyManagement.Panel.Right" BrushValueType="Height" />
+
+    <Constant Name="ArmyManagement.Sort.1.Width" BrushLayer="Default" BrushName="ArmyManagement.Sort.1" BrushValueType="Width" />
+    <Constant Name="ArmyManagement.Sort.1.Height" BrushLayer="Default" BrushName="ArmyManagement.Sort.1" BrushValueType="Height" />
+
+    <Constant Name="ArmyManagement.Sort.2.Width" BrushLayer="Default" BrushName="ArmyManagement.Sort.2" BrushValueType="Width" />
+    <Constant Name="ArmyManagement.Sort.2.Height" BrushLayer="Default" BrushName="ArmyManagement.Sort.2" BrushValueType="Height" />
+
+    <Constant Name="ArmyManagement.Sort.3.Width" BrushLayer="Default" BrushName="ArmyManagement.Sort.3" BrushValueType="Width" />
+    <Constant Name="ArmyManagement.Sort.3.Height" BrushLayer="Default" BrushName="ArmyManagement.Sort.3" BrushValueType="Height" />
+
+    <Constant Name="ArmyManagement.Sort.4.Width" BrushLayer="Default" BrushName="ArmyManagement.Sort.4" BrushValueType="Width" />
+    <Constant Name="ArmyManagement.Sort.4.Height" BrushLayer="Default" BrushName="ArmyManagement.Sort.4" BrushValueType="Height" />
+
+    <Constant Name="ArmyManagement.Sort.5.Width" BrushLayer="Default" BrushName="ArmyManagement.Sort.5" BrushValueType="Width" />
+    <Constant Name="ArmyManagement.Sort.5.Height" BrushLayer="Default" BrushName="ArmyManagement.Sort.5" BrushValueType="Height" />
+
+    <Constant Name="ArmyManagement.Sort.6.Width" BrushLayer="Default" BrushName="ArmyManagement.Sort.6" BrushValueType="Width" />
+    <Constant Name="ArmyManagement.Sort.6.Height" BrushLayer="Default" BrushName="ArmyManagement.Sort.6" BrushValueType="Height" />
+
+    <Constant Name="CloseButtons.Margin.Top" Additive="65" Value="!ArmyManagement.Frame.Height" />
+
+    <Constant Name="GuideAlphaFactor" Value="0" />
+
+  </Constants>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="BlankWhiteSquare_9" Brush.Color="#000000CC">
+      <Children>
+
+        <!--Tutorial Notification Frame-->
+        <ElementNotificationWidget DataSource="{TutorialNotification}" ElementID="@ElementID" TutorialFrameWidget="TutorialFrameWidget">
+          <Children>
+            <TutorialHighlightItemWidget Id="TutorialFrameWidget" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="TutorialHighlightBrush" IsDisabled="true" IsVisible="false" />
+          </Children>
+        </ElementNotificationWidget>
+
+        <!--Close Buttons-->
+        <Standard.TriplePopupCloseButtons MarginTop="!CloseButtons.Margin.Top" VerticalAlignment="Center" Parameter.CancelButtonAction="ExecuteCancel" Parameter.CancelButtonText="@CancelText" Parameter.DoneButtonAction="ExecuteDone" Parameter.DoneButtonText="@DoneText" Parameter.ResetButtonAction="ExecuteReset" Parameter.ResetButtonHintDataSource="{ResetHint}" />
+
+        <Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!ArmyManagement.Frame.Width" SuggestedHeight="!ArmyManagement.Frame.Height" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="ArmyManagement.Frame">
+          <Children>
+
+            <!--Top Panel Name Text-->
+            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="592" SuggestedHeight="161" HorizontalAlignment="Center" PositionYOffset="-20" Sprite="StdAssets\tabbar_popup" IsDisabled="true">
+              <Children>
+                <RichTextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="25" Brush="Recruitment.Popup.Title.Text" Brush.FontSize="40" IsDisabled="true" Text="@TitleText" />
+              </Children>
+            </Widget>
+
+            <!--Left Panel-->
+            <Widget Id="GatherArmyPartiesPanel" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!ArmyManagement.Panel.Left.Width" SuggestedHeight="!ArmyManagement.Panel.Left.Height" VerticalAlignment="Center" PositionYOffset="18" MarginLeft="60" Brush="ArmyManagement.Panel.Left">
+              <Children>
+
+                <!--Sort Buttons-->
+                <ListPanel DataSource="{SortControllerVM}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" MarginLeft="10" MarginTop="5">
+                  <Children>
+
+                    <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!ArmyManagement.Sort.1.Width" SuggestedHeight="!ArmyManagement.Sort.1.Height" Brush="ArmyManagement.Sort.1">
+                      <Children>
+                        <TextWidget DataSource="{..}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="ArmyManagement.Sort.Text" Text="@OwnerText" />
+                      </Children>
+                    </ButtonWidget>
+
+                    <SortButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!ArmyManagement.Sort.2.Width" SuggestedHeight="!ArmyManagement.Sort.2.Height" Brush="ArmyManagement.Sort.2" Command.Click="ExecuteSortByName" IsSelected="@IsNameSelected" SortState="@NameState" SortVisualWidget="TextWidget\NameSortVisualWidget">
+                      <Children>
+                        <TextWidget Id="TextWidget" DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="ArmyManagement.Sort.Text" ClipContents="false" Text="@NameText">
+                          <Children>
+                            <Widget Id="NameSortVisualWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Center" PositionXOffset="20" Brush="ArmyManagement.Sort.ArrowBrush" />
+                          </Children>
+                        </TextWidget>
+                      </Children>
+                    </SortButtonWidget>
+
+                    <SortButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!ArmyManagement.Sort.3.Width" SuggestedHeight="!ArmyManagement.Sort.3.Height" Brush="ArmyManagement.Sort.3" Command.Click="ExecuteSortByClan" IsSelected="@IsClanSelected" SortState="@ClanState" SortVisualWidget="TextWidget\ClanSortVisualWidget">
+                      <Children>
+                        <TextWidget Id="TextWidget" DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="ArmyManagement.Sort.Text" ClipContents="false" Text="@ClanText">
+                          <Children>
+                            <Widget Id="ClanSortVisualWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Center" PositionXOffset="17" Brush="ArmyManagement.Sort.ArrowBrush" />
+                          </Children>
+                        </TextWidget>
+                      </Children>
+                    </SortButtonWidget>
+
+                    <SortButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!ArmyManagement.Sort.4.Width" SuggestedHeight="!ArmyManagement.Sort.4.Height" Brush="ArmyManagement.Sort.4" Command.Click="ExecuteSortByStrength" IsSelected="@IsStrengthSelected" SortState="@StrengthState" SortVisualWidget="TextWidget\StrengthSortVisualWidget">
+                      <Children>
+                        <TextWidget Id="TextWidget" DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="ArmyManagement.Sort.Text" ClipContents="false" Text="@StrengthText">
+                          <Children>
+                            <Widget Id="StrengthSortVisualWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Center" PositionXOffset="14" Brush="ArmyManagement.Sort.ArrowBrush" />
+                          </Children>
+                        </TextWidget>
+                      </Children>
+                    </SortButtonWidget>
+
+                    <SortButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!ArmyManagement.Sort.5.Width" SuggestedHeight="!ArmyManagement.Sort.5.Height" Brush="ArmyManagement.Sort.5" Command.Click="ExecuteSortByCost" IsSelected="@IsCostSelected" SortState="@CostState" SortVisualWidget="TextWidget\CostSortVisualWidget">
+                      <Children>
+                        <TextWidget Id="TextWidget" DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="ArmyManagement.Sort.Text" ClipContents="false" Text="@CostText">
+                          <Children>
+                            <Widget Id="CostSortVisualWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Center" PositionXOffset="20" Brush="ArmyManagement.Sort.ArrowBrush" />
+                          </Children>
+                        </TextWidget>
+                      </Children>
+                    </SortButtonWidget>
+
+                    <SortButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!ArmyManagement.Sort.6.Width" SuggestedHeight="!ArmyManagement.Sort.6.Height" Brush="ArmyManagement.Sort.6" Command.Click="ExecuteSortByDistance" IsSelected="@IsDistanceSelected" SortState="@DistanceState" SortVisualWidget="TextWidget\DistanceSortVisualWidget">
+                      <Children>
+                        <TextWidget Id="TextWidget" DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="ArmyManagement.Sort.Text" ClipContents="false" Text="@DistanceText">
+                          <Children>
+                            <Widget Id="DistanceSortVisualWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Center" PositionXOffset="20" Brush="ArmyManagement.Sort.ArrowBrush" />
+                          </Children>
+                        </TextWidget>
+                      </Children>
+                    </SortButtonWidget>
+
+                  </Children>
+                </ListPanel>
+
+                <Standard.VerticalScrollbar Id="PartyListScrollbar" HeightSizePolicy="StretchToParent" HorizontalAlignment="Right" MarginRight="12" MarginTop="60" MarginBottom="15" />
+
+                <!--Party List Scrollable Panel-->
+                <ScrollablePanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="16" MarginRight="30" MarginTop="62" MarginBottom="15" AutoHideScrollBars="true" ClipRect="PartyListClipRect" InnerPanel="PartyListClipRect\PartyList" VerticalScrollbar="..\PartyListScrollbar\Scrollbar">
+                  <Children>
+
+                    <Widget Id="PartyListClipRect" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ClipContents="true">
+                      <Children>
+
+                        <ListPanel Id="PartyList" DataSource="{PartyList}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" LayoutImp.LayoutMethod="VerticalBottomToTop">
+                          <ItemTemplate>
+                            <GatherArmyTuple />
+                          </ItemTemplate>
+                        </ListPanel>
+
+                      </Children>
+                    </Widget>
+
+                  </Children>
+                </ScrollablePanel>
+
+              </Children>
+            </Widget>
+
+            <!--Right Panel-->
+            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!ArmyManagement.Panel.Right.Width" SuggestedHeight="!ArmyManagement.Panel.Right.Height" HorizontalAlignment="Right" VerticalAlignment="Center" PositionYOffset="18" MarginRight="65" Brush="ArmyManagement.Panel.Right">
+              <Children>
+
+                <!--Party List Scrollable Panel-->
+                <ScrollablePanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" AutoHideScrollBars="true" ClipRect="CartListClipRect" InnerPanel="CartListClipRect\CartList" VerticalScrollbar="..\CartListScrollbar\Scrollbar">
+                  <Children>
+
+                    <Widget Id="CartListClipRect" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginBottom="13" ClipContents="true">
+                      <Children>
+
+                        <GridWidget Id="CartList" DataSource="{PartiesInCart}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" MarginLeft="4" MarginTop="10" ColumnCount="4" DefaultCellHeight="180" DefaultCellWidth="152">
+                          <ItemTemplate>
+                            <ArmyCartItem />
+                          </ItemTemplate>
+                        </GridWidget>
+
+                      </Children>
+                    </Widget>
+
+                  </Children>
+                </ScrollablePanel>
+
+                <Standard.VerticalScrollbar Id="CartListScrollbar" HeightSizePolicy="StretchToParent" HorizontalAlignment="Right" MarginRight="10" MarginTop="8" MarginBottom="15" />
+              </Children>
+            </Widget>
+
+            <!--Total Strength-->
+            <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Top" HorizontalAlignment="Right" MarginTop="65" MarginRight="75" >
+              <Children>
+                <!--Total Strength In Cart-->
+                <RichTextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="35" Brush="ArmyManagement.Army.TotalCostAndStrength.Title"  Text="@TotalStrengthText" />
+              </Children>
+            </ListPanel>
+
+
+            <!--Total Influence Cost-->
+            <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren"  VerticalAlignment="Top" MarginTop="65" MarginLeft="75" >
+              <Children>
+                <RichTextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="35"   Brush="ArmyManagement.Army.TotalCostAndStrength.Title" Text="@TotalCost" />
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="17" SuggestedHeight="27" VerticalAlignment="Center" Sprite="SPKingdom\influence_icon_small" />
+              </Children>
+            </ListPanel>
+
+
+
+            <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="251" SuggestedHeight="64" HorizontalAlignment="Right" VerticalAlignment="Bottom" MarginRight="250" MarginBottom="25"  Brush="Popup.Cancel.Button" Command.Click="ExecuteDisbandArmy" IsEnabled="@CanDisbandArmy">
+              <Children>
+                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Popup.Button.Text" Text="@DisbandArmyText" />
+              </Children>
+            </ButtonWidget>
+
+            <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Right" VerticalAlignment="Top" MarginRight="265" PositionYOffset="40" LayoutImp.LayoutMethod="VerticalBottomToTop">
+              <Children>
+
+                <!--Cohesion Text and Button-->
+                <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" IsVisible="@PlayerHasArmy">
+                  <Children>
+
+                    <RichTextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" Brush="ArmyManagement.Army.TotalCostAndStrength.Title" Text="@CohesionText" />
+                    <!--<ToggleWidget DoNotPassEventsToChildren="true" Id="ArmyManagementBoostCohesionButton" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="47" SuggestedHeight="47" VerticalAlignment="Center" Brush="ArmyManagement.Army.AddCoherenceButton" IsEnabled="@CanBoostCohesion" WidgetToClose="..\..\..\..\CohesionPanel" Command.Click="OnOpenBoost"/>-->
+
+                    <ButtonWidget Id="ArmyManagementBoostCohesionButton" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="50" SuggestedHeight="24" VerticalAlignment="Center" MarginLeft="10" Brush="FaceGen.Card" Command.Click="ExecuteBoostCohesionManual" IsEnabled="@CanBoostCohesion" UpdateChildrenStates="true">
+                      <Children>
+                        <RichTextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="ArmyManagement.Army.TotalCostAndStrength.Title" Text="+10" ClipContents="false"/>
+                        <!--<HintWidget DataSource="{BoostCohesionHint} " WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true" />-->
+                      </Children>
+                    </ButtonWidget>
+
+                  </Children>
+                </ListPanel>
+
+                <!--Coherence Bar-->
+                <Widget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" IsVisible="@PlayerHasArmy">
+                  <Children>
+
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="276" SuggestedHeight="31" Sprite="Barter\slider_boxy_canvas">
+                      <Children>
+                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="265" SuggestedHeight="24" HorizontalAlignment="Center" VerticalAlignment="Center">
+                          <Children>
+
+                            <FillBarWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="265" SuggestedHeight="24" HorizontalAlignment="Center" VerticalAlignment="Center" ChangeWidget="ChangeWidget" CompletelyFillChange="true" CurrentAmount="@NewCohesion" FillWidget="FillWidget" InitialAmount="@Cohesion" MaxAmount="100">
+                              <Children>
+                                <Widget Id="ChangeWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="255" SuggestedHeight="19" VerticalAlignment="Center" Sprite="Barter\slider_boxy_fill" Brush.Color="#00FF00FF" />
+                                <Widget Id="FillWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="255" SuggestedHeight="19" VerticalAlignment="Center" Sprite="Barter\slider_boxy_fill" />
+                              </Children>
+                            </FillBarWidget>
+
+                          </Children>
+                        </Widget>
+
+                        <HintWidget DataSource="{CohesionHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true" />
+                      </Children>
+                    </Widget>
+
+                  </Children>
+                </Widget>
+
+              </Children>
+            </ListPanel>
+
+
+          </Children>
+        </Widget>
+
+
+        <CohesionBoostPanel Id="CohesionPanel" IsVisible="false" />
+
+      </Children>
+    </Widget>
+
+  </Window>
+</Prefab>

@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Türkçe" />
+  </tags>
+  <strings>
+    <string id="066F7lnW" text="Asi Aseray Köy Büyüğü" />
+    <string id="07jVF3yT" text="Sturgiya Kentli Oğlan Çocuğu" />
+    <string id="0YgGQzbw" text="Maceracı Sturgiya Tüccarı" />
+    <string id="14GLp866" text="Muhafazakar Aseray Köy Büyüğü" />
+    <string id="1iIXidsU" text="Aseray Soylu Delikanlı" />
+    <string id="1nwT4bZA" text="İmparatorluk Soylu Erkek Çocuğu" />
+    <string id="1OZBZZCi" text="Domuz" />
+    <string id="2edoy5Tf" text="Vlandiya Köylü Kız Çocuğu" />
+    <string id="2g1DUtuy" text="Düzenbaz Sturgiya Köy Büyüğü" />
+    <string id="2mb88jLa" text="Aseray Kentli Genç Kız" />
+    <string id="2U2Hy2Su" text="Sarışın" />
+    <string id="37NYZMtc" text="Batanya Kentli Kız Çocuğu" />
+    <string id="3F8NEunR" text="Boyacı {FIRSTNAME}" />
+    <string id="3PjtHgT6" text="Vlandiya zanaatçısı 1" />
+    <string id="3uBqZwN3" text="Batanya Soylu Genç Kız" />
+    <string id="3wzexaA7" text="Dişi Kurt" />
+    <string id="4AKXWSGU" text="Yün Satıcısı {FIRSTNAME}" />
+    <string id="4GIoPUen" text="Kılıç Ustası" />
+    <string id="4K1UzutE" text="Batanya Soylu Kız Çocuğu" />
+    <string id="4pS5hROu" text="Kuzait Kentli Genç Kız" />
+    <string id="4rMhHOEm" text="Sturgiya Kentli Delikanlı" />
+    <string id="4SkTUVsz" text="Aseray kadın vaiz" />
+    <string id="58vdP9Ef" text="Ardiyeci {FIRSTNAME}" />
+    <string id="5nthUXyw" text="Sturgiya idarecisi aksi eşraf" />
+    <string id="5p8KHxxC" text="Batanya cesur kanun kaçağı" />
+    <string id="5SEtj5Nl" text="İmparatorluk tehditkar kanun kaçağı" />
+    <string id="5sgfnS5M" text="Sturgiya Köylü Delikanlı" />
+    <string id="5vCmUC9b" text="İmparatorluk cesur kanun kaçağı" />
+    <string id="5XAnvlxe" text="Koruyucu İmparatorluk erkek çete lideri" />
+    <string id="61bJ4Aat" text="Aseray Soylu Genç Kız" />
+    <string id="6CAbkgS4" text="Tamirci" />
+    <string id="7apnGFz7" text="Kara" />
+    <string id="7hrmlfxh" text="Lejyondan" />
+    <string id="7kMLQcAd" text="Hurma Satıcısı {FIRSTNAME}" />
+    <string id="7lg12a57" text="Cesur" />
+    <string id="8AiL0OHC" text="Sturgiya Kentli Kız Çocuğu" />
+    <string id="8mCL2HhJ" text="Bakır Satıcısı {FIRSTNAME}" />
+    <string id="8o5SDCCJ" text="Köpekbalığı" />
+    <string id="94i9lUZN" text="Kuzait cesur kanun kaçağı" />
+    <string id="9BbsD1MH" text="Nazik Sturgiya Tüccarı" />
+    <string id="9CbxkUDb" text="Batanya tehditkar kanun kaçağı" />
+    <string id="a1ZMpdCN" text="Batanya Soylu Delikanlı" />
+    <string id="a2aO7j9H" text="Sturgiya Soylu Genç Kız" />
+    <string id="AB3pXgbL" text="Batanya Köylü Erkek Çocuğu" />
+    <string id="aDby4Ikv" text="Sturgiya tehditkar kanun kaçağı" />
+    <string id="aDiMMgLH" text="Levazımcı {FIRSTNAME}" />
+    <string id="aE8abvsQ" text="Şanslı" />
+    <string id="AeJaCIeh" text="Batanya Kentli Delikanlı" />
+    <string id="aFDI0Saf" text="Aseray cehennem ateşi vaizi" />
+    <string id="AGQ0Vlem" text="Kuzait şamanı" />
+    <string id="agS5lIg7" text="Yetim" />
+    <string id="akALDUs0" text="Uzun Bıçak" />
+    <string id="Alc7wRB0" text="İmparatorluk kadın çete lideri" />
+    <string id="aqVnsXfl" text="Kuzait Soylu Delikanlı" />
+    <string id="aSDNmB9K" text="İmparatorluk Kentli Delikanlı" />
+    <string id="AUT4gHMP" text="İmparatorluk aksi kırsal bölge eşrafı" />
+    <string id="azCSz9QH" text="El'den" />
+    <string id="azo1MhLl" text="gang_leader_equipment" />
+    <string id="B0armbZ0" text="gentry_equipment" />
+    <string id="bgH96Pqw" text="Şarap Tüccarı {FIRSTNAME}" />
+    <string id="BGvgEft6" text="Aseray fitiwi" />
+    <string id="Bgw6ebdB" text="İmparatorluk Kentli Genç Kız" />
+    <string id="BH7xz7yB" text="İmparatorluk Soylu Kız Çocuğu" />
+    <string id="BNtz2DYk" text="Aseray Köylü Delikanlı" />
+    <string id="bpw8fOs5" text="Karakuzaitlerden" />
+    <string id="bRMqec9X" text="Kuzait Soylu Kız Çocuğu" />
+    <string id="bVBu4bRa" text="Asi Sturgiya Köy Büyüğü" />
+    <string id="bvjFhiDr" text="Alim" />
+    <string id="C1CM5ejx" text="Şarap Satıcısı {FIRSTNAME}" />
+    <string id="C2jNLQiv" text="Aseray Kentli Kız Çocuğu" />
+    <string id="c5Kjcxsa" text="Gezgin" />
+    <string id="Cd8hwQy9" text="Sturgiya Soylu Kız Çocuğu" />
+    <string id="CePmep0z" text="Kaçak Avcı" />
+    <string id="CgFXUCbN" text="Alaycı Vlandiya Tüccarı" />
+    <string id="cM2J8FUX" text="Kuzait Soylu Erkek Çocuğu" />
+    <string id="cP1o8eUs" text="Jawwal'dan" />
+    <string id="CQOlMayc" text="Kılıksız" />
+    <string id="cSkuDBgn" text="Batanya gizemcisi" />
+    <string id="cud22JY1" text="Cerrah" />
+    <string id="D104m5cP" text="Asi kadın vaiz" />
+    <string id="d8r7iu0Z" text="Asi İmparatorluk Köy Büyüğü" />
+    <string id="dgWSNaac" text="Kuzait Köylü Kız Çocuğu" />
+    <string id="DLaXd9Bm" text="Kadın vaiz" />
+    <string id="dwSolSri" text="Sturgiya Köylü Genç Kız" />
+    <string id="Dy5JuSNG" text="Batanya Kentli Genç Kız" />
+    <string id="eAdUxQf7" text="Tatlı Dilli Vlandiya Tüccarı" />
+    <string id="ec89e3p2" text="Sturgiya Köylü Kız Çocuğu" />
+    <string id="ECjabnlK" text="Kuzait tehditkar kanun kaçağı" />
+    <string id="EFrbyeN5" text="Açık yürekli İmparatorluk işçi lideri" />
+    <string id="Emz7apGQ" text="artisan_equipment" />
+    <string id="eobXmmLg" text="Kumpanya'dan" />
+    <string id="Eou5itzp" text="Tutucu erkek vaiz" />
+    <string id="EsKrdS5b" text="Erkek çete lideri" />
+    <string id="f6nE1Qx2" text="İmparatorluk tüccarı 10, düzenbaz" />
+    <string id="fHafdaTP" text="İmparatorluk Soylu Delikanlı" />
+    <string id="fJmGKlaO" text="At Hırsızı" />
+    <string id="FtpxQYf0" text="Hızlı Konuşan {FIRSTNAME}" />
+    <string id="fx7Pve2q" text="merchant_equipment" />
+    <string id="G8mawcBV" text="Şifacı" />
+    <string id="GaakYUTl" text="Göz Korkutucu İmparatorluk erkek çete lideri" />
+    <string id="GbIcQJ0A" text="Vlandiya zanaatçısı 2" />
+    <string id="GbVKTFAI" text="İmparatorluk Soylu Genç Kız" />
+    <string id="gED0ZMhi" text="Ilay" />
+    <string id="GEGnMwNK" text="Muhafazakar Batanya zanaatçısı" />
+    <string id="gMmijT4o" text="İmparatorluk Köylü Erkek Çocuğu" />
+    <string id="GwGMjnEA" text="At Tüccarı {FIRSTNAME}" />
+    <string id="gYNfal30" text="Mesih Havarisi İmparatorluk vaizi" />
+    <string id="H5Uuazxj" text="Ehlivukuf {FIRSTNAME}" />
+    <string id="H7KPlSmU" text="Aseray Soylu Kız Çocuğu" />
+    <string id="HexR178w" text="Kervancı {FIRSTNAME}" />
+    <string id="hmKpx86o" text="Vlandiya çiftçisi" />
+    <string id="hrMatilh" text="Demirci" />
+    <string id="htgi2PBK" text="Asi Vlandiya Köy Büyüğü" />
+    <string id="hthUYUrY" text="Düzenbaz Kuzait zanaatçısı" />
+    <string id="hvIsiu78" text="İmparatorluk Köylü Genç Kız" />
+    <string id="HXqZbme3" text="Sturgiya cesur kanun kaçağı" />
+    <string id="I2T60hED" text="Vlandiya tehditkar kanun kaçağı" />
+    <string id="iAjo65QR" text="İmparatorluk tüccarı 3, acımasız" />
+    <string id="IaMyN5yr" text="Temkinli Sturgiya tüccarı" />
+    <string id="iDxUTViN" text="Ölçücü {FIRSTNAME}" />
+    <string id="IfYvaBV3" text="Aseray cesur kanun kaçağı" />
+    <string id="IgOTjF4i" text="Gulamlardan" />
+    <string id="imiWg976" text="wanderer_equipment" />
+    <string id="iokd4Shp" text="Vlandiya Soylu Genç Kız" />
+    <string id="IUk8qHw4" text="Korkulan Aseray kadın çete lideri" />
+    <string id="IVnvHF8S" text="Eleftheroi'den" />
+    <string id="Ivx4uJVp" text="Sessiz" />
+    <string id="j2nVPqIX" text="Şahin" />
+    <string id="Ja1JeF5t" text="Vlandiya Soylu Kız Çocuğu" />
+    <string id="jepZ0btT" text="Kendinden Emin Yarışmacı" />
+    <string id="jG3duO7A" text="Seçilmişlerden" />
+    <string id="jKAhAoVb" text="Orman Halkından" />
+    <string id="JL8RBEu3" text="Beni Zilal'den" />
+    <string id="JmtSy9Nz" text="Soğuk İmparatorluk tüccarı" />
+    <string id="jQt9cLzS" text="Sert Sturgiya Tüccarı" />
+    <string id="jrWM1QDN" text="Muhafazakar Kuzait Köy Büyüğü" />
+    <string id="JVeGkRa1" text="Düzenbaz Aseray Köy Büyüğü" />
+    <string id="JZBDbuGa" text="Aseray Kentli Delikanlı" />
+    <string id="K27WpkiE" text="Sturgiya çete lideri" />
+    <string id="K42QfOpv" text="Muhafazakar Sturgiya Köy Büyüğü" />
+    <string id="k8aUr5cN" text="Kuzait Köylü Delikanlı" />
+    <string id="KAdVmQc5" text="İmparatorluk kadın gizemci" />
+    <string id="Kcax8j1W" text="Azat Edilmiş {FIRSTNAME}" />
+    <string id="KkStFl12" text="Kurtpostlulardan" />
+    <string id="KnTl4ESh" text="İnek Hırsızı" />
+    <string id="KphYbafC" text="Cesur Yarışmacı" />
+    <string id="KTObbG71" text="Mağdur" />
+    <string id="KY2zbWkj" text="Hızlı" />
+    <string id="LaDppi2W" text="Batanya gururlu kırsal bölge eşrafı" />
+    <string id="lbIgOHea" text="Onurlu Sturgiyalı kadın tüccar" />
+    <string id="ldArPXQE" text="Sturgiyalı kadın gizemci" />
+    <string id="LmlL8fVu" text="Kanlı Balta" />
+    <string id="LuGD2OL1" text="Aseray sessiz kırsal bölge eşrafı" />
+    <string id="LzLkTQc8" text="Kuzait gururlu kırsal bölge eşrafı" />
+    <string id="mcbREzPt" text="Koruyuculardan" />
+    <string id="mpkyb5fY" text="Kuzait Kentli Oğlan Çocuğu" />
+    <string id="mtBA7sfk" text="Güçlü Yarışmacı" />
+    <string id="muC2SGlM" text="Çölden" />
+    <string id="N6aatixp" text="Alaycı İmparatorluk çete lideri" />
+    <string id="n6iIPCux" text="Vlandiya Köylü Erkek Çocuğu" />
+    <string id="NdhGw6eA" text="İmparatorluk tüccarı 8, şakacı" />
+    <string id="NFeQqybb" text="Kuzait Köylü Genç Kız" />
+    <string id="NfObPWYk" text="Hayırsever {FIRSTNAME}" />
+    <string id="nkdTDW0x" text="Düzenbaz Vlandiya Köy Büyüğü" />
+    <string id="nqE62lQW" text="Kara Diş" />
+    <string id="NSaetzNJ" text="Kömür Yutan" />
+    <string id="ntkipfCV" text="Gürültücü" />
+    <string id="NWuGUi4p" text="Dişi Leopar" />
+    <string id="NyJ6AvkI" text="Muhafazakar Batanya Köy Büyüğü" />
+    <string id="OArAImbM" text="Tepelerden" />
+    <string id="OFWvD0xe" text="Sırtlan" />
+    <string id="OIXub6bS" text="Yalnız" />
+    <string id="oJJPZOKf" text="Vikrum" />
+    <string id="OzjuQYGH" text="Skolderbroda'dan" />
+    <string id="pbcUnQS9" text="Sturgiya kahini" />
+    <string id="PbPzMmbV" text="Muhafazakar İmparatorluk Köy Büyüğü" />
+    <string id="PGHtN3Jx" text="Sturgiya eşrafından yardımsever idareci" />
+    <string id="Pk29f1iX" text="Temkinli İmparatorluk tüccarı" />
+    <string id="pQykMa8u" text="Kuzait Kentli Kız Çocuğu" />
+    <string id="PSz6SqsS" text="Batanya Soylu Erkek Çocuğu" />
+    <string id="pTuZB1Hj" text="Demir Karınlı" />
+    <string id="pywrXN0I" text="İmparatorluk Köylü Kız Çocuğu" />
+    <string id="pZSAdyC0" text="Kasap" />
+    <string id="q5QjQyde" text="Deli" />
+    <string id="qeNv4ftk" text="Simsar {FIRSTNAME}" />
+    <string id="QGcgQDqK" text="Kardeşlikten" />
+    <string id="QguTscz7" text="Asi Batanya zanaatçısı" />
+    <string id="qHK7IZ1Q" text="Düzenbaz Kuzait Köy Büyüğü" />
+    <string id="Qm5cstq3" text="Ulyk" />
+    <string id="qP11ARtb" text="Yetim {FIRSTNAME}" />
+    <string id="qslA0bVb" text="Kızıl" />
+    <string id="QWbgE4bw" text="Demir Gözlü" />
+    <string id="QyQPJJ9B" text="Lanetli" />
+    <string id="qzpdvbhm" text="İpek Tüccarı {FIRSTNAME}" />
+    <string id="qzuAtcoI" text="Muhafazakar Kuzait zanaatçısı" />
+    <string id="R0NM6lfm" text="Raekel" />
+    <string id="reXz8NlZ" text="İmparatorluk tüccarı 7, kendi kendini yetiştirmiş" />
+    <string id="rgdi5Sxa" text="Prens" />
+    <string id="rhKSDQbR" text="Vlandiya Kentli Delikanlı" />
+    <string id="rHp3tOCo" text="Aseray Kentli Erkek Çocuğu" />
+    <string id="RJ3WezQ9" text="Sturgiya zanaatçısı" />
+    <string id="rj6kf6Ic" text="Asi Kuzait Köy Büyüğü" />
+    <string id="rJxE1tbu" text="İmparatorluk Kentli Kız Çocuğu" />
+    <string id="RmvGYDaL" text="Vlandiya Soylu Erkek Çocuğu" />
+    <string id="RnQwMMYr" text="Vlandiya Soylu Delikanlı" />
+    <string id="rnXXvPqO" text="Sturgiya Köylü Erkek Çocuğu" />
+    <string id="Rp0gbdMM" text="Temkinli Batanya tüccarı" />
+    <string id="rtsnnL2J" text="Savaşçı" />
+    <string id="sdzaip5J" text="Bilgili" />
+    <string id="seS9ZZUW" text="Boz Doğan" />
+    <string id="sk64gxdw" text="Haysiyetli Yarışmacı" />
+    <string id="SOmBjgqW" text="Aseray Soylu Erkek Çocuğu" />
+    <string id="soML32uY" text="Temkinli Kuzait tüccarı" />
+    <string id="sUxhqvD1" text="Kadın çete lideri" />
+    <string id="SVS1QJcE" text="Batanya Kentli Erkek Çocuğu" />
+    <string id="T5O2nOfg" text="Tutucu İmparatorluk vaizi" />
+    <string id="t9e34kgH" text="Soyguncu" />
+    <string id="TbWwahrd" text="Kuzait kırsal bölge eşrafı" />
+    <string id="TbyDQg2z" text="Sturgiya Soylu Erkek Çocuğu" />
+    <string id="TI9qplRf" text="Düzenbaz Batanya Köy Büyüğü" />
+    <string id="TmYMCahH" text="Tehditkar İmparatorluk kadın çete lideri" />
+    <string id="TuBXZ80e" text="Sturgiyalı düzenbaz kadın tüccar" />
+    <string id="tuRVmKIE" text="Düzenbaz İmparatorluk Köy Büyüğü" />
+    <string id="tvNIMvN5" text="Kaba Sturgiya tüccarı" />
+    <string id="tx6xDvzx" text="Aseray Köylü Erkek Çocuğu" />
+    <string id="TXUOeT7L" text="Para Basan {FIRSTNAME}" />
+    <string id="TyxXbqVw" text="Doğan" />
+    <string id="TZEqvvzG" text="Kuzait Kentli Delikanlı" />
+    <string id="ucL7DjaP" text="Sturgiyalı kadın çete lideri" />
+    <string id="V2zwBILU" text="Muhafazakar Vlandiya Köy Büyüğü" />
+    <string id="V4SaGJay" text="Aseray Köylü Genç Kız" />
+    <string id="VaN2tRyU" text="Yabani İmparatorluk erkek çete lideri" />
+    <string id="VKhh9i1l" text="Lakepike'dan" />
+    <string id="VmuTQm20" text="Standart erkek çete lideri" />
+    <string id="vmwCdada" text="Jihan" />
+    <string id="VREbQSoS" text="Vlandiya Kentli Erkek Çocuğu" />
+    <string id="vtXRptVa" text="Altın" />
+    <string id="VWwDT1hV" text="Asi Kuzait zanaatçısı" />
+    <string id="W0lWJ8k3" text="preacher_equipment" />
+    <string id="W7aa22Yl" text="Kafakıran" />
+    <string id="w85UE1ki" text="Batanya kırsal bölge eşrafı Fergus" />
+    <string id="waA4ph2S" text="Tuz Arayıcısı {FIRSTNAME}" />
+    <string id="wc9LrDL8" text="Kuzait Köylü Erkek Çocuğu" />
+    <string id="WNyWySAH" text="Lakepike'dan" />
+    <string id="wq09CQHe" text="Aseray zanaatçı lideri" />
+    <string id="WU5GnkvR" text="Balık" />
+    <string id="wuVOYwug" text="Batanya Köylü Kız Çocuğu" />
+    <string id="WvwWX4me" text="Geniş Göğüslü" />
+    <string id="wXOz68g0" text="İmparatorluk uyumlu kırsal bölge eşrafı" />
+    <string id="X2TtXlAq" text="Pericleia" />
+    <string id="x95hX9Qv" text="Tütsü Tüccarı {FIRSTNAME}" />
+    <string id="Xa2WYyjx" text="İmparatorluk aksi işçi lideri" />
+    <string id="XBJtv4mD" text="Baharat Tüccarı" />
+    <string id="XPwQab9R" text="Dürüst Sturgiya tüccarı" />
+    <string id="XSI7xub4" text="Aseray içten kırsal bölge eşrafı" />
+    <string id="xTQPfmS9" text="Boğa" />
+    <string id="XuxARPTM" text="Acı Yudum" />
+    <string id="xWcla2nG" text="Kuzait Soylu Genç Kız" />
+    <string id="y0nirhCT" text="Aseray Köylü Kız Çocuğu" />
+    <string id="Y8h6CeMY" text="İmparatorluk tüccarı 6, temkinli" />
+    <string id="yFcqoVhU" text="İmparatorluk Köylü Delikanlı" />
+    <string id="yHF3nWJC" text="Vlandiya Kentli Kız Çocuğu" />
+    <string id="ykTARD4b" text="Kimsesiz" />
+    <string id="ympFLeFM" text="Aseray tehditkar kanun kaçağı" />
+    <string id="yNHehCab" text="Batanya Köylü Genç Kız" />
+    <string id="yr5pa0hs" text="Söğüt Kabuğu" />
+    <string id="YTe7J6bY" text="Vlandiya cesur kanun kaçağı" />
+    <string id="ZAa9OSfV" text="Cüretkar Vlandiya Tüccarı" />
+    <string id="ZCc3VFat" text="Kır Saçlı" />
+    <string id="zCCuv0Bv" text="Asi Batanya Köy Büyüğü" />
+    <string id="zChW5bUM" text="Asi Aseray vaizi" />
+    <string id="zCQaPTOK" text="Paralı Asker" />
+    <string id="ZFb9a3Rc" text="Düzenbaz Batanya zanaatçısı" />
+    <string id="zkoc5QaI" text="İmparatorluk tüccarı 9, varis" />
+    <string id="zQbIvOFI" text="Vlandiya Köylü Delikanlı" />
+    <string id="ZrJA3BVo" text="Kaba Vlandiya tüccarı" />
+    <string id="Zu3RUIrG" text="Batanya Köylü Delikanlı" />
+    <string id="zXiMWnbX" text="Varis {FIRSTNAME}" />
+    <string id="zXjdb1zT" text="Kırağı Sakal" />
+    <string id="zYQCc3Ma" text="İmparatorluk Kentli Erkek Çocuğu" />
+  </strings>
+</base>

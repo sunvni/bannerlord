@@ -1,0 +1,142 @@
+<Prefab>
+  <Constants>
+    <Constant Name="" />
+
+    <Constant Name="GatherArmy.Button.Width" BrushLayer="Default" BrushName="MapBar.GatherArmy.Button" BrushValueType="Width" />
+    <Constant Name="GatherArmy.Button.Height" BrushLayer="Default" BrushName="MapBar.GatherArmy.Button" BrushValueType="Height" />
+
+    <Constant Name="GatherArmy.Icon.Width" BrushLayer="Default" BrushName="MapBar.GatherArmy.Icon" BrushValueType="Width" />
+    <Constant Name="GatherArmy.Icon.Height" BrushLayer="Default" BrushName="MapBar.GatherArmy.Icon" BrushValueType="Height" />
+  </Constants>
+  <VisualDefinitions>
+    <VisualDefinition Name="Overlay" EaseIn="true" TransitionDuration="0.4">
+      <VisualState PositionXOffset="0" PositionYOffset="75" State="MapExtendedOverlayNormal" />
+      <VisualState PositionXOffset="0" PositionYOffset="107" State="MapNormalOverlayNormal" />
+      <VisualState PositionXOffset="0" PositionYOffset="0" State="MapNormalOverlayExtended" />
+      <VisualState PositionXOffset="0" PositionYOffset="0" State="MapExtendedOverlayExtended" />
+    </VisualDefinition>
+  </VisualDefinitions>
+  <Window>
+    <ArmyOverlayWidget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ArmyListGridWidget="OverlayWidget\PartyList" ExtendButton="OverlayWidget\ExtendButtonWidget" IsInfoBarExtended="@IsInfoBarExtended" Overlay="OverlayWidget" PopupWidget="PopupParent\Popup">
+      <Children>
+
+        <!--Tutorial Notification Frame-->
+        <ElementNotificationWidget DataSource="{TutorialNotification}" ElementID="@ElementID" TutorialFrameWidget="TutorialFrameWidget">
+          <Children>
+            <TutorialHighlightItemWidget Id="TutorialFrameWidget" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="TutorialHighlightBrush" IsDisabled="true" IsVisible="false" />
+          </Children>
+        </ElementNotificationWidget>
+
+        <Widget Id="OverlayWidget" VisualDefinition="Overlay" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="468" SuggestedHeight="229" HorizontalAlignment="Right" VerticalAlignment="Bottom" PositionXOffset="370" PositionYOffset="0" Sprite="MapOverlay\Army\army_overlay_base">
+          <Children>
+
+            <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" MarginLeft="40" MarginTop="25">
+              <Children>
+
+                <!--Army Management Button-->
+                <Widget Id="ArmyOverlayArmyManagementButtonParent" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!GatherArmy.Button.Width" SuggestedHeight="!GatherArmy.Button.Height" VerticalAlignment="Center" MarginLeft="-10">
+                  <Children>
+                    <ButtonWidget Id="ArmyOverlayArmyManagementButton" DoNotPassEventsToChildren="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="MapBar.GatherArmy.Button" Command.Click="ExecuteOpenArmyManagement" IsVisible="@IsPlayerArmyLeader" IsEnabled="@CanManageArmy" UpdateChildrenStates="true">
+                      <Children>
+                    <Widget Id="ArmyIcon" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!GatherArmy.Icon.Width" SuggestedHeight="!GatherArmy.Icon.Height" HorizontalAlignment="Right" PositionXOffset="-7" VerticalAlignment="Center" Brush="MapBar.GatherArmy.Icon" />
+                        <HintWidget DataSource="{ManageArmyHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true" />
+                  </Children>
+                </ButtonWidget>
+                    <HintWidget DataSource="{ManageArmyHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true" />
+                  </Children>
+                </Widget>
+
+                <!--Cohesion Bar-->
+                <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="186" SuggestedHeight="23" HorizontalAlignment="Left" VerticalAlignment="Center" MarginLeft="10" Sprite="MapOverlay\Army\slider_boxy_canvas" Command.Click="ExecuteOpenArmyManagement">
+                  <Children>
+
+                    <ArmyOverlayCohesionFillWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="180" SuggestedHeight="20" HorizontalAlignment="Center" VerticalAlignment="Center" FillWidget="FillWidget" InitialAmount="@Cohesion" IsArmyLeader="@IsPlayerArmyLeader" IsCohesionWarningEnabled="@IsCohesionWarningEnabled" MaxAmount="100">
+                      <Children>
+                        <Widget Id="FillWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="180" SuggestedHeight="15" VerticalAlignment="Center" Sprite="MapOverlay\Army\slider_boxy_fill" Brush.HueFactor="15" Brush.SaturationFactor="-30" />
+                      </Children>
+                    </ArmyOverlayCohesionFillWidget>
+
+                    <HintWidget DataSource="{CohesionHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true" />
+                  </Children>
+                </ButtonWidget>
+
+                <ListPanel DataSource="{FoodHint}" DoNotPassEventsToChildren="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint">
+                  <Children>
+                    <!--Food Icon-->
+                    <Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="30" SuggestedHeight="35" VerticalAlignment="Center" Sprite="Icons\Food" Brush.Color="#D4AF37FF" />
+
+                    <!--Food Label-->
+                    <TextWidget DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Right" VerticalAlignment="Center" Brush="ArmyOverlay.PageControl.Text" Brush.FontSize="18" IntText="@Food" />
+
+                  </Children>
+                </ListPanel>
+
+                <ListPanel DataSource="{ManCountHint}" DoNotPassEventsToChildren="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint">
+                  <Children>
+                    <!--Man Count Icon-->
+                    <Widget Id="ManCountIcon" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="33" SuggestedHeight="30" HorizontalAlignment="Center" VerticalAlignment="Center" MarginLeft="5" Sprite="MapBar\mapbar_icon4" Brush.Color="#D4AF37FF" />
+
+                    <!--Man Count Label-->
+                    <TextWidget DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Right" VerticalAlignment="Center" Brush="ArmyOverlay.PageControl.Text" Brush.FontSize="18" Text="@ManCountText" />
+                  </Children>
+                </ListPanel>
+
+              </Children>
+            </ListPanel>
+
+            <GridWidget Id="PartyList" DataSource="{PartyList}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" MarginLeft="35" MarginTop="70" DefaultCellWidth="72" DefaultCellHeight="52" ColumnCount="6">
+              <ItemTemplate>
+
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+                  <Children>
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="72" SuggestedHeight="53" HorizontalAlignment="Left" Sprite="MapOverlay\Army\portrait_small">
+                      <Children>
+
+                        <GameMenuPartyItemWidget Name="@NameText" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="72" SuggestedHeight="53" BackgroundImageWidget="BackgroundImageWidget" CharacterBackgroundBrush="GameMenu.Tableau.Background.Character" Command.Click="ExecuteSetAsContextMenuItem" Command.HoverBegin="ExecuteOpenTooltip" Command.HoverEnd="ExecuteCloseTooltip" CurrentCharacterImageWidget="RelationBackgroundWidget\CharacterImage" Description="@DescriptionText" IsMergedWithArmy="@IsMergedWithArmy" IsPartyItem="true" Location="@LocationText" PartyBackgroundBrush="GameMenu.Tableau.Background.Party" QuestType="@ItemQuestType" QuestTypeWidget="QuestTypeWidget" Relation="@Relation" RelationBackgroundWidget="RelationBackgroundWidget" UpdateChildrenStates="true">
+                          <Children>
+
+                            <ImageWidget Id="BackgroundImageWidget" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="2" MarginRight="2" MarginTop="2" MarginBottom="2" />
+
+                            <Widget Id="RelationBackgroundWidget" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="5" MarginRight="5" MarginTop="5" MarginBottom="5" Brush="RelationBackgroundBrush">
+                              <Children>
+                                <ImageIdentifierWidget Id="CharacterImage" DataSource="{Visual}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode" />
+                              </Children>
+                            </Widget>
+
+                            <TextWidget DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Right" VerticalAlignment="Top" MarginRight="5" MarginTop="5" Brush="ArmyOverlay.ArmyValues.Text" Text="@PartySizeLbl" />
+
+                            <Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="25" SuggestedHeight="23" HorizontalAlignment="Left" VerticalAlignment="Top" MarginRight="5" MarginTop="5" Sprite="MapOverlay\Army\icon_state_ontheway" IsHidden="@IsMergedWithArmy" />
+
+                            <ImageWidget Id="QuestTypeWidget" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="15" SuggestedHeight="25" HorizontalAlignment="Right" VerticalAlignment="Bottom" MarginBottom="5" Brush="GameMenu.QuestType" IsEnabled="false" IsVisible="false" OverrideDefaultStateSwitchingEnabled="true" />
+
+                          </Children>
+                        </GameMenuPartyItemWidget>
+
+                        <Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="78" SuggestedHeight="59" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="MapOverlay\Army\leader_frame" IsVisible="@IsLeader" />
+                      </Children>
+                    </Widget>
+
+                  </Children>
+                </Widget>
+
+              </ItemTemplate>
+            </GridWidget>
+
+            <!--Extend Button-->
+            <ButtonWidget Id="ExtendButtonWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="41" SuggestedHeight="34" HorizontalAlignment="Right" MarginTop="27" Brush="MapInfoBarExtendButtonBrush">
+              <Children>
+                <HintWidget DataSource="{ExtendHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true" />
+              </Children>
+            </ButtonWidget>
+
+
+          </Children>
+        </Widget>
+
+        <!--Popup Widget-->
+        <OverlayPopup Id="PopupParent" />
+
+      </Children>
+    </ArmyOverlayWidget>
+  </Window>
+</Prefab>

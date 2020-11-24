@@ -1,0 +1,87 @@
+<Prefab>
+  <Constants>
+    <Constant Name="NextButton.Width" BrushLayer="Default" BrushName="ButtonBrush1" BrushValueType="Width" />
+    <Constant Name="NextButton.Height" BrushLayer="Default" BrushName="ButtonBrush1" BrushValueType="Height" />
+
+    <Constant Name="Crafting.NewWeapon.Popup.Background.Width" BrushLayer="Default" BrushName="Crafting.NewWeapon.Popup.Background" BrushValueType="Width" />
+    <Constant Name="Crafting.NewWeapon.Popup.Background.Height" BrushLayer="Default" BrushName="Crafting.NewWeapon.Popup.Background" BrushValueType="Height" />
+
+    <Constant Name="FadeInTimeIndexOffset" Value="0.5" />
+    <Constant Name="FadeInTime" Value="0.5" />
+    <Constant Name="CounterStartTime" Value="0.5" />
+
+  </Constants>
+  <Variables>
+  </Variables>
+  <VisualDefinitions>
+  </VisualDefinitions>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="BlankWhiteSquare_9" Brush.Color="#000000CC" IsVisible="false">
+      <Children>
+
+        <!--Popup-->
+        <Widget Id="PopupParent" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Crafting.NewWeapon.Popup.Background.Width" SuggestedHeight="!Crafting.NewWeapon.Popup.Background.Height" HorizontalAlignment="Left" VerticalAlignment="Top" MarginLeft="395" MarginTop="100" Brush="Crafting.NewWeapon.Popup.Background">
+          <Children>
+
+            <!--Weapon Visual-->
+            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="212" SuggestedHeight="116" HorizontalAlignment="Center" MarginTop="124" Sprite="Crafting\crafting_popup_portrait">
+              <Children>
+                <ImageIdentifierWidget DataSource="{CraftedItemVisual}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="204" SuggestedHeight="107" HorizontalAlignment="Center" VerticalAlignment="Center" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode" />
+              </Children>
+            </Widget>
+
+            <!--Weapon Crafted Text-->
+            <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="250" Brush="Crafting.Popup.Title.Text" Text="Weapon Crafted" />
+
+            <ListPanel Id="PlacementList" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="335" MarginLeft="35" MarginRight="35" LayoutImp.LayoutMethod="VerticalBottomToTop">
+              <Children>
+                <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" Brush="Crafting.Popup.Name.Description.Text" Text="Name:"/>
+
+                <!--Name Input-->
+                <Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="359" SuggestedHeight="32" HorizontalAlignment="Center" MarginTop="5" Sprite="CharacterCreation\name_input_area">
+                  <Children>
+                    <EditableTextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Crafting.NameInput.Text" Text="@ItemName" />
+
+                    <!--Name Randomize Button-->
+                    <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="25" SuggestedHeight="25" VerticalAlignment="Center" HorizontalAlignment="Right" Brush="RandomButtonBrush" Command.Click="ExecuteRandomCraftName" IsVisible="false" />
+                  </Children>
+                </Widget>
+
+
+                <ListPanel DataSource="{DesignResultPropertyList}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignmet="Center" LayoutImp.LayoutMethod="VerticalBottomToTop" MarginTop="20">
+                  <ItemTemplate>
+
+                    <CraftedWeaponDesignResultListPanelWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="25" MarginTop="5" HorizontalAlignmet="Center" LayoutImp.LayoutMethod="HorizontalLeftToRight" ValueTextWidget="ValueTextWidget" ChangeValueTextWidget="ChangeValueTextWidget" InitValue="@PropertyValue" ChangeAmount="@ChangeAmount" PositiveChangeBrush="Crafting.Result.Positive" NegativeChangeBrush="Crafting.Result.Negative" NeutralBrush="Crafting.Result.Neutral" FadeInTimeIndexOffset="!FadeInTimeIndexOffset" FadeInTime="!FadeInTime" CounterStartTime="!CounterStartTime">
+                      <Children>
+
+                        <!--Name-->
+                        <RichTextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Text="@PropertyLbl" Brush="Crafting.Popup.Property.Name.Text" Brush.TextHorizontalAlignment="Right"/>
+
+                        <!--Value-->
+                        <CounterTextWidget Id="ValueTextWidget" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="85" Brush="Crafting.Popup.Property.Value.Text" Brush.TextHorizontalAlignment="Left" MarginLeft="16"/>
+
+                        <!--Change Amount-->
+                        <CounterTextWidget Id="ChangeValueTextWidget" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="85" Brush="Crafting.Popup.Property.Value.Text" Brush.TextHorizontalAlignment="Left" MarginLeft="16"/>
+
+                      </Children>
+                    </CraftedWeaponDesignResultListPanelWidget>
+                  </ItemTemplate>
+                </ListPanel>
+
+                <!--Finalize Crafting Button-->
+                <ButtonWidget Id="FinalActionButtonWidget" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!NextButton.Width" SuggestedHeight="!NextButton.Height" HorizontalAlignment="Center" MarginTop="25" Brush="ButtonBrush1" Command.Click="ExecuteFinalizeCrafting">
+                  <Children>
+                    <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="CharacterDeveloper.PerkPopup.ButtonText" Text="@DoneLbl" />
+                  </Children>
+                </ButtonWidget>
+
+              </Children>
+            </ListPanel>
+
+          </Children>
+        </Widget>
+
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

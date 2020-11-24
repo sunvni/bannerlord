@@ -1,0 +1,79 @@
+<Brushes>
+  <Brush Name="SaveLoad.Tuple">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="SaveLoad\load_tuple" />
+      <BrushLayer Name="Selected" Sprite="SaveLoad\load_tuple_selected" />
+    </Layers>
+    <Styles>
+      <Style Name="Default">
+        <BrushLayer Name="Default" ColorFactor="1" />
+        <BrushLayer Name="Selected" IsHidden="true" />
+      </Style>
+      <Style Name="Hovered">
+        <BrushLayer Name="Default" ColorFactor="1.2" />
+        <BrushLayer Name="Selected" IsHidden="true" />
+      </Style>
+      <Style Name="Pressed">
+        <BrushLayer Name="Default" ColorFactor="0.8" />
+        <BrushLayer Name="Selected" IsHidden="true" />
+      </Style>
+      <Style Name="Selected">
+        <BrushLayer Name="Default" IsHidden="true" />
+        <BrushLayer Name="Selected" />
+      </Style>
+      <Style Name="Disabled">
+        <BrushLayer Name="Default" AlphaFactor="0.6" SaturationFactor="-80" ValueFactor="-20" />
+        <BrushLayer Name="Selected" IsHidden="true" />
+      </Style>
+    </Styles>
+  </Brush>
+  <Brush Name="SaveLoad.DeleteSave.Button">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="SaveLoad\delete_icon" />
+    </Layers>
+    <Styles>
+      <Style Name="Default">
+        <BrushLayer Name="Default" ColorFactor="1" />
+      </Style>
+      <Style Name="Hovered">
+        <BrushLayer Name="Default" ColorFactor="1.2" />
+      </Style>
+      <Style Name="Pressed">
+        <BrushLayer Name="Default" ColorFactor="0.8" />
+      </Style>
+      <Style Name="Selected">
+        <BrushLayer Name="Default" />
+      </Style>
+      <Style Name="Disabled">
+        <BrushLayer Name="Default" AlphaFactor="0.6" SaturationFactor="-80" ValueFactor="-20" />
+      </Style>
+    </Styles>
+  </Brush>
+  
+  <Brush Name="SaveLoad.Tuple.Title.Text" Font="Galahad" TextHorizontalAlignment="Left" TextVerticalAlignment="Center">
+    <Styles>
+      <Style Name="Default" FontColor="#EFC083CC" TextGlowColor="#000000FF" TextOutlineColor="#000000FF" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="36" />
+      <Style Name="Hovered" />
+      <Style Name="Pressed" />
+      <Style Name="Selected" FontColor="#EFC083FF" />
+    </Styles>
+  </Brush>
+  
+  <Brush Name="SaveLoad.Tuple.RealTime.Text" Font="FiraSansExtraCondensed-Regular" TextHorizontalAlignment="Justify">
+    <Styles>
+      <Style Name="Default" FontColor="#D1C2AFB3" TextGlowColor="#000000FF" TextOutlineColor="#000000FF" TextOutlineAmount="0.3" TextGlowRadius="0" TextBlur="0.1" FontSize="20" />
+      <Style Name="Hovered" />
+      <Style Name="Pressed" />
+      <Style Name="Selected" FontColor="#D1C2AFFF" />
+    </Styles>
+  </Brush>
+  
+  <Brush Name="SaveLoad.Tuple.GameTime.Text" Font="FiraSansExtraCondensed-Regular" TextHorizontalAlignment="Justify">
+    <Styles>
+      <Style Name="Default" FontColor="#F1B15FCC" TextGlowColor="#000000FF" TextOutlineColor="#000000FF" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="32" />
+      <Style Name="Hovered" />
+      <Style Name="Pressed" />
+      <Style Name="Selected" FontColor="#F1B15FFF" />
+    </Styles>
+  </Brush>
+</Brushes>

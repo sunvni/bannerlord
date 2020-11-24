@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Türkçe" />
+  </tags>
+  <strings>
+    <string id="6g08hTX5" text="Tahıldan bira yapılır. Halkı ve askerleri bira kadar mutlu eden bir şey yoktur." />
+    <string id="7hx2Nlmd" text="Tabakhane" />
+    <string id="8MwqyFfS" text="Nalbur" />
+    <string id="AfiEQPky" text="Her kentte birkaç zanaatçı bulunur. Birilerinin sıradan insanlar için sıradan işleri yapması gerekir ve çoğu bunu kendi yapar." />
+    <string id="aIUXMvjS" text="Şaraphane piyasadan üzüm satın alır ve Kalradya'nın dört bir yanında daima talep gören şarapları üretir." />
+    <string id="boupIGPX" text="Zeytin Cenderesi" />
+    <string id="bZeZCHoa" text="Yün Dokumahanesi" />
+    <string id="cabJ2jXP" text="Çömlek atölyeleri kilden çömlek yapar. İster zengin olsun ister fakir, çömleksiz bir ev düşünülemez." />
+    <string id="cxrsASao" text="Ender bulunan gümüş cevheri gümüşçülerde değerli mücevherlere dönüştürülür. Mücevherat bütün ticari malların en değerlisidir." />
+    <string id="EBCKXbTa" text="Kadife Dokumahanesi" />
+    <string id="eS6nGak1" text="Yün Dokumacısı" />
+    <string id="EVSoHzAQ" text="Bu atölyede koyun yününden giysiler üretilir. Giysiler her zaman talep görür." />
+    <string id="GsaLzLfl" text="Bira İmalathanesi" />
+    <string id="gZArIwNi" text="Gümüşçü" />
+    <string id="HXuAkbcU" text="Kadife Dokumacısı" />
+    <string id="IO7Jgato" text="Marangoz" />
+    <string id="IwFxZ6ab" text="Bu atölyede ham keten dokunarak kullanışlı keten kumaşına dönüştürülür. Birçok kişi keteni genel kullanım için satın alır. Keten ayrıca başka atölyelerde giysi ve zırh üretmek için de gereklidir." />
+    <string id="J2Ioper5" text="Demirciler her ordunun kalbidir. Demircilerde demir dövülerek silah ve zırh yapıldığı gibi, sert keresteden aletler de yapılır." />
+    <string id="KcDJ5HXC" text="Sert kerestenin birçok kullanım alanı vardır. Zanaatçılar sert keresteden ok, yay ve kalkan yaparlar." />
+    <string id="Kqt8RHh7" text="Demirci" />
+    <string id="LC0mHXge" text="Zeytin cenderesinde zeytinlerden yağ elde edilir. Zeytinyağı piyasada her zaman iyi para eder." />
+    <string id="NbhGCck5" text="Ham deri pek bir işe yaramaz. Ancak, biz onu tabakhanede tabaklanmış deriye dönüştürür ve hafif zırhlar yaparız." />
+    <string id="ousGnzju" text="Tabakçı" />
+    <string id="PdvjpThP" text="Şarap Tüccarı" />
+    <string id="pVjxlT1f" text="Biracı" />
+    <string id="QChaCM2g" text="Bu atölyede ince pamuk dokunarak daha da ince kadife elde edilir. Kadife, Kalradya'nın en lüks mallarından biridir." />
+    <string id="qfzkMuLj" text="Zanaatçı" />
+    <string id="RLz2b53X" text="Tuhafiyeci" />
+    <string id="Tj7ErPfn" text="Çömlek Atölyesi" />
+    <string id="tK4IiP3J" text="Keten Dokumahanesi" />
+    <string id="UiSes6XY" text="Ahşap Atölyesi" />
+    <string id="uy2mSmw3" text="Üzüm Cenderesi" />
+    <string id="VHLUHBaT" text="Zanaatçılar" />
+    <string id="wCuAxt4m" text="Yağ Üreticisi" />
+    <string id="wLTQpbIM" text="Çömlekçi" />
+  </strings>
+</base>

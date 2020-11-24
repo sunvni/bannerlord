@@ -1,0 +1,131 @@
+<Prefab>
+  <Parameters>
+    <Parameter Name="IsRightSideItem" DefaultValue="false" />
+  </Parameters>
+  <Constants>
+    <Constant Name="Barter.Item.Tuple" BooleanCheck="*IsRightSideItem" OnFalse="Barter.Left.ItemTuple" OnTrue="Barter.Right.ItemTuple" />
+
+    <Constant Name="Barter.Item.Tuple.Brush.Width" BrushLayer="Default" BrushName="!Barter.Item.Tuple" BrushValueType="Width" />
+    <Constant Name="OfferItem.Width" MultiplyResult="0.84" Value="!Barter.Item.Tuple.Brush.Width" />
+
+    <Constant Name="Barter.Item.Tuple.Brush.Height" BrushLayer="Default" BrushName="!Barter.Item.Tuple" BrushValueType="Height" />
+    <Constant Name="OfferItem.Height" MultiplyResult="0.84" Value="!Barter.Item.Tuple.Brush.Height" />
+
+    <Constant Name="Inventory.Tuple.ThumbnailMargin" BooleanCheck="*IsRightSideItem" OnFalse="41" OnTrue="41" />
+
+    <Constant Name="Extension.Hidden.MarginTop" Value="2" />
+    <Constant Name="Extension.Hidden.Height" Value="53" />
+    <Constant Name="Extension.Selected.MarginTop" Value="53" />
+
+    <Constant Name="Slot.Width" Value="54" />
+    <Constant Name="Slot.Height" Value="52" />
+
+    <Constant Name="Image.Padding" Value="2" />
+
+    <Constant Name="TextYFix" Value="2" />
+    <Constant Name="NameText.XFixPressed" BooleanCheck="*IsRightSideItem" OnFalse="-4" OnTrue="-3" />
+
+    <Constant Name="Button.Transfer.Brush" BooleanCheck="*IsRightSideItem" OnFalse="Inventory.Tuple.BuyButton" OnTrue="Inventory.Tuple.SellButton" />
+
+    <Constant Name="Button.Transfer.Width" BrushLayer="Default" BrushName="Inventory.Tuple.BuyButton" BrushValueType="Width" />
+    <Constant Name="Button.Transfer.Height" BrushLayer="Default" BrushName="Inventory.Tuple.BuyButton" BrushValueType="Height" />
+
+    <Constant Name="Button.TransferAll.Width" BrushLayer="Default" BrushName="Inventory.Tuple.Extension.BuyButton" BrushValueType="Width" />
+    <Constant Name="Button.TransferAll.Height" BrushLayer="Default" BrushName="Inventory.Tuple.Extension.BuyButton" BrushValueType="Height" />
+
+    <Constant Name="NameText.Width" BooleanCheck="*IsRightSideItem" OnFalse="250" OnTrue="275" />
+    <Constant Name="NameText.Margin" BooleanCheck="*IsRightSideItem" OnFalse="160" OnTrue="160" />
+    <Constant Name="CountText.Width" BooleanCheck="*IsRightSideItem" OnFalse="55" OnTrue="55" />
+    <Constant Name="CountText.Margin" BooleanCheck="*IsRightSideItem" OnFalse="62" OnTrue="87" />
+    <Constant Name="ValueText.Width" BooleanCheck="*IsRightSideItem" OnFalse="55" OnTrue="50" />
+    <Constant Name="ValueText.Margin" BooleanCheck="*IsRightSideItem" OnFalse="0" OnTrue="30" />
+
+    <Constant Name="Tuple.HorizontalAlignment" BooleanCheck="*IsRightSideItem" OnFalse="Right" OnTrue="Left" />
+
+  </Constants>
+  <VisualDefinitions>
+    <VisualDefinition Name="NameTextDefinition" TransitionDuration="0.075">
+      <VisualState PositionXOffset="0" PositionYOffset="0" State="Default" />
+      <VisualState PositionXOffset="!NameText.XFixPressed" PositionYOffset="0" State="Pressed" />
+    </VisualDefinition>
+  </VisualDefinitions>
+  <Window>
+    <ButtonWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="!Tuple.HorizontalAlignment" Brush="!Barter.Item.Tuple" ButtonType="Radio" IsRightSide="*IsRightSideItem">
+      <Children>
+
+        <ListPanel Id="Main" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!OfferItem.Width" SuggestedHeight="!OfferItem.Height" HorizontalAlignment="Center" Brush="!Barter.Item.Tuple" >
+          <Children>
+
+            <Widget Id="Body" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+              <Children>
+
+                <!--Visual-->
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="99.12" SuggestedHeight="48.72" VerticalAlignment="Center" MarginLeft="8" Sprite="Barter\barter_portrait">
+                  <Children>
+                    <BarterItemVisual/>
+                  </Children>
+                </Widget>
+
+                <ListPanel Id="MainControls" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="265" HorizontalAlignment="Left" LayoutImp.LayoutMethod="HorizontalLeftToRight" MarginLeft="118" MarginTop="0">
+                  <Children>
+
+                    <TextWidget Id="NameText" VisualDefinition="NameTextDefinition" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="40" HorizontalAlignment="Left" VerticalAlignment="Center" Brush="InventoryDefaultFontBrush" Brush.FontColor="#F4E1C4FF" Brush.TextVerticalAlignment="Center" Brush.FontSize="16" Text="@ItemLbl" />
+                    <!--<TextWidget Id="CountText" DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" HorizontalAlignment="Right" PositionYOffset="!TextYFix" Brush="InventoryDefaultFontBrush" Brush.FontSize="18" Brush.TextHorizontalAlignment="Center" IntText="@ItemCount" />-->
+
+                    <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" LayoutImp.LayoutMethod="VerticalBottomToTop" HorizontalAlignment="Right" VerticalAlignment="Top" MarginTop="5" IsVisible="@IsMultiple">
+                      <Children>
+
+                        <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" LayoutImp.LayoutMethod="HorizontalLeftToRight" HorizontalAlignment="Center" IsVisible="@IsMultiple">
+                          <Children>
+                            <BarterItemCountControlButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="25"  SuggestedHeight="25" Command.MoveOne="ExecuteRemoveOneOffered" UpdateChildrenStates="true" IncreaseToHoldDelay="1">
+                              <Children>
+                                <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Barter.AddOne.Button" Text="-" />
+                              </Children>
+                            </BarterItemCountControlButtonWidget>
+
+                            <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center"  Brush="InventoryDefaultFontBrush" Brush.FontSize="18"  Text="@CurrentOfferedAmountText" />
+
+                            <BarterItemCountControlButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="25" SuggestedHeight="25" HorizontalAlignment="Right" Command.MoveOne="ExecuteAddOneOffered" UpdateChildrenStates="true" IncreaseToHoldDelay="1">
+                              <Children>
+                                <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Barter.AddOne.Button" Text="+" />
+                              </Children>
+                            </BarterItemCountControlButtonWidget>
+
+                          </Children>
+                        </ListPanel>
+
+                        <!--Offered Item Slider-->
+                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="120" SuggestedHeight="20" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginRight="8" MarginBottom="5" Sprite="Barter\middle_tuple_slider_bed" IsVisible="@IsMultiple">
+                          <Children>
+                            <SliderWidget Id="ScrollBar" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="10" VerticalAlignment="Center" MarginLeft="7" MarginRight="6" DoNotUpdateHandleSize="true" Filler="Filler" Handle="Handle" IsDiscrete="true" MaxValueInt="@TotalItemCount" MinValueInt="1" ValueInt="@CurrentOfferedAmount">
+                              <Children>
+                                <Widget Id="Filler" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="11" SuggestedHeight="10" HorizontalAlignment="Left" VerticalAlignment="Center" Sprite="BlankWhiteSquare_9" Brush.Color="#8B5C22FF" />
+                                <Widget Id="Handle" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="3" SuggestedHeight="18" HorizontalAlignment="Left" VerticalAlignment="Center" Brush="Barter.Slider.Handle" />
+                              </Children>
+                            </SliderWidget>
+                          </Children>
+                        </Widget>
+
+                      </Children>
+                    </ListPanel>
+
+                    <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" LayoutImp.LayoutMethod="VerticalBottomToTop" HorizontalAlignment="Right">
+                      <Children>
+                        <ButtonWidget UpdateChildrenStates="true" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="10" SuggestedHeight="10" HorizontalAlignment="Right" VerticalAlignment="Top" MarginTop="5" Command.Click="ExecuteAction" IsVisible="@IsItemTransferrable" Brush="Barter.RemoveOffer.Button" />
+                        <TextWidget Id="CostText" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="25" HorizontalAlignment="Right" VerticalAlignment="Bottom" MarginRight="2" PositionYOffset="12"  Brush="InventoryDefaultFontBrush" Brush.TextHorizontalAlignment="Left" Brush.TextVerticalAlignment="Bottom" Brush.FontSize="18" Text="@TotalItemCountText" IsVisible="@IsMultiple" />
+                      </Children>
+                    </ListPanel>
+
+                  </Children>
+                </ListPanel>
+
+              </Children>
+            </Widget>
+
+          </Children>
+        </ListPanel>
+
+      </Children>
+    </ButtonWidget>
+  </Window>
+</Prefab>

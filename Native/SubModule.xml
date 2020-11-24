@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module>
+	<Name value = "Native"/>
+	<Id value = "Native"/>
+	<Version value = "e1.5.2"/>
+	<SingleplayerModule value="true"/>
+	<MultiplayerModule value="true"/>
+  <Official value ="true" />
+	<DependedModules/>
+	<SubModules>
+		<SubModule>
+			<Name value = "ViewSubModule"/>
+			<DLLName value = "TaleWorlds.MountAndBlade.View.dll"/>
+			<SubModuleClassType value = "TaleWorlds.MountAndBlade.View.ViewSubModule"/>
+			<Tags>
+				<Tag key="DedicatedServerType" value ="none" />
+				<Tag key="IsNoRenderModeElement" value ="false" />
+			</Tags>
+		</SubModule>
+		<SubModule>
+			<Name value = "GauntletUISubModule"/>
+			<DLLName value = "TaleWorlds.MountAndBlade.GauntletUI.dll"/>
+			<SubModuleClassType value = "TaleWorlds.MountAndBlade.GauntletUI.GauntletUISubModule"/>
+			<Tags>
+				<Tag key="DedicatedServerType" value ="none" />
+				<Tag key="IsNoRenderModeElement" value ="false" />
+			</Tags>
+		</SubModule>
+		<SubModule>
+			<Name value = "DedicatedServerSubModule"/>
+			<DLLName value = "TaleWorlds.MountAndBlade.DedicatedServer.dll"/>
+			<SubModuleClassType value = "TaleWorlds.MountAndBlade.DedicatedServer.DedicatedServerSubModule"/>			
+			<Tags>
+				<Tag key="DedicatedServerType" value ="matchmaker" />
+			</Tags>
+		</SubModule>
+		<SubModule>
+			<Name value = "DedicatedCustomServerSubModule"/>
+			<DLLName value = "TaleWorlds.MountAndBlade.DedicatedCustomServer.dll"/>
+			<SubModuleClassType value = "TaleWorlds.MountAndBlade.DedicatedCustomServer.DedicatedCustomServerSubModule"/>			
+			<Tags>
+				<Tag key="DedicatedServerType" value ="custom" />
+			</Tags>
+		</SubModule>
+	</SubModules>
+	
+	<Xmls>
+		<XmlNode>                
+			<XmlName id="Items" path="mpitems"/>
+			<IncludedGameTypes>
+				<GameType value = "MultiplayerGame"/>
+			</IncludedGameTypes>
+		</XmlNode>               
+		<XmlNode>                
+			<XmlName id="MPCharacters" path="mpcharacters"/>
+			<IncludedGameTypes>
+				<GameType value = "MultiplayerGame"/>
+			</IncludedGameTypes>
+		</XmlNode>               
+		<XmlNode>                
+			<XmlName id="BasicCultures" path="mpcultures"/>
+			<IncludedGameTypes>
+				<GameType value = "MultiplayerGame"/>
+			</IncludedGameTypes>
+		</XmlNode>               
+		<XmlNode>                
+			<XmlName id="MPClassDivisions" path="mpclassdivisions"/>
+			<IncludedGameTypes>
+				<GameType value = "MultiplayerGame"/>
+			</IncludedGameTypes>
+		</XmlNode>               
+		<XmlNode>                
+			<XmlName id="Monsters" path="monsters"/>
+		</XmlNode>               
+		<XmlNode>                
+			<XmlName id="ItemModifiers" path="item_modifiers"/>
+		</XmlNode>               
+		<XmlNode>                
+			<XmlName id="ItemModifierGroups" path="item_modifiers_groups"/>
+		</XmlNode>               
+		<XmlNode>                
+			<XmlName id="CraftingPieces" path="mp_crafting_pieces"/>
+			<IncludedGameTypes>
+				<GameType value = "MultiplayerGame"/>
+			</IncludedGameTypes>
+		</XmlNode>               
+		<XmlNode>                
+			<XmlName id="CraftingPieces" path="crafting_pieces"/>
+			<IncludedGameTypes>
+				<GameType value = "Campaign"/>
+				<GameType value = "CampaignStoryMode"/>
+				<GameType value = "CustomGame"/>
+				<GameType value = "EditorGame"/>
+			</IncludedGameTypes>
+		</XmlNode>               
+		<XmlNode>                
+			<XmlName id="CraftingTemplates" path="crafting_templates"/>
+		</XmlNode>          
+		<XmlNode>                
+			<XmlName id="SkeletonScales" path="skeleton_scales"/>
+		</XmlNode>   
+		<XmlNode>                
+			<XmlName id="SiegeEngines" path="siegeengines"/>
+		</XmlNode>
+	</Xmls>
+</Module>

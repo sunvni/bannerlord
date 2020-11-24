@@ -1,0 +1,42 @@
+<Prefab>
+  <Constants>
+    <Constant Name="Banner.Width" BrushLayer="Default" BrushName="Flat.Tuple.Banner.Small" BrushValueType="Width" />
+    <Constant Name="Banner.Height" BrushLayer="Default" BrushName="Flat.Tuple.Banner.Small" BrushValueType="Height" />
+
+    <Constant Name="Banner.Width.Scaled" MultiplyResult="0.30" Value="!Banner.Width" />
+    <Constant Name="Banner.Height.Scaled" MultiplyResult="0.38" Value="!Banner.Height"/>
+  </Constants>
+  <Parameters>
+    <Parameter DefaultValue="false" Name="IsButton" />
+    <Parameter DefaultValue="false" Name="IsPartyItem" />
+  </Parameters>
+  <Window>
+    <GameMenuPartyItemWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="125" SuggestedHeight="150" Command.AlternateClick="ExecuteOpenEncyclopedia" Command.Click="ExecuteSetAsContextMenuItem" Command.HoverBegin="ExecuteOpenTooltip" Command.HoverEnd="ExecuteCloseTooltip" CurrentCharacterImageWidget="RelationBackgroundWidget\CharacterImage" Description="@DescriptionText" Location="@LocationText" Power="@PowerText" Name="@NameText" Profession="@ProfessionText" Relation="@Relation" RelationBackgroundWidget="RelationBackgroundWidget" QuestTypeWidget="RelationBackgroundWidget\QuestTypeWidget" NormalQuestBrush="GameMenu.QuestType" MainStoryQuestBrush="GameMenu.QuestType.MainStory" IsMainStoryQuest="@IsQuestMainStory" IssueTypeWidget="RelationBackgroundWidget\IssueTypeWidget" QuestType="@ItemQuestType" IssueType="@ItemIssueType" UpdateChildrenStates="true" IsPartyItem="*IsPartyItem" PartyBackgroundBrush="GameMenu.Tableau.Background.Party" CharacterBackgroundBrush="GameMenu.Tableau.Background.Character" BackgroundImageWidget="RelationBackgroundWidget\BackgroundImageWidget" HoveredCursorState="RightClickLink">
+      <Children>
+
+        <Widget Id="RelationBackgroundWidget" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="85" HorizontalAlignment="Center" MarginLeft="4" MarginRight="4" MarginTop="4" MarginBottom="4" Brush="RelationBackgroundBrush" UpdateChildrenStates="true">
+          <Children>
+            <ImageWidget Id="BackgroundImageWidget" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" OverrideDefaultStateSwitchingDisabled="*IsButton"/>
+            <MaskedTextureWidget DataSource="{Banner_9}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Banner.Width.Scaled" SuggestedHeight="!Banner.Height.Scaled" HorizontalAlignment="Right" VerticalAlignment="Top" MarginTop="1" MarginRight="3" Brush="Flat.Tuple.Banner.Small.Hero" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode" IsDisabled="true" OverlayTextureScale="2.2" IsHidden="*IsPartyItem" />
+            <ImageIdentifierWidget Id="CharacterImage" DataSource="{Visual}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode" />
+
+            <ImageWidget Id="QuestTypeWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="21" SuggestedHeight="35" HorizontalAlignment="Right" VerticalAlignment="Bottom" IsVisible="false" OverrideDefaultStateSwitchingEnabled="true" IsEnabled="false" DoNotAcceptEvents="true" />
+            <ImageWidget Id="IssueTypeWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="21" SuggestedHeight="35" HorizontalAlignment="Right" VerticalAlignment="Bottom" Brush="GameMenu.IssueType" IsVisible="false" OverrideDefaultStateSwitchingEnabled="true" IsEnabled="false" DoNotAcceptEvents="true"/>
+          </Children>
+        </Widget>
+
+        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="32" SuggestedHeight="48" HorizontalAlignment="Left" VerticalAlignment="Top" MarginLeft="5" MarginTop="7" Sprite="Mission\dungeon" IsVisible="@IsCharacterInPrison" DoNotAcceptEvents="true"/>
+        <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="25" HorizontalAlignment="Left" VerticalAlignment="Top" MarginLeft="8" MarginRight="8" MarginTop="7" Brush="EncounterTextBrush" Brush.FontSize="18" Brush.TextHorizontalAlignment="Right" Text="@PartySizeLbl" />
+
+        <TextWidget Id="NameTextWidget" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="40" VerticalAlignment="Bottom" MarginLeft="5" MarginRight="5" MarginBottom="15" Brush="EncounterTextBrush" Brush.FontSize="16" Text="@NameText" IsVisible="@IsNeutral"/>
+        <TextWidget Id="NameTextWidget" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="40" VerticalAlignment="Bottom" MarginLeft="5" MarginRight="5" MarginBottom="15" Brush="EncounterTextBrush" Brush.FontSize="16" Text="@NameText" Brush.FontColor="#8CDBB5FF" IsVisible="@IsPlayer"/>
+        <TextWidget Id="NameTextWidget" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="40" VerticalAlignment="Bottom" MarginLeft="5" MarginRight="5" MarginBottom="15" Brush="EncounterTextBrush" Brush.FontSize="16" Text="@NameText" Brush.FontColor="#DD5454FF" IsVisible="@IsEnemy"/>
+        <TextWidget Id="NameTextWidget" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="40" VerticalAlignment="Bottom" MarginLeft="5" MarginRight="5" MarginBottom="15" Brush="EncounterTextBrush" Brush.FontSize="16" Text="@NameText" Brush.FontColor="#4EE04CFF" IsVisible="@IsAlly"/>
+
+
+
+        <TutorialHighlightItemWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="TutorialHighlightBrush" IsEnabled="false" IsHighlightEnabled="@IsHighlightEnabled" IsVisible="false" OverrideDefaultStateSwitchingEnabled="true" />
+      </Children>
+    </GameMenuPartyItemWidget>
+  </Window>
+</Prefab>

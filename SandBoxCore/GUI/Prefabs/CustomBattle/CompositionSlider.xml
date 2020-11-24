@@ -1,0 +1,51 @@
+<Prefab>
+  <Parameters>
+    <Parameter Name="SliderImage" DefaultValue="compass\HorseArcher_Light" />
+    <Parameter Name="SliderIntValue" DefaultValue="0" />
+    <Parameter Name="SliderFloatValue" DefaultValue="0" />
+    <Parameter Name="IsSliderEnabled" DefaultValue="0" />
+    <Parameter Name="CompositionText" DefaultValue="0" />
+    <Parameter Name="CanBeLocked" DefaultValue="true" />
+    <Parameter Name="CustomTypeSelectionExecute" DefaultValue=""/>
+    <Parameter Name="MaxInt" DefaultValue="100"/>
+    <Parameter Name="MinInt" DefaultValue="0"/>
+
+  </Parameters>
+  <Variables>
+  </Variables>
+  <Window>
+    <ListPanel Id="SliderParent" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" LayoutImp.LayoutMethod="HorizontalLeftToRight">
+      <Children>
+
+        <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="50" SuggestedHeight="50" HorizontalAlignment="Right" VerticalAlignment="Center" Sprite="*SliderImage" Command.Click="*CustomTypeSelectionExecute"/>
+
+        <!--Slider-->
+        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="362" SuggestedHeight="38" MarginLeft="35" >
+          <Children>
+            <SliderWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="338" SuggestedHeight="42" VerticalAlignment="Center" Filler="Filler" Handle="SliderHandle" Locked="*IsSliderEnabled" MaxValueInt="*MaxInt" MinValueInt="*MinInt" ValueInt="*SliderIntValue" IsDiscrete="true" DoNotUpdateHandleSize="true">
+              <Children>
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="362" SuggestedHeight="38" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="SPOptions\standart_slider_canvas" IsEnabled="false" />
+                <Widget Id="Filler" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="345" SuggestedHeight="35" VerticalAlignment="Center" Sprite="SPOptions\standart_slider_fill" ClipContents="true">
+                  <Children>
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="345" SuggestedHeight="35" HorizontalAlignment="Left" VerticalAlignment="Center" Sprite="SPOptions\standart_slider_fill" />
+                  </Children>
+                </Widget>
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="400" SuggestedHeight="65" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="SPOptions\standart_slider_frame" IsEnabled="false" />
+                <Widget Id="SliderHandle" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="14" SuggestedHeight="38" HorizontalAlignment="Left" VerticalAlignment="Center" Brush="SPOptions.Slider.Handle" DoNotAcceptEvents="true"/>
+              </Children>
+            </SliderWidget>
+          </Children>
+        </Widget>
+
+        <CustomBattleSliderLockButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="40" MarginLeft="0" SuggestedHeight="40" Brush="CustomBattle.Slider.Lock.Opened" ButtonType="Toggle" ToggleIndicator="ToggleIndicator" IsVisible="*CanBeLocked" IsSelected="*IsSliderEnabled" UpdateChildrenStates="true" LockOpenedBrush="CustomBattle.Slider.Lock.Opened" LockClosedBrush="CustomBattle.Slider.Lock.Closed"/>
+
+        <IntegerInputTextWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="70" SuggestedHeight="30" HorizontalAlignment="Right" VerticalAlignment="Center" Brush="CustomBattle.SliderValue.Text" IntText="*SliderIntValue" MaxInt="*MaxInt" MinInt="*MinInt" EnableClamp="true" ClipContents="false" IsDisabled="*IsSliderEnabled" UpdateChildrenStates="true" DoNotPassEventsToChildren="true">
+          <Children>
+            <Widget  WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="CustomBattle.SliderValue.Input" ClipContents="false"/>
+          </Children>
+        </IntegerInputTextWidget>
+
+      </Children>
+    </ListPanel>
+  </Window>
+</Prefab>

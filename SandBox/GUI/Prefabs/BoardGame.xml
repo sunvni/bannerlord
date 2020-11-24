@@ -1,0 +1,105 @@
+<Prefab>
+  <Constants>
+	<Constant Name="Popup.CloseButton.Width" BrushName="Popup.CloseButton" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="Popup.CloseButton.Height" BrushName="Popup.CloseButton" BrushLayer="Default" BrushValueType="Height"/>
+  </Constants>
+  <VisualDefinitions>
+  </VisualDefinitions>
+  <Window>
+    <Widget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+      <Children>
+
+        <ListPanel WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="350" MarginLeft="10" LayoutImp.LayoutMethod="VerticalBottomToTop" HorizontalAlignment="Right" VerticalAlignment="Bottom" MarginBottom="40" MarginRight="40">
+          <Children>
+
+            <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Text="@TurnOwnerText" Brush="BoardGame.TurnOver.Text" HorizontalAlignment="Center"/>
+
+            <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" LayoutImp.LayoutMethod="HorizontalLeftToRight" HorizontalAlignment="Center" MarginTop="20"  >
+              <Children>
+
+                <Widget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Brush="BoardGame.Dice" IsVisible="@IsGameUsingDice" >
+                  <Children>
+                    <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren"  MarginTop="10" MarginBottom="10" MarginLeft="10" MarginRight="10"  LayoutImp.LayoutMethod="VerticalBottomToTop" >
+                      <Children>
+
+                        <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Text="@DiceResult"/>
+
+                        <ButtonWidget IsEnabled="@CanRoll" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="133" SuggestedHeight="50" HorizontalAlignment="Center" VerticalAlignment="Bottom" Brush="BoardGame.Button" DoNotPassEventsToChildren="true" Command.Click="ExecuteRoll" MarginTop="22">
+                          <Children>
+                            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Text="@RollDiceText" Brush="BoardGame.Button.Text"/>
+                          </Children>
+                        </ButtonWidget>
+
+                      </Children>
+                    </ListPanel>
+                  </Children>
+                </Widget>
+
+                <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" MarginLeft="10" LayoutImp.LayoutMethod="VerticalBottomToTop">
+                  <Children>
+
+                    <ToggleWidget UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" HorizontalAlignment="Center" SuggestedWidth="133" SuggestedHeight="50" Brush="BoardGame.Button" DoNotPassEventsToChildren="true" WidgetToClose="..\..\..\..\InformationWindow">
+                      <Children>
+                        <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Text="@InstructionsText" Brush="BoardGame.Button.Text"/>
+                      </Children>
+                    </ToggleWidget>
+
+                    <ButtonWidget UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" HorizontalAlignment="Center" SuggestedWidth="133" SuggestedHeight="50" Brush="BoardGame.Button" DoNotPassEventsToChildren="true" Command.Click="ExecuteForfeit" MarginTop="10" IsEnabled="@IsPlayersTurn">
+                      <Children>
+                        <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Text="@ForfeitText" Brush="BoardGame.Button.Text"/>
+                      </Children>
+                    </ButtonWidget>
+
+                  </Children>
+                </ListPanel>
+
+              </Children>
+            </ListPanel>
+
+          </Children>
+        </ListPanel>
+
+		<Widget Id="InformationWindow" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="Disabled" Brush.AlphaFactor="0.75" IsVisible="false" >
+			<Children>
+			
+				<Widget HeightSizePolicy ="Fixed" WidthSizePolicy="Fixed" HorizontalAlignment="Center" VerticalAlignment="Center" SuggestedWidth="820" SuggestedHeight="700" Brush="Frame1Brush" >
+					<Children>
+						<BoardGameInstructionPageWidget DataSource="{Instructions}" PreviousButtonWidget="..\PreviousButton" NextButtonWidget="..\NextButton" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="20" MarginRight="20" MarginTop="20" MarginBottom="100" >
+							<ItemTemplate>
+								<Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" LayoutImp.LayoutMethod="VerticalBottomToTop" >
+									<Children>
+										<TextWidget WidthSizePolicy = "StretchToParent" HeightSizePolicy = "CoverChildren" HorizontalAlignment="Center" Text="@TitleText" Brush="BoardGame.InstructionsTitle.Text" />
+										<ListPanel LayoutImp.LayoutMethod="VerticalBottomToTop" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="50" VerticalAlignment="Center">
+											<Children>
+												<BoardGameInstructionSpriteWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" HorizontalAlignment="Center" MarginTop="30" GameType="@GameType"/>
+												<TextWidget WidthSizePolicy = "StretchToParent" HeightSizePolicy = "CoverChildren" HorizontalAlignment="Center" Text="@DescriptionText" MarginTop="30" MarginBottom="30" Brush="BoardGame.Instructions.Text"/>
+											</Children>
+										</ListPanel>
+									</Children>
+								</Widget>
+							</ItemTemplate>
+						</BoardGameInstructionPageWidget>
+						
+						<ButtonWidget Id="PreviousButton" DoNotPassEventsToChildren="true" WidthSizePolicy = "Fixed" HeightSizePolicy = "Fixed" SuggestedWidth = "227" SuggestedHeight = "40" HorizontalAlignment = "Center" VerticalAlignment = "Bottom" Brush = "ButtonBrush1" WidgetToClose="..\..\..\InformationWindow" MarginBottom="20" MarginRight="240">
+							<Children>
+								<TextWidget WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent" Text="@PreviousText" Brush.FontSize="20" />
+							</Children>
+						</ButtonWidget>
+						
+						<ButtonWidget Id="NextButton" DoNotPassEventsToChildren="true" WidthSizePolicy = "Fixed" HeightSizePolicy = "Fixed" SuggestedWidth = "227" SuggestedHeight = "40" HorizontalAlignment = "Center" VerticalAlignment = "Bottom" Brush = "ButtonBrush1" WidgetToClose="..\..\..\InformationWindow" MarginBottom="20" MarginLeft="240">
+							<Children>
+								<TextWidget WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent" Text="@NextText" Brush.FontSize="20" />
+							</Children>
+						</ButtonWidget>
+					</Children>
+				</Widget>	  
+				
+				<ToggleWidget WidthSizePolicy = "Fixed" HeightSizePolicy = "Fixed" SuggestedWidth = "!Popup.CloseButton.Width" SuggestedHeight = "!Popup.CloseButton.Height" HorizontalAlignment = "Center" VerticalAlignment = "Center" PositionXOffset="410" PositionYOffset="-350" Brush = "Popup.CloseButton" WidgetToClose="..\..\InformationWindow"/>
+				
+			</Children>
+		</Widget>
+		
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

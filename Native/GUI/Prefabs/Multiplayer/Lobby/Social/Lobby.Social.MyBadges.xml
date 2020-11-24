@@ -1,0 +1,31 @@
+<Prefab>
+  <Constants>
+  </Constants>
+  <Window>    
+    <!--Badges Right Panel-->
+    <ValueBasedVisibilityWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" IndexToBeVisible="0" IndexToWatch="@SelectedSubPageIndex">
+      <Children>
+
+        <TextWidget DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Top" PositionYOffset="-10" MarginTop="50" Brush="MPLobby.Armory.SelectionTitle" ClipContents="false" Text="@BadgesText" />
+
+        <GridWidget DataSource="{Badges}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" DefaultCellWidth="130" DefaultCellHeight="180" ColumnCount="6" LayoutImp="GridLayout" MarginTop="100">
+          <ItemTemplate>
+            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="130" SuggestedHeight="130" HorizontalAlignment="Center">
+              <Children>
+                <HintWidget DataSource="{Hint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false" />
+                <ButtonWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" MarginLeft="5" MarginRight="5" MarginTop="5" MarginBottom="5" Brush="MPLobby.Profile.Badge.Card" Command.Click="ExecuteSetAsActive" IsEnabled="@IsEarned" IsSelected="@IsSelected" DoNotPassEventsToChildren="true" UpdateChildrenStates="true">
+                  <Children>
+                    <MultiplayerPlayerBadgeVisualWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="97" SuggestedHeight="70" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.Profile.Badge.Icon" BadgeId="@BadgeId" />
+                    <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" PositionYOffset="114" MarginTop="5" IsEnabled="false" Text="@Name" Brush="MPLobby.Profile.BadgesText"/>
+                    <HintWidget DataSource="{Hint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false" />
+                  </Children>
+                </ButtonWidget>
+              </Children>
+            </Widget>
+          </ItemTemplate>
+        </GridWidget>
+      </Children>
+    </ValueBasedVisibilityWidget>
+		
+  </Window>
+</Prefab>

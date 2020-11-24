@@ -1,0 +1,40 @@
+<Prefab>
+  <Constants>
+
+  </Constants>
+  <Window>
+    <MapNotificationItemWidget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="300" SuggestedHeight="113" HorizontalAlignment="Right" VerticalAlignment="Bottom" PositionXOffset="107" Command.OnRemove="ExecuteRemove" Command.OnInspection="ExecuteAction" NotificationExtensionWidget="NotificationExtensionWidget" NotificationRingImageWidget="NotificationRingWidgetParent\NotificationRingImageWidget" NotificationRingWidget="NotificationRingWidgetParent" NotificationType="@NotificationIdentifier" RemoveNotificationButtonWidget="NotificationRingWidgetParent\NotificationRemoveButtonWidget">
+      <Children>
+
+        <Widget Id="NotificationExtensionWidget" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="226" SuggestedHeight="99" HorizontalAlignment="Right" VerticalAlignment="Center" PositionXOffset="226" Sprite="MapNotification\notification_ring_extension">
+          <Children>
+            <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Top" MarginLeft="25" MarginTop="20" LayoutImp.LayoutMethod="VerticalBottomToTop">
+              <Children>
+                <RichTextWidget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="173" HorizontalAlignment="Left" Brush="Map.Notification.Title.Text" Text="@TitleText" />
+
+                <RichTextWidget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="173" HorizontalAlignment="Left" Brush="Map.Notification.Description.Text" Text="@DescriptionText" />
+              </Children>
+            </ListPanel>
+          </Children>
+        </Widget>
+
+        <Widget Id="NotificationRingWidgetParent" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="107" SuggestedHeight="113" HorizontalAlignment="Right" VerticalAlignment="Center">
+          <Children>
+
+            <Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="75" SuggestedHeight="75" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="BlankWhiteSquare_9" PositionXOffset="3" Brush.Color="#000000FF" CircularClipEnabled="true" CircularClipRadius="45" />
+            <Widget Id="NotificationRingImageWidget" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="75" SuggestedHeight="75" HorizontalAlignment="Center" VerticalAlignment="Center" PositionXOffset="3" Brush="Map.Notification.Type.Circle.Image" />
+            <ImageWidget Id="NotificationRingWidget" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="107" SuggestedHeight="113" HorizontalAlignment="Right" VerticalAlignment="Center" Brush="Map.Notification.Ring" />
+
+            <ButtonWidget Id="NotificationRemoveButtonWidget" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="30" SuggestedHeight="30" HorizontalAlignment="Right" VerticalAlignment="Top" MarginRight="15" Brush="Map.Notification.Remove.Button">
+              <Children>
+                <RichTextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Map.Notification.Remove.Text" Text="X" />
+              </Children>
+            </ButtonWidget>
+
+          </Children>
+        </Widget>
+
+      </Children>
+    </MapNotificationItemWidget>
+  </Window>
+</Prefab>

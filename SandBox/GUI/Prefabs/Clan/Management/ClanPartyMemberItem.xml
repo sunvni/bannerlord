@@ -1,0 +1,15 @@
+<Prefab>
+  <Window>
+    <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="40">
+      <Children>
+        <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="45" SuggestedHeight="33.5" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" Command.Click="ExecuteLink" DoNotPassEventsToChildren="true" >
+          <Children>
+            <ImageIdentifierWidget DataSource="{Visual}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode" />
+          </Children>
+        </ButtonWidget>
+        <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" SuggestedWidth="200" VerticalAlignment="Center" MarginLeft="40" Brush="Clan.Party.Member.Text" Text="@Name"/>
+        <ClanPartyRoleDropdown DataSource="{ClanRoleSelection}" MarginRight="20" HorizontalAlignment="Right"/>
+      </Children>
+    </ListPanel>
+  </Window>
+</Prefab>

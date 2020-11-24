@@ -1,0 +1,7 @@
+<Window>
+  <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Frame1Brush">
+    <Children>
+      <TextWidget Text="@StatusText" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" HorizontalAlignment="Center" VerticalAlignment="Center" SuggestedHeight="200" SuggestedWidth="600" />
+    </Children>
+  </Widget>
+</Window>

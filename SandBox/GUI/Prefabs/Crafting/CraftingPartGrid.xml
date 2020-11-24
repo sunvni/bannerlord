@@ -1,0 +1,104 @@
+<Prefab>
+  <Parameters>
+    <Parameter Name="GridDataSource" DefaultValue="GridDataSource" />
+  </Parameters>
+  <Constants>
+  </Constants>
+  <Variables>
+  </Variables>
+  <VisualDefinitions>
+  </VisualDefinitions>
+  <Window>
+    <CraftingPartGridWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Grid="Layout1\Layout2\ScrollablePanel\ClipRect\GridWidget">
+      <Children>
+
+        <ListPanel Id="Layout1" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" LayoutImp.LayoutMethod="VerticalBottomToTop">
+          <Children>
+
+            <ListPanel Id="Layout2" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" LayoutImp.LayoutMethod="HorizontalLeftToRight">
+              <Children>
+
+                <ScrollablePanel Id="ScrollablePanel" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Left" VerticalAlignment="Top" AutoHideScrollBars="true" ClipRect="ClipRect" InnerPanel="ClipRect\GridWidget" VerticalScrollbar="..\VerticalScrollbar">
+                  <Children>
+
+                    <!--Cards Panel-->
+                    <Widget Id="ClipRect" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ClipContents="true">
+                      <Children>
+
+                        <GridWidget Id="GridWidget" DataSource="*GridDataSource" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Left" VerticalAlignment="Top" ColumnCount="4" DefaultCellHeight="100" DefaultCellWidth="140">
+                          <ItemTemplate>
+
+                            <CraftingItemGridItemWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="150" SuggestedHeight="116" HorizontalAlignment="Center" VerticalAlignment="Center" Tier="@Tier">
+                              <Children>
+                                <!--PlayerHasPiece-->
+                                <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.Click="Execute"  >
+                                  <Children>
+                                    <CraftingPartItemButtonWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" PlayerHasPiece="@PlayerHasPiece" DontHavePieceBrush="Crafting.Part.Card.DontHavePiece" HasPieceBrush="Crafting.Part.Card.HavePiece" UpdateChildrenStates="true" IsSelected="@Selected" ImageIdentifier="ImageIdentifier" DontHavePieceMaterialBrush="Crafting.Piece.MaterialBrush.DontHavePiece" HasPieceMaterialBrush="Crafting.Piece.MaterialBrush.HavePiece">
+                                      <Children>
+                                        <ImageIdentifierWidget Id="ImageIdentifier" DataSource="{ImageIdentifier}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="103" SuggestedHeight="80" HorizontalAlignment="Center" VerticalAlignment="Center" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode"/>
+                                        <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" MarginTop="23" MarginLeft="25" Brush="Crafting.Card.Tier.Text" Text="@TierText" />
+                                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Bottom" MarginRight="25" MarginBottom="25" Brush="Crafting.Part.Lock.Icon" IsHidden="@PlayerHasPiece"/>
+                                      </Children>
+                                    </CraftingPartItemButtonWidget>
+                                    <HintWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteOpenTooltip" Command.HoverEnd="ExecuteCloseTooltip" IsDisabled="true"/>
+                                  </Children>
+                                </ButtonWidget>
+
+                                <HintWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteOpenTooltip" Command.HoverEnd="ExecuteCloseTooltip" IsDisabled="true"/>
+                              </Children>
+                            </CraftingItemGridItemWidget>
+
+                          </ItemTemplate>
+                        </GridWidget>
+
+                        <!--Scroll Gradient-->
+                        <Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="576" SuggestedHeight="57" HorizontalAlignment="Right" VerticalAlignment="Bottom" PositionXOffset="13" Sprite="CharacterCreation\character_creation_scroll_gradient" />
+                        <Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="576" SuggestedHeight="57" HorizontalAlignment="Right" VerticalAlignment="Top" PositionXOffset="13" Brush.VerticalFlip="true" Sprite="CharacterCreation\character_creation_scroll_gradient" />
+                      </Children>
+                    </Widget>
+                  </Children>
+                </ScrollablePanel>
+
+                <ScrollbarWidget Id="VerticalScrollbar" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="8" HorizontalAlignment="Right" VerticalAlignment="Center" MarginTop="0" MarginBottom="0" AlignmentAxis="Vertical" Handle="VerticalScrollbarHandle" MaxValue="100" MinValue="0">
+                  <Children>
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="4" HorizontalAlignment="Center" Sprite="BlankWhiteSquare_9" Brush.AlphaFactor="0.2" Brush.Color="#5a4033FF" />
+                    <ImageWidget Id="VerticalScrollbarHandle" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="8" SuggestedHeight="10" HorizontalAlignment="Center" Brush="FaceGen.Scrollbar.Handle" />
+                  </Children>
+                </ScrollbarWidget>
+
+              </Children>
+            </ListPanel>
+
+            <!--Divider-->
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="8" Brush="Crafting.Grid.Divider" />
+
+            <!--Size Slider-->
+            <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="50" MarginRight="100" VerticalAlignment="Bottom" HorizontalAlignment="Center" LayoutImp.LayoutMethod="HorizontalLeftToRight">
+              <Children>
+
+                <!--Size Label-->
+                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="40" HorizontalAlignment="Left" VerticalAlignment="Center" MarginRight="50" Text="*SizeLabelBinding" Brush="Crafting.Property.Name.Text"/>
+
+                <!--Size Slider-->
+                <SliderWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="338" SuggestedHeight="42" VerticalAlignment="Center" HorizontalAlignment="Center" Filler="Filler" Handle="SliderHandle" MaxValueInt="10" MinValueInt="-10" ValueInt="*SizeBinding">
+                  <Children>
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="362" SuggestedHeight="38" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="SPOptions\standart_slider_canvas" IsEnabled="false" />
+                    <Widget Id="Filler" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="345" SuggestedHeight="35" VerticalAlignment="Center" Sprite="SPOptions\standart_slider_fill" ClipContents="true">
+                      <Children>
+                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="345" SuggestedHeight="35" HorizontalAlignment="Left" VerticalAlignment="Center" Sprite="SPOptions\standart_slider_fill" />
+                      </Children>
+                    </Widget>
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="400" SuggestedHeight="65" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="SPOptions\standart_slider_frame" IsEnabled="false" />
+                    <Widget Id="SliderHandle" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="14" SuggestedHeight="38" HorizontalAlignment="Left" VerticalAlignment="Center" Brush="SPOptions.Slider.Handle" DoNotAcceptEvents="true"/>
+                  </Children>
+                </SliderWidget>
+
+              </Children>
+            </ListPanel>
+
+          </Children>
+        </ListPanel>
+      </Children>
+    </CraftingPartGridWidget>
+  </Window>
+</Prefab>

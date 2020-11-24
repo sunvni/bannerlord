@@ -1,0 +1,8 @@
+<Brushes>
+
+  <Brush Name="MPAdminMessage.Text" TextHorizontalAlignment="Center" TextVerticalAlignment="Center">
+    <Styles>
+      <Style Name="Default" FontColor="#DB4040FF" TextBlur="0" TextOutlineAmount="0.2" TextOutlineColor="#000000FF" TextGlowRadius="0" FontSize="40" />
+    </Styles>
+  </Brush>
+</Brushes>

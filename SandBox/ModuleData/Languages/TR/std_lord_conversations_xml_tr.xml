@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Türkçe" />
+  </tags>
+  <strings>
+    <string id="5ypRJiWZ" text="Bilgi için teşekkürler" />
+    <string id="62AkUCOw" text="Neden savunmuyorsun..." />
+    <string id="8xvSu9fX" text="Affedersiniz {?NPC.GENDER}hanımefendi{?}beyefendi{\?}. Aklımdan ne geçiyordu bilmiyorum." />
+    <string id="fbM7drKO" text="Neden kuşatmıyorsun..." />
+    <string id="fBt8X6Tw" text="Evet? Ne istiyorsun?" />
+    <string id="GUIwjFKP" text="Tamam, önce senin tavsiyene uyalım." />
+    <string id="gZSdus34" text="Sana teslim olman için tek bir şans veriyorum." />
+    <string id="HEJOdRwi" text="Affedersiniz {?NPC.GENDER}hanımefendi{?}beyefendi{\?}. Aklımdan ne geçiyordu bilmiyorum." />
+    <string id="hjZkoJbc" text="Bence {ACTION} {SETTLEMENT} şu anda daha mantıklı, bunu yapmama yardım edebilir misin? {AMOUNT}{GOLD_ICON}" />
+    <string id="HKMdHYb7" text="Geri adım atmayacağım. Savaşmaya hazır ol!" />
+    <string id="JbWJ7Rxl" text="{POSSIBLE_TARGET}" />
+    <string id="ltS8zmH8" text="Delirdin mi? Ben senin düşmanın değilim." />
+    <string id="M7O3AItb" text="Affedersin. Bir şey yok." />
+    <string id="RJbrrM0K" text="{REASON}" />
+    <string id="s61RscYw" text="Nerede?" />
+    <string id="vsxVIDqT" text="Defol öyleyse." />
+    <string id="WzipKNWN" text="{s43}" />
+    <string id="ztuhSo8h" text="Neden baskın düzenlemiyorsun..." />
+  </strings>
+</base>

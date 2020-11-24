@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Türkçe" />
+  </tags>
+  <strings>
+    <string id="0GKH29JG" text="Muhafız Paralı Asker" />
+    <string id="0GkJB08d" text="Kıdemli Sturgiya Kervan Muhafızı" />
+    <string id="0Xku0LQD" text="Sturgiya Köylüsü" />
+    <string id="1gAasy1t" text="Kıdemli Göl Sıçanı" />
+    <string id="1PsLlMaQ" text="İmparatorluk Süvarisi" />
+    <string id="1sJcKkVP" text="Muhafız" />
+    <string id="1WfDVpya" text="Sturgiya Okçusu" />
+    <string id="1zObCG2o" text="Batanya Fian Şampiyonu" />
+    <string id="275LD0Gh" text="Dükkan Çalışanı" />
+    <string id="2gUjKT5H" text="Batanya Atlısı" />
+    <string id="2HDPaohZ" text="Uzman Ormancı" />
+    <string id="2w6jXVzJ" text="Battania preset" />
+    <string id="3lNtvh9W" text="Ödül Avcısı" />
+    <string id="3VosbFR0" text="Vlandiya Şampiyonu" />
+    <string id="4BxUa4Sr" text="Aseray Cidacısı" />
+    <string id="4C4WiTb2" text="Varyag" />
+    <string id="5b6KjY5b" text="Vlandiya Baltalısı" />
+    <string id="5JFkQn5U" text="Kıdemli Kuzait Milis Okçusu" />
+    <string id="6C3OMP1X" text="Batanya İzcisi" />
+    <string id="6hhspFvz" text="Kıdemli Kuzait Kervan Muhafızı" />
+    <string id="6j9iJMRr" text="Acemi Göl Sıçanı Askeri" />
+    <string id="6oc7CXbI" text="Kıdemli Aseray Süvarisi" />
+    <string id="6UFEfIJV" text="Mızraklı Kuzait Piyadesi" />
+    <string id="79ElOr2x" text="At Tüccarı" />
+    <string id="7aRhhGAs" text="Uzman Eşkıya" />
+    <string id="7EUhAv8b" text="Gulam" />
+    <string id="7JZPTbxB" text="Alim" />
+    <string id="7WWUxI6y" text="Kıdemli Sturgiya Okçusu" />
+    <string id="80plewQ1" text="Acemi Yeminli" />
+    <string id="8bA4PvdG" text="Kıdemli İmparatorluk Okçusu" />
+    <string id="8Gh8q1PX" text="Beni Zilal Kraliyet Muhafızı" />
+    <string id="8PLgCsiR" text="Vlandiya Öncüsü" />
+    <string id="8TdbKFa9" text="Silahlı Aseray Tüccarı" />
+    <string id="96pj2wxH" text="Sturgiya Savaşçısı" />
+    <string id="9Bw85Elg" text="Acemi Domuz" />
+    <string id="9Di0NfG2" text="Bebek" />
+    <string id="9GIK6fnm" text="Kradus" />
+    <string id="9Ylw5Spz" text="Kıdemli Domuz" />
+    <string id="9zXXes9i" text="Beni Zilal Askeri" />
+    <string id="a9b2fKYR" text="Sturgiya Ayıboğanı" />
+    <string id="abFIj4ZW" text="Atlı Batanya Cidacısı" />
+    <string id="ac8MZYne" text="Batanya Kahramanı" />
+    <string id="acubGB3g" text="Deneyimli Vlandiya Arbaletçisi" />
+    <string id="afhXdjBU" text="Göçebe" />
+    <string id="AlmaRAib" text="RuralNotableNotary" />
+    <string id="AloMryIU" text="Vlandiya Hafif Süvarisi" />
+    <string id="AoFZUbun" text="Öncü Aseray Süvarisi" />
+    <string id="arb5nRri" text="Aseray Kabile Üyesi" />
+    <string id="AssCCFew" text="Atlı Paralı Asker" />
+    <string id="aUHtqC9o" text="Vlandiya Milis Mızrakçısı" />
+    <string id="auxU5OGA" text="Sturgiya Savaşçı Oğlu" />
+    <string id="B4ls6R2b" text="Usta Aseray Okçusu" />
+    <string id="b4QPaEnA" text="Batanya Milis Okçusu" />
+    <string id="B7oI7AZG" text="Kuzait Kağanı Muhafızı" />
+    <string id="BBJKgKj2" text="Acemi Sturgiya Askeri" />
+    <string id="BbTpfJ7G" text="Dranton" />
+    <string id="BC5YGna3" text="Yağmacı Göl Sıçanı " />
+    <string id="bFyidmyK" text="Sturgia preset" />
+    <string id="bHx8jaeI" text="Savaşçı" />
+    <string id="bLMGbLF8" text="Vaiz Katibi" />
+    <string id="bLq2HXMo" text="Kıdemli İmparatorluk Kervan Muhafızı" />
+    <string id="BmYpwIYi" text="Batanya Köylüsü" />
+    <string id="bNnQt4jN" text="Demirci" />
+    <string id="bNZXcw3q" text="Batanya Yeminlisi" />
+    <string id="brlJJW5I" text="Sturgiya Askeri" />
+    <string id="bTApMxWr" text="Vlandiya Sancak Şövalyesi" />
+    <string id="Btb7p3mD" text="Batanya Fianı" />
+    <string id="bYn4ad1t" text="Uzman Yeminli" />
+    <string id="c5rVdg75" text="Kıdemli İmparatorluk Milis Mızrakçısı" />
+    <string id="CAYZDsAj" text="Lejyoner" />
+    <string id="Cc3knKFB" text="Saray Muhafızı" />
+    <string id="CDUvlu4d" text="İmparatorluk Saray Muhafızı" />
+    <string id="cEKbOxRA" text="Kıdemli Eleftheroi" />
+    <string id="CfO7eDsv" text="Sturgiya Mızrakçısı" />
+    <string id="CKoq1wQa" text="Kuzait Milis Okçusu" />
+    <string id="cMcGn6n3" text="Uzman Muhafız" />
+    <string id="cOt1onbR" text="Triarii" />
+    <string id="cP1bu5GK" text="Zırhlı Kuzait Kargıcısı" />
+    <string id="CPcJ2gRF" text="Aseray Milis Okçusu" />
+    <string id="cPQx1RXt" text="Silahlı Aseray Tüccarı" />
+    <string id="CRzrHomf" text="Sturgiya Druzniki" />
+    <string id="cSdSSXsO" text="Domuzların Şampiyonu" />
+    <string id="CsjtWt1g" text="Hancı" />
+    <string id="cte0zSCz" text="İmparatorluk Kabile Üyesi" />
+    <string id="cZms8Ivb" text="Asil Batanya Genci" />
+    <string id="d6vsgKnp" text="Aseray Köylüsü" />
+    <string id="dfv7E49q" text="Aseray Kabile Atlısı" />
+    <string id="DIt9SuMb" text="Tomurcuk" />
+    <string id="DlIU2vJB" text="Kuzait Nişancısı" />
+    <string id="DNIa6a5p" text="Kıdemli Vlandiya Milis Okçusu" />
+    <string id="DNsbKR7B" text="Batanya Orman Koşucusu" />
+    <string id="DNTUqbGo" text="Xerina" />
+    <string id="DvHR91Ca" text="Khuzait preset" />
+    <string id="e8qbF7Ey" text="İmparatorluk Menavlionu" />
+    <string id="ECxiXTbF" text="Zanaatçı Katibi" />
+    <string id="ehACDRBk" text="Gizli Piyon" />
+    <string id="eHVgfyPH" text="Kuzait Atlı Okçusu" />
+    <string id="eWRlQ4XU" text="Hırsız" />
+    <string id="eYIMQafj" text="Zırhlı İmparatorluk Atlısı" />
+    <string id="f2a1fPca" text="Kıdemli Kuzait Milis Mızrakçısı" />
+    <string id="F54qLieU" text="Memluk Aseray Muhafızı" />
+    <string id="fdaZ3tri" text="Sturgiya Korucusu" />
+    <string id="fHQ8ifKM" text="Eğitimli İmparatorluk Okçusu" />
+    <string id="FrTTT0G1" text="Sturgiya Druznik Şampiyonu" />
+    <string id="fxGlBFPk" text="Eşkıya" />
+    <string id="g1zvdEE3" text="Kıdemli Aseray Piyadesi" />
+    <string id="G9ByT85b" text="Hastati" />
+    <string id="gBuGfUg3" text="Karakuzait Büyüğü" />
+    <string id="Gd0y7SxJ" text="Vlandiya Mızrakçısı" />
+    <string id="GEnwDYp1" text="Acemi Vlandiya Askeri" />
+    <string id="GGVehOu9" text="Yaver" />
+    <string id="GopVkA1q" text="Kanun Kaçağı" />
+    <string id="GUQ3zfg2" text="Batanya Gönüllüsü" />
+    <string id="Gvy2b4fa" text="Aseray Genci" />
+    <string id="gyvXsXs8" text="Batanya Yabanisi" />
+    <string id="gZ4JeEw4" text="Kıdemli Sturgiya Milis Okçusu" />
+    <string id="H5HJUejD" text="Acemi Aseray Askeri" />
+    <string id="H5iWxbbl" text="Gilman" />
+    <string id="H7eELtL6" text="Ödünç Asker" />
+    <string id="h7nGFImt" text="Acemi Ormancı" />
+    <string id="HMHzTNqJ" text="Eğitimli Batanya Savaşçısı" />
+    <string id="HsboF2mR" text="Kıdemli İmparatorluk Milis Okçusu" />
+    <string id="HZRKBDyB" text="Dilenci" />
+    <string id="i17zuvS4" text="Sturgiya Avcısı" />
+    <string id="i5DfUz6D" text="Kıdemli Batanya Milis Okçusu" />
+    <string id="i5QgQbRi" text="İmparatorluk Askeri" />
+    <string id="ieiqOaZp" text="Okçu" />
+    <string id="IfjWyWjc" text="İmparatorluk Piyadesi" />
+    <string id="IHczn7ti" text="Asil Batanya Savaşçısı" />
+    <string id="IHKXNP9H" text="Turnuva Ustası" />
+    <string id="IKvwsCaJ" text="Batanya Akıncısı" />
+    <string id="IxcCmtxz" text="Kıdemli Batanya Milis Mızrakçısı" />
+    <string id="iXjMfCyp" text="Kuzait Atlısı" />
+    <string id="IZ8OmByJ" text="Eğitimli İmparatorluk Piyadesi" />
+    <string id="iZqYAIQy" text="Sturgiya Baskıncısı" />
+    <string id="jaK1A7CI" text="Aseray Süvarisi" />
+    <string id="jFQPRvLg" text="Huskarl Kılıç Ustası" />
+    <string id="JGsUtBT3" text="İmparatorluk Lejyoneri" />
+    <string id="JMZiICD8" text="Vlandiya Köylüsü" />
+    <string id="jRFfRZv2" text="Sturgiya Milis Okçusu" />
+    <string id="juBPAThy" text="Kıdemli Batanya Kervan Muhafızı" />
+    <string id="JVG0zC4e" text="Zırhlı Aseray Memluk Süvarisi" />
+    <string id="jx8ohENz" text="Zırh Yapımcısı" />
+    <string id="jxNe8lH2" text="Kervan Muhafızı" />
+    <string id="k4EiLrU0" text="Sturgiya Ulfhednarı" />
+    <string id="KAJKOooN" text="Zırhlı Kuzait Atlı Okçusu" />
+    <string id="kih9DwL4" text="Vlandiya Arbaletçisi" />
+    <string id="KnhpjA7Y" text="Kolman" />
+    <string id="kPCcelVX" text="Tüccar " />
+    <string id="kppseK3N" text="Kuzait Kabile Savaşçısı" />
+    <string id="KPrRxeC3" text="hepsi balta ve kalkanlı" />
+    <string id="KqpiU4tH" text="çift elli kılıçlarla" />
+    <string id="KtqB640w" text="İmparatorluk Köylüsü" />
+    <string id="L0cGAnWw" text="Batanya Milis Mızrakçısı" />
+    <string id="l6NFOl8c" text="Silahlı Kuzait Tüccarı" />
+    <string id="LbjxH9yp" text="İmparatorluk Okçusu" />
+    <string id="lduchnvD" text="Karakuzait Atlısı" />
+    <string id="LEJukldW" text="Silahlı İmparatorluk Tüccarı" />
+    <string id="LFUaO6rG" text="Kuzait Köylüsü" />
+    <string id="LKb8DXby" text="Batanya Kervan Başı" />
+    <string id="lkrV8jZa" text="Kuzait Okçusu" />
+    <string id="LNNXiPyV" text="Çete Lideri Muhafızı" />
+    <string id="Loc1XOIk" text="Kuzait Avcısı" />
+    <string id="lumFaIud" text="Kuzait Kargıcısı" />
+    <string id="LVEU4se3" text="Kıdemli Sturgiya Milis Mızrakçısı" />
+    <string id="lxU4pWsS" text="Kıdemli Batanya Cidacısı" />
+    <string id="LXybWXde" text="Skolderbroda Savaşçısı" />
+    <string id="Mcbjdntz" text="Jawwal Deve Binicisi" />
+    <string id="MDIuyBHP" text="Kuzait Milis Mızrakçısı" />
+    <string id="Mgr6qv1j" text="Kılıç Ustası Paralı Asker" />
+    <string id="mrBbsiPN" text="Genç Kurt" />
+    <string id="muu5cofb" text="Kentli" />
+    <string id="MVHawAEp" text="Gizli El" />
+    <string id="MYwUFMsz" text="Elit İmparatorluk Katafraktı" />
+    <string id="mzyc3bms" text="Sulh Yargıcı" />
+    <string id="n41jlEa3" text="İmparatorluk Vigla Acemisi" />
+    <string id="nDoENDqD" text="Aseray Kervan Başı" />
+    <string id="noTLVPDD" text="Doktor" />
+    <string id="nPyqHxmf" text="Vlandiya Çavuşu" />
+    <string id="nsyTIbtp" text="Kıdemli Yeminli" />
+    <string id="o077j2j5" text="Yeniyetme" />
+    <string id="o1jvmi9P" text="Kuzait Akıncısı" />
+    <string id="OQPDvtpk" text="Vlandiya Kahramanı" />
+    <string id="oseSwa56" text="Vlandiya Şövalyesi" />
+    <string id="oXAbblBV" text="Ana Kahraman" />
+    <string id="P8EATvn8" text="İmparatorluk Milis Okçusu" />
+    <string id="PCZ23wvW" text="Mühendislik" />
+    <string id="Pd9qAiOu" text="Kıdemli Aseray Milis Mızrakçısı" />
+    <string id="PgOknaEN" text="Arbaletçi Paralı Asker" />
+    <string id="PJNW1UWK" text="Dükkan Sahibi" />
+    <string id="pOCOS8um" text="Çocuk" />
+    <string id="pooybAKI" text="Vlandiya Kılıç Ustası" />
+    <string id="pRbbJHkU" text="İmparatorluk Bucellarii" />
+    <string id="PU2zIMu0" text="Kuklacı" />
+    <string id="pzKCIEaK" text="Vlandiya Kabile Üyesi" />
+    <string id="pzmgMODE" text="Sturgiya Kervan Muhafızı" />
+    <string id="q7b4pQc9" text="Tecrübeli Kurt" />
+    <string id="q7VeZazL" text="Batanya Cidacısı" />
+    <string id="qAsnj7vU" text="Elit İmparatorluk Menavlionu" />
+    <string id="qAvxmnav" text="Jawwal Bedevisi" />
+    <string id="QbSjMefR" text="Vlandiya Kervan Başı" />
+    <string id="qBVNIhme" text="Uzman Eleftheroi" />
+    <string id="qfaTMEBw" text="Batanya Kervan Muhafızı" />
+    <string id="QfVe3IVw" text="Paralı Arbaletçi" />
+    <string id="QGPAEtj7" text="Kıdemli Varyag" />
+    <string id="QhNpvW0Y" text="Kuzait Torgudu" />
+    <string id="QlVeZvbv" text="Kıdemli Aseray Kervan Muhafızı" />
+    <string id="qMYpZKWo" text="Principes" />
+    <string id="QNKfXvuA" text="İmparatorluk İşaretçisi" />
+    <string id="Qo2cc7bF" text="Skene" />
+    <string id="QvSmhaAV" text="Seçilmiş Kurt" />
+    <string id="R74i2pQz" text="Paralı Kılıç Ustası" />
+    <string id="reoVAtrE" text="Tüccar Katibi" />
+    <string id="rIqwYlSK" text="Kuzait Göçebesi" />
+    <string id="riT39wKu" text="Fidan" />
+    <string id="Rj0bNOOh" text="Nefer" />
+    <string id="RJNNsaSP" text="Sturgiya Eşkıyası" />
+    <string id="rQ0t0Wws" text="Vlandiya Kervan Muhafızı" />
+    <string id="rtOJNB6u" text="Acemi Muhafız" />
+    <string id="RYP9hzIy" text="Nöbetçi" />
+    <string id="s3IJIFUw" text="Acemi İmparatorluk Askeri" />
+    <string id="S6BosJUq" text="Acemi Eleftheroi" />
+    <string id="S8ElYRrb" text="Aserai preset" />
+    <string id="S9z09NaN" text="Kıdemli Ödünç Asker" />
+    <string id="SAILNYbu" text="Vlandiya Piyadesi" />
+    <string id="SaqVvzyV" text="Süvari Paralı Asker" />
+    <string id="SDRIahK8" text="Deli" />
+    <string id="Si5ZCb1O" text="Vlandiya Mızraklısı" />
+    <string id="sMI3wMZu" text="disguise_equipment_set" />
+    <string id="strAI" text="AI" />
+    <string id="SvAADOwm" text="Vlandiya Arbaletçisi" />
+    <string id="ta34CxLs" text="Baldırı Çıplak" />
+    <string id="TbBnWiao" text="İmparatorluk Kervan Muhafızı" />
+    <string id="tDYfuUuU" text="Aseray Memluk Saray Muhafızı" />
+    <string id="thbcgVVO" text="Tüccar" />
+    <string id="THOfB9DZ" text="Kuzait Kervan Muhafızı" />
+    <string id="THyv3q9f" text="Arbaletçi İmparatorluk Çavuşu" />
+    <string id="tke6VCV6" text="Aseray Piyadesi" />
+    <string id="tL6aGah4" text="Kıdemli Aseray Milis Okçusu" />
+    <string id="TpECDErA" text="İmparatorluk Kervan Başı" />
+    <string id="tSc0mHy7" text="Seçkin Batanya Savaşçısı" />
+    <string id="twCIejxn" text="Oyun Ustası" />
+    <string id="u0UNwnw2" text="İmparatorluk Katafraktı" />
+    <string id="u3K1SozQ" text="Ağaç" />
+    <string id="UaN2lfwi" text="Silah Yapımcısı" />
+    <string id="uca778lM" text="Acemi Beni Zilal Askeri" />
+    <string id="uDseaKcb" text="Sturgiya Kervan Başı" />
+    <string id="UdTc1PGo" text="İmparatorluk Arbaletçisi" />
+    <string id="ueasbGtd" text="Kıdemli Ormancı" />
+    <string id="ugJfuabA" text="Atlı Okçu" />
+    <string id="uh4rIbZ9" text="Atlı" />
+    <string id="ULaNn3pp" text="Aseray Milis Mızrakçısı" />
+    <string id="UrSjhs4x" text="Vlandiya Voulgieri" />
+    <string id="uViDMxLC" text="Acemi Skolderbroda" />
+    <string id="UYPaQP2j" text="Kuzait Qanqli" />
+    <string id="uzwfybTH" text="Kuzait Piyadesi" />
+    <string id="V1hoeBch" text="Usta Eşkıya" />
+    <string id="V7iJlSuT" text="kılıç kılıca" />
+    <string id="v8hRrmY2" text="Silahlı Batanya Tüccarı" />
+    <string id="VbWtdAWn" text="Deneyimli Sturgiya Eşkıyası" />
+    <string id="vGFdbjFC" text="Kıdemli Vlandiya Milis Mızrakçısı" />
+    <string id="vkuJeNSa" text="Vlandiya Milis Okçusu" />
+    <string id="VqrQ096u" text="Kuzait Kheshig" />
+    <string id="VtlvxEs7" text="Batanya Klan Savaşçısı" />
+    <string id="vxlAJIiU" text="Acemi Jawwal Askeri" />
+    <string id="vZlMfmng" text="Aseray Memluk Baltacısı" />
+    <string id="W2WXkiAh" text="Fidye Simsarı" />
+    <string id="w6YwFaG7" text="Kuzait Mızrakçısı" />
+    <string id="WEHDGbEE" text="Kuzait Kervan Başı" />
+    <string id="WJbOQSiT" text="Memluk Aseray Askeri" />
+    <string id="WNU7kE5N" text="Kıdemli Muhafız" />
+    <string id="wtmCSMrC" text="Aseray Piyadesi" />
+    <string id="X12lazIs" text="Silahlı Vlandiya Tüccarı" />
+    <string id="X3KYysuv" text="Dansçı" />
+    <string id="X4GvzDdW" text="Batanya Orakçısı" />
+    <string id="X6CQ9CMZ" text="Vlandiya Keskin Nişancısı" />
+    <string id="xaYwo9tM" text="İzci Paralı Asker" />
+    <string id="XgjXfmM1" text="Hapishane Gardiyanı" />
+    <string id="xIFHLI66" text="Karakuzait Göçebesi" />
+    <string id="xiuAStPO" text="Kıdemli Sturgiya Savaşçısı" />
+    <string id="xnzpQbwQ" text="Atlı Sturgiya Akıncısı" />
+    <string id="XzDObEiH" text="Vlandiya Yaveri" />
+    <string id="YE4RGuzU" text="Kıdemli Vlandiya Kervan Muhafızı" />
+    <string id="yG42k5GC" text="Aseray Kervan Muhafızı" />
+    <string id="YGexslSX" text="Kıdemli Skolderbroda" />
+    <string id="yhBagy1Y" text="Aseray Okçusu" />
+    <string id="YIuBzk88" text="Nizami Savaşçı" />
+    <string id="yMqWnBfT" text="Kıdemli Batanya Orakçısı" />
+    <string id="yPF32fbh" text="Vlandiya Piyadesi" />
+    <string id="yrGYZsQ7" text="Kıdemli İmparatorluk Piyadesi" />
+    <string id="YUCzyA8C" text="Aseray Memluk Süvarisi" />
+    <string id="z4Ke6pJl" text="Şampiyon Savaşçı" />
+    <string id="z6RMWTaA" text="Hancı Kız" />
+    <string id="Za4B0blc" text="Kıdemli Savaşçı" />
+    <string id="zEQTwpnv" text="Aseray Memluk Askeri" />
+    <string id="zfCoeglY" text="Müzisyen" />
+    <string id="ZhKoCVby" text="İmparatorluk Milis Mızrakçısı" />
+    <string id="ZK0GXYCx" text="Kılıçlı Kız Kardeş" />
+    <string id="ZKuabzhK" text="Kuzait Asilinin Oğlu" />
+    <string id="Zmajp2o1" text="Sturgiya Milis Mızrakçısı" />
+    <string id="ZRkceJx3" text="Yargıç" />
+    <string id="ZSU7sMYX" text="Kuzait Darkanı" />
+  </strings>
+</base>

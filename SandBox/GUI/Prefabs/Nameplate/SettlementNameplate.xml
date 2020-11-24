@@ -1,0 +1,11 @@
+<Window>
+  <Widget HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" DoNotAcceptEvents="true">
+    <Children>
+      <SettlementNameplateManagerWidget DataSource="{Nameplates}" HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" DoNotAcceptEvents="true">
+        <ItemTemplate>
+          <SettlementNameplateItem/>
+        </ItemTemplate>
+      </SettlementNameplateManagerWidget>
+    </Children>
+  </Widget>
+</Window>

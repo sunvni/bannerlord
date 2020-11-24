@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Türkçe" />
+  </tags>
+  <strings>
+    <string id="5qoYjNVs" text="Konuşmak istediğin başka ne var dostum?" />
+    <string id="A8VlEUMS" text="Merhaba {PLAYER.LINK}, seni görmek ne güzel." />
+    <string id="ah9SN1u0" text="Teslim oluyoruz!" />
+    <string id="EBKrcDnY" text="Hayır!" />
+    <string id="jnJqjlnr" text="Gırtlağını keseceğim." />
+    <string id="nZDF7yVq" text="Ölmeden önce söylemek istediğin başka bir şey var mı?" />
+    <string id="wTFjLsgq" text="Tamam." />
+    <string id="xkKMT083" text="Bugün öleceksin." />
+    <string id="yUPOktil" text="Senden korkmuyorum, dövüşeceğim." />
+    <string id="ZFqlqyci" text="[Çık]" />
+  </strings>
+</base>

@@ -1,0 +1,89 @@
+<Prefab>
+  <Constants>
+    <Constant Name="OverlayPopup.Background.Width" BrushName="OverlayPopup.Background" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="OverlayPopup.Background.Height" BrushName="OverlayPopup.Background" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="OverlayPopup.TableauBackground.Width" BrushName="OverlayPopup.TableauBackground" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="OverlayPopup.TableauBackground.Height" BrushName="OverlayPopup.TableauBackground" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="Popup.CloseButton.Width" BrushName="Popup.CloseButton" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="Popup.CloseButton.Height" BrushName="Popup.CloseButton" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="ContextButton.Width" BrushName="ButtonBrush2" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="ContextButton.Height" BrushName="ButtonBrush2" BrushLayer="Default" BrushValueType="Height"/>
+    <Constant Name="ContextButtonContainer.Height" BrushName="ButtonBrush2" BrushLayer="Default" BrushValueType="Height" Additive="-26"/>
+  </Constants>
+  <Window>
+    <!--Popup Context Menu-->
+    <Widget Id="PopupParent" HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" Sprite="BlankWhiteSquare_9" Brush.Color="#000000DD" IsVisible="false">
+      <Children>
+        <OverlayPopupWidget Id="Popup" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="500" SuggestedHeight="400" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="10" LocationTextWidget="InfoContainer\LocationTextWidget" NameTextWidget="DescriptionContainer\NameTextWidget" DescriptionTextWidget="DescriptionContainer\DescriptionTextWidget" PowerTextWidget="DescriptionContainer\PowerTextWidget" CloseButton="..\CloseButton" CurrentCharacterImageWidget="CurrentCharacterRelationWidget\CharacterImageWidget" RelationBackgroundWidget="CurrentCharacterRelationWidget" Command.OnClose="ExecuteOnOverlayClosed" Command.OnOpen="ExecuteOnOverlayOpened" ActionButtonsList="ContextActionButtonsList">
+          <Children>
+
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ClipContents="true">
+              <Children>
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!OverlayPopup.Background.Width" SuggestedHeight="!OverlayPopup.Background.Height" HorizontalAlignment="Center" Brush="OverlayPopup.Background"/>
+              </Children>
+            </Widget>
+
+
+            <Widget Id="CurrentCharacterRelationWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="!OverlayPopup.TableauBackground.Height" SuggestedWidth="!OverlayPopup.TableauBackground.Width" HorizontalAlignment="Left" VerticalAlignment="Top" MarginLeft="55" MarginTop="50" Brush="OverlayPopup.TableauBackground">
+              <Children>
+                <ImageIdentifierWidget Id="CharacterImageWidget" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent" MarginTop="7" MarginBottom="14" MarginLeft="3" MarginRight="4"/>
+              </Children>
+            </Widget>
+
+            <ListPanel Id="DescriptionContainer" LayoutImp.LayoutMethod="VerticalBottomToTop" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" SuggestedHeight="!OverlayPopup.TableauBackground.Height" VerticalAlignment="Top" HorizontalAlignment="Right" MarginTop="80" MarginLeft="210" MarginRight="55" >
+              <Children>
+                <TextWidget Id="NameTextWidget" HeightSizePolicy ="CoverChildren" WidthSizePolicy="StretchToParent" SuggestedHeight="30" HorizontalAlignment="Left" VerticalAlignment="Top" Brush="OverlayPopup.CharacterName" AutoHideIfEmpty="true" ClipContents="false"/>
+                <TextWidget Id="DescriptionTextWidget" HeightSizePolicy ="CoverChildren" WidthSizePolicy="StretchToParent" HorizontalAlignment="Left" VerticalAlignment="Top" MarginTop="5" Brush="OverlayPopup.DescriptionText" AutoHideIfEmpty="true" ClipContents="false"/>
+                <TextWidget Id="PowerTextWidget" HeightSizePolicy ="CoverChildren" WidthSizePolicy="StretchToParent" HorizontalAlignment="Left" VerticalAlignment="Top" MarginTop="5" Brush="OverlayPopup.DescriptionText" AutoHideIfEmpty="true" ClipContents="false"/>
+              </Children>
+            </ListPanel>
+
+            <ListPanel Id="InfoContainer" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="185" MarginLeft="30" MarginRight="30" LayoutImp.LayoutMethod="VerticalBottomToTop">
+              <Children>
+                <TextWidget Id="LocationTextWidget" HeightSizePolicy ="Fixed" WidthSizePolicy="StretchToParent" SuggestedHeight="30" HorizontalAlignment="Center" VerticalAlignment="Top" Brush="OverlayPopup.InfoText"/>
+                <HintWidget DataSource="{IssueDescriptionHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" DoNotPassEventsToChildren="true" >
+                  <Children>
+                    <AutoHideRichTextWidget DataSource="{..}" Id="IssueTextWidget" HeightSizePolicy ="CoverChildren" WidthSizePolicy="StretchToParent" MarginTop="5" HorizontalAlignment="Center" VerticalAlignment="Top" Brush="OverlayPopup.InfoText" Text="@IssueDescriptionText" ClipContents="false"/>
+                  </Children>
+                </HintWidget>
+              </Children>
+            </ListPanel>
+
+            <ListPanel Id="ContextActionButtonsList" DataSource="{ContextList}" LayoutImp.LayoutMethod="VerticalBottomToTop" HeightSizePolicy="CoverChildren" WidthSizePolicy="CoverChildren" VerticalAlignment="Bottom" HorizontalAlignment="Center" MarginBottom="15">
+              <ItemTemplate>
+
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!ContextButton.Width" SuggestedHeight="!ContextButton.Height" MarginBottom="10">
+                  <Children>
+
+                    <ButtonWidget DoNotPassEventsToChildren="true" Command.Click="ExecuteAction" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="ButtonBrush2" IsEnabled="@IsEnabled">
+                      <Children>
+                        <TextWidget Text="@ActionText" HeightSizePolicy="StretchToParent" WidthSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" PositionYOffset="1" MarginLeft="5" MarginRight="5" Brush="OverlayPopup.ActionButtonText"/>
+                        <TutorialHighlightItemWidget WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent" Brush="TutorialHighlightBrush" IsHighlightEnabled="@IsHiglightEnabled" IsVisible="false" IsEnabled="false"/>
+                        <HintWidget DataSource="{Hint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true" />
+                      </Children>
+                    </ButtonWidget>
+
+                    <HintWidget DataSource="{Hint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true" />
+                  </Children>
+                </Widget>
+
+              </ItemTemplate>
+            </ListPanel>
+
+            <!--Gradient-->
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="StdAssets\Popup\canvas_gradient" IsEnabled="false" />
+
+            <!--Frame Border-->
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Popup.Frame" IsEnabled="false" />
+
+          </Children>
+        </OverlayPopupWidget>
+
+        <ButtonWidget Id="CloseButton" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Popup.CloseButton.Width" SuggestedHeight="!Popup.CloseButton.Height" VerticalAlignment="Center" HorizontalAlignment="Center" MarginLeft="500" MarginBottom="400" Brush="Popup.CloseButton"/>
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

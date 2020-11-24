@@ -1,0 +1,276 @@
+<Prefab>
+  <Parameters>
+    <Parameter Name="IsPlayerItem" DefaultValue="false" />
+  </Parameters>
+  <Constants>
+    <Constant Name="Inventory.Tuple" BooleanCheck="*IsPlayerItem" OnTrue="Inventory.Tuple.Right" OnFalse="Inventory.Tuple.Left" />
+    <Constant Name="Inventory.Tuple.Civillian" BooleanCheck="*IsPlayerItem" OnTrue="Inventory.Tuple.Civillian.Right" OnFalse="Inventory.Tuple.Civillian.Left" />
+    <Constant Name="Inventory.Tuple.CharacterCantUse" BooleanCheck="*IsPlayerItem" OnTrue="Inventory.Tuple.CharacterCantUse.Right" OnFalse="Inventory.Tuple.CharacterCantUse.Left" />
+    <Constant Name="Inventory.Tuple.ThumbnailMargin" BooleanCheck="*IsPlayerItem" OnTrue="1" OnFalse="41" />
+
+    <Constant Name="Toggle.Width" BrushName="!Inventory.Tuple" BrushLayer="Default" BrushValueType="Width" />
+    <Constant Name="Toggle.Height" BrushName="!Inventory.Tuple" BrushLayer="Default" BrushValueType="Height"/>
+    <Constant Name="Toggle.Pressed.Width" BrushName="!Inventory.Tuple" BrushLayer="Default" BrushValueType="Width" Additive="-8" />
+
+    <Constant Name="Extension.Hidden.MarginTop" Value="2"/>
+    <Constant Name="Extension.Hidden.Height" Value="53"/>
+    <Constant Name="Extension.Selected.MarginTop" Value="53"/>
+
+    <Constant Name="Slot.Width" Value="54"/>
+    <Constant Name="Slot.Height" Value="52"/>
+
+    <Constant Name="Image.Padding" Value="2" />
+
+    <Constant Name="TextYFix" Value="2" />
+    <Constant Name="NameText.XFixPressed" BooleanCheck="*IsPlayerItem" OnTrue="-3" OnFalse="-4" />
+
+    <Constant Name="Button.Transfer.Width" BrushName="Inventory.Tuple.BuyButton" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="Button.Transfer.Height" BrushName="Inventory.Tuple.BuyButton" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="Button.TransferAll.Width" BrushName="Inventory.Tuple.Extension.BuyButton" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="Button.TransferAll.Height" BrushName="Inventory.Tuple.Extension.BuyButton" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="NameText.Width" BooleanCheck="*IsPlayerItem" OnTrue="247" OnFalse="235" />
+    <Constant Name="NameText.Margin" BooleanCheck="*IsPlayerItem" OnTrue="120" OnFalse="160" />
+    <Constant Name="CountText.Width" BooleanCheck="*IsPlayerItem" OnTrue="55" OnFalse="55" />
+    <Constant Name="CountText.Margin" BooleanCheck="*IsPlayerItem" OnTrue="87" OnFalse="62" />
+    <Constant Name="ValueText.Width" BooleanCheck="*IsPlayerItem" OnTrue="50" OnFalse="55" />
+    <Constant Name="ValueText.Margin" BooleanCheck="*IsPlayerItem" OnTrue="30" OnFalse="0" />
+
+    <Constant Name="Inventory.Tuple.Extension" BooleanCheck="*IsPlayerItem" OnTrue="Inventory.Tuple.Extension.Right" OnFalse="Inventory.Tuple.Extension.Left" />
+    <Constant Name="Extension.Width" BrushName="!Inventory.Tuple.Extension" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="Extension.Height" BrushName="!Inventory.Tuple.Extension" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="Extension.Lock.HorizontalAlignment" BooleanCheck="*IsPlayerItem" OnTrue="Right" OnFalse="Left" />
+    <Constant Name="Extension.Lock.Margin" Value="10" />
+    <Constant Name="Extension.Lock.MarginLeft" BooleanCheck="*IsPlayerItem" OnTrue="0" OnFalse="!Extension.Lock.Margin" />
+    <Constant Name="Extension.Lock.MarginRight" BooleanCheck="*IsPlayerItem" OnTrue="!Extension.Lock.Margin" OnFalse="0" />
+
+    <Constant Name="Inventory.Tuple.Extension.StockButton.Width" BrushName="Inventory.Tuple.Extension.StockButton" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="Inventory.Tuple.Extension.StockButton.Height" BrushName="Inventory.Tuple.Extension.StockButton" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="Inventory.Tuple.Extension.SpecialButton.Width" BrushName="Inventory.Tuple.Extension.SpecialButton" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="Inventory.Tuple.Extension.SpecialButton.Height" BrushName="Inventory.Tuple.Extension.SpecialButton" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="Inventory.Tuple.Extension.EquipButtonIcon.Width" BrushName="Inventory.Tuple.Extension.EquipButtonIcon" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="Inventory.Tuple.Extension.EquipButtonIcon.Height" BrushName="Inventory.Tuple.Extension.EquipButtonIcon" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="Inventory.Tuple.Extension.SlaughterButtonIcon.Width" BrushName="Inventory.Tuple.Extension.SlaughterButtonIcon" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="Inventory.Tuple.Extension.SlaughterButtonIcon.Height" BrushName="Inventory.Tuple.Extension.SlaughterButtonIcon" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="Inventory.Tuple.Extension.DonateButtonIcon.Width" BrushName="Inventory.Tuple.Extension.DonateButtonIcon" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="Inventory.Tuple.Extension.DonateButtonIcon.Height" BrushName="Inventory.Tuple.Extension.DonateButtonIcon" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="Inventory.Tuple.Extension.PreviewButtonIcon.Width" BrushName="Inventory.Tuple.Extension.PreviewButtonIcon" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="Inventory.Tuple.Extension.PreviewButtonIcon.Height" BrushName="Inventory.Tuple.Extension.PreviewButtonIcon" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="Inventory.Tuple.Extension.PriceChangeSuffix.Width" BrushName="Inventory.Tuple.Extension.PriceChangeSuffix" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="Inventory.Tuple.Extension.PriceChangeSuffix.Height" BrushName="Inventory.Tuple.Extension.PriceChangeSuffix" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="Extension.Slider.HorizontalAlignment" BooleanCheck="*IsPlayerItem" OnTrue="Left" OnFalse="Right" />
+    <Constant Name="Extension.Slider.MarginLeft" BooleanCheck="*IsPlayerItem" OnTrue="60" OnFalse="0" />
+    <Constant Name="Extension.Slider.MarginRight" BooleanCheck="*IsPlayerItem" OnTrue="0" OnFalse="60" />
+
+    <Constant Name="Extension.SliderCount.HorizontalAlignment" Value="Right" />
+    <Constant Name="Extension.SliderCount.MarginRight" BooleanCheck="*IsPlayerItem" OnTrue="55" OnFalse="60" />
+
+    <Constant Name="Extension.SliderCost.HorizontalAlignment" Value="Right" />
+    <Constant Name="Extension.SliderCost.MarginRight" BooleanCheck="*IsPlayerItem" OnTrue="0" OnFalse="5" />
+
+    <Constant Name="Extension.SliderButton.HorizontalAlignment" BooleanCheck="*IsPlayerItem" OnTrue="Left" OnFalse="Right" />
+    <Constant Name="Extension.SliderButton.MarginLeft" BooleanCheck="*IsPlayerItem" OnTrue="8" OnFalse="0" />
+    <Constant Name="Extension.SliderButton.MarginRight" BooleanCheck="*IsPlayerItem" OnTrue="0" OnFalse="8" />
+  </Constants>
+  <VisualDefinitions>
+    <VisualDefinition Name="Container" TransitionDuration = "0.075">
+      <VisualState State = "Default" SuggestedWidth="!Toggle.Width"/>
+      <VisualState State = "Pressed" SuggestedWidth="!Toggle.Pressed.Width"/>
+      <VisualState State = "Hovered" SuggestedWidth="!Toggle.Width"/>
+      <VisualState State = "Disabled" SuggestedWidth="!Toggle.Width"/>
+      <VisualState State = "Selected" SuggestedWidth="!Toggle.Width"/>
+    </VisualDefinition>
+    <VisualDefinition Name="Extension" TransitionDuration = "0.15">
+      <VisualState State = "Default" MarginTop = "!Extension.Hidden.MarginTop" SuggestedHeight="!Extension.Hidden.Height"/>
+      <VisualState State = "Pressed" MarginTop = "!Extension.Hidden.MarginTop" SuggestedHeight="!Extension.Hidden.Height"/>
+      <VisualState State = "Hovered" MarginTop = "!Extension.Hidden.MarginTop" SuggestedHeight="!Extension.Hidden.Height"/>
+      <VisualState State = "Disabled" MarginTop = "!Extension.Hidden.MarginTop" SuggestedHeight="!Extension.Hidden.Height"/>
+      <VisualState State = "Selected" MarginTop = "!Extension.Selected.MarginTop" SuggestedHeight="!Extension.Height"/>
+    </VisualDefinition>
+    <VisualDefinition Name="Main" TransitionDuration = "0.075">
+      <VisualState State = "Default" SuggestedWidth="!Toggle.Width"/>
+      <VisualState State = "Pressed" SuggestedWidth="!Toggle.Pressed.Width"/>
+      <VisualState State = "Hovered" SuggestedWidth="!Toggle.Width"/>
+      <VisualState State = "Disabled" SuggestedWidth="!Toggle.Width"/>
+      <VisualState State = "Selected" SuggestedWidth="!Toggle.Width"/>
+    </VisualDefinition>
+    <VisualDefinition Name="NameTextDefinition" TransitionDuration = "0.075">
+      <VisualState State="Default" PositionXOffset="0" PositionYOffset="0" />
+      <VisualState State="Pressed" PositionXOffset="!NameText.XFixPressed" PositionYOffset="0" />
+    </VisualDefinition>
+  </VisualDefinitions>
+  <Window>
+    <InventoryItemTupleWidget  VisualDefinition="Container" IsHidden="@IsFiltered" ButtonType="Radio" AcceptDrag="true" DragWidget="DragWidget" Brush="Inventory.Tuple.SoundBrush" Command.Click="ExecuteSelectItem" Command.PreviewItem="{ExecutePreviewItem}" Command.SellItem="ExecuteSellItem" Command.EquipItem="ExecuteEquipItem" Command.UnequipItem="ExecuteUnequipItem" Command.Opened="ExecuteResetTrade" Command.OnAlternateRelease="ExecuteConcept" WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" IsRightSide="*IsPlayerItem" NameTextWidget="Main\Body\MainControls\NameText" CountTextWidget="Main\Body\MainControls\CountText" CostTextWidget="Main\Body\MainControls\CostText" MainContainer="Main" ExtendedControlsContainer="Extension" TransferButton="Main\TransferButton" EquipButton="Extension\ExtensionCarrier\ButtonCarrier\EquipButton" SliderTransferButton="Extension\ExtensionCarrier\ButtonCarrier\SliderTransferButton" ViewButton="Extension\ExtensionCarrier\ButtonCarrier\PreviewButton" Slider="Extension\ExtensionCarrier\SliderParent\TransferSlider" SliderParent="Extension\ExtensionCarrier\SliderParent" SliderTextWidget="Extension\ExtensionCarrier\SliderParent\SliderTextWidget" TransactionCount="@TransactionCount" ItemCount="@ItemCount" ProfitState="@ProfitIndex" IsEquipable="@IsEquipableItem" CanCharacterUseItem="@CanCharacterUseItem" IsCivilian="@IsCivilianItem" IsGenderDifferent="@IsGenderDifferent" ItemType="@TypeId" EquipmentIndex="@ItemType" DefaultBrush="!Inventory.Tuple" CivilianDisabledBrush="!Inventory.Tuple.Civillian" CharacterCantUseBrush="!Inventory.Tuple.CharacterCantUse" MarginTop="2" ItemID="@StringId" HoveredCursorState="RightClickLink">
+      <Children>
+
+        <Widget Id="DragWidget" IsVisible="false" WidthSizePolicy = "Fixed" HeightSizePolicy = "Fixed" SuggestedWidth = "128" SuggestedHeight = "60" HorizontalAlignment = "Left" VerticalAlignment="Top" Sprite="Inventory\portrait" DoNotPassEventsToChildren="true" IsDisabled="true">
+          <Children>
+            <ImageIdentifierWidget DataSource="{ImageIdentifier}" ImageId="@Id" AdditionalArgs="@AdditionalArgs" ImageTypeCode="@ImageTypeCode" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent" MarginLeft="!Image.Padding" MarginTop="!Image.Padding" MarginBottom="!Image.Padding" MarginRight="!Image.Padding" />
+          </Children>
+        </Widget>
+
+        <Widget VisualDefinition="Extension" Id="Extension" DataSource="{TradeData}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Toggle.Width" SuggestedHeight="!Extension.Hidden.Height" MarginTop="!Extension.Hidden.MarginTop" HorizontalAlignment="Center" IsDisabled="true" ClipContents="true" IsVisible="false">
+          <Children>
+            <Widget Id="ExtensionCarrier" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Extension.Width" SuggestedHeight="!Extension.Height" VerticalAlignment="Bottom" HorizontalAlignment="Center" Brush="!Inventory.Tuple.Extension" DoNotAcceptEvents="true" >
+              <Children>
+
+                <Widget Id="SliderParent" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent"  MarginLeft="10" MarginRight="10" MarginTop="15" HorizontalAlignment = "Center" VerticalAlignment="Top">
+                  <Children>
+
+                    <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" LayoutImp.LayoutMethod="HorizontalLeftToRight" PositionXOffset="-10" MarginTop="50" >
+                      <Children>
+
+                        <ButtonWidget WidthSizePolicy="Fixed" Command.Click="ExecuteIncreaseOtherStock" HeightSizePolicy="Fixed" SuggestedWidth="35" SuggestedHeight="35" Brush="Inventory.Tuple.Extension.MinusButton" VerticalAlignment="Center"/>
+                        <Widget IsEnabled="false" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="50" SuggestedHeight="40" HorizontalAlignment="Center" VerticalAlignment="Center" MarginLeft="10" MarginRight="8">
+                          <Children>
+                            <TextWidget IntText="@ThisStock" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"  Brush="Inventory.Tuple.Extension.StockButtonText" Brush.FontSize="42" ClipContents="false"/>
+                            <!--TOOLTIP-HERE!-->
+                          </Children>
+                        </Widget>
+                        <ButtonWidget Id="IncreaseThisStockButton" Command.Click="ExecuteIncreaseThisStock" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="35" SuggestedHeight="35" Brush="Inventory.Tuple.Extension.PlusButton" VerticalAlignment="Center"/>
+                      </Children>
+                    </ListPanel>
+
+                    <InventoryTwoWaySliderWidget Id="TransferSlider" DoNotUpdateHandleSize="true" IsDiscrete="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" MarginTop="15" SuggestedHeight = "21" HorizontalAlignment = "Center" VerticalAlignment="Center" MarginBottom="80" BaseValueInt="@InitialThisStock" ChangeFillWidget="ChangeFill" MinValueInt ="0" MaxValueInt="@TotalStock" ValueInt="@ThisStock" Handle="SliderHandle" Filler="Filler" Command.OnValueChange="ExecuteApplyTransaction" IncreaseStockButtonWidget="..\IncreaseStockButtonWidget" DecreaseStockButtonWidget="..\DecreaseStockButtonWidget" IsRightSide="*IsPlayerItem">
+                      <Children>
+                        <Widget DoNotAcceptEvents="true" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "Fixed" SuggestedHeight="21" VerticalAlignment="Center" Brush="Inventory.Tuple.Slider.RightFill" />
+                        <Widget Id="Filler" DoNotAcceptEvents="true" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "Fixed" SuggestedHeight="21"  VerticalAlignment="Center" Brush="Inventory.Tuple.Slider.LeftFill" />
+                        <Widget Id="ChangeFill" DoNotAcceptEvents="true" WidthSizePolicy = "Fixed" HeightSizePolicy = "Fixed" SuggestedHeight="21"  VerticalAlignment="Center" Brush="Inventory.Tuple.Slider.ChangeFill" />
+                        <Widget Id="SliderHandle" DoNotAcceptEvents="true" WidthSizePolicy = "Fixed" HeightSizePolicy = "Fixed" SuggestedWidth = "3" SuggestedHeight = "21" HorizontalAlignment = "Left" VerticalAlignment = "Center" Brush="Inventory.Tuple.Slider.Handle" />
+                        <Widget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="30" VerticalAlignment="Center" Brush="Inventory.Tuple.Slider.Frame" />
+                      </Children>
+                    </InventoryTwoWaySliderWidget>
+
+                    <ButtonWidget Id="IncreaseStockButtonWidget" IsEnabled="false" Command.Click="ExecuteIncreaseThisStock" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="50" SuggestedHeight="40" HorizontalAlignment="Right" Brush.ColorFactor="0.2">
+                      <Children>
+                        <TextWidget IntText="@TotalStock" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Inventory.Tuple.Extension.StockButtonText" Brush.FontSize="28" Brush.FontColor="#AB9E89FF"/>
+                        <!--TextWidget Text="@OtherStockLbl" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="45" SuggestedHeight="!Inventory.Tuple.Extension.StockButton.Height" HorizontalAlignment="Center" PositionYOffset="!Inventory.Tuple.Extension.StockButton.Height" Brush="Inventory.Tuple.Extension.StockButtonInfo"/-->
+                        <!--TOOLTIP-HERE!-->
+                      </Children>
+                    </ButtonWidget>
+
+                    <Widget DoNotAcceptEvents="true" DoNotPassEventsToChildren="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="40" MarginRight="80" MarginLeft="80" MarginTop="45" IsVisible="false">
+                      <Children>
+                        <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" HorizontalAlignment="Left">
+                          <Children>
+                            <TextWidget Text="@PieceChange" WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" Brush="Inventory.Tuple.Extension.PieceChangePrefix" IsVisible="false"/>
+                            <TextWidget Text="@PieceLbl" WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" MarginLeft="5" Brush="Inventory.Tuple.Extension.PieceChangeSuffix" IsVisible="false"/>
+                          </Children>
+                        </ListPanel>
+
+                        <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" IsVisible="@IsTrading">
+                          <Children>
+                            <TextWidget Text="@AveragePriceLbl" WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" Brush="Inventory.Tuple.Extension.PriceDescription"/>
+                            <TextWidget Text="@AveragePrice" WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" Brush="Inventory.Tuple.Extension.PriceValue"/>
+                          </Children>
+                        </ListPanel>
+
+                        <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" HorizontalAlignment="Right" IsVisible="@IsTrading">
+                          <Children>
+                            <TextWidget Text="@PriceChange" WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" Brush="Inventory.Tuple.Extension.PriceChangePrefix"/>
+                            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Inventory.Tuple.Extension.PriceChangeSuffix.Width" SuggestedHeight="!Inventory.Tuple.Extension.PriceChangeSuffix.Height" VerticalAlignment="Center" PositionYOffset="-4" Brush="Inventory.Tuple.Extension.PriceChangeSuffix"/>
+                          </Children>
+                        </ListPanel>
+                      </Children>
+                    </Widget>
+                  </Children>
+                </Widget>
+
+                <Widget Id="ButtonCarrier" DataSource="{..}" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "Fixed" SuggestedHeight="80" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginBottom="10" MarginLeft="150" MarginRight="35" >
+                  <Children>
+
+                    <ButtonWidget Id="SliderTransferButton" DataSource="{TradeData}" IsEnabled="@IsExchangeAvailable" Command.Click="ExecuteApplyTransaction" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Inventory.Tuple.Extension.SpecialButton.Width" SuggestedHeight="!Inventory.Tuple.Extension.SpecialButton.Height" HorizontalAlignment="!Extension.SliderButton.HorizontalAlignment" VerticalAlignment="Center" Brush="Inventory.Tuple.Extension.BuyButton" MarginLeft="!Extension.SliderButton.MarginLeft" IsVisible="false">
+                      <Children>
+                        <HintWidget DoNotAcceptEvents="true" DataSource="{ApplyExchangeHint}" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent"/>
+                      </Children>
+                    </ButtonWidget>
+
+                    <ButtonWidget Id="EquipButton" UpdateChildrenStates="true" IsDisabled="true" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Inventory.Tuple.Extension.SpecialButton.Width" SuggestedHeight="!Inventory.Tuple.Extension.SpecialButton.Height" VerticalAlignment="Center" MarginLeft="10" Brush="Inventory.Tuple.Extension.SpecialButton">
+                      <Children>
+                        <ImageWidget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Inventory.Tuple.Extension.EquipButtonIcon.Width" SuggestedHeight="!Inventory.Tuple.Extension.EquipButtonIcon.Height" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Inventory.Tuple.Extension.EquipButtonIcon"/>
+                        <HintWidget DoNotAcceptEvents="true" IsVisible="*IsPlayerItem" DataSource="{EquipHint}" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent"/>
+                        <HintWidget DoNotAcceptEvents="true" IsHidden="*IsPlayerItem" DataSource="{BuyAndEquipHint}" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent"/>
+                      </Children>
+                    </ButtonWidget>
+
+                    <ButtonWidget Id="SlaughterButton" IsVisible="@CanBeSlaughtered" UpdateChildrenStates="true" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Inventory.Tuple.Extension.SpecialButton.Width" SuggestedHeight="!Inventory.Tuple.Extension.SpecialButton.Height" VerticalAlignment="Center" MarginLeft="100"  Brush="Inventory.Tuple.Extension.SpecialButton" Command.Click="ExecuteSlaughterItem">
+                      <Children>
+                        <ImageWidget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Inventory.Tuple.Extension.SlaughterButtonIcon.Width" SuggestedHeight="!Inventory.Tuple.Extension.SlaughterButtonIcon.Height" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Inventory.Tuple.Extension.SlaughterButtonIcon"/>
+                        <HintWidget DoNotAcceptEvents="true" IsVisible="*IsPlayerItem" DataSource="{SlaughterHint}" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent"/>
+                      </Children>
+                    </ButtonWidget>
+
+                    <ButtonWidget Id="DonateButton" UpdateChildrenStates="true" IsVisible="@CanBeDonated" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Inventory.Tuple.Extension.SpecialButton.Width" SuggestedHeight="!Inventory.Tuple.Extension.SpecialButton.Height" VerticalAlignment="Center"  MarginLeft="190" Brush="Inventory.Tuple.Extension.SpecialButton" Command.Click="ExecuteDonateItem">
+                      <Children>
+                        <ImageWidget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Inventory.Tuple.Extension.DonateButtonIcon.Width" SuggestedHeight="!Inventory.Tuple.Extension.DonateButtonIcon.Height" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Inventory.Tuple.Extension.DonateButtonIcon"/>
+                        <HintWidget DoNotAcceptEvents="true" IsVisible="*IsPlayerItem" DataSource="{DonateHint}" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent"/>
+                      </Children>
+                    </ButtonWidget>
+
+                    <ButtonWidget Id="PreviewButton" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Inventory.Tuple.Extension.SpecialButton.Width" SuggestedHeight="!Inventory.Tuple.Extension.SpecialButton.Height" HorizontalAlignment="Right" VerticalAlignment="Center" Command.Click="ExecutePreviewItem" Brush="Inventory.Tuple.Extension.SpecialButton">
+                      <Children>
+                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Inventory.Tuple.Extension.PreviewButtonIcon.Width" SuggestedHeight="!Inventory.Tuple.Extension.PreviewButtonIcon.Height" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Inventory.Tuple.Extension.PreviewButtonIcon"/>
+                        <HintWidget DataSource="{PreviewHint}" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent"/>
+                      </Children>
+                    </ButtonWidget>
+
+                  </Children>
+                </Widget>
+
+                <Widget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="100" Sprite="Inventory\Extension\drop_shadow_on_everything" />
+              </Children>
+            </Widget>
+          </Children>
+        </Widget>
+
+        <ListPanel VisualDefinition="Main" Id="Main" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Toggle.Width" SuggestedHeight="!Toggle.Height" DoNotAcceptEvents="true" HorizontalAlignment="Center" Brush="Frame1Brush">
+          <Children>
+
+            <InventoryTransferButtonWidget Id="TransferButton" Command.BuyAction="ExecuteBuyItem" Command.SellAction="ExecuteSellItem" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Button.Transfer.Width" SuggestedHeight="!Button.Transfer.Height" MarginLeft="5" MarginRight="5" HorizontalAlignment="Center" VerticalAlignment="Center" BuyBrush="Inventory.Tuple.BuyButton"  SellBrush="Inventory.Tuple.SellButton" IsSell="*IsPlayerItem" ModifySiblingIndex="true">
+              <Children>
+                <HintWidget DoNotAcceptEvents="true" IsVisible="*IsPlayerItem" DataSource="{SellHint}" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent"/>
+                <HintWidget DoNotAcceptEvents="true" IsHidden="*IsPlayerItem" DataSource="{BuyHint}" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent"/>
+                <TutorialHighlightItemWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="TutorialHighlightBrush" IsEnabled="false" IsHighlightEnabled="@IsTransferButtonHighlighted" IsVisible="false"/>
+              </Children>
+            </InventoryTransferButtonWidget>
+
+            <Widget Id="Body" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren">
+              <Children>
+                <Widget Id="MainControls" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="!Toggle.Height">
+                  <Children>
+                    <TextWidget Id="NameText" Text="@ItemDescription" VisualDefinition="NameTextDefinition" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!NameText.Width" MarginLeft="!NameText.Margin" HorizontalAlignment="Left" PositionYOffset="!TextYFix" Brush="InventoryDefaultFontBrush" Brush.FontSize="18" Brush.FontColor="#FFFFFFFF"/>
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="29" SuggestedWidth="29" Sprite="Quest\text_ball_ring" Brush.Color="#FCC537FF" Brush.AlphaFactor="0.8" VerticalAlignment="Center" HorizontalAlignment="Left" MarginLeft="!NameText.Width" IsEnabled="false" IsVisible="@IsNew"/>
+                    <TextWidget Id="CountText" IntText="@ItemCount" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!CountText.Width" HorizontalAlignment="Right" PositionYOffset="!TextYFix" MarginRight="!CountText.Margin" Brush="InventoryDefaultFontBrush" Brush.FontSize="18" Brush.TextHorizontalAlignment="Center" />
+                    <InventoryItemValueTextWidget Id="CostText" IntText="@ItemCost" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!ValueText.Width" HorizontalAlignment="Right" PositionYOffset="!TextYFix" MarginRight="!ValueText.Margin" Brush="InventoryItemCostFont" Brush.TextHorizontalAlignment="Center" ProfitType="@ProfitType"/>
+                    <ImageIdentifierWidget DoNotAcceptEvents="true" DataSource="{ImageIdentifier}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="111" SuggestedHeight="51" MarginLeft="!Inventory.Tuple.ThumbnailMargin" MarginTop="2" ImageId="@Id" ImageTypeCode="@ImageTypeCode" AdditionalArgs="@AdditionalArgs" LoadingIconWidget="LoadingIconWidget">
+                      <Children>
+                        <Widget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="Inventory\tuple_shadow" Brush.AlphaFactor="0.7" Brush.ValueFactor="0"/>
+                        <Standard.CircleLoadingWidget HorizontalAlignment="Center" VerticalAlignment="Center" Id="LoadingIconWidget"/>
+                      </Children>
+                    </ImageIdentifierWidget>
+                    <ButtonWidget Id="LockButton" IsSelected="@IsLocked" ButtonType="Toggle" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="!Extension.Lock.HorizontalAlignment" MarginLeft="!Extension.Lock.MarginLeft" MarginRight="!Extension.Lock.MarginRight" VerticalAlignment="Center" Brush="Inventory.Lock" >
+                      <Children>
+                        <HintWidget DoNotAcceptEvents="true" DataSource="{LockHint}" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent"/>
+                      </Children>
+                    </ButtonWidget>
+                  </Children>
+                </Widget>
+              </Children>
+            </Widget>
+
+          </Children>
+        </ListPanel>
+
+      </Children>
+    </InventoryItemTupleWidget>
+  </Window>
+</Prefab>

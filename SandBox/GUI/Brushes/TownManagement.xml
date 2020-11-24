@@ -1,0 +1,634 @@
+<Brushes>
+  <Brush Name="TownManagement.Reserve.PlusButton">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="TownManagement\reserve_plus" />
+    </Layers>
+    <Styles>
+      <Style Name="Default">
+        <BrushLayer Name="Default" ColorFactor="1" />
+      </Style>
+      <Style Name="Hovered">
+        <BrushLayer Name="Default" ColorFactor="1.2" />
+      </Style>
+      <Style Name="Pressed">
+        <BrushLayer Name="Default" ColorFactor="0.85" />
+      </Style>
+      <Style Name="Disabled">
+        <BrushLayer Name="Default" ColorFactor="0.2" />
+      </Style>
+      <Style Name="Selected">
+        <BrushLayer Name="Default" ColorFactor="1.1" />
+      </Style>
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.Governor.PlusButton">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="TownManagement\reserve_plus" />
+    </Layers>
+    <Styles>
+      <Style Name="Default">
+        <BrushLayer Name="Default" ColorFactor="1" AlphaFactor="0.5" />
+      </Style>
+      <Style Name="Hovered">
+        <BrushLayer Name="Default" ColorFactor="1.2" />
+      </Style>
+      <Style Name="Pressed">
+        <BrushLayer Name="Default" ColorFactor="0.85" />
+      </Style>
+      <Style Name="Disabled">
+        <BrushLayer Name="Default" ColorFactor="0.2" />
+      </Style>
+      <Style Name="Selected">
+        <BrushLayer Name="Default" ColorFactor="1.1" />
+      </Style>
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.CurrentProject.DefaultBackground">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="TownManagement\large_project_canvas" />
+    </Layers>
+    <Styles>
+      <Style Name="Default">
+        <BrushLayer Name="Default" ColorFactor="1" />
+      </Style>
+      <Style Name="Hovered">
+        <BrushLayer Name="Default" ColorFactor="1.2" />
+      </Style>
+      <Style Name="Pressed">
+        <BrushLayer Name="Default" ColorFactor="0.85" />
+      </Style>
+      <Style Name="Disabled">
+        <BrushLayer Name="Default" ColorFactor="0.2" />
+      </Style>
+      <Style Name="Selected">
+        <BrushLayer Name="Default" ColorFactor="1.1" />
+      </Style>
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.Reserve.ConfirmButton">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="TownManagement\reserve_tick" />
+    </Layers>
+    <Styles>
+      <Style Name="Default">
+        <BrushLayer Name="Default" ColorFactor="1" />
+      </Style>
+      <Style Name="Hovered">
+        <BrushLayer Name="Default" ColorFactor="1.2" />
+      </Style>
+      <Style Name="Pressed">
+        <BrushLayer Name="Default" ColorFactor="0.85" />
+      </Style>
+      <Style Name="Disabled">
+        <BrushLayer Name="Default" ColorFactor="0.2" />
+      </Style>
+      <Style Name="Selected">
+        <BrushLayer Name="Default" ColorFactor="1.1" />
+      </Style>
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.GovernorPopup.Governor.Background">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="BlankWhiteSquare_9" Color="#312B22FF" />
+    </Layers>
+    <Styles>
+      <Style Name="Default">
+        <BrushLayer Name="Default" ColorFactor="1" />
+      </Style>
+      <Style Name="Hovered">
+        <BrushLayer Name="Default" ColorFactor="1.2" />
+      </Style>
+      <Style Name="Pressed">
+        <BrushLayer Name="Default" ColorFactor="0.85" />
+      </Style>
+      <Style Name="Disabled">
+        <BrushLayer Name="Default" ColorFactor="0.2" />
+      </Style>
+      <Style Name="Selected">
+        <BrushLayer Name="Default" ColorFactor="1.1" />
+      </Style>
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.GovernorPopup.GoldFrame">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="gold_frame_9" ExtendLeft="5" ExtendTop="5" ExtendRight="5" ExtendBottom="6" />
+    </Layers>
+    <Styles>
+      <Style Name="Default">
+        <BrushLayer Name="Default" ColorFactor="1" />
+      </Style>
+      <Style Name="Hovered">
+        <BrushLayer Name="Default" ColorFactor="1.2" />
+      </Style>
+      <Style Name="Pressed">
+        <BrushLayer Name="Default" ColorFactor="0.85" />
+      </Style>
+      <Style Name="Disabled">
+        <BrushLayer Name="Default" ColorFactor="0.2" />
+      </Style>
+      <Style Name="Selected">
+        <BrushLayer Name="Default" ColorFactor="1.1" />
+      </Style>
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.Project.Ring">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="TownManagement\project_ring" IsHidden="true" />
+      <BrushLayer Name="Selected" Sprite="TownManagement\project_ring_selected" IsHidden="true" />
+    </Layers>
+    <Styles>
+      <Style Name="Default">
+        <BrushLayer Name="Default" ColorFactor="1" IsHidden="false" />
+      </Style>
+      <Style Name="Hovered">
+        <BrushLayer Name="Default" ColorFactor="1.2" IsHidden="false" />
+      </Style>
+      <Style Name="Selected">
+        <BrushLayer Name="Selected" IsHidden="false" />
+      </Style>
+      <Style Name="Pressed">
+        <BrushLayer Name="Default" ColorFactor="0.85" IsHidden="false" />
+      </Style>
+      <Style Name="Disabled">
+        <BrushLayer Name="Default" ColorFactor="0.8" IsHidden="false" />
+      </Style>
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.Daily.Project.Ring">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="TownManagement\project_ring" IsHidden="true" />
+      <BrushLayer Name="Selected" Sprite="TownManagement\daily_default_selected_glow" ExtendLeft="6" ExtendTop="6" ExtendRight="7" ExtendBottom="7" IsHidden="true" />
+    </Layers>
+    <Styles>
+      <Style Name="Default">
+        <BrushLayer Name="Default" ColorFactor="1" IsHidden="false" />
+      </Style>
+      <Style Name="Hovered">
+        <BrushLayer Name="Default" ColorFactor="1.2" IsHidden="false" />
+      </Style>
+      <Style Name="Selected">
+        <BrushLayer Name="Selected" IsHidden="false" />
+      </Style>
+      <Style Name="Pressed">
+        <BrushLayer Name="Default" ColorFactor="0.85" IsHidden="false" />
+      </Style>
+      <Style Name="Disabled">
+        <BrushLayer Name="Default" ColorFactor="0.2" IsHidden="false" />
+      </Style>
+    </Styles>
+  </Brush>
+  <Brush Name="TownManamgement.Development.Level.Brush">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="TownManagement\level_1" />
+    </Layers>
+    <Styles>
+      <Style Name="Default">
+        <BrushLayer Name="Default" Sprite="TownManagement\level_0" Color="#FFBE58FF" />
+      </Style>
+      <Style Name="0">
+        <BrushLayer Name="Default" Sprite="TownManagement\level_0" Color="#FFBE58FF" />
+      </Style>
+      <Style Name="1">
+        <BrushLayer Name="Default" Sprite="TownManagement\level_1" Color="#FFBE58FF" />
+      </Style>
+      <Style Name="2">
+        <BrushLayer Name="Default" Sprite="TownManagement\level_2" Color="#FFBE58FF" />
+      </Style>
+      <Style Name="3">
+        <BrushLayer Name="Default" Sprite="TownManagement\level_3" Color="#FFBE58FF" />
+      </Style>
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.Governor">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="Encyclopedia\subpage_notable_portrait" />
+      <BrushLayer Name="Frame" ExtendLeft="11" ExtendRight="12" ExtendTop="12" ExtendBottom="12" Sprite="subpage_slick_frame_9" />
+    </Layers>
+    <Styles>
+      <Style Name="Default">
+        <BrushLayer Name="Default" AlphaFactor="0.7" />
+        <BrushLayer Name="Frame" />
+      </Style>
+      <Style Name="Hovered">
+        <BrushLayer Name="Default" AlphaFactor="1.5" />
+        <BrushLayer Name="Frame" />
+      </Style>
+      <Style Name="Pressed">
+        <BrushLayer Name="Default" AlphaFactor="0.85" />
+        <BrushLayer Name="Frame" />
+      </Style>
+      <Style Name="Disabled">
+        <BrushLayer Name="Default" AlphaFactor="0.7" />
+        <BrushLayer Name="Frame" />
+      </Style>
+    </Styles>
+  </Brush>
+  <Brush Name="TownManamgement.Description.Type.Brush">
+    <Layers>
+      <BrushLayer Name="Default" IsHidden="true" />
+      <BrushLayer Name="Gold" Sprite="Icons\Coin@2x" IsHidden="true" />
+      <BrushLayer Name="Production" Sprite="TownManagement\production_icon" IsHidden="true" />
+      <BrushLayer Name="Militia" Sprite="Icons\Militia" IsHidden="true" />
+      <BrushLayer Name="Prosperity" Sprite="Icons\Prosperity" IsHidden="true" />
+      <BrushLayer Name="Food" Sprite="Icons\Food" IsHidden="true" />
+      <BrushLayer Name="Loyalty" Sprite="MapOverlay\Settlement\icon_loyalty" IsHidden="true" />
+      <BrushLayer Name="Security" Sprite="MapOverlay\Settlement\icon_security" IsHidden="true" />
+    </Layers>
+    <Styles>
+      <Style Name="Default">
+        <BrushLayer Name="Default" IsHidden="true" />
+      </Style>
+      <Style Name="Gold">
+        <BrushLayer Name="Gold" IsHidden="false" />
+      </Style>
+      <Style Name="Production">
+        <BrushLayer Name="Production" IsHidden="false" />
+      </Style>
+      <Style Name="Militia">
+        <BrushLayer Name="Militia" IsHidden="false" />
+      </Style>
+      <Style Name="Prosperity">
+        <BrushLayer Name="Prosperity" IsHidden="false" />
+      </Style>
+      <Style Name="Food">
+        <BrushLayer Name="Food" IsHidden="false" />
+      </Style>
+      <Style Name="Loyalty">
+        <BrushLayer Name="Loyalty" IsHidden="false" />
+      </Style>
+      <Style Name="Security">
+        <BrushLayer Name="Security" IsHidden="false" />
+      </Style>
+    </Styles>
+  </Brush>
+
+  <Brush Name="TownManamgement.Shop.Icon.Brush">
+    <Layers>
+      <BrushLayer Name="Default" IsHidden="true" />
+      <BrushLayer Name="Brewery" Sprite="TownManagement\ShopIcons\brewery" Color="#DCC9A8FF" IsHidden="true" />
+      <BrushLayer Name="LinenWeavery" Sprite="TownManagement\ShopIcons\linen_weavery" Color="#DCC9A8FF" IsHidden="true" />
+      <BrushLayer Name="Mill" Sprite="TownManagement\ShopIcons\mill" Color="#DCC9A8FF" IsHidden="true" />
+      <BrushLayer Name="OlivePress" Sprite="TownManagement\ShopIcons\oil_press" Color="#DCC9A8FF" IsHidden="true" />
+      <BrushLayer Name="PotteryShop" Sprite="TownManagement\ShopIcons\pottery" Color="#DCC9A8FF" IsHidden="true" />
+      <BrushLayer Name="VelvetWeavery" Sprite="TownManagement\ShopIcons\velvet_weavery" Color="#DCC9A8FF" IsHidden="true" />
+      <BrushLayer Name="WinePress" Sprite="TownManagement\ShopIcons\wine_press" Color="#DCC9A8FF" IsHidden="true" />
+      <BrushLayer Name="WoolWeavery" Sprite="TownManagement\ShopIcons\wool_weavery" Color="#DCC9A8FF" IsHidden="true" />
+      <BrushLayer Name="Tannery" Sprite="TownManagement\ShopIcons\tannery" Color="#DCC9A8FF" IsHidden="true" />
+      <BrushLayer Name="WoodWorkshop" Sprite="TownManagement\ShopIcons\wood_workshop" Color="#DCC9A8FF" IsHidden="true" />
+      <BrushLayer Name="Smithy" Sprite="TownManagement\ShopIcons\smithy" Color="#DCC9A8FF" IsHidden="true" />
+      <BrushLayer Name="Stable" Sprite="TownManagement\ShopIcons\stable" Color="#DCC9A8FF" IsHidden="true" />
+      <BrushLayer Name="SilverSmithy" Sprite="TownManagement\ShopIcons\silver_smithy" Color="#DCC9A8FF" IsHidden="true" />
+    </Layers>
+    <Styles>
+      <Style Name="Default">
+        <BrushLayer Name="Default" IsHidden="true" />
+      </Style>
+      <Style Name="Brewery">
+        <BrushLayer Name="Brewery" IsHidden="false" />
+      </Style>
+      <Style Name="LinenWeavery">
+        <BrushLayer Name="LinenWeavery" IsHidden="false" />
+      </Style>
+      <Style Name="Mill">
+        <BrushLayer Name="Mill" IsHidden="false" />
+      </Style>
+      <Style Name="OlivePress">
+        <BrushLayer Name="OlivePress" IsHidden="false" />
+      </Style>
+      <Style Name="PotteryShop">
+        <BrushLayer Name="PotteryShop" IsHidden="false" />
+      </Style>
+      <Style Name="VelvetWeavery">
+        <BrushLayer Name="VelvetWeavery" IsHidden="false" />
+      </Style>
+      <Style Name="WoolWeavery">
+        <BrushLayer Name="WoolWeavery" IsHidden="false" />
+      </Style>
+      <Style Name="Tannery">
+        <BrushLayer Name="Tannery" IsHidden="false" />
+      </Style>
+      <Style Name="WoodWorkshop">
+        <BrushLayer Name="WoodWorkshop" IsHidden="false" />
+      </Style>
+      <Style Name="Smithy">
+        <BrushLayer Name="Smithy" IsHidden="false" />
+      </Style>
+      <Style Name="Stable">
+        <BrushLayer Name="Stable" IsHidden="false" />
+      </Style>
+      <Style Name="SilverSmithy">
+        <BrushLayer Name="SilverSmithy" IsHidden="false" />
+      </Style>
+    </Styles>
+  </Brush>
+
+  <Brush Name="TownManamgement.Village.Icon.Brush">
+    <Layers>
+      <BrushLayer Name="Default" IsHidden="true" />
+      <BrushLayer Name="EuropeHorseRanch" Sprite="TownManagement\VillageIcons\horse" Color="#DCC9A8FF" IsHidden="true" />
+      <BrushLayer Name="BattanianHorseRanch" Sprite="TownManagement\VillageIcons\horse" Color="#DCC9A8FF" IsHidden="true" />
+      <BrushLayer Name="SteppeHorseRanch" Sprite="TownManagement\VillageIcons\horse" Color="#DCC9A8FF" IsHidden="true" />
+      <BrushLayer Name="DesertHorseRanch" Sprite="TownManagement\VillageIcons\horse" Color="#DCC9A8FF" IsHidden="true" />
+      <BrushLayer Name="WheatFarm" Sprite="TownManagement\VillageIcons\grain" Color="#DCC9A8FF" IsHidden="true" />
+      <BrushLayer Name="Lumberjack" Sprite="TownManagement\VillageIcons\hard_wood" Color="#DCC9A8FF" IsHidden="true" />
+      <BrushLayer Name="ClayMine" Sprite="TownManagement\VillageIcons\clay" Color="#DCC9A8FF" IsHidden="true" />
+      <BrushLayer Name="SaltMine" Sprite="TownManagement\VillageIcons\clay" Color="#DCC9A8FF" IsHidden="true" />
+      <BrushLayer Name="IronMine" Sprite="TownManagement\VillageIcons\iron" Color="#DCC9A8FF" IsHidden="true" />
+      <BrushLayer Name="Fisherman" Sprite="TownManagement\VillageIcons\wool" Color="#DCC9A8FF" IsHidden="true" />
+      <BrushLayer Name="CattleRange" Sprite="TownManagement\VillageIcons\horse" Color="#DCC9A8FF" IsHidden="true" />
+      <BrushLayer Name="SheepFarm" Sprite="TownManagement\VillageIcons\horse" Color="#DCC9A8FF" IsHidden="true" />
+      <BrushLayer Name="VineYard" Sprite="TownManagement\VillageIcons\grape" Color="#DCC9A8FF" IsHidden="true" />
+      <BrushLayer Name="FlaxPlant" Sprite="TownManagement\VillageIcons\flax" Color="#DCC9A8FF" IsHidden="true" />
+      <BrushLayer Name="DateFarm" Sprite="TownManagement\VillageIcons\flax" Color="#DCC9A8FF" IsHidden="true" />
+      <BrushLayer Name="OliveTrees" Sprite="TownManagement\VillageIcons\grape" Color="#DCC9A8FF" IsHidden="true" />
+      <BrushLayer Name="SilkPlant" Sprite="TownManagement\VillageIcons\raw_silk" Color="#DCC9A8FF" IsHidden="true" />
+      <BrushLayer Name="SilverMine" Sprite="TownManagement\VillageIcons\iron" Color="#DCC9A8FF" IsHidden="true" />
+    </Layers>
+    <Styles>
+      <Style Name="Default">
+        <BrushLayer Name="Default" IsHidden="true" />
+      </Style>
+      <Style Name="EuropeHorseRanch">
+        <BrushLayer Name="EuropeHorseRanch" IsHidden="false" />
+      </Style>
+      <Style Name="BattanianHorseRanch">
+        <BrushLayer Name="BattanianHorseRanch" IsHidden="false" />
+      </Style>
+      <Style Name="SteppeHorseRanch">
+        <BrushLayer Name="SteppeHorseRanch" IsHidden="false" />
+      </Style>
+      <Style Name="DesertHorseRanch">
+        <BrushLayer Name="DesertHorseRanch" IsHidden="false" />
+      </Style>
+      <Style Name="WheatFarm">
+        <BrushLayer Name="WheatFarm" IsHidden="false" />
+      </Style>
+      <Style Name="Lumberjack">
+        <BrushLayer Name="Lumberjack" IsHidden="false" />
+      </Style>
+      <Style Name="ClayMine">
+        <BrushLayer Name="ClayMine" IsHidden="false" />
+      </Style>
+      <Style Name="SaltMine">
+        <BrushLayer Name="SaltMine" IsHidden="false" />
+      </Style>
+      <Style Name="IronMine">
+        <BrushLayer Name="IronMine" IsHidden="false" />
+      </Style>
+      <Style Name="Fisherman">
+        <BrushLayer Name="Fisherman" IsHidden="false" />
+      </Style>
+      <Style Name="CattleRange">
+        <BrushLayer Name="CattleRange" IsHidden="false" />
+      </Style>
+      <Style Name="SheepFarm">
+        <BrushLayer Name="SheepFarm" IsHidden="false" />
+      </Style>
+      <Style Name="VineYard">
+        <BrushLayer Name="VineYard" IsHidden="false" />
+      </Style>
+      <Style Name="FlaxPlant">
+        <BrushLayer Name="FlaxPlant" IsHidden="false" />
+      </Style>
+      <Style Name="DateFarm">
+        <BrushLayer Name="DateFarm" IsHidden="false" />
+      </Style>
+      <Style Name="OliveTrees">
+        <BrushLayer Name="OliveTrees" IsHidden="false" />
+      </Style>
+      <Style Name="SilkPlant">
+        <BrushLayer Name="SilkPlant" IsHidden="false" />
+      </Style>
+      <Style Name="SilverMine">
+        <BrushLayer Name="SilverMine" IsHidden="false" />
+      </Style>
+    </Styles>
+  </Brush>
+  
+  <Brush Name="TownManagement.Development.AddToQueue.Button">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="TownManagement\project_hover_addtoqueue" />
+    </Layers>
+    <Styles>
+      <Style Name="Default">
+        <BrushLayer Name="Default" ColorFactor="1" />
+      </Style>
+      <Style Name="Hovered">
+        <BrushLayer Name="Default" ColorFactor="1.2" />
+      </Style>
+      <Style Name="Pressed">
+        <BrushLayer Name="Default" ColorFactor="0.85" />
+      </Style>
+      <Style Name="Disabled">
+        <BrushLayer Name="Default" ColorFactor="0.2" />
+      </Style>
+      <Style Name="Selected">
+        <BrushLayer Name="Default" ColorFactor="1.1" />
+      </Style>
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.Development.SetAsActive.Button">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="TownManagement\project_hover_makefirst" />
+    </Layers>
+    <Styles>
+      <Style Name="Default">
+        <BrushLayer Name="Default" ColorFactor="1" />
+      </Style>
+      <Style Name="Hovered">
+        <BrushLayer Name="Default" ColorFactor="1.2" />
+      </Style>
+      <Style Name="Pressed">
+        <BrushLayer Name="Default" ColorFactor="0.85" />
+      </Style>
+      <Style Name="Disabled">
+        <BrushLayer Name="Default" ColorFactor="0.2" />
+      </Style>
+      <Style Name="Selected">
+        <BrushLayer Name="Default" ColorFactor="1.1" />
+      </Style>
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.InProgress.HammerWithAnimation">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="TownManagement\project_popup_hammer_icon" />
+    </Layers>
+    <Styles>
+      <Style Name="Default" AnimationToPlayOnBegin="DefaultAnimation">
+        <BrushLayer Name="Default" ColorFactor="1" />
+      </Style>
+    </Styles>
+    <Animations>
+      <Animation Name="DefaultAnimation" Duration="0.5" Loop="true">
+        <AnimationProperty LayerName="Default" PropertyName="Sprite">
+          <KeyFrame Time="0" Value="TownManagement\project_popup_hammer_icon" />
+          <KeyFrame Time="0.4" Value="TownManagement\project_popup_hammer_icon_down" />
+          <KeyFrame Time="0.5" Value="TownManagement\project_popup_hammer_icon" />
+        </AnimationProperty>
+      </Animation>
+    </Animations>
+  </Brush>
+  <Brush Name="TownManagement.Slider">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="reserve_slider_frame_9" ExtendLeft="4" ExtendTop="4" ExtendRight="4" ExtendBottom="5" />
+    </Layers>
+    <Styles>
+      <Style Name="Default">
+        <BrushLayer Name="Default" />
+      </Style>
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.GovernorPopup">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="governor_popup_9" ExtendLeft="11" ExtendTop="13" ExtendRight="12" ExtendBottom="14" />
+    </Layers>
+    <Styles>
+      <Style Name="Default">
+        <BrushLayer Name="Default" />
+      </Style>
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.ProjectSelectionPopup">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="TownManagement\project_popup" />
+      <BrushLayer Name="Frame" ExtendTop="3" ExtendLeft="3" ExtendRight="3" ExtendBottom="3" Sprite="Frame1_frame" OverlayMethod="CoverWithTexture" OverlaySprite="stone_texture_overlay" />
+    </Layers>
+    <Styles>
+      <Style Name="Default">
+        <BrushLayer Name="Default" />
+        <BrushLayer Name="Frame" />
+      </Style>
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.Item.Title.Text" Font="Galahad">
+    <Styles>
+      <Style Name="Default" FontColor="#FFFFFFFF" TextGlowColor="#000000FF" TextOutlineColor="#FFFFFF00" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="33" />
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.Income.Item.Text" Font="FiraSansExtraCondensed-Regular">
+    <Styles>
+      <Style Name="Default" FontColor="#FFFFFFFF" TextGlowColor="#000000FF" TextOutlineColor="#FFFFFF00" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="26" />
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.ReserveAmount.Text" Font="Galahad">
+    <Styles>
+      <Style Name="Default" FontColor="#D6B671FF" TextGlowColor="#000000FF" TextOutlineColor="#FFFFFF00" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="48" />
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.CurrentProject.Title.Text" Font="Galahad">
+    <Styles>
+      <Style Name="Default" FontColor="#FFFFFFFF" TextGlowColor="#000000FF" TextOutlineColor="#FFFFFF00" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="42" />
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.CurrentProject.PositiveEffect.Text" Font="FiraSansExtraCondensed-Regular">
+    <Styles>
+      <Style Name="Default" FontColor="#A0C76CFF" TextGlowColor="#000000FF" TextOutlineColor="#FFFFFF00" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="20" />
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.CurrentProject.Completion.Title.Text" Font="FiraSansExtraCondensed-Regular">
+    <Styles>
+      <Style Name="Default" FontColor="#FFFFFFFF" TextGlowColor="#000000FF" TextOutlineColor="#FFFFFF00" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="30" />
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.CurrentProject.Completion.Amount.Text" Font="FiraSansExtraCondensed-Regular">
+    <Styles>
+      <Style Name="Default" FontColor="#ECBE79FF" TextGlowColor="#000000FF" TextOutlineColor="#FFFFFF00" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="25" />
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.CurrentSettlement.Projects.Title.Text" Font="Galahad">
+    <Styles>
+      <Style Name="Default" FontColor="#FFFFFFFF" TextGlowColor="#000000FF" TextOutlineColor="#FFFFFF00" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="35" />
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.Reserve.Amount.Text" Font="FiraSansExtraCondensed-Regular">
+    <Styles>
+      <Style Name="Default" FontColor="#D0B579FF" TextGlowColor="#000000FF" TextOutlineColor="#FFFFFF00" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="24" />
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.GovernorPopup.Name.Text" Font="FiraSansExtraCondensed-Regular">
+    <Styles>
+      <Style Name="Default" FontColor="#FFFFFFFF" TextGlowColor="#000000FF" TextOutlineColor="#FFFFFF00" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="16" />
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.ProjectPopup.Title.Text" Font="FiraSansExtraCondensed-Regular">
+    <Styles>
+      <Style Name="Default" FontColor="#AAAAAAFF" TextGlowColor="#000000FF" TextOutlineColor="#FFFFFF00" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="42" />
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.ProjectPopup.Name.Text" Font="Galahad">
+    <Styles>
+      <Style Name="Default" FontColor="#ECBE79FF" TextGlowColor="#000000FF" TextOutlineColor="#FFFFFF00" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="42" />
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.ProjectPopup.Explanation.Text" Font="FiraSansExtraCondensed-Regular">
+    <Styles>
+      <Style Name="Default" FontColor="#FFFFFFFF" TextGlowColor="#000000FF" TextOutlineColor="#FFFFFF00" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="20" />
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.ProjectPopup.Completion.Text" Font="FiraSansExtraCondensed-Regular">
+    <Styles>
+      <Style Name="Default" FontColor="#FFFFFFFF" TextGlowColor="#000000FF" TextOutlineColor="#FFFFFF00" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="23" />
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.ProjectPopup.CompletionDays.Text" Font="FiraSansExtraCondensed-Regular">
+    <Styles>
+      <Style Name="Default" FontColor="#ECBE79FF" TextGlowColor="#000000FF" TextOutlineColor="#FFFFFF00" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="34" />
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.ProjectPopup.Fallback.Text" Font="Galahad">
+    <Styles>
+      <Style Name="Default" FontColor="#FFFFFFFF" TextGlowColor="#000000FF" TextOutlineColor="#FFFFFF00" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="28" />
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.ProjectPopup.Daily.Name.Text" Font="FiraSansExtraCondensed-Regular">
+    <Styles>
+      <Style Name="Default" FontColor="#FFFFFFFF" TextGlowColor="#000000FF" TextOutlineColor="#FFFFFF00" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="16" />
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.ProductionCost.Text" Font="FiraSansExtraCondensed-Regular">
+    <Styles>
+      <Style Name="Default" FontColor="#EFB65CFF" TextGlowColor="#000000FF" TextOutlineColor="#FFFFFF00" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="20" />
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.Queue.Index.Text" Font="FiraSansExtraCondensed-Regular">
+    <Styles>
+      <Style Name="Default" FontColor="#EFB65CFF" TextGlowColor="#000000FF" TextOutlineColor="#000000CC" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="20" />
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.BottomPart.Title.Text" Font="FiraSansExtraCondensed-Regular">
+    <Styles>
+      <Style Name="Default" FontColor="#FFCE99FF" TextGlowColor="#000000FF" TextOutlineColor="#FFFFFF00" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="30" />
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.Description.Title.Text" Font="FiraSansExtraCondensed-Regular">
+    <Styles>
+      <Style Name="Default" FontColor="#DCC9A8FF" TextGlowColor="#000000FF" TextOutlineColor="#FFFFFF00" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="28" />
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.Description.Value.Text" Font="FiraSansExtraCondensed-Regular">
+    <Styles>
+      <Style Name="Default" FontColor="#FFFFFFFF" TextGlowColor="#000000FF" TextOutlineColor="#FFFFFF00" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="28" />
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.ProductionQueueAndEnd.Text" Font="FiraSansExtraCondensed-Regular">
+    <Styles>
+      <Style Name="Default" FontColor="#DCC9A8FF" TextGlowColor="#000000FF" TextOutlineColor="#FFFFFF00" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="25" />
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.Project.Name.Text" Font="FiraSansExtraCondensed-Regular">
+    <Styles>
+      <Style Name="Default" FontColor="#B4A385FF" TextGlowColor="#000000FF" TextOutlineColor="#FFFFFF00" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="18" />
+      <Style Name="Selected" FontColor="#D6A044FF" />
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.Property.PositiveChange.Text" Font="FiraSansExtraCondensed-Regular" TextHorizontalAlignment="Right">
+    <Styles>
+      <Style Name="Default" FontColor="#A7DF50FF" TextBlur="0" TextGlowColor="#000000FF" TextGlowRadius="0" TextOutlineAmount="0" TextOutlineColor="#000000FF" FontSize="22" />
+    </Styles>
+  </Brush>
+  <Brush Name="TownManagement.Property.NegativeChange.Text" Font="FiraSansExtraCondensed-Regular" TextHorizontalAlignment="Right">
+    <Styles>
+      <Style Name="Default" FontColor="#DE7045FF" TextBlur="0" TextGlowColor="#000000FF" TextGlowRadius="0" TextOutlineAmount="0" TextOutlineColor="#000000FF" FontSize="22" />
+    </Styles>
+  </Brush>
+</Brushes>

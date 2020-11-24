@@ -1,0 +1,27 @@
+<Prefab>
+  <Constants>
+    <Constant Name="Recruitment.Troop.Panel.Width" BrushName="Recruitment.Troop.Cart.Brush" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="Recruitment.Troop.Panel.Height" BrushName="Recruitment.Troop.Cart.Brush" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="Recruitment.Troop.Panel.Padding" Value="5"/>
+    <Constant Name="IconAlpha" Value="0.7"/>
+
+  </Constants>
+  <Window>
+
+    <RecruitTroopPanelWidget DoNotPassEventsToChildren="true" WidthSizePolicy = "Fixed" HeightSizePolicy = "Fixed" SuggestedWidth="!Recruitment.Troop.Panel.Width" SuggestedHeight="!Recruitment.Troop.Panel.Height" Brush="Recruitment.Troop.Cart.Brush" CanBeRecruited="@CanBeRecruited" RemoveFromCartButton="RemoveFromCartButton" IsInCart="@IsInCart" IsTroopEmpty="@IsTroopEmpty"  CharacterImageWidget="TroopImage" Command.Click="ExecuteRecruit" Command.AlternateClick="ExecuteOpenEncyclopedia" PlayerHasEnoughRelation="@PlayerHasEnoughRelation">
+      <Children>
+
+		<ButtonWidget Id="RemoveFromCartButton" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent" MarginTop="4" MarginLeft="4" MarginRight="4" MarginBottom="4" HorizontalAlignment="Center" Brush="GameMenu.Tableau.Background.Character"/>
+        <ImageIdentifierWidget Id="TroopImage" DataSource="{ImageIdentifier}" ImageId="@Id" AdditionalArgs="@AdditionalArgs" ImageTypeCode="@ImageTypeCode" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent" IsDisabled="true" MarginBottom="!Recruitment.Troop.Panel.Padding" MarginTop="!Recruitment.Troop.Panel.Padding" MarginLeft="!Recruitment.Troop.Panel.Padding" MarginRight="!Recruitment.Troop.Panel.Padding" IsBig="true">
+          <Children>
+            <RichTextWidget DataSource="{..\TierIconData}" Text="@Text" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="24" SuggestedHeight="24" HorizontalAlignment="Right" VerticalAlignment="Top" PositionXOffset="0" PositionYOffset="3" Brush.GlobalAlphaFactor="!IconAlpha"/>
+            <RichTextWidget DataSource="{..\TypeIconData}" Text="@Text" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="24" SuggestedHeight="24" HorizontalAlignment="Left" VerticalAlignment="Top" PositionXOffset="3" PositionYOffset="3" Brush.GlobalAlphaFactor="!IconAlpha"/>
+          </Children>
+        </ImageIdentifierWidget>
+        <HintWidget IsDisabled="true" WidthSizePolicy="StretchToParent" HeightSizePolicy = "StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint"/>
+
+      </Children>
+    </RecruitTroopPanelWidget>
+  </Window>
+</Prefab>

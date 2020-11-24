@@ -1,0 +1,34 @@
+<Window>
+  <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Frame1Brush">
+    <Children>
+      <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="600" HorizontalAlignment="Left" Brush="Frame1Brush" MarginLeft="100" MarginTop="100" MarginBottom="100">
+        <Children>
+          <EditableTextWidget Text="@NewCharacterNameText" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" VerticalAlignment="Top" MarginTop="200" Brush="Frame1Brush" SuggestedWidth="600" SuggestedHeight="200" />
+          <ButtonWidget Command.Click="ExecuteNewCharacter" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="338" SuggestedHeight="87" HorizontalAlignment="Center" VerticalAlignment="Top" MarginTop="400" Brush="ButtonBrush">
+            <Children>
+              <TextWidget Text="@CreateCharacterButtonText" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" />
+            </Children>
+          </ButtonWidget>
+        </Children>
+      </Widget>
+      <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="600" HorizontalAlignment="Right" Brush="Frame1Brush" MarginBottom="100" MarginLeft="0" MarginRight="100" MarginTop="100">
+        <Children>
+          <TextWidget Text="@StatusText" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="600" SuggestedHeight="200" />
+          <ListPanel Id="MyInnerPanel" DataSource="{ExistingCharacters}" LayoutImp.LayoutMethod="VerticalBottomToTop" WidthSizePolicy="StretchToParent" SuggestedHeight="600" VerticalAlignment="Top" MarginTop="200">
+            <ItemTemplate>
+              <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="90" HorizontalAlignment="Center">
+                <Children>
+                  <ButtonWidget Command.Click="ExecuteSelectCharacter" IsHidden="@InUse" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="338" SuggestedHeight="87" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="ButtonBrush">
+                    <Children>
+                      <TextWidget Text="@Name" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" />
+                    </Children>
+                  </ButtonWidget>
+                </Children>
+              </Widget>
+            </ItemTemplate>
+          </ListPanel>
+        </Children>
+      </Widget>
+    </Children>
+  </Widget>
+</Window>

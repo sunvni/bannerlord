@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Türkçe" />
+  </tags>
+  <strings>
+    <string id="0e17RZrZ" text="Arbalet" />
+    <string id="0Uvkm46I" text="Kılıç verir, düellolarda ve saplamalarda etkilidir." />
+    <string id="0yGhTKey" text="Fazladan Ok sağlar." />
+    <string id="14Lfo4sB" text="Güçlü Cidalar" />
+    <string id="1dTipfgq" text="Voulge silahını Millitary Bill ile değiştirir." />
+    <string id="1nZaud4o" text="Menavlion silahını Uzun Menavlion ile değiştirir, uzun ancak daha yavaş." />
+    <string id="1xa1a0d2" text="Kalkanını daha büyük bir kalkan ile değiştirir." />
+    <string id="25f3yj3M" text="Uzun Kılıç" />
+    <string id="2bzFzemV" text="Ağır Kundaklı Yay" />
+    <string id="2JZakvPJ" text="Menavlion silahını Ağır Menavlion ile değiştirir, yavaştır ancak daha çok hasar verir." />
+    <string id="3ksDHRKT" text="Doğu İşi Uzun Mızrak verir, çift ellidir." />
+    <string id="4ckL9lJ8" text="Pila verir, rahatsız etmek için birebir, yakın dövüşte kullanılabilir, miktarı azdır." />
+    <string id="4eFFdbbh" text="Gönderli Baltayı Çift Elli Kılıç ile değiştirir, düello ve saplamalarda etkilidir, çift ellidir." />
+    <string id="4wdgiTta" text="Orak" />
+    <string id="5JQFx3EW" text="Bineği daha kıvrak ve daha hızlı bir at ile değiştirir." />
+    <string id="5pLEUc4t" text="Güçlü Oklar" />
+    <string id="5ydbUsFh" text="Fırlatma Mızrakları" />
+    <string id="6bdcoGI1" text="Bineği daha kıvrak ve daha hızlı bir at ile değiştirir." />
+    <string id="6hwZwODh" text="Baltalı Mızrak" />
+    <string id="722U31od" text="Bineği, daha kıvrak, daha dayanıklı ve daha çok çarpma hasarı veren ancak daha yavaş bir at ile değiştirir." />
+    <string id="73DALTsR" text="Orağı Çekiç ile değiştirir, zırhlı rakiplere karşı etkilidir." />
+    <string id="7lb73utt" text="Güçlü Oklar sağlar, daha fazla hasar verir." />
+    <string id="7LmUe8fQ" text="Menavlion" />
+    <string id="7MkoLtWC" text="Balta" />
+    <string id="7sWKjye0" text="Hızlı At" />
+    <string id="7tmdALxE" text="Hızlı K.Y. Oku" />
+    <string id="7xCZBa2h" text="Kanatlı Yayını Üstün İmparatorluk Yayı ile değiştirir, daha hızlıdır ancak daha az isabetlidir." />
+    <string id="8nObGQqW" text="Rhomphaia" />
+    <string id="943pNa16" text="Hafif Kalkan" />
+    <string id="9aFg4Cb4" text="Fırlatma Baltaları verir, menzilli hasar sağlar, kalkanlara karşı etkilidir, miktarı azdır." />
+    <string id="9kGyIb8D" text="Menzil Cidaları" />
+    <string id="9vYPOPbF" text="Dağ İşi Mızrağı Dağ İşi Uzun Mızrak ile değiştirir. Daha uzundur ancak daha az hasar verir." />
+    <string id="a4Y00Bxz" text="Kargı verir, mızraklardan daha uzundur, koltuklanabilir." />
+    <string id="a8ycVmwU" text="Ay Balta" />
+    <string id="AAiawU42" text="Kargı verir, mızraklardan daha uzundur, koltuklanabilir." />
+    <string id="aJ3pbDTg" text="Av Yayını Üstün İmparatorluk Yayı ile değiştirir, daha hızlıdır ancak daha az isabetlidir." />
+    <string id="aVGSZhCN" text="Uzun Kalkan" />
+    <string id="azkl5CZk" text="Kanatlı Yayı Bileşik Yay ile değiştirir, daha fazla hasar verir ve daha isabetlidir ancak daha yavaştır." />
+    <string id="bDCbhzoh" text="Mızrağı Uzun Mızrak ile değiştirir." />
+    <string id="bDfKz5SZ" text="Sapan" />
+    <string id="bfyqpwbJ" text="Çift Elli Kılıcı Falx ile değiştirir, daha uzundur ve daha fazla hasar verir ancak saplanamaz." />
+    <string id="bGQ83Jtr" text="Uzun Mızrak" />
+    <string id="BHXqTA0N" text="Flyssa'yı Kaskara ile değiştirir, daha uzundur ve daha çok hasar verir." />
+    <string id="bKDoNDhC" text="Kılıcı Ağır Gürz ile değiştirir, zırhlı rakiplere karşı etkilidir." />
+    <string id="bn1nJlH4" text="Daha fazla Fırlatma Mızrağı verir, yakın dövüşte etkilidir." />
+    <string id="bsabIdYm" text="Çift Elli Balta" />
+    <string id="bwLknWjn" text="Cidaları İmparatorluk Cidaları ile değiştirir. Daha fazla hasar verir, yakın dövüşte kullanılabilir." />
+    <string id="bY9U7w1Q" text="Kılıç" />
+    <string id="bzCoIgk7" text="Askeri Uzun Keski" />
+    <string id="bzdCMVuG" text="Süvari Gürzü" />
+    <string id="bzr6vtXi" text="Ağır Menavlion" />
+    <string id="C2XqmIAQ" text="Kanatlı Yayı Bileşik Yay ile değiştirir, daha isabetlidir ve daha çok hasar verir ancak daha yavaştır." />
+    <string id="CaEBx7NK" text="Tabarı Ay Balta ile değiştirir, daha yavaştır ancak daha çok hasar verir." />
+    <string id="cfSgK0nk" text="Çevik At" />
+    <string id="CG5D5r2w" text="Kılıcı Gürz ile değiştirir, zırhlı rakiplere karşı etkilidir." />
+    <string id="chOIa3PO" text="Kalkanı daha hafif bir kalkan ile değiştirir, hızlı hareket etmek için iyidir." />
+    <string id="CJo3mNsK" text="Daha güçlü cidalar verir." />
+    <string id="cMsadGUb" text="Pilalar" />
+    <string id="CQBiJLgv" text="Deve" />
+    <string id="cRCkC36E" text="Kısa Kılıç" />
+    <string id="d7Z3ka1m" text="İyi Yay" />
+    <string id="d8oFKRxa" text="Fırlatma Mızrakları verir, mızraklardan daha uzundur, fırlatılabilir, yakın dövüşte kullanılabilir." />
+    <string id="D9XZcdid" text="Franceska verir, menzilli hasar sağlar, kalkanlara karşı etkilidir, mikarı azdır." />
+    <string id="DCyOFcZI" text="Uzun Keski verir." />
+    <string id="Dj64aJKQ" text="Uzun Keski" />
+    <string id="dkSDZODz" text="Kılıcı Hızlı Kılıç ile değiştirir, hızlıdır, düello ve saplamalarda etkilidir." />
+    <string id="DlKYZgA3" text="Güçlendirilmiş Zırh" />
+    <string id="dQEa2hZa" text="Uzun Mızrak" />
+    <string id="DZ2g8IZr" text="Çift Elli Baltayı Çift Elli Çekiç ile değiştirir. Zırhlı rakiplere karşı etkilidir, çift ellidir." />
+    <string id="DZkbvhfq" text="Cidaları Ciritler ile değiştirir. Daha fazla hasar verir, yakın dövüşte kullanılabilir." />
+    <string id="EdLIa9Ds" text="Okları Güçlü Oklar ile değiştirir, daha fazla hasar verir." />
+    <string id="EEEFVPLP" text="Baltayı Kılıç ile değiştirir, düellolarda ve saplamalarda etkilidir." />
+    <string id="eQLORdgE" text="Fazladan Ok" />
+    <string id="eyCVSK43" text="Ağır Kargı" />
+    <string id="F49w1uD0" text="(GEÇİCİ) Baltayı Ağır Balta ile değiştirir, daha fazla hasar verir ancak daha kısadır." />
+    <string id="FaW2RuA8" text="Fazladan Fırlatma Mızrağı" />
+    <string id="FLBYsvxp" text="Uzun Kılıç" />
+    <string id="g3EFq1ld" text="İyi Cidalar" />
+    <string id="g7DvxQYg" text="Ağır Şemşir verir, daha fazla hasar verir, daha uzundur ancak daha yavaştır." />
+    <string id="GN3IoRlp" text="Daha fazla hasar veren Cidalar verir." />
+    <string id="gnb4493C" text="Kılıcı Sopa ile değiştirir, zırhlı rakiplere karşı etkilidir." />
+    <string id="gQtU8qqy" text="Balta verir, kalkanlara karşı etkilidir." />
+    <string id="GsGJgGDE" text="Kargı" />
+    <string id="h1aBRZRO" text="Hızlı K.Y. Oku verir." />
+    <string id="h60wQVVX" text="Çift Elli Uzun Mızrak" />
+    <string id="H8MYgA6i" text="Uzun Menavlion" />
+    <string id="HE8lvLcm" text="Kılıcı Baltalı Mızrak ile değiştirir." />
+    <string id="hEEebqIY" text="Baltayı Kılıç ile değiştirir, düellolarda ve saplamalarda etkilidir." />
+    <string id="HoVaJ0BH" text="Çift Elli Çekiç" />
+    <string id="HQ20qb3g" text="Bineği hızlı ancak daha az dayanıklı bir at ile değiştirir." />
+    <string id="hs39bbML" text="Güçlü Yay" />
+    <string id="Hy967JNj" text="Av Yayını Uzun Av Yayı ile değiştirir, daha fazla hasar verir ancak yavaştır." />
+    <string id="HZgjTUoY" text="Baltayı Kılıç ile değiştirir, düellolarda ve saplamalarda etkilidir." />
+    <string id="i7OWTiQc" text="Güçlü Kalkan" />
+    <string id="iNJr5HOM" text="Kancalı Çift Elli Uzun Mızrak" />
+    <string id="iSpXc3qQ" text="Baltalı Mızrak verir, özel bir Kuzait mızrağı, at üstünde ölümcüldür." />
+    <string id="IsVZwswB" text="Av Yayını Kanatlı Yay ile değiştirir, daha fazla hasar verir ve daha isabetlidir ancak daha yavaştır." />
+    <string id="IUsT27oV" text="+9 Zırh sağlar." />
+    <string id="iYauUX6r" text="Fırlatma Mızrakları verir, fırlatılabilir, yakın dövüş için kullanılabilir, miktarı azdır." />
+    <string id="JbODbx5i" text="Kalkan verir, savunmayı kolaylaştırır, menzilli birimlere karşı etkilidir." />
+    <string id="JBVAeXx3" text="Dirgen" />
+    <string id="JbWbiO6O" text="Yay ve Ok" />
+    <string id="Jd0Kq9lD" text="Kalkan" />
+    <string id="JfnVaE9D" text="Pila verir, rahatsız etmek için birebir, yakın dövüşte kullanılabilir, miktarı azdır." />
+    <string id="jhey75nZ" text="Kazmayı Dağ İşi Battal Kılıç ile değiştirir, düello ve saplamalarda etkilidir, çift ellidir." />
+    <string id="JjRJs2Ue" text="Kazma'yı Çift Elli Balta ile değiştirir, kalkanlara karşı fazladan etkilidir." />
+    <string id="jKYWiUZA" text="Bineği, daha kıvrak, daha güçlü ve daha çok çarpma hasarı veren ancak daha yavaş bir at ile değiştirir." />
+    <string id="K1t2X1YF" text="Kalkanı daha güçlü ve daha büyük bir kalkan ile değiştirir, dayanıklılığı artırır." />
+    <string id="K1UFTirG" text="Hafif Kundaklı Yay" />
+    <string id="KBrDpNxO" text="Uzun Yay" />
+    <string id="KKWkfc2n" text="Güçlü K.Y. Oku verir." />
+    <string id="kS0LMJix" text="Cida verir, rahatsız etmek için birebir, yakın dövüşte kullanılabilir." />
+    <string id="KWCsD0vW" text="Süvari Kılıcı verir, rahatsız etmek için birebir, yakın dövüşte kullanılabilir." />
+    <string id="kxNFecm2" text="Hafif Kalkan" />
+    <string id="KXwN1PW4" text="Büyük Balta" />
+    <string id="kYbMMbzD" text="Çift Elli Uzun Mızrak verir, süvarilere karşı çok etkilidir, mızraklardan uzundur, kalkan ile birlikte kullanılmaz." />
+    <string id="L01yAZlu" text="Kılıcı Çekiç ile değiştirir, zırhlı rakiplere karşı etkilidir, çift ellidir." />
+    <string id="l2j9CAQn" text="Battal Kılıç" />
+    <string id="l5GMT5AA" text="(GEÇİCİ) Çok daha uzağa giden cidalar verir." />
+    <string id="llneOWkU" text="Hızlı Kılıç" />
+    <string id="loPT6GUc" text="Uzun Kalkan verir, savunmayı kolaylaştırır, menzilli birimlere karşı etkilidir." />
+    <string id="LstE2rEG" text="İmparatorluk Savaş Atını Savaş Av Atı ile değiştirir. Daha iyi manevra alır, daha hızlıdır." />
+    <string id="mcXoarZq" text="Franceskalar" />
+    <string id="meWoLxtc" text="Kılıcı Balta ile değiştirir, kalkanlara karşı etkilidir." />
+    <string id="n3q8k0lB" text="At Zırhı" />
+    <string id="n497RC1p" text="(GEÇİCİ) Hızlı oklar verir." />
+    <string id="NiaLmb1S" text="Av Yayını Hızlı Kısa Yay ile değiştirir, daha çok hasar verir ancak daha yavaştır." />
+    <string id="nSSxEIvF" text="(GEÇİCİ) Hafif kalkan verir, hızlı hareket etmek için iyidir." />
+    <string id="o6eKX9h0" text="Baltayı Gürz ile değiştirir, zırhlı rakiplere karşı etkilidir." />
+    <string id="okGD2Dbu" text="Av Yayını Kanatlı Yay ile değiştirir, daha fazla hasar verir ancak daha yavaştır." />
+    <string id="OPcPYoHu" text="Fırlatma Baltaları" />
+    <string id="Oweratvx" text="Mızrak verir, süvariye karşı ve kalabalığa karşı savaşmakta etkilidir." />
+    <string id="oWv0kvwj" text="Güçlü K.Y. Oku" />
+    <string id="P4k9Lkpw" text="Av Yayını Hafif Kundaklı Yay ile değiştirir, çok daha fazla hasar verir, atış hızı azdır." />
+    <string id="p8XIZhbb" text="Kısa Mızrağı Uzun Mızrak ile değiştirir, süvariye ve kalabalığıa karşı etkilidir." />
+    <string id="pblXb1ae" text="Gürz verir, zırhlı rakiplere karşı etkilidir." />
+    <string id="pE1plFCL" text="Ağır Gürz" />
+    <string id="PF7sPCYq" text="Cidalar" />
+    <string id="PFTzVdJg" text="+9 Zırh sağlar." />
+    <string id="PNZmPprx" text="Çift Elli Kılıç" />
+    <string id="pyupZxJK" text="Kontos" />
+    <string id="q8n63o4y" text="Kancalı Çift Elli Uzun Mızrak verir, süvarilere karşı çok etkilidir, mızraklardan uzundur, çift ellidir." />
+    <string id="QLcP8bIs" text="Falx" />
+    <string id="QojyuDln" text="Kontos verir, uzundur, daha fazla hasar verir ancak yavaştır." />
+    <string id="QqWMflbr" text="Kaskara verir, düellolarda ve saplamalarda etkilidir." />
+    <string id="Qs4VOXgE" text="Kısa Mızrak" />
+    <string id="R7TAImaC" text="Büyük Kalkan" />
+    <string id="RV6BCPvg" text="Baltayı daha uzun ve ağır bir balta ile değiştirir. Kalkanlara karşı fazladan etkilidir." />
+    <string id="rzP3J3Kb" text="Falx'ı Rhomphaia ile değiştirir, daha uzundur ancak daha az hasar verir ve daha yavaştır." />
+    <string id="sagHGCh7" text="Uzun Mızrağı Kontos ile değiştirir, daha fazla hasar verir ancak yavaştır." />
+    <string id="sFJfF1Gb" text="Gladius'u Spatha ile değiştirir, daha uzundur ve daha çok hasar verir." />
+    <string id="SjiFP0za" text="Sopayı Kılıç ile değiştirir, düellolarda ve saplamalarda etkilidir." />
+    <string id="SMws1ws6" text="Büyük Kalkan" />
+    <string id="snQeVgCJ" text="Baltayı Ağır Balta ile değiştirir, daha fazla hasar verir." />
+    <string id="sOARp3Dc" text="Kalkan verir, savunmayı kolaylaştırır, menzilli birimlere karşı etkilidir." />
+    <string id="SpTtirzT" text="Balta verir, zırhlı rakiplere karşı etkilidir." />
+    <string id="sVOdabQr" text="Dirgen verir, atlılara karşı etkilidir." />
+    <string id="t68bkisr" text="Çekiç" />
+    <string id="tdRSQoPT" text="Daha güçlü cidalar verir." />
+    <string id="tFWBFpji" text="Bineği, daha çok çarpma hasarı veren, daha kıvrak ve daha dayanıklı ancak daha yavaş ve zıplayamayan Deve ile değiştirir." />
+    <string id="TK0GvrJR" text="Kılıcı Dağ İşi Uzun Kılıç ile değiştirir, daha fazla hasar verir, daha uzundur ancak daha yavaştır." />
+    <string id="tPtEhPzU" text="Kundaklı Yayı Arbalet ile değiştirir, Kalradya'nın en iyisi." />
+    <string id="tvIibabU" text="Fazladan K.Y. Oku verir." />
+    <string id="tZgHdSOX" text="Yarı At Zırhı" />
+    <string id="uKOn4IE6" text="Fazladan bir Cida sadağı verir." />
+    <string id="uNyHSwaL" text="Ağır Balta" />
+    <string id="uTfm0blH" text="Kısa Yay verir, at üstünde ok atma imkanı sağlar." />
+    <string id="UtJlbDuv" text="Kanatlı Yayı Üstün İmparatorluk Yayı ile değiştirir, daha hızlıdır." />
+    <string id="UTrNbIbI" text="Uzun Kılıcı Dağ İşi Battal Kılıç ile değiştirir, düello ve saplamalarda etkilidir, çift ellidir." />
+    <string id="uw9m5hav" text="İyi Balta" />
+    <string id="Uwe3VHaN" text="Ağır Süvari Kılıcı" />
+    <string id="V2SKzX1e" text="Saldırı Atı" />
+    <string id="v61Qq3SH" text="Hafif Kundaylı Yayı Ağır Kundaklı Yay ile değiştirir, daha fazla hasar verir." />
+    <string id="V62I3vA5" text="Kısa Menavlion verir, özel bir imparatorluk mızrağı." />
+    <string id="vBvDZCtw" text="Tabarı Çift Elli Kılıç ile değiştirir, düello ve saplamalarda etkilidir." />
+    <string id="VI4gQt8Q" text="Gürz" />
+    <string id="vjvklXQ3" text="Cida verir, rahatsız etmek için birebir, yakın dövüşte kullanılabilir." />
+    <string id="VL4olxdA" text="Av Yayı verir, at üstünde ok atma imkanı sağlar." />
+    <string id="VR2SwarS" text="Güçlü At" />
+    <string id="W4iKIM2s" text="Küçük Kalkan" />
+    <string id="wAFiQYpt" text="Av Yayını Hızlı Kısa Yay ile değiştirir, her açıdan daha iyidir." />
+    <string id="wdRsSuMN" text="Uzun Yayı Yeow Uzun Yayı ile değiştirir, daha fazla hasar verir ve daha isabetlidir ancak daha yavaştır." />
+    <string id="wdSrwKFE" text="Fazladan K.Y. Oku" />
+    <string id="wiBmTEGi" text="Bineği daha dayanıklı bir at ile değiştirir." />
+    <string id="wv9g9Kyr" text="Hızlı Yay" />
+    <string id="WxMGCqPw" text="Orağı Kazma ile değiştirir, kalkanlara karşı etkilidir." />
+    <string id="XLtAF1Km" text="Kısa Yayı Uzun Yay ile değiştirir, daha fazla hasar verir ve daha isabetlidir ancak daha yavaştır." />
+    <string id="xqlMIG4I" text="Kalkanını daha büyük bir kalkan ile değiştirir, dayanıklılığını artırır." />
+    <string id="XSjXLikf" text="Fazladan Cida" />
+    <string id="xSz6m21N" text="Sopa" />
+    <string id="xuad1OP3" text="Bineği bozkırlardaki en dayanıklı at ile değiştirir." />
+    <string id="xUSR6O0X" text="Süvari Kılıcı verir, daha uzun ve daha ağırdır." />
+    <string id="xWFW8jXw" text="Savaş Baltası" />
+    <string id="y4YWp1f1" text="Fırlatma Mızrağı" />
+    <string id="YaakrC1m" text="Süvari Kılıcı" />
+    <string id="yDU7JFH4" text="(GEÇİCİ) Sapan verir, menzilli hasar sağlar, yüksek isabetle miktarı fazla, hasarı düşüktür." />
+    <string id="YF8DQVUT" text="Baltayı Kuzey İşi Çift Elli Baltası ile değiştirir, daha güçlüdür ve kalkanlara karşı fazladan etkilidir." />
+    <string id="YjKfKduC" text="Hızlı Oklar" />
+    <string id="ykaaB5gw" text="Güçlü Uzun Yay" />
+    <string id="YoNYyLba" text="Mızrak" />
+    <string id="YqqhxGwH" text="Sopayı Orak ile değiştirir, ortalama hasar verir ve kalkanlara karşı etkilidir." />
+    <string id="ZATaNNCu" text="Bineği daha iyi manevralı ve daha fazla çarpma hasarı veren bir at ile değiştirir." />
+    <string id="zCqpSDcF" text="Kısa bir Menavlion verir." />
+    <string id="Zh4upm1u" text="Gürzü Kılıç ile değiştirir, düellolarda ve saplamalarda etkilidir." />
+    <string id="ZJweh5Oh" text="Battal Balta" />
+    <string id="ZtKJgiRv" text="Cida verir, rahatsız etmek için birebir, yakın dövüşte kullanılabilir." />
+    <string id="zv9NXIZR" text="Bineğe zırh sağlar." />
+    <string id="ZvMcHde3" text="Kazma" />
+    <string id="ZZ9p2E2g" text="Kalkanını daha güçlü bir kalkan ile değiştirir, dayanıklılığını artırır." />
+  </strings>
+</base>

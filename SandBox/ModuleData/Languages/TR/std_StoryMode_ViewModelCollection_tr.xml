@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Türkçe" />
+  </tags>
+  <strings>
+    <string id="8eYtra7T" text="Oyunun zorluğunu belirle" />
+    <string id="fz2kQjFS" text="Karakterinin medeniyetini seç:" />
+    <string id="K6GYskvJ" text="Medeniyet:" />
+    <string id="kek1czyb" text="Bir intikam ve kurtarma görevi için kardeşinle yola çıkmaya hazırlanıyorsun. Karakterini oluşturdun. Hazırsan bitir tuşuna tıklayabilir veya değişiklikler yapmak için geri dönebilirsin." />
+    <string id="MaHMOzL2" text="Medeniyet Seçimi" />
+    <string id="mHVmrwRQ" text="İsmini Gir" />
+    <string id="PUjDWe5j" text="Medeniyet" />
+    <string id="raD9MK3O" text="Zorluk" />
+    <string id="txjiykNa" text="Gözden Geçir" />
+  </strings>
+</base>

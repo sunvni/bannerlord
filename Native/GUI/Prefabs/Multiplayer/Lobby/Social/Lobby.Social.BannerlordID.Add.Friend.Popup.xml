@@ -1,0 +1,49 @@
+<Prefab>
+	<Window>
+		<Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" MarginLeft="275" MarginRight="265" MarginTop="225" MarginBottom="260" Brush="MPLobby.Social.BannerlordID.AddFriend.Popup.Frame" IsVisible="@IsSelected">
+      <Children>
+        
+        <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginTop="15" MarginBottom="15" MarginLeft="15" MarginRight="15">
+          <Children>
+
+            <!--Title and Close Button-->
+            <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginBottom="25" VerticalAlignment="Top" LayoutImp.LayoutMethod="HorizontalLeftToRight" >
+              <Children>
+                <!--Title-->
+                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" Text="@TitleText" />
+                
+                <!--Close Button-->
+                <ButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="22" HorizontalAlignment="Right" Command.Click="ExecuteClosePopup">
+                  <Children>
+                    <!--Icon-->
+                    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="MPLobby.CustomServer.CloseButton" />
+                  </Children>
+                </ButtonWidget>
+
+              </Children>
+            </ListPanel>
+
+            <!--Text Input-->
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="40" MarginRight="35" MarginLeft="35" MarginTop="60" Sprite="BlankWhiteSquare_9" Brush.Color="#382921FF">
+              <Children>
+                <EditableTextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="5" MarginTop="5" Brush="MP.ChatLog.Text" Brush.TextVerticalAlignment="Top" Text="@BannerlordIDInputText" MaxLength="499"/>
+              </Children>
+            </Widget>
+
+            <!--Error Text-->
+            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="120" Brush="MPLobby.Social.Popup.Error.Text" Text="@ErrorText" />
+
+          </Children>
+        </Widget>
+
+        <!--Send Button-->
+        <ButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="342" SuggestedHeight="69" MarginBottom="10" HorizontalAlignment="Center" VerticalAlignment="Bottom" Brush="WideButton.Flat" Command.Click="ExecuteTryAddFriend">
+          <Children>
+            <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.BannerlordID.AddFriend.Text" Brush.TextVerticalAlignment="Center" PositionYOffset="3" Text="@AddText" />
+          </Children>
+        </ButtonWidget>
+
+      </Children>
+    </Widget>
+	</Window>
+</Prefab>

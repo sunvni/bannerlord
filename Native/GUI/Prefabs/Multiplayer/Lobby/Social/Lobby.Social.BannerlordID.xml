@@ -1,0 +1,56 @@
+<Prefab>
+  <Window>
+    <!--BannerlordID Right Panel-->
+    <ValueBasedVisibilityWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" IndexToBeVisible="2" IndexToWatch="@SelectedSubPageIndex">
+      <Children>
+
+        <Widget DataSource="{BannerlordID}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+          <Children>
+
+            <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" LayoutImp.LayoutMethod="VerticalBottomToTop">
+              <Children>
+
+                <!--Bannerlord ID-->
+                <TextWidget DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" PositionYOffset="-10" MarginTop="50" Brush="MPLobby.Armory.SelectionTitle" ClipContents="false" Text="@TitleText" />
+
+                <!--Your Bannerlord ID Is-->
+                <TextWidget DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" Brush="MPLobby.BannerlordID.ParagraphText" MarginTop="20" Text="@YourIDText" />
+
+                <!--ID-->
+                <TextWidget DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" Brush="MPLobby.BannerlordID.ParagraphTextBold" MarginTop="20" Text="@PlayerBannerlordID" />
+
+                <!--Change Button-->
+                <ButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="342" SuggestedHeight="69" MarginTop="50" HorizontalAlignment="Center" Brush="WideButton.Flat" Command.Click="ExecuteOpenChangeBannerlordIDPopup">
+                  <Children>
+
+                    <!--Change ID-->
+                    <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" Brush="MPLobby.PlayButton.Text" Brush.FontSize="28" Brush.TextVerticalAlignment="Center" PositionYOffset="3" Text="@ChangeBannerlordIDText" />
+
+                  </Children>
+                </ButtonWidget>
+              
+
+                <!--Add Friend With ID Button-->
+                <ButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="342" SuggestedHeight="69" MarginTop="10" HorizontalAlignment="Center" Brush="WideButton.Flat" Command.Click="ExecuteOpenAddFriendWithBannerlordIDPopup">
+                  <Children>
+
+                    <!--Add Friend-->
+                    <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" Brush="MPLobby.PlayButton.Text" Brush.FontSize="22" Brush.TextVerticalAlignment="Center" PositionYOffset="3" Text="@AddFriendWithIDText" />
+
+                  </Children>
+                </ButtonWidget>
+
+              </Children>
+            </ListPanel>
+          
+            <!--Add Friend Popup-->
+            <Lobby.Social.BannerlordID.Add.Friend.Popup DataSource="{BannerlordIDAddFriendPopup}" IsVisible="@IsSelected" />
+          </Children>
+        </Widget>
+
+
+      </Children>
+    </ValueBasedVisibilityWidget>
+		
+  </Window>
+</Prefab>

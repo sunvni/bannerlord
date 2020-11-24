@@ -1,0 +1,46 @@
+<Prefab>
+	<Window>
+		<Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" MarginLeft="200" MarginRight="200" MarginTop="150" MarginBottom="300" Brush="Report.Popup.Frame" IsVisible="@IsSelected">
+      <Children>
+        
+        <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginTop="15" MarginBottom="15" MarginLeft="50" MarginRight="15" LayoutImp.LayoutMethod="VerticalBottomToTop">
+          <Children>
+
+            <!--Title and Close Button-->
+            <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginBottom="25" LayoutImp.LayoutMethod="HorizontalLeftToRight" >
+              <Children>
+                <!--Title-->
+                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" Text="@TitleText" />
+                
+                <!--Close Button-->
+                <ButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="22" HorizontalAlignment="Right" Command.Click="ExecuteClosePopup">
+                  <Children>
+                    <!--Icon-->
+                    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="MPLobby.CustomServer.CloseButton" />
+                  </Children>
+                </ButtonWidget>
+
+              </Children>
+            </ListPanel>
+
+            <!--Text Input-->
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginRight="35" MarginBottom="10" Sprite="BlankWhiteSquare_9" Brush.Color="#382921FF">
+              <Children>
+                <EditableTextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="5" MarginTop="5" Brush="MP.ChatLog.Text" Brush.TextVerticalAlignment="Top" Text="@PostData" MaxLength="499"/>
+              </Children>
+            </Widget>
+
+            <!--Send Button-->
+            <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="342" SuggestedHeight="69" MarginTop="25" MarginBottom="25" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="WideButton.Flat" Command.Click="ExecuteSend">
+              <Children>
+                <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.Clan.CreateButton.Text" Text="@SendText" />
+              </Children>
+            </ButtonWidget>
+
+          </Children>
+        </ListPanel>
+
+      </Children>
+    </Widget>
+	</Window>
+</Prefab>

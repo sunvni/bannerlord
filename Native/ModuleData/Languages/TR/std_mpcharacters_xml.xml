@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Türkçe" />
+  </tags>
+  <strings>
+    <string id="09gOOa0h" text="Korucu" />
+    <string id="1sJcKkVP" text="Muhafız" />
+    <string id="4C4WiTb2" text="Varyag" />
+    <string id="6aqDcMPr" text="Maks. Zırh (55)" />
+    <string id="8qg72H8Z" text="Kabile Savaşçısı" />
+    <string id="afhXdjBU" text="Göçebe" />
+    <string id="bHx8jaeI" text="Savaşçı" />
+    <string id="CAYZDsAj" text="Lejyoner" />
+    <string id="cbnvgVhH" text="Akıncı" />
+    <string id="Cp7dI87a" text="Öncü" />
+    <string id="DMxJJWxt" text="Acemi" />
+    <string id="Dq1sCO1y" text="Arbaletçi" />
+    <string id="eFWJjaBC" text="Çok Oyunculu Karakteri" />
+    <string id="eIk6jaOG" text="Mızrak Piyadesi" />
+    <string id="eM1qFKNs" text="Keskin Nişancı" />
+    <string id="eU0uANvZ" text="Atlı Okçu" />
+    <string id="fS5BIf3J" text="Yeminli" />
+    <string id="ft6QaIms" text="Katafrakt" />
+    <string id="g9VIbA9s" text="Çavuş" />
+    <string id="gLlheMwd" text="Köylü Askeri" />
+    <string id="gytrdYMU" text="Memlük" />
+    <string id="hchDYAKL" text="Kargıcı" />
+    <string id="HCzbW0hE" text="Klan Savaşçısı" />
+    <string id="ieiqOaZp" text="Okçu" />
+    <string id="ixqTFMVA" text="Atlı Savaşçı" />
+    <string id="j5I7tYSd" text="Fian" />
+    <string id="k1Xr4rKn" text="Druznik" />
+    <string id="lar4lfKR" text="Kağan'ın Muhafızı" />
+    <string id="LLKreyq7" text="Yabani" />
+    <string id="LNfQk4MM" text="Min Zırh (0)" />
+    <string id="My0a4Miq" text="Voulgier" />
+    <string id="naBbiK9v" text="Başıbozuk" />
+    <string id="NJRUb0C1" text="Saray Muhafızı" />
+    <string id="nt7wUxIa" text="Bedevi" />
+    <string id="PoY2Vh7K" text="Bozkır Okçusu" />
+    <string id="q1tbZIR9" text="Yüksek Ortalama Zırh (37)" />
+    <string id="rdIGpLLh" text="Atlı Avcı" />
+    <string id="RjjIbn4V" text="Gedikli Okçu" />
+    <string id="RssJTUpL" text="Ayıboğan" />
+    <string id="s9oED1IR" text="Cidacı" />
+    <string id="Tm3CY9tC" text="Düşük Ortalama Zırh (12)" />
+    <string id="TNQaD5p2" text="Okçu Milis" />
+    <string id="WtEoXblx" text="Şövalye" />
+    <string id="XeXJAB6a" text="Menavlion Piyade" />
+    <string id="xnDWqYKW" text="Avcı" />
+    <string id="yDiWi6SO" text="Vahşi" />
+    <string id="ZKdiaaFo" text="Eşkiya" />
+	<string id="guardnoun" text="Muhafız" />
+	<string id="huntertroop" text="Avcı" />
+	<string id="coursercavalryman" text="Atlı Avcı" />
+	<string id="steppebowtroop" text="Bozkır Okçusu" />
+    <string id="veterantroop" text="Gedikli Okçu" />
+  </strings>
+</base>

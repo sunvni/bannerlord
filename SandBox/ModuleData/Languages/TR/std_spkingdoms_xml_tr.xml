@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Türkçe" />
+  </tags>
+  <strings>
+    <string id="0B27RrYJ" text="Batanya" />
+    <string id="5djtBrHj" text="Sultan" />
+    <string id="8HMyTKF6" text="Vlandiyalılar" />
+    <string id="8pjMAqOg" text="Senato" />
+    <string id="afvM7XpQ" text="Yüce Kral" />
+    <string id="bF7HmNGQ" text="Kuzait Kağanlığı" />
+    <string id="bgjiFSHZ" text="Batanyalılar" />
+    <string id="bVihnRUu" text="Günümüzde Sturgiya Prensliği olarak bilinen küçük krallıklar konfederasyonu sadece bir asır önce varlık buldu. Kuzeyin büyük nehirlerinin kıyılarında hızla gelişen kentler kurulurken, yerel kabile liderleri Kuzeylilerle ve diğer maceraperestlerle evlilik anlaşmaları yaparak komşularını boyunduruk altına almak için onların savaşçılarından faydalandılar. İmparatorluğun baskısı altında, kendilerine savaşta önderlik edecek bir prens seçtiler ve prenslik zamanla kalıtsal bir görev haline geldi. Ne var ki, bağımsızlığına düşkün boyarlar monarşi fikrini hiçbir zaman tam olarak benimsemediler ve Sturgiya politikalarının altında her zaman gizli bir isyan potansiyeli bulunuyor." />
+    <string id="C4qjBqLO" text="Sturgiyalılar" />
+    <string id="fE5U9ApA" text="Kalradya İmparatorluğu bir monarşi değildir. Kalradyalılar bu konuda ısrarcıdır. Eskiden sadece bir ordu komutanı olan imparator, diğer birçok devlet işini de üstlenmiş olabilir. Birkaç yılda bir Senato tarafından seçilmek yerine ömür boyu hüküm sürüyor ve yerine de genellikle oğlu geçiyor olabilir. Bir zamanlar önemli politikaları belirleyen halk meclisleri geçmişte kaldığı gibi, toprak sahiplerinin bir araya gelerek oluşturduğu Senato geçmiş yüzyıllara göre çok daha güçsüz olabilir. Ancak, Kalradya bir monarşi değildir, çünkü Kalradyalıların bir kral tarafından yönetilmesi kesinlikle yasaktır. İmparatorluk, şehir devletlerinin birleşerek kıtayı fethetmesiyle meydana geldi. Bir zamanlar nispeten eşit gelire sahip özgür çiftçiler tarafından yönetilen bir toplulukta, zenginler ve yoksullar arasında büyük uçurumlar oluştu. Bir kişinin tiran olmasını önlemek için tasarlanmış kurumlar, birleşik komuta gerektiren bitmek bilmeyen savaşların gerekliliklerine ters düştü. Düzgün bir veraset sistemi olmadığı için, imparatorun ölümü her zaman potansiyel bir kriz anlamına geldi. Genellikle imparator bir varis adayı belirler, Senato onun tercihini onaylar ve halk (yani ordu) da tezahüratlar eşliğinde onu imparator ilan ederdi. Ancak işler her zaman pürüzsüz yürümezdi ve o durumda imparator savaş meydanında belirlenirdi. Son İmparator Arenicos gizemli bir şekilde öldüğünde patlak veren mevcut çatışma, imparatorluğun bu iç savaşlarının sonuncusudur." />
+    <string id="fGNdo1BK" text="İmparatorluğun doğusunda yer alan uçsuz bucaksız bozkırlardaki kabileler yüzyıllar boyunca göçebe yaşamaktan, akınlar düzenlemek ve ticaret yapmak için imparatorluk topraklarına girmekten ve sonra da atalarının özgürlüğüne dönmekten memnundu. Ne var ki, iki nesil önce doğunun uzak diyarlarında bir şey oldu - belki rüzgarın yönü değişti veya belki de uzaklarda korkunç bir fatih belirdi - ve atlı klanlar harekete geçti. Kuzait Urkhun, imparatorluğun en yakınındaki klanları peşine takarak doğu eyaletlerini istila etti ve bir kağanlık kurdu. Asi klanları disiplin altına aldı ve onları istedikleri zaman değil, kendi emriyle savaşa girmeye zorladı. Ancak Urkhun öldükten sonra, uyandırdığı birlik duygusu kayboldu. Torunları kağanlığı yönetmeye devam ediyor ama diğer klanların bazıları otoritesi altında ufalanırken, bazıları da kağan olma hayalleri peşinde." />
+    <string id="FjwRsf1C" text="Vlandiya" />
+    <string id="FmbgPGBL" text="Yüce Prens" />
+    <string id="frBQ9mbP" text="Güney İmparatorluğu" />
+    <string id="GbnlN6na" text="güney İmparatorluğu" />
+    <string id="hwnp9abW" text="Kral" />
+    <string id="IudGLWQZ" text="Vlandiya monarşisi, İmparatorluğun batı kıyılarını ele geçiren ve barışın bedeli olarak imparatorlar tarafından kral olarak tanınan bir savaş kumandanı olan Osric Demir-Kol'dan gelir. O da teğmenlerini baron ve kont olarak tanımış, savaşta kendi sancağının altında toplanmaları karşılığında onlara kendi topraklarına hükmetme hakkını bahşetmiştir. Vlandiya krallarının bazıları krallık yetkilerini genişletmeye çalışırken, bazıları da, gerektiğinde para ve insan gücü sağladıkları sürece, baronlarının kendi aralarında kavga etmelerine göz yummuştur." />
+    <string id="iYCR3xuQ" text="Sturgiya Prensliği" />
+    <string id="lAWwcO6b" text="Vlandiya Krallığı" />
+    <string id="NaNMRPv4" text="Aseray" />
+    <string id="NF627oiX" text="Kuzey İmparatorluğu" />
+    <string id="nsDj8Qxl" text="kuzey İmparatorluğu" />
+    <string id="PjO7oY16" text="Sturgiya" />
+    <string id="qaDIU0XC" text="Yüce Batanya Krallığı" />
+    <string id="qggtvf8Y" text="İmparatorluk hiçbir zaman lejyonlarını Nahasa'nın orduları yutan çöllerine göndermekten yana olmadı. Bunun yerine, gücünü sınır bölgesine yansıtarak, bitmek bilmeyen bir iktidar savaşı veren klanlardan kendine bağımlı hükümdarlar çıkardı. Vahaları elinde tutmayı başaran klanlar, gelip geçen kervanları korumak için imparatorluğun desteğini aldılar ve zenginleştiler. Bunu başaramayanlar ise çöle sürüldüler ve geri dönmenin bir yolunu bulana kadar keçi yetiştirmeye ve kervanları yağmalamaya terk edildiler. İmparatorluğun zayıflamasıyla Aseraylılar, en zengin klanları olan Banu Hulyan'dan seçilen bir sultanın altında bir konfederasyon oluşturmak konusunda anlaştılar. Ancak, herkes iktidar savaşının sadece geçici olarak durduğunu ve zamanı geldiğinde tekrar başlayacağını biliyor." />
+    <string id="sZLd6VHi" text="Kuzait" />
+    <string id="UsbwPmYb" text="Aseray Sultanlığı" />
+    <string id="vJOWy1QF" text="Kuzaitler" />
+    <string id="yG3YUySN" text="Batı İmparatorluğu" />
+    <string id="ZEmH0MwL" text="batı İmparatorluğu" />
+    <string id="ZjaaAoxd" text="Batanya'nın ezelden beri kutsal Dunthanach Tepesi'nde büyük törenler eşliğinde taçlandırılan bir Yüce Kral'ı olmuştur. Bununla birlikte, herhangi bir Batanya şefine kimin &quot;krallığında&quot; yaşadığını sorarsan, salonuna, tarlalarına, otlaklarına, sürülerine ve uşaklarına bakıp, &quot;Benim krallığımda elbette,&quot; diyecektir. Yüce Krallar sadece son zamanlarda İmparatorluğu örnek alarak otoritelerini dayatmak için çaba sarf etmeye başladılar. Son yüce krallardan biri, kıskanç kuzenlerinden birinin ihanetine uğrayıp zincirler içinde imparatorluğun en yakın karakoluna götürülmeden önce, &quot;Benim halkım gibi asi bir sürüyü yarıklardan uzak tutmak ve kurtlardan korumak için güçlü bir çoban gerekir,&quot; dedi. " />
+  </strings>
+</base>

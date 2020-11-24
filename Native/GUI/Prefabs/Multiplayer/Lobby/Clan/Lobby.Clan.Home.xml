@@ -1,0 +1,12 @@
+<Prefab>
+	<Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsVisible="@IsSelected">
+      <Children>
+      
+        <Lobby.Clan.Overview DataSource="{ClanOverview}" />
+        <Lobby.Clan.Creation.Information DataSource="{ClanCreationInformation}" />
+
+      </Children>
+    </Widget>
+	</Window>
+</Prefab>

@@ -1,0 +1,27 @@
+<Window>
+  <Widget HeightSizePolicy ="CoverChildren" WidthSizePolicy="StretchToParent" DoNotAcceptEvents="true">
+    <Children>
+
+      <PartyHeaderToggleWidget DoNotPassEventsToChildren="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren"  HorizontalAlignment="Left" VerticalAlignment="Top" CollapseIndicator="Description\CollapseIndicator" ListPanel="..\Filters" RenderLate="true" WidgetToClose="..\Filters" UpdateChildrenStates="true">
+        <Children>
+
+          <ListPanel Id="Description" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Left" VerticalAlignment="Center" DoNotAcceptEvents="true" UpdateChildrenStates="true" LayoutImp.LayoutMethod="HorizontalLeftToRight">
+            <Children>
+              <ImageWidget Id="CollapseIndicator" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="19" SuggestedWidth="19" VerticalAlignment="Center" PositionXOffset="-10" PositionYOffset="-3" Brush="SPOptions.GameKeysgroup.ExpandIndicator" OverrideDefaultStateSwitchingEnabled="true" />
+              <TextWidget Text="@FilterName" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Brush="SPOptions.GameKeysGroup.Title.Text" HorizontalAlignment="Center" />
+              <ImageWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed"  SuggestedHeight="2" VerticalAlignment="Center" MarginLeft="5" Brush="SPOptions.CollapserLine"/>
+            </Children>
+          </ListPanel>
+
+        </Children>
+      </PartyHeaderToggleWidget>
+
+
+      <ListPanel Id="Filters" DataSource="{Filters}" HeightSizePolicy ="CoverChildren" WidthSizePolicy="StretchToParent" LayoutImp.LayoutMethod = "VerticalTopToBottom" MarginTop="40" DoNotAcceptEvents="true" MarginLeft="5">
+        <ItemTemplate>
+          <EncyclopediaFilterListItem/>
+        </ItemTemplate>
+      </ListPanel>
+    </Children>
+  </Widget>
+</Window>

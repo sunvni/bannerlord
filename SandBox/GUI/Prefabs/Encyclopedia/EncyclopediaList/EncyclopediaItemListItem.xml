@@ -1,0 +1,20 @@
+<Window>
+  <ButtonWidget DoNotPassEventsToChildren="true" Command.Click="Execute" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="37" Brush="Encyclopedia.ListButton" IsHidden="@IsFiltered">
+    <Children>
+      
+      <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" LayoutImp.LayoutMethod="HorizontalLeftToRight">
+        <Children>
+          <!--Star if bookmarked-->
+          <Widget IsVisible="@IsBookmarked" IsSelected="true" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="35" SuggestedHeight="35" HorizontalAlignment="Center" PositionYOffset="-4" Sprite="Encyclopedia\star_without_glow" Brush.Color="#FEC157FF" />
+          
+          <!--Space if not bookmarked-->
+          <Widget IsHidden="@IsBookmarked" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="35" SuggestedHeight="35" HorizontalAlignment="Center" VerticalAlignment="Center" />
+      
+          <!--Name-->
+          <TextWidget HeightSizePolicy="StretchToParent" WidthSizePolicy="StretchToParent" MarginLeft="5" Brush="EncyclopediaList.Filter.Name.Text" Brush.FontSize="30" Brush.TextHorizontalAlignment="Left" Text="@Name"/>
+        </Children>
+      </ListPanel>
+
+    </Children>
+  </ButtonWidget>
+</Window>

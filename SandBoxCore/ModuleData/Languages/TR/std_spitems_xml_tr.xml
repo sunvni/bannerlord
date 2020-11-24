@@ -1,0 +1,999 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Türkçe" />
+  </tags>
+  <strings>
+    <string id="02g6K4Yw" text="Güney İşi Kabile Sarığı" />
+    <string id="0666zYUB" text="Çivili Adarga" />
+    <string id="06Qoh8AO" text="Altın Kaplamalı Kısa Savaş Kılıcı" />
+    <string id="0AS3253G" text="Doğu İşi Flanşlı Gürz" />
+    <string id="0bE9MxK4" text="Güney İşi Dolama Kep" />
+    <string id="0e17RZrZ" text="Arbalet" />
+    <string id="0lNp3f76" text="İşlemeli Sivri Kaskara" />
+    <string id="0n0JmWv0" text="Güney İşi Fırlatma Baltası" />
+    <string id="0NLJnGfF" text="Sade Cirit" />
+    <string id="0Pxq8UqX" text="Dağ İşi Pelerin" />
+    <string id="0rzKQbWy" text="Bozkır İşi Yarım At Zırhı" />
+    <string id="0s4IP7jB" text="Yaşlı Yük Beygiri" />
+    <string id="0SpLcthg" text="Dağ İşi Çivili Sopa" />
+    <string id="0SsLGsXk" text="Uzun Dolgulu Cüppe" />
+    <string id="12PL4971" text="Kuzey İşi Katmanlı Zırh" />
+    <string id="160aqzPm" text="Ustura" />
+    <string id="1aOuyULB" text="Fırtına" />
+    <string id="1bc4kTaz" text="Tamasken Çeliğinden Dövülmüş Spathion" />
+    <string id="1bdDdwub" text="Zincir Zırh Üzeri Burun Korumalı Miğfer" />
+    <string id="1blLtbDf" text="Güney İşi İpek Giysi" />
+    <string id="1Brz8D10" text="Altın Çember İşlemeli Tek Elli Kılıç" />
+    <string id="1CamO1P3" text="Demir Spatha" />
+    <string id="1CPdu9K0" text="Taş" />
+    <string id="1cYka5tR" text="Kolsuz Kürk Kaban" />
+    <string id="1Fdtj39w" text="İmparatorluk Başlığı Üzeri Tüylü Miğfer" />
+    <string id="1GpTOIqU" text="Dolgulu Başlık Üzeri Siperli Miğfer" />
+    <string id="1HWRwbwT" text="Tahta Kılıç" />
+    <string id="1jqxlEkT" text="Baharat" />
+    <string id="1lmGO2Da" text="Kuzey İşi Dikdörtgen Ağızlı Balta" />
+    <string id="1oQWbXJw" text="Balık Zıpkını" />
+    <string id="1UZGbygw" text="Uzun İmparatorluk Gambesonu" />
+    <string id="1w5StEM1" text="Hasır Kalkan" />
+    <string id="1WxLaeQE" text="İyi Çelikten Dövülmüş Çift Elli Kılıç" />
+    <string id="21U7JTFv" text="Batı İşi Aketon" />
+    <string id="24MA4JLX" text="Kabartılı Uzun Kaskara" />
+    <string id="24xuA5G2" text="Çöl Savaş Atı" />
+    <string id="28KBiS2H" text="Kuzey İşi Katmanlı Omuzluk" />
+    <string id="2AcfBbCR" text="Asker Ceketi" />
+    <string id="2dJ5HB8a" text="Kara Yürek" />
+    <string id="2FubBDYB" text="Doğu İşi Gönderli Kılıç" />
+    <string id="2K0o7NK9" text="Güney İşi Katmanlı Zırh" />
+    <string id="2KQbV4To" text="Kürk Tüccar Kabanı" />
+    <string id="2m1kWsao" text="İnce Deri Üzeri Deri Çivili Miğfer" />
+    <string id="2MdVVkVL" text="Dolgulu Başlık Üzeri Siperli Şapka" />
+    <string id="2Q0m5CG0" text="Çöl Kumaş Koşum Takımı" />
+    <string id="2qisE5ys" text="Dolgulu Kep Üzeri Siperli Miğfer" />
+    <string id="2rvCcBuS" text="Kahverengi Başörtüsü" />
+    <string id="2SUb8jNP" text="Sepetli Katır Koşum Takımı" />
+    <string id="2Tz96poW" text="Güney İşi Köylü Elbisesi" />
+    <string id="2VYmGLC6" text="Kuzey İşi Deri Kep" />
+    <string id="2WQTvOLF" text="Kumaş Önlük" />
+    <string id="2XEbqNQz" text="Bezemeli İmparatorluk Zırh Eldiveni" />
+    <string id="33aaUcaX" text="Batanya At Koşum Takımı" />
+    <string id="3BGHFFsL" text="Kuzey İşi Dolgulu Kumaş" />
+    <string id="3bqwOJ8z" text="Kalkık Kürk Kep" />
+    <string id="3DV3GoHb" text="Zincirli Sivri Uçlu Kıhıf Miğfer" />
+    <string id="3hOPlGlS" text="Deri Ceket Üzeri İmparatorluk Gambesonu" />
+    <string id="3iq3rOh8" text="Korumalı Başlık Üzeri Siperli Miğfer" />
+    <string id="3NnlCd3V" text="Oluklu Batı İşi Gürz" />
+    <string id="3Pv0SlYj" text="Seax" />
+    <string id="3TAnl7hb" text="Bezemeli Doğu İşi Kalkan" />
+    <string id="3Wzhxkn1" text="Ateşlik" />
+    <string id="3YhwjpQ0" text="Ensiz Kılıç" />
+    <string id="3Z91Nxbf" text="Derili Miğfer" />
+    <string id="42KNket2" text="Dağ İşi Bot" />
+    <string id="45kZUyjh" text="Zeytin" />
+    <string id="46orXtt0" text="Orman İşi Giysiler" />
+    <string id="4AfHO0BA" text="Kolsuz Çivili Kürk Zırh" />
+    <string id="4BaTgzia" text="Güney İşi Kep" />
+    <string id="4BfbPgkY" text="Dolgulu Kep Üzeri Burun Korumalı Yuvarlak Miğfer" />
+    <string id="4c7e0RCE" text="Kuzey İşi Burun Korumalı Miğfer" />
+    <string id="4cMV1pY3" text="Hafif İmparatorluk Gürzü" />
+    <string id="4gMJDK0L" text="Kuzey İşi Bezemeli Çift Elli Balta" />
+    <string id="4jmcs2Xm" text="Turnuva Arbalet Oku" />
+    <string id="4KYF5iCd" text="Kat Kat Deri Tunik" />
+    <string id="4n6n3KL7" text="Çöl Sarığı" />
+    <string id="4OaVIYuD" text="Dar Oluklu Spatha" />
+    <string id="4okauhMv" text="Batı İşi Piyade Baltası" />
+    <string id="4pqIsPhp" text="Dolgulu Kısa Kaban" />
+    <string id="4RTsybkx" text="Savaş Usturası" />
+    <string id="4SadJFch" text="Doğu İşi Çentikli Cirit" />
+    <string id="4wdgiTta" text="Orak" />
+    <string id="4wQRk3f5" text="Bezemeli Uzun Savaş Kılıcı" />
+    <string id="4XAa0tca" text="Güney İşi Kapalı Miğfer" />
+    <string id="4YTJJaTG" text="Ağır Süvari Kılıcı" />
+    <string id="4YxbZlbi" text="Bağlamalı Ayakkabı" />
+    <string id="51EcVnzd" text="Bağcıklı Başlık Üzeri Siperlikli Miğfer" />
+    <string id="57jpWo7g" text="İyi Çelikten Dövülmüş Geniş Süvari Kılıcı" />
+    <string id="59TEk33X" text="Güney İşi Geniş Kaskara" />
+    <string id="5h1qpdoa" text="Askılı İmparatorluk Gambesonu" />
+    <string id="5lJrGXqR" text="Güney İşi Cüppeli Elbise" />
+    <string id="5n4rWI9T" text="Yüz Korumalı Çivili Miğfer" />
+    <string id="607BAdXw" text="Batı İşi Uzun Mızrak" />
+    <string id="60fpbHiH" text="Batı İşi Zırhlı Yelek" />
+    <string id="62nIvqbA" text="Batanya Dağ Kılıcı" />
+    <string id="6Cc4zpeQ" text="Güçlendirilmiş Güney İşi Yuvarlak Kalkan" />
+    <string id="6Db7aDbF" text="Balista Oku" />
+    <string id="6eO6QDoE" text="Ağır Sturgiya Kargısı" />
+    <string id="6EWm09LY" text="Çivili Gürz" />
+    <string id="6fPAlYR5" text="Batı İşi Uzun Yay" />
+    <string id="6hwZwODh" text="Gönderli Pala" />
+    <string id="6J0aJo7u" text="Güney İşi Kırsal Sarık" />
+    <string id="6Ls9naf4" text="Doğu İşi Deri Bozkır Botu" />
+    <string id="6n44BIll" text="Bağcıklı Başlık Üzeri Sivri Uçlu Kıhıf Miğfer" />
+    <string id="6q0nmVtg" text="Orman İşi Balta" />
+    <string id="6qaNQAND" text="Doğu İşi Katmanlı Zırh" />
+    <string id="6QI8X6CY" text="Güney İşi Hafif Gürz" />
+    <string id="6SxJ9cpN" text="Güney İşi Yuvarlak Kalkan" />
+    <string id="6WcZ5Tr0" text="Demirci Çekici" />
+    <string id="6Wkq14uk" text="Dağ İşi Köylü Elbisesi" />
+    <string id="6YCbEaHK" text="Kuzey İşi Yuvarlak Kalkan" />
+    <string id="77RIGK7B" text="Zincir Başlık" />
+    <string id="7D3jvAfS" text="Deri Kep" />
+    <string id="7dAy51ln" text="Korumalı Başlık Üzeri Yuvarlak Miğfer" />
+    <string id="7jH0kuof" text="Çivili Gürz" />
+    <string id="7LmUe8fQ" text="Menavlion" />
+    <string id="7phSQw5i" text="Çapa" />
+    <string id="7rGaUG0W" text="Doğu İşi Kürk Kapüşon" />
+    <string id="7S6BjECG" text="Semerli Katır Koşum Takımı" />
+    <string id="7sgW3eHd" text="Doğu İşi Kürklü Elbise" />
+    <string id="7yGwvnUA" text="Kuzey İşi Tunik" />
+    <string id="85q9uY76" text="Dağ İşi Yarı Pullu Koşum Takımı" />
+    <string id="89bCqb0Z" text="Hasır Kare Turnuva Kalkanı" />
+    <string id="89OWzLBb" text="Bambu Saplı Balta" />
+    <string id="8cM840mh" text="Kuzey İşi Kıymetli Tunik" />
+    <string id="8el5a3sF" text="Tavuk" />
+    <string id="8fK5E68M" text="Kabartılı Süvari Kılıcı " />
+    <string id="8hDoWBIa" text="Sıradan Gömlek" />
+    <string id="8jEDX9J4" text="Geniş Kılıç" />
+    <string id="8kUwD98O" text="Çivili İmparatorluk Omuzluğu" />
+    <string id="8mpp8ZCL" text="Tek Elli Şövalye Kılıcı" />
+    <string id="8ndLVeN0" text="Tahta Yelken Kalkan" />
+    <string id="8Nkurzdw" text="Doğu İşi Çelik Gürz" />
+    <string id="8nNLS96w" text="Güçlendirilmiş Oval Kalkan" />
+    <string id="8NrM7hzY" text="Batı İşi Fırlatma Bıçağı" />
+    <string id="8Oi89KRn" text="Kuzey İşi Hafif Koşum Takımı" />
+    <string id="8pnCvnFR" text="Çelik Topuz" />
+    <string id="8r0Z9Hyb" text="Güney İşi Renkli Cüppe" />
+    <string id="8R6kpH2J" text="Zincir Zırh Üzeri Güney İşi Cüppe" />
+    <string id="8SNS2wF9" text="Sarık" />
+    <string id="8TbraEGR" text="Batı İşi Zincir Zırh" />
+    <string id="8tHbqjmB" text="Sivri Tepeli Kürk Kapüşon" />
+    <string id="8uBew3nD" text="Çivili Kolbent" />
+    <string id="8ulJswRY" text="Kaplamalı Deri Kaban" />
+    <string id="8UMQ8ocB" text="Doğu İşi Süvari Kalkanı" />
+    <string id="927d3urB" text="Tahta Oval Kalkan" />
+    <string id="93OHSnEV" text="Bezemeli Uzun Enli Kılıç" />
+    <string id="94yBVV6R" text="Güney İşi Yarım Baş Örtüsü" />
+    <string id="9BENgwRK" text="Bağcıklı Kumaş Üzeri Yuvarlak Siperli Miğfer" />
+    <string id="9cHyHQ7a" text="Katmanlı Bot" />
+    <string id="9EWN9SiT" text="Hafif Shishpar Gürzü" />
+    <string id="9Eyd2qGo" text="Güçlendirilmiş Süet Bot" />
+    <string id="9FgxK9se" text="Uzun Miğfer" />
+    <string id="9Hr4oEvw" text="İmparatorluk Derisi Üzeri Yuvarlak Siperli Miğfer" />
+    <string id="9j9fb5pR" text="Kenar Koruyuculu Kaplamalı Miğfer" />
+    <string id="9X2l53vY" text="Gümüş Cevheri" />
+    <string id="9ZiUK3JJ" text="Büyük Oluklu Geniş Çift Elli Kılıç" />
+    <string id="a10taTGb" text="Aslan İşlemeli Süvari Kılıcı" />
+    <string id="a1BGHdaU" text="Koruyuculu Kolluk" />
+    <string id="a1KxyGOj" text="Kuzey İşi Elbise" />
+    <string id="A1zFbFta" text="Güçlendirilmiş Yassı Yelken Kalkanı" />
+    <string id="A2I5SHCr" text="Kuzey İşi Siperlikli Miğfer" />
+    <string id="a2XnhQ3V" text="Kuzey İşi Kapalı Miğfer" />
+    <string id="a71fiml4" text="Katmanlı İmparatorluk Zırhı" />
+    <string id="A8MJWbhf" text="Dolgulu Kumaş Üzeri Siperlikli Miğfer" />
+    <string id="AB1mV5Pg" text="Bağcıklı Başlık Üzeri Siperli Miğfer" />
+    <string id="AdafHtud" text="Zincir Başlık Üzeri Sivri Tepeli Miğfer" />
+    <string id="aDDTouCQ" text="Dolgulu İmparatorluk Kumaşı" />
+    <string id="ADJBbfbQ" text="Kürk" />
+    <string id="aEBMmzn6" text="Vlandiya Kargısı" />
+    <string id="aGbTPme1" text="Tırpan" />
+    <string id="aGkXbDlr" text="Batı İşi Zincir Gömlek" />
+    <string id="agqzAXa9" text="Dolgulu Başlık Üzeri Siperlikli Miğfer" />
+    <string id="aHQCG5Tn" text="Zincir At Zırhı" />
+    <string id="Ai7qIb9I" text="Küçük Üçgen Kalkan" />
+    <string id="AIu3kKvz" text="Binek Atı" />
+    <string id="AloILntx" text="Güney İşi Sıradan Koşum Takımı" />
+    <string id="AMIdBVZb" text="İyi Çelikten Dövülmüş Spatha" />
+    <string id="AobNdBBU" text="Ucuz Dolgu Malzemesi" />
+    <string id="AOZbTGOS" text="Zifos" />
+    <string id="ap2yulQ2" text="Yassı Üçgen Kalkan" />
+    <string id="aPa3Cp4l" text="Deri İmparatorluk Başlığı" />
+    <string id="aq8lbNZo" text="Güney İşi Kuyruklu Miğfer" />
+    <string id="arBdK7st" text="Sade Melez Kılıç" />
+    <string id="ArPvuBYK" text="Dokunmuş Sarık" />
+    <string id="aufKSKLa" text="Güney İşi Dolgulu Kumaş" />
+    <string id="Auwoehal" text="Dağ İşi Savaş Lordu Zırhı" />
+    <string id="av4ncLDl" text="İmparatorluk Destek Zırhı" />
+    <string id="AVcbBH1J" text="Deri Üzeri Kuzey İşi Burun Korumalı Miğfer" />
+    <string id="aVGSZhCN" text="Uzun Kalkan" />
+    <string id="AwARTy44" text="İmparatorluk Atlı Botu" />
+    <string id="awQrcrt2" text="Çanak Çömlek" />
+    <string id="aYCvg89I" text="İmparatorluk Cüppesi" />
+    <string id="aYoIrpe0" text="Kayışlı Zincir Bacak Zırhı" />
+    <string id="AZg2woNV" text="Kuzey İşi Yuvarlak İdman Kalkanı" />
+    <string id="b1pqUQju" text="Dolgulu Kumaş Üzeri Parçalı Kıhıf Miğfer" />
+    <string id="b4q4ehF4" text="Zincir Üzeri Kuzey İşi Katmanlı Zırh" />
+    <string id="B5akzp6B" text="Tüylü Demir Miğfer" />
+    <string id="b6JvcSiQ" text="Kedi" />
+    <string id="B7tbURzI" text="Kurt Kafası" />
+    <string id="b8AgXwbL" text="Geniş Tek Elli Kılıç" />
+    <string id="B8eDrNXG" text="Güney İşi Atlı Zırhı" />
+    <string id="B9LjhTj6" text="Çivili İmparatorluk Derisi" />
+    <string id="baDdigZj" text="Kuzey İşi Başlık" />
+    <string id="baIE2VQW" text="Savaş Devesi" />
+    <string id="bANXyotg" text="Hafif Kabartılı Flyssa" />
+    <string id="BAsjzOiH" text="Cellat Baltası" />
+    <string id="BavVxSoC" text="Ucuz Renkli Kıyafetler" />
+    <string id="bAvyfxIy" text="Dolgulu Başlık Üzeri Siperli Muhafız Miğferi" />
+    <string id="bcjcw1o9" text="Odun Baltası" />
+    <string id="BD07fj39" text="Mücevherli İmparatorluk Miğferi" />
+    <string id="bdpjqoGe" text="Zincir Zırh Üzeri Parçalı Yuvarlak Miğfer" />
+    <string id="beMSPAOG" text="Kumaş Başlık Üzeri Deri Çivili Miğfer" />
+    <string id="beVFwINO" text="Tahta Çekiç" />
+    <string id="bevik0LU" text="Kesim Elbise" />
+    <string id="bEy8qTnn" text="Doğu İşi Hafif Gürz" />
+    <string id="bfFNYaiU" text="Bağcıklı Başlık Üzeri Yuvarlak Miğfer" />
+    <string id="bFm9jOft" text="Kayışlı Deri Bot" />
+    <string id="bGSbaT2n" text="Kuzey İşi Kaplamalı Bot" />
+    <string id="Biq7t1xv" text="Uzun Menzilli Ok" />
+    <string id="bK03bqdA" text="Turnuva Oku" />
+    <string id="Bl72Ribb" text="Dolgulu Deri Omuzluk" />
+    <string id="BmHJmxXz" text="Güçlendirilmiş Süvari Kalkanı" />
+    <string id="bNABNs8O" text="Kare Ağızlı Çift Elli Balta" />
+    <string id="bohbzGjg" text="Geniş Kabzalı Bezemeli Enli Kılıç" />
+    <string id="BqAUrOpn" text="Sivri Hafif Ok" />
+    <string id="bQXR1jzG" text="Doğu İşi Boyun Korumalı Soylu Miğferi" />
+    <string id="brLFIN46" text="Dağ İşi Savaş Lordu Kol Zırhı" />
+    <string id="brvgn9Ja" text="Doğu İşi Vendel Miğferi" />
+    <string id="bt0uFefo" text="Tahta Çift Elli Kılıç" />
+    <string id="btrf2AXp" text="Bol Pantolon" />
+    <string id="bTUGfbH5" text="Dayanıklı Gambeson" />
+    <string id="buaIafV6" text="Destekli Üçgen Kalkan" />
+    <string id="bubcrmTC" text="Dolgulu Kumaş Üzeri Burun Korumalı Miğfer" />
+    <string id="Bv068ziR" text="Kuzey İşi Bezemeli Zincir Zırh" />
+    <string id="bvgHgb6E" text="Doğu İşi Aynalı Deri Zırh" />
+    <string id="bVzkrtUc" text="Pugio" />
+    <string id="bwXACVOb" text="İyi Çelikten Dövülmüş Yaprak Mızrak" />
+    <string id="bX3P9X7I" text="Pirinç Katmanlı Omuzluk" />
+    <string id="bxa4JHlU" text="Çivili Deri Kolbent" />
+    <string id="BYPhysbH" text="Şövalyenin Yıkımı" />
+    <string id="bz5lXkHS" text="Kolsuz Dolgulu Kısa Kaban" />
+    <string id="bzrVXGAl" text="Deri Üzeri Tüylü Bronz Miğfer" />
+    <string id="C2Z43pzq" text="Ağır Kumaş Üzeri Kuzey İşi Deri" />
+    <string id="C7oo0zAY" text="Doğu İşi Bozkır Cüppesi" />
+    <string id="c7UNJSNi" text="Dokunmuş Deri Omuzluk" />
+    <string id="camFHYrN" text="Demir Plakalı Deri Zırh" />
+    <string id="CB97qhVM" text="Katır" />
+    <string id="cCaHNMwf" text="Dağ İşi Bacak Koruması" />
+    <string id="ccLDacS4" text="Safkan Batanya Atı" />
+    <string id="cDetN1Ao" text="Derme Çatma İdman Kalkanı" />
+    <string id="CEj2Rfh5" text="Batı İşi Soylu Elbisesi" />
+    <string id="CgG2aRyh" text="Yarı Pullu At Zırhı" />
+    <string id="CIT7Zuxh" text="Safkan" />
+    <string id="CLYcnUra" text="Kemerli Deri Göğüs Zırhı" />
+    <string id="cmuMaYGR" text="Uzun Talim Yayı" />
+    <string id="CPI0wkaZ" text="Ceviz Ağacından Kundaklı Yay" />
+    <string id="CQBiJLgv" text="Deve" />
+    <string id="Cr5ak47X" text="Bezemeli Geniş Kılıç" />
+    <string id="cRCkC36E" text="Kısa Kılıç" />
+    <string id="CtJPuRDa" text="Dolgulu Deri Üstlük" />
+    <string id="ctkNWKbq" text="Hafif Vlandiya Kargısı" />
+    <string id="CWI7a4z5" text="Güney İşi Küçük Balta" />
+    <string id="cXesETQJ" text="Büyük Adarga" />
+    <string id="CXnhFf1t" text="Güçlendirilmiş Deri Kolbent" />
+    <string id="D4gxNfzG" text="Güney İşi Tunik Yelek" />
+    <string id="d8DrtmwP" text="Zincir Başlık Üzeri Siperlikli Miğfer" />
+    <string id="D8xeIXcI" text="Dağ İşi Kentli Tuniği" />
+    <string id="Da1bV3ph" text="Dolgulu İmparatorluk Başlığı" />
+    <string id="dacwWKE2" text="Yıpranmış Yelken Kalkan" />
+    <string id="dbbwszHd" text="Bezemeli Yuvarlak Kalkan" />
+    <string id="DbNdyJgQ" text="Dağ İşi Pullu Koşum Takımı" />
+    <string id="DC0qJkVs" text="Kör Ok" />
+    <string id="Dc4ia4m9" text="Dolgulu Kep" />
+    <string id="dCbrowBV" text="İyi Çelikten Dövülmüş Uzun Kaskara" />
+    <string id="deA729dQ" text="Cepli Kesim Elbise" />
+    <string id="DI9P2HDG" text="İstiflenmiş Sivri Ok" />
+    <string id="dIfcfMbY" text="Çivili Deri Yelek" />
+    <string id="Dj64aJKQ" text="Keski" />
+    <string id="DJjCCQ59" text="battanian_savage_armor" />
+    <string id="dkuzrKJF" text="Kaliteli Mızrak" />
+    <string id="DlHkNiJA" text="Dağ İşi Elbise" />
+    <string id="dLLD8bVX" text="Dayanıklı Çöl Eyeri" />
+    <string id="DlPOte0H" text="Yük Devesi" />
+    <string id="DoiwC1Qa" text="Zincir Bacak Zırhı" />
+    <string id="DOYS7dmq" text="Kayışlı Deri Kol Zırhı" />
+    <string id="dPQGxmJ7" text="Güçlendirilmiş Zincir Kolçak" />
+    <string id="DQaV0i5W" text="Demir Geniş Kılıç" />
+    <string id="dqyN7Sbz" text="Hafif İmparatorluk Kargısı" />
+    <string id="dRLIr22v" text="Dikişli İmparatorluk Derisi" />
+    <string id="dRWKmbaa" text="Küçük Mahmuzlu Balta" />
+    <string id="dS4zm0UT" text="Aketon Üzeri Çivili Deri" />
+    <string id="DuLFJbXJ" text="Kemerli Doğu İşi Deri" />
+    <string id="dVekhkIU" text="Tunik Üzeri Kürk Kaban" />
+    <string id="DvGueBrU" text="Keten" />
+    <string id="dWr3nuBq" text="Güçlendirilmiş Demir Kenarlı Yelken Kalkan" />
+    <string id="DYwjfcM8" text="İmparatorluk Zinciri Üzeri Çivili Siperli Miğfer" />
+    <string id="e4lKZhgv" text="Kaba Bağcıklı Deri Kol Zırhı" />
+    <string id="e6WzpsWz" text="İmparatorluk Dolgusu Üzeri Demir Burun Korumalı Miğfer" />
+    <string id="E7miRMw1" text="Ağır Eğimli Yay" />
+    <string id="E7puv7hi" text="Güney İşi Mokasen" />
+    <string id="e8amL6a1" text="Geniş Ild" />
+    <string id="e9BpfZ9L" text="Kumaş Başlık Üzeri Yuvarlak Miğfer" />
+    <string id="eaALL6uO" text="Uzun Süvari Kılıcı" />
+    <string id="EadnjRjs" text="Uzun Savaş Kılıcı" />
+    <string id="ebHdQfbX" text="Kumaş Dolgulu Miğfer" />
+    <string id="EELLBAbX" text="Dağ İşi Pullu Zırh" />
+    <string id="EezWSI6v" text="Kuvvetlendirilmiş Paralı Asker Zırhı" />
+    <string id="EfRKaKs0" text="Bozkır İşi Kürk Koşum Takımı" />
+    <string id="efW2XbK8" text="Emir'in Miğferi" />
+    <string id="EgrNdBct" text="Çentikli Fırlatma Mızrağı" />
+    <string id="ekTny86c" text="Deri Üzeri Katmanlı İmparatorluk Zırhı" />
+    <string id="ekUvh8Em" text="İncelen Çift Elli Kılıç" />
+    <string id="ELsDFwAD" text="Şarap" />
+    <string id="elTXYb9f" text="Orak Bıçağı" />
+    <string id="eND6ECxg" text="Katafrakt Kargısı" />
+    <string id="EO7pCu1b" text="Soylu Yayı" />
+    <string id="ErOLa263" text="Meşale" />
+    <string id="ESqqwNDd" text="Güney İşi Soylu Miğferi" />
+    <string id="eTKxlDl1" text="Dağ İşi Savaş Lordu Botu" />
+    <string id="eU6YOqBC" text="Güney İşi Cüppe" />
+    <string id="eWf7bFGo" text="Kayışlı Kürk Zırh" />
+    <string id="EWR2MNeM" text="Zincirli Burun Korumalı Miğfer" />
+    <string id="ewSpZ10R" text="Kaba Dolgulu Kep" />
+    <string id="EXasg15J" text="Kuzey İşi Dolgulu Gambeson" />
+    <string id="EXLY9mEb" text="Güçlendirilmiş Büyük Yuvarlak Kalkan" />
+    <string id="f2O1XjYd" text="Köpek" />
+    <string id="F4xD8gjJ" text="Franceska" />
+    <string id="f7RmWqJ2" text="Batı İşi Baş Örtüsü" />
+    <string id="F9GB8lMZ" text="Paçavralar" />
+    <string id="F9HQABfN" text="Güçlendirilmiş Hasır Kare Kalkan" />
+    <string id="FAPHmzxQ" text="Kandura" />
+    <string id="FaWA8c50" text="Kuzey İşi Ağır Kaban" />
+    <string id="FAzGPJn6" text="Bambu Balta" />
+    <string id="Fb7PrJuc" text="At Bacak Koruması" />
+    <string id="FbG3CW5p" text="Askeri Çatal" />
+    <string id="fcgDtZy7" text="Doğu İşi Ağır Gürz" />
+    <string id="ffwgZit3" text="Kaliteli Kundaklı Yay" />
+    <string id="fHj6NbWy" text="Demir Flyssa" />
+    <string id="FhTUc64z" text="Kaz" />
+    <string id="FHu0bGub" text="Kuzey İşi Siperlikli Kep" />
+    <string id="fk42FxCE" text="Kat Kat Cüppe" />
+    <string id="FktkkUMK" text="Çelik Yuvarlak Kalkan" />
+    <string id="FlikwkEx" text="Askılı İmparatorluk Destek Zırhı" />
+    <string id="FOJHPU5N" text="Yarım Önlük" />
+    <string id="FOx5vZSJ" text="Zırhla Kaplı Kürk Başlık" />
+    <string id="fptsl0Qn" text="Kaplamalı Deri Üzeri Eteklik" />
+    <string id="fqHrMC1v" text="Batı İşi Bol Baş Örtüsü" />
+    <string id="frwBm3Oh" text="Kumaş Başlık" />
+    <string id="FSa9qv8i" text="Batı İşi Eşarp" />
+    <string id="FsDZC8Yl" text="Zincir Başlık Üzeri Tam Miğfer" />
+    <string id="FSGtJ7eX" text="İmparatorluk Derisi Üzeri Ağır Burun Korumalı Miğfer" />
+    <string id="fUmehyHq" text="Dokunmuş Deri Kol Zırhı" />
+    <string id="fUsA9TM4" text="Sade Doğu İşi Tek Ağızlı Kılıç" />
+    <string id="fuyj7s3F" text="İyi Çelikten Dövülmüş Uzun Enli Kılıç" />
+    <string id="FWFDkjBk" text="Bağcıklı Başlık Üzeri Burun Korumalı Miğfer" />
+    <string id="FxnFBhrF" text="Süvari Yelken Kalkanı" />
+    <string id="FyaygeEx" text="Topuzlu Sopa" />
+    <string id="FyXM8Iob" text="Çöl İşi Kumaş Omuzluk" />
+    <string id="FZ6VCoKI" text="empire_crown" />
+    <string id="G40DJB7q" text="Güney İşi Zincirli Miğfer" />
+    <string id="g51zVsKU" text="Zincir Zırh Kolçak" />
+    <string id="G7AEWZ6c" text="Bezemeli Oval Kalkan" />
+    <string id="g7iQsvPw" text="Çivili İmparatorluk Boyun Koruması" />
+    <string id="gadEbFyj" text="İyi Çelikten Dövülmüş Süvari Kılıcı" />
+    <string id="GazIGIJG" text="Batı İşi Kapüşon" />
+    <string id="gbRVBOLH" text="Sıradan Kıyafetler" />
+    <string id="GcFAmAaR" text="Doğu İşi Deri Kolbent" />
+    <string id="GD4aQgl7" text="Koyun" />
+    <string id="gf3tDqNk" text="Kahverengi Poşu" />
+    <string id="gfQDDkEY" text="Tahta Adarga" />
+    <string id="gFtu0j4T" text="Ok" />
+    <string id="gfvG04SP" text="Çöl İşi Deri Omuzluk" />
+    <string id="GghHAbIT" text="Nacak" />
+    <string id="gGhrQa29" text="Kadın Kapüşonu" />
+    <string id="gJPogg0J" text="Sade Baltalı Kargı" />
+    <string id="gKhpLiyg" text="Zincir ve Plaka At Zırhı" />
+    <string id="GKzw7E8a" text="Sade Mızrak" />
+    <string id="gLfxeU17" text="Korumalı İmparatorluk Lord Miğferi" />
+    <string id="GMqE9FCN" text="Güney İşi Kaliteli Elbise" />
+    <string id="GNdVXMue" text="Eşarp" />
+    <string id="gnvIGThE" text="Aseray Atı" />
+    <string id="Goloz0Vm" text="Husnphree" />
+    <string id="gqbjCBld" text="Kuzey İşi Fırlatma Baltası" />
+    <string id="GrfnpDxu" text="Dağ İşi Fırlatma Baltası" />
+    <string id="Gs2f3aeh" text="Kaplamalı Zırh Eldiveni" />
+    <string id="gSaKwztg" text="Dağ İşi Soylu Kol Zırhı" />
+    <string id="gsGjXj8J" text="Çöl İşi Uzun Kılıç" />
+    <string id="gT8WENO3" text="Kukla Yüksek Averaj" />
+    <string id="GTWUtUFj" text="Zincir At Koşum Takımı" />
+    <string id="gUTqDROO" text="Kapalı Baş Örtüsü" />
+    <string id="gXbmGrGL" text="Bezemeli İmparatorluk Botu" />
+    <string id="GXmDq2KR" text="Ayı Kafası" />
+    <string id="Gxual4pG" text="Metal Şeritli İmparatorluk Miğferi" />
+    <string id="gYpNILVC" text="Balyoz" />
+    <string id="GyYsQlVd" text="Bezemeli Kısa Spatha" />
+    <string id="h1jKICdp" text="Sade Kısa Yay" />
+    <string id="h3vqV5Qy" text="Kuzey İşi Deri Tabard" />
+    <string id="H41qKfaL" text="Dağ İşi Tüylü Soylu Miğferi" />
+    <string id="h5kfaD4v" text="Süvari Atı" />
+    <string id="h6UXvU3B" text="Bağcıklı Başlık Üzeri Burun Korumalı Yuvarlak Miğfer" />
+    <string id="h7IWO4DV" text="Çöl Atı" />
+    <string id="h7VQk4jd" text="Askılı Dağ İşi Pelerin" />
+    <string id="H9hzBJz3" text="Talim Mızrağı" />
+    <string id="ha3rVEzP" text="Kabartılı Uçlu Tek Elli Kılıç" />
+    <string id="habJjtmv" text="Kabartılı Demir Geniş Kılıç" />
+    <string id="HaK3y9yi" text="Çivili Sopa" />
+    <string id="hCBCLp0e" text="Yarı Zincir ve Plaka At Zırhı" />
+    <string id="HclLXEaT" text="Kırbaç" />
+    <string id="hE8s9bpP" text="Kavisli Yuvarlak Kalkan" />
+    <string id="hELN8VXv" text="Yırtık Cüppe" />
+    <string id="HG2emvr7" text="Güney İşi Kuşaklı Cüppe" />
+    <string id="hhprIQti" text="Güney İşi Deri Kemerli Cüppe" />
+    <string id="HiSzYWeh" text="Bira" />
+    <string id="HkiLq2ry" text="Dağ İşi Kürk Omuzluk" />
+    <string id="HKRGEXqy" text="Korucu Zincir Zırhı" />
+    <string id="Hm61IBcT" text="Güney İşi Püsküllü Cüppe" />
+    <string id="ho4bsI3Q" text="Pullu İmparatorluk Zırhı" />
+    <string id="hQrLHkaU" text="Gallogaich Baltası" />
+    <string id="hRKmfw2H" text="Ağır Yuvarlak Kalkan" />
+    <string id="hsRwbHSk" text="Memluk Kargısı" />
+    <string id="htACXBhH" text="İmparatorluk Zinciri Üzeri Demir Burun Korumalı Miğfer" />
+    <string id="hTPJXK1w" text="Ağır Cellat Baltası" />
+    <string id="hTRaPvRa" text="Dağ İşi Deri Bot" />
+    <string id="HwO0AYul" text="Geniş Kabartılı Kısa Kılıç" />
+    <string id="hXijcZyp" text="Kaba Kumaştan Yapılmış Kısa Ceket" />
+    <string id="hyNitMsQ" text="İyi Çelikten Dövülmüş Dağ İşi Kılıç" />
+    <string id="hytuHaoA" text="Çivili Yelken Kalkan" />
+    <string id="hz87PBsa" text="Geniş Yaprak Mızrak" />
+    <string id="i17zuvS4" text="Sturgiya Avcısı" />
+    <string id="i4bslk7h" text="Güney İşi Fırlatma Hançerleri" />
+    <string id="i4CfsNGd" text="Zincir İmparatorluk Yeleği" />
+    <string id="i8S2PJB4" text="Dağ İşi Eldiven" />
+    <string id="iAWzr8Q0" text="Zincir Üzeri Şeritli Deri" />
+    <string id="IbdUT6PA" text="Güney İşi Pullu Omuzluk" />
+    <string id="iCy5h0Y9" text="Zırhlı Yelek Üzeri Kuzey İşi Katmanlı Zırh" />
+    <string id="iD0ePqi7" text="İlikli Deri Kol Zırhı" />
+    <string id="iE9JNuZI" text="Yuvarlak Bozkır Kalkanı" />
+    <string id="iEbP2INp" text="Bezemeli Kaskara" />
+    <string id="iFPkhVGe" text="Küçük Yassı Üçgen Kalkan" />
+    <string id="ifzgMcrK" text="Göçebe Yayı" />
+    <string id="IK2IPJi1" text="Tuz" />
+    <string id="IL9lsYBs" text="Zırhlı Yelek Üzeri Kuzey İşi Zırh" />
+    <string id="IM2SamZ8" text="Pala" />
+    <string id="Im7wOGaC" text="Kuzey İşi Kuşaklı Tunik" />
+    <string id="inr9Mt1i" text="Kuzait Kargısı" />
+    <string id="IOt4KTHs" text="İç Kısımlarda Yetişen Binek Atı" />
+    <string id="IPyPb4Dp" text="Kuzey İşi Göz Korumalı Miğfer" />
+    <string id="Isioqvt9" text="Dağ İşi Kumaş" />
+    <string id="Ita1lG33" text="Deri Kaplamalı Yelken Kalkan" />
+    <string id="ITUNob5T" text="İmparatorluk Zinciri Üzeri Ağır Burun Korumalı Miğfer" />
+    <string id="ItUyYjdd" text="İnfaz Baltası" />
+    <string id="ITvet7CV" text="Güney İşi Miğfer" />
+    <string id="ItZt3amR" text="Zincir Üzeri Doğu İşi Pirinç Katmanlı Zırh" />
+    <string id="IuD9SaQM" text="Çuval Bezinden Elbise" />
+    <string id="iUjgXGNn" text="Batı İşi Korseli Elbise" />
+    <string id="iVataLxL" text="Dolgulu Cüppe Üzeri Deri Şeritleri" />
+    <string id="IW6uvAgP" text="Batı İşi Kısa Mızrak" />
+    <string id="IX3kafcb" text="Zincir Üzeri Demir Çivili Siperli Miğfer" />
+    <string id="J00AF9Qv" text="Dokunmuş Deri Bot" />
+    <string id="J1zcabv4" text="Doğu İşi Çivili Omuzluk" />
+    <string id="J3erdO1b" text="Şafak Sökümü" />
+    <string id="J3YHMkL3" text="Dolgulu Kolçak" />
+    <string id="J4fgemze" text="Sturgiya Kargısı" />
+    <string id="j5O8mt4I" text="Batı İşi Başlık" />
+    <string id="j7EZxCiG" text="Eski Kürk Kaban" />
+    <string id="jakLnIQv" text="Kaba Pullu Miğfer" />
+    <string id="JbTCDDb0" text="Arbalet Oku" />
+    <string id="JBVAeXx3" text="Tırmık" />
+    <string id="jbxeZs8K" text="Sıradan Tunik" />
+    <string id="JEaU5XOP" text="Kuzey İşi Açık Miğfer" />
+    <string id="jfWzICId" text="Oluklu Uzun Savaş Kılıcı" />
+    <string id="JHef9oad" text="Heybeli Katır Koşum Takımı" />
+    <string id="jhFSLdve" text="Delikli Çift Elli Balta" />
+    <string id="jhgVsWKr" text="Tyal Atı" />
+    <string id="Jhshwa48" text="Yamalı Gambeson" />
+    <string id="jIwjYOVj" text="Aşınmış Kolluk" />
+    <string id="JjLQ2VdT" text="Dolgulu Başlık Üzeri Burun Korumalı Yuvarlak Miğfer" />
+    <string id="JK7uQLqb" text="Kuzey İşi Deri Yelek" />
+    <string id="Jkd2gmyj" text="Üçgen Başlıklı Mızrak" />
+    <string id="JkLoAelJ" text="Zincir Omuzluk" />
+    <string id="JKRQ8RDA" text="Şeritli Dolgulu Kumaş" />
+    <string id="jLkVVTJh" text="Doğu İşi Kaplamalı Deri Kolbent" />
+    <string id="JLWxF0yJ" text="Güney İşi Kuşaklı Elbise" />
+    <string id="JM8Mjfa0" text="Sarmal Gürz" />
+    <string id="JPByibJQ" text="Demir Enli Kılıç" />
+    <string id="Jpt1WvTM" text="Bağcıklı Başlık Üzeri Siperli Muhafız Miğferi" />
+    <string id="jqWBGBo7" text="Güçlendirilmiş Küçük Süvari Kalkanı" />
+    <string id="jsFgjWOj" text="Zincir Zırh Üzeri Kırmızı Tabard" />
+    <string id="JslRu3rX" text="Doğu İşi Kaba Deri Zırh" />
+    <string id="JsmnUp0T" text="Kadın Elbisesi" />
+    <string id="JTrZ8ugB" text="İmparatorluk Zinciri Üzeri Yuvarlak Siperli Miğfer" />
+    <string id="JvhvtKsT" text="Zincir Üzeri Sivri Tepeli Miğfer" />
+    <string id="jw2Kb97b" text="İmparatorluk Mızrağı" />
+    <string id="JxV66l02" text="Uzun Gönderli Pala" />
+    <string id="JzZJpbTB" text="Güçlendirilmiş Küçük Kalkan" />
+    <string id="K1UFTirG" text="Hafif Kundaklı Yay" />
+    <string id="K2xGw3Oo" text="Kukla Düşük Averaj" />
+    <string id="K2Xtca1a" text="Kısa Balta" />
+    <string id="K4JtuMzP" text="Batanya Orman Pelerini" />
+    <string id="K5XLb84w" text="İmparatorluk Oku" />
+    <string id="kanUXCLc" text="Dağ İşi Köylü Tuniği" />
+    <string id="KaZY0Ixp" text="Dağ İşi Tunik" />
+    <string id="KFGfTXqE" text="Yük Beygiri" />
+    <string id="Kgnm0FkE" text="Deri Ayakkabı" />
+    <string id="KHFQdxvL" text="Kuzey İşi Ağır Tunik" />
+    <string id="KhXnRIan" text="Kadın Başlığı" />
+    <string id="kIMOcPgn" text="İmparatorluk Kumaşı Üzeri Demir Burun Korumalı Miğfer" />
+    <string id="KIxX6dH2" text="Zincir Üzeri Kaba Kürk" />
+    <string id="Kj68cfhA" text="Katmanlı İmparatorluk Omuzluğu" />
+    <string id="kJzIZMBR" text="Üçgen Fırlatma Mızrağı" />
+    <string id="KKWEkA4P" text="Kaba Kürk Başlık" />
+    <string id="kmdjRAoG" text="Bağcıklı Kumaş Başlık" />
+    <string id="KmZHXINa" text="İmparatorluk Derisi Üzeri Bronz Burun Korumalı Miğfer" />
+    <string id="kNDbSy6K" text="Güçlendirilmiş Süvari Yelken Kalkanı" />
+    <string id="Ko7tWuRb" text="Güney İşi Zincirli Cüppe" />
+    <string id="koOrDa9q" text="Dağ İşi Fırlatma Hançeri" />
+    <string id="KpyTaAwL" text="Dağ İşi Kaplamalı Soylu Miğferi" />
+    <string id="kR1blV2k" text="Çentikli Askeri Çatal" />
+    <string id="KrCGcsmJ" text="Doğu İşi Anvelop Elbise" />
+    <string id="KRhIG1cw" text="Büyük Franziska Baltası" />
+    <string id="KRuZuMFI" text="Kıyamet" />
+    <string id="kshM0xDc" text="Ezilmiş Atlı Yelken Kalkanı" />
+    <string id="ksxylfU4" text="Kabartılı Tek Elli Kılıç" />
+    <string id="KTegaNPW" text="Uzun Yay" />
+    <string id="ktJ6crBs" text="Geniş Pala" />
+    <string id="Kv4zAMIh" text="Katafrakt Gürzü" />
+    <string id="kweDHlz8" text="Batı İşi Taçlı Kaplamalı Miğfer" />
+    <string id="kxtSkGju" text="Elçi" />
+    <string id="kyPoQt0f" text="Sıradan İmparatorluk Deri Zırhı" />
+    <string id="KZmZ9HXW" text="Pullu Pirinç Omuzluk" />
+    <string id="l69aXkKH" text="Yaba" />
+    <string id="L7qYlJqn" text="Orman İşi Bot" />
+    <string id="l91l1TJo" text="Renkli Sarık" />
+    <string id="l9kAJ1Xh" text="Dağ İşi Geniş Kılıç" />
+    <string id="LaKFAU1V" text="Deri Üzeri Zincirli İmparatorluk Zırhı" />
+    <string id="Lbm7asY3" text="Uzun Üçgen Kalkan" />
+    <string id="Ldqb9oAF" text="Dağ İşi Savaş Lordu Omuz Zırhı" />
+    <string id="LgftnHPs" text="Dokunmuş Deri Yelek" />
+    <string id="lIJ1EVBh" text="Deri Eldiven" />
+    <string id="ljE4zLrf" text="Tam Zincir Zırh Üzeri Kuzey İşi Savaş Lordu Miğferi" />
+    <string id="ljOwXClb" text="Kuzey İşi Nacak" />
+    <string id="lkDQMG0y" text="Porsuk Ağacından Batı İşi Yay" />
+    <string id="ln6ZboT7" text="Kuzey İşi Kirli Deri" />
+    <string id="LOhfAMnh" text="Küçük Süvari Üçgen Kalkanı" />
+    <string id="loHYOJA9" text="Açık Zincir Başlıklı Kuzey İşi Lord Miğferi" />
+    <string id="LOPavWRp" text="Kayışlı Ayakkabı" />
+    <string id="LqA9uBH9" text="Kumaş Başlık Üzeri Sivri Kıhıf Miğferi" />
+    <string id="LSgDVSfl" text="Batı İşi Taçlı Miğfer" />
+    <string id="lspv3mUE" text="Çivili Bozkır At Zırhı" />
+    <string id="Lt8nT1hb" text="Katmanlı Omuzluk" />
+    <string id="lULBZ714" text="Yağ" />
+    <string id="lW3smDRu" text="Yelken İdman Kalkanı" />
+    <string id="LWbJKKK1" text="Kuzey İşi Soylu Koşum Takımı" />
+    <string id="lXwaLAYP" text="Tamasken Çeliğinden Dövülmüş Savaş Kılıcı" />
+    <string id="lZ93DOrn" text="Kolsuz Dolgulu Kaban" />
+    <string id="LzqugHen" text="Neşter" />
+    <string id="M00MeRJD" text="Pamuk" />
+    <string id="M2wvaObX" text="Spatha" />
+    <string id="m3Nv9rt2" text="Tüylü Göçebe Miğferi" />
+    <string id="mAEjSAlV" text="Zincir Üzeri Kuzey İşi Kapalı Miğfer" />
+    <string id="MamotK0a" text="Dolgulu Kolbent" />
+    <string id="maYSspDY" text="İmparatorluk Kumaşı Üzeri Yuvarlak Siperli Miğfer" />
+    <string id="Mb0CuONB" text="Sakallı Balta" />
+    <string id="Mb1hQRyT" text="Oval Çöl Kalkanı" />
+    <string id="Mc6IC6UM" text="Tokalı Yaban Zırhı" />
+    <string id="meC5HTQD" text="Zincir Üzeri Kuzey İşi Savaş Lordu Miğferi" />
+    <string id="MEOtMRxx" text="Ezilmiş Yelken Kalkan" />
+    <string id="mFbFEOVz" text="Kuzey İşi Kürk Kep" />
+    <string id="mfeM775z" text="Satır" />
+    <string id="mkdIMTrX" text="Geniş Oluklu Kuzey İşi Büyük Kılıç" />
+    <string id="mkoMUmLh" text="Çuval Bezinden Yelek" />
+    <string id="MKT5IzWm" text="Kalın Kollu Cüppe" />
+    <string id="MLBA8tej" text="Elbise" />
+    <string id="mlJKNbbn" text="Deri Başlık" />
+    <string id="mmc3tBVN" text="Halka Başlı Keskin Spatha Kılıcı" />
+    <string id="mMGfhc3M" text="Dağ İşi Soylu Zırhı" />
+    <string id="mMtKWolp" text="Kabartılı Büyük Süvari Kılıcı" />
+    <string id="MnmUBlbL" text="Küçük Kalkan" />
+    <string id="MQ8LCvCE" text="Bağlı Kumaş Tunik" />
+    <string id="MqBSmahz" text="Vlandiya Süvari Atı" />
+    <string id="Mr06Juj5" text="Doğu İşi Dikişli Deri Kaban" />
+    <string id="mRGIxvYh" text="Zincir Başlık Üzeri Burun Korumalı Yuvarlak Miğfer" />
+    <string id="MRIdGqhA" text="Sivri Savaş Kılıcı" />
+    <string id="MTDaLQOV" text="Uzun İmparatorluk Pelerini" />
+    <string id="mtVcMgWO" text="Zincir Zırh Üzeri Tüylü Bronz Miğfer" />
+    <string id="mTWvG1xz" text="Korucu Yayı" />
+    <string id="mVAaWp5U" text="İmparatorluk Süvari Atı" />
+    <string id="MvvlKO0U" text="Deri Üzeri Tüylü Demir Miğfer" />
+    <string id="mWxNSjSP" text="İyi Çelikten Dövülmüş İnce Kesici Mızrak" />
+    <string id="Mx1MQYHl" text="Kuzey İşi Sıradan Balta" />
+    <string id="MYA3SKhh" text="Altın Taçyaprağı İşlemeli Tek Elli Kılıç" />
+    <string id="myXODDHv" text="Hilal Balçaklı Oluklu Tek Elli Kılıç Namlusu" />
+    <string id="mzvtFPPi" text="Kemik Kıran" />
+    <string id="MZzQZcCf" text="Doğu İşi Tüylü Soylu Miğferi" />
+    <string id="n1Jb7piG" text="Güney İşi Deri Kapüşon" />
+    <string id="N28bDEhh" text="İyi Çelikten Dövülmüş Kesici Mızrak" />
+    <string id="N2S0Uj8R" text="Batı İşi Sade Mızrak" />
+    <string id="n3sz2k5j" text="Şövalye Yelken Kalkanı" />
+    <string id="nBU3EXp6" text="Dağ İşi Omuz Askısı" />
+    <string id="ndfDy5B8" text="Bağlamalı Başlık" />
+    <string id="NEupkuqV" text="Çöl Baş Örtüsü" />
+    <string id="NFvuDpwG" text="Kuvvetlendirilmiş Yelken Kalkan" />
+    <string id="NkV2c6YX" text="İstiflenmiş Bozkır Oku" />
+    <string id="NmLEZfiI" text="Doğu İşi Cirit" />
+    <string id="nNGCuIUf" text="Açık Zincir İmparatorluk Başlığı" />
+    <string id="Nqa2maO2" text="Dokunmuş Deri Kaban" />
+    <string id="NtsdmmW9" text="Hurma" />
+    <string id="nUarDXVH" text="İmparatorluk Derisi Üzeri Demir Yuvarlak Siperli Miğfer" />
+    <string id="NUHzapSv" text="Uzun Kenevir Tunik" />
+    <string id="NUmDuEqI" text="İmparatorluk Koşum Takımı" />
+    <string id="nVAhoxcH" text="Şövalye Kalkanı" />
+    <string id="NVV1j1E4" text="Batı İşi Gambeson" />
+    <string id="NZLTEI9c" text="Doğu İşi Deri Omuzluk" />
+    <string id="o0ZuY9Ux" text="Batı İşi Deri Kaban" />
+    <string id="o24Fpzvu" text="Çivili Bozkır Derisi" />
+    <string id="O37kzdXO" text="Hafif Koşum Takımı" />
+    <string id="O3TTXEFe" text="Hafif Süvari Yelken Kalkanı" />
+    <string id="o67ySkfH" text="Kaplamalı Miğfer" />
+    <string id="O8TpGSDA" text="Kadife" />
+    <string id="Oa4h7TVi" text="Göçebe Kepi" />
+    <string id="ObGN145P" text="Orman İşi Cirit" />
+    <string id="oEJnxsQ1" text="Kolluk" />
+    <string id="oEvhhNNR" text="Deri Süvari Botu" />
+    <string id="OEyuUWji" text="Doğu İşi Dolama Kol Koruması" />
+    <string id="oFEzCTpW" text="Demir Tırmık" />
+    <string id="OflbQCw6" text="Hafif Yüklü Deve Semeri" />
+    <string id="oGVGhYeP" text="Doğu İşi Bozkır Zırhı" />
+    <string id="oH8iFEv7" text="Kıvrımlı Kent Botu" />
+    <string id="OhEQUMk0" text="Geniş Üçgen Kalkan" />
+    <string id="OIcwZGmC" text="Güçlendirilmiş Hasır Kalkan" />
+    <string id="oIOYBIbv" text="Kuzey İşi Kapalı Miğfer" />
+    <string id="ojhEwC8M" text="Zincir Üzeri Kuzey İşi Pirinç Katmanlı Zırh" />
+    <string id="olamAwhb" text="Kumaş Başlık Üzeri Burun Korumalı Miğfer" />
+    <string id="OLTUHPaD" text="İyi Çelikten Dövülmüş Paramerion" />
+    <string id="OM9achAa" text="Güçlendirilmiş Meşe Kaplama Yelken Kalkan" />
+    <string id="omLMiX89" text="Zincir Üzeri Dikişli Deri" />
+    <string id="Oo0baNaq" text="Kaba Bağcıklı Bot" />
+    <string id="OpYdqPWs" text="Açık Zincir Başlık" />
+    <string id="OQg5Plsh" text="Doğu İşi Uzun Başlıklı Ensiz Mızrak" />
+    <string id="oQmUlQWp" text="Sade Süvari Kılıcı " />
+    <string id="OrEgjXZ1" text="Kaba Eğirilmiş Poşu" />
+    <string id="Orx2jbyH" text="İyi Çelikten Dövülmüş Doğu İşi Gürz" />
+    <string id="OSHSIyhN" text="Dağ İşi Yuvarlak Kalkan" />
+    <string id="OzUsuoDO" text="Kuzey İşi Miğfer" />
+    <string id="p2jR7Urm" text="Dayanıklı Eyer" />
+    <string id="P8GrNSkF" text="Zincir Başlık Üzeri Parçalı Kıhıf Miğfer" />
+    <string id="p92WdLt4" text="Kuzey İşi Tek Ağızlı Kılıç" />
+    <string id="p949oNWk" text="Zincir Zırh Üzeri Perçinli Ceket" />
+    <string id="PBLsXDgP" text="Hafif Gürz" />
+    <string id="pEaYQqG9" text="Hasır Kare Kalkan" />
+    <string id="PhodGU5y" text="Kadın Eşarbı" />
+    <string id="pjvwuVuc" text="Tek Elli Sakallı Balta" />
+    <string id="PL3Ut0vL" text="Güney İşi Köylü Cüppesi" />
+    <string id="PL5SG9hI" text="Deri Pullu Zırh" />
+    <string id="PLtQdf23" text="Güçlendirilmiş Dolgulu Kolçak" />
+    <string id="pmabPgC0" text="Kabile Bozkır Kalkanı" />
+    <string id="PoY2Vh7K" text="Bozkır Yayı" />
+    <string id="pP0GacSW" text="İyi Çelikten Dövülmüş Yuvarlak Ağızlı Nacak" />
+    <string id="PP5SzUx0" text="Bağcıklı Elbise" />
+    <string id="ppiy9Cwl" text="Geniş Bıçaklı Cirit" />
+    <string id="przGGaVm" text="Güçlendirilmiş Dağ İşi Bronz Büyük Kalkan" />
+    <string id="PTKyNh2O" text="Zincirli Lejyoner Zırhı" />
+    <string id="Pv3YQMk1" text="Dağ İşi Kumaş Başlık" />
+    <string id="PVgSGCYK" text="Zincir Başlık Üzeri Burun Korumalı Miğfer" />
+    <string id="pzfbPbWW" text="Kaya" />
+    <string id="PZPphq6H" text="Bozkır Savaş Atı" />
+    <string id="q1z4FQub" text="Deve Semeri" />
+    <string id="q3ePGPbF" text="İmparatorluk Süvari Zırhı" />
+    <string id="Q4sO8AZd" text="Nahasawi" />
+    <string id="QA5zGCKf" text="Bezemeli Oluklu Kılıç" />
+    <string id="QaKohN0V" text="Soyulmuş Deri Üzeri Zincir İmparatorluk Zırhı" />
+    <string id="qaraQjXa" text="İmparatorluk Dolgusu Üzeri Yuvarlak Siperli Miğfer" />
+    <string id="QaysED62" text="Kıvrık Kumaşlı Tunik" />
+    <string id="Qazvdg1P" text="Kumaş İmparatorluk Başlığı" />
+    <string id="qc0P0b2r" text="Zincir Üzeri Göz Korumalı Miğfer" />
+    <string id="QcKpipVr" text="Adarga" />
+    <string id="qDlabQvR" text="Güney İşi Geniş Çift Elli Balta" />
+    <string id="qFL0VxZX" text="Bağcıklı Başlık" />
+    <string id="QGaIYQpg" text="Balık" />
+    <string id="qGzZ78bM" text="Cıvatalı Deri Şeritleri" />
+    <string id="qhbOjHRI" text="Yırtık Dolgulu Giysiler" />
+    <string id="qILO0HdK" text="Sarılı Kolsuz Dolgulu Giysiler" />
+    <string id="QjdyYS0m" text="Demir Süvari Kılıcı" />
+    <string id="QLcP8bIs" text="Orak" />
+    <string id="QMAGJdyN" text="Dağ İşi Köylü Elbisesi" />
+    <string id="QN1Zg2eV" text="Güney İşi Milis Gürzü" />
+    <string id="qo8hwDNU" text="Kaba Kürk Zırh" />
+    <string id="QodawBSN" text="Demir Yuvarlak Kalkan" />
+    <string id="qOfuxNxR" text="Güney İşi Çivili Deri Kaban" />
+    <string id="qoT97j7u" text="Bronz Yuvarlak Siperli Miğfer" />
+    <string id="Qpl5aCb0" text="Eski Asker Baltası" />
+    <string id="qSn0JTfa" text="Güney İşi Dolama Eşarp" />
+    <string id="qsVRoGUv" text="Açık Baş Örtüsü" />
+    <string id="qT6jIu3v" text="Tunikli Kürk Etek" />
+    <string id="QuaE76ua" text="Alim Cüppesi" />
+    <string id="qVj5NqrL" text="Dolgulu Kep Üzeri Tam Miğfer" />
+    <string id="qw2oyv1j" text="Orman İşi Zincir Zırh" />
+    <string id="QwiI8Uho" text="Sturgiya Koşu Atı" />
+    <string id="QWqvGa1P" text="İnek" />
+    <string id="QX2pp6jX" text="Etekli İmparatorluk Gambesonu" />
+    <string id="qXb7YoGc" text="Asaligat" />
+    <string id="QxzcuhmA" text="Leopar Postu" />
+    <string id="qZOpdQVx" text="Yıldız Pala" />
+    <string id="r07M9xbT" text="Ağır Kundaklı Yay" />
+    <string id="r0Ln9bAp" text="Deri Önlük" />
+    <string id="R4RT36MH" text="Doğu İşi Miğfer" />
+    <string id="r8b5miDE" text="Zincir Başlık Üzeri Siperli Muhafız Miğferi" />
+    <string id="RaTK0SBu" text="Batı İşi Binici Yelken Kalkanı" />
+    <string id="Rcc0JW6H" text="Tamasken Çeliğinden Dövülmüş Spatha" />
+    <string id="RcCtV0aS" text="Porsuk Ağacından Orman İşi Yay" />
+    <string id="rdKSIamN" text="Delici Ok" />
+    <string id="REYaHXQb" text="Sturgiya Süvari Zırhı" />
+    <string id="rF7Xm7C0" text="Ağır Üçgen Kalkan" />
+    <string id="Rhfp7ath" text="Bağcıklı Başlık Üzeri Sivri Tepeli Miğfer" />
+    <string id="rifv0h0H" text="Kuzey İşi Süvari Yelken Kalkanı" />
+    <string id="Rmpm1E71" text="Doğu İşi Düz Süvari Kılıcı" />
+    <string id="rnzpyc0N" text="Pernach" />
+    <string id="rO0oKtAo" text="Küçük Sefer Sancağı" />
+    <string id="rOpxDHXL" text="Doğu İşi Deri Katmanlı Zırh" />
+    <string id="rtRGq1uU" text="Geniş Çift Elli Kılıç" />
+    <string id="rTuNnhWI" text="Güney İşi Şal" />
+    <string id="RU2EppgI" text="Kadın Ayakkabısı" />
+    <string id="RWKafLdU" text="Doğu İşi Kıvrık Bot" />
+    <string id="RwpJFXxc" text="Tamasken Mızrak" />
+    <string id="rXO7ajRX" text="İmparatorluk Zinciri Üzeri Bronz Yuvarlak Siperli Miğfer" />
+    <string id="S0IkfoDo" text="Doğu İşi Kaplamalı Deri" />
+    <string id="S6BFpEg3" text="Geniş Ağızlı İmparatorluk Fırlatma Bıçakları" />
+    <string id="s7jkSgba" text="Kancalı Ok" />
+    <string id="s7WRzaf2" text="Ayı Postu" />
+    <string id="S9htzkbe" text="Tüccar Şapkası" />
+    <string id="SbARa2gU" text="Sivri Ok" />
+    <string id="Se3La8Aq" text="Güney İşi Ağır Gürz" />
+    <string id="sfPB9ro3" text="Bezemeli Kuzey İşi Zırhlı Yelek" />
+    <string id="SGdY9jmK" text="Oluklu Ensiz Savaş Kılıcı" />
+    <string id="sgfKrAaZ" text="Batanya Midillisi" />
+    <string id="SHZ0P7Iu" text="Dolgulu Deri Pelerin" />
+    <string id="siuuhU6b" text="İmparatorluk Zinciri Üzeri Bronz Burun Korumalı Miğfer" />
+    <string id="sJ1R62Tn" text="Tüylü Miğfer" />
+    <string id="smHA8Apa" text="Bezemeli Göçebe Kepi" />
+    <string id="smKogclC" text="Çuval Bezinden Tunik" />
+    <string id="Sn2O0Ogx" text="İmparatorluk Derisi Üzeri Bronz Yuvarlak Siperli Miğfer" />
+    <string id="sQAXkEQ7" text="Güney İşi Zincir Başlık" />
+    <string id="SRWJ8waf" text="Güney İşi Yuvarlak İdman Kalkanı" />
+    <string id="SUSbUAEl" text="Talim Yayı" />
+    <string id="SV1pTR2P" text="Dolgulu Başlık" />
+    <string id="SW3lkPHe" text="Renkli Mişlah" />
+    <string id="SXCa9d1n" text="İmparatorluk Başlığı Üzeri Demir Burun Korumalı Miğfer" />
+    <string id="SY2LOqnB" text="Kuzey İşi Kısa Sade Mızrak" />
+    <string id="syb2EPBa" text="Kuzey İşi Sade Savaş Baltası" />
+    <string id="SYvBTD0p" text="Kumaş Başlık Üzeri Tam Miğfer" />
+    <string id="SZrd85Uh" text="Destrier" />
+    <string id="Szuxa9Bs" text="Aşınmış Bot" />
+    <string id="t01v8qW7" text="Dolgulu Lord Kolçağı" />
+    <string id="t28VYqjP" text="İyi Çelikten Dövülmüş Uzun Mızrak" />
+    <string id="T49rswmY" text="Güney İşi Açık Miğfer" />
+    <string id="t695AnJU" text="Sade Elbise" />
+    <string id="t7IgyUea" text="Doğu İşi Soylu Kargısı" />
+    <string id="TbFLTHHm" text="Tyrhung" />
+    <string id="TBW9E2ao" text="Kaplamalı Kundaklı Yay" />
+    <string id="TDCn5dar" text="Dolgulu İmparatorluk Omuzluğu" />
+    <string id="te48yHa8" text="Yaprak Ağızlı Fırlatma Bıçağı" />
+    <string id="tEimkEsU" text="Kuzey İşi Kısa Yay" />
+    <string id="TFT2Xapz" text="Dolgulu Kumaş Üzeri Sivri Tepeli Miğfer" />
+    <string id="TgZIAdRk" text="Güney İşi Güçlü Uzun Yay" />
+    <string id="tiTTWhpW" text="Dolgulu Deri Gömlek" />
+    <string id="tKODIU0F" text="Deri Katmanlı Omuzluk" />
+    <string id="tMLH04n4" text="Zincir Başlık Üzeri Siperli Şapka" />
+    <string id="tMwsE9IR" text="Kayışlı Deri Bot" />
+    <string id="Tp7zXWGa" text="Dolgulu Başlık Üzeri Burun Korumalı Miğfer" />
+    <string id="TpjbgasA" text="Kuzey İşi Savaş Lordu Miğferi" />
+    <string id="tpQLvMSM" text="Zincir Üzeri Burun Korumalı Miğfer" />
+    <string id="tpUzcdY6" text="Uzun Kabzalı Ild Kılıcı" />
+    <string id="tQw4Zfwu" text="Sivri Uçlu Pala" />
+    <string id="Tr3x7ynD" text="Dağ İşi Ekose Elbise" />
+    <string id="TsGFHbqp" text="Güney İşi Pullu Zırh" />
+    <string id="TTWL7RLe" text="Kundaklı Yay" />
+    <string id="tVyuxl8e" text="Aşınmış Cüppe" />
+    <string id="tWfAPrPa" text="Zincir Süvari Botu" />
+    <string id="TxAYmCjr" text="Derili Burun Korumalı Miğfer" />
+    <string id="tXbRb3QO" text="Çivili Kürk Zırh" />
+    <string id="txgUxMYw" text="Kesikli Üçgen Kalkan" />
+    <string id="tYVrECy7" text="Derme Çatma Atlı Yelken Kalkanı" />
+    <string id="tZN9H492" text="Batanya Savaş Bineği" />
+    <string id="U4n0uSlg" text="Sıkı Baş Örtüsü" />
+    <string id="u6c9yIXF" text="Güney İşi Kısa Dolgulu Cüppe" />
+    <string id="U8QfF3Gw" text="Uzun Yün Tunik" />
+    <string id="ubplQTXa" text="Güney İşi Demir Zincir Omuzluk" />
+    <string id="uDrT6v7a" text="Batı İşi Kumaş Tunik" />
+    <string id="UEestBsE" text="Kuzey İşi Bronz Pullu Yelek" />
+    <string id="uEPRE33m" text="Kaba Bağcıklı Kol Zırhı" />
+    <string id="ueSnrLRy" text="Cossian" />
+    <string id="ufnnUxKb" text="Deri" />
+    <string id="UGhKalqb" text="Batı İşi Kancalı Balta" />
+    <string id="uHIVkxVt" text="Gambeson Üzeri Kuzey İşi Bronz Pullu Yelek" />
+    <string id="ukQCN90m" text="Doğu İşi Deri Bot" />
+    <string id="uLpnmNkZ" text="Deri Kep" />
+    <string id="UMX05EQF" text="Hafif Kraliyet Gürzü" />
+    <string id="UoHZGyZa" text="Yüz Korumalı Miğfer" />
+    <string id="UqdZmdcf" text="Savaş Atı" />
+    <string id="uqO6e6vN" text="Yelken Kalkan" />
+    <string id="UsOgGylA" text="Zincirli Siperli Miğfer" />
+    <string id="uUGAMReu" text="Kaliteli Kent Botu" />
+    <string id="UunjXpgb" text="İyi Çelikten Dövülmüş Menavlion" />
+    <string id="UvJDlhMq" text="Doğu İşi Kep" />
+    <string id="UvOa4elc" text="Yeşil Kapüşon" />
+    <string id="UWPEu577" text="Kuzey İşi Pirinç Kol Zırhı" />
+    <string id="UWvOndG0" text="Hafif Kuzait Kargısı" />
+    <string id="uZ1sIlSQ" text="Doğu İşi Kaplamalı Deri Yelek" />
+    <string id="v1I2K4ab" text="Kuzey İşi Geniş Balta" />
+    <string id="v3lIxLvX" text="Pila" />
+    <string id="V4b2ZRTH" text="Rhomphalia" />
+    <string id="v6W9XaDI" text="Eski Kürk Zırh" />
+    <string id="V7U0fFU9" text="Dağ İşi Pullu Zincir Zırh" />
+    <string id="v7WQhge3" text="Bezemeli Süvari Kılıcı" />
+    <string id="VAcSEseI" text="Geniş Oluklu Tek Elli Kılıç" />
+    <string id="VAO11FSu" text="Tamasken Çeliğinden Dövülmüş Çift Elli Kılıç" />
+    <string id="VbAHQ1BS" text="Uzun Kürk Kaban" />
+    <string id="VbL6GFmy" text="Tereyağı" />
+    <string id="vbOjUu9M" text="İmparatorluk Dolgusu Üzeri Çivili Siperli Miğfer" />
+    <string id="vbPBXiPC" text="Gösterişli Tunik" />
+    <string id="VcbEaV7T" text="Dolgulu Kumaş Üzeri Siperli Miğfer" />
+    <string id="Vdi0vZV7" text="Dağ İşi Pelerin" />
+    <string id="VDMkVMxt" text="Ağır Zincir Kolçak" />
+    <string id="vDvj5zkG" text="Rüzgarın Gazabı" />
+    <string id="veI9RcR3" text="Güçlendirilmiş Yelken Kalkan" />
+    <string id="vfBg561n" text="Kuzey İşi Çivili Savaş Baltası" />
+    <string id="VHPPqw9J" text="Batı İşi Başlık" />
+    <string id="VluRLqn8" text="Batı İşi Binici İdman Kalkanı" />
+    <string id="VMqzvfDO" text="Doğu İşi Kayışlı Katmanlı Zırh" />
+    <string id="vmz4vfu5" text="Kancalı Cirit" />
+    <string id="vNNMGllv" text="Kuzey İşi Kaplamalı Eldiven" />
+    <string id="vPAHwC3X" text="Çalıntı Mallar" />
+    <string id="VpxmlDyY" text="Kıvırmalı Deri Bot" />
+    <string id="vPXWpJTP" text="Dağ İşi Hançer" />
+    <string id="VqFV9LS4" text="Kırmızı Elbise" />
+    <string id="VRP5Q4mU" text="Güney İşi Demir Zincirli Zırh" />
+    <string id="vsavMoLZ" text="Dolgulu Kumaş Üzeri Parçalı Yuvarlak Miğfer" />
+    <string id="vsI4M5oq" text="Demirle Güçlendirilmiş Dağ İşi Büyük Kalkan" />
+    <string id="VSMpadvq" text="Kürk Zırh" />
+    <string id="vSu1fLNl" text="Dağ İşi Kürklü Pelerin" />
+    <string id="vtoxbHmB" text="Dağ İşi Kabartılı Miğfer" />
+    <string id="vU1ibFrY" text="Doğu İşi Güçlendirilmiş Zırh" />
+    <string id="VucrovFw" text="İşlemeli Tek Ağızlı Kılıç" />
+    <string id="vw9qbiER" text="Bozkır Koşum Takımı" />
+    <string id="vwAaIwnD" text="Güney İşi Kapalı Zincirli Miğfer" />
+    <string id="vwVFF1XJ" text="Dağ İşi Kürk Bot" />
+    <string id="VXER7AbJ" text="İmparatorluk Lord Miğferi" />
+    <string id="VXFwEF3M" text="Seyyah Kapüşonu" />
+    <string id="vXvuViMT" text="Derme Çatma Yelken Kalkan" />
+    <string id="VylHwqVq" text="Bağcıklı Başlık Üzeri Parçalı Kıhıf Miğfer" />
+    <string id="VyOsYv8J" text="Güney İşi Uzun Cüppe" />
+    <string id="w6EU77OH" text="Eğimli Bozkır Yayı" />
+    <string id="w6j8Oaai" text="Zırhlı Bol Pantolon" />
+    <string id="w6sFabVp" text="Güney İşi Kabile Yayı" />
+    <string id="W8OGOfyt" text="Kahverengi Şeritli Poşu" />
+    <string id="w9RLq82l" text="Demir Tek Elli Kılıç" />
+    <string id="wAcc9SX4" text="Dağ İşi Büyük Kalkan" />
+    <string id="WahziEXA" text="Dolama Deri Bot" />
+    <string id="WaQOFmas" text="İmparatorluk Baltası" />
+    <string id="wBfGpcCO" text="Dolgulu Kumaş Üzeri Siperli Şapka" />
+    <string id="WCbpw1wM" text="İmparatorluk Dolgusu Üzeri Ağır Burun Korumalı Miğfer" />
+    <string id="wEfZyccm" text="Bağcıklı Başlık Üzeri Tam Miğfer" />
+    <string id="wEJAab0A" text="Kuzey İşi Kep" />
+    <string id="WePcpx0u" text="Büyük Sancak" />
+    <string id="wEs2uEmb" text="Doğu İşi Gösterişli Kaban" />
+    <string id="wfhHGTbl" text="Bozkır İşi Savaş Yayı" />
+    <string id="wG582fzT" text="Dolgulu Kep Üzeri Yuvarlak Miğfer" />
+    <string id="Wh48Wl0C" text="Ağır Vlandiya Kargısı" />
+    <string id="WH7bbK6G" text="Batı İşi Dolgulu Kaban" />
+    <string id="whvMZZba" text="Korumalı Dolgulu Kolbent" />
+    <string id="wiyLpYfw" text="Batı İşi Ok" />
+    <string id="wKucIANJ" text="Kumaş Üzeri Deri Kaban" />
+    <string id="wltdyF2j" text="Avcı Yayı" />
+    <string id="wMO0hoqC" text="Batı İşi Sıradan Elbise" />
+    <string id="WMqHlEvb" text="Zincir Başlık Üzeri Parçalı Yuvarlak Miğfer" />
+    <string id="wpaVnRZG" text="Üçgen Sancak" />
+    <string id="WpdmIlU5" text="Demir Kenarlı Yelken Kalkan" />
+    <string id="WrlIl4nW" text="Batı İşi Mızrak" />
+    <string id="WRqYWspc" text="Uzun Soylu Yayı" />
+    <string id="WrwO8xsN" text="Dikişli Deri Omuzluk" />
+    <string id="wSaoZOr2" text="Kuzey İşi Tüylü Lord Miğferi" />
+    <string id="WSk5Sibs" text="Peynir" />
+    <string id="WST7ftTa" text="Kuzey İşi Perçinli Ceket" />
+    <string id="wSUN0Dmo" text="Kukla Maksimum Zırh" />
+    <string id="WUArer5A" text="Açık Dolgulu Başlık" />
+    <string id="WUasz2kP" text="Dağ İşi Kaliteli Çift Elli Kılıç" />
+    <string id="WvDZMmaj" text="Göçebe Miğferi" />
+    <string id="WVqaRKUm" text="Yün" />
+    <string id="wW3iouiU" text="Başörtüsü" />
+    <string id="WYFDXE82" text="Büyük Yuvarlak Kalkan" />
+    <string id="WYytQbvS" text="Korumalı Başlık Üzeri Tam Miğfer" />
+    <string id="wZ3nKO6j" text="Doğu İşi Deri Omuz Zırhı" />
+    <string id="x0x1gIbT" text="Erken Emeklilik" />
+    <string id="X1Wn0sBa" text="Kaba Pullu Deri Çivili Miğfer" />
+    <string id="X3FAb6Wm" text="Kuzey İşi Bezemeli Siperlikli Miğfer" />
+    <string id="x8gjWt79" text="Tzkurion Baltası" />
+    <string id="xa7KRSCy" text="Dikişli Deri Yelek" />
+    <string id="XazcYatD" text="Burun Korumalı İmparatorluk Miğferi" />
+    <string id="xbB9Ga5X" text="Kuzey İşi İncelen Kılıç" />
+    <string id="XbwDj80t" text="Bozkır Oku" />
+    <string id="XDsFl200" text="İmparatorluk Kargısı" />
+    <string id="XGX6DbFL" text="Katmanlı Zırh Eldiveni" />
+    <string id="XH9f3yOX" text="Tunik Üzeri Kürk Yelek" />
+    <string id="xkX9T0yT" text="Güney İşi Dolama Miğfer" />
+    <string id="xl5MgK49" text="Sturgiya Ağır Süvari Miğferi" />
+    <string id="xnDWqYKW" text="Avcı" />
+    <string id="xnoAJwoy" text="Dolgulu Kumaş Üzeri Tam Miğfer" />
+    <string id="XoISdMVx" text="Doğu İşi Kürklü Soylu Miğferi" />
+    <string id="XOvg9rbg" text="Güney İşi Okçu Zırhı" />
+    <string id="XRaPBg6d" text="Küçük Ağızlı Balta" />
+    <string id="xS7m37o7" text="Zincir Üzeri Sivri Kıhıf Miğfer" />
+    <string id="Xs8a5YxN" text="Güney İşi Lord Miğferi" />
+    <string id="xsO9LNmO" text="Zincir İmparatorluk Başlığı" />
+    <string id="xsu6bPTv" text="Keten" />
+    <string id="XTGdfqVV" text="Çift Elli Satır " />
+    <string id="XTqplCsv" text="Kuzey İşi Zırhlı Yelek" />
+    <string id="xTyib5ms" text="Yaprak Biçimli Geniş Mızrak" />
+    <string id="XU9WgcIO" text="Güçlendirilmiş Süet Zırh" />
+    <string id="xWFW8jXw" text="Savaş Baltası" />
+    <string id="xYUHruEl" text="Dağ İşi Kapüşon" />
+    <string id="XyXSx0R8" text="Doğu İşi Sıradan Elbise" />
+    <string id="XZAAz7NX" text="Kısa İmparatorluk Tuniği" />
+    <string id="y3oIzUEp" text="Omuz Korumalı Tunik" />
+    <string id="y9uMjAKT" text="Güçlendirilmiş Süet Omuzluk" />
+    <string id="YAOfXanz" text="Kuzey İşi Lord Miğferi" />
+    <string id="YAYhozbN" text="Bozkır Atı" />
+    <string id="ybpZdt9S" text="Kuzey İşi Kat Kat Kumaş" />
+    <string id="Ybq7jZDj" text="Dağ İşi İnce Deri Başlık" />
+    <string id="yCvBx27Z" text="Çentikli Mızrak" />
+    <string id="Yd4lmlQp" text="İyi Çelikten Dövülmüş Ensiz Kaskara" />
+    <string id="YDibTDob" text="Dağ İşi Taçlı Miğfer" />
+    <string id="ydxXW0ZW" text="Kuzey İşi Deri Üzeri Miğfer" />
+    <string id="YEUFtX4G" text="Kurt Omuzluğu" />
+    <string id="YfB0SJqY" text="Zincir Zırh Üzeri Beyaz Tabard" />
+    <string id="yFjmkALW" text="Zincir Zırh Üzeri Kuzey İşi Deri Tabard" />
+    <string id="ygfhbfr0" text="Çivili Miğfer" />
+    <string id="YGQ6UXCo" text="Dağ İşi Avcı Yayı" />
+    <string id="yGwxXsIL" text="Bozkır Savaş Atı" />
+    <string id="Yh7Dorsr" text="Şeritli Deri Koşum Takımı" />
+    <string id="yHGfsYzg" text="Doğu İşi Ağırlıklı Mızrak" />
+    <string id="YLplNGxb" text="Kalradya Gürzü" />
+    <string id="yMi4ijgI" text="Dolgulu Göçebe Kapüşonu" />
+    <string id="Yms2FQ7g" text="Yarı Zincir At Zırhı" />
+    <string id="YMtHkAUj" text="Doğu İşi Kalın Kaban" />
+    <string id="Yo56PtJZ" text="İmparatorluk Gambesonu" />
+    <string id="YPUDAJDH" text="Zıpkın" />
+    <string id="YqhOxb1Z" text="Tüylü Katmanlı Miğfer" />
+    <string id="yQTBY9ie" text="Mücevher" />
+    <string id="YrAVxmFn" text="Dağ İşi Geniş Kılıç" />
+    <string id="YRYJGzxw" text="Süslü Adarga" />
+    <string id="YteV789y" text="Dağ İşi Kürk Miğfer" />
+    <string id="yTWOMSmv" text="Kenevir Tunik" />
+    <string id="yy7RvQKN" text="Bo Sopası" />
+    <string id="z62uDlbh" text="Kuzey İşi Yuvarlak Kalkan" />
+    <string id="Z6Ak3H6G" text="Cirit" />
+    <string id="z6eTba5h" text="Bağcıklı Kumaş Üzeri Burun Korumalı Ağır Miğfer" />
+    <string id="z8d2uyY1" text="Bağcıklı Başlık Üzeri Parçalı Yuvarlak Miğfer" />
+    <string id="Z8Kc6XlP" text="Batı İşi Cirit" />
+    <string id="Z9RlnXrD" text="Kürk Etek" />
+    <string id="zaajJhvz" text="Altın İşlemeli Tek Elli Kılıç" />
+    <string id="zAvb7WKe" text="Dolgulu Başlık Üzeri Parçalı Kıhıf Miğfer" />
+    <string id="ZbmlNZpU" text="Doğu İşi Kürk Şapka" />
+    <string id="zbsajPMp" text="Baltalı Kargı" />
+    <string id="ZbsGBv10" text="Domuz" />
+    <string id="zBUT90xQ" text="Tamasken Çeliğinden Dövülmüş Kaskara" />
+    <string id="Ze9u7Saj" text="Zincir Zırh Üzeri Tüylü Demir Miğfer" />
+    <string id="ZEybMjoq" text="Kuzey İşi Kaba Deri Kep" />
+    <string id="ZFde57gC" text="Dayanıklı Dağ İşi Eyer" />
+    <string id="ZFETxZKP" text="İpek Şeritli Poşu" />
+    <string id="ZFwKlHIJ" text="Orman İşi Uzun Yay" />
+    <string id="ZgVVPGTb" text="Üzüm" />
+    <string id="zGXZJFOb" text="Pullu Etekli Katmanlı Zırh" />
+    <string id="ZjAZNjvu" text="Kuzey İşi At Zırhı" />
+    <string id="ZJYVpjuR" text="Ağır Yüklü Deve Semeri" />
+    <string id="ZLpYFYXo" text="İyi Çelikten Dövülmüş Çentikli Mızrak" />
+    <string id="zmEnxUpL" text="Pullu İmparatorluk At Zırhı" />
+    <string id="ZOoxd36t" text="Dağ İşi Paralı Asker Zırhı" />
+    <string id="ZOWdFaUi" text="Zincir Başlık Üzeri Sivri Kıhıf Miğfer" />
+    <string id="ZqbyJ5Pl" text="İmparatorluk Zinciri Üzeri Demir Yuvarlak Siperli Miğfer" />
+    <string id="ZqTFQeai" text="Deri Tunik" />
+    <string id="zQv3w264" text="Dolgulu Yarım Başlık" />
+    <string id="ZRDoABz9" text="Tüylü Kürk Astarlı Miğfer" />
+    <string id="zUFRE9y4" text="Kazma" />
+    <string id="ZuOWvXMB" text="Dağ İşi Deri Çivili Miğfer" />
+    <string id="ZV1bKLUn" text="Derili Siperli Miğfer" />
+    <string id="zvrxBeqB" text="Kuzey İşi Bezemeli Zırhlı Yelek" />
+    <string id="Zvxydvao" text="Gösterişli İmparatorluk Elbisesi" />
+    <string id="Zwb65ufG" text="Kil" />
+    <string id="Zx4h7jDy" text="Kukla Minimum Zırh" />
+    <string id="zZ2G7uIO" text="Zincir Üzeri Siperli Miğfer" />
+  </strings>
+</base>

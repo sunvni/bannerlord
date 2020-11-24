@@ -1,0 +1,111 @@
+<Prefab>
+  <Constants>
+    <Constant Name="Refinement.Tuple.Width" BrushLayer="Default" BrushName="Refinement.Tuple" BrushValueType="Width" />
+    <Constant Name="Refinement.Tuple.Height" BrushLayer="Default" BrushName="Refinement.Tuple" BrushValueType="Height"/>
+
+    <Constant Name="Smelting.Sort.Type.Button.Width" BrushLayer="Default" BrushName="Smelting.Sort.Type.Button" BrushValueType="Width" />
+    <Constant Name="Smelting.Sort.Type.Button.Height" BrushLayer="Default" BrushName="Smelting.Sort.Type.Button" BrushValueType="Height" />
+
+    <Constant Name="Smelting.Sort.Name.Button.Width" BrushLayer="Default" BrushName="Smelting.Sort.Name.Button" BrushValueType="Width" />
+    <Constant Name="Smelting.Sort.Name.Button.Height" BrushLayer="Default" BrushName="Smelting.Sort.Name.Button" BrushValueType="Height" />
+
+    <Constant Name="Smelting.Sort.Cost.Button.Width" BrushLayer="Default" BrushName="Smelting.Sort.Cost.Button" BrushValueType="Width" />
+    <Constant Name="Smelting.Sort.Cost.Button.Height" BrushLayer="Default" BrushName="Smelting.Sort.Cost.Button" BrushValueType="Height" />
+
+    <Constant Name="SelectAllButton.Width" BrushLayer="Default" BrushName="ButtonRightDoubleArrowBrush1" BrushValueType="Width" />
+    <Constant Name="SelectAllButton.Height" BrushLayer="Default" BrushName="ButtonRightDoubleArrowBrush1" BrushValueType="Height" />
+  </Constants>
+  <Variables>
+  </Variables>
+  <VisualDefinitions>
+  </VisualDefinitions>
+  <Window>
+    <Widget Id="RefinementCategoryParent" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+      <Children>
+
+        <Widget Id="InnerPanel" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="573" SuggestedHeight="820" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="10" PositionXOffset="23" PositionYOffset="0">
+          <Children>
+
+            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="585" SuggestedHeight="51" PositionYOffset="-12" PositionXOffset="-5" Sprite="Crafting\refine_panel_header" >
+              <Children>
+                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Refinement.Tuple.Text" Text="@RefinementText" />
+              </Children>
+            </Widget>
+
+            <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" LayoutImp.LayoutMethod="HorizontalLeftToRight">
+              <Children>
+
+                <ScrollablePanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Left" VerticalAlignment="Top" MarginTop="35" AutoHideScrollBars="false" ClipRect="ClipRect" InnerPanel="ClipRect\RefinementActionsList" VerticalScrollbar="..\VerticalScrollbar">
+                  <Children>
+
+                    <Widget Id="ClipRect" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ClipContents="true">
+                      <Children>
+
+                        <ListPanel Id="RefinementActionsList" DataSource="{AvailableRefinementActions}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" LayoutImp.LayoutMethod="VerticalBottomToTop" MarginBottom="40">
+                          <ItemTemplate>
+
+                            <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Refinement.Tuple.Width" SuggestedHeight="!Refinement.Tuple.Height" Brush="Refinement.Tuple" Command.Click="ExecuteSelectAction" IsSelected="@IsSelected" IsEnabled="@IsEnabled" UpdateChildrenStates="true" MarginBottom="0">
+                              <Children>
+
+                                <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" MarginLeft="15" MarginRight="15">
+                                  <Children>
+
+                                    <ListPanel DataSource="{InputMaterials}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" LayoutImp.LayoutMethod="HorizontalRightToLeft" VerticalAlignment="Center">
+                                      <ItemTemplate>
+                                        <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" LayoutImp.LayoutMethod="VerticalBottomToTop">
+                                          <Children>
+                                            <CraftingMaterialVisualWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="75" SuggestedHeight="55" HorizontalAlignment="Center" Brush="Crafting.Material.Brush" MaterialType="@ResourceMaterialTypeAsStr" />
+                                            <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Brush="Refinement.Amount.Text" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="5" IntText="@ResourceAmount" />
+                                            <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="100" HorizontalAlignment="Center" VerticalAlignment="Bottom" Brush="Refinement.Tuple.Text" Text="@ResourceName"/>
+                                          </Children>
+                                        </ListPanel>
+                                      </ItemTemplate>
+                                    </ListPanel>
+
+                                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="57" SuggestedHeight="17" VerticalAlignment="Center" MarginLeft="15" MarginRight="15" Sprite="Crafting\arrow" />
+
+                                    <ListPanel DataSource="{OutputMaterials}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" VerticalAlignment="Center">
+                                      <ItemTemplate>
+                                        <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" LayoutImp.LayoutMethod="VerticalBottomToTop">
+                                          <Children>
+                                            <CraftingMaterialVisualWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="75" SuggestedHeight="55" HorizontalAlignment="Center" Brush="Crafting.Material.Brush" MaterialType="@ResourceMaterialTypeAsStr" />
+                                            <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Brush="Refinement.Amount.Text" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="5" IntText="@ResourceAmount" />
+                                            <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="100" HorizontalAlignment="Center" VerticalAlignment="Bottom" Brush="Refinement.Tuple.Text" Text="@ResourceName"/>
+                                          </Children>
+                                        </ListPanel>
+                                      </ItemTemplate>
+                                    </ListPanel>
+
+                                  </Children>
+                                </ListPanel>
+
+                              </Children>
+                            </ButtonWidget>
+
+                          </ItemTemplate>
+                        </ListPanel>
+
+                        <!--Scroll Gradient-->
+                        <Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="576" SuggestedHeight="57" HorizontalAlignment="Right" VerticalAlignment="Bottom" IsEnabled="false" Sprite="CharacterCreation\character_creation_scroll_gradient" />
+                      </Children>
+                    </Widget>
+                  </Children>
+                </ScrollablePanel>
+
+                <ScrollbarWidget Id="VerticalScrollbar" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="8" SuggestedHeight="780" HorizontalAlignment="Right" VerticalAlignment="Bottom" MarginBottom="2" AlignmentAxis="Vertical" Handle="VerticalScrollbarHandle" MaxValue="100" MinValue="0">
+                  <Children>
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="4" HorizontalAlignment="Center" Sprite="BlankWhiteSquare_9" Brush.AlphaFactor="0.2" Brush.Color="#5a4033FF" />
+                    <ImageWidget Id="VerticalScrollbarHandle" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="8" SuggestedHeight="10" HorizontalAlignment="Center" Brush="FaceGen.Scrollbar.Handle" />
+                  </Children>
+                </ScrollbarWidget>
+
+              </Children>
+            </ListPanel>
+
+          </Children>
+        </Widget>
+
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

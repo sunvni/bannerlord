@@ -1,0 +1,55 @@
+<Prefab>
+  <Constants>
+
+
+  </Constants>
+  <Window>
+    <Widget Id="TrainingFieldObjectivesWidget" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsEnabled="false">
+      <Children>
+        <ListPanel WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" MarginLeft="25" MarginTop="25" LayoutImp.LayoutMethod="VerticalBottomToTop">
+          <Children>
+
+            <!--Objectives-->
+            <ListPanel DataSource="{ObjectiveItems}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren"  MinWidth="350" LayoutImp.LayoutMethod="VerticalBottomToTop" Sprite="BlankWhiteSquare_9" Brush.Color="#000000FF" Brush.AlphaFactor="0.5">
+              <ItemTemplate>
+                <TrainingFieldObjectiveItem/>
+              </ItemTemplate>
+            </ListPanel>
+
+            <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Brush="Objective.Text.WithOutline" MarginTop="25" Text="@LeaveAnyTimeText"/>
+          </Children>
+        </ListPanel>
+
+        <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" LayoutImp.LayoutMethod="VerticalBottomToTop">
+          <Children>
+            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center"  MarginTop="25" Text="@CurrentObjectiveText" Brush="Training.Main.Text" ClipContents="false" />
+            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="15" Text="@TimerText" Brush.FontSize="45" ClipContents="false"/>
+
+            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="160" SuggestedHeight="160" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="BlankWhiteSquare_9" Brush.Color="#000000FF" Brush.GlobalAlphaFactor="0">
+              <Children>
+
+                <Widget Id="GhostMouseVisualWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="65" SuggestedHeight="99" Sprite="Mouse\mouse_body" HorizontalAlignment="Center" VerticalAlignment="Center" Brush.AlphaFactor="0.5"/>
+                <TutorialMouseWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="65" SuggestedHeight="99" Sprite="Mouse\mouse_body" HorizontalAlignment="Center" VerticalAlignment="Center" LeftMouseClickVisualWidget="LeftMouseClickVisualWidget" RightMouseClickVisualWidget="RightMouseClickVisualWidget" MiddleMouseClickVisualWidget="MiddleMouseClickVisualWidget" GhostMouseVisualWidget="..\GhostMouseVisualWidget" CurrentObjectiveType="@CurrentMouseObjective" VerticalArrowWidget="..\VerticalArrow" HorizontalArrowWidget="..\HorizontalArrow">
+                  <Children>
+                    <!--Left Click-->
+                    <Widget Id="LeftMouseClickVisualWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="32" SuggestedHeight="36" Sprite="Mouse\mouse_left_click" HorizontalAlignment="Left" VerticalAlignment="Top" PositionYOffset="1" PositionXOffset="2" Brush.GlobalAlphaFactor="0"/>
+                    <!--Right Click-->
+                    <Widget Id="RightMouseClickVisualWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="32" SuggestedHeight="36" Sprite="Mouse\mouse_left_click" HorizontalAlignment="Right" VerticalAlignment="Top" PositionYOffset="1" PositionXOffset="-2" Brush.HorizontalFlip="true" Brush.GlobalAlphaFactor="0"/>
+                    <!--Middle Click-->
+                    <Widget Id="MiddleMouseClickVisualWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="9" SuggestedHeight="25" Sprite="Mouse\mouse_mid_click" HorizontalAlignment="Center" VerticalAlignment="Top" PositionYOffset="17" Brush.GlobalAlphaFactor="0" />
+                  </Children>
+                </TutorialMouseWidget>
+
+                <!--Vertical Arrow-->
+                <Widget Id="VerticalArrow" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="31" SuggestedHeight="121" Sprite="crosshair_arrow_vertical" VerticalAlignment="Center" HorizontalAlignment="Right" Brush.GlobalAlphaFactor="0" PositionXOffset="0"/>
+
+                <!--Horizontal Arrow-->
+                <Widget Id="HorizontalArrow" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="121" SuggestedHeight="31" Sprite="crosshair_arrow" VerticalAlignment="Bottom" HorizontalAlignment="Center" Brush.GlobalAlphaFactor="0" PositionYOffset="0"/>
+              </Children>
+            </Widget>
+          </Children>
+        </ListPanel>
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

@@ -1,0 +1,7 @@
+<Window>
+  <Widget WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent">
+    <Children>
+      <Widget WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent" Sprite="BlankWhiteSquare_9" Brush.Color="#000000FF" Brush.AlphaFactor="@Item" />
+    </Children>
+  </Widget>
+</Window>

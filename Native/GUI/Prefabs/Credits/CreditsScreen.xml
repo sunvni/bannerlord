@@ -1,0 +1,28 @@
+<Prefab>
+  <Variables>
+  </Variables>
+  <VisualDefinitions>
+  </VisualDefinitions>
+  <Window>
+    <Widget WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent">
+      <Children>
+        <Standard.Background />
+
+        <Widget WidthSizePolicy = "Fixed" HeightSizePolicy = "Fixed" SuggestedWidth = "450" SuggestedHeight = "118" HorizontalAlignment="Center" VerticalAlignment="Top" Sprite="credits_logo" MarginTop="35"/>
+
+
+        <CreditsWidget RootItemWidget="RootItem" WidthSizePolicy = "Fixed" HeightSizePolicy = "Fixed" SuggestedWidth = "900" SuggestedHeight = "825" HorizontalAlignment="Center" VerticalAlignment="Top" MarginTop="175" Sprite="CreditsFlowBg_9" Brush.Color="#000000FF" Brush.AlphaFactor="0.5" ClipContents="true">
+          <Children>
+            <Credits.Item Id="RootItem" DataSource="{RootItem}"/>
+          </Children>
+        </CreditsWidget>
+
+        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="900" SuggestedHeight="3" HorizontalAlignment="Center" VerticalAlignment="Top" MarginTop="172" Brush.Color="#F4E1C4FF" Sprite="divider_mid" />
+        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="900" SuggestedHeight="3" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginBottom="78" Brush.Color="#F4E1C4FF" Sprite="divider_mid" />
+
+        <TextWidget WidthSizePolicy = "StretchToParent" HeightSizePolicy = "CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Bottom" Brush="Credits.Section.Text" Brush.FontSize="20" Brush.FontColor="#F4E1C4FF" MarginBottom="25" Text="@EscapeText"/>
+
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

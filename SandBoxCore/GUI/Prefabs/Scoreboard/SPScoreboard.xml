@@ -1,0 +1,267 @@
+<Prefab>
+  <Constants>
+    <Constant Name="Title.AnimDelay" Value="0.7" />
+    <Constant Name="TitleBackground.AnimDelay" Value="0.2" />
+    <Constant Name="ShieldContainer.AnimDelay" Value="0.2" />
+    <Constant Name="BannerContainer.AnimDelay" Value="0.75" />
+    <Constant Name="BattleRewards.AnimDelay" Value="1.5" />
+    <Constant Name="BattleRewards.AnimInterval" Value="0.4" />
+
+    <Constant Name="Scoreboard.PowerLevelComparer.Background.Width" BrushLayer="Default" BrushName="Scoreboard.PowerLevelComparer.Background" BrushValueType="Width" />
+    <Constant Name="Scoreboard.PowerLevelComparer.Background.Height" BrushLayer="Default" BrushName="Scoreboard.PowerLevelComparer.Background" BrushValueType="Height" />
+  </Constants>
+  
+  <VisualDefinitions>
+    <VisualDefinition Name="BattleRewardsList" TransitionDuration="0.6">
+      <VisualState SuggestedHeight="0" MarginBottom="0" State="Default" />
+      <VisualState SuggestedHeight="465" MarginBottom="30" State="Opened" />
+    </VisualDefinition>
+    <VisualDefinition Name="BattleRewardItem" TransitionDuration="0.1">
+      <VisualState PositionXOffset="-80" State="Default" />
+      <VisualState PositionXOffset="0" State="Opened" />
+    </VisualDefinition>
+    <VisualDefinition Name="BannerContainer" TransitionDuration="0.45">
+      <VisualState SuggestedHeight="0" State="Default" />
+      <VisualState SuggestedHeight="462" State="Opened" />
+    </VisualDefinition>
+    <VisualDefinition Name="ShieldContainer" TransitionDuration="0.5">
+      <VisualState SuggestedWidth="400" State="Default" />
+      <VisualState SuggestedWidth="750" State="Opened" />
+    </VisualDefinition>
+  </VisualDefinitions>
+  <Window>
+    <ScoreboardScreenWidget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" BattleResult="@BattleResultIndex" BattleRewardsWidget="ContentPanel\MainContents\ContentsList\StatsWidget\ScrollablePanel\ClipRect\InnerPanel\List\ScrolledHeader\FlagsAndRewardsList\BattleRewards" ControlButtonsPanel="ContentPanel\ControlButtonsPanel" ControlButtonsPanelBackground="ContentPanel\ControlButtonsPanel\Background" ControlButtonsPanelText="ContentPanel\ControlButtonsPanel\ControlButtonsPanelText" UseScoreboardPanelText="ContentPanel\ControlButtonsPanel\UseScoreboardPanelText" FastForwardButton="ContentPanel\ControlButtonsPanel\FastForwardButton" FlagsDefeat="ContentPanel\MainContents\ContentsList\StatsWidget\ScrollablePanel\ClipRect\InnerPanel\List\ScrolledHeader\FlagsAndRewardsList\FlagsDefeat" FlagsSuccess="ContentPanel\MainContents\ContentsList\StatsWidget\ScrollablePanel\ClipRect\InnerPanel\List\ScrolledHeader\FlagsAndRewardsList\FlagsSuccess" IsMainCharacterDead="@IsMainCharacterDead" IsOver="@IsOver" IsSimulation="@IsSimulation" QuitButton="ContentPanel\ControlButtonsPanel\QuitButton" ScrollablePanel="ContentPanel\MainContents\ScrollablePanel\ScrollablePanel" ScrollGradient="ContentPanel\MainContents\ScrollGradient" ShieldStateChanger="ContentPanel\MainContents\ContentsList\Header\Shields" ShowMouseTextWidget="ContentPanel\MainContents\ShowMouseTextWidget" ShowScoreboard="@ShowScoreboard" ShowScoreboardToggle="ContentPanel\ControlButtonsPanel\ShowScoreboardToggle" TitleBackgroundStateChanger="ContentPanel\MainContents\ContentsList\Header\TitleBackground" TitleStateChanger="ContentPanel\MainContents\ContentsList\Header\Title">
+      <Children>
+
+        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Scoreboard.PowerLevelComparer.Background.Width" SuggestedHeight="!Scoreboard.PowerLevelComparer.Background.Height" HorizontalAlignment="Center" VerticalAlignment="Top" IsVisible="@IsPowerComparerEnabled">
+          <Children>
+            <PowerLevelComparer DataSource="{PowerComparer}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" MarginLeft="7" MarginRight="7" MarginBottom="3" Parameter.IsCenterSeperatorEnabled="true" />
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Scoreboard.PowerLevelComparer.Background" />
+            <Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="32" SuggestedHeight="32" HorizontalAlignment="Left" PositionXOffset="-40" Sprite="BlankWhiteSquare_9" AlphaFactor="0.6" Brush.Color="#89762A99">
+              <Children>
+                <ImageIdentifierWidget DataSource="{Attackers\BannerVisualSmall}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="2" MarginRight="2" MarginTop="2" MarginBottom="2" Sprite="BlankWhiteSquare_9" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode" MaterialAlphaFactor="0.6" />
+              </Children>
+            </Widget>
+            <Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="32" SuggestedHeight="32" HorizontalAlignment="Right" PositionXOffset="40" Sprite="BlankWhiteSquare_9" Brush.Color="#89762A99">
+              <Children>
+                <ImageIdentifierWidget DataSource="{Defenders\BannerVisualSmall}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="2" MarginRight="2" MarginTop="2" MarginBottom="2" Sprite="BlankWhiteSquare_9" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode" MaterialAlphaFactor="0.6" />
+              </Children>
+            </Widget>
+          </Children>
+        </Widget>
+
+        <Widget Id="ContentPanel" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+          <Children>
+            <Widget Id="MainContents" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="1334" HorizontalAlignment="Center" VerticalAlignment="Center" MarginLeft="70" MarginRight="70" IsVisible="@ShowScoreboard">
+              <Children>
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="highscore_bar_9" Brush.AlphaFactor="0.75" />
+
+                <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="10" Brush="Scoreboard.Time.Text" Text="@MissionTimeStr" />
+
+                <ListPanel Id="ContentsList" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" LayoutImp.LayoutMethod="VerticalBottomToTop">
+                  <Children>
+
+                    <Widget Id="Header" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="141" MarginBottom="20">
+                      <Children>
+
+                        <DelayedStateChanger Id="TitleBackground" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="1062" SuggestedHeight="100" HorizontalAlignment="Center" MarginTop="25" Brush="Scoreboard.BattleResultContainer" Delay="!TitleBackground.AnimDelay" IncludeChildren="true" State="Opened">
+                          <Children>
+                            <ScoreboardBattleResultTitleBackgroundWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" BattleResult="@BattleResultIndex" DefeatWidget="Defeat" VictoryWidget="Victory">
+                              <Children>
+                                <Widget Id="Victory" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Scoreboard.BattleResultTitleBackground.Victory" />
+                                <Widget Id="Defeat" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Scoreboard.BattleResultTitleBackground.Defeat" />
+                              </Children>
+                            </ScoreboardBattleResultTitleBackgroundWidget>
+                          </Children>
+                        </DelayedStateChanger>
+
+                        <DelayedStateChanger Id="Title" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" SuggestedHeight="50" HorizontalAlignment="Center" MarginTop="15" Delay="!Title.AnimDelay" IncludeChildren="true" State="Opened">
+                          <Children>
+                            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="ScoreboardTitleFontBrush" Brush.FontSize="36" Brush.TextHorizontalAlignment="Center" Text="@BattleResult" />
+                          </Children>
+                        </DelayedStateChanger>
+
+                        <DelayedStateChanger Id="Shields" VisualDefinition="ShieldContainer" WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="400" HorizontalAlignment="Center" MarginTop="15" Delay="!ShieldContainer.AnimDelay" State="Opened">
+                          <Children>
+                            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="132" SuggestedHeight="132" HorizontalAlignment="Left" Sprite="SPScoreboard\shield">
+                              <Children>
+                                <MaskedTextureWidget DataSource="{Attackers\BannerVisual}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Shield" Sprite="SPScoreboard\shield" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode" OverlayTextureScale="1.4" />
+                              </Children>
+                            </Widget>
+                            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="132" SuggestedHeight="132" HorizontalAlignment="Right" Sprite="SPScoreboard\shield">
+                              <Children>
+                                <MaskedTextureWidget DataSource="{Defenders\BannerVisual}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Shield" Sprite="SPScoreboard\shield" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode" OverlayTextureScale="1.4" />
+                              </Children>
+                            </Widget>
+                          </Children>
+                        </DelayedStateChanger>
+
+                      </Children>
+                    </Widget>
+
+
+                    <Widget Id="StatsWidget" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="5" MarginRight="5" MarginBottom="110">
+                      <Children>
+
+                        <ScrollablePanel Id="ScrollablePanel" FixedHeader="..\..\..\FixedHeader" ScrolledHeader="ClipRect\InnerPanel\List\ScrolledHeader\ScrolledHeader" HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" InnerPanel="ClipRect\InnerPanel" ClipRect="ClipRect" HorizontalAlignment="Right" VerticalAlignment="Top" VerticalScrollbar="..\ScrollbarContainer\Scrollbar" MarginLeft="25" MarginBottom="10" Brush="*PanelBrush" AutoHideScrollBars="true">
+                          <Children>
+
+                            <Widget Id="ClipRect" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ClipContents = "true" MarginTop="5" MarginBottom="5">
+                              <Children>
+
+                                <Widget Id="InnerPanel" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" VerticalAlignment="*InnerPanelVerticalAlignment" HorizontalAlignment="Center" >
+                                  <Children>
+
+                                    <ListPanel Id="List" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" LayoutImp.LayoutMethod="VerticalBottomToTop">
+                                      <Children>
+
+                                        <ListPanel Id="ScrolledHeader" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="20" LayoutImp.LayoutMethod="VerticalBottomToTop">
+                                          <Children>
+
+                                            <Widget Id="FlagsAndRewardsList" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="500" IsVisible="@IsOver">
+                                              <Children>
+                                                <DelayedStateChanger Id="FlagsSuccess" VisualDefinition="BannerContainer" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" Delay="!BannerContainer.AnimDelay" IncludeChildren="true" State="Opened">
+                                                  <Children>
+                                                    <MaskedTextureWidget DataSource="{Attackers\BannerVisual}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="198" SuggestedHeight="462" HorizontalAlignment="Left" VerticalAlignment="Bottom" PositionYOffset="-25" MarginLeft="25" Brush="ScoreboardRoutedItem.Banner" Sprite="SPScoreboard\banner" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode" OverlayTextureScale="1" />
+                                                    <MaskedTextureWidget DataSource="{Defenders\BannerVisual}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="198" SuggestedHeight="462" HorizontalAlignment="Right" VerticalAlignment="Bottom" PositionYOffset="-25" MarginRight="50" Brush="ScoreboardRoutedItem.Banner" Sprite="SPScoreboard\banner" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode" OverlayTextureScale="1" />
+                                                  </Children>
+                                                </DelayedStateChanger>
+
+                                                <DelayedStateChanger Id="FlagsDefeat" VisualDefinition="BannerContainer" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" Delay="!BannerContainer.AnimDelay" IncludeChildren="true" State="Opened">
+                                                  <Children>
+                                                    <MaskedTextureWidget DataSource="{Attackers\BannerVisual}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="198" SuggestedHeight="462" HorizontalAlignment="Left" VerticalAlignment="Bottom" PositionYOffset="-25" MarginLeft="25" Brush="ScoreboardRoutedItem.Banner" Sprite="SPScoreboard\banner" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode" OverlayTextureScale="1" />
+                                                    <MaskedTextureWidget DataSource="{Defenders\BannerVisual}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="198" SuggestedHeight="462" HorizontalAlignment="Right" VerticalAlignment="Bottom" PositionYOffset="-25" MarginRight="50" Brush="ScoreboardRoutedItem.Banner" Sprite="SPScoreboard\banner" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode" OverlayTextureScale="1" />
+                                                  </Children>
+                                                </DelayedStateChanger>
+
+                                                <ScoreboardBattleRewardsWidget Id="BattleRewards" WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="750" HorizontalAlignment="Center" AnimationDelay="1.5" AnimationInterval="0.4" IsVisible="@IsOver" ItemContainer="ListPanel">
+                                                  <Children>
+                                                    
+                                                    <ListPanel Id="ListPanel" DataSource="{BattleRewards}" VisualDefinition="BattleRewardsList" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="35" LayoutImp.LayoutMethod="VerticalBottomToTop">
+                                                      <ItemTemplate>
+                                                        
+                                                        <Widget VisualDefinition="BattleRewardItem" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="43" MarginBottom="25" Brush="Scoreboard.BattleRewards.ItemBackground">
+                                                          <Children>
+                                                            
+                                                            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="ScoreboardDefaultFontBrush" Brush.TextHorizontalAlignment="Center" Text="@Text" />
+                                                            <HintWidget DataSource="{Hint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+
+                                                          </Children>
+                                                        </Widget>
+
+                                                      </ItemTemplate>
+                                                    </ListPanel>
+
+                                                  </Children>
+                                                </ScoreboardBattleRewardsWidget>
+
+                                              </Children>
+                                            </Widget>
+
+                                            <ListPanel Id="ScrolledHeader" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" LayoutImp.LayoutMethod="HorizontalLeftToRight">
+                                              <Children>
+                                                <SPScoreboardSideHeader DataSource="{Attackers}" HorizontalAlignment="Left" Parameter.BarSprite="SPScoreboard\enemy_bar" Parameter.BarAlpha="0.75"/>
+                                                <SPScoreboardSideHeader DataSource="{Defenders}" HorizontalAlignment="Right" Parameter.BarSprite="SPScoreboard\ally_bar" Parameter.BarAlpha="0.75"/>
+                                              </Children>
+                                            </ListPanel>
+
+                                          </Children>
+                                        </ListPanel>
+
+                                        <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="15" MarginLeft="15" LayoutImp.LayoutMethod="HorizontalLeftToRight">
+                                          <Children>
+
+                                            <SPScoreboardSide DataSource="{Attackers}" HorizontalAlignment="Left" Parameter.BarSprite="SPScoreboard\enemy_bar" />
+                                            <SPScoreboardSide DataSource="{Defenders}" HorizontalAlignment="Right" Parameter.BarSprite="SPScoreboard\ally_bar" />
+
+                                          </Children>
+                                        </ListPanel>
+
+                                      </Children>
+                                    </ListPanel>
+
+                                  </Children>
+                                </Widget>
+
+                              </Children>
+                            </Widget>
+
+                          </Children>
+                        </ScrollablePanel>
+
+                        <Widget HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" MarginLeft="25" MarginTop="20" MarginBottom="10" Brush="*OverlayShadowBrush" IsDisabled="true"/>
+
+                        <Widget HeightSizePolicy ="StretchToParent" WidthSizePolicy="CoverChildren" Id="ScrollbarContainer" IsVisible="*ScrollbarVisible">
+                          <Children >
+                            <ScrollbarWidget Id="Scrollbar" HeightSizePolicy ="StretchToParent" WidthSizePolicy="Fixed" MinValue = "0" MaxValue = "100" SuggestedWidth="20" MarginLeft="0" MarginBottom="10" AlignmentAxis="Vertical" HorizontalAlignment="Left" MarginTop="20" VerticalAlignment="Top" Sprite="scrollbar_9" Handle = "ScrollbarHandle" ValueInt="*ScrollbarValueInt" >
+                              <Children>
+                                <Widget Id="ScrollbarHandle" WidthSizePolicy = "Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" HorizontalAlignment = "Left" VerticalAlignment = "Top" Sprite="scroll_button_9" />
+                              </Children>
+                            </ScrollbarWidget>
+                          </Children>
+                        </Widget>
+
+                      </Children>
+                    </Widget>
+                  </Children>
+                </ListPanel>
+
+                <ListPanel Id="FixedHeader" IsVisible="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="115" MarginLeft="30" LayoutImp.LayoutMethod="HorizontalLeftToRight" Sprite="BlankWhiteSquare_9" Brush.Color="#00000000">
+                  <Children>
+
+                    <SPScoreboardSideHeader DataSource="{Attackers}" HorizontalAlignment="Left" Parameter.BarSprite="SPScoreboard\enemy_bar" Parameter.BarAlpha="1"/>
+                    <SPScoreboardSideHeader DataSource="{Defenders}" HorizontalAlignment="Right" Parameter.BarSprite="SPScoreboard\ally_bar" Parameter.BarAlpha="1"/>
+
+                  </Children>
+                </ListPanel>
+
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="2" VerticalAlignment="Bottom" MarginBottom="105" Sprite="SPScoreboard\bottom_divider" Brush.AlphaFactor="0.5" />
+                <Widget Id="ScrollGradient" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="120" VerticalAlignment="Bottom" MarginLeft="3" MarginRight="3" MarginBottom="110" Sprite="StdAssets\scroll_hide" />
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="2" VerticalAlignment="Top" MarginTop="165" Sprite="SPScoreboard\bottom_divider" Brush.AlphaFactor="0.5" />
+                <TextWidget Id="ShowMouseTextWidget" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Bottom" HorizontalAlignment="Right" MarginBottom="30" MarginRight="35" Brush="ShowMouse.Text" IsHidden="@IsMouseEnabled" Text="@ShowMouseText" />
+
+              </Children>
+            </Widget>
+
+            <Widget Id="ControlButtonsPanel" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="107" HorizontalAlignment="Center" VerticalAlignment="Bottom" IsVisible="false">
+              <Children>
+
+                <Widget Id="Background" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="highscore_bar_small_9" Brush.AlphaFactor="0.85" />
+
+                <TextWidget Id="ControlButtonsPanelText" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="ScoreboardDefaultFontBrush" Brush.FontSize="35" Brush.TextAlphaFactor="0.75" Brush.TextHorizontalAlignment="Center" Text="@InformationText" />
+
+                <TextWidget Id="UseScoreboardPanelText" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="ScoreboardDefaultFontBrush" Brush.FontSize="20" Brush.TextAlphaFactor="0.75" MarginBottom="15" Brush.TextVerticalAlignment="Bottom" Brush.TextHorizontalAlignment="Center" Text="@ShowScoreboardText" ClipContents="false"/>
+
+                <ButtonWidget Id="FastForwardButton" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="133" SuggestedHeight="50" HorizontalAlignment="Center" VerticalAlignment="Center" PositionXOffset="-320" Brush="ScoreboardControlButtonBrush" ButtonType="Toggle" Command.Click="ExecuteFastForwardAction" IsDisabled="@IsOver" IsSelected="@IsFastForwarding" UpdateChildrenStates="true">
+                  <Children>
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="39" SuggestedHeight="36" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="ScoreboardFastForwardIconBrush" />
+                  </Children>
+                </ButtonWidget>
+
+                <!--<ButtonWidget Id="ShowScoreboardToggle" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="133" SuggestedHeight="50" HorizontalAlignment="Center" VerticalAlignment="Center" PositionXOffset="320" Brush="ScoreboardControlButtonBrush" Command.Click="ExecuteShowScoreboardAction">
+                  <Children>
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="30" SuggestedHeight="30" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="SPScoreboard\bottom_expand_button" Brush.AlphaFactor="0.50" />
+                  </Children>
+                </ButtonWidget>-->
+
+                <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="133" SuggestedHeight="50" HorizontalAlignment="Center" VerticalAlignment="Center" PositionXOffset="320" Brush="ScoreboardControlButtonBrush" Command.Click="ExecuteEndSimulationAction" IsDisabled="@IsOver" IsVisible="@IsSimulation" UpdateChildrenStates="true">
+                  <Children>
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="39" SuggestedHeight="36" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="ScoreboardEndSimulationIconBrush" />
+                  </Children>
+                </ButtonWidget>
+
+                <ButtonWidget Id="QuitButton" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="133" SuggestedHeight="50" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="ScoreboardControlButtonBrush" Command.Click="ExecuteQuitAction">
+                  <Children>
+                    <TextWidget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="ScoreboardDefaultFontBrush" Brush.TextAlphaFactor="0.75" Brush.TextHorizontalAlignment="Center" Text="@QuitText" />
+                    <HintWidget DataSource="{@QuitHint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                  </Children>
+                </ButtonWidget>
+
+              </Children>
+            </Widget>
+          </Children>
+        </Widget>
+      </Children>
+    </ScoreboardScreenWidget>
+  </Window>
+</Prefab>
