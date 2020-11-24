@@ -49,6 +49,12 @@
     </ItemComponent>
     <Flags Civilian="true" />
   </Item>
+  <Item id="hyou_bracers" name="{=DOYS7dmq}Hyou Bracers" mesh="bandit_10_wristband" culture="Culture.battania" weight="0" appearance="0" Type="HandArmor">
+    <ItemComponent>
+      <Armor arm_armor="5000" body_armor="5000" head_armor="5000" leg_armor="5000" covers_hands="false" value="30" modifier_group="leather" material_type="Leather" />
+    </ItemComponent>
+    <Flags Civilian="true" />
+  </Item>
   <Item id="roughtied_leather_bracers" name="{=e4lKZhgv}Roughtied Leather Bracers" mesh="sea_raider_leather_wristband" culture="Culture.battania" weight="0.5" appearance="1" Type="HandArmor">
     <ItemComponent>
       <Armor arm_armor="14" covers_hands="false" modifier_group="leather" material_type="Leather" />
